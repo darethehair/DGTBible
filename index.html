@@ -12,7 +12,7 @@
 <section class="lookup">
   <form id="refForm"><label for="ref">Verse lookup</label><div class="search"><input id="ref" value="John 1:1" autocomplete="off" spellcheck="false"><button>Go</button></div></form>
   <div class="selectors"><label>Book<select id="book"><option>John</option></select></label><label>Chapter<select id="chapter"><option>1</option><option>2</option></select></label></div>
-  <div class="mode-switch" aria-label="Reading mode"><button type="button" data-mode="study">Study</button><button type="button" data-mode="chapter">Chapter</button></div>
+  <div class="mode-switch" aria-label="Reading mode"><button type="button" data-mode="study">Study</button><button type="button" data-mode="chapter">Chapter</button><button type="button" data-mode="compact">Compact</button></div>
 </section>
 <section id="status" class="status"></section>
 <section id="studyView"><section id="verseCard" class="verse-card" hidden>
@@ -38,6 +38,10 @@
     </div>
   </div>
   <div id="chapterReading" class="chapter-reading"></div>
+</section>
+<section id="compactView" hidden>
+  <div class="compact-toolbar"><h2 id="compactHeading">John 1</h2><span>Continuous DGT reading</span></div>
+  <div id="compactReading" class="compact-reading"></div>
 </section>
 <section><h2 id="chapterTitle">John 1</h2><div id="verseGrid" class="verse-grid"></div></section>
 <section class="about"><h2>About this experiment</h2><p>DGTBible is an experimental original-language study Bible. The English DGT text is translated directly from Greek with AI assistance rather than revised from an existing English Bible. The embedded New Testament base text is the SBL Greek New Testament (SBLGNT), used under CC BY 4.0. Difficult readings are intended to be checked against modern critical editions and manuscript evidence.</p></section>
