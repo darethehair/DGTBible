@@ -1,0 +1,38 @@
+name: Extract pinned STEPBible John range
+
+on:
+  push:
+    paths:
+      - '.github/workflows/authoring-stepbible.yml'
+      - 'scripts/extract-stepbible-john.mjs'
+  workflow_dispatch:
+    inputs:
+      start_chapter:
+        description: 'First John chapter'
+        required: true
+        default: '4'
+      end_chapter:
+        description: 'Last John chapter'
+        required: true
+        default: '10'
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    env:
+      START_CHAPTER: ${{ github.event.inputs.start_chapter || '4' }}
+      END_CHAPTER: ${{ github.event.inputs.end_chapter || '10' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract pinned TAGNT range
+        run: node scripts/extract-stepbible-john.mjs
+      - name: Upload extracted range
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stepbible-john-${{ env.START_CHAPTER }}-${{ env.END_CHAPTER }}
+          path: authoring/
+          if-no-files-found: error
