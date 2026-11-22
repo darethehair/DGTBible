@@ -1,4 +1,4 @@
-const APP_VERSION='v0.21';
+const APP_VERSION='v0.22';
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={};
 const $=id=>document.getElementById(id);
@@ -58,12 +58,14 @@ function highlightAlignment(ids){clearAlignment();if(!ids?.length)return;documen
 function renderAligned(container,key,verse,fallback){
  const items=verse.alignment?.[key];if(!items){container.textContent=fallback;return}
  container.innerHTML=items.map(item=>{const ids=(item.ids||[]).join(',');return ids?`<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`:`<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`}).join('');
- container.querySelectorAll('.align-token').forEach(el=>{
-  const go=()=>highlightAlignment((el.dataset.ids||'').split(',').filter(Boolean));
-  el.addEventListener('mouseenter',go);
-  el.addEventListener('click',go);
-  el.addEventListener('focus',go);
- });
+ const activate=e=>{
+  const el=e.target.closest?.('.align-token');
+  if(!el||!container.contains(el))return;
+  highlightAlignment((el.dataset.ids||'').split(',').filter(Boolean));
+ };
+ container.onmouseover=activate;
+ container.onclick=activate;
+ container.onfocusin=activate;
 }
 function refText(v=state.verse){return `${state.book} ${state.chapter}:${v}`}
 function renderStudy(){
