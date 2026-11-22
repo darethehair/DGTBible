@@ -155,6 +155,22 @@ def fill_contextual(items,src):
   if len(candidates)==1:
    x['ids']=[candidates[0]];x['confidence']='auto-high';x.pop('reason',None)
 
+ # Reassign repeated exact/synonym matches one-to-one by relative position.
+ used_global={id for y in items for id in y['ids']}
+ for i,x in enumerate(items):
+  if x['ids']:continue
+  candidates=[]
+  for j,s in enumerate(src):
+   if s['id'] in used_global:continue
+   z=max([sim(x['text'],w) for w in words(s.get('gloss',''))] or [0])
+   if z<8:continue
+   p=abs(i/max(1,len(items)-1)-j/max(1,len(src)-1))
+   if p<=0.25:candidates.append((p,-z,j,s['id']))
+  if candidates:
+   candidates.sort();best=candidates[0]
+   if len(candidates)==1 or candidates[1][0]-best[0]>=0.035:
+    x['ids']=[best[3]];x['confidence']='auto-high';x.pop('reason',None);used_global.add(best[3])
+
  # Fill grammatical words only in a narrow interval bounded by trusted links.
  for i,x in enumerate(items):
   if x['ids']:continue
