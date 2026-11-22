@@ -1,0 +1,37 @@
+name: Build pinned 2 and 3 John DGT batch
+
+on:
+  push:
+    paths:
+      - '.github/workflows/authoring-2-3john.yml'
+      - 'scripts/extract-stepbible-2-3john.mjs'
+      - 'scripts/build-2-3john.py'
+      - 'scripts/audit-2-3john.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/john_batch_dgt.py'
+      - 'data/authoring/2-3john-dgt.tsv'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract pinned SBLGNT and TAGNT
+        run: node scripts/extract-stepbible-2-3john.mjs
+      - name: Build 2 and 3 John
+        run: python scripts/build-2-3john.py
+      - name: Audit 2 and 3 John
+        run: python scripts/audit-2-3john.py
+      - name: Commit clean generated books
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/2john/*.json data/3john/*.json data/sources/step-2john-*.json data/sources/step-3john-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean 2 and 3 John batch"
+            git push
+          fi
