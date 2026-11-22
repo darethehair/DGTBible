@@ -5,10 +5,10 @@ Experimental original-language Bible PWA with the **DGT — Direct Greek Transla
 ## Current prototype
 
 - Installable static PWA; no API key and no runtime AI cost.
-- John 1–2 complete: all 76 verses include SBLGNT Greek, literal Greek-order English, DGT English, and translation notes where useful.
+- John 1–3 complete: all 112 verses include SBLGNT Greek, literal Greek-order English, DGT English, and translation notes where useful.
 - **SBLGNT** Greek base text, licensed under CC BY 4.0.
 - DGT English translation stored locally alongside each verse.
-- Linked Greek/transliteration/literal/DGT highlighting across John 1–2, assisted by pinned STEPBible TAGNT word data.
+- Linked Greek/transliteration/literal/DGT highlighting across John 1–3, assisted by pinned STEPBible TAGNT word data.
 - Study mode and continuous chapter-reading mode with remembered layer preferences.
 - Direct verse lookup (`John 1:18`) and shareable URL hashes (`#John.1.18`).
 - Offline cache through a service worker; core Scripture and alignment data are local and do not depend on STEPBible at runtime.
@@ -33,3 +33,5 @@ Experimental study edition; not a formally published or peer-reviewed critical e
 Before deployment, GitHub Actions runs `node scripts/validate-john.mjs`. It checks chapter/verse coverage, alignment reconstruction, alignment IDs, preserved STEPBible source coverage and metadata consistency, and curated overrides. John 1:1 is stored as a protected hand-curated override in `data/john/curated-overrides.json`; after any generated alignment pass, run `node scripts/apply-curated-overrides.mjs` before validation.
 
 The deployment also runs a semantic alignment audit that flags suspicious reuse of a Greek word ID across separated English phrases. Reviewed legitimate split phrases are kept in `data/john/semantic-audit-allowlist.json`; any new high-risk case fails CI until reviewed.
+
+John 3 was added as the first pilot chapter generated under the structural + semantic QA pipeline before scaling to the rest of John.
