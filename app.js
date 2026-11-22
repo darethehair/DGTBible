@@ -24,7 +24,12 @@ async function loadChapter(ch){const r=await fetch(`data/john/${String(ch).padSt
 function parseRef(s){const m=s.trim().match(/^(?:john|jn|joh)?\s*(\d+)\s*[:.]\s*(\d+)$/i);return m?{chapter:+m[1],verse:+m[2]}:null}
 function scrollToChapterVerse(verse=state.verse,behavior='smooth'){
   const target=$('v'+verse);
-  if(target) target.scrollIntoView({behavior,block:'start'});
+  if(!target)return;
+  const toolbar=document.querySelector('.chapter-toolbar');
+  const toolbarHeight=toolbar?.getBoundingClientRect().height||0;
+  const extra=12;
+  const top=window.scrollY+target.getBoundingClientRect().top-toolbarHeight-extra;
+  window.scrollTo({top:Math.max(0,top),behavior});
 }
 function setMode(mode){
   state.mode=mode;
