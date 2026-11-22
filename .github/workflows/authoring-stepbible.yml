@@ -16,11 +16,11 @@ on:
       start_chapter:
         description: 'First John chapter'
         required: true
-        default: '4'
+        default: '11'
       end_chapter:
         description: 'Last John chapter'
         required: true
-        default: '10'
+        default: '21'
 
 permissions:
   contents: write
@@ -29,29 +29,25 @@ jobs:
   extract:
     runs-on: ubuntu-latest
     env:
-      START_CHAPTER: ${{ github.event.inputs.start_chapter || '4' }}
-      END_CHAPTER: ${{ github.event.inputs.end_chapter || '10' }}
+      START_CHAPTER: ${{ github.event.inputs.start_chapter || '11' }}
+      END_CHAPTER: ${{ github.event.inputs.end_chapter || '21' }}
     steps:
       - uses: actions/checkout@v4
       - name: Extract pinned TAGNT range
         run: node scripts/extract-stepbible-john.mjs
       - name: Preflight SBLGNT against TAGNT
         run: node scripts/preflight-john-batch.mjs
-      - name: Build John 4-10 generated data
-        if: env.START_CHAPTER == '4' && env.END_CHAPTER == '10'
+      - name: Build generated John range
         run: python scripts/build-john-batch.py
-      - name: Audit generated John 4-10 batch
-        if: env.START_CHAPTER == '4' && env.END_CHAPTER == '10'
+      - name: Audit generated John range
         run: python scripts/audit-john-batch.py
       - name: Commit clean generated batch
-        if: env.START_CHAPTER == '4' && env.END_CHAPTER == '10'
         run: |
           git config user.name "DGTBible authoring bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/john/04.json data/john/05.json data/john/06.json data/john/07.json data/john/08.json data/john/09.json data/john/10.json
-          git add data/sources/step-john-04.json data/sources/step-john-05.json data/sources/step-john-06.json data/sources/step-john-07.json data/sources/step-john-08.json data/sources/step-john-09.json data/sources/step-john-10.json
+          git add data/john/*.json data/sources/step-john-*.json
           if ! git diff --cached --quiet; then
-            git commit -m "Generate QA-clean John 4-10 batch"
+            git commit -m "Generate QA-clean John $START_CHAPTER-$END_CHAPTER batch"
             git push
           fi
       - name: Upload extracted range
