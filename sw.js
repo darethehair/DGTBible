@@ -1,4 +1,4 @@
-const CACHE='dgtbible-v028';
+const CACHE='dgtbible-v029';
 const ASSETS=['./','index.html','style.css','app.js','manifest.webmanifest','data/books.json','icons/icon.svg','data/john/manifest.json','data/john/paragraphs.json','data/john/editorial-notes.json',...Array.from({length:21},(_,i)=>'data/john/'+String(i+1).padStart(2,'0')+'.json'),'data/1john/manifest.json','data/1john/paragraphs.json','data/1john/editorial-notes.json',...Array.from({length:5},(_,i)=>'data/1john/'+String(i+1).padStart(2,'0')+'.json')];
 self.addEventListener('install',event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});
