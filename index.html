@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#18251f">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css"><title>DGTBible</title>
+</head>
+<body>
+<header><div class="brand"><div class="mark">DGT</div><div><h1>DGTBible</h1><p>Direct translation from the biblical languages</p></div></div></header>
+<main>
+<section class="lookup">
+  <form id="refForm"><label for="ref">Verse lookup</label><div class="search"><input id="ref" value="John 1:1" autocomplete="off" spellcheck="false"><button>Go</button></div></form>
+  <div class="selectors"><label>Book<select id="book"><option>John</option></select></label><label>Chapter<select id="chapter"><option>1</option><option>2</option></select></label></div>
+</section>
+<section id="status" class="status"></section>
+<section id="verseCard" class="verse-card" hidden>
+ <div class="verse-head"><div><span id="reference"></span><span class="badge">DGT</span></div><button id="copyLink" class="ghost">Copy link</button></div>
+ <div class="language-label">Greek · Nestle 1904</div><div id="greek" class="greek"></div>
+ <div class="language-label">Direct Greek Translation</div><div id="english" class="english"></div>
+ <details id="notesWrap"><summary>Translation notes</summary><div id="notes"></div></details>
+</section>
+<section><h2 id="chapterTitle">John 1</h2><div id="verseGrid" class="verse-grid"></div></section>
+<section class="about"><h2>About this experiment</h2><p>DGTBible is an experimental original-language study Bible. The English DGT text is translated directly from Greek with AI assistance rather than revised from an existing English Bible. The embedded New Testament base text is Eberhard Nestle’s 1904 Greek New Testament, which is public domain. Difficult readings are intended to be checked against modern critical editions and manuscript evidence.</p></section>
+</main>
+<footer>Experimental study edition · DGTBible</footer>
+<script src="app.js" defer></script>
+</body></html>
