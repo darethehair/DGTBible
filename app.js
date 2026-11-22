@@ -1,4 +1,4 @@
-const APP_VERSION='v0.9';
+const APP_VERSION='v0.10';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 const $=id=>document.getElementById(id);
 const layerDefaults={greek:true,translit:false,literal:false,dgt:true,notes:false};
@@ -46,6 +46,9 @@ function renderStudy(){
   renderAligned($('literal'),'literal',verse,verse.literal);
   renderAligned($('english'),'dgt',verse,verse.dgt);
   const notes=verse.notes||[];$('notesWrap').hidden=!notes.length;$('notes').innerHTML=notes.map(n=>`<p>${n}</p>`).join('');
+  const alignNotice=$('alignmentNotice');
+  alignNotice.hidden=!!verse.alignment;
+  alignNotice.textContent=verse.alignment?'':'Word alignment for this verse has not yet been manually curated.';
   $('prevVerse').disabled=state.chapter===1&&state.verse===1;$('nextVerse').disabled=state.chapter===2&&state.verse===25;
   $('studyPosition').textContent=`John ${state.chapter}:${state.verse}`;
 }
