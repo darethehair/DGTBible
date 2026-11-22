@@ -45,6 +45,8 @@ for slug,name,sblprefix,stepprefix,bookcode,expected in specs:
   greek=sbl[(ch,v)]
   src=map_words(greek,step[(ch,v)])
   synthetic+=sum(bool(x.get('synthetic')) for x in src)
+  if any(x.get('synthetic') for x in src):
+   print(name,f'{ch}:{v}','synthetic source tokens:',[(x['text'],x.get('gloss','')) for x in src if x.get('synthetic')])
   ga=[];ta=[];la=[]
   for i,x in enumerate(src):
    af='' if i==len(src)-1 else ' '
