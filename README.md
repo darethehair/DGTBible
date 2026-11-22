@@ -5,18 +5,24 @@ Experimental original-language Bible PWA with the **DGT — Direct Greek Transla
 ## Current prototype
 
 - Installable static PWA; no API key and no runtime AI cost.
-- John 1–2 seeded with selected high-value verses as the first corpus; the schema is ready for complete chapters.
+- John 1–2 complete: all 76 verses include SBLGNT Greek, literal Greek-order English, DGT English, and translation notes where useful.
 - **SBLGNT** Greek base text, licensed under CC BY 4.0.
 - DGT English translation stored locally alongside each verse.
+- Linked Greek/transliteration/literal/DGT highlighting across John 1–2, assisted by pinned STEPBible TAGNT word data.
+- Study mode and continuous chapter-reading mode with remembered layer preferences.
 - Direct verse lookup (`John 1:18`) and shareable URL hashes (`#John.1.18`).
-- Offline cache through a service worker.
+- Offline cache through a service worker; core Scripture and alignment data are local and do not depend on STEPBible at runtime.
 - GitHub Pages workflow included.
 
 ## Translation method
 
 DGT is a fresh English translation created directly from the original-language text with AI assistance. It aims to preserve wording, structure, repetition, and theological vocabulary while remaining readable English. Difficult or textually significant readings should be checked against modern critical editions and manuscript evidence rather than silently normalized.
 
-The embedded Greek text is the **SBL Greek New Testament (SBLGNT)**, a modern critically edited Greek New Testament. SBLGNT is © 2010 Society of Biblical Literature and Logos Bible Software and is licensed under **CC BY 4.0**. DGT translation and notes are separate original project content.
+The embedded Greek text is the **SBL Greek New Testament (SBLGNT)**, a modern critically edited Greek New Testament. SBLGNT is © 2010 Society of Biblical Literature and Logos Bible Software and is licensed under **CC BY 4.0**.
+
+For word-level alignment and lexical metadata, DGTBible also uses a pinned authoring snapshot derived from **STEPBible TAGNT**, likewise under **CC BY 4.0**. The snapshot is stored locally in this repository, so the app does not depend on STEPBible being online. See `NOTICE.md` for exact source revisions and attribution.
+
+DGT translation and notes are separate original project content.
 
 ## Status
 
