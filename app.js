@@ -1,3 +1,4 @@
+const APP_VERSION='v0.8';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 const $=id=>document.getElementById(id);
 const layerDefaults={greek:true,translit:false,literal:false,dgt:true,notes:false};
@@ -90,4 +91,4 @@ document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.data
 document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
 let touchX=null;$('studyView').addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});$('studyView').addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;touchX=null;if(Math.abs(dx)>70)moveVerse(dx>0?-1:1)},{passive:true});
 window.addEventListener('hashchange',()=>{const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);if(m)show(+m[1],+m[2],false,false)});
-(async()=>{if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');renderLayerControls();setMode(state.mode);const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);await show(m?+m[1]:1,m?+m[2]:1,false,false)})();
+(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');renderLayerControls();setMode(state.mode);const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);await show(m?+m[1]:1,m?+m[2]:1,false,false)})();
