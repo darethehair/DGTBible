@@ -1,4 +1,4 @@
-const APP_VERSION='v0.15';
+const APP_VERSION='v0.16';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let availableChapters=[1,2];
 let paragraphStarts={};
@@ -123,9 +123,33 @@ function renderGrid(){
   }
 }
 function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function updateChapterNav(){
+  const i=availableChapters.indexOf(state.chapter);
+  const prevDisabled=i<=0;
+  const nextDisabled=i<0||i>=availableChapters.length-1;
+  for(const id of ['prevChapterTop','prevChapterBottom','prevCompactChapterTop','prevCompactChapterBottom']){
+    const el=$(id); if(el) el.disabled=prevDisabled;
+  }
+  for(const id of ['nextChapterTop','nextChapterBottom','nextCompactChapterTop','nextCompactChapterBottom']){
+    const el=$(id); if(el) el.disabled=nextDisabled;
+  }
+  for(const id of ['chapterPositionTop','chapterPositionBottom','compactPositionTop','compactPositionBottom']){
+    const el=$(id); if(el) el.textContent=`John ${state.chapter}`;
+  }
+}
+async function moveChapter(delta){
+  const i=availableChapters.indexOf(state.chapter);
+  const next=i+delta;
+  if(next<0||next>=availableChapters.length)return;
+  const ch=availableChapters[next];
+  const d=await loadChapter(ch);
+  await show(ch,d.verses[0].v,true,false);
+  window.scrollTo({top:0,behavior:'smooth'});
+}
 function renderCompact(){
   if(!state.data)return;
   $('compactHeading').textContent=`John ${state.chapter}`;
+  updateChapterNav();
   const starts=new Set((paragraphStarts[String(state.chapter)]||[state.data.verses[0]?.v]).map(Number));
   let html='';
   let open=false;
@@ -148,6 +172,7 @@ function renderCompact(){
 function renderChapter(){
   if(!state.data)return;
   $('chapterHeading').textContent=`John ${state.chapter}`;
+  updateChapterNav();
   $('chapterReading').innerHTML=state.data.verses.map(v=>`<article class="chapter-verse" id="v${v.v}">
     <button class="verse-number" title="Study John ${state.chapter}:${v.v}" data-study="${v.v}">${v.v}</button>
     ${layers.greek?`<div class="cv-greek">${esc(v.greek)}</div>`:''}
@@ -203,6 +228,12 @@ $('copyLink').onclick=async()=>{await navigator.clipboard.writeText(location.hre
 $('verseCard').addEventListener('mouseleave',clearAlignment);
 $('verseCard').addEventListener('click',e=>{if(!e.target.closest('.align-token'))clearAlignment()});
 $('prevVerse').onclick=()=>moveVerse(-1);$('nextVerse').onclick=()=>moveVerse(1);
+for(const id of ['prevChapterTop','prevChapterBottom','prevCompactChapterTop','prevCompactChapterBottom']){
+  const el=$(id); if(el) el.onclick=()=>moveChapter(-1);
+}
+for(const id of ['nextChapterTop','nextChapterBottom','nextCompactChapterTop','nextCompactChapterBottom']){
+  const el=$(id); if(el) el.onclick=()=>moveChapter(1);
+}
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
 document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
 let touchX=null;$('studyView').addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});$('studyView').addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;touchX=null;if(Math.abs(dx)>70)moveVerse(dx>0?-1:1)},{passive:true});
