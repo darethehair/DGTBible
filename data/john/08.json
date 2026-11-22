@@ -5649,7 +5649,7 @@
     {
       "v": 11,
       "greek": "ἡ δὲ εἶπεν· Οὐδείς, κύριε. εἶπεν δὲ ὁ Ἰησοῦς· Οὐδὲ ἐγώ σε κρίνω· πορεύου καὶ μηκέτι ἁμάρτανε.⟧",
-      "literal": "the And she said No one Sir. Said then the Jesus Neither I myself you from do go and no more do sin.",
+      "literal": "the And she said No one Sir. Said then the Jesus Neither I myself you am judging do go and no more do sin.",
       "dgt": "She said, “No one, Sir.” Jesus said, “Neither do I condemn you. Go, and from now on sin no more.”",
       "notes": [
         "SBLGNT has a shorter wording here than the TAGNT variant data; DGT follows SBLGNT."
@@ -5782,9 +5782,9 @@
             "ids": [
               "w17"
             ],
-            "gloss": "from",
-            "strongs": "G0575",
-            "morph": "PREP"
+            "gloss": "am judging",
+            "strongs": "G2919",
+            "morph": "V-PAI-1S"
           },
           {
             "text": "πορεύου",
@@ -5913,7 +5913,7 @@
             ]
           },
           {
-            "text": "apo",
+            "text": "krinō",
             "after": " ",
             "ids": [
               "w17"
@@ -6034,7 +6034,7 @@
             ]
           },
           {
-            "text": "from",
+            "text": "am judging",
             "after": " ",
             "ids": [
               "w17"
@@ -6182,11 +6182,10 @@
           },
           {
             "text": "from",
-            "ids": [
-              "w17"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "now",
