@@ -29,7 +29,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Extract pinned TAGNT range
         run: node scripts/extract-stepbible-john.mjs
-      - name: Preflight SBLGNT against TAGNT\n        run: node scripts/preflight-john-batch.mjs\n      - name: Upload extracted range
+      - name: Preflight SBLGNT against TAGNT
+        run: node scripts/preflight-john-batch.mjs
+      - name: Upload extracted range
         if: always()
         uses: actions/upload-artifact@v4
         with:
