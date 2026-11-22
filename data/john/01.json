@@ -3,14 +3,87 @@
   "chapter": 1,
   "greekSource": "Nestle 1904",
   "verses": [
-    {"v":1,"greek":"Ἐν ἀρχῇ ἦν ὁ Λόγος, καὶ ὁ Λόγος ἦν πρὸς τὸν Θεόν, καὶ Θεὸς ἦν ὁ Λόγος.","dgt":"In the beginning was the Word, and the Word was with God, and the Word was God.","notes":["θεός stands before the verb without the article; DGT retains the straightforward qualitative sense, “the Word was God.”"]},
-    {"v":3,"greek":"πάντα δι’ αὐτοῦ ἐγένετο, καὶ χωρὶς αὐτοῦ ἐγένετο οὐδὲ ἕν ὃ γέγονεν.","dgt":"All things came into being through him, and apart from him not even one thing came into being that has come into being.","notes":["The punctuation relationship between verses 3 and 4 is an ancient interpretive question."]},
-    {"v":5,"greek":"καὶ τὸ φῶς ἐν τῇ σκοτίᾳ φαίνει, καὶ ἡ σκοτία αὐτὸ οὐ κατέλαβεν.","dgt":"And the light shines in the darkness, and the darkness did not overcome it.","notes":["καταλαμβάνω can carry senses such as seize, grasp, comprehend, or overcome; DGT uses “overcome” here."]},
-    {"v":14,"greek":"Καὶ ὁ Λόγος σὰρξ ἐγένετο καὶ ἐσκήνωσεν ἐν ἡμῖν, καὶ ἐθεασάμεθα τὴν δόξαν αὐτοῦ, δόξαν ὡς μονογενοῦς παρὰ Πατρός, πλήρης χάριτος καὶ ἀληθείας.","dgt":"And the Word became flesh and made his dwelling among us. We saw his glory, glory as of the one and only from the Father, full of grace and truth.","notes":["μονογενής emphasizes uniqueness; DGT uses “one and only” rather than importing “begotten” into the word itself."]},
-    {"v":16,"greek":"ὅτι ἐκ τοῦ πληρώματος αὐτοῦ ἡμεῖς πάντες ἐλάβομεν, καὶ χάριν ἀντὶ χάριτος·","dgt":"For from his fullness we have all received, grace in place of grace.","notes":["χάριν ἀντὶ χάριτος is rendered fairly directly as “grace in place of grace”; “grace upon grace” is another possible interpretation."]},
-    {"v":18,"greek":"Θεὸν οὐδεὶς ἑώρακεν πώποτε· μονογενὴς Θεὸς ὁ ὢν εἰς τὸν κόλπον τοῦ Πατρὸς, ἐκεῖνος ἐξηγήσατο.","dgt":"No one has ever seen God. The one and only God, who is in the bosom of the Father, he has made him known.","notes":["Nestle 1904 reads μονογενὴς Θεός, “one and only/unique God,” as do important early witnesses. A well-known variant reads “only/unique Son.”","ἐξηγήσατο means to make known, explain, or narrate; it is the source of the English word “exegesis.”"]},
-    {"v":29,"greek":"Τῇ ἐπαύριον βλέπει τὸν Ἰησοῦν ἐρχόμενον πρὸς αὐτόν, καὶ λέγει Ἴδε ὁ Ἀμνὸς τοῦ Θεοῦ ὁ αἴρων τὴν ἁμαρτίαν τοῦ κόσμου.","dgt":"The next day he saw Jesus coming toward him and said, “Look—the Lamb of God, who takes away the sin of the world!”","notes":["αἴρω can mean take away, lift, or bear; the context supports “takes away.”"]},
-    {"v":34,"greek":"κἀγὼ ἑώρακα, καὶ μεμαρτύρηκα ὅτι οὗτός ἐστιν ὁ Υἱὸς τοῦ Θεοῦ.","dgt":"And I have seen, and I have testified that this is the Son of God.","notes":["There is a significant textual variant here: “Son of God” versus “Chosen One of God.”"]},
-    {"v":51,"greek":"καὶ λέγει αὐτῷ Ἀμὴν ἀμὴν λέγω ὑμῖν, ὄψεσθε τὸν οὐρανὸν ἀνεῳγότα καὶ τοὺς ἀγγέλους τοῦ Θεοῦ ἀναβαίνοντας καὶ καταβαίνοντας ἐπὶ τὸν Υἱὸν τοῦ ἀνθρώπου.","dgt":"And he said to him, “Truly, truly, I tell you: you will see heaven opened, and the angels of God ascending and descending upon the Son of Man.”","notes":["The Greek “you” is plural, even though Jesus has just been speaking to Nathanael individually."]}
+    {
+      "v": 1,
+      "greek": "Ἐν ἀρχῇ ἦν ὁ Λόγος, καὶ ὁ Λόγος ἦν πρὸς τὸν Θεόν, καὶ Θεὸς ἦν ὁ Λόγος.",
+      "dgt": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+      "notes": [
+        "θεός stands before the verb without the article; DGT retains the straightforward qualitative sense, “the Word was God.”"
+      ],
+      "literal": "In beginning was the Word, and the Word was toward God, and God was the Word."
+    },
+    {
+      "v": 3,
+      "greek": "πάντα δι’ αὐτοῦ ἐγένετο, καὶ χωρὶς αὐτοῦ ἐγένετο οὐδὲ ἕν ὃ γέγονεν.",
+      "dgt": "All things came into being through him, and apart from him not even one thing came into being that has come into being.",
+      "notes": [
+        "The punctuation relationship between verses 3 and 4 is an ancient interpretive question."
+      ],
+      "literal": "All things through him came-to-be, and apart from him came-to-be not even one thing which has come-to-be."
+    },
+    {
+      "v": 5,
+      "greek": "καὶ τὸ φῶς ἐν τῇ σκοτίᾳ φαίνει, καὶ ἡ σκοτία αὐτὸ οὐ κατέλαβεν.",
+      "dgt": "And the light shines in the darkness, and the darkness did not overcome it.",
+      "notes": [
+        "καταλαμβάνω can carry senses such as seize, grasp, comprehend, or overcome; DGT uses “overcome” here."
+      ],
+      "literal": "And the light in the darkness shines, and the darkness it did not overcome."
+    },
+    {
+      "v": 14,
+      "greek": "Καὶ ὁ Λόγος σὰρξ ἐγένετο καὶ ἐσκήνωσεν ἐν ἡμῖν, καὶ ἐθεασάμεθα τὴν δόξαν αὐτοῦ, δόξαν ὡς μονογενοῦς παρὰ Πατρός, πλήρης χάριτος καὶ ἀληθείας.",
+      "dgt": "And the Word became flesh and made his dwelling among us. We saw his glory, glory as of the one and only from the Father, full of grace and truth.",
+      "notes": [
+        "μονογενής emphasizes uniqueness; DGT uses “one and only” rather than importing “begotten” into the word itself."
+      ],
+      "literal": "And the Word flesh became and dwelt among us, and we beheld his glory, glory as of an one-and-only from Father, full of grace and truth."
+    },
+    {
+      "v": 16,
+      "greek": "ὅτι ἐκ τοῦ πληρώματος αὐτοῦ ἡμεῖς πάντες ἐλάβομεν, καὶ χάριν ἀντὶ χάριτος·",
+      "dgt": "For from his fullness we have all received, grace in place of grace.",
+      "notes": [
+        "χάριν ἀντὶ χάριτος is rendered fairly directly as “grace in place of grace”; “grace upon grace” is another possible interpretation."
+      ],
+      "literal": "Because from his fullness we all received, and grace in place of grace."
+    },
+    {
+      "v": 18,
+      "greek": "Θεὸν οὐδεὶς ἑώρακεν πώποτε· μονογενὴς Θεὸς ὁ ὢν εἰς τὸν κόλπον τοῦ Πατρὸς, ἐκεῖνος ἐξηγήσατο.",
+      "dgt": "No one has ever seen God. The one and only God, who is in the bosom of the Father, he has made him known.",
+      "notes": [
+        "Nestle 1904 reads μονογενὴς Θεός, “one and only/unique God,” as do important early witnesses. A well-known variant reads “only/unique Son.”",
+        "ἐξηγήσατο means to make known, explain, or narrate; it is the source of the English word “exegesis.”"
+      ],
+      "literal": "God no one has seen ever; one-and-only God, the one being in the bosom of the Father, that one made him known."
+    },
+    {
+      "v": 29,
+      "greek": "Τῇ ἐπαύριον βλέπει τὸν Ἰησοῦν ἐρχόμενον πρὸς αὐτόν, καὶ λέγει Ἴδε ὁ Ἀμνὸς τοῦ Θεοῦ ὁ αἴρων τὴν ἁμαρτίαν τοῦ κόσμου.",
+      "dgt": "The next day he saw Jesus coming toward him and said, “Look—the Lamb of God, who takes away the sin of the world!”",
+      "notes": [
+        "αἴρω can mean take away, lift, or bear; the context supports “takes away.”"
+      ],
+      "literal": "On the next day he sees Jesus coming toward him and says, Look, the Lamb of God, the one taking away the sin of the world."
+    },
+    {
+      "v": 34,
+      "greek": "κἀγὼ ἑώρακα, καὶ μεμαρτύρηκα ὅτι οὗτός ἐστιν ὁ Υἱὸς τοῦ Θεοῦ.",
+      "dgt": "And I have seen, and I have testified that this is the Son of God.",
+      "notes": [
+        "There is a significant textual variant here: “Son of God” versus “Chosen One of God.”"
+      ],
+      "literal": "And I have seen and have testified that this one is the Son of God."
+    },
+    {
+      "v": 51,
+      "greek": "καὶ λέγει αὐτῷ Ἀμὴν ἀμὴν λέγω ὑμῖν, ὄψεσθε τὸν οὐρανὸν ἀνεῳγότα καὶ τοὺς ἀγγέλους τοῦ Θεοῦ ἀναβαίνοντας καὶ καταβαίνοντας ἐπὶ τὸν Υἱὸν τοῦ ἀνθρώπου.",
+      "dgt": "And he said to him, “Truly, truly, I tell you: you will see heaven opened, and the angels of God ascending and descending upon the Son of Man.”",
+      "notes": [
+        "The Greek “you” is plural, even though Jesus has just been speaking to Nathanael individually."
+      ],
+      "literal": "And he says to him, Truly truly I say to you-all, you-all will see heaven having been opened and the angels of God ascending and descending upon the Son of Man."
+    }
   ]
 }
