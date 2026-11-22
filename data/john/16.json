@@ -3160,7 +3160,7 @@
     {
       "v": 7,
       "greek": "ἀλλʼ ἐγὼ τὴν ἀλήθειαν λέγω ὑμῖν, συμφέρει ὑμῖν ἵνα ἐγὼ ἀπέλθω. ἐὰν γὰρ μὴ ἀπέλθω, ὁ παράκλητος οὐ μὴ ἔλθῃ πρὸς ὑμᾶς· ἐὰν δὲ πορευθῶ, πέμψω αὐτὸν πρὸς ὑμᾶς.",
-      "literal": "But I myself the truth say to you it is profitable for you that I myself may go away only for unless I shall go away the Helper not μὴ ἔλθῃ to you if however I shall go I will send Him to you.",
+      "literal": "But I myself the truth say to you it is profitable for you that I myself may go away only for unless I shall go away the Helper not not may come to you if however I shall go I will send Him to you.",
       "dgt": "But I tell you the truth: it is better for you that I go away. For if I do not go away, the Advocate will certainly not come to you; but if I go, I will send him to you.",
       "notes": [],
       "alignment": {
@@ -3350,14 +3350,20 @@
             "after": " ",
             "ids": [
               "s19"
-            ]
+            ],
+            "gloss": "not",
+            "strongs": "G3361",
+            "morph": "PRT-N"
           },
           {
             "text": "ἔλθῃ",
             "after": " ",
             "ids": [
               "s20"
-            ]
+            ],
+            "gloss": "may come",
+            "strongs": "G2064",
+            "morph": "V-2AAS-3S"
           },
           {
             "text": "πρὸς",
@@ -3783,14 +3789,14 @@
             ]
           },
           {
-            "text": "μὴ",
+            "text": "not",
             "after": " ",
             "ids": [
               "s19"
             ]
           },
           {
-            "text": "ἔλθῃ",
+            "text": "may come",
             "after": " ",
             "ids": [
               "s20"
@@ -4010,7 +4016,7 @@
           {
             "text": "not",
             "ids": [
-              "w15"
+              "w19"
             ],
             "after": " ",
             "confidence": "auto-high"
@@ -4063,17 +4069,18 @@
           {
             "text": "not",
             "ids": [
-              "w19"
+              "s19"
             ],
             "after": " ",
             "confidence": "auto-high"
           },
           {
             "text": "come",
-            "ids": [],
+            "ids": [
+              "s20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "auto-high"
           },
           {
             "text": "to",
@@ -17216,7 +17223,7 @@
     {
       "v": 28,
       "greek": "ἐξῆλθον ἐκ τοῦ πατρὸς καὶ ἐλήλυθα εἰς τὸν κόσμον· πάλιν ἀφίημι τὸν κόσμον καὶ πορεύομαι πρὸς τὸν πατέρα.",
-      "literal": "I came forth ἐκ the Father and have come into the world again I leave the world and go to the Father.",
+      "literal": "I came forth from the Father and have come into the world again I leave the world and go to the Father.",
       "dgt": "I came out from the Father and have come into the world; again I am leaving the world and going to the Father.”",
       "notes": [],
       "alignment": {
@@ -17236,7 +17243,10 @@
             "after": " ",
             "ids": [
               "s2"
-            ]
+            ],
+            "gloss": "from",
+            "strongs": "G1537",
+            "morph": "PREP"
           },
           {
             "text": "τοῦ",
@@ -17536,7 +17546,7 @@
             ]
           },
           {
-            "text": "ἐκ",
+            "text": "from",
             "after": " ",
             "ids": [
               "s2"
@@ -17681,10 +17691,11 @@
           },
           {
             "text": "from",
-            "ids": [],
+            "ids": [
+              "s2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "auto-high"
           },
           {
             "text": "the",

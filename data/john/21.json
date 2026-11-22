@@ -11630,7 +11630,7 @@
     {
       "v": 17,
       "greek": "λέγει αὐτῷ τὸ τρίτον· Σίμων Ἰωάννου, φιλεῖς με; ἐλυπήθη ὁ Πέτρος ὅτι εἶπεν αὐτῷ τὸ τρίτον· Φιλεῖς με; καὶ εἶπεν αὐτῷ· Κύριε, πάντα σὺ οἶδας, σὺ γινώσκεις ὅτι φιλῶ σε. λέγει αὐτῷ ὁ Ἰησοῦς· Βόσκε τὰ πρόβατά μου.",
-      "literal": "He says to him the third time Simon son of John do you dearly love Me? Was grieved the Peter because He said to him the third time Do you dearly love Me? And εἶπεν to Him Lord all things You yourself know You yourself know that I dearly love You. Says to him the Jesus do feed the sheep of Mine.",
+      "literal": "He says to him the third time Simon son of John do you dearly love Me? Was grieved the Peter because He said to him the third time Do you dearly love Me? And he said to Him Lord all things You yourself know You yourself know that I dearly love You. Says to him the Jesus do feed the sheep of Mine.",
       "dgt": "He says to him the third time, “Simon, son of John, do you love me?” Peter was grieved because he said to him the third time, “Do you love me?” And he said to him, “Lord, you know all things; you know that I love you.” Jesus says to him, “Feed my sheep.",
       "notes": [],
       "alignment": {
@@ -11830,7 +11830,10 @@
             "after": " ",
             "ids": [
               "s20"
-            ]
+            ],
+            "gloss": "he said",
+            "strongs": "G2036",
+            "morph": "V-2AAI-3S"
           },
           {
             "text": "αὐτῷ·",
@@ -12416,7 +12419,7 @@
             ]
           },
           {
-            "text": "εἶπεν",
+            "text": "he said",
             "after": " ",
             "ids": [
               "s20"
@@ -12798,17 +12801,19 @@
           },
           {
             "text": "he",
-            "ids": [],
+            "ids": [
+              "s20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "auto-high"
           },
           {
             "text": "said",
-            "ids": [],
+            "ids": [
+              "s20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "auto-high"
           },
           {
             "text": "to",
@@ -18373,7 +18378,7 @@
     {
       "v": 25,
       "greek": "ἔστιν δὲ καὶ ἄλλα πολλὰ ἃ ἐποίησεν ὁ Ἰησοῦς, ἅτινα ἐὰν γράφηται καθʼ ἕν, οὐδʼ αὐτὸν οἶμαι τὸν κόσμον χωρήσειν τὰ γραφόμενα βιβλία.",
-      "literal": "There are now also other things many that did the Jesus which if they shall be written every one not even itself I suppose the world χωρήσειν for the to be written books.",
+      "literal": "There are now also other things many that did the Jesus which if they shall be written every one not even itself I suppose the world to have room for for the to be written books.",
       "dgt": "And there are also many other things that Jesus did, which, if they were written one by one, I suppose not even the world itself would have room for the books being written.",
       "notes": [],
       "alignment": {
@@ -18573,7 +18578,10 @@
             "after": " ",
             "ids": [
               "s20"
-            ]
+            ],
+            "gloss": "to have room for",
+            "strongs": "G5562",
+            "morph": "V-FAN"
           },
           {
             "text": "τὰ",
@@ -18904,7 +18912,7 @@
             ]
           },
           {
-            "text": "χωρήσειν",
+            "text": "to have room for",
             "after": " ",
             "ids": [
               "s20"
@@ -19134,29 +19142,32 @@
           },
           {
             "text": "would",
-            "ids": [],
+            "ids": [
+              "s20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "auto-high"
           },
           {
             "text": "have",
-            "ids": [],
+            "ids": [
+              "s20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "auto-high"
           },
           {
             "text": "room",
-            "ids": [],
+            "ids": [
+              "s20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "auto-high"
           },
           {
             "text": "for",
             "ids": [
-              "w21"
+              "s20"
             ],
             "after": " ",
             "confidence": "auto-high"
