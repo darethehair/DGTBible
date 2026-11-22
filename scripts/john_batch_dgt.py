@@ -122,15 +122,15 @@ def fill_contextual(items,src):
   if kind=='art':return m.startswith('T-')
   if kind=='prep':return 'PREP' in m
   if kind=='conj':return 'CONJ' in m or m.startswith('ADV') or m.startswith('R-')
-  if kind=='neg':return '-N' in m or bool(re.search(r'\b(no|not|never|neither)\b',g))
+  if kind=='neg':return '-N' in m or bool(re.search(r'\\b(no|not|never|neither)\\b',g))
   return False
- # English auxiliaries can safely share a nearby, already-linked Greek verb.
+
+ # Auxiliaries may share a nearby already-linked Greek verb.
  for i,x in enumerate(items):
   if x['ids'] or cat(x['text'])!='aux':continue
   candidates=[]
   for j in range(max(0,i-2),min(len(items),i+3)):
    if j==i:continue
-   if any(cat(items[k]['text']) not in {'aux','neg','pron',None} for k in range(min(i,j)+1,max(i,j))):continue
    for id in items[j]['ids']:
     s=src[pos[id]]
     if (s.get('morph') or '').upper().startswith('V-'):candidates.append(id)
@@ -138,7 +138,7 @@ def fill_contextual(items,src):
   if len(candidates)==1:
    x['ids']=[candidates[0]];x['confidence']='auto-high';x.pop('reason',None)
 
- # Greek finite verbs encode their subject person/number even when no separate pronoun appears.
+ # Finite Greek verb morphology can directly support an explicit English subject pronoun.
  subject_person={'i':{'1S'},'we':{'1P'},'you':{'2S','2P'},'he':{'3S'},'she':{'3S'},'it':{'3S'},'they':{'3P'}}
  for i,x in enumerate(items):
   w=n(x['text'])
@@ -149,7 +149,13 @@ def fill_contextual(items,src):
    for id in items[j]['ids']:
     s=src[pos[id]];m=(s.get('morph') or '').upper()
     if not m.startswith('V-'):continue
-    pm=re.search(r'-(1S|2S|3S|1P|2P|3P) # Fill grammatical function words only inside a narrow interval bounded by trusted links.
+    pm=re.search(r'-(1S|2S|3S|1P|2P|3P)$',m)
+    if pm and pm.group(1) in subject_person[w]:candidates.append(id)
+  candidates=list(dict.fromkeys(candidates))
+  if len(candidates)==1:
+   x['ids']=[candidates[0]];x['confidence']='auto-high';x.pop('reason',None)
+
+ # Fill grammatical words only in a narrow interval bounded by trusted links.
  for i,x in enumerate(items):
   if x['ids']:continue
   kind=cat(x['text'])
@@ -166,7 +172,6 @@ def fill_contextual(items,src):
   hi=len(src)-1 if right is None else min(len(src)-1,right+1)
   if hi-lo>7:continue
   cs=[s for k,s in enumerate(src) if lo<=k<=hi and compatible(kind,s)]
-  # Prefer an unused local grammatical token; require uniqueness after excluding already-used IDs nearby.
   used={id for y in items[max(0,i-3):min(len(items),i+4)] for id in y['ids']}
   free=[s for s in cs if s['id'] not in used]
   if len(free)==1:
