@@ -1,4 +1,4 @@
-const CACHE='dgtbible-v009';
+const CACHE='dgtbible-v010';
 const ASSETS=['./','index.html','style.css','app.js','manifest.webmanifest','icons/icon.svg','data/john/01.json','data/john/02.json'];
 
 self.addEventListener('install',event=>{
