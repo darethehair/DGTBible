@@ -62,6 +62,7 @@ function renderAligned(container,key,verse,fallback){
   if(!items){container.textContent=fallback;return}
   container.innerHTML=items.map(item=>{
     const ids=(item.ids||[]).join(',');
+    if(!ids) return `<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`;
     return `<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`;
   }).join('');
   container.querySelectorAll('.align-token').forEach(el=>{
@@ -124,14 +125,27 @@ async function show(ch,v,push=true,scroll=true){
   }catch(e){$('status').textContent=e.message}
 }
 async function moveVerse(delta){
-  let ch=state.chapter,v=state.verse+delta;
+  let ch=state.chapter;
   const chapterIndex=availableChapters.indexOf(ch);
-  const firstVerse=state.data?.verses[0]?.v??1;
-  const lastVerse=state.data?.verses.at(-1)?.v??1;
-  if(v<firstVerse&&chapterIndex>0){ch=availableChapters[chapterIndex-1];const d=await loadChapter(ch);v=d.verses.at(-1).v}
-  else if(v>lastVerse&&chapterIndex>=0&&chapterIndex<availableChapters.length-1){ch=availableChapters[chapterIndex+1];const d=await loadChapter(ch);v=d.verses[0].v}
-  else if(v<firstVerse||v>lastVerse)return;
-  await show(ch,v);
+  const verses=state.data?.verses||[];
+  const verseIndex=verses.findIndex(x=>x.v===state.verse);
+  if(verseIndex<0)return;
+  const nextIndex=verseIndex+delta;
+  if(nextIndex>=0&&nextIndex<verses.length){
+    await show(ch,verses[nextIndex].v);
+    return;
+  }
+  if(nextIndex<0&&chapterIndex>0){
+    ch=availableChapters[chapterIndex-1];
+    const d=await loadChapter(ch);
+    await show(ch,d.verses.at(-1).v);
+    return;
+  }
+  if(nextIndex>=verses.length&&chapterIndex>=0&&chapterIndex<availableChapters.length-1){
+    ch=availableChapters[chapterIndex+1];
+    const d=await loadChapter(ch);
+    await show(ch,d.verses[0].v);
+  }
 }
 $('refForm').addEventListener('submit',e=>{e.preventDefault();const r=parseRef($('ref').value);if(!r){$('status').textContent='Try a reference such as John 1:18.';return}setMode('study');show(r.chapter,r.verse)});
 $('chapter').addEventListener('change',async e=>{const ch=+e.target.value;const d=await loadChapter(ch);show(ch,d.verses[0].v,true,false)});
