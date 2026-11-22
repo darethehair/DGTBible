@@ -124,15 +124,83 @@ def fill_contextual(items,src):
   if kind=='conj':return 'CONJ' in m or m.startswith('ADV') or m.startswith('R-')
   if kind=='neg':return '-N' in m or bool(re.search(r'\b(no|not|never|neither)\b',g))
   return False
- # English auxiliaries can safely share an adjacent, already-linked Greek verb.
+ # English auxiliaries can safely share a nearby, already-linked Greek verb.
  for i,x in enumerate(items):
   if x['ids'] or cat(x['text'])!='aux':continue
   candidates=[]
-  for j in (i-1,i+1):
-   if 0<=j<len(items):
-    for id in items[j]['ids']:
-     s=src[pos[id]]
-     if (s.get('morph') or '').upper().startswith('V-'):candidates.append(id)
+  for j in range(max(0,i-2),min(len(items),i+3)):
+   if j==i:continue
+   if any(cat(items[k]['text']) not in {'aux','neg','pron',None} for k in range(min(i,j)+1,max(i,j))):continue
+   for id in items[j]['ids']:
+    s=src[pos[id]]
+    if (s.get('morph') or '').upper().startswith('V-'):candidates.append(id)
+  candidates=list(dict.fromkeys(candidates))
+  if len(candidates)==1:
+   x['ids']=[candidates[0]];x['confidence']='auto-high';x.pop('reason',None)
+
+ # Greek finite verbs encode their subject person/number even when no separate pronoun appears.
+ subject_person={'i':{'1S'},'we':{'1P'},'you':{'2S','2P'},'he':{'3S'},'she':{'3S'},'it':{'3S'},'they':{'3P'}}
+ for i,x in enumerate(items):
+  w=n(x['text'])
+  if x['ids'] or w not in subject_person:continue
+  candidates=[]
+  for j in range(max(0,i-2),min(len(items),i+4)):
+   if j==i:continue
+   for id in items[j]['ids']:
+    s=src[pos[id]];m=(s.get('morph') or '').upper()
+    if not m.startswith('V-'):continue
+    pm=re.search(r'-(1S|2S|3S|1P|2P|3P) # Fill grammatical function words only inside a narrow interval bounded by trusted links.
+ for i,x in enumerate(items):
+  if x['ids']:continue
+  kind=cat(x['text'])
+  if kind not in {'pron','art','prep','conj','neg'}:continue
+  left=right=None
+  for j in range(i-1,-1,-1):
+   if items[j]['ids']:
+    left=max(pos[id] for id in items[j]['ids'] if id in pos);break
+  for j in range(i+1,len(items)):
+   if items[j]['ids']:
+    right=min(pos[id] for id in items[j]['ids'] if id in pos);break
+  if left is None and right is None:continue
+  lo=0 if left is None else max(0,left-1)
+  hi=len(src)-1 if right is None else min(len(src)-1,right+1)
+  if hi-lo>7:continue
+  cs=[s for k,s in enumerate(src) if lo<=k<=hi and compatible(kind,s)]
+  # Prefer an unused local grammatical token; require uniqueness after excluding already-used IDs nearby.
+  used={id for y in items[max(0,i-3):min(len(items),i+4)] for id in y['ids']}
+  free=[s for s in cs if s['id'] not in used]
+  if len(free)==1:
+   x['ids']=[free[0]['id']];x['confidence']='auto-high';x.pop('reason',None)
+ return prune(items,src)
+
+def prune(items,src):
+ g={s['id']:s for s in src}
+ for _ in range(5):
+  p=collections.defaultdict(list)
+  for i,x in enumerate(items):
+   for id in x['ids']:p[id].append(i)
+  changed=False
+  for id,ps in p.items():
+   if len(ps)<2 or all(ps[k]==ps[k-1]+1 for k in range(1,len(ps))):continue
+   gw=words(g[id].get('gloss',''));si=next((j for j,s in enumerate(src) if s['id']==id),0)
+   tp=si/max(1,len(src)-1)*max(1,len(items)-1)
+   anchor=max(ps,key=lambda i:(max([sim(items[i]['text'],w) for w in gw] or [0]),-abs(i-tp)))
+   keep={anchor}
+   for d in (-1,1):
+    k=anchor+d
+    while k in ps and max([sim(items[k]['text'],w) for w in gw] or [0])>0:
+     keep.add(k);k+=d
+   for i in ps:
+    if i in keep:continue
+    items[i]['ids']=[x for x in items[i]['ids'] if x!=id]
+    if not items[i]['ids']:
+     items[i]['confidence']='unlinked'
+     items[i]['reason']='Ambiguous noncontiguous helper-word alignment withheld'
+    changed=True
+  if not changed:break
+ return items
+,m)
+    if pm and pm.group(1) in subject_person[w]:candidates.append(id)
   candidates=list(dict.fromkeys(candidates))
   if len(candidates)==1:
    x['ids']=[candidates[0]];x['confidence']='auto-high';x.pop('reason',None)
