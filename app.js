@@ -22,7 +22,23 @@ async function loadBookManifest(){
 }
 async function loadChapter(ch){const r=await fetch(`data/john/${String(ch).padStart(2,'0')}.json`);if(!r.ok)throw new Error(`John ${ch} is not loaded yet.`);return r.json()}
 function parseRef(s){const m=s.trim().match(/^(?:john|jn|joh)?\s*(\d+)\s*[:.]\s*(\d+)$/i);return m?{chapter:+m[1],verse:+m[2]}:null}
-function setMode(mode){state.mode=mode;localStorage.setItem('dgt-mode',mode);$('studyView').hidden=mode!=='study';$('chapterView').hidden=mode!=='chapter';document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));if(state.data) mode==='chapter'?renderChapter():renderStudy()}
+function scrollToChapterVerse(verse=state.verse,behavior='smooth'){
+  const target=$('v'+verse);
+  if(target) target.scrollIntoView({behavior,block:'start'});
+}
+function setMode(mode){
+  state.mode=mode;
+  localStorage.setItem('dgt-mode',mode);
+  $('studyView').hidden=mode!=='study';
+  $('chapterView').hidden=mode!=='chapter';
+  document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));
+  if(state.data){
+    if(mode==='chapter'){
+      renderChapter();
+      requestAnimationFrame(()=>scrollToChapterVerse(state.verse));
+    }else renderStudy();
+  }
+}
 function saveLayers(){localStorage.setItem('dgt-layers',JSON.stringify(layers));renderChapter()}
 function renderLayerControls(){document.querySelectorAll('[data-layer]').forEach(cb=>{cb.checked=!!layers[cb.dataset.layer];cb.onchange=()=>{layers[cb.dataset.layer]=cb.checked;saveLayers()}})}
 function clearAlignment(){
@@ -65,7 +81,16 @@ function renderStudy(){
   $('prevVerse').disabled=chapterIndex===0&&state.verse===firstVerse;$('nextVerse').disabled=chapterIndex===availableChapters.length-1&&state.verse===lastVerse;
   $('studyPosition').textContent=`John ${state.chapter}:${state.verse}`;
 }
-function renderGrid(){const g=$('verseGrid');g.innerHTML='';for(const x of state.data.verses){const b=document.createElement('button');b.textContent=x.v;b.className=x.v===state.verse?'active':'';b.onclick=()=>show(state.chapter,x.v);g.appendChild(b)}}
+function renderGrid(){
+  const g=$('verseGrid');g.innerHTML='';
+  for(const x of state.data.verses){
+    const b=document.createElement('button');
+    b.textContent=x.v;
+    b.className=x.v===state.verse?'active':'';
+    b.onclick=()=>show(state.chapter,x.v,true,true);
+    g.appendChild(b);
+  }
+}
 function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function renderChapter(){
   if(!state.data)return;
@@ -87,7 +112,10 @@ async function show(ch,v,push=true,scroll=true){
     Object.assign(state,{chapter:ch,verse:v});$('status').textContent='';$('ref').value=`John ${ch}:${v}`;$('chapter').value=String(ch);$('chapterTitle').textContent=`John ${ch}`;renderGrid();
     if(state.mode==='study')renderStudy(); else renderChapter();
     if(push)location.hash=`John.${ch}.${v}`;
-    if(scroll&&state.mode==='study')$('verseCard').scrollIntoView({behavior:'smooth',block:'start'});
+    if(scroll){
+      if(state.mode==='study') $('verseCard').scrollIntoView({behavior:'smooth',block:'start'});
+      else requestAnimationFrame(()=>scrollToChapterVerse(state.verse));
+    }
   }catch(e){$('status').textContent=e.message}
 }
 async function moveVerse(delta){
