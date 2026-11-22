@@ -1,5 +1,6 @@
 const APP_VERSION='v0.11';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
+let availableChapters=[1,2];
 const $=id=>document.getElementById(id);
 const layerDefaults={greek:true,translit:false,literal:false,dgt:true,notes:false};
 const layers={...layerDefaults,...JSON.parse(localStorage.getItem('dgt-layers')||'{}')};
@@ -7,6 +8,17 @@ const layers={...layerDefaults,...JSON.parse(localStorage.getItem('dgt-layers')|
 function transliterateGreek(s){
   const map={'α':'a','β':'b','γ':'g','δ':'d','ε':'e','ζ':'z','η':'ē','θ':'th','ι':'i','κ':'k','λ':'l','μ':'m','ν':'n','ξ':'x','ο':'o','π':'p','ρ':'r','σ':'s','ς':'s','τ':'t','υ':'y','φ':'ph','χ':'ch','ψ':'ps','ω':'ō','Α':'A','Β':'B','Γ':'G','Δ':'D','Ε':'E','Ζ':'Z','Η':'Ē','Θ':'Th','Ι':'I','Κ':'K','Λ':'L','Μ':'M','Ν':'N','Ξ':'X','Ο':'O','Π':'P','Ρ':'R','Σ':'S','Τ':'T','Υ':'Y','Φ':'Ph','Χ':'Ch','Ψ':'Ps','Ω':'Ō'};
   return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').split('').map(c=>map[c]??c).join('');
+}
+async function loadBookManifest(){
+  try{
+    const r=await fetch('data/john/manifest.json');
+    if(!r.ok) throw new Error('manifest unavailable');
+    const manifest=await r.json();
+    const chapters=(manifest.chapters||[]).map(x=>Number(x.chapter)).filter(Number.isInteger).sort((a,b)=>a-b);
+    if(chapters.length) availableChapters=chapters;
+  }catch(_){}
+  const select=$('chapter');
+  select.innerHTML=availableChapters.map(ch=>`<option value="${ch}">${ch}</option>`).join('');
 }
 async function loadChapter(ch){const r=await fetch(`data/john/${String(ch).padStart(2,'0')}.json`);if(!r.ok)throw new Error(`John ${ch} is not loaded yet.`);return r.json()}
 function parseRef(s){const m=s.trim().match(/^(?:john|jn|joh)?\s*(\d+)\s*[:.]\s*(\d+)$/i);return m?{chapter:+m[1],verse:+m[2]}:null}
@@ -49,7 +61,8 @@ function renderStudy(){
   const alignNotice=$('alignmentNotice');
   alignNotice.hidden=!!verse.alignment;
   alignNotice.textContent=verse.alignment?'':'Word alignment for this verse has not yet been manually curated.';
-  $('prevVerse').disabled=state.chapter===1&&state.verse===1;$('nextVerse').disabled=state.chapter===2&&state.verse===25;
+  const chapterIndex=availableChapters.indexOf(state.chapter);const firstVerse=state.data.verses[0].v;const lastVerse=state.data.verses.at(-1).v;
+  $('prevVerse').disabled=chapterIndex===0&&state.verse===firstVerse;$('nextVerse').disabled=chapterIndex===availableChapters.length-1&&state.verse===lastVerse;
   $('studyPosition').textContent=`John ${state.chapter}:${state.verse}`;
 }
 function renderGrid(){const g=$('verseGrid');g.innerHTML='';for(const x of state.data.verses){const b=document.createElement('button');b.textContent=x.v;b.className=x.v===state.verse?'active':'';b.onclick=()=>show(state.chapter,x.v);g.appendChild(b)}}
@@ -79,13 +92,16 @@ async function show(ch,v,push=true,scroll=true){
 }
 async function moveVerse(delta){
   let ch=state.chapter,v=state.verse+delta;
-  if(v<1&&ch>1){ch--;const d=await loadChapter(ch);v=d.verses.at(-1).v}
-  else if(state.data&&v>state.data.verses.at(-1).v&&ch<2){ch++;v=1}
-  else if(v<1||v>(state.data?.verses.at(-1).v||1))return;
+  const chapterIndex=availableChapters.indexOf(ch);
+  const firstVerse=state.data?.verses[0]?.v??1;
+  const lastVerse=state.data?.verses.at(-1)?.v??1;
+  if(v<firstVerse&&chapterIndex>0){ch=availableChapters[chapterIndex-1];const d=await loadChapter(ch);v=d.verses.at(-1).v}
+  else if(v>lastVerse&&chapterIndex>=0&&chapterIndex<availableChapters.length-1){ch=availableChapters[chapterIndex+1];const d=await loadChapter(ch);v=d.verses[0].v}
+  else if(v<firstVerse||v>lastVerse)return;
   await show(ch,v);
 }
 $('refForm').addEventListener('submit',e=>{e.preventDefault();const r=parseRef($('ref').value);if(!r){$('status').textContent='Try a reference such as John 1:18.';return}setMode('study');show(r.chapter,r.verse)});
-$('chapter').addEventListener('change',async e=>show(+e.target.value,1,true,false));
+$('chapter').addEventListener('change',async e=>{const ch=+e.target.value;const d=await loadChapter(ch);show(ch,d.verses[0].v,true,false)});
 $('copyLink').onclick=async()=>{await navigator.clipboard.writeText(location.href);$('copyLink').textContent='Copied';setTimeout(()=>$('copyLink').textContent='Copy link',1200)};
 $('verseCard').addEventListener('mouseleave',clearAlignment);
 $('verseCard').addEventListener('click',e=>{if(!e.target.closest('.align-token'))clearAlignment()});
@@ -94,4 +110,4 @@ document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.data
 document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
 let touchX=null;$('studyView').addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});$('studyView').addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;touchX=null;if(Math.abs(dx)>70)moveVerse(dx>0?-1:1)},{passive:true});
 window.addEventListener('hashchange',()=>{const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);if(m)show(+m[1],+m[2],false,false)});
-(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');renderLayerControls();setMode(state.mode);const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);await show(m?+m[1]:1,m?+m[2]:1,false,false)})();
+(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await loadBookManifest();renderLayerControls();setMode(state.mode);const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);await show(m?+m[1]:availableChapters[0],m?+m[2]:1,false,false)})();

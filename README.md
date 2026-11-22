@@ -27,3 +27,7 @@ DGT translation and notes are separate original project content.
 ## Status
 
 Experimental study edition; not a formally published or peer-reviewed critical edition.
+
+## Data validation
+
+Before deployment, GitHub Actions runs `node scripts/validate-john.mjs`. It checks chapter/verse coverage, alignment reconstruction, alignment IDs, preserved STEPBible source coverage and metadata consistency, and curated overrides. John 1:1 is stored as a protected hand-curated override in `data/john/curated-overrides.json`; after any generated alignment pass, run `node scripts/apply-curated-overrides.mjs` before validation.
