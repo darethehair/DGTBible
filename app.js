@@ -1,4 +1,4 @@
-const APP_VERSION='v0.13';
+const APP_VERSION='v0.14';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let availableChapters=[1,2];
 const $=id=>document.getElementById(id);
@@ -31,16 +31,28 @@ function scrollToChapterVerse(verse=state.verse,behavior='smooth'){
   const top=window.scrollY+target.getBoundingClientRect().top-toolbarHeight-extra;
   window.scrollTo({top:Math.max(0,top),behavior});
 }
+function scrollToCompactVerse(verse=state.verse,behavior='smooth'){
+  const target=$('compact-v'+verse);
+  if(!target)return;
+  const toolbar=document.querySelector('.compact-toolbar');
+  const offset=(toolbar?.getBoundingClientRect().height||0)+12;
+  const top=window.scrollY+target.getBoundingClientRect().top-offset;
+  window.scrollTo({top:Math.max(0,top),behavior});
+}
 function setMode(mode){
   state.mode=mode;
   localStorage.setItem('dgt-mode',mode);
   $('studyView').hidden=mode!=='study';
   $('chapterView').hidden=mode!=='chapter';
+  $('compactView').hidden=mode!=='compact';
   document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));
   if(state.data){
     if(mode==='chapter'){
       renderChapter();
       requestAnimationFrame(()=>scrollToChapterVerse(state.verse));
+    }else if(mode==='compact'){
+      renderCompact();
+      requestAnimationFrame(()=>scrollToCompactVerse(state.verse));
     }else renderStudy();
   }
 }
@@ -93,11 +105,25 @@ function renderGrid(){
     const b=document.createElement('button');
     b.textContent=x.v;
     b.className=x.v===state.verse?'active':'';
-    b.onclick=()=>show(state.chapter,x.v,true,true);
+    b.onclick=()=>{
+      if(state.mode==='chapter') show(state.chapter,x.v,true,true);
+      else if(state.mode==='compact') show(state.chapter,x.v,true,true);
+      else show(state.chapter,x.v,true,true);
+    };
     g.appendChild(b);
   }
 }
 function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function renderCompact(){
+  if(!state.data)return;
+  $('compactHeading').textContent=`John ${state.chapter}`;
+  $('compactReading').innerHTML=state.data.verses.map(v=>`<span class="compact-verse" id="compact-v${v.v}"><button class="compact-number" data-compact-study="${v.v}" title="Study John ${state.chapter}:${v.v}">${v.v}</button><span class="compact-text">${esc(v.dgt)}</span></span>`).join(' ');
+  document.querySelectorAll('[data-compact-study]').forEach(b=>b.onclick=()=>{
+    state.verse=+b.dataset.compactStudy;
+    setMode('study');
+    show(state.chapter,state.verse);
+  });
+}
 function renderChapter(){
   if(!state.data)return;
   $('chapterHeading').textContent=`John ${state.chapter}`;
@@ -116,11 +142,14 @@ async function show(ch,v,push=true,scroll=true){
     state.data=await loadChapter(ch);
     const verse=state.data.verses.find(x=>x.v===v); if(!verse)throw new Error(`John ${ch}:${v} is not loaded.`);
     Object.assign(state,{chapter:ch,verse:v});$('status').textContent='';$('ref').value=`John ${ch}:${v}`;$('chapter').value=String(ch);$('chapterTitle').textContent=`John ${ch}`;renderGrid();
-    if(state.mode==='study')renderStudy(); else renderChapter();
+    if(state.mode==='study') renderStudy();
+    else if(state.mode==='chapter') renderChapter();
+    else renderCompact();
     if(push)location.hash=`John.${ch}.${v}`;
     if(scroll){
       if(state.mode==='study') $('verseCard').scrollIntoView({behavior:'smooth',block:'start'});
-      else requestAnimationFrame(()=>scrollToChapterVerse(state.verse));
+      else if(state.mode==='chapter') requestAnimationFrame(()=>scrollToChapterVerse(state.verse));
+      else requestAnimationFrame(()=>scrollToCompactVerse(state.verse));
     }
   }catch(e){$('status').textContent=e.message}
 }
