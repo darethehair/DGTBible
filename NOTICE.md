@@ -8,6 +8,9 @@ SBLGNT © 2010 Society of Biblical Literature and Logos Bible Software.
 
 Source: https://github.com/Faithlife/SBLGNT
 
+Pinned SBLGNT revision used for the John 3 source snapshot:
+`Faithlife/SBLGNT@d7f35adca9ec410e1d1499c63b4dd989d76c8d4d`
+
 Licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0):
 https://creativecommons.org/licenses/by/4.0/
 
