@@ -1,4 +1,4 @@
-const APP_VERSION='v0.16';
+const APP_VERSION='v0.17';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let availableChapters=[1,2];
 let paragraphStarts={};
