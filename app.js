@@ -12,10 +12,38 @@ function parseRef(s){const m=s.trim().match(/^(?:john|jn|joh)?\s*(\d+)\s*[:.]\s*
 function setMode(mode){state.mode=mode;localStorage.setItem('dgt-mode',mode);$('studyView').hidden=mode!=='study';$('chapterView').hidden=mode!=='chapter';document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));if(state.data) mode==='chapter'?renderChapter():renderStudy()}
 function saveLayers(){localStorage.setItem('dgt-layers',JSON.stringify(layers));renderChapter()}
 function renderLayerControls(){document.querySelectorAll('[data-layer]').forEach(cb=>{cb.checked=!!layers[cb.dataset.layer];cb.onchange=()=>{layers[cb.dataset.layer]=cb.checked;saveLayers()}})}
+function clearAlignment(){
+  document.querySelectorAll('.align-token.active').forEach(el=>el.classList.remove('active'));
+}
+function highlightAlignment(ids){
+  clearAlignment();
+  if(!ids?.length)return;
+  document.querySelectorAll('.align-token').forEach(el=>{
+    const mine=(el.dataset.ids||'').split(',');
+    if(mine.some(id=>ids.includes(id))) el.classList.add('active');
+  });
+}
+function renderAligned(container,key,verse,fallback){
+  const items=verse.alignment?.[key];
+  if(!items){container.textContent=fallback;return}
+  container.innerHTML=items.map(item=>{
+    const ids=(item.ids||[]).join(',');
+    return `<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`;
+  }).join('');
+  container.querySelectorAll('.align-token').forEach(el=>{
+    const go=()=>highlightAlignment((el.dataset.ids||'').split(',').filter(Boolean));
+    el.addEventListener('click',go);
+    el.addEventListener('mouseenter',go);
+    el.addEventListener('focus',go);
+  });
+}
 function renderStudy(){
   const verse=state.data.verses.find(x=>x.v===state.verse); if(!verse)return;
   $('verseCard').hidden=false;$('reference').textContent=`John ${state.chapter}:${state.verse}`;
-  $('greek').textContent=verse.greek;$('translit').textContent=transliterateGreek(verse.greek);$('literal').textContent=verse.literal;$('english').textContent=verse.dgt;
+  renderAligned($('greek'),'greek',verse,verse.greek);
+  renderAligned($('translit'),'translit',verse,transliterateGreek(verse.greek));
+  renderAligned($('literal'),'literal',verse,verse.literal);
+  renderAligned($('english'),'dgt',verse,verse.dgt);
   const notes=verse.notes||[];$('notesWrap').hidden=!notes.length;$('notes').innerHTML=notes.map(n=>`<p>${n}</p>`).join('');
   $('prevVerse').disabled=state.chapter===1&&state.verse===1;$('nextVerse').disabled=state.chapter===2&&state.verse===25;
   $('studyPosition').textContent=`John ${state.chapter}:${state.verse}`;
@@ -55,6 +83,8 @@ async function moveVerse(delta){
 $('refForm').addEventListener('submit',e=>{e.preventDefault();const r=parseRef($('ref').value);if(!r){$('status').textContent='Try a reference such as John 1:18.';return}setMode('study');show(r.chapter,r.verse)});
 $('chapter').addEventListener('change',async e=>show(+e.target.value,1,true,false));
 $('copyLink').onclick=async()=>{await navigator.clipboard.writeText(location.href);$('copyLink').textContent='Copied';setTimeout(()=>$('copyLink').textContent='Copy link',1200)};
+$('verseCard').addEventListener('mouseleave',clearAlignment);
+$('verseCard').addEventListener('click',e=>{if(!e.target.closest('.align-token'))clearAlignment()});
 $('prevVerse').onclick=()=>moveVerse(-1);$('nextVerse').onclick=()=>moveVerse(1);
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
 document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
