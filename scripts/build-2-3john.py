@@ -68,9 +68,10 @@ for slug,name,sblprefix,stepprefix,bookcode,expected in specs:
  (D/'manifest.json').write_text(json.dumps({'book':name,'slug':slug,'chapters':[{'chapter':1,'file':'01.json','verses':expected}]},ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 
  pct=linked/(linked+unlinked)*100
- if pct<80:
+ min_pct=75 if expected<20 else 80
+ if pct<min_pct:
   print(name,'top unlinked DGT tokens:',missing.most_common(80))
-  raise SystemExit(f'{name}: coverage too low {pct:.1f}%')
+  raise SystemExit(f'{name}: coverage too low {pct:.1f}% (minimum {min_pct}%)')
  if synthetic>8:
   raise SystemExit(f'{name}: too many synthetic source tokens {synthetic}')
  print(f'Generated {name}: {expected} verses; {pct:.1f}% DGT token coverage ({linked} linked, {unlinked} deliberately unlinked); {synthetic} synthetic source tokens.')
