@@ -103,7 +103,62 @@ def align(text,src):
   x={'text':a+b+c,'ids':ids,'after':' ' if i<len(rs)-1 else '','confidence':conf}
   if reason:x['reason']=reason
   out.append(x)
- return prune(out,src)
+ return fill_contextual(prune(out,src),src)
+
+def fill_contextual(items,src):
+ pos={s['id']:i for i,s in enumerate(src)}
+ def cat(w):
+  w=n(w)
+  if w in PRON or w in {'who','whom','whose','what','which'}:return 'pron'
+  if w in ART:return 'art'
+  if w in PREP:return 'prep'
+  if w in CONJ or w in {'that','when','while','where','as'}:return 'conj'
+  if w in NEG:return 'neg'
+  if w in AUX:return 'aux'
+  return None
+ def compatible(kind,s):
+  m=(s.get('morph') or '').upper();g=' '.join(words(s.get('gloss',''))).lower()
+  if kind=='pron':return m.startswith(('P-','R-','D-','X-'))
+  if kind=='art':return m.startswith('T-')
+  if kind=='prep':return 'PREP' in m
+  if kind=='conj':return 'CONJ' in m or m.startswith('ADV') or m.startswith('R-')
+  if kind=='neg':return '-N' in m or bool(re.search(r'\b(no|not|never|neither)\b',g))
+  return False
+ # English auxiliaries can safely share an adjacent, already-linked Greek verb.
+ for i,x in enumerate(items):
+  if x['ids'] or cat(x['text'])!='aux':continue
+  candidates=[]
+  for j in (i-1,i+1):
+   if 0<=j<len(items):
+    for id in items[j]['ids']:
+     s=src[pos[id]]
+     if (s.get('morph') or '').upper().startswith('V-'):candidates.append(id)
+  candidates=list(dict.fromkeys(candidates))
+  if len(candidates)==1:
+   x['ids']=[candidates[0]];x['confidence']='auto-high';x.pop('reason',None)
+ # Fill grammatical function words only inside a narrow interval bounded by trusted links.
+ for i,x in enumerate(items):
+  if x['ids']:continue
+  kind=cat(x['text'])
+  if kind not in {'pron','art','prep','conj','neg'}:continue
+  left=right=None
+  for j in range(i-1,-1,-1):
+   if items[j]['ids']:
+    left=max(pos[id] for id in items[j]['ids'] if id in pos);break
+  for j in range(i+1,len(items)):
+   if items[j]['ids']:
+    right=min(pos[id] for id in items[j]['ids'] if id in pos);break
+  if left is None and right is None:continue
+  lo=0 if left is None else max(0,left-1)
+  hi=len(src)-1 if right is None else min(len(src)-1,right+1)
+  if hi-lo>7:continue
+  cs=[s for k,s in enumerate(src) if lo<=k<=hi and compatible(kind,s)]
+  # Prefer an unused local grammatical token; require uniqueness after excluding already-used IDs nearby.
+  used={id for y in items[max(0,i-3):min(len(items),i+4)] for id in y['ids']}
+  free=[s for s in cs if s['id'] not in used]
+  if len(free)==1:
+   x['ids']=[free[0]['id']];x['confidence']='auto-high';x.pop('reason',None)
+ return prune(items,src)
 
 def prune(items,src):
  g={s['id']:s for s in src}
