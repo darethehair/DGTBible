@@ -18,7 +18,7 @@ G=[
 ['leave','left'],['lie','lies','lay','lying','lain'],['sick','ailing','ill','infirmity'],['multitude','number','many','crowd'],
 ['old','elder','older'],['write','wrote','written','writing'],['take','took','taken','receive','received'],['make','made','become','became'],
 ['tell','told','report','reported'],['ask','asked','request','requested'],['fear','afraid'],['rejoice','rejoiced','glad'],
-['find','found'],['call','called'],['lead','led'],['kill','killed','murder','murderer'],['hold','held','seize','seized'],
+['find','found'],['call','called'],['lead','led'],['kill','killed','murder','murderer'],['hold','held','seize','seized'],['brother','brothers','sibling','siblings'],['stranger','strangers','foreign'],['prosper','prospers','prospered','prospering'],['health','healthy','well'],['support','supported','welcome','welcomes','welcomed','receive','received'],['worker','workers','fellowworker','fellowworkers'],['prevent','prevents','prevented','hinder','hinders','hindered'],['throw','throws','threw','cast','casts'],['imitate','imitates','imitated','follow','follows'],['good','goodness'],['friend','friends'],['name','names'],['first','preeminent'],['nonsense','babble','gossip'],
 ['keep','kept','observe'],['break','broken'],['porch','porches','portico','porticoes','colonnade','colonnades'],['clay','mud'],['fragment','fragments','piece','pieces'],['seed','offspring','descendant','descendants'],['word','words','saying','sayings'],['all','everything'],['nothing','none'],['pick','picked','take','took','taken'],['valid','true','truthful'],['forever','everlasting','eternal']
 ]
 S={}
