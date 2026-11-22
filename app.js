@@ -1,4 +1,4 @@
-const APP_VERSION='v0.12';
+const APP_VERSION='v0.13';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let availableChapters=[1,2];
 const $=id=>document.getElementById(id);
