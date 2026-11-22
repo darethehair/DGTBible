@@ -1,6 +1,7 @@
-const APP_VERSION='v0.14';
+const APP_VERSION='v0.15';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let availableChapters=[1,2];
+let paragraphStarts={};
 const $=id=>document.getElementById(id);
 const layerDefaults={greek:true,translit:false,literal:false,dgt:true,notes:false};
 const layers={...layerDefaults,...JSON.parse(localStorage.getItem('dgt-layers')||'{}')};
@@ -8,6 +9,14 @@ const layers={...layerDefaults,...JSON.parse(localStorage.getItem('dgt-layers')|
 function transliterateGreek(s){
   const map={'α':'a','β':'b','γ':'g','δ':'d','ε':'e','ζ':'z','η':'ē','θ':'th','ι':'i','κ':'k','λ':'l','μ':'m','ν':'n','ξ':'x','ο':'o','π':'p','ρ':'r','σ':'s','ς':'s','τ':'t','υ':'y','φ':'ph','χ':'ch','ψ':'ps','ω':'ō','Α':'A','Β':'B','Γ':'G','Δ':'D','Ε':'E','Ζ':'Z','Η':'Ē','Θ':'Th','Ι':'I','Κ':'K','Λ':'L','Μ':'M','Ν':'N','Ξ':'X','Ο':'O','Π':'P','Ρ':'R','Σ':'S','Τ':'T','Υ':'Y','Φ':'Ph','Χ':'Ch','Ψ':'Ps','Ω':'Ō'};
   return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').split('').map(c=>map[c]??c).join('');
+}
+async function loadParagraphMap(){
+  try{
+    const r=await fetch('data/john/paragraphs.json');
+    if(!r.ok) throw new Error('paragraph map unavailable');
+    const data=await r.json();
+    paragraphStarts=data.chapters||{};
+  }catch(_){paragraphStarts={}}
 }
 async function loadBookManifest(){
   try{
@@ -117,7 +126,19 @@ function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;
 function renderCompact(){
   if(!state.data)return;
   $('compactHeading').textContent=`John ${state.chapter}`;
-  $('compactReading').innerHTML=state.data.verses.map(v=>`<span class="compact-verse" id="compact-v${v.v}"><button class="compact-number" data-compact-study="${v.v}" title="Study John ${state.chapter}:${v.v}">${v.v}</button><span class="compact-text">${esc(v.dgt)}</span></span>`).join(' ');
+  const starts=new Set((paragraphStarts[String(state.chapter)]||[state.data.verses[0]?.v]).map(Number));
+  let html='';
+  let open=false;
+  for(const v of state.data.verses){
+    if(starts.has(v.v)||!open){
+      if(open) html+='</p>';
+      html+='<p class="compact-paragraph">';
+      open=true;
+    }else html+=' ';
+    html+=`<span class="compact-verse" id="compact-v${v.v}"><button class="compact-number" data-compact-study="${v.v}" title="Study John ${state.chapter}:${v.v}">${v.v}</button><span class="compact-text">${esc(v.dgt)}</span></span>`;
+  }
+  if(open) html+='</p>';
+  $('compactReading').innerHTML=html;
   document.querySelectorAll('[data-compact-study]').forEach(b=>b.onclick=()=>{
     state.verse=+b.dataset.compactStudy;
     setMode('study');
@@ -186,4 +207,4 @@ document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.data
 document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
 let touchX=null;$('studyView').addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});$('studyView').addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;touchX=null;if(Math.abs(dx)>70)moveVerse(dx>0?-1:1)},{passive:true});
 window.addEventListener('hashchange',()=>{const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);if(m)show(+m[1],+m[2],false,false)});
-(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await loadBookManifest();renderLayerControls();setMode(state.mode);const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);await show(m?+m[1]:availableChapters[0],m?+m[2]:1,false,false)})();
+(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await Promise.all([loadBookManifest(),loadParagraphMap()]);renderLayerControls();setMode(state.mode);const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);await show(m?+m[1]:availableChapters[0],m?+m[2]:1,false,false)})();
