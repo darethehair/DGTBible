@@ -19,7 +19,7 @@ G=[
 ['old','elder','older'],['write','wrote','written','writing'],['take','took','taken','receive','received'],['make','made','become','became'],
 ['tell','told','report','reported'],['ask','asked','request','requested'],['fear','afraid'],['rejoice','rejoiced','glad'],
 ['find','found'],['call','called'],['lead','led'],['kill','killed','murder','murderer'],['hold','held','seize','seized'],
-['keep','kept','observe'],['break','broken']
+['keep','kept','observe'],['break','broken'],['porch','porches','portico','porticoes','colonnade','colonnades'],['clay','mud'],['fragment','fragments','piece','pieces'],['seed','offspring','descendant','descendants'],['word','words','saying','sayings'],['all','everything'],['nothing','none'],['pick','picked','take','took','taken'],['valid','true','truthful'],['forever','everlasting','eternal']
 ]
 S={}
 for g in G:
