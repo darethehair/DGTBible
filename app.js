@@ -1,7 +1,8 @@
-const APP_VERSION='v0.17';
+const APP_VERSION='v0.18';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let availableChapters=[1,2];
 let paragraphStarts={};
+let editorialNotes={};
 const $=id=>document.getElementById(id);
 const layerDefaults={greek:true,translit:false,literal:false,dgt:true,notes:false};
 const layers={...layerDefaults,...JSON.parse(localStorage.getItem('dgt-layers')||'{}')};
@@ -18,6 +19,14 @@ async function loadParagraphMap(){
     paragraphStarts=data.chapters||{};
   }catch(_){paragraphStarts={}}
 }
+async function loadEditorialNotes(){
+  try{
+    const r=await fetch('data/john/editorial-notes.json');
+    if(!r.ok) throw new Error('editorial notes unavailable');
+    const data=await r.json();
+    editorialNotes=data.notes||{};
+  }catch(_){editorialNotes={}}
+}
 async function loadBookManifest(){
   try{
     const r=await fetch('data/john/manifest.json');
@@ -29,7 +38,7 @@ async function loadBookManifest(){
   const select=$('chapter');
   select.innerHTML=availableChapters.map(ch=>`<option value="${ch}">${ch}</option>`).join('');
 }
-async function loadChapter(ch){const r=await fetch(`data/john/${String(ch).padStart(2,'0')}.json`);if(!r.ok)throw new Error(`John ${ch} is not loaded yet.`);return r.json()}
+async function loadChapter(ch){const r=await fetch(`data/john/${String(ch).padStart(2,'0')}.json`);if(!r.ok)throw new Error(`John ${ch} is not loaded yet.`);const data=await r.json();for(const v of data.verses||[]){const extra=editorialNotes[`${ch}:${v.v}`]||[];if(extra.length)v.notes=[...(v.notes||[]),...extra.filter(n=>!(v.notes||[]).includes(n))];}return data}
 function parseRef(s){const m=s.trim().match(/^(?:john|jn|joh)?\s*(\d+)\s*[:.]\s*(\d+)$/i);return m?{chapter:+m[1],verse:+m[2]}:null}
 function scrollToChapterVerse(verse=state.verse,behavior='smooth'){
   const target=$('v'+verse);
@@ -238,4 +247,4 @@ document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.data
 document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
 let touchX=null;$('studyView').addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});$('studyView').addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;touchX=null;if(Math.abs(dx)>70)moveVerse(dx>0?-1:1)},{passive:true});
 window.addEventListener('hashchange',()=>{const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);if(m)show(+m[1],+m[2],false,false)});
-(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await Promise.all([loadBookManifest(),loadParagraphMap()]);renderLayerControls();setMode(state.mode);const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);await show(m?+m[1]:availableChapters[0],m?+m[2]:1,false,false)})();
+(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await Promise.all([loadBookManifest(),loadParagraphMap(),loadEditorialNotes()]);renderLayerControls();setMode(state.mode);const m=location.hash.match(/^#John\.(\d+)\.(\d+)$/i);await show(m?+m[1]:availableChapters[0],m?+m[2]:1,false,false)})();
