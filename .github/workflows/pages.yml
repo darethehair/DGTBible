@@ -19,10 +19,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate Scripture data and alignments
+      - name: Validate Gospel of John
         run: node scripts/validate-john.mjs
-      - name: Semantic alignment audit
+      - name: Semantic alignment audit for John
         run: node scripts/audit-alignments.mjs
+      - name: Validate 1 John
+        run: python scripts/audit-1john.py
+      - name: Validate multi-book catalog
+        run: |
+          test -f data/books.json
+          test -f data/1john/manifest.json
+          test -f data/1john/editorial-notes.json
+          test -f data/1john/paragraphs.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
