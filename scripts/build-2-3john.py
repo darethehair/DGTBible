@@ -40,7 +40,7 @@ for slug,name,sblprefix,stepprefix,bookcode,expected in specs:
  for k in step:
   step[k].sort(key=lambda x:x['idx'])
 
- vs=[]; sv=[]; linked=unlinked=synthetic=0
+ vs=[]; sv=[]; linked=unlinked=synthetic=0; missing=collections.Counter()
  for ch,v in sorted(sbl):
   greek=sbl[(ch,v)]
   src=map_words(greek,step[(ch,v)])
@@ -58,6 +58,7 @@ for slug,name,sblprefix,stepprefix,bookcode,expected in specs:
   da=align(dgt,src)
   linked+=sum(bool(x['ids']) for x in da)
   unlinked+=sum(not x['ids'] for x in da)
+  missing.update(x['text'].strip('.,;:!?“”‘’"').lower() for x in da if not x['ids'])
   lit=''.join(x['text']+x['after'] for x in la)
   vs.append({'v':v,'greek':greek,'literal':lit,'dgt':dgt,'notes':[],'alignment':{'greek':ga,'translit':ta,'literal':la,'dgt':da}})
   sv.append({'ref':f'{stepprefix}.{ch}.{v}','book':bookcode,'chapter':str(ch),'verse':str(v),'testament':'NT','words':[{'original':x['text'],'translit':x['translit'],'strongs':x['strongs'],'morph':x['morph'],'gloss':x['gloss'],'synthetic':x.get('synthetic',False)} for x in src]})
@@ -68,6 +69,7 @@ for slug,name,sblprefix,stepprefix,bookcode,expected in specs:
 
  pct=linked/(linked+unlinked)*100
  if pct<80:
+  print(name,'top unlinked DGT tokens:',missing.most_common(80))
   raise SystemExit(f'{name}: coverage too low {pct:.1f}%')
  if synthetic>8:
   raise SystemExit(f'{name}: too many synthetic source tokens {synthetic}')
