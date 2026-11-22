@@ -1,4 +1,4 @@
-const APP_VERSION='v0.8';
+const APP_VERSION='v0.9';
 const state={book:'John',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 const $=id=>document.getElementById(id);
 const layerDefaults={greek:true,translit:false,literal:false,dgt:true,notes:false};
