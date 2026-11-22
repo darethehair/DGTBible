@@ -5,6 +5,12 @@ on:
     paths:
       - '.github/workflows/authoring-stepbible.yml'
       - 'scripts/extract-stepbible-john.mjs'
+      - 'scripts/preflight-john-batch.mjs'
+      - 'scripts/build-john-batch.py'
+      - 'scripts/john_batch_common.py'
+      - 'scripts/john_batch_dgt.py'
+      - 'scripts/audit-john-batch.py'
+      - 'data/authoring/john-*-dgt.tsv'
   workflow_dispatch:
     inputs:
       start_chapter:
@@ -17,7 +23,7 @@ on:
         default: '10'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   extract:
@@ -31,6 +37,23 @@ jobs:
         run: node scripts/extract-stepbible-john.mjs
       - name: Preflight SBLGNT against TAGNT
         run: node scripts/preflight-john-batch.mjs
+      - name: Build John 4-10 generated data
+        if: env.START_CHAPTER == '4' && env.END_CHAPTER == '10'
+        run: python scripts/build-john-batch.py
+      - name: Audit generated John 4-10 batch
+        if: env.START_CHAPTER == '4' && env.END_CHAPTER == '10'
+        run: python scripts/audit-john-batch.py
+      - name: Commit clean generated batch
+        if: env.START_CHAPTER == '4' && env.END_CHAPTER == '10'
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/john/04.json data/john/05.json data/john/06.json data/john/07.json data/john/08.json data/john/09.json data/john/10.json
+          git add data/sources/step-john-04.json data/sources/step-john-05.json data/sources/step-john-06.json data/sources/step-john-07.json data/sources/step-john-08.json data/sources/step-john-09.json data/sources/step-john-10.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean John 4-10 batch"
+            git push
+          fi
       - name: Upload extracted range
         if: always()
         uses: actions/upload-artifact@v4
