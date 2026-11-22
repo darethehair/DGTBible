@@ -1,4 +1,4 @@
-const APP_VERSION='v0.22';
+const APP_VERSION='v0.23';
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={};
 const $=id=>document.getElementById(id);
@@ -67,6 +67,22 @@ function renderAligned(container,key,verse,fallback){
  container.onclick=activate;
  container.onfocusin=activate;
 }
+function alignedHtml(key,verse,fallback){
+ const items=verse.alignment?.[key];
+ if(!items)return esc(fallback);
+ return items.map(item=>{
+  const ids=(item.ids||[]).join(',');
+  return ids?`<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`:`<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`;
+ }).join('');
+}
+function highlightWithin(container,ids){
+ container.querySelectorAll('.align-token.active').forEach(el=>el.classList.remove('active'));
+ if(!ids?.length)return;
+ container.querySelectorAll('.align-token').forEach(el=>{
+  const mine=(el.dataset.ids||'').split(',');
+  if(mine.some(id=>ids.includes(id)))el.classList.add('active');
+ });
+}
 function refText(v=state.verse){return `${state.book} ${state.chapter}:${v}`}
 function renderStudy(){
  const verse=state.data.verses.find(x=>x.v===state.verse);if(!verse)return;$('verseCard').hidden=false;$('reference').textContent=refText();
@@ -90,8 +106,23 @@ function renderCompact(){
 }
 function renderChapter(){
  if(!state.data)return;$('chapterHeading').textContent=`${state.book} ${state.chapter}`;updateChapterNav();
- $('chapterReading').innerHTML=state.data.verses.map(v=>`<article class="chapter-verse" id="v${v.v}"><button class="verse-number" title="Study ${esc(refText(v.v))}" data-study="${v.v}">${v.v}</button>${layers.greek?`<div class="cv-greek">${esc(v.greek)}</div>`:''}${layers.translit?`<div class="cv-translit">${esc(transliterateGreek(v.greek))}</div>`:''}${layers.literal?`<div class="cv-literal">${esc(v.literal)}</div>`:''}${layers.dgt?`<div class="cv-dgt">${esc(v.dgt)}</div>`:''}${layers.notes&&v.notes?.length?`<div class="cv-notes">${v.notes.map(n=>`<p>${esc(n)}</p>`).join('')}</div>`:''}</article>`).join('');
+ $('chapterReading').innerHTML=state.data.verses.map(v=>`<article class="chapter-verse" id="v${v.v}"><button class="verse-number" title="Study ${esc(refText(v.v))}" data-study="${v.v}">${v.v}</button>${layers.greek?`<div class="cv-greek">${alignedHtml('greek',v,v.greek)}</div>`:''}${layers.translit?`<div class="cv-translit">${alignedHtml('translit',v,transliterateGreek(v.greek))}</div>`:''}${layers.literal?`<div class="cv-literal">${alignedHtml('literal',v,v.literal)}</div>`:''}${layers.dgt?`<div class="cv-dgt">${alignedHtml('dgt',v,v.dgt)}</div>`:''}${layers.notes&&v.notes?.length?`<div class="cv-notes">${v.notes.map(n=>`<p>${esc(n)}</p>`).join('')}</div>`:''}</article>`).join('');
  document.querySelectorAll('[data-study]').forEach(b=>b.onclick=()=>{state.verse=+b.dataset.study;setMode('study');show(state.chapter,state.verse)});
+ document.querySelectorAll('.chapter-verse').forEach(article=>{
+  const activate=e=>{
+   const el=e.target.closest?.('.align-token');
+   if(!el||!article.contains(el))return;
+   highlightWithin(article,(el.dataset.ids||'').split(',').filter(Boolean));
+  };
+  article.onmouseover=activate;
+  article.onclick=e=>{
+   if(e.target.closest?.('[data-study]'))return;
+   const el=e.target.closest?.('.align-token');
+   if(el)activate(e);else article.querySelectorAll('.align-token.active').forEach(x=>x.classList.remove('active'));
+  };
+  article.onfocusin=activate;
+  article.onmouseleave=()=>article.querySelectorAll('.align-token.active').forEach(x=>x.classList.remove('active'));
+ });
 }
 async function show(ch,v,push=true,scroll=true){
  try{state.data=await loadChapter(ch);const verse=state.data.verses.find(x=>x.v===v);if(!verse)throw new Error(`${state.book} ${ch}:${v} is not loaded.`);
