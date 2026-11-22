@@ -28,7 +28,7 @@ for slug,name,sblprefix,stepprefix,bookcode,expected in specs:
   raise SystemExit(f'{name}: expected {expected} verses, got {len(sbl)}')
  step=collections.defaultdict(list)
  for line in (A/f'step-{slug}.tsv').read_text(encoding='utf8').splitlines():
-  m=re.match(r'^'+re.escape(stepprefix)+r'\.(\d+)\.(\d+)#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
+  m=re.match(r'^'+re.escape(stepprefix)+r'\.(\d+)\.(\d+)(?:\[[^\]]+\])?#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
   if not m: continue
   f=m[5]
   q=re.match(r'(.+?)\s+\(([^()]*)\)\s*$',f)
