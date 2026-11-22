@@ -37,6 +37,15 @@ def clean(g):return re.sub(r'\s+',' ',re.sub(r'[<>\[\]]','',g or '').replace('¶
 def translit(s):
  mp={'α':'a','β':'b','γ':'g','δ':'d','ε':'e','ζ':'z','η':'ē','θ':'th','ι':'i','κ':'k','λ':'l','μ':'m','ν':'n','ξ':'x','ο':'o','π':'p','ρ':'r','σ':'s','ς':'s','τ':'t','υ':'y','φ':'ph','χ':'ch','ψ':'ps','ω':'ō'}
  t=unicodedata.normalize('NFD',s);return ''.join(mp.get(x.lower(),x) for x in t if unicodedata.category(x)!='Mn')
+SOURCE_OVERRIDES={
+ (14,7,'εγνωκειτε'):dict(gloss='you had known',strongs='G1097',morph='V-LAI-2P'),
+ (14,7,'ηδειτε'):dict(gloss='you would have known',strongs='G1492',morph='V-LAI-2P'),
+ (16,7,'μη'):dict(gloss='not',strongs='G3361',morph='PRT-N'),
+ (16,7,'ελθη'):dict(gloss='may come',strongs='G2064',morph='V-2AAS-3S'),
+ (16,28,'εκ'):dict(gloss='from',strongs='G1537',morph='PREP'),
+ (21,17,'ειπεν'):dict(gloss='he said',strongs='G2036',morph='V-2AAI-3S'),
+ (21,25,'χωρησειν'):dict(gloss='to have room for',strongs='G5562',morph='V-FAN'),
+}
 S753=[('καὶ','kai','And','G2532','CONJ'),('ἐπορεύθη','eporeuthē','went','G4198','V-API-3S'),('ἕκαστος','hekastos','each','G1538','A-NSM'),('εἰς','eis','to','G1519','PREP'),('τὸν','ton','the','G3588','T-ASM'),('οἶκον','oikon','house','G3624','N-ASM'),('αὐτοῦ·','autou','his','G0846','P-GSM')]
 def map_words(ch,v,greek,rows):
  ts=greek.split()
@@ -58,5 +67,10 @@ def map_words(ch,v,greek,rows):
    if (ch,v)==(8,11) and norm(t)==norm('κρίνω'):
     item.update(translit='krinō',gloss='am judging',strongs='G2919',morph='V-PAI-1S',synthetic=True)
    out.append(item)
-  else:out.append(dict(id=f's{i+1}',text=t,translit=translit(t),gloss='',strongs='',morph='',synthetic=True))
+  else:
+   ov=SOURCE_OVERRIDES.get((ch,v,norm(t)))
+   if ov:
+    out.append(dict(id=f's{i+1}',text=t,translit=translit(t),gloss=ov['gloss'],strongs=ov['strongs'],morph=ov['morph'],synthetic=True))
+   else:
+    out.append(dict(id=f's{i+1}',text=t,translit=translit(t),gloss='',strongs='',morph='',synthetic=True))
  return out
