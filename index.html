@@ -12,15 +12,31 @@
 <section class="lookup">
   <form id="refForm"><label for="ref">Verse lookup</label><div class="search"><input id="ref" value="John 1:1" autocomplete="off" spellcheck="false"><button>Go</button></div></form>
   <div class="selectors"><label>Book<select id="book"><option>John</option></select></label><label>Chapter<select id="chapter"><option>1</option><option>2</option></select></label></div>
+  <div class="mode-switch" aria-label="Reading mode"><button type="button" data-mode="study">Study</button><button type="button" data-mode="chapter">Chapter</button></div>
 </section>
 <section id="status" class="status"></section>
-<section id="verseCard" class="verse-card" hidden>
+<section id="studyView"><section id="verseCard" class="verse-card" hidden>
  <div class="verse-head"><div><span id="reference"></span><span class="badge">DGT</span></div><button id="copyLink" class="ghost">Copy link</button></div>
  <div class="language-label">Greek · SBLGNT</div><div id="greek" class="greek"></div>
  <div class="language-label">Transliteration</div><div id="translit" class="translit"></div>
  <div class="language-label">Literal Greek-order English</div><div id="literal" class="literal"></div>
  <div class="language-label">Direct Greek Translation</div><div id="english" class="english"></div>
  <details id="notesWrap"><summary>Translation notes</summary><div id="notes"></div></details>
+</section>
+<nav class="verse-nav" aria-label="Verse navigation"><button id="prevVerse">← Previous</button><span id="studyPosition">John 1:1</span><button id="nextVerse">Next →</button></nav>
+</section>
+<section id="chapterView" hidden>
+  <div class="chapter-toolbar">
+    <h2 id="chapterHeading">John 1</h2>
+    <div class="layer-toggles" aria-label="Chapter layers">
+      <label><input type="checkbox" data-layer="greek"> Greek</label>
+      <label><input type="checkbox" data-layer="translit"> Transliteration</label>
+      <label><input type="checkbox" data-layer="literal"> Literal</label>
+      <label><input type="checkbox" data-layer="dgt"> DGT</label>
+      <label><input type="checkbox" data-layer="notes"> Notes</label>
+    </div>
+  </div>
+  <div id="chapterReading" class="chapter-reading"></div>
 </section>
 <section><h2 id="chapterTitle">John 1</h2><div id="verseGrid" class="verse-grid"></div></section>
 <section class="about"><h2>About this experiment</h2><p>DGTBible is an experimental original-language study Bible. The English DGT text is translated directly from Greek with AI assistance rather than revised from an existing English Bible. The embedded New Testament base text is the SBL Greek New Testament (SBLGNT), used under CC BY 4.0. Difficult readings are intended to be checked against modern critical editions and manuscript evidence.</p></section>
