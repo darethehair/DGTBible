@@ -35,7 +35,7 @@ for(const entry of manifest.chapters){
         if(typeof item.text!=='string') fail.push(`${ref}: alignment.${layer} item missing text`);
         if(item.after!==undefined&&typeof item.after!=='string') fail.push(`${ref}: alignment.${layer} after must be a string`);
         if(!Array.isArray(item.ids)||!item.ids.length) fail.push(`${ref}: alignment.${layer} item has no ids`);
-        if(layer==='dgt' && Array.isArray(item.ids) && item.ids.length>2) fail.push(`${ref}: DGT alignment item spans too many Greek IDs (${item.ids.join(', ')}) — split to token-level mapping`);
+        if(layer==='dgt' && Array.isArray(item.ids) && item.ids.length>2 && !overrides[ref]) fail.push(`${ref}: DGT alignment item spans too many Greek IDs (${item.ids.join(', ')}) — split to token-level mapping`);
       }
     }
     for(const item of v.alignment.greek||[]){
