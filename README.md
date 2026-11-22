@@ -5,10 +5,10 @@ Experimental original-language Bible PWA with the **DGT — Direct Greek Transla
 ## Current prototype
 
 - Installable static PWA; no API key and no runtime AI cost.
-- John 1–3 complete: all 112 verses include SBLGNT Greek, literal Greek-order English, DGT English, and translation notes where useful.
+- John 1–10 complete: all 478 SBLGNT verses include SBLGNT Greek, literal Greek-order English, DGT English, and translation notes where useful.
 - **SBLGNT** Greek base text, licensed under CC BY 4.0.
 - DGT English translation stored locally alongside each verse.
-- Linked Greek/transliteration/literal/DGT highlighting across John 1–3, assisted by pinned STEPBible TAGNT word data.
+- Linked Greek/transliteration/literal/DGT highlighting across John 1–10, assisted by pinned STEPBible TAGNT word data.
 - Study mode and continuous chapter-reading mode with remembered layer preferences.
 - Direct verse lookup (`John 1:18`) and shareable URL hashes (`#John.1.18`).
 - Offline cache through a service worker; core Scripture and alignment data are local and do not depend on STEPBible at runtime.
@@ -35,3 +35,7 @@ Before deployment, GitHub Actions runs `node scripts/validate-john.mjs`. It chec
 The deployment also runs a semantic alignment audit that flags suspicious reuse of a Greek word ID across separated English phrases. Reviewed legitimate split phrases are kept in `data/john/semantic-audit-allowlist.json`; any new high-risk case fails CI until reviewed.
 
 John 3 was added as the first pilot chapter generated under the structural + semantic QA pipeline before scaling to the rest of John.
+
+## Alignment safety
+
+Generated DGT alignments publish only high-confidence lexical links. Ambiguous helper words or uncertain mappings are deliberately left unlinked rather than guessed. John 4–10 was generated and audited as a 366-verse batch, including source-variant exceptions and the SBLGNT verse-number gap at John 5:4.
