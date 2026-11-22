@@ -25,12 +25,20 @@ jobs:
         run: node scripts/audit-alignments.mjs
       - name: Validate 1 John
         run: python scripts/audit-1john.py
+      - name: Validate 2 and 3 John
+        run: python scripts/audit-2-3john.py
       - name: Validate multi-book catalog
         run: |
           test -f data/books.json
           test -f data/1john/manifest.json
           test -f data/1john/editorial-notes.json
           test -f data/1john/paragraphs.json
+          test -f data/2john/manifest.json
+          test -f data/2john/editorial-notes.json
+          test -f data/2john/paragraphs.json
+          test -f data/3john/manifest.json
+          test -f data/3john/editorial-notes.json
+          test -f data/3john/paragraphs.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
