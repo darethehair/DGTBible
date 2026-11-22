@@ -54,6 +54,9 @@ def map_words(ch,v,greek,rows):
  for i,t in enumerate(ts):
   if i in by:
    r=rows[by[i]];base=f'w{r["idx"]}';id=base if base not in seen else base+'a';seen.add(id)
-   out.append(dict(id=id,text=t,translit=r['translit'] or translit(t),gloss=clean(r['gloss']),strongs=r['strongs'],morph=r['morph'],synthetic=id!=base))
+   item=dict(id=id,text=t,translit=r['translit'] or translit(t),gloss=clean(r['gloss']),strongs=r['strongs'],morph=r['morph'],synthetic=id!=base)
+   if (ch,v)==(8,11) and norm(t)==norm('κρίνω'):
+    item.update(translit='krinō',gloss='am judging',strongs='G2919',morph='V-PAI-1S',synthetic=True)
+   out.append(item)
   else:out.append(dict(id=f's{i+1}',text=t,translit=translit(t),gloss='',strongs='',morph='',synthetic=True))
  return out
