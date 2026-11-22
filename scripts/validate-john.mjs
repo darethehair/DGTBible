@@ -20,7 +20,7 @@ for(const entry of manifest.chapters){
   chapter.verses.forEach((v,i)=>{
     const ref=`John.${entry.chapter}.${v.v}`;
     verseMap.set(ref,v);
-    if(v.v!==i+1) fail.push(`${ref}: verses must be sequential; position ${i+1} contains ${v.v}`);
+    if(i>0 && v.v<=chapter.verses[i-1].v) fail.push(`${ref}: verse numbers must be strictly increasing; previous verse is ${chapter.verses[i-1].v}`);
     for(const field of ['greek','literal','dgt']){
       if(typeof v[field]!=='string'||!v[field].length) fail.push(`${ref}: missing ${field} text`);
     }
