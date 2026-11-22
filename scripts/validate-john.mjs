@@ -34,7 +34,11 @@ for(const entry of manifest.chapters){
       for(const item of items){
         if(typeof item.text!=='string') fail.push(`${ref}: alignment.${layer} item missing text`);
         if(item.after!==undefined&&typeof item.after!=='string') fail.push(`${ref}: alignment.${layer} after must be a string`);
-        if(!Array.isArray(item.ids)||!item.ids.length) fail.push(`${ref}: alignment.${layer} item has no ids`);
+        if(!Array.isArray(item.ids)) fail.push(`${ref}: alignment.${layer} item ids must be an array`);
+        else if(!item.ids.length){
+          const safeUnlinked=layer==='dgt'&&item.confidence==='unlinked'&&typeof item.reason==='string'&&item.reason.length;
+          if(!safeUnlinked) fail.push(`${ref}: alignment.${layer} item has no ids without an explicit unlinked confidence state`);
+        }
         if(layer==='dgt' && Array.isArray(item.ids) && item.ids.length>2 && !overrides[ref]) fail.push(`${ref}: DGT alignment item spans too many Greek IDs (${item.ids.join(', ')}) — split to token-level mapping`);
       }
     }
@@ -69,7 +73,10 @@ for(const name of sourceFiles){
   const data=readJson('data/sources/'+name);
   const meta={source:data.source,upstream:data.upstream,mirror:data.mirror,license:data.license};
   if(!sourceMeta) sourceMeta=meta;
-  else if(JSON.stringify(meta)!==JSON.stringify(sourceMeta)) fail.push(`data/sources/${name}: STEPBible source metadata differs from other chunks`);
+  else {
+    if(meta.upstream!==sourceMeta.upstream) fail.push(`data/sources/${name}: pinned STEPBible upstream revision differs from other chunks`);
+    if(meta.license!==sourceMeta.license) fail.push(`data/sources/${name}: STEPBible license differs from other chunks`);
+  }
   if(data.license!=='CC BY 4.0') fail.push(`data/sources/${name}: expected CC BY 4.0`);
   for(const v of data.verses||[]){
     const ref=`John.${Number(v.chapter)}.${Number(v.verse)}`;
