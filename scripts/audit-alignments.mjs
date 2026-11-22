@@ -32,6 +32,24 @@ for(const entry of manifest.chapters){
         const reasons=[];
         if(separated){score+=2;reasons.push('noncontiguous')}
         if(gwords.length&&pwords.length&&!overlap){score+=1;reasons.push('no-gloss-overlap')}
+        const splitOnlyByNegation=separated && pos.every((p,i)=>i===0 || (()=> {
+          const start=pos[i-1]+1, end=p;
+          const between=items.slice(start,end);
+          return between.length>0 && between.every(x=>{
+            const text=String(x.text||'').toLowerCase().replace(/[^a-z]/g,'');
+            if(text==='not'||text==='no') return true;
+            return (x.ids||[]).some(otherId=>{
+              const other=greekById[otherId];
+              const gloss=String(other?.gloss||'').toLowerCase();
+              const morph=String(other?.morph||'');
+              return morph.includes('PRT-N') || /\bnot\b|\bno\b|\bunless\b/.test(gloss);
+            });
+          });
+        })());
+        if(splitOnlyByNegation){
+          score=Math.max(0,score-2);
+          reasons.push('negation-split');
+        }
         if(score>=3){
           const key=`John.${entry.chapter}.${v.v}|${layer}|${id}`;
           findings.push({key,ref:`John ${entry.chapter}:${v.v}`,layer,id,greek:g.text,gloss:g.gloss||'',phrase,positions:pos,score,reasons,allowed:Boolean(allow[key])});
