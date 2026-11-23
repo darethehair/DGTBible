@@ -106,6 +106,31 @@ def authored_dgt(text,src,spec,ref):
   if not ids:x['reason']='Covered by authored phrase span; no safe lexical hover target'
   out.append(x)
 
+ # Recover repeated exact lexical/gloss matches by occurrence order.
+ # This handles safe cases such as DGT "through ... through" against two Greek dia
+ # tokens: if the number of English occurrences and available source occurrences
+ # is identical, pair them left-to-right rather than leaving both ambiguous.
+ byword=collections.defaultdict(list)
+ for i,x in enumerate(out):
+  if not x.get('ids'):
+   w=norm(x.get('text',''))
+   if w: byword[w].append(i)
+ for w,idxs in byword.items():
+  candidates=[]
+  seen_ids=set()
+  for id in out[idxs[0]].get('phraseIds',[]):
+   g=byid.get(id)
+   if not g: continue
+   if any(norm(t)==w for t in semantic_terms(g,id,None)):
+    if id not in seen_ids:
+     candidates.append(id);seen_ids.add(id)
+  # Preserve Greek/source order. Only use the rule when cardinalities match.
+  if len(candidates)==len(idxs) and len(candidates)>=1:
+   for i,id in zip(idxs,candidates):
+    out[i]['ids']=[id]
+    out[i]['confidence']='authored-auto-precise-ordered'
+    out[i].pop('reason',None)
+
  # Greek finite verbs often bundle an English subject pronoun with the verb.
  # For an ambiguous phrase-only glue word, look up to two English tokens away:
  # inherit a precise source only when its gloss explicitly contains that word
