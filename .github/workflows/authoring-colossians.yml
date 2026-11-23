@@ -18,6 +18,7 @@ on:
         default: '4'
 permissions:
   contents: write
+  actions: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -47,3 +48,9 @@ jobs:
               sleep 2
             done
           fi
+
+      - name: Dispatch Pages deployment
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
