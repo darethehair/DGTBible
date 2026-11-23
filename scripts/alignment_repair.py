@@ -318,6 +318,36 @@ def repair_verse(D,G,L=None):
    if abs(rel-sp)<=0.48:
     x['ids']=[id];x['confidence']='context-repaired';x.pop('reason',None)
     changes.append(('exact-link',x['text'],id))
+ # Pass 4: structural one-to-one gap recovery.  If established links on both
+ # sides enclose exactly one meaningful unlinked English token and exactly one
+ # unused meaningful Greek source token, recover that pair without requiring a
+ # predeclared synonym relationship.
+ used={id for y in D for id in y.get('ids',[]) if id in src}
+ meaningful=lambda g,id: any(w not in GLUE for w in semantic_terms(g,id,litmap))
+ for i,x in enumerate(D):
+  if x.get('ids'): continue
+  w=norm(x.get('text',''))
+  if not w or w in GLUE: continue
+  left=right=None
+  for j in range(i-1,-1,-1):
+   ids=[id for id in D[j].get('ids',[]) if id in pos]
+   if ids: left=max(pos[id] for id in ids); break
+  for j in range(i+1,len(D)):
+   ids=[id for id in D[j].get('ids',[]) if id in pos]
+   if ids: right=min(pos[id] for id in ids); break
+  if left is None or right is None or right<=left: continue
+  eng=[j for j in range(i if i>=0 else 0, i+1) if not D[j].get('ids') and norm(D[j].get('text','')) not in GLUE]
+  # Count all meaningful unlinked English tokens between the same linked boundaries.
+  li=max([j for j in range(i-1,-1,-1) if any(id in pos for id in D[j].get('ids',[]))],default=-1)
+  ri=min([j for j in range(i+1,len(D)) if any(id in pos for id in D[j].get('ids',[]))],default=len(D))
+  eng=[j for j in range(li+1,ri) if not D[j].get('ids') and norm(D[j].get('text','')) and norm(D[j].get('text','')) not in GLUE]
+  greek=[id for id,p in pos.items() if left<p<right and id not in used and meaningful(src[id],id)]
+  if len(eng)==1 and eng[0]==i and len(greek)==1:
+   id=greek[0]
+   rel=i/max(1,len(D)-1); sp=pos[id]/max(1,len(G)-1)
+   if abs(rel-sp)<=0.22:
+    x['ids']=[id];x['confidence']='structural-repaired';x.pop('reason',None)
+    used.add(id);changes.append(('structural-link',x['text'],id))
  return changes
 
 
