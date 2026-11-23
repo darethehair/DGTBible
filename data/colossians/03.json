@@ -13594,9 +13594,11 @@
           },
           {
             "text": "warning",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -13626,8 +13628,7 @@
               "w29",
               "w30",
               "w31"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "one",
