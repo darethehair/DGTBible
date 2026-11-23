@@ -1,7 +1,7 @@
 import json,re,unicodedata,collections,sys
 from pathlib import Path
 
-BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews']
+BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews','romans']
 GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over is am are was were be been being has have had do does did will would shall should may might can could must he she it they we you i me him her them us my his their our your who whom whose which that this these those there here'.split())
 GROUPS=[
  ['imprint','expression','character','stamp','representation'],
@@ -94,6 +94,36 @@ GROUPS=[
  ['bring','brought','lead','led'],
  ['kill','killed','murder','murdered'],
  ['one','someone','anyone','everyone','person','people','man','human'],
+
+ ['witness','witnesses','witnessed','testify','testifies','testified','testimony'],
+ ['behold','beheld','see','seen','saw','view','observe','observed'],
+ ['authority','right','rights','power'],
+ ['without','apart','separate','separated'],
+ ['humanity','human','humans','man','men','person','people'],
+ ['remain','remained','remaining','abide','abided','abiding','stay','stayed'],
+ ['gospel','goodnews','evangel','evangelize'],
+ ['begin','beginning','origin','first'],
+ ['deny','denied','refuse','refused'],
+ ['desire','want','wanted','wish','wished'],
+ ['midst','middle','among'],
+ ['feast','festival','banquet'],
+ ['ox','oxen','cattle'],
+ ['trade','commerce'],
+ ['able','can','could','ability'],
+ ['truly','amen','certainly'],
+ ['call','called','name','named'],
+ ['entrust','entrusted','believe','believed'],
+ ['announce','announced','proclaim','proclaimed','preach','preached'],
+ ['build','built','building','edify','edification'],
+ ['account','reckon','reckoned','count','counted','credit','credited'],
+ ['atonement','propitiation','mercyseat','atoning'],
+ ['adoption','sonship'],
+ ['foreknow','foreknew','foreknown'],
+ ['predestine','predestined'],
+ ['harden','hardened','hardening'],
+ ['stupor','numbness'],
+ ['root','source'],
+ ['branch','branches'],
 ]
 S={}
 for g in GROUPS:
@@ -126,6 +156,25 @@ def gloss_atoms(g):
  vals=atoms(g.get('gloss',''))
  if not vals: vals=atoms(g.get('text',''))
  return vals
+
+
+def literal_terms_by_id(L):
+ out=collections.defaultdict(set)
+ for x in (L or []):
+  vals=atoms(x.get('text',''))
+  for id in x.get('ids',[]):
+   out[id].update(vals)
+ return out
+
+def semantic_terms(g,id=None,litmap=None):
+ vals=set(gloss_atoms(g))
+ if id is not None and litmap:
+  vals.update(litmap.get(id,set()))
+ return vals
+
+def semantic_with_literal(token,g,id=None,litmap=None):
+ vals=semantic_terms(g,id,litmap)
+ return max([sim(token,a) for a in vals] or [0])
 
 def source_map(G):
  src={};pos={}
@@ -167,8 +216,9 @@ def candidate_score(i,D,G,src,pos,id,z):
   if 0<=j<len(D) and id in D[j].get('ids',[]):score+=16
  return score
 
-def repair_verse(D,G):
+def repair_verse(D,G,L=None):
  src,pos=source_map(G);changes=[]
+ litmap=literal_terms_by_id(L)
  if not src:return changes
  # Pass 0: repair known multiword lexical equivalents that correspond to one Greek lexeme.
  phrase_aliases=[
@@ -201,7 +251,7 @@ def repair_verse(D,G):
   if not w or not contentish or not x.get('ids'):continue
   cur=[id for id in x['ids'] if id in src]
   if not cur:continue
-  curz=max(semantic(w,src[id]) for id in cur)
+  curz=max(semantic_with_literal(w,src[id],id,litmap) for id in cur)
   left,right=bounds(D,i,pos)
   cur_in=True
   if left is not None and right is not None:
@@ -209,11 +259,11 @@ def repair_verse(D,G):
    cur_in=any(lo<=pos[id]<=hi for id in cur)
   candidates=[]
   for id,g in src.items():
-   z=semantic(w,g)
+   z=semantic_with_literal(w,g,id,litmap)
    if z>=8:candidates.append((candidate_score(i,D,G,src,pos,id,z),z,id))
   if not candidates:continue
   candidates.sort(reverse=True);score,z,best=candidates[0]
-  curscore=max(candidate_score(i,D,G,src,pos,id,semantic(w,src[id])) for id in cur)
+  curscore=max(candidate_score(i,D,G,src,pos,id,semantic_with_literal(w,src[id],id,litmap)) for id in cur)
   if best not in cur and (not cur_in) and score>=curscore+8:
    old=list(x['ids']);x['ids']=[best];x['confidence']='context-repaired';x.pop('reason',None)
    changes.append(('relink',x['text'],old,best))
@@ -246,7 +296,7 @@ def repair_verse(D,G):
   if x.get('ids'):continue
   w=norm(x.get('text',''))
   if not w or w in exact_exclude:continue
-  exact=[id for id,g in src.items() if semantic(w,g)>=12]
+  exact=[id for id,g in src.items() if semantic_with_literal(w,g,id,litmap)>=12]
   if len(exact)==1:
    id=exact[0]
    rel=i/max(1,len(D)-1);sp=pos[id]/max(1,len(G)-1)
