@@ -1,3 +1,4 @@
+# Revelation full-book born-aligned builder.
 import re,json,collections,os,unicodedata
 from pathlib import Path
 from epistle_common import map_words
