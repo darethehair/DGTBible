@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews','romans']
+BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews','romans','1corinthians']
 out={}
 for slug in BOOKS:
  for path in sorted((Path('data')/slug).glob('[0-9][0-9].json')):
