@@ -12,7 +12,7 @@ await fs.mkdir('authoring',{recursive:true});
 const sblUrl='https://raw.githubusercontent.com/Faithlife/SBLGNT/'+sblgntSha+'/data/sblgnt/text/1Cor.txt';
 const sblRes=await fetch(sblUrl);
 if(!sblRes.ok)throw new Error('1 Corinthians SBLGNT download failed: '+sblRes.status);
-const pattern=/(?:^|\t)1Cor[ ._-]?(\d+)[.:](\d+)/i;
+const pattern=/(?:^|\t)1Co[ ._-]?(\d+)[.:](\d+)/i;
 const matched=stepLines.filter(line=>pattern.test(line));
 await fs.writeFile('authoring/step-1corinthians.tsv',['# STEPBible TAGNT extraction','# source: STEPBible/STEPBible-Data@'+upstreamSha,'# book: 1 Corinthians',...matched].join('\n')+'\n');
 const sblLines=(await sblRes.text()).split(/\r?\n/).filter(line=>/^1Cor \d+:\d+\t/.test(line));
