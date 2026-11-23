@@ -429,6 +429,33 @@ def authored_dgt(text,src,spec,ref,literal=None):
      x['confidence']='authored-auto-precise-final-bundled-pronoun'
      x.pop('reason',None)
      changed=True
+ # Final span-local exact recovery. Earlier verse-wide passes can remain
+ # ambiguous when the same word occurs in several clauses. Inside an authored
+ # phrase span, one unused exact literal candidate is deterministic.
+ if literal:
+  used_exact=collections.defaultdict(set)
+  for x in out:
+   w=norm(x.get('text',''))
+   if w and x.get('ids'):used_exact[w].update(x.get('ids',[]))
+  for x in out:
+   if x.get('ids'):continue
+   w=norm(x.get('text',''))
+   if not w:continue
+   allowed=set(x.get('phraseIds',[]))
+   candidates=[]
+   for y in literal:
+    terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+    if w not in terms:continue
+    for id in y.get('ids',[]):
+     if id in used_exact[w]:continue
+     if allowed and id not in allowed:continue
+     if id not in candidates:candidates.append(id)
+   if len(candidates)==1:
+    x['ids']=[candidates[0]]
+    x['confidence']='authored-auto-precise-span-local-exact'
+    x.pop('reason',None)
+    used_exact[w].add(candidates[0])
+
  # Born-aligned span guard: automatic recovery must never escape the
  # authored source span. This prevents a later exact/synonym pass from stealing
  # a matching Greek token elsewhere in the verse.
