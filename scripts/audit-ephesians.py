@@ -17,6 +17,7 @@ def pk(w):
   'it':{'it','its','itself'},
  }
  w=n(w)
+ if w in {'who','whom','whose','which'}:return 'relative'
  for k,vals in groups.items():
   if w in vals:return k
  return None
@@ -26,6 +27,7 @@ recoverable=[]
 collisions=[]
 synthetic_unlinked=[]
 recoverable_pronouns=[]
+recoverable_relative_pronouns=[]
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'ephesians'/f'{ch:02}.json').read_text(encoding='utf8'))
@@ -62,6 +64,7 @@ for ch in range(start,end+1):
    if k and x.get('ids'):
     usedp[k].update(x.get('ids',[]))
   for k,idxs in pd.items():
+   if k=='relative':continue
    lids=[]
    for y in L:
     if k in {pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)}:
@@ -70,6 +73,15 @@ for ch in range(start,end+1):
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
     recoverable_pronouns.append((ch,v['v'],k,len(idxs),lids))
+  personal_idxs=[i for i,x in enumerate(D) if not x.get('ids') and pk(x.get('text','')) in {'he','she','they','it'}]
+  usedids={id for x in D for id in x.get('ids',[])}
+  relids=[]
+  for y in L:
+   if 'relative' in {pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)}:
+    for id in y.get('ids',[]):
+     if id not in usedids and id not in relids:relids.append(id)
+  if len(personal_idxs)==1 and len(relids)==1:
+   recoverable_relative_pronouns.append((ch,v['v'],D[personal_idxs[0]].get('text',''),relids[0]))
   for w,idxs in byword.items():
    lids=[]
    for y in L:
@@ -102,6 +114,7 @@ pct=linked/(linked+unlinked)*100
 assert pct>=75,pct
 assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverable[:20]}'
 assert not recoverable_pronouns, f'recoverable pronoun-family DGT links left unlinked: {recoverable_pronouns[:20]}'
+assert not recoverable_relative_pronouns, f'recoverable relative-to-personal pronoun links left unlinked: {recoverable_relative_pronouns[:20]}'
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
-print(f'Ephesians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
+print(f'Ephesians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 recoverable relative-pronoun bridges left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
