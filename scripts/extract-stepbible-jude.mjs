@@ -4,7 +4,7 @@ const upstreamSha='5de0a47f35f0fc13dfe1430d104e5db8a4285f9c';
 const stepFile='Translators Amalgamated OT+NT/TAGNT Act-Rev - Translators Amalgamated Greek NT - STEPBible.org CC-BY.txt';
 const stepUrl='https://raw.githubusercontent.com/STEPBible/STEPBible-Data/'+upstreamSha+'/'+stepFile.split('/').map(encodeURIComponent).join('/');
 const sblgntSha='d7f35adca9ec410e1d1499c63b4dd989d76c8d4d';
-const b={slug:'jude',name:'Jude',step:'Jde',sbl:'Jude',verses:25};
+const b={slug:'jude',name:'Jude',step:'Jud',sbl:'Jude',verses:25};
 
 const stepRes=await fetch(stepUrl);
 if(!stepRes.ok)throw new Error('STEPBible download failed: '+stepRes.status);
