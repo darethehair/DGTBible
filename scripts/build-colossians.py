@@ -26,6 +26,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
    {'fellowship','participation','partnership'},
    {'confident','confidence','persuaded','persuasion','trusting','trust'},
    {'think','thinking','minded','minding','mind','feel','feeling'},
+   {'evident','evidently','manifest','manifested','apparent','clearly','known','clear'},
    {'watch','beware','heed','look'},
    {'lordship','lordships','dominion','dominions'},
    {'affliction','afflictions','tribulation','tribulations'},
