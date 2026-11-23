@@ -1,4 +1,4 @@
-# refreshed after second ranked semantic pass — Rank non-lexical orphan English tokens against unused meaningful Greek tokens.
+# refreshed after third ranked semantic pass
 import json,collections
 from pathlib import Path
 from alignment_repair import BOOKS,atoms,GLUE,source_map,literal_terms_by_id,semantic_terms
