@@ -1,3 +1,4 @@
+# rerun after generated 1 Corinthians 1-12 commit
 # rerun after 11:3 precision fix
 #!/usr/bin/env python3
 import json
