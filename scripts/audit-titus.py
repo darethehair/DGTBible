@@ -33,7 +33,7 @@ recoverable_relative_pronouns=[]
 recoverable_context_relative=[]
 recoverable_bundled_pronouns=[]
 recoverable_positional=[]
-CONTENT_GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over until when while where why how what whatever whenever whether though although having toward is am are was were be been being has have had do does did will would shall should may might can could must he she it they we you i me him her them us my his their our your who whom whose which that this these those there here not no never none nothing one thing things its'.split())
+CONTENT_GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over until when while where why how what whatever whenever whether though although having toward is am are was were be been being has have had do does did will would shall should may might can could he she it they we you i me him her them us my his their our your who whom whose which that this these those there here not no never none nothing one thing things its'.split())
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'titus'/f'{ch:02}.json').read_text(encoding='utf8'))
