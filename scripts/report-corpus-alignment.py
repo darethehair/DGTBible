@@ -1,7 +1,7 @@
 # post-cleanup baseline
 import json
 from pathlib import Path
-BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews']
+BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews','romans','1corinthians']
 for slug in BOOKS:
  linked=unlinked=verses=0
  for path in sorted((Path('data')/slug).glob('[0-9][0-9].json')):
