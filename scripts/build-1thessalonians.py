@@ -133,7 +133,13 @@ def authored_dgt(text,src,spec,ref,literal=None):
     for id in phrase_ids:
      g=byid.get(id)
      if not g:continue
-     z=max((local_sim(w,t) for t in semantic_terms(g,id,None)),default=0)
+     terms=set(semantic_terms(g,id,None))
+     z=max((local_sim(w,t) for t in terms),default=0)
+     # A Greek compound gloss such as "fellow bond-servant" may be rendered
+     # idiomatically with "slave".  Require both bond + servant in this same
+     # source gloss so a separate diakonos/servant in the verse cannot steal it.
+     if w in {'slave','slaves'} and {'bond','servant'}.issubset(terms):
+      z=max(z,12)
      if z>=8:scored.append((z,id))
     if scored:
      best=max(z for z,_ in scored);tops=[id for z,id in scored if z==best]
