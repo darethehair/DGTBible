@@ -317,6 +317,31 @@ def authored_dgt(text,src,spec,ref,literal=None):
     out[i]['ids']=[id]
     out[i]['confidence']='authored-auto-precise-relative-pronoun'
     out[i].pop('reason',None)
+
+ # One last exact fixed-point recovery after pronoun/relative transformations.
+ # Those passes can make previously ambiguous exact words deterministic.
+ if literal:
+  changed=True
+  while changed:
+   changed=False
+   byword=collections.defaultdict(list)
+   for i,x in enumerate(out):
+    if not x.get('ids'):
+     w=norm(x.get('text',''))
+     if w:byword[w].append(i)
+   for w,idxs in byword.items():
+    candidates=[]
+    for y in literal:
+     terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+     if w in terms:
+      for id in y.get('ids',[]):
+       if id not in candidates:candidates.append(id)
+    if len(candidates)==len(idxs) and candidates:
+     for i,id in zip(idxs,candidates):
+      out[i]['ids']=[id]
+      out[i]['confidence']='authored-auto-precise-final-ordered'
+      out[i].pop('reason',None)
+     changed=True
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
