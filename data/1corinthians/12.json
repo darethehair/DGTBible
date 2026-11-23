@@ -1985,9 +1985,11 @@
           },
           {
             "text": "can",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w13",
               "w14",
@@ -1995,8 +1997,7 @@
               "w16",
               "w17",
               "w18"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "say,",
@@ -2052,7 +2053,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w13",
               "w14",
@@ -5719,15 +5720,16 @@
           },
           {
             "text": "discernings",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w8",
               "w10",
               "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "of",
@@ -6492,15 +6494,16 @@
           },
           {
             "text": "distributing",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w11",
               "w12",
               "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "to",
@@ -6530,15 +6533,16 @@
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w11",
               "w12",
               "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "individually",
@@ -7685,7 +7689,7 @@
       "v": 13,
       "greek": "καὶ γὰρ ἐν ἑνὶ πνεύματι ἡμεῖς πάντες εἰς ἓν σῶμα ἐβαπτίσθημεν, εἴτε Ἰουδαῖοι εἴτε Ἕλληνες, εἴτε δοῦλοι εἴτε ἐλεύθεροι, καὶ πάντες ἓν πνεῦμα ἐποτίσθημεν.",
       "literal": "Also for in one Spirit we ourselves all into one body were baptized whether Jews or Greeks whether slaves or free and all one Spirit we were made to drink.",
-      "dgt": "For in one Spirit we were all baptized into one body — whether Jews or Greeks, whether slaves or free — and we were all given one Spirit to drink.",
+      "dgt": "For in one Spirit we were all baptized into one body — whether Jews or Greeks, whether slaves or free — and we were all made to drink one Spirit.",
       "notes": [],
       "alignment": {
         "greek": [
@@ -8315,9 +8319,11 @@
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -8330,8 +8336,7 @@
               "w9",
               "w10",
               "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "Spirit",
@@ -8706,38 +8711,9 @@
             ]
           },
           {
-            "text": "given",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w20",
-              "w21",
-              "w23",
-              "w24",
-              "w25"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
-          },
-          {
-            "text": "one",
+            "text": "made",
             "ids": [
-              "w23"
-            ],
-            "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w20",
-              "w21",
-              "w23",
-              "w24",
               "w25"
-            ]
-          },
-          {
-            "text": "Spirit",
-            "ids": [
-              "w24"
             ],
             "after": " ",
             "confidence": "authored-auto-precise",
@@ -8765,9 +8741,39 @@
             ]
           },
           {
-            "text": "drink.",
+            "text": "drink",
             "ids": [
               "w25"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w20",
+              "w21",
+              "w23",
+              "w24",
+              "w25"
+            ]
+          },
+          {
+            "text": "one",
+            "ids": [
+              "w23"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w20",
+              "w21",
+              "w23",
+              "w24",
+              "w25"
+            ]
+          },
+          {
+            "text": "Spirit.",
+            "ids": [
+              "w24"
             ],
             "after": "",
             "confidence": "authored-auto-precise",
@@ -18811,9 +18817,11 @@
           },
           {
             "text": "these",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -18824,8 +18832,7 @@
               "w7",
               "w8",
               "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "in",
@@ -18866,9 +18873,11 @@
           },
           {
             "text": "assembly:",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -18879,8 +18888,7 @@
               "w7",
               "w8",
               "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "first",
@@ -19046,16 +19054,17 @@
           },
           {
             "text": "administrations,",
-            "ids": [],
+            "ids": [
+              "w22"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w21",
               "w22",
               "w23",
               "w24"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "kinds",
@@ -20436,9 +20445,11 @@
           },
           {
             "text": "desire",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -20446,8 +20457,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "the",
@@ -20626,17 +20636,18 @@
           },
           {
             "text": "excellent",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w8",
               "w9",
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "way.",
