@@ -18,6 +18,20 @@ for path in sorted((R/'data/authoring').glob('ephesians-*-dgt.tsv')):
 
 # Regenerate generated chapters whenever bundled-pronoun logic changes.
 def authored_dgt(text,src,spec,ref,literal=None):
+ def pronoun_key(w):
+  groups={
+   'he':{'he','him','his','himself'},
+   'she':{'she','her','hers','herself'},
+   'they':{'they','them','their','theirs','themselves'},
+   'we':{'we','us','our','ours','ourselves'},
+   'you':{'you','your','yours','yourself','yourselves'},
+   'i':{'i','me','my','mine','myself'},
+   'it':{'it','its','itself'},
+  }
+  w=norm(w)
+  for k,vals in groups.items():
+   if w in vals:return k
+  return None
  def greek_key(s):
   s=unicodedata.normalize('NFD',str(s)).replace('ʼ','').replace('᾽','').replace('’','').replace("'","")
   s=''.join(x for x in s if unicodedata.category(x)!='Mn').lower()
@@ -202,6 +216,27 @@ def authored_dgt(text,src,spec,ref,literal=None):
       out[i]['confidence']='authored-auto-precise-literal-ordered'
       out[i].pop('reason',None)
      changed=True
+ # Final deterministic pronoun-family recovery. English may express the same
+ # Greek pronoun with case/possessive/reflexive forms (he/him/his/himself).
+ # Pair only when the canonical pronoun occurrence counts match exactly.
+ if literal:
+  dgroups=collections.defaultdict(list)
+  for i,x in enumerate(out):
+   if not x.get('ids'):
+    k=pronoun_key(x.get('text',''))
+    if k:dgroups[k].append(i)
+  for k,idxs in dgroups.items():
+   candidates=[]
+   for y in literal:
+    ykeys={pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))}
+    if k in ykeys:
+     for id in y.get('ids',[]):
+      if id not in candidates:candidates.append(id)
+   if len(candidates)==len(idxs) and candidates:
+    for i,id in zip(idxs,candidates):
+     out[i]['ids']=[id]
+     out[i]['confidence']='authored-auto-precise-pronoun-ordered'
+     out[i].pop('reason',None)
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
