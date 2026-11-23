@@ -2672,9 +2672,11 @@
           },
           {
             "text": "your",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -2690,8 +2692,7 @@
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "calling;",
@@ -6449,11 +6450,9 @@
           },
           {
             "text": "himself",
-            "ids": [
-              "w13"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w2",
@@ -6470,7 +6469,8 @@
               "w13",
               "w14",
               "w15"
-            ]
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "also",
@@ -23720,9 +23720,11 @@
           },
           {
             "text": "him",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -23743,8 +23745,7 @@
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "labor,",
@@ -23922,9 +23923,11 @@
           },
           {
             "text": "his",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -23945,8 +23948,7 @@
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "own",

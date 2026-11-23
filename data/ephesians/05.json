@@ -15677,11 +15677,9 @@
           },
           {
             "text": "his",
-            "ids": [
-              "w16"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w3",
@@ -15700,7 +15698,8 @@
               "w18",
               "w19",
               "w20"
-            ]
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "wife",
@@ -19204,9 +19203,11 @@
           },
           {
             "text": "himself",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -19230,8 +19231,7 @@
               "w20",
               "w21",
               "w22"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "glorious,",

@@ -17925,9 +17925,11 @@
           },
           {
             "text": "my",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -17948,8 +17950,7 @@
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "mouth,",
@@ -21122,11 +21123,9 @@
           },
           {
             "text": "him",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w2",
@@ -21145,7 +21144,8 @@
               "w15",
               "w16",
               "w17"
-            ]
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "to",
@@ -21176,9 +21176,11 @@
           },
           {
             "text": "you",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -21197,8 +21199,7 @@
               "w15",
               "w16",
               "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "for",
@@ -21660,9 +21661,11 @@
           },
           {
             "text": "your",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -21681,8 +21684,7 @@
               "w15",
               "w16",
               "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "hearts.",
