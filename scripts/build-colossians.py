@@ -93,7 +93,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
   return list(dict.fromkeys(ids))
 
  tokens=re.findall(r'\S+',text)
- precision={}
+ precision={}; born_single=set()
  if isinstance(spec,dict) and isinstance(spec.get('segments'),list):
   expanded=[];rebuilt=[]
   for seg in spec['segments']:
@@ -105,13 +105,14 @@ def authored_dgt(text,src,spec,ref,literal=None):
    # points to one Greek source token, that mapping is authoritative for every
    # English token in the segment. Do not throw it away and rediscover it later.
    if len(ids)==1:
-    for k in range(start_i,start_i+len(stoks)): precision[k]=ids
+    for k in range(start_i,start_i+len(stoks)):
+     precision[k]=ids;born_single.add(k)
   if rebuilt!=tokens:raise SystemExit(f'{ref}: authored segment text does not exactly reproduce DGT tokens')
   for p in spec.get('precision',[]):
    if not isinstance(p,list) or len(p)!=2 or not isinstance(p[0],int) or not isinstance(p[1],list):
     raise SystemExit(f'{ref}: each precision override must be [1-based-token-index,[source refs]]: {p!r}')
    if p[0]<1 or p[0]>len(tokens):raise SystemExit(f'{ref}: precision token index {p[0]} outside 1..{len(tokens)}')
-   precision[p[0]-1]=resolve(p[1])
+   precision[p[0]-1]=resolve(p[1]);born_single.discard(p[0]-1)
   # Human-readable born alignment: ["english-token", occurrence, [source refs]].
   # Matching ignores punctuation/case but the build fails if the requested token
   # occurrence does not exist, so lexical intent stays explicit and reviewable.
@@ -120,7 +121,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
     raise SystemExit(f'{ref}: precisionWords entries must be [token,occurrence,[source refs]]: {p!r}')
    key=norm(p[0]);matches=[i for i,t in enumerate(tokens) if norm(t)==key]
    if p[1]<1 or p[1]>len(matches):raise SystemExit(f'{ref}: precisionWords cannot find {p[0]!r} occurrence {p[1]}')
-   precision[matches[p[1]-1]]=resolve(p[2])
+   precision[matches[p[1]-1]]=resolve(p[2]);born_single.discard(matches[p[1]-1])
   spec=expanded
  if not isinstance(spec,list) or len(spec)!=len(tokens):
   raise SystemExit(f'{ref}: authored alignment must cover each DGT whitespace token ({len(tokens)} expected)')
@@ -131,7 +132,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
   if not isinstance(refs,list):raise SystemExit(f'{ref}: bad authored source list at DGT token {i}: {refs!r}')
   phrase_ids=resolve(refs)
   ids=precision.get(i)
-  confidence='authored-precise' if i in precision else 'authored-phrase-only'
+  confidence=('authored-born-single-source' if i in born_single else 'authored-precise') if i in precision else 'authored-phrase-only'
   if i not in precision:
    w=norm(token)
    if w and phrase_ids:
