@@ -24,6 +24,8 @@ jobs:
         run: node scripts/extract-stepbible-jude.mjs
       - name: Build Jude
         run: python scripts/build-jude.py
+      - name: Apply reviewed alignment quality overrides
+        run: python scripts/apply-quality-overrides.py
       - name: Audit Jude
         run: python scripts/audit-jude.py
       - name: Commit clean generated Jude
