@@ -606,6 +606,29 @@ def authored_dgt(text,src,spec,ref,literal=None):
     x['confidence']='authored-auto-precise-postguard-pronoun'
     x.pop('reason',None)
     used_pron[k].add(candidates[0])
+ # Post-guard relative-to-personal bridge. Idiomatic English may turn a
+ # Greek relative pronoun into him/her/them/their; accept only one unused
+ # relative source candidate inside the token's authored span.
+ if literal:
+  used_ids={id for x in out for id in x.get('ids',[])}
+  for x in out:
+   if x.get('ids'):continue
+   k=pronoun_key(x.get('text',''))
+   if k not in {'he','she','they','it'}:continue
+   allowed=set(x.get('phraseIds',[]))
+   candidates=[]
+   for y in literal:
+    ykeys={pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))}
+    if 'relative' not in ykeys:continue
+    for id in y.get('ids',[]):
+     if id in used_ids:continue
+     if allowed and id not in allowed:continue
+     if id not in candidates:candidates.append(id)
+   if len(candidates)==1:
+    x['ids']=[candidates[0]]
+    x['confidence']='authored-auto-precise-postguard-relative-personal'
+    x.pop('reason',None)
+    used_ids.add(candidates[0])
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
