@@ -683,6 +683,39 @@ def authored_dgt(text,src,spec,ref,literal=None):
      x['confidence']='authored-auto-precise-postguard-positional'
      x.pop('reason',None)
      used_exact[w].add(ranked[0][1])
+ # Post-guard semantic recovery inside the authored span. This is the final
+ # lexical safety-net for paraphrase/synonym families. Never leave the authored
+ # clause; require a strong semantic score and either a unique best source or a
+ # clearly closer positional tie-break.
+ src_pos={g['id']:i for i,g in enumerate(src)}
+ for i,x in enumerate(out):
+  if x.get('ids'):continue
+  w=norm(x.get('text',''))
+  if not w or w in GLUE:continue
+  allowed=list(dict.fromkeys(x.get('phraseIds',[])))
+  scored=[]
+  for id in allowed:
+   g=byid.get(id)
+   if not g:continue
+   terms=set(semantic_terms(g,id,None))
+   z=max((local_sim(w,t) for t in terms),default=0)
+   if w in {'slave','slaves'} and {'bond','servant'}.issubset(terms):z=max(z,12)
+   if z>=8:scored.append((z,id))
+  if not scored:continue
+  best=max(z for z,_ in scored)
+  tops=[id for z,id in scored if z==best]
+  chosen=None
+  if len(tops)==1:
+   chosen=tops[0]
+  else:
+   erel=i/max(1,len(out)-1)
+   ranked=sorted((abs(erel-src_pos[id]/max(1,len(src)-1)),id) for id in tops if id in src_pos)
+   if len(ranked)==1 or (len(ranked)>=2 and ranked[1][0]-ranked[0][0]>=0.08):
+    chosen=ranked[0][1]
+  if chosen:
+   x['ids']=[chosen]
+   x['confidence']='authored-auto-precise-postguard-semantic'
+   x.pop('reason',None)
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
