@@ -12,7 +12,7 @@ await fs.mkdir('authoring',{recursive:true});
 const sblUrl='https://raw.githubusercontent.com/Faithlife/SBLGNT/'+sblgntSha+'/data/sblgnt/text/Phil.txt';
 const sblRes=await fetch(sblUrl);
 if(!sblRes.ok)throw new Error('Philippians SBLGNT download failed: '+sblRes.status);
-const pattern=/(?:^|\t)Phil[ ._-]?(\d+)[.:](\d+)/i;
+const pattern=/(?:^|\t)Php[ ._-]?(\d+)[.:](\d+)/i;
 const matched=stepLines.filter(line=>pattern.test(line));
 await fs.writeFile('authoring/step-philippians.tsv',['# STEPBible TAGNT extraction','# source: STEPBible/STEPBible-Data@'+upstreamSha,'# book: Philippians',...matched].join('\n')+'\n');
 const sblLines=(await sblRes.text()).split(/\r?\n/).filter(line=>/^Phil \d+:\d+\t/.test(line));
