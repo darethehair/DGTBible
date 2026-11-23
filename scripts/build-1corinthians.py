@@ -25,8 +25,7 @@ def authored_dgt(text,src,spec,ref):
    if r.startswith('@'):
     q=r[1:]
     if '-' in q:
-     a,b=map(int,q.split('-',1))
-     ns=range(a,b+1)
+     a,b=map(int,q.split('-',1));ns=range(a,b+1)
     else:ns=[int(q)]
     for n in ns:
      if n<1 or n>len(src):raise SystemExit(f'{ref}: authored Greek ordinal @{n} outside 1..{len(src)}')
@@ -35,6 +34,7 @@ def authored_dgt(text,src,spec,ref):
   valid={x['id'] for x in src};bad=[x for x in ids if x not in valid]
   if bad:raise SystemExit(f'{ref}: unknown authored Greek source IDs: {bad}')
   return list(dict.fromkeys(ids))
+
  tokens=re.findall(r'\S+',text)
  precision={}
  if isinstance(spec,dict) and isinstance(spec.get('segments'),list):
@@ -52,6 +52,8 @@ def authored_dgt(text,src,spec,ref):
   spec=expanded
  if not isinstance(spec,list) or len(spec)!=len(tokens):
   raise SystemExit(f'{ref}: authored alignment must cover each DGT whitespace token ({len(tokens)} expected)')
+
+ byid={x['id']:x for x in src}
  out=[]
  for i,(token,refs) in enumerate(zip(tokens,spec)):
   if not isinstance(refs,list):raise SystemExit(f'{ref}: bad authored source list at DGT token {i}: {refs!r}')
@@ -60,8 +62,7 @@ def authored_dgt(text,src,spec,ref):
   confidence='authored-precise' if i in precision else 'authored-phrase-only'
   if i not in precision:
    w=norm(token)
-   if w and w not in GLUE and len(phrase_ids)>=1:
-    byid={x['id']:x for x in src}
+   if w and phrase_ids:
     scored=[]
     for id in phrase_ids:
      g=byid.get(id)
@@ -71,14 +72,34 @@ def authored_dgt(text,src,spec,ref):
     if scored:
      best=max(z for z,_ in scored);tops=[id for z,id in scored if z==best]
      second=max((z for z,_ in scored if z<best),default=0)
-     safe=(w not in GLUE and (best>=12 or (best>=9 and best-second>=1) or (best>=8 and best-second>=2))) or (w in GLUE and best>=12)
-     if len(tops)==1 and safe:
+     content_safe=w not in GLUE and (best>=12 or (best>=9 and best-second>=1) or (best>=8 and best-second>=2))
+     glue_safe=w in GLUE and best>=12
+     if len(tops)==1 and (content_safe or glue_safe):
       ids=[tops[0]];confidence='authored-auto-precise'
   if ids is None:ids=[]
   x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':confidence,'phraseIds':phrase_ids}
   if not ids:x['reason']='Covered by authored phrase span; no safe lexical hover target'
-  if not ids:x['reason']='Explicitly left unlinked during translation'
   out.append(x)
+
+ # Greek finite verbs often bundle an English subject pronoun with the verb.
+ # For an ambiguous phrase-only glue word, look up to two English tokens away:
+ # inherit a precise source only when its gloss explicitly contains that word
+ # and the source remains inside the already-authored phrase span.
+ for i,x in enumerate(out):
+  if x.get('ids') or not x.get('phraseIds'):continue
+  w=norm(x.get('text',''))
+  if not w or w not in GLUE:continue
+  candidates=[]
+  for j in (i-1,i+1,i-2,i+2):
+   if not (0<=j<len(out)):continue
+   for id in out[j].get('ids',[]):
+    if id not in x.get('phraseIds',[]):continue
+    g=byid.get(id)
+    if g and any(norm(t)==w for t in semantic_terms(g,id,None)):
+     candidates.append(id)
+  candidates=list(dict.fromkeys(candidates))
+  if len(candidates)==1:
+   x['ids']=candidates;x['confidence']='authored-auto-precise-bundled';x.pop('reason',None)
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','4'))
