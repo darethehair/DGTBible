@@ -21,7 +21,7 @@ const semanticGroups=[
   ['seek','sought','seeking'],
   ['give','gave','given','gives'],
   ['go','went','going','depart','departed','leave','left'],
-  ['come','came','coming'],
+  ['come','comes','came','coming'],
   ['command','commands','commandment','commandments'],
   ['stone','stoned','stoning'],
   ['die','died','dies','death'],
@@ -32,6 +32,9 @@ const semanticGroups=[
   ['great','greater','large'],
   ['clay','mud'],
   ['take','took','taken','pick','picked'],
+  ['bring','brings','brought','bringing'],
+  ['write','writes','wrote','written','writing'],
+  ['stumble','stumbles','stumbled','stumbling'],
   ['judge','judged','judging','condemn','condemned'],
 ];
 const sem=new Map();
