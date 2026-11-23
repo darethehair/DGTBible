@@ -133,7 +133,7 @@ if missing:raise SystemExit(f'Galatians missing DGT verses: {missing[:20]} (tota
 
 step=collections.defaultdict(list)
 for line in (A/'step-galatians.tsv').read_text(encoding='utf8').splitlines():
- m=re.match(r'^2Co\.(\d+)\.(\d+)(?:\[[^\]]+\])?#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
+ m=re.match(r'^Gal\.(\d+)\.(\d+)(?:\[[^\]]+\])?#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
  if not m:continue
  f=m[5];q=re.match(r'(.+?)\s+\(([^()]*)\)\s*$',f);o=(q.group(1) if q else f).strip();t=(q.group(2) if q else '')
  tag=m[7];a,b=(tag.split('=',1)+[''])[:2] if '=' in tag else (tag,'')
