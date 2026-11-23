@@ -1,4 +1,4 @@
-const APP_VERSION='v0.33';
+const APP_VERSION='v0.34';
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={};
 const $=id=>document.getElementById(id);
@@ -93,7 +93,7 @@ function renderStudy(){
 }
 function goToChapterVerse(v){
  state.verse=v;$('ref').value=refText();renderGrid();history.pushState(null,'',hashRef());
- requestAnimationFrame(()=>scrollTo('v'+v,'.chapter-toolbar'));
+ requestAnimationFrame(()=>document.getElementById('v'+v)?.scrollIntoView({behavior:'smooth',block:'start'}));
 }
 function renderGrid(){const g=$('verseGrid');g.innerHTML='';for(const x of state.data.verses){const b=document.createElement('button');b.textContent=x.v;b.className=x.v===state.verse?'active':'';b.onclick=()=>state.mode==='chapter'?goToChapterVerse(x.v):show(state.chapter,x.v,true,true);g.appendChild(b)}}
 function updateChapterNav(){
