@@ -31,6 +31,8 @@ jobs:
         run: python scripts/audit-jude.py
       - name: Validate 1 and 2 Peter
         run: python scripts/audit-peter.py
+      - name: Validate James
+        run: python scripts/audit-james.py
       - name: Validate multi-book catalog
         run: |
           test -f data/books.json
@@ -52,6 +54,9 @@ jobs:
           test -f data/2peter/manifest.json
           test -f data/2peter/editorial-notes.json
           test -f data/2peter/paragraphs.json
+          test -f data/james/manifest.json
+          test -f data/james/editorial-notes.json
+          test -f data/james/paragraphs.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
