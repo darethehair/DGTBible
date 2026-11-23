@@ -47,6 +47,10 @@ jobs:
         run: python scripts/audit-alignment-quality.py
       - name: Critical alignment sanity gate
         run: python scripts/critical-alignment-sanity.py
+      - name: Audit orphan DGT content words
+        run: python scripts/audit-orphan-content.py
+      - name: Audit unused meaningful Greek source tokens
+        run: python scripts/audit-unused-greek.py
       - name: Validate multi-book catalog
         run: |
           test -f data/books.json
