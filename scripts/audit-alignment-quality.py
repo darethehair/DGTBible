@@ -1,3 +1,4 @@
+# corpus semantic audit
 import json,re,unicodedata,collections
 from pathlib import Path
 
