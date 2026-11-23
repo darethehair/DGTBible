@@ -255,3 +255,13 @@ def repair_verse(D,G):
     changes.append(('exact-link',x['text'],id))
  return changes
 
+
+
+def semantic_tokens_for_greek(g):
+ return set(gloss_atoms(g))
+
+def is_glue_token(w):
+ return norm(w) in GLUE
+
+def token_semantic_score(token,g):
+ return semantic(norm(token),g)
