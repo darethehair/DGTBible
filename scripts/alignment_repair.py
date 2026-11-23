@@ -274,7 +274,7 @@ def repair_verse(D,G,L=None):
   if not w or w in GLUE:continue
   candidates=[]
   for id,g in src.items():
-   z=semantic(w,g)
+   z=semantic_with_literal(w,g,id,litmap)
    if z>=8:candidates.append((candidate_score(i,D,G,src,pos,id,z),z,id))
   if not candidates:continue
   candidates.sort(reverse=True)
