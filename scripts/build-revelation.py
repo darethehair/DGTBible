@@ -532,6 +532,54 @@ def authored_dgt(text,src,spec,ref,literal=None):
     if not kept:
      x['confidence']='authored-phrase-only'
      x['reason']='Automatic recovery candidate fell outside authored phrase span'
+ # Post-guard exact recovery: the guard above may have removed an earlier
+ # verse-wide candidate that escaped its authored span. Re-run deterministic
+ # exact matching now that those tokens are genuinely unlinked.
+ if literal:
+  used_exact=collections.defaultdict(set)
+  for x in out:
+   w=norm(x.get('text',''))
+   if w and x.get('ids'):used_exact[w].update(x.get('ids',[]))
+  src_pos={g['id']:i for i,g in enumerate(src)}
+  byword=collections.defaultdict(list)
+  for i,x in enumerate(out):
+   if x.get('ids'):continue
+   w=norm(x.get('text',''))
+   if w:byword[w].append(i)
+  for w,idxs in byword.items():
+   allowed_union=set()
+   for i in idxs:allowed_union.update(out[i].get('phraseIds',[]))
+   candidates=[]
+   for y in literal:
+    terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+    if w not in terms:continue
+    for id in y.get('ids',[]):
+     if id in used_exact[w]:continue
+     if allowed_union and id not in allowed_union:continue
+     if id not in candidates:candidates.append(id)
+   candidates.sort(key=lambda id:src_pos.get(id,10**9))
+   if len(candidates)==len(idxs) and candidates and all((not out[i].get('phraseIds')) or id in set(out[i].get('phraseIds',[])) for i,id in zip(idxs,candidates)):
+    for i,id in zip(idxs,candidates):
+     out[i]['ids']=[id]
+     out[i]['confidence']='authored-auto-precise-postguard-exact'
+     out[i].pop('reason',None)
+     used_exact[w].add(id)
+   else:
+    for i in idxs:
+     allowed=set(out[i].get('phraseIds',[]))
+     local=[]
+     for y in literal:
+      terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+      if w not in terms:continue
+      for id in y.get('ids',[]):
+       if id in used_exact[w]:continue
+       if allowed and id not in allowed:continue
+       if id not in local:local.append(id)
+     if len(local)==1:
+      out[i]['ids']=[local[0]]
+      out[i]['confidence']='authored-auto-precise-postguard-local-exact'
+      out[i].pop('reason',None)
+      used_exact[w].add(local[0])
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
