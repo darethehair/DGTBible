@@ -693,9 +693,11 @@
           },
           {
             "text": "our",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -703,8 +705,7 @@
               "w11",
               "w12",
               "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "Lord?",
@@ -777,9 +778,11 @@
           },
           {
             "text": "my",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w14",
               "w15",
@@ -789,8 +792,7 @@
               "w19",
               "w20",
               "w21"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "work",
@@ -8996,17 +8998,18 @@
           },
           {
             "text": "obstacle",
-            "ids": [],
+            "ids": [
+              "w22"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w19",
               "w20",
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "in",
@@ -14744,7 +14747,7 @@
       "v": 20,
       "greek": "καὶ ἐγενόμην τοῖς Ἰουδαίοις ὡς Ἰουδαῖος, ἵνα Ἰουδαίους κερδήσω· τοῖς ὑπὸ νόμον ὡς ὑπὸ νόμον, μὴ ὢν αὐτὸς ὑπὸ νόμον, ἵνα τοὺς ὑπὸ νόμον κερδήσω·",
       "literal": "And I became to the Jews like a Jew so that Jews I may win To those under the Law as under the law not being myself under the law so that those under the law I may win",
-      "dgt": "To the Jews I became as a Jew, so that I might gain Jews; to those under law, as under law—though I myself am not under law—so that I might gain those under law.",
+      "dgt": "To the Jews I became as a Jew, so that I might gain Jews; to those under law, as under law — though I myself am not under law — so that I might gain those under law.",
       "notes": [],
       "alignment": {
         "greek": [
@@ -15570,8 +15573,7 @@
               "w12",
               "w13",
               "w14",
-              "w15",
-              "w16"
+              "w15"
             ]
           },
           {
@@ -15587,8 +15589,7 @@
               "w12",
               "w13",
               "w14",
-              "w15",
-              "w16"
+              "w15"
             ]
           },
           {
@@ -15602,8 +15603,7 @@
               "w12",
               "w13",
               "w14",
-              "w15",
-              "w16"
+              "w15"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -15618,8 +15618,7 @@
               "w12",
               "w13",
               "w14",
-              "w15",
-              "w16"
+              "w15"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -15636,8 +15635,7 @@
               "w12",
               "w13",
               "w14",
-              "w15",
-              "w16"
+              "w15"
             ]
           },
           {
@@ -15651,13 +15649,12 @@
               "w12",
               "w13",
               "w14",
-              "w15",
-              "w16"
+              "w15"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
-            "text": "law—though",
+            "text": "law",
             "ids": [],
             "after": " ",
             "confidence": "authored-phrase-only",
@@ -15667,8 +15664,36 @@
               "w12",
               "w13",
               "w14",
-              "w15",
-              "w16"
+              "w15"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
+          },
+          {
+            "text": "—",
+            "ids": [],
+            "after": " ",
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w10",
+              "w11",
+              "w12",
+              "w13",
+              "w14",
+              "w15"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
+          },
+          {
+            "text": "though",
+            "ids": [],
+            "after": " ",
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w16",
+              "w17",
+              "w18",
+              "w19",
+              "w20"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -15678,11 +15703,11 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
+              "w16",
               "w17",
               "w18",
               "w19",
-              "w20",
-              "w21"
+              "w20"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -15694,11 +15719,11 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w16",
               "w17",
               "w18",
               "w19",
-              "w20",
-              "w21"
+              "w20"
             ]
           },
           {
@@ -15707,27 +15732,28 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
+              "w16",
               "w17",
               "w18",
               "w19",
-              "w20",
-              "w21"
+              "w20"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w16",
               "w17",
               "w18",
               "w19",
-              "w20",
-              "w21"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+              "w20"
+            ]
           },
           {
             "text": "under",
@@ -15737,39 +15763,71 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w16",
               "w17",
               "w18",
               "w19",
-              "w20",
-              "w21"
+              "w20"
             ]
           },
           {
-            "text": "law—so",
+            "text": "law",
+            "ids": [
+              "w20"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w16",
+              "w17",
+              "w18",
+              "w19",
+              "w20"
+            ]
+          },
+          {
+            "text": "—",
             "ids": [],
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
+              "w16",
               "w17",
               "w18",
               "w19",
-              "w20",
-              "w21"
+              "w20"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
-            "text": "that",
-            "ids": [],
+            "text": "so",
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w21",
               "w22",
               "w23",
               "w24",
               "w25"
+            ]
+          },
+          {
+            "text": "that",
+            "ids": [
+              "w21"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w21",
+              "w22",
+              "w23",
+              "w24",
+              "w25"
+            ]
           },
           {
             "text": "I",
@@ -15779,6 +15837,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w21",
               "w22",
               "w23",
               "w24",
@@ -15791,6 +15850,7 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
+              "w21",
               "w22",
               "w23",
               "w24",
@@ -15804,6 +15864,7 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
+              "w21",
               "w22",
               "w23",
               "w24",
@@ -15819,6 +15880,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w21",
               "w22",
               "w23",
               "w24",
@@ -15833,6 +15895,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w21",
               "w22",
               "w23",
               "w24",
@@ -15847,6 +15910,7 @@
             "after": "",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w21",
               "w22",
               "w23",
               "w24",
@@ -15860,7 +15924,7 @@
       "v": 21,
       "greek": "τοῖς ἀνόμοις ὡς ἄνομος, μὴ ὢν ἄνομος θεοῦ ἀλλʼ ἔννομος Χριστοῦ, ἵνα κερδάνω τοὺς ἀνόμους·",
       "literal": "To those outside the Law like outside the Law — not being outside the law of God but under the law of Christ — so that I may win those outside the Law.",
-      "dgt": "To those without law I became as one without law—not being without God’s law but under Christ’s law—so that I might gain those without law.",
+      "dgt": "To those without law I became as one without law — not being without God’s law but under Christ’s law — so that I might gain those without law.",
       "notes": [],
       "alignment": {
         "greek": [
@@ -16241,8 +16305,7 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ]
           },
           {
@@ -16256,8 +16319,7 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ]
           },
           {
@@ -16269,8 +16331,7 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -16283,8 +16344,7 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -16297,8 +16357,7 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -16311,8 +16370,7 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -16325,8 +16383,7 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -16339,8 +16396,7 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -16353,13 +16409,12 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
-            "text": "law—not",
+            "text": "law",
             "ids": [],
             "after": " ",
             "confidence": "authored-phrase-only",
@@ -16367,10 +16422,36 @@
               "w1",
               "w2",
               "w3",
-              "w4",
-              "w5"
+              "w4"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
+          },
+          {
+            "text": "—",
+            "ids": [],
+            "after": " ",
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w1",
+              "w2",
+              "w3",
+              "w4"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
+          },
+          {
+            "text": "not",
+            "ids": [
+              "w5"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w5",
+              "w6",
+              "w7",
+              "w8"
+            ]
           },
           {
             "text": "being",
@@ -16380,6 +16461,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w5",
               "w6",
               "w7",
               "w8"
@@ -16391,6 +16473,7 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
+              "w5",
               "w6",
               "w7",
               "w8"
@@ -16405,6 +16488,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w5",
               "w6",
               "w7",
               "w8"
@@ -16418,6 +16502,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w5",
               "w6",
               "w7",
               "w8"
@@ -16433,8 +16518,7 @@
             "phraseIds": [
               "w9",
               "w10",
-              "w11",
-              "w12"
+              "w11"
             ]
           },
           {
@@ -16447,8 +16531,7 @@
             "phraseIds": [
               "w9",
               "w10",
-              "w11",
-              "w12"
+              "w11"
             ]
           },
           {
@@ -16461,34 +16544,61 @@
             "phraseIds": [
               "w9",
               "w10",
-              "w11",
-              "w12"
+              "w11"
             ]
           },
           {
-            "text": "law—so",
+            "text": "law",
+            "ids": [
+              "w10"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w9",
+              "w10",
+              "w11"
+            ]
+          },
+          {
+            "text": "—",
             "ids": [],
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
               "w9",
               "w10",
-              "w11",
-              "w12"
+              "w11"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
-            "text": "that",
-            "ids": [],
+            "text": "so",
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w12",
               "w13",
               "w14",
               "w15"
+            ]
+          },
+          {
+            "text": "that",
+            "ids": [
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w12",
+              "w13",
+              "w14",
+              "w15"
+            ]
           },
           {
             "text": "I",
@@ -16498,6 +16608,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w12",
               "w13",
               "w14",
               "w15"
@@ -16509,6 +16620,7 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
+              "w12",
               "w13",
               "w14",
               "w15"
@@ -16521,6 +16633,7 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
+              "w12",
               "w13",
               "w14",
               "w15"
@@ -16535,6 +16648,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w12",
               "w13",
               "w14",
               "w15"
@@ -16546,6 +16660,7 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
+              "w12",
               "w13",
               "w14",
               "w15"
@@ -16560,6 +16675,7 @@
             "after": "",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w12",
               "w13",
               "w14",
               "w15"
@@ -18779,16 +18895,17 @@
           },
           {
             "text": "obtain",
-            "ids": [],
+            "ids": [
+              "w19"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w16",
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "it.",
@@ -20473,17 +20590,18 @@
           },
           {
             "text": "discipline",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4",
               "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "my",
@@ -20565,14 +20683,15 @@
           },
           {
             "text": "slavery,",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w6",
               "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "lest",
@@ -20695,15 +20814,16 @@
           },
           {
             "text": "become",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "disqualified.",
