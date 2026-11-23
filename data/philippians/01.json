@@ -5748,9 +5748,11 @@
           },
           {
             "text": "think",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -5789,8 +5791,7 @@
               "w35",
               "w36",
               "w37"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "this",
