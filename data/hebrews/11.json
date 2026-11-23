@@ -1955,10 +1955,10 @@
           {
             "text": "testimony",
             "ids": [
-              "w15"
+              "w12"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "that",
@@ -2000,9 +2000,11 @@
           },
           {
             "text": "testifying",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
@@ -2046,9 +2048,11 @@
           },
           {
             "text": "faith,",
-            "ids": [],
+            "ids": [
+              "w24"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
