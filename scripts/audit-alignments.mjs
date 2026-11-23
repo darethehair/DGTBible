@@ -10,6 +10,41 @@ const generic=new Set(['the','a','an','of','to','and','or','in','on','at','for',
 const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim();
 const words=s=>norm(s).split(' ').filter(Boolean);
 
+
+const semanticGroups=[
+  ['say','said','says','saying','speak','spoke','spoken','tell','told'],
+  ['see','seen','saw','behold','look','looked'],
+  ['know','knew','known','understand','understood','recognize','recognized'],
+  ['fear','feared','afraid'],
+  ['hope','hoped','hoping'],
+  ['believe','believed','believing'],
+  ['seek','sought','seeking'],
+  ['give','gave','given','gives'],
+  ['go','went','going','depart','departed','leave','left'],
+  ['come','came','coming'],
+  ['command','commands','commandment','commandments'],
+  ['stone','stoned','stoning'],
+  ['die','died','dies','death'],
+  ['do','did','does','done','make','made'],
+  ['hear','heard','hearing'],
+  ['hold','held','holding'],
+  ['free','freedom'],
+  ['great','greater','large'],
+  ['clay','mud'],
+  ['take','took','taken','pick','picked'],
+  ['judge','judged','judging','condemn','condemned'],
+];
+const sem=new Map();
+for(const g of semanticGroups) for(const w of g) sem.set(w,new Set(g));
+const stem=w=>{
+  let x=w;
+  for(const suf of ['ing','ed','es','s']){
+    if(x.length>suf.length+2 && x.endsWith(suf)) return x.slice(0,-suf.length);
+  }
+  return x;
+};
+const equiv=(a,b)=>a===b || stem(a)===stem(b) || sem.get(a)?.has(b) || sem.get(b)?.has(a);
+
 const findings=[];
 for(const entry of manifest.chapters){
   const ch=JSON.parse(fs.readFileSync(path.join(root,'data/john',entry.file),'utf8'));
@@ -27,7 +62,7 @@ for(const entry of manifest.chapters){
         const phrase=pos.map(i=>items[i].text).join(' ');
         const pwords=words(phrase).filter(w=>!generic.has(w));
         const gwords=words(g.gloss||'').filter(w=>!generic.has(w));
-        const overlap=pwords.some(w=>gwords.includes(w));
+        const overlap=pwords.some(w=>gwords.some(gw=>equiv(w,gw)));
         let score=0;
         const reasons=[];
         if(separated){score+=2;reasons.push('noncontiguous')}
