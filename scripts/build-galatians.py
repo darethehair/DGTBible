@@ -24,7 +24,9 @@ def authored_dgt(text,src,spec,ref):
    if not isinstance(r,str):raise SystemExit(f'{ref}: authored source reference must be a string: {r!r}')
    if r.startswith('@'):
     q=r[1:]
-    if '-' in q:
+    if q=='all':
+     ns=range(1,len(src)+1)
+    elif '-' in q:
      a,b=map(int,q.split('-',1));ns=range(a,b+1)
     else:ns=[int(q)]
     for n in ns:
