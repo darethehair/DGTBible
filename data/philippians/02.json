@@ -21040,9 +21040,11 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-final-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -21066,8 +21068,7 @@
               "w20",
               "w21",
               "w22"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "my",
