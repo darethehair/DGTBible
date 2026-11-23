@@ -1,3 +1,4 @@
+# full-corpus bidirectional lexical sanity
 import json,collections
 from pathlib import Path
 from alignment_repair import norm,GLUE,token_semantic_score,semantic_tokens_for_greek
