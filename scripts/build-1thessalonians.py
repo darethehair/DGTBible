@@ -37,10 +37,9 @@ def authored_dgt(text,src,spec,ref,literal=None):
   ]
   a=norm(a);b=norm(b)
   z=sim(a,b)
-  if z:return z
   for g in extra:
-   if a in g and b in g:return 9
-  return 0
+   if a in g and b in g:z=max(z,9)
+  return z
  def pronoun_key(w):
   groups={
    'he':{'he','him','his','himself','who','whom','whose'},
@@ -363,6 +362,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
    terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
    for id in y.get('ids',[]):
     lit_terms[id].update(terms)
+  src_pos={g['id']:i for i,g in enumerate(src)}
   changed=True
   while changed:
    changed=False
@@ -389,6 +389,15 @@ def authored_dgt(text,src,spec,ref,literal=None):
       out[i]['confidence']='authored-auto-precise-final-ordered'
       out[i].pop('reason',None)
      changed=True
+    elif len(idxs)==1 and len(candidates)>1:
+     i=idxs[0]
+     erel=i/max(1,len(out)-1)
+     ranked=sorted((abs(erel-src_pos[id]/max(1,len(src)-1)),id) for id in candidates if id in src_pos)
+     if len(ranked)>=2 and ranked[1][0]-ranked[0][0]>=0.12:
+      out[i]['ids']=[ranked[0][1]]
+      out[i]['confidence']='authored-auto-precise-final-positional'
+      out[i].pop('reason',None)
+      changed=True
 
    for i,x in enumerate(out):
     if x.get('ids'):continue
