@@ -1,4 +1,4 @@
-const APP_VERSION='v0.32';
+const APP_VERSION='v0.33';
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={};
 const $=id=>document.getElementById(id);
@@ -91,7 +91,11 @@ function renderStudy(){
  const ai=$('alignmentNotice');ai.hidden=!!verse.alignment;ai.textContent=verse.alignment?'':'Word alignment for this verse has not yet been manually curated.';
  const ci=availableChapters.indexOf(state.chapter),first=state.data.verses[0].v,last=state.data.verses.at(-1).v;$('prevVerse').disabled=ci===0&&state.verse===first;$('nextVerse').disabled=ci===availableChapters.length-1&&state.verse===last;$('studyPosition').textContent=refText();
 }
-function renderGrid(){const g=$('verseGrid');g.innerHTML='';for(const x of state.data.verses){const b=document.createElement('button');b.textContent=x.v;b.className=x.v===state.verse?'active':'';b.onclick=()=>show(state.chapter,x.v,true,true);g.appendChild(b)}}
+function goToChapterVerse(v){
+ state.verse=v;$('ref').value=refText();renderGrid();history.pushState(null,'',hashRef());
+ requestAnimationFrame(()=>scrollTo('v'+v,'.chapter-toolbar'));
+}
+function renderGrid(){const g=$('verseGrid');g.innerHTML='';for(const x of state.data.verses){const b=document.createElement('button');b.textContent=x.v;b.className=x.v===state.verse?'active':'';b.onclick=()=>state.mode==='chapter'?goToChapterVerse(x.v):show(state.chapter,x.v,true,true);g.appendChild(b)}}
 function updateChapterNav(){
  const i=availableChapters.indexOf(state.chapter),pd=i<=0,nd=i<0||i>=availableChapters.length-1;
  for(const id of ['prevChapterTop','prevChapterBottom','prevCompactChapterTop','prevCompactChapterBottom']){const el=$(id);if(el)el.disabled=pd}
