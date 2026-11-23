@@ -37,6 +37,8 @@ const semanticGroups=[
   ['stumble','stumbles','stumbled','stumbling'],
   ['witness','witnesses','witnessed','testify','testified','testifies','testimony'],
   ['desire','desires','desired','want','wants','wanted','wish','wishes','wished'],
+  ['manifest','manifests','manifested','reveal','reveals','revealed'],
+  ['see','sees','seeing','seen','saw','behold','beheld'],
   ['judge','judged','judging','condemn','condemned'],
 ];
 const sem=new Map();
