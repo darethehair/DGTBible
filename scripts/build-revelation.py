@@ -145,13 +145,13 @@ def authored_dgt(text,src,spec,ref,literal=None):
    key=norm(p[0]);matches=[i for i,t in enumerate(tokens) if norm(t)==key]
    if p[1]<1 or p[1]>len(matches):raise SystemExit(f'{ref}: precisionWords cannot find {p[0]!r} occurrence {p[1]}')
    precision[matches[p[1]-1]]=resolve(p[2]);born_single.discard(matches[p[1]-1])
-   # Explicit English words supplied when no standalone Greek token exists.
-   for p in spec.get('suppliedWords',[]):
-    if not isinstance(p,list) or len(p)!=2 or not isinstance(p[0],str) or not isinstance(p[1],int):
-     raise SystemExit(f'{ref}: suppliedWords entries must be [token,occurrence]: {p!r}')
-    key=norm(p[0]);matches=[i for i,t in enumerate(tokens) if norm(t)==key]
-    if p[1]<1 or p[1]>len(matches):raise SystemExit(f'{ref}: suppliedWords cannot find {p[0]!r} occurrence {p[1]}')
-    supplied.add(matches[p[1]-1])
+  # Explicit English words supplied when no standalone Greek token exists.
+  for p in spec.get('suppliedWords',[]):
+   if not isinstance(p,list) or len(p)!=2 or not isinstance(p[0],str) or not isinstance(p[1],int):
+    raise SystemExit(f'{ref}: suppliedWords entries must be [token,occurrence]: {p!r}')
+   key=norm(p[0]);matches=[i for i,t in enumerate(tokens) if norm(t)==key]
+   if p[1]<1 or p[1]>len(matches):raise SystemExit(f'{ref}: suppliedWords cannot find {p[0]!r} occurrence {p[1]}')
+   supplied.add(matches[p[1]-1])
   spec=expanded
  if not isinstance(spec,list) or len(spec)!=len(tokens):
   raise SystemExit(f'{ref}: authored alignment must cover each DGT whitespace token ({len(tokens)} expected)')
