@@ -13,10 +13,10 @@ on:
     inputs:
       start_chapter:
         required: true
-        default: '6'
+        default: '13'
       end_chapter:
         required: true
-        default: '6'
+        default: '13'
 permissions:
   contents: write
 jobs:
@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       START_CHAPTER: ${{ github.event.inputs.start_chapter || '1' }}
-      END_CHAPTER: ${{ github.event.inputs.end_chapter || '6' }}
+      END_CHAPTER: ${{ github.event.inputs.end_chapter || '13' }}
     steps:
       - uses: actions/checkout@v4
       - name: Extract pinned SBLGNT and TAGNT
