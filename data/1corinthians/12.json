@@ -8466,9 +8466,11 @@
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -8481,8 +8483,7 @@
               "w9",
               "w10",
               "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "body",
