@@ -99,7 +99,13 @@ def authored_dgt(text,src,spec,ref,literal=None):
   for seg in spec['segments']:
    if not isinstance(seg,list) or len(seg)!=2 or not isinstance(seg[0],str) or not isinstance(seg[1],list):
     raise SystemExit(f'{ref}: each authored segment must be [text,[source refs]]: {seg!r}')
-   stoks=re.findall(r'\S+',seg[0]);ids=resolve(seg[1]);rebuilt.extend(stoks);expanded.extend([ids]*len(stoks))
+   stoks=re.findall(r'\S+',seg[0]);ids=resolve(seg[1]);rebuilt.extend(stoks)
+   start_i=len(expanded);expanded.extend([ids]*len(stoks))
+   # Born-aligned authoring: when an authored English segment explicitly
+   # points to one Greek source token, that mapping is authoritative for every
+   # English token in the segment. Do not throw it away and rediscover it later.
+   if len(ids)==1:
+    for k in range(start_i,start_i+len(stoks)): precision[k]=ids
   if rebuilt!=tokens:raise SystemExit(f'{ref}: authored segment text does not exactly reproduce DGT tokens')
   for p in spec.get('precision',[]):
    if not isinstance(p,list) or len(p)!=2 or not isinstance(p[0],int) or not isinstance(p[1],list):
