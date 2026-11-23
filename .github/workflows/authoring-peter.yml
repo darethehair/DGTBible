@@ -1,0 +1,37 @@
+name: Build pinned 1 and 2 Peter DGT batch
+
+on:
+  push:
+    paths:
+      - '.github/workflows/authoring-peter.yml'
+      - 'scripts/extract-stepbible-peter.mjs'
+      - 'scripts/build-peter.py'
+      - 'scripts/audit-peter.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/john_batch_dgt.py'
+      - 'data/authoring/peter-dgt.tsv'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract pinned SBLGNT and TAGNT
+        run: node scripts/extract-stepbible-peter.mjs
+      - name: Build 1 and 2 Peter
+        run: python scripts/build-peter.py
+      - name: Audit 1 and 2 Peter
+        run: python scripts/audit-peter.py
+      - name: Commit clean generated Peter letters
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/1peter/*.json data/2peter/*.json data/sources/step-1peter-*.json data/sources/step-2peter-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean 1 and 2 Peter batch"
+            git push
+          fi
