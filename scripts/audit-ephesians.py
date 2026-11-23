@@ -10,6 +10,7 @@ def atoms(s): return [n(x) for x in re.findall(r"[A-Za-z0-9]+",str(s)) if n(x)]
 linked=unlinked=count=0
 recoverable=[]
 collisions=[]
+synthetic_unlinked=[]
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'ephesians'/f'{ch:02}.json').read_text(encoding='utf8'))
@@ -22,6 +23,11 @@ for ch in range(start,end+1):
    if x.get('ids') or x.get('phraseIds'):linked+=1
    else:unlinked+=1
    assert all(i in ids for i in (x.get('ids',[])+x.get('phraseIds',[]))),f'dangling alignment Ephesians {ch}:{v["v"]}'
+  used_precise={i for x in D for i in x.get('ids',[])}
+  for g in v['alignment']['greek']:
+   gid=(g.get('ids') or [None])[0]
+   if gid and gid.startswith('s') and gid not in used_precise:
+    synthetic_unlinked.append((ch,v['v'],gid,g.get('text','')))
   # If an unlinked DGT word occurs N times and the literal layer contains exactly
   # N source-linked occurrences of the same word, ordered pairing is deterministic.
   byword=collections.defaultdict(list)
@@ -61,4 +67,5 @@ pct=linked/(linked+unlinked)*100
 assert pct>=75,pct
 assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverable[:20]}'
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
-print(f'Ephesians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 suspicious authored-precise collisions.')
+assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
+print(f'Ephesians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
