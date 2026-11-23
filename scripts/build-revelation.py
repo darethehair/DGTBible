@@ -653,6 +653,36 @@ def authored_dgt(text,src,spec,ref,literal=None):
     x['ids']=[candidates[0]]
     x['confidence']='authored-auto-precise-postguard-bundled-pronoun'
     x.pop('reason',None)
+ # Post-guard positional exact recovery. When an unlinked token has several
+ # exact literal candidates inside its authored span, accept the nearest source
+ # position only when it is clearly separated from the runner-up.
+ if literal:
+  src_pos={g['id']:i for i,g in enumerate(src)}
+  used_exact=collections.defaultdict(set)
+  for x in out:
+   w=norm(x.get('text',''))
+   if w and x.get('ids'):used_exact[w].update(x.get('ids',[]))
+  for i,x in enumerate(out):
+   if x.get('ids'):continue
+   w=norm(x.get('text',''))
+   if not w:continue
+   allowed=set(x.get('phraseIds',[]))
+   candidates=[]
+   for y in literal:
+    terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+    if w not in terms:continue
+    for id in y.get('ids',[]):
+     if id in used_exact[w]:continue
+     if allowed and id not in allowed:continue
+     if id not in candidates:candidates.append(id)
+   if len(candidates)>1:
+    erel=i/max(1,len(out)-1)
+    ranked=sorted((abs(erel-src_pos[id]/max(1,len(src)-1)),id) for id in candidates if id in src_pos)
+    if len(ranked)>=2 and ranked[1][0]-ranked[0][0]>=0.12:
+     x['ids']=[ranked[0][1]]
+     x['confidence']='authored-auto-precise-postguard-positional'
+     x.pop('reason',None)
+     used_exact[w].add(ranked[0][1])
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
