@@ -19,5 +19,6 @@ await fs.writeFile('authoring/step-jude.tsv',['# STEPBible TAGNT extraction','# 
 const sblLines=(await sblRes.text()).split(/\r?\n/).filter(line=>/^Jude \d+:\d+\t/.test(line));
 await fs.writeFile('authoring/sblgnt-jude.txt',['# SBLGNT extraction','# source: Faithlife/SBLGNT@'+sblgntSha,'# book: Jude',...sblLines].join('\n')+'\n');
 console.log('Matched',sblLines.length,'SBLGNT verses and',matched.length,'TAGNT lines for Jude');
+console.log('TAGNT Jude sample:',matched.slice(0,3));
 if(sblLines.length!==25)throw new Error('Unexpected SBLGNT verse count for Jude');
 if(matched.length<300)throw new Error('Too few TAGNT lines for Jude');
