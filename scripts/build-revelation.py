@@ -488,6 +488,34 @@ def authored_dgt(text,src,spec,ref,literal=None):
     x.pop('reason',None)
     used_exact[w].add(candidates[0])
 
+ # Final ordered exact recovery across distinct authored spans. Only accept
+ # the left-to-right pairing when every paired source ID is inside that token's
+ # own authored span; otherwise leave it for explicit authoring review.
+ if literal:
+  used_exact=collections.defaultdict(set)
+  byword=collections.defaultdict(list)
+  for i,x in enumerate(out):
+   w=norm(x.get('text',''))
+   if not w:continue
+   if x.get('ids'):used_exact[w].update(x.get('ids',[]))
+   else:byword[w].append(i)
+  src_pos={g['id']:i for i,g in enumerate(src)}
+  for w,idxs in byword.items():
+   candidates=[]
+   for y in literal:
+    terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+    if w not in terms:continue
+    for id in y.get('ids',[]):
+     if id not in used_exact[w] and id not in candidates:candidates.append(id)
+   candidates.sort(key=lambda id:src_pos.get(id,10**9))
+   if len(candidates)!=len(idxs) or not candidates:continue
+   if all((not out[i].get('phraseIds')) or id in set(out[i].get('phraseIds',[])) for i,id in zip(idxs,candidates)):
+    for i,id in zip(idxs,candidates):
+     out[i]['ids']=[id]
+     out[i]['confidence']='authored-auto-precise-final-span-ordered'
+     out[i].pop('reason',None)
+     used_exact[w].add(id)
+
  # Born-aligned span guard: automatic recovery must never escape the
  # authored source span. This prevents a later exact/synonym pass from stealing
  # a matching Greek token elsewhere in the verse.
