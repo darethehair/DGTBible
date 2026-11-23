@@ -1,0 +1,15 @@
+name: Deep lexical sanity audit
+on:
+  push:
+    paths:
+      - 'scripts/deep-lexical-sanity.py'
+      - 'scripts/alignment_repair.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/deep-lexical-sanity.py
