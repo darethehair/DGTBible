@@ -1,0 +1,37 @@
+name: Build pinned Jude DGT
+
+on:
+  push:
+    paths:
+      - '.github/workflows/authoring-jude.yml'
+      - 'scripts/extract-stepbible-jude.mjs'
+      - 'scripts/build-jude.py'
+      - 'scripts/audit-jude.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/john_batch_dgt.py'
+      - 'data/authoring/jude-dgt.tsv'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract pinned SBLGNT and TAGNT
+        run: node scripts/extract-stepbible-jude.mjs
+      - name: Build Jude
+        run: python scripts/build-jude.py
+      - name: Audit Jude
+        run: python scripts/audit-jude.py
+      - name: Commit clean generated Jude
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/jude/*.json data/sources/step-jude-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean Jude"
+            git push
+          fi
