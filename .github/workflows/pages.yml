@@ -35,6 +35,8 @@ jobs:
         run: python scripts/audit-james.py
       - name: Validate Hebrews
         run: python scripts/audit-hebrews.py
+      - name: Corpus semantic alignment audit
+        run: python scripts/audit-alignment-quality.py
       - name: Validate multi-book catalog
         run: |
           test -f data/books.json
