@@ -26,7 +26,7 @@ GROUPS=[
  ['lawless','lawlessness','unrighteous','unrighteousness','wicked','wickedness'],
  ['speak','spoke','spoken','speaking','say','said','says','saying','tell','told'],
  ['see','sees','seeing','seen','saw','look','looks','looked','looking','behold','beheld','observe','observes','observed'],
- ['know','knew','known','knowledge','understand','understood','recognize','recognized'],
+ ['know','knew','known','knowledge','understand','understood','understanding','intelligence','intelligent','recognize','recognized'],
  ['glory','glorious','glorify','glorified'],
  ['power','powerful','strength','strong','mighty','authority'],
  ['death','die','died','dead'],
