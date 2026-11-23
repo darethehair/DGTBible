@@ -1,5 +1,5 @@
 # post-structural-repair rescan: Report every unlinked meaningful DGT token, even when no lexical candidate is known.
-import json,collections
+import json,collections,sys
 from pathlib import Path
 from alignment_repair import BOOKS,atoms,norm,GLUE,source_map,literal_terms_by_id,semantic_terms,sim
 
@@ -51,3 +51,8 @@ print('UNLINKED CONTENT SUMMARY',dict(stats))
 for r in rows:
  print(json.dumps(r,ensure_ascii=False))
 print('TOTAL_UNREVIEWED',len(rows))
+
+if stats['lexical']:
+ print(f"UNREVIEWED LEXICAL ORPHANS FAILED: {stats['lexical']} candidate(s)")
+ sys.exit(1)
+print('LEXICAL ORPHAN GATE CLEAN')
