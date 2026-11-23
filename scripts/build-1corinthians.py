@@ -16,6 +16,7 @@ for path in sorted((R/'data/authoring').glob('1corinthians-*-dgt.tsv')):
    try: authored[(ch,v)]=json.loads(parts[3])
    except json.JSONDecodeError as e:raise SystemExit(f'bad authored alignment JSON {ref} in {path}: {e}')
 
+# Regenerate generated chapters whenever bundled-pronoun logic changes.
 def authored_dgt(text,src,spec,ref):
  def resolve(refs):
   ids=[]
