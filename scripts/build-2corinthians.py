@@ -124,7 +124,7 @@ if missing:raise SystemExit(f'2 Corinthians missing DGT verses: {missing[:20]} (
 
 step=collections.defaultdict(list)
 for line in (A/'step-2corinthians.tsv').read_text(encoding='utf8').splitlines():
- m=re.match(r'^1Co\.(\d+)\.(\d+)(?:\[[^\]]+\])?#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
+ m=re.match(r'^2Co\.(\d+)\.(\d+)(?:\[[^\]]+\])?#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
  if not m:continue
  f=m[5];q=re.match(r'(.+?)\s+\(([^()]*)\)\s*$',f);o=(q.group(1) if q else f).strip();t=(q.group(2) if q else '')
  tag=m[7];a,b=(tag.split('=',1)+[''])[:2] if '=' in tag else (tag,'')
@@ -153,7 +153,7 @@ for ch in range(start,end+1):
   linked+=sum(bool(x.get('ids') or x.get('phraseIds')) for x in da);unlinked+=sum(not (x.get('ids') or x.get('phraseIds')) for x in da)
   lit=''.join(x['text']+x['after'] for x in la)
   vs.append({'v':v,'greek':greek,'literal':lit,'dgt':dgt,'notes':[],'alignment':{'greek':ga,'translit':ta,'literal':la,'dgt':da}})
-  sv.append({'ref':f'2Cor.{ch}.{v}','book':'1CO','chapter':str(ch),'verse':str(v),'testament':'NT','words':[{'original':x['text'],'translit':x['translit'],'strongs':x['strongs'],'morph':x['morph'],'gloss':x['gloss'],'synthetic':x.get('synthetic',False)} for x in src]})
+  sv.append({'ref':f'2Cor.{ch}.{v}','book':'2CO','chapter':str(ch),'verse':str(v),'testament':'NT','words':[{'original':x['text'],'translit':x['translit'],'strongs':x['strongs'],'morph':x['morph'],'gloss':x['gloss'],'synthetic':x.get('synthetic',False)} for x in src]})
  (D/f'{ch:02}.json').write_text(json.dumps({'book':'2 Corinthians','chapter':ch,'greekSource':'SBLGNT','verses':vs},ensure_ascii=False,indent=2)+'\n',encoding='utf8')
  (S/f'step-2corinthians-{ch:02}.json').write_text(json.dumps({'source':'STEPBible TAGNT aligned to SBLGNT','upstream':'STEPBible/STEPBible-Data@5de0a47f35f0fc13dfe1430d104e5db8a4285f9c','license':'CC BY 4.0','sblgnt':'Faithlife/SBLGNT@d7f35adca9ec410e1d1499c63b4dd989d76c8d4d','verses':sv},ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 
