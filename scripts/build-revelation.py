@@ -773,6 +773,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
   if i in supplied:
    x['ids']=[]
    x['confidence']='authored-supplied'
+   x['supplied']=True
    x['reason']='English word supplied for idiomatic/grammatical rendering; no standalone Greek token'
  return out
 
