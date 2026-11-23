@@ -429,6 +429,18 @@ def authored_dgt(text,src,spec,ref,literal=None):
      x['confidence']='authored-auto-precise-final-bundled-pronoun'
      x.pop('reason',None)
      changed=True
+ # Born-aligned span guard: automatic recovery must never escape the
+ # authored source span. This prevents a later exact/synonym pass from stealing
+ # a matching Greek token elsewhere in the verse.
+ for x in out:
+  p=set(x.get('phraseIds',[]))
+  if p and str(x.get('confidence','')).startswith('authored-auto-precise'):
+   kept=[id for id in x.get('ids',[]) if id in p]
+   if kept!=x.get('ids',[]):
+    x['ids']=kept
+    if not kept:
+     x['confidence']='authored-phrase-only'
+     x['reason']='Automatic recovery candidate fell outside authored phrase span'
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
