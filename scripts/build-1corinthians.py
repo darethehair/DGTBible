@@ -70,7 +70,8 @@ def authored_dgt(text,src,spec,ref):
     if scored:
      best=max(z for z,_ in scored);tops=[id for z,id in scored if z==best]
      second=max((z for z,_ in scored if z<best),default=0)
-     if len(tops)==1 and (best>=12 or (best>=9 and best-second>=1) or (best>=8 and best-second>=2)):
+     safe=(w not in GLUE and (best>=12 or (best>=9 and best-second>=1) or (best>=8 and best-second>=2))) or (w in GLUE and best>=12)
+     if len(tops)==1 and safe:
       ids=[tops[0]];confidence='authored-auto-precise'
   if ids is None:ids=[]
   x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':confidence,'phraseIds':phrase_ids}
