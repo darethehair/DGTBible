@@ -1269,10 +1269,10 @@
           {
             "text": "one",
             "ids": [
-              "w3"
+              "w1"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "who",
@@ -1292,10 +1292,10 @@
           {
             "text": "not",
             "ids": [
-              "w4"
+              "w6"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "despise",
@@ -1307,18 +1307,19 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "one",
             "ids": [
-              "w9"
+              "w3"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "who",
@@ -1337,25 +1338,26 @@
           {
             "text": "not",
             "ids": [
-              "w6"
+              "w4"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "eat,",
             "ids": [
-              "w12"
+              "w5"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "quality-scan"
           },
           {
             "text": "let",
@@ -1367,17 +1369,18 @@
           {
             "text": "the",
             "ids": [
-              "w13"
+              "w9"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "who",
@@ -1399,15 +1402,15 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "eat",
             "ids": [
-              "w14"
+              "w12"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "not",
@@ -1428,32 +1431,32 @@
           {
             "text": "the",
             "ids": [
-              "w17"
+              "w13"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "who",
-            "ids": [
-              "w20"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "eats,",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "for",
@@ -1481,17 +1484,19 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "quality-scan"
           },
           {
             "text": "person.",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": "",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "quality-scan"
           }
         ]
       }
