@@ -12412,10 +12412,10 @@
           {
             "text": "me",
             "ids": [
-              "w2"
+              "w6"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "and",
@@ -12459,18 +12459,18 @@
           {
             "text": "greets",
             "ids": [
-              "w11"
+              "w1"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "you.",
             "ids": [
-              "w12"
+              "w2"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "Erastus,",
@@ -12498,24 +12498,27 @@
           },
           {
             "text": "treasurer,",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "quality-scan"
           },
           {
             "text": "greets",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "you,",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "and",
