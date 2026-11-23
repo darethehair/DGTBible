@@ -1,3 +1,4 @@
+# corpus gate rerun after born-aligned 1 Corinthians 7-8
 # post-structural-repair rescan: Report every unlinked meaningful DGT token, even when no lexical candidate is known.
 import json,collections,sys
 from pathlib import Path
