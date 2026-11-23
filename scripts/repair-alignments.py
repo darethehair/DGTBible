@@ -1,4 +1,5 @@
 # context-aware corpus repair
+# rerun exact lexical pass
 import json,re,unicodedata,collections,sys
 from pathlib import Path
 
