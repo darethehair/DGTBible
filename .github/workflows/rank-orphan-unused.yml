@@ -1,0 +1,18 @@
+name: Rank orphan English against unused Greek
+on:
+  push:
+    paths:
+      - '.github/workflows/rank-orphan-unused.yml'
+      - 'scripts/rank-orphan-unused.py'
+      - 'data/alignment-quality-allowlist.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/repair-alignments.py
+      - run: python scripts/apply-quality-overrides.py
+      - run: python scripts/rank-orphan-unused.py
