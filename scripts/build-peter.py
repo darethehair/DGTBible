@@ -5,9 +5,10 @@ from john_batch_dgt import align
 
 R=Path('.'); A=R/'authoring'; S=R/'data/sources'; S.mkdir(parents=True,exist_ok=True)
 raw={}
-for line in (R/'data/authoring/peter-dgt.tsv').read_text(encoding='utf8').splitlines():
- if not line.strip():continue
- slug,ref,t=line.split('\t',2); ch,v=map(int,ref.split(':')); raw[(slug,ch,v)]=t
+for path in sorted((R/'data/authoring').glob('peter-*-dgt.tsv')):
+ for line in path.read_text(encoding='utf8').splitlines():
+  if not line.strip():continue
+  slug,ref,t=line.split('\t',2); ch,v=map(int,ref.split(':')); raw[(slug,ch,v)]=t
 
 specs=[
  ('1peter','1 Peter','1Pet','1Pe','1PE',5,105),
