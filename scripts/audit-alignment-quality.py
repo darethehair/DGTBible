@@ -88,7 +88,7 @@ for slug in BOOKS:
       if z>=8:candidates.append((z,id,g.get('text',''),g.get('gloss','')))
      if candidates:
       stats[slug]['probable_unlinked']+=1
-      if len(examples)<100:examples.append((slug,v['v'],'UNLINKED',x['text'],sorted(candidates,reverse=True)[:3]))
+      if len(examples)<160:examples.append((slug,path.stem,v['v'],'UNLINKED',x['text'],sorted(candidates,reverse=True)[:3]))
     elif x.get('ids'):
      # flag links whose lexical fit is zero and which are far from relative position
      bestcur=max([max([sim(w,a) for a in src_words(src[id])] or [0]) for id in x['ids'] if id in src] or [0])
@@ -96,7 +96,7 @@ for slug in BOOKS:
      dist=min([abs(rel-pos[id]/max(1,len(G)-1)) for id in x['ids'] if id in pos] or [0])
      if bestcur==0 and w not in GLUE and dist>.22:
       stats[slug]['suspicious_link']+=1
-      if len(examples)<100:examples.append((slug,v['v'],'SUSPICIOUS',x['text'],[(id,src[id].get('text',''),src[id].get('gloss','')) for id in x['ids'] if id in src]))
+      if len(examples)<160:examples.append((slug,path.stem,v['v'],'SUSPICIOUS',x['text'],[(id,src[id].get('text',''),src[id].get('gloss','')) for id in x['ids'] if id in src]))
 for slug in BOOKS: print(slug,dict(stats[slug]))
 print('EXAMPLES')
 for e in examples:print(e)
