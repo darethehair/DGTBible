@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/audit-hover-precision.py'
+      - 'scripts/audit-hover-holdout.py'
       - 'data/1corinthians/05.json'
       - 'data/1corinthians/06.json'
       - 'data/1corinthians/07.json'
@@ -18,3 +19,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Audit representative hover precision
         run: python scripts/audit-hover-precision.py
+      - name: Audit unseen hover holdout
+        run: python scripts/audit-hover-holdout.py
