@@ -9261,10 +9261,10 @@
           {
             "text": "you",
             "ids": [
-              "w20"
+              "w5"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "do",
@@ -9283,10 +9283,11 @@
           },
           {
             "text": "have",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "many",
@@ -9346,24 +9347,27 @@
           },
           {
             "text": "became",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "quality-scan"
           },
           {
             "text": "your",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "father",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "through",
