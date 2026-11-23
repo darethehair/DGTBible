@@ -429,6 +429,38 @@ def authored_dgt(text,src,spec,ref,literal=None):
      x['confidence']='authored-auto-precise-final-bundled-pronoun'
      x.pop('reason',None)
      changed=True
+ # Span-local ordered exact recovery. Repeated articles/prepositions in the
+ # same authored clause can remain ambiguous verse-wide; if N unlinked English
+ # occurrences and N unused exact literal source occurrences share that exact
+ # authored span, pair them left-to-right.
+ if literal:
+  used_exact=collections.defaultdict(set)
+  for x in out:
+   w=norm(x.get('text',''))
+   if w and x.get('ids'):used_exact[w].update(x.get('ids',[]))
+  groups=collections.defaultdict(list)
+  for i,x in enumerate(out):
+   if x.get('ids'):continue
+   w=norm(x.get('text',''))
+   if w:groups[(w,tuple(x.get('phraseIds',[])))].append(i)
+  src_pos={g['id']:i for i,g in enumerate(src)}
+  for (w,span),idxs in groups.items():
+   allowed=set(span);candidates=[]
+   for y in literal:
+    terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+    if w not in terms:continue
+    for id in y.get('ids',[]):
+     if id in used_exact[w]:continue
+     if allowed and id not in allowed:continue
+     if id not in candidates:candidates.append(id)
+   candidates.sort(key=lambda id:src_pos.get(id,10**9))
+   if candidates and len(candidates)==len(idxs):
+    for i,id in zip(idxs,candidates):
+     out[i]['ids']=[id]
+     out[i]['confidence']='authored-auto-precise-span-ordered-exact'
+     out[i].pop('reason',None)
+     used_exact[w].add(id)
+
  # Final span-local exact recovery. Earlier verse-wide passes can remain
  # ambiguous when the same word occurs in several clauses. Inside an authored
  # phrase span, one unused exact literal candidate is deterministic.
