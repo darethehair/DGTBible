@@ -35,6 +35,7 @@ def authored_dgt(text,src,spec,ref):
   if bad:raise SystemExit(f'{ref}: unknown authored Greek source IDs: {bad}')
   return list(dict.fromkeys(ids))
  tokens=re.findall(r'\S+',text)
+ precision={}
  if isinstance(spec,dict) and isinstance(spec.get('segments'),list):
   expanded=[];rebuilt=[]
   for seg in spec['segments']:
@@ -42,14 +43,22 @@ def authored_dgt(text,src,spec,ref):
     raise SystemExit(f'{ref}: each authored segment must be [text,[source refs]]: {seg!r}')
    stoks=re.findall(r'\S+',seg[0]);ids=resolve(seg[1]);rebuilt.extend(stoks);expanded.extend([ids]*len(stoks))
   if rebuilt!=tokens:raise SystemExit(f'{ref}: authored segment text does not exactly reproduce DGT tokens')
+  for p in spec.get('precision',[]):
+   if not isinstance(p,list) or len(p)!=2 or not isinstance(p[0],int) or not isinstance(p[1],list):
+    raise SystemExit(f'{ref}: each precision override must be [1-based-token-index,[source refs]]: {p!r}')
+   if p[0]<1 or p[0]>len(tokens):raise SystemExit(f'{ref}: precision token index {p[0]} outside 1..{len(tokens)}')
+   precision[p[0]-1]=resolve(p[1])
   spec=expanded
  if not isinstance(spec,list) or len(spec)!=len(tokens):
   raise SystemExit(f'{ref}: authored alignment must cover each DGT whitespace token ({len(tokens)} expected)')
  out=[]
  for i,(token,refs) in enumerate(zip(tokens,spec)):
   if not isinstance(refs,list):raise SystemExit(f'{ref}: bad authored source list at DGT token {i}: {refs!r}')
-  ids=resolve(refs)
-  x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':'authored' if ids else 'authored-unlinked'}
+  phrase_ids=resolve(refs)
+  ids=precision.get(i,phrase_ids)
+  confidence='authored-precise' if i in precision else ('authored' if ids else 'authored-unlinked')
+  x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':confidence}
+  if i in precision and ids!=phrase_ids:x['phraseIds']=phrase_ids
   if not ids:x['reason']='Explicitly left unlinked during translation'
   out.append(x)
  return out
