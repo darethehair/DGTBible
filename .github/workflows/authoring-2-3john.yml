@@ -24,6 +24,8 @@ jobs:
         run: node scripts/extract-stepbible-2-3john.mjs
       - name: Build 2 and 3 John
         run: python scripts/build-2-3john.py
+      - name: Apply reviewed alignment quality overrides
+        run: python scripts/apply-quality-overrides.py
       - name: Audit 2 and 3 John
         run: python scripts/audit-2-3john.py
       - name: Commit clean generated books
