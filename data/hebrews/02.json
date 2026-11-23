@@ -4408,24 +4408,28 @@
           },
           {
             "text": "nothing",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "not",
             "ids": [
-              "w20"
+              "w17"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "quality-scan"
           },
           {
             "text": "subject",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
@@ -4479,7 +4483,7 @@
               "w20"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "yet",
