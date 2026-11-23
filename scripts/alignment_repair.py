@@ -192,10 +192,14 @@ def literal_terms_by_id(L):
  return out
 
 def semantic_terms(g,id=None,litmap=None):
- vals=set(gloss_atoms(g))
+ # Prefer the Greek/TAGNT gloss when present.  The literal layer is only a
+ # fallback, because older literal alignments can themselves contain mistakes.
+ vals=set(atoms(g.get('gloss','')))
+ if vals:
+  return vals
  if id is not None and litmap:
-  vals.update(litmap.get(id,set()))
- return vals
+  return set(litmap.get(id,set()))
+ return set(gloss_atoms(g))
 
 def semantic_with_literal(token,g,id=None,litmap=None):
  vals=semantic_terms(g,id,litmap)
@@ -248,6 +252,7 @@ def repair_verse(D,G,L=None):
  # Pass 0: repair known multiword lexical equivalents that correspond to one Greek lexeme.
  phrase_aliases=[
   (('good','news'), {'gospel'}),
+  (('gives','light'), {'enlightens','illuminates'}),
  ]
  for words,source_words in phrase_aliases:
   n=len(words)
@@ -274,6 +279,7 @@ def repair_verse(D,G,L=None):
   w=norm(x.get('text',''))
   contentish = w not in GLUE or (w=='being' and i>0 and norm(D[i-1].get('text','')) in {'my','your','his','her','our','their'})
   if not w or not contentish or not x.get('ids'):continue
+  if x.get('confidence')=='phrase-repaired':continue
   cur=[id for id in x['ids'] if id in src]
   if not cur:continue
   curz=max(semantic_with_literal(w,src[id],id,litmap) for id in cur)
@@ -289,7 +295,10 @@ def repair_verse(D,G,L=None):
   if not candidates:continue
   candidates.sort(reverse=True);score,z,best=candidates[0]
   curscore=max(candidate_score(i,D,G,src,pos,id,semantic_with_literal(w,src[id],id,litmap)) for id in cur)
-  if best not in cur and (not cur_in) and score>=curscore+8:
+  margin=score-(candidates[1][0] if len(candidates)>1 else -999)
+  misplaced=(not cur_in) and score>=curscore+8
+  lexically_wrong=(len(cur)==1 and curz<8 and z>=8 and margin>=8 and score>=curscore+12)
+  if best not in cur and (misplaced or lexically_wrong):
    old=list(x['ids']);x['ids']=[best];x['confidence']='context-repaired';x.pop('reason',None)
    changes.append(('relink',x['text'],old,best))
  # Pass 2: fill lexical misses conservatively.
