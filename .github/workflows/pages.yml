@@ -41,6 +41,8 @@ jobs:
         run: python scripts/audit-hebrews.py
       - name: Validate Romans
         run: python scripts/audit-romans.py
+      - name: Validate 1 Corinthians
+        run: python scripts/audit-1corinthians.py
       - name: Corpus semantic alignment audit
         run: python scripts/audit-alignment-quality.py
       - name: Critical alignment sanity gate
@@ -75,6 +77,9 @@ jobs:
           test -f data/romans/manifest.json
           test -f data/romans/editorial-notes.json
           test -f data/romans/paragraphs.json
+          test -f data/1corinthians/manifest.json
+          test -f data/1corinthians/editorial-notes.json
+          test -f data/1corinthians/paragraphs.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
