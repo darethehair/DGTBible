@@ -1,0 +1,27 @@
+name: Repair corpus alignments
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/repair-alignments.py'
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repair semantic alignments
+        run: python scripts/repair-alignments.py
+      - name: Re-audit semantic alignments
+        run: python scripts/audit-alignment-quality.py
+      - name: Commit repaired alignments
+        run: |
+          git config user.name "DGTBible alignment bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/john/*.json data/1john/*.json data/2john/*.json data/3john/*.json data/jude/*.json data/1peter/*.json data/2peter/*.json data/james/*.json data/hebrews/*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Repair context-aware alignments across completed books"
+            git pull --rebase origin main
+            git push
+          fi
