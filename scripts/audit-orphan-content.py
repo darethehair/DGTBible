@@ -1,4 +1,4 @@
-# Report every unlinked meaningful DGT token, even when no lexical candidate is known.
+# post-structural-repair rescan: Report every unlinked meaningful DGT token, even when no lexical candidate is known.
 import json,collections
 from pathlib import Path
 from alignment_repair import BOOKS,atoms,norm,GLUE,source_map,literal_terms_by_id,semantic_terms,sim
