@@ -17,15 +17,39 @@ for path in sorted((R/'data/authoring').glob('1corinthians-*-dgt.tsv')):
    except json.JSONDecodeError as e:raise SystemExit(f'bad authored alignment JSON {ref} in {path}: {e}')
 
 def authored_dgt(text,src,spec,ref):
+ def resolve(refs):
+  ids=[]
+  for r in refs:
+   if not isinstance(r,str):raise SystemExit(f'{ref}: authored source reference must be a string: {r!r}')
+   if r.startswith('@'):
+    q=r[1:]
+    if '-' in q:
+     a,b=map(int,q.split('-',1))
+     ns=range(a,b+1)
+    else:ns=[int(q)]
+    for n in ns:
+     if n<1 or n>len(src):raise SystemExit(f'{ref}: authored Greek ordinal @{n} outside 1..{len(src)}')
+     ids.append(src[n-1]['id'])
+   else:ids.append(r)
+  valid={x['id'] for x in src};bad=[x for x in ids if x not in valid]
+  if bad:raise SystemExit(f'{ref}: unknown authored Greek source IDs: {bad}')
+  return list(dict.fromkeys(ids))
  tokens=re.findall(r'\\S+',text)
+ if isinstance(spec,dict) and isinstance(spec.get('segments'),list):
+  expanded=[];rebuilt=[]
+  for seg in spec['segments']:
+   if not isinstance(seg,list) or len(seg)!=2 or not isinstance(seg[0],str) or not isinstance(seg[1],list):
+    raise SystemExit(f'{ref}: each authored segment must be [text,[source refs]]: {seg!r}')
+   stoks=re.findall(r'\\S+',seg[0]);ids=resolve(seg[1]);rebuilt.extend(stoks);expanded.extend([ids]*len(stoks))
+  if rebuilt!=tokens:raise SystemExit(f'{ref}: authored segment text does not exactly reproduce DGT tokens')
+  spec=expanded
  if not isinstance(spec,list) or len(spec)!=len(tokens):
-  raise SystemExit(f'{ref}: authored alignment must have one ID-list per DGT whitespace token ({len(tokens)} expected, got {len(spec) if isinstance(spec,list) else "non-list"})')
- valid={x['id'] for x in src}; out=[]
- for i,(token,ids) in enumerate(zip(tokens,spec)):
-  if not isinstance(ids,list) or any(not isinstance(x,str) for x in ids):raise SystemExit(f'{ref}: bad authored ID list at DGT token {i}: {ids!r}')
-  bad=[x for x in ids if x not in valid]
-  if bad:raise SystemExit(f'{ref}: unknown authored Greek source IDs at DGT token {i}: {bad}')
-  x={'text':token,'ids':list(dict.fromkeys(ids)),'after':' ' if i<len(tokens)-1 else '','confidence':'authored' if ids else 'authored-unlinked'}
+  raise SystemExit(f'{ref}: authored alignment must cover each DGT whitespace token ({len(tokens)} expected)')
+ out=[]
+ for i,(token,refs) in enumerate(zip(tokens,spec)):
+  if not isinstance(refs,list):raise SystemExit(f'{ref}: bad authored source list at DGT token {i}: {refs!r}')
+  ids=resolve(refs)
+  x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':'authored' if ids else 'authored-unlinked'}
   if not ids:x['reason']='Explicitly left unlinked during translation'
   out.append(x)
  return out
