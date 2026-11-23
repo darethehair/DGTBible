@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/repair-alignments.py'
+      - 'scripts/alignment_repair.py'
 permissions:
   contents: write
 jobs:
@@ -22,6 +23,9 @@ jobs:
           git add data/john/*.json data/1john/*.json data/2john/*.json data/3john/*.json data/jude/*.json data/1peter/*.json data/2peter/*.json data/james/*.json data/hebrews/*.json data/romans/*.json
           if ! git diff --cached --quiet; then
             git commit -m "Repair context-aware alignments across completed books"
-            git pull --rebase origin main
-            git push
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
           fi
