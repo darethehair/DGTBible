@@ -24,6 +24,15 @@ def authored_dgt(text,src,spec,ref,literal=None):
    {'servant','servants','minister','ministers','deacon','deacons'},
    {'bond','bonds','chain','chains','imprisonment'},
    {'fellowship','participation','partnership'},
+   {'confident','confidence','persuaded','persuasion','trusting','trust'},
+   {'think','thinking','minded','minding','mind'},
+   {'watch','beware','heed','look'},
+   {'lordship','lordships','dominion','dominions'},
+   {'affliction','afflictions','tribulation','tribulations'},
+   {'warn','warning','warned','admonish','admonishing','admonition'},
+   {'elemental','element','elements','principle','principles'},
+   {'labor','labour','toil','toiling'},
+   {'encourage','encouraging','exhort','exhorting','exhortation'},
   ]
   a=norm(a);b=norm(b)
   z=sim(a,b)
