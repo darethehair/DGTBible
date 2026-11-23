@@ -2,6 +2,7 @@ name: Audit orphan DGT content words
 on:
   push:
     paths:
+      - '.github/workflows/audit-orphan-content.yml'
       - 'scripts/audit-orphan-content.py'
       - 'scripts/alignment_repair.py'
       - 'data/alignment-quality-allowlist.json'
