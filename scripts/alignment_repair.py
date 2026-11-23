@@ -301,8 +301,9 @@ def repair_verse(D,G,L=None):
   candidates.sort(reverse=True);score,z,best=candidates[0]
   curscore=max(candidate_score(i,D,G,src,pos,id,semantic_with_literal(w,src[id],id,litmap)) for id in cur)
   margin=score-(candidates[1][0] if len(candidates)>1 else -999)
-  misplaced=(not cur_in) and score>=curscore+8
-  lexically_wrong=(len(cur)==1 and curz<8 and z>=8 and margin>=8 and score>=curscore+12)
+  top_semantic_count=sum(1 for _,cz,_ in candidates if cz==z)
+  misplaced=(not cur_in) and score>=curscore+8 and top_semantic_count==1
+  lexically_wrong=(len(cur)==1 and curz<8 and z>=8 and margin>=8 and score>=curscore+12 and top_semantic_count==1)
   if best not in cur and (misplaced or lexically_wrong):
    old=list(x['ids']);x['ids']=[best];x['confidence']='context-repaired';x.pop('reason',None)
    changes.append(('relink',x['text'],old,best))
