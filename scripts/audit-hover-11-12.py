@@ -5,6 +5,7 @@ from pathlib import Path
 from collections import Counter
 
 CASES=[
+ (12,1,"unaware.",1,["w9"]),
  (11,3,"want",1,["w1"]),(11,3,"you",1,["w3"]),(11,3,"know",1,["w4"]),
  (11,3,"Christ",1,["w11"]),(11,3,"head",1,["w9"]),(11,3,"man,",1,["w7"]),
  (11,3,"man",1,["w17"]),(11,3,"God",1,["w23"]),
