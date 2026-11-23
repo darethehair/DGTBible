@@ -3893,7 +3893,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "auto-high"
           },
           {
             "text": "are",
@@ -14059,11 +14059,10 @@
           },
           {
             "text": "one",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "not",
