@@ -1,0 +1,49 @@
+name: Build pinned Colossians DGT batch
+on:
+  push:
+    paths:
+      - 'scripts/extract-stepbible-colossians.mjs'
+      - 'scripts/build-colossians.py'
+      - 'scripts/audit-colossians.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/alignment_repair.py'
+      - 'data/authoring/colossians-*-dgt.tsv'
+  workflow_dispatch:
+    inputs:
+      start_chapter:
+        required: true
+        default: '1'
+      end_chapter:
+        required: true
+        default: '4'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      START_CHAPTER: ${{ github.event.inputs.start_chapter || '1' }}
+      END_CHAPTER: ${{ github.event.inputs.end_chapter || '4' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract pinned SBLGNT and TAGNT
+        run: node scripts/extract-stepbible-colossians.mjs
+      - name: Build Colossians range
+        run: python scripts/build-colossians.py
+      - name: Apply reviewed alignment quality overrides
+        run: python scripts/apply-quality-overrides.py
+      - name: Audit Colossians range
+        run: python scripts/audit-colossians.py
+      - name: Commit clean generated Colossians range
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/colossians/*.json data/sources/step-colossians-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean Colossians $START_CHAPTER-$END_CHAPTER batch"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
+          fi
