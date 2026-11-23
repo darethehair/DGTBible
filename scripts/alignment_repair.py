@@ -348,6 +348,23 @@ def repair_verse(D,G,L=None):
    if abs(rel-sp)<=0.22:
     x['ids']=[id];x['confidence']='structural-repaired';x.pop('reason',None)
     used.add(id);changes.append(('structural-link',x['text'],id))
+ # Pass 5: unique lexical match among still-unused Greek sources.
+ used={id for y in D for id in y.get('ids',[]) if id in src}
+ for i,x in enumerate(D):
+  if x.get('ids'): continue
+  w=norm(x.get('text',''))
+  if not w or w in GLUE: continue
+  candidates=[]
+  for id,g in src.items():
+   if id in used: continue
+   z=semantic_with_literal(w,g,id,litmap)
+   if z>=8:
+    rel=i/max(1,len(D)-1);sp=pos[id]/max(1,len(G)-1)
+    if abs(rel-sp)<=0.18:candidates.append((z,abs(rel-sp),id))
+  if len(candidates)==1:
+   z,dist,id=candidates[0]
+   x['ids']=[id];x['confidence']='unique-lexical-repaired';x.pop('reason',None)
+   used.add(id);changes.append(('unique-lexical-link',x['text'],id))
  return changes
 
 
