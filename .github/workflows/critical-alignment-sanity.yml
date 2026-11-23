@@ -1,0 +1,15 @@
+name: Critical alignment sanity scan
+on:
+  push:
+    paths:
+      - 'scripts/critical-alignment-sanity.py'
+      - 'scripts/alignment_repair.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/critical-alignment-sanity.py
