@@ -1,4 +1,4 @@
-# Find meaningful Greek source tokens that have no DGT token linked to them.
+# post-structural-repair rescan: Find meaningful Greek source tokens that have no DGT token linked to them.
 import json,collections
 from pathlib import Path
 from alignment_repair import BOOKS,atoms,norm,GLUE,source_map,literal_terms_by_id,semantic_terms
