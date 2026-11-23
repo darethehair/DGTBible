@@ -151,7 +151,10 @@ for ch in range(start,end+1):
       if id not in used_exact[w] and (not allowed or id in allowed):lids.append(id)
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
-    recoverable.append((ch,v['v'],w,len(idxs),lids))
+    # A repeated exact-word group is only truly recoverable if the ordered
+    # candidate for each English token lies inside that token's own authored span.
+    legal=all((not D[i].get('phraseIds')) or id in set(D[i].get('phraseIds',[])) for i,id in zip(idxs,lids))
+    if legal:recoverable.append((ch,v['v'],w,len(idxs),lids))
    elif len(idxs)==1 and len(lids)>1:
     i=idxs[0]
     erel=i/max(1,len(D)-1)
