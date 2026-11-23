@@ -49,7 +49,7 @@ for slug in BOOKS:
       else:
        stats[slug]['unique_unlinked']+=1
        examples.append((slug,path.stem,v['v'],'UNLINKED',x.get('text',''),best,gt,gl,z,round(dist,3)))
-    elif current<8 and dist<=0.35 and x.get('confidence') not in {'phrase-repaired','quality-scan'}:
+    elif current<8 and dist<=0.35 and x.get('confidence') not in {'phrase-repaired','quality-scan','authored'}:
      stats[slug]['unique_wrong_link']+=1
      examples.append((slug,path.stem,v['v'],'WRONG_LINK',x.get('text',''),linked,best,gt,gl,z,round(dist,3)))
 
