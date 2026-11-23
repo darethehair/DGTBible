@@ -170,6 +170,30 @@ def candidate_score(i,D,G,src,pos,id,z):
 def repair_verse(D,G):
  src,pos=source_map(G);changes=[]
  if not src:return changes
+ # Pass 0: repair known multiword lexical equivalents that correspond to one Greek lexeme.
+ phrase_aliases=[
+  (('good','news'), {'gospel'}),
+ ]
+ for words,source_words in phrase_aliases:
+  n=len(words)
+  for i in range(0,len(D)-n+1):
+   if tuple(norm(D[i+j].get('text','')) for j in range(n))!=words:continue
+   # Require the phrase to be unlinked or only weakly linked to the same nearby source lexeme.
+   candidates=[]
+   for id,g in src.items():
+    ga=set(gloss_atoms(g))
+    if ga & source_words:
+     rel=(i+(n-1)/2)/max(1,len(D)-1);sp=pos[id]/max(1,len(G)-1)
+     candidates.append((abs(rel-sp),id))
+   if not candidates:continue
+   candidates.sort();dist,id=candidates[0]
+   if dist>0.35:continue
+   changed=False
+   for j in range(n):
+    x=D[i+j]
+    if x.get('ids')!=[id]:
+     x['ids']=[id];x['confidence']='phrase-repaired';x.pop('reason',None);changed=True
+   if changed:changes.append(('phrase-link',' '.join(words),id))
  # Pass 1: repair clearly misplaced content links when a strong in-context alternative exists.
  for i,x in enumerate(D):
   w=norm(x.get('text',''))
