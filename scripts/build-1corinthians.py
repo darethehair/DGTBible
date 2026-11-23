@@ -34,13 +34,13 @@ def authored_dgt(text,src,spec,ref):
   valid={x['id'] for x in src};bad=[x for x in ids if x not in valid]
   if bad:raise SystemExit(f'{ref}: unknown authored Greek source IDs: {bad}')
   return list(dict.fromkeys(ids))
- tokens=re.findall(r'\\S+',text)
+ tokens=re.findall(r'\S+',text)
  if isinstance(spec,dict) and isinstance(spec.get('segments'),list):
   expanded=[];rebuilt=[]
   for seg in spec['segments']:
    if not isinstance(seg,list) or len(seg)!=2 or not isinstance(seg[0],str) or not isinstance(seg[1],list):
     raise SystemExit(f'{ref}: each authored segment must be [text,[source refs]]: {seg!r}')
-   stoks=re.findall(r'\\S+',seg[0]);ids=resolve(seg[1]);rebuilt.extend(stoks);expanded.extend([ids]*len(stoks))
+   stoks=re.findall(r'\S+',seg[0]);ids=resolve(seg[1]);rebuilt.extend(stoks);expanded.extend([ids]*len(stoks))
   if rebuilt!=tokens:raise SystemExit(f'{ref}: authored segment text does not exactly reproduce DGT tokens')
   spec=expanded
  if not isinstance(spec,list) or len(spec)!=len(tokens):
