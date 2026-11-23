@@ -1,5 +1,13 @@
 name: Build pinned Revelation DGT batch
 on:
+  push:
+    paths:
+      - 'scripts/extract-stepbible-revelation.mjs'
+      - 'scripts/build-revelation.py'
+      - 'scripts/audit-revelation.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/alignment_repair.py'
+      - 'data/authoring/revelation-*-dgt.tsv'
   workflow_dispatch:
     inputs:
       start_chapter:
