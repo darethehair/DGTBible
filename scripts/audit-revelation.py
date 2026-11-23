@@ -125,13 +125,15 @@ for ch in range(start,end+1):
 
   personal_idxs=[i for i,x in enumerate(D) if not x.get('ids') and pk(x.get('text','')) in {'he','she','they','it'}]
   usedids={id for x in D for id in x.get('ids',[])}
-  relids=[]
-  for y in L:
-   if 'relative' in {pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)}:
-    for id in y.get('ids',[]):
-     if id not in usedids and id not in relids:relids.append(id)
-  if personal_idxs and len(personal_idxs)==len(relids):
-   recoverable_relative_pronouns.append((ch,v['v'],[D[i].get('text','') for i in personal_idxs],relids))
+  for i in personal_idxs:
+   allowed=set(D[i].get('phraseIds',[]))
+   relids=[]
+   for y in L:
+    if 'relative' in {pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)}:
+     for id in y.get('ids',[]):
+      if id not in usedids and (not allowed or id in allowed) and id not in relids:relids.append(id)
+   if len(relids)==1:
+    recoverable_relative_pronouns.append((ch,v['v'],[D[i].get('text','')],relids))
   used_exact=collections.defaultdict(set)
   for x in D:
    w=n(x.get('text',''))
