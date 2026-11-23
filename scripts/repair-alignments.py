@@ -174,14 +174,15 @@ def repair_verse(D,G):
  # Pass 1: repair clearly misplaced content links when a strong in-context alternative exists.
  for i,x in enumerate(D):
   w=norm(x.get('text',''))
-  if not w or w in GLUE or not x.get('ids'):continue
+  contentish = w not in GLUE or (w=='being' and i>0 and norm(D[i-1].get('text','')) in {'my','your','his','her','our','their'})
+  if not w or not contentish or not x.get('ids'):continue
   cur=[id for id in x['ids'] if id in src]
   if not cur:continue
   curz=max(semantic(w,src[id]) for id in cur)
   left,right=bounds(D,i,pos)
   cur_in=True
   if left is not None and right is not None:
-   lo=min(left,right)-2;hi=max(left,right)+2
+   lo=min(left,right)-4;hi=max(left,right)+4
    cur_in=any(lo<=pos[id]<=hi for id in cur)
   candidates=[]
   for id,g in src.items():
@@ -209,7 +210,7 @@ def repair_verse(D,G):
   left,right=bounds(D,i,pos);p=pos[best[2]]
   in_context=True
   if left is not None and right is not None:
-   in_context=min(left,right)-2<=p<=max(left,right)+2
+   in_context=min(left,right)-4<=p<=max(left,right)+4
   elif left is not None:in_context=abs(p-left)<=5
   elif right is not None:in_context=abs(p-right)<=5
   # Exact matches can tolerate a smaller margin; synonym/stem matches require contextual clarity.
