@@ -35,7 +35,11 @@ jobs:
           git add data/1john/*.json data/sources/step-1john-*.json
           if ! git diff --cached --quiet; then
             git commit -m "Generate QA-clean 1 John batch"
-            git push
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
           fi
       - name: Upload authoring extraction
         if: always()
