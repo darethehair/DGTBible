@@ -26,6 +26,7 @@ linked=unlinked=count=0
 recoverable=[]
 collisions=[]
 synthetic_unlinked=[]
+out_of_span=[]
 recoverable_pronouns=[]
 recoverable_relative_pronouns=[]
 recoverable_context_relative=[]
@@ -42,6 +43,8 @@ for ch in range(start,end+1):
   for x in D:
    if x.get('ids') or x.get('phraseIds'):linked+=1
    else:unlinked+=1
+   if x.get('phraseIds') and any(i not in set(x.get('phraseIds',[])) for i in x.get('ids',[])):
+    out_of_span.append((ch,v['v'],x.get('text',''),x.get('ids',[]),x.get('phraseIds',[]),x.get('confidence','')))
    assert all(i in ids for i in (x.get('ids',[])+x.get('phraseIds',[]))),f'dangling alignment Colossians {ch}:{v["v"]}'
   used_precise={i for x in D for i in x.get('ids',[])}
   for g in v['alignment']['greek']:
@@ -174,5 +177,6 @@ assert not recoverable_context_relative, f'recoverable contextual relative-prono
 assert not recoverable_bundled_pronouns, f'recoverable neighboring bundled-pronoun links left unlinked: {recoverable_bundled_pronouns[:20]}'
 assert not recoverable_positional, f'recoverable positional exact links left unlinked: {recoverable_positional[:20]}'
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
+assert not out_of_span, f'precise DGT links escaped authored phrase spans: {out_of_span[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
 print(f'Colossians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 recoverable relative-pronoun bridges left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
