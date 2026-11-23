@@ -50,7 +50,7 @@ for ch in range(start,end+1):
    assert all(i in ids for i in (x.get('ids',[])+x.get('phraseIds',[]))),f'dangling alignment Revelation {ch}:{v["v"]}'
   for x in D:
    cw=n(x.get('text',''))
-   if cw and cw not in CONTENT_GLUE and not x.get('ids',[]):
+   if cw and cw not in CONTENT_GLUE and not x.get('ids',[]) and x.get('confidence')!='authored-supplied':
     orphan_content.append((ch,v['v'],x.get('text',''),x.get('phraseIds',[])))
   used_precise={i for x in D for i in x.get('ids',[])}
   for g in v['alignment']['greek']:
