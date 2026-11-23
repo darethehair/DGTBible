@@ -1,3 +1,4 @@
+# corpus gate rerun after born-aligned 1 Corinthians 7-8
 # post-structural-repair rescan: Find meaningful Greek source tokens that have no DGT token linked to them.
 import json,collections
 from pathlib import Path
