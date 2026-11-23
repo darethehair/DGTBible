@@ -6,11 +6,14 @@ on:
       - 'scripts/audit-hover-precision.py'
       - 'scripts/audit-hover-holdout.py'
       - 'scripts/audit-hover-9-10.py'
+      - 'scripts/audit-hover-11-12.py'
       - 'data/1corinthians/05.json'
       - 'data/1corinthians/06.json'
       - 'data/1corinthians/07.json'
       - 'data/1corinthians/08.json'
       - 'data/1corinthians/10.json'
+      - 'data/1corinthians/12.json'
+      - 'data/1corinthians/11.json'
       - 'data/1corinthians/09.json'
       - '.github/workflows/audit-hover-precision.yml'
   workflow_dispatch:
@@ -26,3 +29,5 @@ jobs:
         run: python scripts/audit-hover-holdout.py
       - name: Audit 1 Corinthians 9-10 hover precision
         run: python scripts/audit-hover-9-10.py
+      - name: Audit 1 Corinthians 11-12 hover precision
+        run: python scripts/audit-hover-11-12.py
