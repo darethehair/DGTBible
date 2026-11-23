@@ -36,5 +36,9 @@ jobs:
           git add data/james/*.json data/sources/step-james-*.json
           if ! git diff --cached --quiet; then
             git commit -m "Generate QA-clean James"
-            git push
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
           fi
