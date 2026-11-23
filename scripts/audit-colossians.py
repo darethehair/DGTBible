@@ -72,10 +72,12 @@ for ch in range(start,end+1):
   for k,idxs in pd.items():
    if k=='relative':continue
    lids=[]
+   allowed=set()
+   for i in idxs: allowed.update(D[i].get('phraseIds',[]))
    for y in L:
     if k in {pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)}:
      for id in y.get('ids',[]):
-      if id not in usedp[k]:lids.append(id)
+      if id not in usedp[k] and (not allowed or id in allowed):lids.append(id)
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
     recoverable_pronouns.append((ch,v['v'],k,len(idxs),lids))
