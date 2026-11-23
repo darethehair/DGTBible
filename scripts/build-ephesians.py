@@ -220,6 +220,28 @@ def authored_dgt(text,src,spec,ref,literal=None):
       out[i]['confidence']='authored-auto-precise-literal-ordered'
       out[i].pop('reason',None)
      changed=True
+ # Contextual relative-pronoun bridge first. A literal phrase such as
+ # "in whom" commonly becomes idiomatic DGT "in him". When the same preceding
+ # preposition is already precisely aligned in both layers, link the immediately
+ # following unlinked personal pronoun to the unused relative-pronoun source.
+ if literal:
+  used_ids={id for x in out for id in x.get('ids',[])}
+  for li,y in enumerate(literal):
+   ywords=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+   if not any(pronoun_key(t)=='relative' for t in ywords): continue
+   relids=[id for id in y.get('ids',[]) if id not in used_ids]
+   if len(relids)!=1 or li==0: continue
+   prev_ids=literal[li-1].get('ids',[])
+   if not prev_ids: continue
+   for i in range(1,len(out)):
+    if out[i].get('ids') or pronoun_key(out[i].get('text','')) not in {'he','she','they','it'}: continue
+    if set(out[i-1].get('ids',[])) & set(prev_ids):
+     out[i]['ids']=[relids[0]]
+     out[i]['confidence']='authored-auto-precise-relative-pronoun-context'
+     out[i].pop('reason',None)
+     used_ids.add(relids[0])
+     break
+
  # Final deterministic pronoun-family recovery. English may express the same
  # Greek pronoun with case/possessive/reflexive forms (he/him/his/himself).
  if literal:
