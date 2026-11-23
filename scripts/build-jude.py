@@ -45,7 +45,7 @@ for ch,v in sorted(sbl):
  missing.update(x['text'].strip('.,;:!?“”‘’"').lower() for x in da if not x['ids'])
  lit=''.join(x['text']+x['after'] for x in la)
  vs.append({'v':v,'greek':greek,'literal':lit,'dgt':dgt,'notes':[],'alignment':{'greek':ga,'translit':ta,'literal':la,'dgt':da}})
- sv.append({'ref':f'Jde.{ch}.{v}','book':'JDE','chapter':str(ch),'verse':str(v),'testament':'NT','words':[{'original':x['text'],'translit':x['translit'],'strongs':x['strongs'],'morph':x['morph'],'gloss':x['gloss'],'synthetic':x.get('synthetic',False)} for x in src]})
+ sv.append({'ref':f'Jud.{ch}.{v}','book':'JDE','chapter':str(ch),'verse':str(v),'testament':'NT','words':[{'original':x['text'],'translit':x['translit'],'strongs':x['strongs'],'morph':x['morph'],'gloss':x['gloss'],'synthetic':x.get('synthetic',False)} for x in src]})
 (D/'01.json').write_text(json.dumps({'book':'Jude','chapter':1,'greekSource':'SBLGNT','verses':vs},ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 (S/'step-jude-01.json').write_text(json.dumps({'source':'STEPBible TAGNT aligned to SBLGNT','upstream':'STEPBible/STEPBible-Data@5de0a47f35f0fc13dfe1430d104e5db8a4285f9c','license':'CC BY 4.0','sblgnt':'Faithlife/SBLGNT@d7f35adca9ec410e1d1499c63b4dd989d76c8d4d','verses':sv},ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 (D/'manifest.json').write_text(json.dumps({'book':'Jude','slug':'jude','chapters':[{'chapter':1,'file':'01.json','verses':25}]},ensure_ascii=False,indent=2)+'\n',encoding='utf8')
