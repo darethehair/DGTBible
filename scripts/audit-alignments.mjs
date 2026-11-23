@@ -39,6 +39,8 @@ const semanticGroups=[
   ['desire','desires','desired','want','wants','wanted','wish','wishes','wished'],
   ['manifest','manifests','manifested','reveal','reveals','revealed'],
   ['see','sees','seeing','seen','saw','behold','beheld'],
+  ['recline','reclined','lean','leaned'],
+  ['put','puts','putting','wear','wearing','gird','girded','tie','tied'],
   ['judge','judged','judging','condemn','condemned'],
 ];
 const sem=new Map();
