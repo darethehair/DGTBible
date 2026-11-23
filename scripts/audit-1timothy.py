@@ -178,6 +178,14 @@ for ch in range(start,end+1):
    evangel_ok=bool(litwords & {'evangelised','evangelized','gospel','evangelize'}) and set(uniq).issubset(EVANGEL_WORDS)
    if len(uniq)>=3 and len(unrelated)>=2 and not evangel_ok:
     collisions.append((ch,v['v'],id,uniq,sorted(litwords)))
+if orphan_content:
+ print('ORPHAN_CONTENT_REPORT_BEGIN')
+ for ch,vn,txt,pids in orphan_content:
+  d=json.loads((Path('data')/'1timothy'/f'{ch:02}.json').read_text(encoding='utf8'))
+  vv=next(v for v in d['verses'] if v['v']==vn)
+  gi={id:(i+1,g.get('text',''),g.get('gloss','')) for i,g in enumerate(vv['alignment']['greek']) for id in g.get('ids',[])}
+  print(f"{ch}:{vn}\t{txt}\t"+' | '.join(f"{gi.get(id,('?','',''))[0]}:{gi.get(id,('?','',''))[1]}={gi.get(id,('?','',''))[2]}" for id in pids))
+ print('ORPHAN_CONTENT_REPORT_END')
 pct=linked/(linked+unlinked)*100
 assert pct>=75,pct
 assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverable[:20]}'
