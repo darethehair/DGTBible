@@ -6998,9 +6998,11 @@
           },
           {
             "text": "slave,",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w3",
@@ -7018,8 +7020,7 @@
               "w15",
               "w16",
               "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "who",
