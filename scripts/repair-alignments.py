@@ -1,4 +1,5 @@
 # context-aware corpus repair
+# rerun phrase repair after Romans build
 # rerun exact lexical pass
 import json,re,unicodedata,collections,sys
 from pathlib import Path
