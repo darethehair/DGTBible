@@ -9,9 +9,9 @@ for ch in range(start,end+1):
   assert v['greek'] and v['dgt'] and v['literal']
   ids={x['ids'][0] for x in v['alignment']['greek']}
   for x in v['alignment']['dgt']:
-   if x.get('ids'):linked+=1
+   if x.get('ids') or x.get('phraseIds'):linked+=1
    else:unlinked+=1
-   assert all(i in ids for i in x.get('ids',[])),f'dangling alignment 1 Corinthians {ch}:{v["v"]}'
+   assert all(i in ids for i in (x.get('ids',[])+x.get('phraseIds',[]))),f'dangling alignment 1 Corinthians {ch}:{v["v"]}'
 pct=linked/(linked+unlinked)*100
 assert pct>=75,pct
 print(f'1 Corinthians {start}-{end} audit clean: {count} verses; {pct:.1f}% high-confidence DGT token coverage.')
