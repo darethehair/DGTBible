@@ -29,6 +29,7 @@ synthetic_unlinked=[]
 recoverable_pronouns=[]
 recoverable_relative_pronouns=[]
 recoverable_context_relative=[]
+recoverable_bundled_pronouns=[]
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'1thessalonians'/f'{ch:02}.json').read_text(encoding='utf8'))
@@ -91,6 +92,25 @@ for ch in range(start,end+1):
      recoverable_context_relative.append((ch,v['v'],D[i].get('text',''),relids[0]))
      break
 
+  lit_terms=collections.defaultdict(set)
+  for y in L:
+   terms=[n(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+   for id in y.get('ids',[]):
+    lit_terms[id].update(terms)
+  for i,x in enumerate(D):
+   if x.get('ids'):continue
+   k=pk(x.get('text',''))
+   if not k or k=='relative':continue
+   candidates=[]
+   for j in (i-1,i+1,i-2,i+2):
+    if not (0<=j<len(D)):continue
+    for id in D[j].get('ids',[]):
+     if any(pk(t)==k for t in lit_terms.get(id,set())):
+      candidates.append(id)
+   unique=list(dict.fromkeys(candidates))
+   if len(unique)==1:
+    recoverable_bundled_pronouns.append((ch,v['v'],x.get('text',''),unique[0]))
+
   personal_idxs=[i for i,x in enumerate(D) if not x.get('ids') and pk(x.get('text','')) in {'he','she','they','it'}]
   usedids={id for x in D for id in x.get('ids',[])}
   relids=[]
@@ -134,6 +154,7 @@ assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverabl
 assert not recoverable_pronouns, f'recoverable pronoun-family DGT links left unlinked: {recoverable_pronouns[:20]}'
 assert not recoverable_relative_pronouns, f'recoverable relative-to-personal pronoun links left unlinked: {recoverable_relative_pronouns[:20]}'
 assert not recoverable_context_relative, f'recoverable contextual relative-pronoun links left unlinked: {recoverable_context_relative[:20]}'
+assert not recoverable_bundled_pronouns, f'recoverable neighboring bundled-pronoun links left unlinked: {recoverable_bundled_pronouns[:20]}'
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
 print(f'1 Thessalonians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 recoverable relative-pronoun bridges left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
