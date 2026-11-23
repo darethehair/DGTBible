@@ -580,6 +580,32 @@ def authored_dgt(text,src,spec,ref,literal=None):
       out[i]['confidence']='authored-auto-precise-postguard-local-exact'
       out[i].pop('reason',None)
       used_exact[w].add(local[0])
+ # Post-guard span-local pronoun recovery. If one unused literal pronoun
+ # from the same English pronoun family remains inside this token's authored
+ # span, the mapping is deterministic.
+ if literal:
+  used_pron=collections.defaultdict(set)
+  for x in out:
+   k=pronoun_key(x.get('text',''))
+   if k and x.get('ids'):used_pron[k].update(x.get('ids',[]))
+  for x in out:
+   if x.get('ids'):continue
+   k=pronoun_key(x.get('text',''))
+   if not k or k=='relative':continue
+   allowed=set(x.get('phraseIds',[]))
+   candidates=[]
+   for y in literal:
+    ykeys={pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))}
+    if k not in ykeys:continue
+    for id in y.get('ids',[]):
+     if id in used_pron[k]:continue
+     if allowed and id not in allowed:continue
+     if id not in candidates:candidates.append(id)
+   if len(candidates)==1:
+    x['ids']=[candidates[0]]
+    x['confidence']='authored-auto-precise-postguard-pronoun'
+    x.pop('reason',None)
+    used_pron[k].add(candidates[0])
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
