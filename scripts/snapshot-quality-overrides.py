@@ -1,3 +1,4 @@
+# capture current reviewed corpus mappings
 import json
 from pathlib import Path
 
