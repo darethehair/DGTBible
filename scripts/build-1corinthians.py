@@ -117,7 +117,7 @@ for ch in range(start,end+1):
   else:
    if ch>=5:raise SystemExit(f'1Cor {ch}:{v}: new translation requires authored Greek source IDs in the fourth TSV column')
    da=align(dgt,src);repairs+=len(repair_verse(da,ga))
-  linked+=sum(bool(x['ids']) for x in da);unlinked+=sum(not x['ids'] for x in da)
+  linked+=sum(bool(x.get('ids') or x.get('phraseIds')) for x in da);unlinked+=sum(not (x.get('ids') or x.get('phraseIds')) for x in da)
   lit=''.join(x['text']+x['after'] for x in la)
   vs.append({'v':v,'greek':greek,'literal':lit,'dgt':dgt,'notes':[],'alignment':{'greek':ga,'translit':ta,'literal':la,'dgt':da}})
   sv.append({'ref':f'1Cor.{ch}.{v}','book':'1CO','chapter':str(ch),'verse':str(v),'testament':'NT','words':[{'original':x['text'],'translit':x['translit'],'strongs':x['strongs'],'morph':x['morph'],'gloss':x['gloss'],'synthetic':x.get('synthetic',False)} for x in src]})
