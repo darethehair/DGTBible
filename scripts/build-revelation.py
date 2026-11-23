@@ -501,12 +501,16 @@ def authored_dgt(text,src,spec,ref,literal=None):
    else:byword[w].append(i)
   src_pos={g['id']:i for i,g in enumerate(src)}
   for w,idxs in byword.items():
+   allowed_union=set()
+   for i in idxs:allowed_union.update(out[i].get('phraseIds',[]))
    candidates=[]
    for y in literal:
     terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
     if w not in terms:continue
     for id in y.get('ids',[]):
-     if id not in used_exact[w] and id not in candidates:candidates.append(id)
+     if id in used_exact[w]:continue
+     if allowed_union and id not in allowed_union:continue
+     if id not in candidates:candidates.append(id)
    candidates.sort(key=lambda id:src_pos.get(id,10**9))
    if len(candidates)!=len(idxs) or not candidates:continue
    if all((not out[i].get('phraseIds')) or id in set(out[i].get('phraseIds',[])) for i,id in zip(idxs,candidates)):
