@@ -5,11 +5,30 @@ from john_batch_dgt import align
 from alignment_repair import repair_verse
 
 R=Path('.'); A=R/'authoring'; S=R/'data/sources'; S.mkdir(parents=True,exist_ok=True)
-raw={}
+raw={}; authored={}
 for path in sorted((R/'data/authoring').glob('1corinthians-*-dgt.tsv')):
  for line in path.read_text(encoding='utf8').splitlines():
   if not line.strip():continue
-  _,ref,t=line.split('\t',2); ch,v=map(int,ref.split(':')); raw[(ch,v)]=t
+  parts=line.split('\t',3)
+  if len(parts)<3:raise SystemExit(f'bad 1 Corinthians authoring line in {path}: {line!r}')
+  _,ref,t=parts[:3]; ch,v=map(int,ref.split(':')); raw[(ch,v)]=t
+  if len(parts)==4 and parts[3].strip():
+   try: authored[(ch,v)]=json.loads(parts[3])
+   except json.JSONDecodeError as e:raise SystemExit(f'bad authored alignment JSON {ref} in {path}: {e}')
+
+def authored_dgt(text,src,spec,ref):
+ tokens=re.findall(r'\\S+',text)
+ if not isinstance(spec,list) or len(spec)!=len(tokens):
+  raise SystemExit(f'{ref}: authored alignment must have one ID-list per DGT whitespace token ({len(tokens)} expected, got {len(spec) if isinstance(spec,list) else "non-list"})')
+ valid={x['id'] for x in src}; out=[]
+ for i,(token,ids) in enumerate(zip(tokens,spec)):
+  if not isinstance(ids,list) or any(not isinstance(x,str) for x in ids):raise SystemExit(f'{ref}: bad authored ID list at DGT token {i}: {ids!r}')
+  bad=[x for x in ids if x not in valid]
+  if bad:raise SystemExit(f'{ref}: unknown authored Greek source IDs at DGT token {i}: {bad}')
+  x={'text':token,'ids':list(dict.fromkeys(ids)),'after':' ' if i<len(tokens)-1 else '','confidence':'authored' if ids else 'authored-unlinked'}
+  if not ids:x['reason']='Explicitly left unlinked during translation'
+  out.append(x)
+ return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','4'))
 D=R/'data/1corinthians';D.mkdir(parents=True,exist_ok=True)
@@ -30,7 +49,7 @@ for line in (A/'step-1corinthians.tsv').read_text(encoding='utf8').splitlines():
  step[(int(m[1]),int(m[2]))].append(dict(idx=int(m[3]),original=o,translit=t,gloss=m[6],strongs=a,morph=b))
 for k in step:step[k].sort(key=lambda x:x['idx'])
 
-linked=unlinked=synthetic=repairs=0
+linked=unlinked=synthetic=repairs=authored_verses=0
 for ch in range(start,end+1):
  vs=[];sv=[]
  for (cnum,v),greek in sorted(sbl.items()):
@@ -42,7 +61,13 @@ for ch in range(start,end+1):
    for k in ['gloss','strongs','morph']:
     if x[k]:g[k]=x[k]
    ga.append(g);ta.append({'text':x['translit'],'after':af,'ids':[x['id']]});la.append({'text':x['gloss'] or x['text'],'after':af,'ids':[x['id']]})
-  dgt=raw[(ch,v)];da=align(dgt,src);repairs+=len(repair_verse(da,ga))
+  dgt=raw[(ch,v)]
+  spec=authored.get((ch,v))
+  if spec is not None:
+   da=authored_dgt(dgt,src,spec,f'1Cor {ch}:{v}');authored_verses+=1
+  else:
+   if ch>=5:raise SystemExit(f'1Cor {ch}:{v}: new translation requires authored Greek source IDs in the fourth TSV column')
+   da=align(dgt,src);repairs+=len(repair_verse(da,ga))
   linked+=sum(bool(x['ids']) for x in da);unlinked+=sum(not x['ids'] for x in da)
   lit=''.join(x['text']+x['after'] for x in la)
   vs.append({'v':v,'greek':greek,'literal':lit,'dgt':dgt,'notes':[],'alignment':{'greek':ga,'translit':ta,'literal':la,'dgt':da}})
@@ -53,4 +78,4 @@ for ch in range(start,end+1):
 pct=linked/(linked+unlinked)*100
 if pct<75:raise SystemExit(f'1 Corinthians {start}-{end}: coverage too low {pct:.1f}%')
 if synthetic>40:raise SystemExit(f'1 Corinthians {start}-{end}: too many synthetic source tokens {synthetic}')
-print(f'Generated 1 Corinthians {start}-{end}: {expected} verses; {pct:.1f}% DGT token coverage ({linked} linked, {unlinked} deliberately unlinked); {synthetic} synthetic source tokens; {repairs} context repairs.')
+print(f'Generated 1 Corinthians {start}-{end}: {expected} verses; {pct:.1f}% DGT token coverage ({linked} linked, {unlinked} deliberately unlinked); {authored_verses} verses born aligned; {synthetic} synthetic source tokens; {repairs} legacy context repairs.')
