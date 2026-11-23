@@ -9,7 +9,7 @@ on:
       - 'scripts/audit-peter.py'
       - 'scripts/epistle_common.py'
       - 'scripts/john_batch_dgt.py'
-      - 'data/authoring/peter-dgt.tsv'
+      - 'data/authoring/peter-*-dgt.tsv'
   workflow_dispatch:
 
 permissions:
