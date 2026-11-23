@@ -1,7 +1,7 @@
 import json,re,unicodedata,collections,sys
 from pathlib import Path
 
-BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews','romans']
+BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews','romans','1corinthians']
 GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over is am are was were be been being has have had do does did will would shall should may might can could must he she it they we you i me him her them us my his their our your who whom whose which that this these those there here not no never none nothing one thing things its'.split())
 GROUPS=[
  ['imprint','expression','character','stamp','representation'],
