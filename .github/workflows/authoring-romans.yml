@@ -33,6 +33,8 @@ jobs:
         run: node scripts/extract-stepbible-romans.mjs
       - name: Build Romans range
         run: python scripts/build-romans.py
+      - name: Apply reviewed alignment quality overrides
+        run: python scripts/apply-quality-overrides.py
       - name: Audit Romans range
         run: python scripts/audit-romans.py
       - name: Commit clean generated Romans range
