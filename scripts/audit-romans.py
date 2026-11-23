@@ -1,6 +1,6 @@
 import json,os
 from pathlib import Path
-start=int(os.environ.get('START_CHAPTER','1'));end=int(os.environ.get('END_CHAPTER','8'))
+start=int(os.environ.get('START_CHAPTER','1'));end=int(os.environ.get('END_CHAPTER','16'))
 linked=unlinked=count=0
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'romans'/f'{ch:02}.json').read_text(encoding='utf8'))
