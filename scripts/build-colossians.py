@@ -18,6 +18,19 @@ for path in sorted((R/'data/authoring').glob('colossians-*-dgt.tsv')):
 
 # Regenerate generated chapters whenever bundled-pronoun logic changes.
 def authored_dgt(text,src,spec,ref,literal=None):
+ def local_sim(a,b):
+  extra=[
+   {'assembly','assemblies','church','churches','congregation','congregations'},
+   {'servant','servants','minister','ministers','deacon','deacons'},
+   {'bond','bonds','chain','chains','imprisonment'},
+   {'fellowship','participation','partnership'},
+  ]
+  a=norm(a);b=norm(b)
+  z=sim(a,b)
+  if z:return z
+  for g in extra:
+   if a in g and b in g:return 9
+  return 0
  def pronoun_key(w):
   groups={
    'he':{'he','him','his','himself','who','whom','whose'},
@@ -110,7 +123,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
     for id in phrase_ids:
      g=byid.get(id)
      if not g:continue
-     z=max((sim(w,t) for t in semantic_terms(g,id,None)),default=0)
+     z=max((local_sim(w,t) for t in semantic_terms(g,id,None)),default=0)
      if z>=8:scored.append((z,id))
     if scored:
      best=max(z for z,_ in scored);tops=[id for z,id in scored if z==best]
@@ -123,6 +136,24 @@ def authored_dgt(text,src,spec,ref,literal=None):
   x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':confidence,'phraseIds':phrase_ids}
   if not ids:x['reason']='Covered by authored phrase span; no safe lexical hover target'
   out.append(x)
+
+ # Multiword lexical aliases that correspond to a single Greek lexeme.
+ # "good news" is our preferred DGT wording for gospel/evangelize language.
+ for i in range(len(out)-1):
+  if norm(out[i].get('text',''))!='good' or norm(out[i+1].get('text',''))!='news':continue
+  candidates=[]
+  for si,g in enumerate(src):
+   terms=set(semantic_terms(g,g.get('id'),None))
+   if terms & {'gospel','evangel','evangelize','evangelized','evangelised'}:
+    rel=(i+0.5)/max(1,len(out)-1);sp=si/max(1,len(src)-1)
+    candidates.append((abs(rel-sp),g['id']))
+  if not candidates:continue
+  candidates.sort()
+  id=candidates[0][1]
+  out[i]['ids']=[id];out[i]['confidence']='authored-auto-precise-good-news';out[i].pop('reason',None)
+  out[i+1]['ids']=[id];out[i+1]['confidence']='authored-auto-precise-good-news';out[i+1].pop('reason',None)
+  if i>0 and norm(out[i-1].get('text','')) in {'proclaim','proclaimed','preach','preached'}:
+   out[i-1]['ids']=[id];out[i-1]['confidence']='authored-auto-precise-good-news';out[i-1].pop('reason',None)
 
  # Recover deterministic exact matches from the already source-aligned literal
  # layer. If N still-unlinked DGT occurrences of a word correspond to exactly N
