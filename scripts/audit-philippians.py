@@ -120,11 +120,17 @@ for ch in range(start,end+1):
      if id not in usedids and id not in relids:relids.append(id)
   if personal_idxs and len(personal_idxs)==len(relids):
    recoverable_relative_pronouns.append((ch,v['v'],[D[i].get('text','') for i in personal_idxs],relids))
+  used_exact=collections.defaultdict(set)
+  for x in D:
+   w=n(x.get('text',''))
+   if w and x.get('ids'):
+    used_exact[w].update(x.get('ids',[]))
   for w,idxs in byword.items():
    lids=[]
    for y in L:
     if w in atoms(y.get('text','')):
-     lids.extend(y.get('ids',[]))
+     for id in y.get('ids',[]):
+      if id not in used_exact[w]:lids.append(id)
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
     recoverable.append((ch,v['v'],w,len(idxs),lids))
