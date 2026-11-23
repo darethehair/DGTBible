@@ -10,6 +10,7 @@ def atoms(s): return [n(x) for x in re.findall(r"[A-Za-z0-9]+",str(s)) if n(x)]
 linked=unlinked=count=0
 recoverable=[]
 collisions=[]
+EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'ephesians'/f'{ch:02}.json').read_text(encoding='utf8'))
  count+=len(d['verses'])
@@ -52,8 +53,10 @@ for ch in range(start,end+1):
   for id,ws in precise_by_id.items():
    uniq=list(dict.fromkeys(w for w in ws if w))
    unrelated=[w for w in uniq if w not in lit_by_id.get(id,set())]
-   if len(uniq)>=3 and len(unrelated)>=2:
-    collisions.append((ch,v['v'],id,uniq,sorted(lit_by_id.get(id,set()))))
+   litwords=lit_by_id.get(id,set())
+   evangel_ok=bool(litwords & {'evangelised','evangelized','gospel','evangelize'}) and set(uniq).issubset(EVANGEL_WORDS)
+   if len(uniq)>=3 and len(unrelated)>=2 and not evangel_ok:
+    collisions.append((ch,v['v'],id,uniq,sorted(litwords)))
 pct=linked/(linked+unlinked)*100
 assert pct>=75,pct
 assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverable[:20]}'
