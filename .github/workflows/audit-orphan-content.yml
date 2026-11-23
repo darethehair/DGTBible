@@ -1,0 +1,19 @@
+name: Audit orphan DGT content words
+on:
+  push:
+    paths:
+      - 'scripts/audit-orphan-content.py'
+      - 'scripts/alignment_repair.py'
+      - 'data/alignment-quality-allowlist.json'
+      - 'data/**/[0-9][0-9].json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/repair-alignments.py
+      - run: python scripts/apply-quality-overrides.py
+      - run: python scripts/audit-orphan-content.py
