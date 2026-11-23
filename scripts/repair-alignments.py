@@ -217,6 +217,19 @@ def repair_verse(D,G):
   if in_context and ((best[1]>=12 and margin>=2) or (best[1]>=8 and margin>=8)):
    x['ids']=[best[2]];x['confidence']='context-repaired';x.pop('reason',None)
    changes.append(('link',x['text'],best[2]))
+ # Pass 3: unique exact lexical matches missed only because word order is unusual.
+ exact_exclude=GLUE|{'one','someone','anyone','everyone','there','here','what','where','whether','others','other','though','once','having','thing','things'}
+ for i,x in enumerate(D):
+  if x.get('ids'):continue
+  w=norm(x.get('text',''))
+  if not w or w in exact_exclude:continue
+  exact=[id for id,g in src.items() if semantic(w,g)>=12]
+  if len(exact)==1:
+   id=exact[0]
+   rel=i/max(1,len(D)-1);sp=pos[id]/max(1,len(G)-1)
+   if abs(rel-sp)<=0.48:
+    x['ids']=[id];x['confidence']='context-repaired';x.pop('reason',None)
+    changes.append(('exact-link',x['text'],id))
  return changes
 
 summary=collections.Counter();examples=[]
