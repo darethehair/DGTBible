@@ -17,7 +17,7 @@ for path in sorted((R/'data/authoring').glob('galatians-*-dgt.tsv')):
    except json.JSONDecodeError as e:raise SystemExit(f'bad authored alignment JSON {ref} in {path}: {e}')
 
 # Regenerate generated chapters whenever bundled-pronoun logic changes.
-def authored_dgt(text,src,spec,ref):
+def authored_dgt(text,src,spec,ref,literal=None):
  def greek_key(s):
   s=unicodedata.normalize('NFD',str(s)).replace('ʼ','').replace('᾽','').replace('’','').replace("'","")
   s=''.join(x for x in s if unicodedata.category(x)!='Mn').lower()
@@ -106,26 +106,42 @@ def authored_dgt(text,src,spec,ref):
   if not ids:x['reason']='Covered by authored phrase span; no safe lexical hover target'
   out.append(x)
 
- # Recover repeated exact lexical/gloss matches by occurrence order.
- # This handles safe cases such as DGT "through ... through" against two Greek dia
- # tokens: if the number of English occurrences and available source occurrences
- # is identical, pair them left-to-right rather than leaving both ambiguous.
+ # Recover deterministic exact matches from the already source-aligned literal
+ # layer. If N still-unlinked DGT occurrences of a word correspond to exactly N
+ # literal source occurrences of that word, pair them left-to-right.
+ byword=collections.defaultdict(list)
+ for i,x in enumerate(out):
+  if not x.get('ids'):
+   w=norm(x.get('text',''))
+   if w: byword[w].append(i)
+ if literal:
+  for w,idxs in byword.items():
+   candidates=[]
+   for y in literal:
+    terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+    if w in terms:
+     for id in y.get('ids',[]):
+      if id not in candidates:candidates.append(id)
+   if len(candidates)==len(idxs) and candidates:
+    for i,id in zip(idxs,candidates):
+     out[i]['ids']=[id]
+     out[i]['confidence']='authored-auto-precise-literal-ordered'
+     out[i].pop('reason',None)
+
+ # Fallback ordered exact recovery from TAGNT/source glosses.
  byword=collections.defaultdict(list)
  for i,x in enumerate(out):
   if not x.get('ids'):
    w=norm(x.get('text',''))
    if w: byword[w].append(i)
  for w,idxs in byword.items():
-  candidates=[]
-  seen_ids=set()
+  candidates=[];seen_ids=set()
   for id in out[idxs[0]].get('phraseIds',[]):
    g=byid.get(id)
-   if not g: continue
-   if any(norm(t)==w for t in semantic_terms(g,id,None)):
-    if id not in seen_ids:
-     candidates.append(id);seen_ids.add(id)
-  # Preserve Greek/source order. Only use the rule when cardinalities match.
-  if len(candidates)==len(idxs) and len(candidates)>=1:
+   if not g:continue
+   if any(norm(t)==w for t in semantic_terms(g,id,None)) and id not in seen_ids:
+    candidates.append(id);seen_ids.add(id)
+  if len(candidates)==len(idxs) and candidates:
    for i,id in zip(idxs,candidates):
     out[i]['ids']=[id]
     out[i]['confidence']='authored-auto-precise-ordered'
@@ -196,7 +212,7 @@ for ch in range(start,end+1):
   dgt=raw[(ch,v)]
   spec=authored.get((ch,v))
   if spec is not None:
-   da=authored_dgt(dgt,src,spec,f'Gal {ch}:{v}');authored_verses+=1
+   da=authored_dgt(dgt,src,spec,f'Gal {ch}:{v}',la);authored_verses+=1
   else:
    if ch>=1:raise SystemExit(f'Gal {ch}:{v}: new translation requires authored Greek source IDs in the fourth TSV column')
    da=align(dgt,src);repairs+=len(repair_verse(da,ga))
