@@ -1,0 +1,14 @@
+name: Audit corpus alignment quality
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/audit-alignment-quality.py'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/audit-alignment-quality.py
