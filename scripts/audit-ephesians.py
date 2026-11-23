@@ -28,6 +28,7 @@ collisions=[]
 synthetic_unlinked=[]
 recoverable_pronouns=[]
 recoverable_relative_pronouns=[]
+recoverable_context_relative=[]
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'ephesians'/f'{ch:02}.json').read_text(encoding='utf8'))
@@ -73,6 +74,23 @@ for ch in range(start,end+1):
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
     recoverable_pronouns.append((ch,v['v'],k,len(idxs),lids))
+  # Contextual "in whom" -> "in him" style bridge: if a literal relative
+  # pronoun follows a precisely aligned preposition and DGT has an unlinked
+  # personal pronoun immediately after the same source-aligned preposition,
+  # that bridge is deterministically recoverable.
+  usedids={id for x in D for id in x.get('ids',[])}
+  for li,y in enumerate(L):
+   ykeys=[pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)]
+   if 'relative' not in ykeys or li==0:continue
+   relids=[id for id in y.get('ids',[]) if id not in usedids]
+   if len(relids)!=1:continue
+   prev=set(L[li-1].get('ids',[]))
+   for i in range(1,len(D)):
+    if D[i].get('ids') or pk(D[i].get('text','')) not in {'he','she','they','it'}:continue
+    if prev & set(D[i-1].get('ids',[])):
+     recoverable_context_relative.append((ch,v['v'],D[i].get('text',''),relids[0]))
+     break
+
   personal_idxs=[i for i,x in enumerate(D) if not x.get('ids') and pk(x.get('text','')) in {'he','she','they','it'}]
   usedids={id for x in D for id in x.get('ids',[])}
   relids=[]
@@ -115,6 +133,7 @@ assert pct>=75,pct
 assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverable[:20]}'
 assert not recoverable_pronouns, f'recoverable pronoun-family DGT links left unlinked: {recoverable_pronouns[:20]}'
 assert not recoverable_relative_pronouns, f'recoverable relative-to-personal pronoun links left unlinked: {recoverable_relative_pronouns[:20]}'
+assert not recoverable_context_relative, f'recoverable contextual relative-pronoun links left unlinked: {recoverable_context_relative[:20]}'
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
 print(f'Ephesians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 recoverable relative-pronoun bridges left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
