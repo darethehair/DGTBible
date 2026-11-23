@@ -226,6 +226,32 @@ def authored_dgt(text,src,spec,ref,literal=None):
   if chosen:
    x['ids']=[chosen];x['confidence']='authored-auto-precise-bundled';x.pop('reason',None)
 
+ # Recover pronouns bundled into a neighboring source gloss using the
+ # already source-aligned literal layer. This safely handles cases such as
+ # DGT "he himself" when one Greek pronoun is glossed "He himself".
+ if literal:
+  lit_terms=collections.defaultdict(set)
+  for y in literal:
+   terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+   for id in y.get('ids',[]):
+    lit_terms[id].update(terms)
+  for i,x in enumerate(out):
+   if x.get('ids'):continue
+   w=norm(x.get('text',''));k=pronoun_key(w)
+   if not k or k=='relative':continue
+   candidates=[]
+   for j in (i-1,i+1,i-2,i+2):
+    if not (0<=j<len(out)):continue
+    for id in out[j].get('ids',[]):
+     terms=lit_terms.get(id,set())
+     if any(pronoun_key(t)==k for t in terms):
+      candidates.append(id)
+   unique=list(dict.fromkeys(candidates))
+   if len(unique)==1:
+    x['ids']=[unique[0]]
+    x['confidence']='authored-auto-precise-literal-bundled-pronoun'
+    x.pop('reason',None)
+
  # Final fixed-point literal recovery. Earlier alignment passes can reduce an
  # ambiguous repeated word to a deterministic N-to-N match; keep resolving
  # those exact occurrence-ordered cases until no further safe links appear.
