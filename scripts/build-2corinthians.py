@@ -49,6 +49,15 @@ def authored_dgt(text,src,spec,ref):
     raise SystemExit(f'{ref}: each precision override must be [1-based-token-index,[source refs]]: {p!r}')
    if p[0]<1 or p[0]>len(tokens):raise SystemExit(f'{ref}: precision token index {p[0]} outside 1..{len(tokens)}')
    precision[p[0]-1]=resolve(p[1])
+  # Human-readable born alignment: ["english-token", occurrence, [source refs]].
+  # Matching ignores punctuation/case but the build fails if the requested token
+  # occurrence does not exist, so lexical intent stays explicit and reviewable.
+  for p in spec.get('precisionWords',[]):
+   if not isinstance(p,list) or len(p)!=3 or not isinstance(p[0],str) or not isinstance(p[1],int) or not isinstance(p[2],list):
+    raise SystemExit(f'{ref}: precisionWords entries must be [token,occurrence,[source refs]]: {p!r}')
+   key=norm(p[0]);matches=[i for i,t in enumerate(tokens) if norm(t)==key]
+   if p[1]<1 or p[1]>len(matches):raise SystemExit(f'{ref}: precisionWords cannot find {p[0]!r} occurrence {p[1]}')
+   precision[matches[p[1]-1]]=resolve(p[2])
   spec=expanded
  if not isinstance(spec,list) or len(spec)!=len(tokens):
   raise SystemExit(f'{ref}: authored alignment must cover each DGT whitespace token ({len(tokens)} expected)')
