@@ -750,7 +750,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
   top_count=ranked[0][1]
   second_count=ranked[1][1] if len(ranked)>1 else 0
   # Require repeated prior evidence and a clearly dominant lexical association.
-  strongs={s for s,n in ranked if n==top_count} if top_count>=2 and top_count>=second_count*2 else set()
+  strongs={s for s,n in ranked if n==top_count} if top_count>=1 and (second_count==0 or top_count>=second_count*2) else set()
   if len(strongs)!=1:continue
   allowed=set(x.get('phraseIds',[]))
   candidates=[]
