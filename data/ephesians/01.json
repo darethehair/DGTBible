@@ -10670,9 +10670,11 @@
           },
           {
             "text": "his",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-relative-pronoun",
             "phraseIds": [
               "w1",
               "w2",
@@ -10691,8 +10693,7 @@
               "w15",
               "w16",
               "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "will,",

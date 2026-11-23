@@ -3023,9 +3023,11 @@
           },
           {
             "text": "them",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-relative-pronoun",
             "phraseIds": [
               "w1",
               "w2",
@@ -3057,8 +3059,7 @@
               "w28",
               "w29",
               "w30"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "we",
