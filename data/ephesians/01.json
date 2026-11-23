@@ -8992,9 +8992,11 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-literal-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -9019,8 +9021,7 @@
               "w22",
               "s22",
               "s23"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "Christ,",
@@ -9123,9 +9124,11 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-literal-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -9150,8 +9153,7 @@
               "w22",
               "s22",
               "s23"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "the",
@@ -9418,9 +9420,11 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "s22"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -9445,14 +9449,15 @@
               "w22",
               "s22",
               "s23"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "him.",
-            "ids": [],
+            "ids": [
+              "s23"
+            ],
             "after": "",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -9477,8 +9482,7 @@
               "w22",
               "s22",
               "s23"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           }
         ]
       }
