@@ -17,6 +17,28 @@ for path in sorted((R/'data/authoring').glob('revelation-*-dgt.tsv')):
    try: authored[(ch,v)]=json.loads(parts[3])
    except json.JSONDecodeError as e:raise SystemExit(f'bad authored alignment JSON {ref} in {path}: {e}')
 
+# Learn stable DGT-word -> Greek Strong's associations from already generated
+# completed books. Revelation may use these only as an in-span precision aid.
+CORPUS_WORD_STRONGS=collections.defaultdict(collections.Counter)
+for bookdir in (R/'data').iterdir():
+ if not bookdir.is_dir() or bookdir.name in {'sources','authoring','revelation'}:continue
+ for jp in bookdir.glob('[0-9][0-9].json'):
+  try:d=json.loads(jp.read_text(encoding='utf8'))
+  except Exception:continue
+  for vv in d.get('verses',[]):
+   amap=vv.get('alignment',{})
+   idstrong={}
+   for g in amap.get('greek',[]):
+    s=g.get('strongs','')
+    if s:
+     for id in g.get('ids',[]):idstrong[id]=s
+   for x in amap.get('dgt',[]):
+    w=norm(x.get('text',''))
+    ids=x.get('ids',[])
+    if not w or len(ids)!=1:continue
+    s=idstrong.get(ids[0])
+    if s:CORPUS_WORD_STRONGS[w][s]+=1
+
 # Regenerate generated chapters whenever bundled-pronoun logic changes.
 def authored_dgt(text,src,spec,ref,literal=None):
  def local_sim(a,b):
@@ -715,6 +737,29 @@ def authored_dgt(text,src,spec,ref,literal=None):
   if chosen:
    x['ids']=[chosen]
    x['confidence']='authored-auto-precise-postguard-semantic'
+   x.pop('reason',None)
+ # Corpus-learned lexical recovery. Reuse stable DGT -> Strong's mappings
+ # learned from completed books, but only inside this token's authored span.
+ for x in out:
+  if x.get('ids'):continue
+  w=norm(x.get('text',''))
+  if not w or w in GLUE:continue
+  learned=CORPUS_WORD_STRONGS.get(w)
+  if not learned:continue
+  ranked=learned.most_common()
+  top_count=ranked[0][1]
+  second_count=ranked[1][1] if len(ranked)>1 else 0
+  # Require repeated prior evidence and a clearly dominant lexical association.
+  strongs={s for s,n in ranked if n==top_count} if top_count>=2 and top_count>=second_count*2 else set()
+  if len(strongs)!=1:continue
+  allowed=set(x.get('phraseIds',[]))
+  candidates=[]
+  for id in allowed:
+   g=byid.get(id)
+   if g and g.get('strongs','') in strongs:candidates.append(id)
+  if len(candidates)==1:
+   x['ids']=[candidates[0]]
+   x['confidence']='authored-auto-precise-corpus-lexicon'
    x.pop('reason',None)
  return out
 
