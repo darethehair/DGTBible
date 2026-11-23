@@ -284,7 +284,7 @@ def repair_verse(D,G,L=None):
  # reassignment proved unsafe with repeated lemmas, tense shifts, and paraphrase.
  # Pass 2: fill lexical misses conservatively.
  for i,x in enumerate(D):
-  if x.get('ids'):continue
+  if x.get('ids') or x.get('phraseIds'):continue
   w=norm(x.get('text',''))
   if not w or w in GLUE:continue
   candidates=[]
@@ -308,7 +308,7 @@ def repair_verse(D,G,L=None):
  # Pass 3: unique exact lexical matches missed only because word order is unusual.
  exact_exclude=GLUE|{'one','someone','anyone','everyone','there','here','what','where','whether','others','other','though','once','having','thing','things'}
  for i,x in enumerate(D):
-  if x.get('ids'):continue
+  if x.get('ids') or x.get('phraseIds'):continue
   w=norm(x.get('text',''))
   if not w or w in exact_exclude:continue
   exact=[id for id,g in src.items() if semantic_with_literal(w,g,id,litmap)>=12]
@@ -336,11 +336,11 @@ def repair_verse(D,G,L=None):
    ids=[id for id in D[j].get('ids',[]) if id in pos]
    if ids: right=min(pos[id] for id in ids); break
   if left is None or right is None or right<=left: continue
-  eng=[j for j in range(i if i>=0 else 0, i+1) if not D[j].get('ids') and norm(D[j].get('text','')) not in GLUE]
+  eng=[j for j in range(i if i>=0 else 0, i+1) if not (D[j].get('ids') or D[j].get('phraseIds')) and norm(D[j].get('text','')) not in GLUE]
   # Count all meaningful unlinked English tokens between the same linked boundaries.
   li=max([j for j in range(i-1,-1,-1) if any(id in pos for id in D[j].get('ids',[]))],default=-1)
   ri=min([j for j in range(i+1,len(D)) if any(id in pos for id in D[j].get('ids',[]))],default=len(D))
-  eng=[j for j in range(li+1,ri) if not D[j].get('ids') and norm(D[j].get('text','')) and norm(D[j].get('text','')) not in GLUE]
+  eng=[j for j in range(li+1,ri) if not (D[j].get('ids') or D[j].get('phraseIds')) and norm(D[j].get('text','')) and norm(D[j].get('text','')) not in GLUE]
   greek=[id for id,p in pos.items() if left<p<right and id not in used and meaningful(src[id],id)]
   if len(eng)==1 and eng[0]==i and len(greek)==1:
    id=greek[0]
