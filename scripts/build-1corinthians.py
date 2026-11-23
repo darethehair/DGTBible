@@ -85,6 +85,7 @@ def authored_dgt(text,src,spec,ref):
  # For an ambiguous phrase-only glue word, look up to two English tokens away:
  # inherit a precise source only when its gloss explicitly contains that word
  # and the source remains inside the already-authored phrase span.
+ subject_pronouns={'i','we','you','he','she','they','it'}
  for i,x in enumerate(out):
   if x.get('ids') or not x.get('phraseIds'):continue
   w=norm(x.get('text',''))
@@ -96,10 +97,19 @@ def authored_dgt(text,src,spec,ref):
     if id not in x.get('phraseIds',[]):continue
     g=byid.get(id)
     if g and any(norm(t)==w for t in semantic_terms(g,id,None)):
-     candidates.append(id)
-  candidates=list(dict.fromkeys(candidates))
-  if len(candidates)==1:
-   x['ids']=candidates;x['confidence']='authored-auto-precise-bundled';x.pop('reason',None)
+     candidates.append((j-i,id))
+  unique=list(dict.fromkeys(id for _,id in candidates))
+  chosen=None
+  if len(unique)==1:
+   chosen=unique[0]
+  elif w in subject_pronouns:
+   following=sorted((d,id) for d,id in candidates if d>0)
+   if following:
+    nearest=following[0][0]
+    tops=list(dict.fromkeys(id for d,id in following if d==nearest))
+    if len(tops)==1:chosen=tops[0]
+  if chosen:
+   x['ids']=[chosen];x['confidence']='authored-auto-precise-bundled';x.pop('reason',None)
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','4'))
