@@ -1868,16 +1868,15 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w17"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w6",
               "w7",
               "w8"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "sisters,",
@@ -2083,11 +2082,9 @@
           },
           {
             "text": "of",
-            "ids": [
-              "w16"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w17",
               "w18",
@@ -2099,7 +2096,8 @@
               "w24",
               "w25",
               "w26"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "each",
@@ -2304,10 +2302,10 @@
           {
             "text": "increasing.",
             "ids": [
-              "w13"
+              "w18"
             ],
             "after": "",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w17",
               "w18",
@@ -3052,11 +3050,9 @@
           },
           {
             "text": "about",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w2",
@@ -3064,7 +3060,8 @@
               "w4",
               "w5",
               "w6"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "you",
@@ -3158,11 +3155,9 @@
           },
           {
             "text": "for",
-            "ids": [
-              "w1"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w12",
               "w13",
@@ -3170,7 +3165,8 @@
               "w15",
               "w16",
               "w17"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "your",
@@ -4084,17 +4080,16 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w11",
               "w12",
               "w13",
               "w14"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "kingdom",
@@ -4559,16 +4554,15 @@
           },
           {
             "text": "to",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w6",
               "w7",
               "w8"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "those",
@@ -9672,10 +9666,10 @@
           {
             "text": "our",
             "ids": [
-              "w21"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -9919,11 +9913,9 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w16",
               "w17",
@@ -9931,7 +9923,8 @@
               "w19",
               "w20",
               "w21"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "grace",
@@ -9951,11 +9944,9 @@
           },
           {
             "text": "of",
-            "ids": [
-              "w7"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w16",
               "w17",
@@ -9963,15 +9954,16 @@
               "w19",
               "w20",
               "w21"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "our",
             "ids": [
-              "w7"
+              "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w16",
               "w17",

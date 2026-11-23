@@ -497,17 +497,16 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w13"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "sisters,",
@@ -564,25 +563,26 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-bundled",
             "phraseIds": [
               "w8",
               "w9",
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "our",
             "ids": [
-              "w14"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w8",
               "w9",
@@ -655,7 +655,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w13",
               "w14",
@@ -2767,17 +2767,16 @@
           },
           {
             "text": "not",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w8",
               "w9",
               "w10",
               "w11"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "come",
@@ -2815,6 +2814,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w11",
               "w12",
               "w13",
               "w14"
@@ -2828,6 +2828,7 @@
             "after": " ",
             "confidence": "authored-precise",
             "phraseIds": [
+              "w11",
               "w12",
               "w13",
               "w14"
@@ -2841,6 +2842,7 @@
             "after": " ",
             "confidence": "authored-precise",
             "phraseIds": [
+              "w11",
               "w12",
               "w13",
               "w14"
@@ -2854,6 +2856,7 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
+              "w11",
               "w12",
               "w13",
               "w14"
@@ -2972,17 +2975,16 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w19"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w21",
               "w22",
               "w23",
               "w24"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "son",
@@ -3597,27 +3599,25 @@
         "dgt": [
           {
             "text": "the",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w2"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "one",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w2"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "opposing",
@@ -3815,11 +3815,9 @@
           },
           {
             "text": "that",
-            "ids": [
-              "w23"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w11",
               "w12",
@@ -3829,15 +3827,16 @@
               "w16",
               "w17",
               "w20"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "he",
             "ids": [
-              "w22"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w11",
               "w12",
@@ -3983,16 +3982,15 @@
           },
           {
             "text": "as",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w23",
               "w24",
               "w25"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "being",
@@ -4355,33 +4353,31 @@
           },
           {
             "text": "I",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w3",
               "w4",
               "w5",
               "w6",
               "w7"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "was",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w3",
               "w4",
               "w5",
               "w6",
               "w7"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "still",
@@ -4934,17 +4930,16 @@
           },
           {
             "text": "that",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w6",
               "w7",
               "w8",
               "w9"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "he",
@@ -5555,11 +5550,9 @@
           },
           {
             "text": "at",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w2",
@@ -5568,7 +5561,8 @@
               "w5",
               "w6",
               "w7"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "work;",
@@ -5726,17 +5720,16 @@
           },
           {
             "text": "is",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-final-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w12",
               "w13",
               "w14",
               "w15"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "out",
@@ -6612,10 +6605,10 @@
           {
             "text": "his",
             "ids": [
-              "w22"
+              "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w11",
               "w12",
@@ -6702,18 +6695,17 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w13"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w18",
               "w19",
               "w20",
               "w21",
               "w22"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "appearance",
@@ -6732,26 +6724,25 @@
           },
           {
             "text": "of",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w18",
               "w19",
               "w20",
               "w21",
               "w22"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "his",
             "ids": [
-              "w15"
+              "w22"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w18",
               "w19",
@@ -7967,15 +7958,14 @@
           },
           {
             "text": "for",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-final-positional",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w8",
               "w9"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "those",
@@ -8046,7 +8036,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w10",
               "w11",
@@ -8210,10 +8200,10 @@
           {
             "text": "they",
             "ids": [
-              "w17"
+              "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w18",
               "w19",
@@ -8759,15 +8749,14 @@
           },
           {
             "text": "of",
-            "ids": [
-              "w2"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w8",
               "w9"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "delusion",
@@ -8839,15 +8828,14 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w14",
               "w15"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "lie,",
@@ -10240,17 +10228,16 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w25"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w10",
               "w11",
               "w12",
               "w13"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "sisters",
@@ -10459,16 +10446,15 @@
           },
           {
             "text": "by",
-            "ids": [
-              "w26"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-final-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w22",
               "w23",
               "w24"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "the",
@@ -10523,16 +10509,15 @@
           },
           {
             "text": "in",
-            "ids": [
-              "w22"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w25",
               "w26",
               "w27"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "the",
@@ -11679,17 +11664,16 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4"
-            ]
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "sisters,",
@@ -12572,9 +12556,11 @@
           },
           {
             "text": "our",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -12583,8 +12569,7 @@
               "w5",
               "w6",
               "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "Lord",
@@ -12686,17 +12671,18 @@
           },
           {
             "text": "our",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w8",
               "w10",
               "w11",
               "w12",
               "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "Father,",
