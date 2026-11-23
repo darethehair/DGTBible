@@ -40,3 +40,9 @@ for k in ["exact","over-broad","missing","partial/wrong","wrong"]:
 print("\nDETAIL")
 for ch,v,text,e,a,s in rows:
  print(f"1Cor {ch}:{v:<2} {text:<16} expected={','.join(e):<10} actual={','.join(a):<40} {s}")
+
+# Regression gate: unseen hover quality must remain materially better than the
+# original phrase-only baseline, with no wrong/missing lexical targets.
+exact_ratio=C['exact']/total if total else 0
+if C['wrong'] or C['missing'] or exact_ratio < 0.85:
+ raise SystemExit(f"HOVER HOLDOUT REGRESSION: exact={C['exact']}/{total}, wrong={C['wrong']}, missing={C['missing']}")
