@@ -1,0 +1,52 @@
+name: Build pinned 1 Corinthians DGT batch
+on:
+  push:
+    paths:
+      - '.github/workflows/authoring-1corinthians.yml'
+      - 'scripts/extract-stepbible-1corinthians.mjs'
+      - 'scripts/build-1corinthians.py'
+      - 'scripts/audit-1corinthians.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/john_batch_dgt.py'
+      - 'scripts/repair-alignments.py'
+      - 'scripts/alignment_repair.py'
+      - 'data/authoring/1corinthians-*-dgt.tsv'
+  workflow_dispatch:
+    inputs:
+      start_chapter:
+        required: true
+        default: '1'
+      end_chapter:
+        required: true
+        default: '4'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      START_CHAPTER: ${{ github.event.inputs.start_chapter || '1' }}
+      END_CHAPTER: ${{ github.event.inputs.end_chapter || '4' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract pinned SBLGNT and TAGNT
+        run: node scripts/extract-stepbible-1corinthians.mjs
+      - name: Build 1 Corinthians range
+        run: python scripts/build-1corinthians.py
+      - name: Apply reviewed alignment quality overrides
+        run: python scripts/apply-quality-overrides.py
+      - name: Audit 1 Corinthians range
+        run: python scripts/audit-1corinthians.py
+      - name: Commit clean generated 1 Corinthians range
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/1corinthians/*.json data/sources/step-1corinthians-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean 1 Corinthians $START_CHAPTER-$END_CHAPTER batch"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
+          fi
