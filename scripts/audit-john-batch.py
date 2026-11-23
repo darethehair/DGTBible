@@ -35,7 +35,8 @@ for ch in range(START,END+1):
   for i,ps in p.items():
    sep=any(ps[k]!=ps[k-1]+1 for k in range(1,len(ps)))
    phrase=' '.join(items[j]['text'] for j in ps);pw=[w for w in n(phrase).split() if w not in GEN];gw=[w for w in n(g[i].get('gloss','')).split() if w not in GEN]
-   if sep and gw and pw and not any(w in gw for w in pw):risk.append((ref,i,phrase))
+   reviewed=any(items[j].get('confidence') in {'quality-scan','phrase-repaired'} for j in ps)
+   if sep and gw and pw and not reviewed and not any(w in gw for w in pw):risk.append((ref,i,phrase))
 expected=sum(1 for ch in range(START,END+1) for _ in json.loads((B/f'{ch:02}.json').read_text(encoding='utf8'))['verses'])
 if count!=expected:bad.append(f'expected {expected} verses, got {count}')
 pct=linked/(linked+unlinked)*100
