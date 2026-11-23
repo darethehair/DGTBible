@@ -1,0 +1,49 @@
+name: Build pinned Galatians DGT batch
+on:
+  push:
+    paths:
+      - 'scripts/extract-stepbible-galatians.mjs'
+      - 'scripts/build-galatians.py'
+      - 'scripts/audit-galatians.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/alignment_repair.py'
+      - 'data/authoring/galatians-*-dgt.tsv'
+  workflow_dispatch:
+    inputs:
+      start_chapter:
+        required: true
+        default: '6'
+      end_chapter:
+        required: true
+        default: '6'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      START_CHAPTER: ${{ github.event.inputs.start_chapter || '1' }}
+      END_CHAPTER: ${{ github.event.inputs.end_chapter || '6' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract pinned SBLGNT and TAGNT
+        run: node scripts/extract-stepbible-galatians.mjs
+      - name: Build Galatians range
+        run: python scripts/build-galatians.py
+      - name: Apply reviewed alignment quality overrides
+        run: python scripts/apply-quality-overrides.py
+      - name: Audit Galatians range
+        run: python scripts/audit-galatians.py
+      - name: Commit clean generated Galatians range
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/galatians/*.json data/sources/step-galatians-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean Galatians $START_CHAPTER-$END_CHAPTER batch"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
+          fi
