@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Repair context-aware alignments for deployment
+        run: python scripts/repair-alignments.py
       - name: Validate Gospel of John
         run: node scripts/validate-john.mjs
       - name: Semantic alignment audit for John
