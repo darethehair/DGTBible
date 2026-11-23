@@ -1130,16 +1130,17 @@
             "text": "one",
             "after": " ",
             "ids": [
-              "w7"
-            ]
+              "w10"
+            ],
+            "confidence": "quality-scan"
           },
           {
             "text": "thing",
             "after": " ",
             "ids": [
-              "w1"
+              "w10"
             ],
-            "confidence": "context-repaired"
+            "confidence": "quality-scan"
           },
           {
             "text": "came",
@@ -3663,8 +3664,9 @@
             "text": "which",
             "after": " ",
             "ids": [
-              "w3"
-            ]
+              "w6"
+            ],
+            "confidence": "quality-scan"
           },
           {
             "text": "gives",
@@ -3685,9 +3687,9 @@
           {
             "text": "to",
             "after": " ",
-            "ids": [
-              "w3"
-            ]
+            "ids": [],
+            "confidence": "unlinked",
+            "reason": "English syntax supplied by translation"
           },
           {
             "text": "every",
@@ -15034,9 +15036,9 @@
             "text": "saw",
             "after": " ",
             "ids": [
-              "w11"
+              "w3"
             ],
-            "confidence": "context-repaired"
+            "confidence": "quality-scan"
           },
           {
             "text": "Jesus",
@@ -15689,9 +15691,9 @@
             "text": "one",
             "after": " ",
             "ids": [
-              "w10"
+              "w1"
             ],
-            "confidence": "context-repaired"
+            "confidence": "quality-scan"
           },
           {
             "text": "about",
