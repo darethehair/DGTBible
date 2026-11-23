@@ -1,0 +1,20 @@
+name: Hover precision audit
+
+on:
+  push:
+    paths:
+      - 'scripts/audit-hover-precision.py'
+      - 'data/1corinthians/05.json'
+      - 'data/1corinthians/06.json'
+      - 'data/1corinthians/07.json'
+      - 'data/1corinthians/08.json'
+      - '.github/workflows/audit-hover-precision.yml'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit representative hover precision
+        run: python scripts/audit-hover-precision.py
