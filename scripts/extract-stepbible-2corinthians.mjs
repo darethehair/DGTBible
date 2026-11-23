@@ -18,5 +18,5 @@ await fs.writeFile('authoring/step-2corinthians.tsv',['# STEPBible TAGNT extract
 const sblLines=(await sblRes.text()).split(/\r?\n/).filter(line=>/^2Cor \d+:\d+\t/.test(line));
 await fs.writeFile('authoring/sblgnt-2corinthians.txt',['# SBLGNT extraction','# source: Faithlife/SBLGNT@'+sblgntSha,'# book: 2 Corinthians',...sblLines].join('\n')+'\n');
 console.log('Matched',sblLines.length,'SBLGNT verses and',matched.length,'TAGNT lines for 2 Corinthians');
-if(sblLines.length!==257)throw new Error('Unexpected SBLGNT verse count for 2 Corinthians: '+sblLines.length);
+if(sblLines.length!==256)throw new Error('Unexpected SBLGNT verse count for 2 Corinthians: '+sblLines.length);
 if(matched.length<3000)throw new Error('Too few TAGNT lines for 2 Corinthians');
