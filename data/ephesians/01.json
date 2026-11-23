@@ -6158,9 +6158,11 @@
           },
           {
             "text": "him",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-relative-pronoun-context",
             "phraseIds": [
               "w1",
               "w2",
@@ -6181,8 +6183,7 @@
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "we",
@@ -6302,9 +6303,11 @@
           },
           {
             "text": "his",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -6325,8 +6328,7 @@
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "blood,",
@@ -6617,9 +6619,11 @@
           },
           {
             "text": "his",
-            "ids": [],
+            "ids": [
+              "w19"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
               "w1",
               "w2",
@@ -6640,8 +6644,7 @@
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "grace",
@@ -12073,7 +12076,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-relative-pronoun",
+            "confidence": "authored-auto-precise-relative-pronoun-context",
             "phraseIds": [
               "w1",
               "w2",
@@ -12731,7 +12734,7 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-relative-pronoun",
+            "confidence": "authored-auto-precise-relative-pronoun-context",
             "phraseIds": [
               "w1",
               "w2",
