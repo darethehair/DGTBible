@@ -1,4 +1,4 @@
-const APP_VERSION='v0.36';
+const APP_VERSION='v0.37';
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={};
 const $=id=>document.getElementById(id);
@@ -56,7 +56,7 @@ function renderLayerControls(){document.querySelectorAll('[data-layer]').forEach
 function clearAlignment(){document.querySelectorAll('.align-token.active').forEach(el=>el.classList.remove('active'))}
 function highlightAlignment(ids){clearAlignment();if(!ids?.length)return;document.querySelectorAll('.align-token').forEach(el=>{const mine=(el.dataset.ids||'').split(',');if(mine.some(id=>ids.includes(id)))el.classList.add('active')})}
 function renderAligned(container,key,verse,fallback){
- const items=verse.alignment?.[key];if(!items){container.textContent=fallback;return}
+ const items=verse.alignment?.[key];if(!items?.length){container.textContent=fallback;return}
  container.innerHTML=items.map(item=>{const ids=(item.ids||[]).join(',');return ids?`<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`:`<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`}).join('');
  const activate=e=>{
   const el=e.target.closest?.('.align-token');
@@ -69,7 +69,7 @@ function renderAligned(container,key,verse,fallback){
 }
 function alignedHtml(key,verse,fallback){
  const items=verse.alignment?.[key];
- if(!items)return esc(fallback);
+ if(!items?.length)return esc(fallback);
  return items.map(item=>{
   const ids=(item.ids||[]).join(',');
   return ids?`<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`:`<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`;
