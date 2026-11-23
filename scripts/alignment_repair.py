@@ -279,34 +279,9 @@ def repair_verse(D,G,L=None):
     if x.get('ids')!=[id]:
      x['ids']=[id];x['confidence']='phrase-repaired';x.pop('reason',None);changed=True
    if changed:changes.append(('phrase-link',' '.join(words),id))
- # Pass 1: repair clearly misplaced content links when a strong in-context alternative exists.
- for i,x in enumerate(D):
-  w=norm(x.get('text',''))
-  contentish = w not in GLUE or (w=='being' and i>0 and norm(D[i-1].get('text','')) in {'my','your','his','her','our','their'})
-  if not w or not contentish or not x.get('ids'):continue
-  if x.get('confidence')=='phrase-repaired':continue
-  cur=[id for id in x['ids'] if id in src]
-  if not cur:continue
-  curz=max(semantic_with_literal(w,src[id],id,litmap) for id in cur)
-  left,right=bounds(D,i,pos)
-  cur_in=True
-  if left is not None and right is not None:
-   lo=min(left,right)-4;hi=max(left,right)+4
-   cur_in=any(lo<=pos[id]<=hi for id in cur)
-  candidates=[]
-  for id,g in src.items():
-   z=semantic_with_literal(w,g,id,litmap)
-   if z>=8:candidates.append((candidate_score(i,D,G,src,pos,id,z),z,id))
-  if not candidates:continue
-  candidates.sort(reverse=True);score,z,best=candidates[0]
-  curscore=max(candidate_score(i,D,G,src,pos,id,semantic_with_literal(w,src[id],id,litmap)) for id in cur)
-  margin=score-(candidates[1][0] if len(candidates)>1 else -999)
-  top_semantic_count=sum(1 for _,cz,_ in candidates if cz==z)
-  misplaced=(not cur_in) and score>=curscore+8 and top_semantic_count==1
-  lexically_wrong=(len(cur)==1 and curz<8 and z>=8 and margin>=8 and score>=curscore+12 and top_semantic_count==1)
-  if best not in cur and (misplaced or lexically_wrong):
-   old=list(x['ids']);x['ids']=[best];x['confidence']='context-repaired';x.pop('reason',None)
-   changes.append(('relink',x['text'],old,best))
+ # Pass 1 intentionally does not move existing links.
+ # Wrong-link candidates are reported by audits and reviewed manually; automatic
+ # reassignment proved unsafe with repeated lemmas, tense shifts, and paraphrase.
  # Pass 2: fill lexical misses conservatively.
  for i,x in enumerate(D):
   if x.get('ids'):continue
