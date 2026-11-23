@@ -20,15 +20,19 @@ for path in sorted((R/'data/authoring').glob('ephesians-*-dgt.tsv')):
 def authored_dgt(text,src,spec,ref,literal=None):
  def pronoun_key(w):
   groups={
-   'he':{'he','him','his','himself'},
-   'she':{'she','her','hers','herself'},
-   'they':{'they','them','their','theirs','themselves'},
+   'he':{'he','him','his','himself','who','whom','whose'},
+   'she':{'she','her','hers','herself','who','whom','whose'},
+   'they':{'they','them','their','theirs','themselves','who','whom','whose'},
    'we':{'we','us','our','ours','ourselves'},
    'you':{'you','your','yours','yourself','yourselves'},
    'i':{'i','me','my','mine','myself'},
-   'it':{'it','its','itself'},
+   'it':{'it','its','itself','which'},
   }
   w=norm(w)
+  # Relative pronouns are antecedent-dependent. Treat them as a special
+  # canonical family first; resolve to the remaining personal-pronoun family
+  # only when occurrence counts make the pairing deterministic.
+  if w in {'who','whom','whose','which'}: return 'relative'
   for k,vals in groups.items():
    if w in vals:return k
   return None
@@ -218,7 +222,6 @@ def authored_dgt(text,src,spec,ref,literal=None):
      changed=True
  # Final deterministic pronoun-family recovery. English may express the same
  # Greek pronoun with case/possessive/reflexive forms (he/him/his/himself).
- # Pair only when the canonical pronoun occurrence counts match exactly.
  if literal:
   dgroups=collections.defaultdict(list)
   for i,x in enumerate(out):
@@ -230,7 +233,8 @@ def authored_dgt(text,src,spec,ref,literal=None):
    k=pronoun_key(x.get('text',''))
    if k and x.get('ids'):
     used_pronoun_ids[k].update(x.get('ids',[]))
-  for k,idxs in dgroups.items():
+  for k,idxs in list(dgroups.items()):
+   if k=='relative': continue
    candidates=[]
    for y in literal:
     ykeys={pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))}
@@ -242,6 +246,24 @@ def authored_dgt(text,src,spec,ref,literal=None):
      out[i]['ids']=[id]
      out[i]['confidence']='authored-auto-precise-pronoun-ordered'
      out[i].pop('reason',None)
+
+  # Relative-pronoun bridge: literal "who/whom/whose/which" may become
+  # a personal pronoun in idiomatic DGT English ("in whom" -> "in him").
+  # Use only when there is exactly one remaining personal-pronoun token and
+  # exactly one unused relative-pronoun source candidate in the verse.
+  personal_idxs=[i for i,x in enumerate(out) if not x.get('ids') and pronoun_key(x.get('text','')) in {'he','she','they','it'}]
+  rel_candidates=[]
+  used_ids={id for x in out for id in x.get('ids',[])}
+  for y in literal:
+   ykeys={pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))}
+   if 'relative' in ykeys:
+    for id in y.get('ids',[]):
+     if id not in used_ids and id not in rel_candidates: rel_candidates.append(id)
+  if len(personal_idxs)==1 and len(rel_candidates)==1:
+   i=personal_idxs[0]
+   out[i]['ids']=[rel_candidates[0]]
+   out[i]['confidence']='authored-auto-precise-relative-pronoun'
+   out[i].pop('reason',None)
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
