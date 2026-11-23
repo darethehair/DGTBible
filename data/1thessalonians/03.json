@@ -1548,9 +1548,11 @@
           },
           {
             "text": "good",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-good-news",
             "phraseIds": [
               "w1",
               "w2",
@@ -1577,14 +1579,15 @@
               "w27",
               "w28",
               "w29"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "news",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-good-news",
             "phraseIds": [
               "w1",
               "w2",
@@ -1611,8 +1614,7 @@
               "w27",
               "w28",
               "w29"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "of",
@@ -6860,10 +6862,10 @@
           {
             "text": "good",
             "ids": [
-              "w23"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-auto-precise-good-news",
             "phraseIds": [
               "w1",
               "w2",
@@ -6900,9 +6902,11 @@
           },
           {
             "text": "news",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-good-news",
             "phraseIds": [
               "w1",
               "w2",
@@ -6935,8 +6939,7 @@
               "w29",
               "w30",
               "w31"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "of",

@@ -678,9 +678,11 @@
           },
           {
             "text": "assembly",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -701,8 +703,7 @@
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "of",
@@ -4670,9 +4671,11 @@
           },
           {
             "text": "good",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-good-news",
             "phraseIds": [
               "w1",
               "w2",
@@ -4704,14 +4707,15 @@
               "w29",
               "w30",
               "w31"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "news",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-good-news",
             "phraseIds": [
               "w1",
               "w2",
@@ -4743,8 +4747,7 @@
               "w29",
               "w30",
               "w31"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "did",
