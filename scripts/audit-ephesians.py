@@ -80,8 +80,8 @@ for ch in range(start,end+1):
    if 'relative' in {pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)}:
     for id in y.get('ids',[]):
      if id not in usedids and id not in relids:relids.append(id)
-  if len(personal_idxs)==1 and len(relids)==1:
-   recoverable_relative_pronouns.append((ch,v['v'],D[personal_idxs[0]].get('text',''),relids[0]))
+  if personal_idxs and len(personal_idxs)==len(relids):
+   recoverable_relative_pronouns.append((ch,v['v'],[D[i].get('text','') for i in personal_idxs],relids))
   for w,idxs in byword.items():
    lids=[]
    for y in L:
