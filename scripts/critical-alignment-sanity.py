@@ -1,6 +1,6 @@
 # post-review critical rescan
 # full corpus critical scan
-import json,collections
+import json,collections,sys
 from pathlib import Path
 from alignment_repair import BOOKS,atoms,norm,GLUE,sim,literal_terms_by_id,semantic_terms,source_map
 
@@ -15,6 +15,8 @@ def sscore(words,g,id,litmap):
 
 stats=collections.defaultdict(collections.Counter)
 examples=[]
+allow_path=Path('data/alignment-quality-allowlist.json')
+allow=json.loads(allow_path.read_text(encoding='utf8')) if allow_path.exists() else {}
 for slug in BOOKS:
  for path in sorted((Path('data')/slug).glob('[0-9][0-9].json')):
   d=json.loads(path.read_text(encoding='utf8'))
@@ -41,9 +43,13 @@ for slug in BOOKS:
     if best in linked: continue
     if not linked:
      if dist<=0.35:
-      stats[slug]['unique_unlinked']+=1
-      examples.append((slug,path.stem,v['v'],'UNLINKED',x.get('text',''),best,gt,gl,z,round(dist,3)))
-    elif current<8 and dist<=0.35 and x.get('confidence')!='phrase-repaired':
+      key=f"{slug}.{path.stem}.{v['v']}|{x.get('text','')}"
+      if key in allow:
+       stats[slug]['reviewed_unlinked']+=1
+      else:
+       stats[slug]['unique_unlinked']+=1
+       examples.append((slug,path.stem,v['v'],'UNLINKED',x.get('text',''),best,gt,gl,z,round(dist,3)))
+    elif current<8 and dist<=0.35 and x.get('confidence') not in {'phrase-repaired','quality-scan'}:
      stats[slug]['unique_wrong_link']+=1
      examples.append((slug,path.stem,v['v'],'WRONG_LINK',x.get('text',''),linked,best,gt,gl,z,round(dist,3)))
 
@@ -51,3 +57,8 @@ for slug in BOOKS: print(slug,dict(stats[slug]))
 print('TOTALS',dict(sum((stats[s] for s in BOOKS),collections.Counter())))
 print('CANDIDATES')
 for e in examples: print(e)
+unreviewed=sum(stats[s]['unique_unlinked']+stats[s]['unique_wrong_link'] for s in BOOKS)
+if unreviewed:
+ print(f'CRITICAL SANITY FAILED: {unreviewed} unreviewed candidate(s)')
+ sys.exit(1)
+print('CRITICAL SANITY CLEAN')
