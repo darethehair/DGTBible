@@ -1,0 +1,13 @@
+name: Report corpus alignment baseline
+on:
+  push:
+    paths:
+      - 'scripts/report-corpus-alignment.py'
+permissions:
+  contents: read
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/report-corpus-alignment.py
