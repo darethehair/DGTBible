@@ -225,13 +225,18 @@ def authored_dgt(text,src,spec,ref,literal=None):
    if not x.get('ids'):
     k=pronoun_key(x.get('text',''))
     if k:dgroups[k].append(i)
+  used_pronoun_ids=collections.defaultdict(set)
+  for x in out:
+   k=pronoun_key(x.get('text',''))
+   if k and x.get('ids'):
+    used_pronoun_ids[k].update(x.get('ids',[]))
   for k,idxs in dgroups.items():
    candidates=[]
    for y in literal:
     ykeys={pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))}
     if k in ykeys:
      for id in y.get('ids',[]):
-      if id not in candidates:candidates.append(id)
+      if id not in used_pronoun_ids[k] and id not in candidates:candidates.append(id)
    if len(candidates)==len(idxs) and candidates:
     for i,id in zip(idxs,candidates):
      out[i]['ids']=[id]
