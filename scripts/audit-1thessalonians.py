@@ -30,6 +30,7 @@ recoverable_pronouns=[]
 recoverable_relative_pronouns=[]
 recoverable_context_relative=[]
 recoverable_bundled_pronouns=[]
+recoverable_positional=[]
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'1thessalonians'/f'{ch:02}.json').read_text(encoding='utf8'))
@@ -125,6 +126,10 @@ for ch in range(start,end+1):
    w=n(x.get('text',''))
    if w and x.get('ids'):
     used_exact[w].update(x.get('ids',[]))
+  lpos={}
+  for li,y in enumerate(L):
+   for id in y.get('ids',[]):
+    lpos[id]=li
   for w,idxs in byword.items():
    lids=[]
    for y in L:
@@ -134,6 +139,12 @@ for ch in range(start,end+1):
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
     recoverable.append((ch,v['v'],w,len(idxs),lids))
+   elif len(idxs)==1 and len(lids)>1:
+    i=idxs[0]
+    erel=i/max(1,len(D)-1)
+    ranked=sorted((abs(erel-lpos[id]/max(1,len(L)-1)),id) for id in lids if id in lpos)
+    if len(ranked)>=2 and ranked[1][0]-ranked[0][0]>=0.12:
+     recoverable_positional.append((ch,v['v'],w,ranked[0][1],ranked[:3]))
   # Catastrophic-collision guard: several explicitly authored precise English
   # content words must not collapse onto one Greek ID unless the literal layer
   # for that ID itself contains those lexical words. This catches resolver bugs
@@ -161,6 +172,7 @@ assert not recoverable_pronouns, f'recoverable pronoun-family DGT links left unl
 assert not recoverable_relative_pronouns, f'recoverable relative-to-personal pronoun links left unlinked: {recoverable_relative_pronouns[:20]}'
 assert not recoverable_context_relative, f'recoverable contextual relative-pronoun links left unlinked: {recoverable_context_relative[:20]}'
 assert not recoverable_bundled_pronouns, f'recoverable neighboring bundled-pronoun links left unlinked: {recoverable_bundled_pronouns[:20]}'
+assert not recoverable_positional, f'recoverable positional exact links left unlinked: {recoverable_positional[:20]}'
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
 print(f'1 Thessalonians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 recoverable relative-pronoun bridges left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
