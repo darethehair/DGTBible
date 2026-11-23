@@ -1,3 +1,4 @@
+// Full-book Revelation authoring complete.
 import fs from 'node:fs/promises';
 
 const upstreamSha='5de0a47f35f0fc13dfe1430d104e5db8a4285f9c';
