@@ -10500,9 +10500,11 @@
           },
           {
             "text": "say,",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
@@ -10586,9 +10588,11 @@
           },
           {
             "text": "make",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "No high-confidence lexical anchor"
           },
           {
@@ -10601,9 +10605,11 @@
           },
           {
             "text": "jealous",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
@@ -10624,9 +10630,12 @@
           },
           {
             "text": "non-nation;",
-            "ids": [],
+            "ids": [
+              "w14",
+              "w15"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
@@ -10648,10 +10657,10 @@
           {
             "text": "nation",
             "ids": [
-              "w15"
+              "w17"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "without",
@@ -10688,10 +10697,10 @@
           {
             "text": "provoke",
             "ids": [
-              "w11"
+              "w19"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "quality-scan"
           },
           {
             "text": "you.”",
