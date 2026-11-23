@@ -12265,9 +12265,11 @@
           },
           {
             "text": "alert;",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -12276,8 +12278,7 @@
               "w5",
               "w6",
               "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "stand",
@@ -12383,9 +12384,11 @@
           },
           {
             "text": "courageously;",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -12394,8 +12397,7 @@
               "w5",
               "w6",
               "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "be",
@@ -18480,7 +18482,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -18500,7 +18502,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -18516,9 +18518,11 @@
           },
           {
             "text": "Marana",
-            "ids": [],
+            "ids": [
+              "s9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -18530,14 +18534,15 @@
               "w10",
               "s9",
               "s10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "tha.",
-            "ids": [],
+            "ids": [
+              "s10"
+            ],
             "after": "",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -18549,8 +18554,7 @@
               "w10",
               "s9",
               "s10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           }
         ]
       }
@@ -19125,9 +19129,11 @@
         "dgt": [
           {
             "text": "My",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -19138,8 +19144,7 @@
               "w7",
               "w8",
               "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "love",
@@ -19147,7 +19152,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -19280,7 +19285,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -19299,7 +19304,7 @@
               "w9"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
