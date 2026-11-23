@@ -249,8 +249,8 @@ def authored_dgt(text,src,spec,ref,literal=None):
 
   # Relative-pronoun bridge: literal "who/whom/whose/which" may become
   # a personal pronoun in idiomatic DGT English ("in whom" -> "in him").
-  # Use only when there is exactly one remaining personal-pronoun token and
-  # exactly one unused relative-pronoun source candidate in the verse.
+  # Pair remaining occurrences left-to-right when N personal-pronoun tokens
+  # correspond to exactly N unused relative-pronoun source candidates.
   personal_idxs=[i for i,x in enumerate(out) if not x.get('ids') and pronoun_key(x.get('text','')) in {'he','she','they','it'}]
   rel_candidates=[]
   used_ids={id for x in out for id in x.get('ids',[])}
@@ -259,11 +259,11 @@ def authored_dgt(text,src,spec,ref,literal=None):
    if 'relative' in ykeys:
     for id in y.get('ids',[]):
      if id not in used_ids and id not in rel_candidates: rel_candidates.append(id)
-  if len(personal_idxs)==1 and len(rel_candidates)==1:
-   i=personal_idxs[0]
-   out[i]['ids']=[rel_candidates[0]]
-   out[i]['confidence']='authored-auto-precise-relative-pronoun'
-   out[i].pop('reason',None)
+  if personal_idxs and len(personal_idxs)==len(rel_candidates):
+   for i,id in zip(personal_idxs,rel_candidates):
+    out[i]['ids']=[id]
+    out[i]['confidence']='authored-auto-precise-relative-pronoun'
+    out[i].pop('reason',None)
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
