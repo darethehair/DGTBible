@@ -2,7 +2,7 @@ import json,re,unicodedata,collections,sys
 from pathlib import Path
 
 BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews','romans']
-GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over is am are was were be been being has have had do does did will would shall should may might can could must he she it they we you i me him her them us my his their our your who whom whose which that this these those there here'.split())
+GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over is am are was were be been being has have had do does did will would shall should may might can could must he she it they we you i me him her them us my his their our your who whom whose which that this these those there here not no never none nothing one thing things its'.split())
 GROUPS=[
  ['imprint','expression','character','stamp','representation'],
  ['substance','being','reality','nature','essence'],
@@ -25,7 +25,7 @@ GROUPS=[
  ['righteous','righteousness','just','justify','justified'],
  ['lawless','lawlessness','unrighteous','unrighteousness','wicked','wickedness'],
  ['speak','spoke','spoken','speaking','say','said','says','saying','tell','told'],
- ['see','seen','saw','look','looked','behold','observe','observed'],
+ ['see','sees','seeing','seen','saw','look','looks','looked','looking','behold','beheld','observe','observes','observed'],
  ['know','knew','known','knowledge','understand','understood','recognize','recognized'],
  ['glory','glorious','glorify','glorified'],
  ['power','powerful','strength','strong','mighty','authority'],
@@ -44,7 +44,8 @@ GROUPS=[
  ['little','small','least'],
  ['body','flesh'],
  ['brother','brothers','sister','sisters','siblings'],
- ['child','children','son','sons','offspring'],
+ ['child','children','son','sons'],
+ ['seed','offspring','descendant','descendants'],
  ['work','works','deed','deeds','labor','labored'],
  ['truth','true','truly'],
  ['sin','sins','sinned','sinner','sinners','sinful'],
@@ -162,11 +163,15 @@ def norm(s):
 def atoms(s): return [norm(x) for x in re.findall(r"[A-Za-z0-9]+",str(s)) if norm(x)]
 def stems(w):
  w=norm(w);out={w}
- for suf,repl in [('ies','y'),('ied','y'),('ing',''),('ed',''),('es',''),('s',''),('ly','')]:
+ if len(w)>3 and w.endswith('s'): out.add(w[:-1])
+ if len(w)>4 and w.endswith('es'):
+  out.add(w[:-2]); out.add(w[:-1])
+ for suf,repl in [('ies','y'),('ied','y'),('ing',''),('ed',''),('ly','')]:
   if len(w)>len(suf)+2 and w.endswith(suf):
    x=w[:-len(suf)]+repl;out.add(x)
-   if suf=='ing' and len(x)>2:out.add(x+'e')
-   if suf=='ed' and len(x)>2:out.add(x+'e')
+   if suf in {'ing','ed'} and len(x)>2:
+    out.add(x+'e')
+    if len(x)>2 and x[-1]==x[-2]: out.add(x[:-1])
  return out
 def sim(a,b):
  a,b=norm(a),norm(b)
