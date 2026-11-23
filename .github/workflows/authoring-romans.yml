@@ -9,6 +9,7 @@ on:
       - 'scripts/epistle_common.py'
       - 'scripts/john_batch_dgt.py'
       - 'scripts/repair-alignments.py'
+      - 'scripts/alignment_repair.py'
       - 'data/authoring/romans-*-dgt.tsv'
   workflow_dispatch:
     inputs:
