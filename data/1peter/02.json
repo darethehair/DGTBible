@@ -3557,9 +3557,11 @@
           },
           {
             "text": "honor",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "No high-confidence lexical anchor"
           },
           {
@@ -3680,10 +3682,11 @@
           {
             "text": "rejected—this",
             "ids": [
+              "w11",
               "w14"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "one",
