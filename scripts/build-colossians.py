@@ -33,6 +33,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
    {'elemental','element','elements','principle','principles'},
    {'labor','labour','toil','toiling'},
    {'encourage','encouraging','exhort','exhorting','exhortation'},
+   {'equal','equals','equality','equally'},
   ]
   a=norm(a);b=norm(b)
   z=sim(a,b)
@@ -367,17 +368,21 @@ def authored_dgt(text,src,spec,ref,literal=None):
    changed=False
 
    byword=collections.defaultdict(list)
+   used_exact=collections.defaultdict(set)
    for i,x in enumerate(out):
-    if not x.get('ids'):
-     w=norm(x.get('text',''))
-     if w:byword[w].append(i)
+    w=norm(x.get('text',''))
+    if not w:continue
+    if x.get('ids'):
+     used_exact[w].update(x.get('ids',[]))
+    else:
+     byword[w].append(i)
    for w,idxs in byword.items():
     candidates=[]
     for y in literal:
      terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
      if w in terms:
       for id in y.get('ids',[]):
-       if id not in candidates:candidates.append(id)
+       if id not in used_exact[w] and id not in candidates:candidates.append(id)
     if len(candidates)==len(idxs) and candidates:
      for i,id in zip(idxs,candidates):
       out[i]['ids']=[id]
