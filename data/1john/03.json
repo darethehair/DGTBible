@@ -730,10 +730,11 @@
           {
             "text": "God—and",
             "ids": [
+              "w10",
               "w12"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "we",
@@ -11674,10 +11675,10 @@
           {
             "text": "his",
             "ids": [
-              "w13"
+              "w20"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "brother",
@@ -11735,18 +11736,21 @@
           },
           {
             "text": "against",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "unlinked",
+            "confidence": "quality-scan",
             "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "him—how",
             "ids": [
-              "w20"
+              "w22",
+              "w23"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "does",
