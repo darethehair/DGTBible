@@ -1,3 +1,4 @@
+# full corpus critical scan
 import json,collections
 from pathlib import Path
 from alignment_repair import BOOKS,atoms,norm,GLUE,sim,literal_terms_by_id,semantic_terms,source_map
