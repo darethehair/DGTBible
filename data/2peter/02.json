@@ -3220,10 +3220,10 @@
           {
             "text": "a",
             "ids": [
-              "w10"
+              "w12"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "flood",
@@ -3235,10 +3235,11 @@
           },
           {
             "text": "on",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "quality-scan"
           },
           {
             "text": "a",
@@ -3273,10 +3274,11 @@
           },
           {
             "text": "people,",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": "",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "quality-scan"
           }
         ]
       }
