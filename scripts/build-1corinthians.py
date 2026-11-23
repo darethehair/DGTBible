@@ -2,7 +2,7 @@ import re,json,collections,os
 from pathlib import Path
 from epistle_common import map_words
 from john_batch_dgt import align
-from alignment_repair import repair_verse
+from alignment_repair import repair_verse, GLUE, norm, sim, semantic_terms
 
 R=Path('.'); A=R/'authoring'; S=R/'data/sources'; S.mkdir(parents=True,exist_ok=True)
 raw={}; authored={}
@@ -57,8 +57,23 @@ def authored_dgt(text,src,spec,ref):
   phrase_ids=resolve(refs)
   ids=precision.get(i,phrase_ids)
   confidence='authored-precise' if i in precision else ('authored' if ids else 'authored-unlinked')
+  if i not in precision and len(phrase_ids)>1:
+   w=norm(token)
+   if w and w not in GLUE:
+    byid={x['id']:x for x in src}
+    scored=[]
+    for id in phrase_ids:
+     g=byid.get(id)
+     if not g:continue
+     z=max((sim(w,t) for t in semantic_terms(g,id,None)),default=0)
+     if z>=8:scored.append((z,id))
+    if scored:
+     best=max(z for z,_ in scored);tops=[id for z,id in scored if z==best]
+     second=max((z for z,_ in scored if z<best),default=0)
+     if len(tops)==1 and (best>=12 or (best>=9 and best-second>=1) or (best>=8 and best-second>=2)):
+      ids=[tops[0]];confidence='authored-auto-precise'
   x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':confidence}
-  if i in precision and ids!=phrase_ids:x['phraseIds']=phrase_ids
+  if ids!=phrase_ids:x['phraseIds']=phrase_ids
   if not ids:x['reason']='Explicitly left unlinked during translation'
   out.append(x)
  return out
