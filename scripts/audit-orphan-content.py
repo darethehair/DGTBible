@@ -25,7 +25,7 @@ for slug in BOOKS:
    if not G or not D: continue
    src,pos=source_map(G); litmap=literal_terms_by_id(L)
    for i,x in enumerate(D):
-    if x.get('ids'): continue
+    if x.get('ids') or x.get('phraseIds'): continue
     words=content_words(x.get('text',''))
     if not words: continue
     key=f"{slug}.{path.stem}.{v['v']}|{x.get('text','')}"
