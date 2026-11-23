@@ -440,7 +440,7 @@
               "w3",
               "w4"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "sacrificed",
@@ -467,7 +467,7 @@
               "w3",
               "w4"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "idols:",
@@ -485,17 +485,18 @@
           },
           {
             "text": "we",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-bundled",
             "phraseIds": [
               "w5",
               "w6",
               "w7",
               "w8",
               "w9"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "know",
@@ -524,7 +525,7 @@
               "w8",
               "w9"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "“we",
@@ -538,7 +539,7 @@
               "w8",
               "w9"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "all",
@@ -557,17 +558,18 @@
           },
           {
             "text": "have",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w5",
               "w6",
               "w7",
               "w8",
               "w9"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "knowledge.”",
@@ -625,16 +627,17 @@
           },
           {
             "text": "but",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w13",
               "w14",
               "w15",
               "w16"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "love",
@@ -937,17 +940,18 @@
         "dgt": [
           {
             "text": "If",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w3",
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "anyone",
@@ -991,7 +995,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "they",
@@ -1005,7 +1009,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "know",
@@ -1034,7 +1038,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "they",
@@ -1045,7 +1049,7 @@
               "w7",
               "w9"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "have",
@@ -1056,18 +1060,19 @@
               "w7",
               "w9"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w9"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "yet",
@@ -1095,15 +1100,16 @@
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "they",
@@ -1115,7 +1121,7 @@
               "w11",
               "w12"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "ought",
@@ -1127,19 +1133,20 @@
               "w11",
               "w12"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "know.",
@@ -1424,13 +1431,15 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "if",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -1438,8 +1447,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "anyone",
@@ -1500,7 +1508,7 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "person",
@@ -1513,7 +1521,7 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "is",
@@ -1526,7 +1534,7 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "known",
@@ -1544,29 +1552,31 @@
           },
           {
             "text": "by",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
               "w9",
               "w10"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "him.",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": "",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
               "w9",
               "w10"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           }
         ]
       }
@@ -2075,9 +2085,11 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-bundled",
             "phraseIds": [
               "w1",
               "w2",
@@ -2085,8 +2097,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "eating",
@@ -2106,9 +2117,11 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -2116,8 +2129,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "food",
@@ -2164,7 +2176,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "idols,",
@@ -2184,9 +2196,11 @@
           },
           {
             "text": "we",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -2194,8 +2208,7 @@
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "know",
@@ -2215,9 +2228,11 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -2225,14 +2240,15 @@
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "an",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -2240,8 +2256,7 @@
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "idol",
@@ -2261,9 +2276,11 @@
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -2271,8 +2288,7 @@
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "nothing",
@@ -2287,13 +2303,15 @@
               "w11",
               "w12"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -2301,14 +2319,15 @@
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -2316,8 +2335,7 @@
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "world",
@@ -2337,9 +2355,11 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w13",
               "w14",
@@ -2348,14 +2368,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w13",
               "w14",
@@ -2364,14 +2385,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "there",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w13",
               "w14",
@@ -2380,14 +2402,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w13",
               "w14",
@@ -2396,14 +2419,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "no",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w13",
               "w14",
@@ -2412,8 +2436,7 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "God",
@@ -2451,9 +2474,11 @@
           },
           {
             "text": "one.",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": "",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w13",
               "w14",
@@ -2462,8 +2487,7 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           }
         ]
       }
@@ -2951,7 +2975,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "even",
@@ -2971,9 +2995,11 @@
           },
           {
             "text": "if",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -2981,14 +3007,15 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "there",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -2996,14 +3023,15 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "are",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -3011,8 +3039,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "so-called",
@@ -3027,7 +3054,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "gods,",
@@ -3070,9 +3097,11 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -3087,8 +3116,7 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "heaven",
@@ -3115,9 +3143,11 @@
           },
           {
             "text": "or",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -3132,14 +3162,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "on",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -3154,8 +3185,7 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "earth—as",
@@ -3177,7 +3207,7 @@
               "w19",
               "w20"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "indeed",
@@ -3199,13 +3229,15 @@
               "w19",
               "w20"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "there",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -3220,14 +3252,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "are",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -3242,8 +3275,7 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "many",
@@ -3265,7 +3297,7 @@
               "w19",
               "w20"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "gods",
@@ -3292,9 +3324,11 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -3309,8 +3343,7 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "many",
@@ -3332,7 +3365,7 @@
               "w19",
               "w20"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "lords—",
@@ -4051,13 +4084,15 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "us",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -4065,14 +4100,15 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "there",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -4080,14 +4116,15 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -4095,14 +4132,15 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -4110,8 +4148,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "God,",
@@ -4131,9 +4168,11 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -4141,8 +4180,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "Father,",
@@ -4171,33 +4209,35 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "whom",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
               "w9",
               "w10"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "are",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
               "w9",
               "w10"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "all",
@@ -4215,42 +4255,45 @@
           },
           {
             "text": "things",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
               "w9",
               "w10"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w11",
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "we",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w11",
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "are",
@@ -4263,61 +4306,65 @@
               "w13",
               "w14"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "for",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w11",
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "him,",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w11",
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w15",
               "w16",
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w15",
               "w16",
               "w17",
               "w18",
               "w19"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "Lord,",
@@ -4366,42 +4413,45 @@
           },
           {
             "text": "through",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w20",
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "whom",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w20",
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "are",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w20",
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "all",
@@ -4419,42 +4469,45 @@
           },
           {
             "text": "things",
-            "ids": [],
+            "ids": [
+              "w22"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w20",
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w24"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w24",
               "w25",
               "w26",
               "w27"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "we",
-            "ids": [],
+            "ids": [
+              "w25"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w24",
               "w25",
               "w26",
               "w27"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "are",
@@ -4467,33 +4520,35 @@
               "w26",
               "w27"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "through",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w24",
               "w25",
               "w26",
               "w27"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "him.",
-            "ids": [],
+            "ids": [
+              "w27"
+            ],
             "after": "",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w24",
               "w25",
               "w26",
               "w27"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           }
         ]
       }
@@ -5090,9 +5145,11 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -5100,14 +5157,15 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "this",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -5115,8 +5173,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "knowledge",
@@ -5136,9 +5193,11 @@
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -5146,14 +5205,15 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -5161,14 +5221,15 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -5176,8 +5237,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "everyone.",
@@ -5228,13 +5288,15 @@
               "w13",
               "w14"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -5244,8 +5306,7 @@
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "their",
@@ -5262,7 +5323,7 @@
               "w13",
               "w14"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "former",
@@ -5279,7 +5340,7 @@
               "w13",
               "w14"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "familiarity",
@@ -5314,7 +5375,7 @@
               "w13",
               "w14"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "the",
@@ -5331,7 +5392,7 @@
               "w13",
               "w14"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "idol,",
@@ -5365,7 +5426,7 @@
               "w16",
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "eat",
@@ -5403,9 +5464,11 @@
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w11",
               "w12",
@@ -5414,8 +5477,7 @@
               "w15",
               "w16",
               "w17"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "something",
@@ -5431,7 +5493,7 @@
               "w16",
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "sacrificed",
@@ -5464,13 +5526,15 @@
               "w16",
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "an",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w11",
               "w12",
@@ -5479,8 +5543,7 @@
               "w15",
               "w16",
               "w17"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "idol,",
@@ -5496,13 +5559,15 @@
               "w16",
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w18",
               "w19",
@@ -5510,8 +5575,7 @@
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "their",
@@ -5526,7 +5590,7 @@
               "w22",
               "w23"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "conscience,",
@@ -5546,9 +5610,11 @@
           },
           {
             "text": "being",
-            "ids": [],
+            "ids": [
+              "w23"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w18",
               "w19",
@@ -5556,8 +5622,7 @@
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "weak,",
@@ -5577,13 +5642,14 @@
           },
           {
             "text": "is",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
+            "ids": [
               "w24"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w24"
+            ]
           },
           {
             "text": "defiled.",
@@ -6035,7 +6101,7 @@
               "w6",
               "w7"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "food",
@@ -6056,9 +6122,11 @@
           },
           {
             "text": "will",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -6067,14 +6135,15 @@
               "w5",
               "w6",
               "w7"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -6083,8 +6152,7 @@
               "w5",
               "w6",
               "w7"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "bring",
@@ -6100,13 +6168,15 @@
               "w6",
               "w7"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "us",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -6115,8 +6185,7 @@
               "w5",
               "w6",
               "w7"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "near",
@@ -6132,13 +6201,15 @@
               "w6",
               "w7"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -6147,8 +6218,7 @@
               "w5",
               "w6",
               "w7"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "God.",
@@ -6169,29 +6239,31 @@
           },
           {
             "text": "If",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w14",
               "w15",
               "w11",
               "w16"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "we",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w14",
               "w15",
               "w11",
               "w16"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "do",
@@ -6204,20 +6276,21 @@
               "w11",
               "w16"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w14",
               "w15",
               "w11",
               "w16"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "eat,",
@@ -6235,13 +6308,14 @@
           },
           {
             "text": "we",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
+            "ids": [
               "w13"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "are",
@@ -6251,7 +6325,7 @@
             "phraseIds": [
               "w13"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "not",
@@ -6261,7 +6335,7 @@
             "phraseIds": [
               "w13"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "worse",
@@ -6271,7 +6345,7 @@
             "phraseIds": [
               "w13"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "off;",
@@ -6281,7 +6355,7 @@
             "phraseIds": [
               "w13"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "and",
@@ -6294,33 +6368,35 @@
               "w10",
               "w12"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "if",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w8",
               "w9",
               "w10",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "we",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w8",
               "w9",
               "w10",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "eat,",
@@ -6338,13 +6414,14 @@
           },
           {
             "text": "we",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
+            "ids": [
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "are",
@@ -6354,7 +6431,7 @@
             "phraseIds": [
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "not",
@@ -6364,7 +6441,7 @@
             "phraseIds": [
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "better",
@@ -6374,7 +6451,7 @@
             "phraseIds": [
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "off.",
@@ -6384,7 +6461,7 @@
             "phraseIds": [
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           }
         ]
       }
@@ -6700,7 +6777,7 @@
               "w1",
               "w2"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "watch",
@@ -6711,7 +6788,7 @@
               "w1",
               "w2"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "that",
@@ -6726,13 +6803,15 @@
               "w7",
               "w8"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "this",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w3",
               "w4",
@@ -6740,8 +6819,7 @@
               "w6",
               "w7",
               "w8"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "right",
@@ -6761,9 +6839,11 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w3",
               "w4",
@@ -6771,8 +6851,7 @@
               "w6",
               "w7",
               "w8"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "yours",
@@ -6787,7 +6866,7 @@
               "w7",
               "w8"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "does",
@@ -6804,7 +6883,7 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "not",
@@ -6821,7 +6900,7 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "somehow",
@@ -6838,7 +6917,7 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "become",
@@ -6873,7 +6952,7 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "stumbling",
@@ -6908,18 +6987,19 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "the",
@@ -6930,7 +7010,7 @@
               "w11",
               "w12"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "weak.",
@@ -7515,31 +7595,33 @@
         "dgt": [
           {
             "text": "For",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4",
               "w5"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "if",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4",
               "w5"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "someone",
@@ -7573,29 +7655,31 @@
           },
           {
             "text": "you,",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4",
               "w5"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w6",
               "w7",
               "w8"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "have",
@@ -7607,7 +7691,7 @@
               "w7",
               "w8"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "knowledge,",
@@ -7632,7 +7716,7 @@
               "w10",
               "w11"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "to",
@@ -7644,7 +7728,7 @@
               "w10",
               "w11"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "eat",
@@ -7661,27 +7745,29 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w9",
               "w10",
               "w11"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "an",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w9",
               "w10",
               "w11"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "idol’s",
@@ -7722,7 +7808,7 @@
               "w16",
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "not",
@@ -7737,13 +7823,15 @@
               "w16",
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w12",
               "w13",
@@ -7751,8 +7839,7 @@
               "w15",
               "w16",
               "w17"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "conscience",
@@ -7772,9 +7859,11 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w12",
               "w13",
@@ -7782,8 +7871,7 @@
               "w15",
               "w16",
               "w17"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "that",
@@ -7798,7 +7886,7 @@
               "w16",
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "person,",
@@ -7813,13 +7901,15 @@
               "w16",
               "w17"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "being",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w12",
               "w13",
@@ -7827,8 +7917,7 @@
               "w15",
               "w16",
               "w17"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "weak,",
@@ -7848,9 +7937,11 @@
           },
           {
             "text": "be",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w18",
               "w19",
@@ -7858,8 +7949,7 @@
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "built",
@@ -7890,13 +7980,15 @@
               "w22",
               "w23"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w23"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-bundled",
             "phraseIds": [
               "w18",
               "w19",
@@ -7904,8 +7996,7 @@
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "eat",
@@ -7957,9 +8048,11 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w23"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-bundled",
             "phraseIds": [
               "w18",
               "w19",
@@ -7967,8 +8060,7 @@
               "w21",
               "w22",
               "w23"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "idols?",
@@ -8350,7 +8442,7 @@
               "w3",
               "w4"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "so",
@@ -8363,20 +8455,21 @@
               "w3",
               "w4"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "weak",
@@ -8394,16 +8487,17 @@
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "is",
@@ -8416,7 +8510,7 @@
               "w3",
               "w4"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "destroyed",
@@ -8445,13 +8539,15 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "your",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w5",
               "w6",
@@ -8459,8 +8555,7 @@
               "w8",
               "w9",
               "w10"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "knowledge—the",
@@ -8475,7 +8570,7 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "brother",
@@ -8506,7 +8601,7 @@
               "w9",
               "w10"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "sister",
@@ -8526,29 +8621,31 @@
           },
           {
             "text": "for",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w11",
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "whom",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w11",
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "Christ",
@@ -8968,7 +9065,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "in",
@@ -8983,7 +9080,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "this",
@@ -8998,7 +9095,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "way,",
@@ -9013,7 +9110,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "by",
@@ -9028,7 +9125,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "sinning",
@@ -9048,9 +9145,11 @@
           },
           {
             "text": "against",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -9058,14 +9157,15 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -9073,8 +9173,7 @@
               "w4",
               "w5",
               "w6"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "brothers",
@@ -9105,7 +9204,7 @@
               "w5",
               "w6"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "sisters",
@@ -9125,9 +9224,11 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -9135,8 +9236,7 @@
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "wounding",
@@ -9156,9 +9256,11 @@
           },
           {
             "text": "their",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w7",
               "w8",
@@ -9166,8 +9268,7 @@
               "w10",
               "w11",
               "w12"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "weak",
@@ -9203,15 +9304,16 @@
           },
           {
             "text": "you",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w13",
               "w14",
               "w15"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "sin",
@@ -9228,15 +9330,16 @@
           },
           {
             "text": "against",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w13",
               "w14",
               "w15"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "Christ.",
@@ -9767,9 +9870,11 @@
           },
           {
             "text": "if",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -9778,8 +9883,7 @@
               "w5",
               "w6",
               "w7"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "food",
@@ -9812,7 +9916,7 @@
               "w6",
               "w7"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "my",
@@ -9828,7 +9932,7 @@
               "w6",
               "w7"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "brother",
@@ -9861,7 +9965,7 @@
               "w6",
               "w7"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "sister",
@@ -9894,7 +9998,7 @@
               "w6",
               "w7"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "stumble,",
@@ -9915,9 +10019,11 @@
           },
           {
             "text": "I",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w8",
               "w9",
@@ -9926,8 +10032,7 @@
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "will",
@@ -9943,7 +10048,7 @@
               "w13",
               "w14"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "never",
@@ -9959,7 +10064,7 @@
               "w13",
               "w14"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "eat",
@@ -9997,9 +10102,11 @@
           },
           {
             "text": "so",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w15",
               "w16",
@@ -10007,14 +10114,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w15",
               "w16",
@@ -10022,14 +10130,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "I",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w15",
               "w16",
@@ -10037,14 +10146,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "may",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w15",
               "w16",
@@ -10052,14 +10162,15 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w15",
               "w16",
@@ -10067,8 +10178,7 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Explicitly left unlinked during translation"
+            ]
           },
           {
             "text": "cause",
@@ -10083,7 +10193,7 @@
               "w19",
               "w20"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "my",
@@ -10098,7 +10208,7 @@
               "w19",
               "w20"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "brother",
@@ -10129,7 +10239,7 @@
               "w19",
               "w20"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "sister",
@@ -10160,7 +10270,7 @@
               "w19",
               "w20"
             ],
-            "reason": "Explicitly left unlinked during translation"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "stumble.",
