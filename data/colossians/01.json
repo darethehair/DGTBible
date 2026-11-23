@@ -11537,7 +11537,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "authored-auto-precise-literal-bundled-pronoun",
             "phraseIds": [
               "w1",
               "w2",
@@ -13142,9 +13142,11 @@
         "dgt": [
           {
             "text": "He",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-relative-pronoun",
             "phraseIds": [
               "w1",
               "w2",
@@ -13164,8 +13166,7 @@
               "w16",
               "w17",
               "w18"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "rescued",
@@ -13643,9 +13644,11 @@
           },
           {
             "text": "his",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-literal-bundled-pronoun",
             "phraseIds": [
               "w1",
               "w2",
@@ -13665,8 +13668,7 @@
               "w16",
               "w17",
               "w18"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "love,",
@@ -26404,9 +26406,11 @@
           },
           {
             "text": "my",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-literal-bundled-pronoun",
             "phraseIds": [
               "w1",
               "w2",
@@ -26435,8 +26439,7 @@
               "w26",
               "w27",
               "w28"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "sufferings",
@@ -26771,9 +26774,11 @@
           },
           {
             "text": "my",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-literal-bundled-pronoun",
             "phraseIds": [
               "w1",
               "w2",
@@ -26802,8 +26807,7 @@
               "w26",
               "w27",
               "w28"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "flesh",
