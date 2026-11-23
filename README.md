@@ -14,6 +14,26 @@ Experimental original-language Bible PWA with the **DGT — Direct Greek Transla
 - Offline cache through a service worker; core Scripture and alignment data are local and do not depend on STEPBible at runtime.
 - GitHub Pages workflow included.
 
+
+## Roadmap
+
+### Reading statistics
+- Add a compact upper-right word-count display.
+- Verse view: Greek and DGT English word counts for the current verse.
+- Chapter / Compact view: verse count plus total Greek and DGT English word counts for the chapter.
+- Whole-book view: book verse count plus total Greek and DGT English word counts.
+- Count real SBLGNT source tokens and displayed DGT word tokens, excluding punctuation and synthetic alignment artifacts.
+- Possible later expansion: English/Greek word ratio, unique Greek lemmas, vocabulary statistics, and a richer statistics popover.
+
+### Greek word / lemma explorer
+- Keep hover as the lightweight Greek ↔ English alignment interaction.
+- Make a Greek-word click open lexical details: surface form, transliteration, lemma, gloss, morphology, and the aligned DGT rendering.
+- Add “Find all occurrences” for the Greek lemma across the completed corpus, with an optional exact-inflected-form filter.
+- Show every matching book/verse with the Greek occurrence and corresponding DGT English rendering highlighted.
+- Summarize how a Greek lemma is rendered across DGT (for example, translation wording + occurrence counts).
+- Build a precomputed local corpus index so concordance searches remain fast and work offline.
+- Later consider the inverse English workflow: click an English word to find the Greek lemmas translated by that wording.
+
 ## Translation method
 
 DGT is a fresh English translation created directly from the original-language text with AI assistance. It aims to preserve wording, structure, repetition, and theological vocabulary while remaining readable English. Difficult or textually significant readings should be checked against modern critical editions and manuscript evidence rather than silently normalized.
