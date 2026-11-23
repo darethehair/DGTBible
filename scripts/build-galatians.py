@@ -176,6 +176,32 @@ def authored_dgt(text,src,spec,ref,literal=None):
     if len(tops)==1:chosen=tops[0]
   if chosen:
    x['ids']=[chosen];x['confidence']='authored-auto-precise-bundled';x.pop('reason',None)
+
+ # Final fixed-point literal recovery. Earlier alignment passes can reduce an
+ # ambiguous repeated word to a deterministic N-to-N match; keep resolving
+ # those exact occurrence-ordered cases until no further safe links appear.
+ if literal:
+  changed=True
+  while changed:
+   changed=False
+   byword=collections.defaultdict(list)
+   for i,x in enumerate(out):
+    if not x.get('ids'):
+     w=norm(x.get('text',''))
+     if w:byword[w].append(i)
+   for w,idxs in byword.items():
+    candidates=[]
+    for y in literal:
+     terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+     if w in terms:
+      for id in y.get('ids',[]):
+       if id not in candidates:candidates.append(id)
+    if len(candidates)==len(idxs) and candidates:
+     for i,id in zip(idxs,candidates):
+      out[i]['ids']=[id]
+      out[i]['confidence']='authored-auto-precise-literal-ordered'
+      out[i].pop('reason',None)
+     changed=True
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
