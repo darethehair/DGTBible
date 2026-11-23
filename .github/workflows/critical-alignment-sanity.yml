@@ -12,4 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: python scripts/repair-alignments.py
+      - run: python scripts/apply-quality-overrides.py
       - run: python scripts/critical-alignment-sanity.py
