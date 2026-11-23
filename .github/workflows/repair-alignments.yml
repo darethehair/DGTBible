@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - '.github/workflows/repair-alignments.yml'
       - 'scripts/repair-alignments.py'
       - 'scripts/alignment_repair.py'
 permissions:
@@ -22,7 +23,7 @@ jobs:
         run: |
           git config user.name "DGTBible alignment bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/john/*.json data/1john/*.json data/2john/*.json data/3john/*.json data/jude/*.json data/1peter/*.json data/2peter/*.json data/james/*.json data/hebrews/*.json data/romans/*.json
+          git add data/john/*.json data/1john/*.json data/2john/*.json data/3john/*.json data/jude/*.json data/1peter/*.json data/2peter/*.json data/james/*.json data/hebrews/*.json data/romans/*.json data/1corinthians/*.json
           if ! git diff --cached --quiet; then
             git commit -m "Repair context-aware alignments across completed books"
             for attempt in 1 2 3; do
