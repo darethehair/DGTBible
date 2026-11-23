@@ -113,10 +113,12 @@ for ch in range(start,end+1):
    if x.get('ids'):continue
    k=pk(x.get('text',''))
    if not k or k=='relative':continue
+   allowed=set(x.get('phraseIds',[]))
    candidates=[]
    for j in (i-1,i+1,i-2,i+2):
     if not (0<=j<len(D)):continue
     for id in D[j].get('ids',[]):
+     if allowed and id not in allowed:continue
      if any(pk(t)==k for t in lit_terms.get(id,set())):
       candidates.append(id)
    unique=list(dict.fromkeys(candidates))
