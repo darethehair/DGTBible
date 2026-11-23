@@ -55,11 +55,11 @@ def authored_dgt(text,src,spec,ref):
  for i,(token,refs) in enumerate(zip(tokens,spec)):
   if not isinstance(refs,list):raise SystemExit(f'{ref}: bad authored source list at DGT token {i}: {refs!r}')
   phrase_ids=resolve(refs)
-  ids=precision.get(i,phrase_ids)
-  confidence='authored-precise' if i in precision else ('authored' if ids else 'authored-unlinked')
-  if i not in precision and len(phrase_ids)>1:
+  ids=precision.get(i)
+  confidence='authored-precise' if i in precision else 'authored-phrase-only'
+  if i not in precision:
    w=norm(token)
-   if w and w not in GLUE:
+   if w and w not in GLUE and len(phrase_ids)>=1:
     byid={x['id']:x for x in src}
     scored=[]
     for id in phrase_ids:
@@ -72,8 +72,9 @@ def authored_dgt(text,src,spec,ref):
      second=max((z for z,_ in scored if z<best),default=0)
      if len(tops)==1 and (best>=12 or (best>=9 and best-second>=1) or (best>=8 and best-second>=2)):
       ids=[tops[0]];confidence='authored-auto-precise'
-  x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':confidence}
-  if ids!=phrase_ids:x['phraseIds']=phrase_ids
+  if ids is None:ids=[]
+  x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':confidence,'phraseIds':phrase_ids}
+  if not ids:x['reason']='Covered by authored phrase span; no safe lexical hover target'
   if not ids:x['reason']='Explicitly left unlinked during translation'
   out.append(x)
  return out
