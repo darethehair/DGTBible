@@ -1,0 +1,27 @@
+name: Snapshot reviewed alignment overrides
+on:
+  push:
+    paths:
+      - 'scripts/snapshot-quality-overrides.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/snapshot-quality-overrides.py
+      - name: Commit reviewed override snapshot
+        run: |
+          git config user.name "DGTBible alignment bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/alignment-quality-overrides.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Snapshot reviewed alignment quality overrides"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
+          fi
