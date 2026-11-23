@@ -5,7 +5,7 @@ Experimental original-language Bible PWA with the **DGT — Direct Greek Transla
 ## Current prototype
 
 - Installable static PWA; no API key and no runtime AI cost.
-- John 1–21, 1–3 John, Jude, 1–2 Peter, and James are complete with SBLGNT Greek, literal Greek-order English, fresh DGT English, and selective translation notes.
+- John 1–21, 1–3 John, Jude, 1–2 Peter, James, and Hebrews are complete with SBLGNT Greek, literal Greek-order English, fresh DGT English, and selective translation notes.
 - **SBLGNT** Greek base text, licensed under CC BY 4.0.
 - DGT English translation stored locally alongside each verse.
 - Linked Greek/transliteration/literal/DGT highlighting across the completed books, assisted by pinned STEPBible TAGNT word data.
