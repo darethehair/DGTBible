@@ -135,10 +135,12 @@ for ch in range(start,end+1):
     lpos[id]=li
   for w,idxs in byword.items():
    lids=[]
+   allowed=set()
+   for i in idxs: allowed.update(D[i].get('phraseIds',[]))
    for y in L:
     if w in atoms(y.get('text','')):
      for id in y.get('ids',[]):
-      if id not in used_exact[w]:lids.append(id)
+      if id not in used_exact[w] and (not allowed or id in allowed):lids.append(id)
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
     recoverable.append((ch,v['v'],w,len(idxs),lids))
