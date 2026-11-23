@@ -28,6 +28,7 @@ for slug in BOOKS:
     words=cwords(x.get('text',''))
     if not words: continue
     linked=[id for id in x.get('ids',[]) if id in src]
+    phrase_linked=[id for id in x.get('phraseIds',[]) if id in src]
     current=max((sscore(words,src[id],id,litmap) for id in linked),default=0)
     candidates=[]
     for id,g in src.items():
@@ -42,6 +43,7 @@ for slug in BOOKS:
     z,dist,best,gt,gl=top[0]
     if best in linked: continue
     if not linked:
+     if phrase_linked: continue
      if dist<=0.35:
       key=f"{slug}.{path.stem}.{v['v']}|{x.get('text','')}"
       if key in allow:
