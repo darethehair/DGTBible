@@ -1,0 +1,49 @@
+name: Build pinned Philippians DGT batch
+on:
+  push:
+    paths:
+      - 'scripts/extract-stepbible-philippians.mjs'
+      - 'scripts/build-philippians.py'
+      - 'scripts/audit-philippians.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/alignment_repair.py'
+      - 'data/authoring/philippians-*-dgt.tsv'
+  workflow_dispatch:
+    inputs:
+      start_chapter:
+        required: true
+        default: '1'
+      end_chapter:
+        required: true
+        default: '4'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      START_CHAPTER: ${{ github.event.inputs.start_chapter || '1' }}
+      END_CHAPTER: ${{ github.event.inputs.end_chapter || '4' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract pinned SBLGNT and TAGNT
+        run: node scripts/extract-stepbible-philippians.mjs
+      - name: Build Philippians range
+        run: python scripts/build-philippians.py
+      - name: Apply reviewed alignment quality overrides
+        run: python scripts/apply-quality-overrides.py
+      - name: Audit Philippians range
+        run: python scripts/audit-philippians.py
+      - name: Commit clean generated Philippians range
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/philippians/*.json data/sources/step-philippians-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean Philippians $START_CHAPTER-$END_CHAPTER batch"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
+          fi
