@@ -447,7 +447,8 @@ start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAP
 D=R/'data/revelation';D.mkdir(parents=True,exist_ok=True)
 sbl={}
 for line in (A/'sblgnt-revelation.txt').read_text(encoding='utf8').splitlines():
- m=re.match(r'^Rev (\d+):(\d+)\t(.*) if m:sbl[(int(m[1]),int(m[2]))]=m[3].strip().replace('⸀','').replace('⸂','').replace('⸃','')
+ m=re.match(r'^Rev (\d+):(\d+)\t(.*)$',line)
+ if m:sbl[(int(m[1]),int(m[2]))]=m[3].strip().replace('⸀','').replace('⸂','').replace('⸃','').replace('⸁','')
 expected=sum(1 for k in sbl if start<=k[0]<=end)
 missing=[k for k in sorted(sbl) if start<=k[0]<=end and k not in raw]
 if missing:raise SystemExit(f'Revelation missing DGT verses: {missing[:20]} (total {len(missing)})')
