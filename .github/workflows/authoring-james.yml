@@ -25,6 +25,8 @@ jobs:
         run: node scripts/extract-stepbible-james.mjs
       - name: Build James
         run: python scripts/build-james.py
+      - name: Apply reviewed alignment quality overrides
+        run: python scripts/apply-quality-overrides.py
       - name: Audit James
         run: python scripts/audit-james.py
       - name: Commit clean generated James
