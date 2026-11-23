@@ -1,0 +1,46 @@
+name: Build pinned Romans DGT batch
+on:
+  push:
+    paths:
+      - '.github/workflows/authoring-romans.yml'
+      - 'scripts/extract-stepbible-romans.mjs'
+      - 'scripts/build-romans.py'
+      - 'scripts/audit-romans.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/john_batch_dgt.py'
+      - 'scripts/repair-alignments.py'
+      - 'data/authoring/romans-*-dgt.tsv'
+  workflow_dispatch:
+    inputs:
+      start_chapter:
+        required: true
+        default: '1'
+      end_chapter:
+        required: true
+        default: '8'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      START_CHAPTER: ${{ github.event.inputs.start_chapter || '1' }}
+      END_CHAPTER: ${{ github.event.inputs.end_chapter || '8' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract pinned SBLGNT and TAGNT
+        run: node scripts/extract-stepbible-romans.mjs
+      - name: Build Romans range
+        run: python scripts/build-romans.py
+      - name: Audit Romans range
+        run: python scripts/audit-romans.py
+      - name: Commit clean generated Romans range
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/romans/*.json data/sources/step-romans-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean Romans $START_CHAPTER-$END_CHAPTER batch"
+            git pull --rebase origin main
+            git push
+          fi
