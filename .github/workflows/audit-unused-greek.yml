@@ -1,0 +1,19 @@
+name: Audit unused meaningful Greek
+on:
+  push:
+    paths:
+      - '.github/workflows/audit-unused-greek.yml'
+      - 'scripts/audit-unused-greek.py'
+      - 'scripts/alignment_repair.py'
+      - 'data/**/[0-9][0-9].json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/repair-alignments.py
+      - run: python scripts/apply-quality-overrides.py
+      - run: python scripts/audit-unused-greek.py
