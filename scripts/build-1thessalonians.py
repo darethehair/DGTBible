@@ -344,12 +344,19 @@ def authored_dgt(text,src,spec,ref,literal=None):
     out[i]['confidence']='authored-auto-precise-relative-pronoun'
     out[i].pop('reason',None)
 
- # One last exact fixed-point recovery after pronoun/relative transformations.
- # Those passes can make previously ambiguous exact words deterministic.
+ # Final stabilization loop. Exact recovery can create a new neighboring
+ # pronoun-bundle opportunity, and pronoun bundling can in turn make another
+ # exact occurrence deterministic. Alternate both until no safe change remains.
  if literal:
+  lit_terms=collections.defaultdict(set)
+  for y in literal:
+   terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+   for id in y.get('ids',[]):
+    lit_terms[id].update(terms)
   changed=True
   while changed:
    changed=False
+
    byword=collections.defaultdict(list)
    for i,x in enumerate(out):
     if not x.get('ids'):
@@ -367,6 +374,23 @@ def authored_dgt(text,src,spec,ref,literal=None):
       out[i]['ids']=[id]
       out[i]['confidence']='authored-auto-precise-final-ordered'
       out[i].pop('reason',None)
+     changed=True
+
+   for i,x in enumerate(out):
+    if x.get('ids'):continue
+    w=norm(x.get('text',''));k=pronoun_key(w)
+    if not k or k=='relative':continue
+    candidates=[]
+    for j in (i-1,i+1,i-2,i+2):
+     if not (0<=j<len(out)):continue
+     for id in out[j].get('ids',[]):
+      if any(pronoun_key(t)==k for t in lit_terms.get(id,set())):
+       candidates.append(id)
+    unique=list(dict.fromkeys(candidates))
+    if len(unique)==1:
+     x['ids']=[unique[0]]
+     x['confidence']='authored-auto-precise-final-bundled-pronoun'
+     x.pop('reason',None)
      changed=True
  return out
 
