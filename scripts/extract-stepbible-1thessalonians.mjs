@@ -12,7 +12,7 @@ await fs.mkdir('authoring',{recursive:true});
 const sblUrl='https://raw.githubusercontent.com/Faithlife/SBLGNT/'+sblgntSha+'/data/sblgnt/text/1Thess.txt';
 const sblRes=await fetch(sblUrl);
 if(!sblRes.ok)throw new Error('1 Thessalonians SBLGNT download failed: '+sblRes.status);
-const pattern=/(?:^|\t)1Thess[ ._-]?(\d+)[.:](\d+)/i;
+const pattern=/(?:^|\t)1Th[ ._-]?(\d+)[.:](\d+)/i;
 const matched=stepLines.filter(line=>pattern.test(line));
 await fs.writeFile('authoring/step-1thessalonians.tsv',['# STEPBible TAGNT extraction','# source: STEPBible/STEPBible-Data@'+upstreamSha,'# book: 1 Thessalonians',...matched].join('\n')+'\n');
 const sblLines=(await sblRes.text()).split(/\r?\n/).filter(line=>/^1Thess \d+:\d+\t/.test(line));
