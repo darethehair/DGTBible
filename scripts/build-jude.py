@@ -21,7 +21,7 @@ if len(sbl)!=25: raise SystemExit(f'Jude: expected 25 verses, got {len(sbl)}')
 
 step=collections.defaultdict(list)
 for line in (A/'step-jude.tsv').read_text(encoding='utf8').splitlines():
- m=re.match(r'^Jde\.(\d+)\.(\d+)(?:\[[^\]]+\])?#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
+ m=re.match(r'^Jud\.(\d+)\.(\d+)(?:\[[^\]]+\])?#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
  if not m: continue
  f=m[5]; q=re.match(r'(.+?)\s+\(([^()]*)\)\s*$',f)
  o=(q.group(1) if q else f).strip(); t=(q.group(2) if q else '')
