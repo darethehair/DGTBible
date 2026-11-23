@@ -6,11 +6,26 @@ def n(s):
  s=''.join(x for x in s if unicodedata.category(x)!='Mn')
  return re.sub(r'[^a-z0-9]','',s)
 def atoms(s): return [n(x) for x in re.findall(r"[A-Za-z0-9]+",str(s)) if n(x)]
+def pk(w):
+ groups={
+  'he':{'he','him','his','himself'},
+  'she':{'she','her','hers','herself'},
+  'they':{'they','them','their','theirs','themselves'},
+  'we':{'we','us','our','ours','ourselves'},
+  'you':{'you','your','yours','yourself','yourselves'},
+  'i':{'i','me','my','mine','myself'},
+  'it':{'it','its','itself'},
+ }
+ w=n(w)
+ for k,vals in groups.items():
+  if w in vals:return k
+ return None
 
 linked=unlinked=count=0
 recoverable=[]
 collisions=[]
 synthetic_unlinked=[]
+recoverable_pronouns=[]
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'ephesians'/f'{ch:02}.json').read_text(encoding='utf8'))
@@ -35,6 +50,20 @@ for ch in range(start,end+1):
    if not x.get('ids'):
     w=n(x.get('text',''))
     if w: byword[w].append(i)
+  # Same deterministic check for English pronoun-family variants.
+  pd=collections.defaultdict(list)
+  for i,x in enumerate(D):
+   if not x.get('ids'):
+    k=pk(x.get('text',''))
+    if k:pd[k].append(i)
+  for k,idxs in pd.items():
+   lids=[]
+   for y in L:
+    if k in {pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)}:
+     lids.extend(y.get('ids',[]))
+   lids=list(dict.fromkeys(lids))
+   if lids and len(lids)==len(idxs):
+    recoverable_pronouns.append((ch,v['v'],k,len(idxs),lids))
   for w,idxs in byword.items():
    lids=[]
    for y in L:
@@ -66,6 +95,7 @@ for ch in range(start,end+1):
 pct=linked/(linked+unlinked)*100
 assert pct>=75,pct
 assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverable[:20]}'
+assert not recoverable_pronouns, f'recoverable pronoun-family DGT links left unlinked: {recoverable_pronouns[:20]}'
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
-print(f'Ephesians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
+print(f'Ephesians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
