@@ -1,3 +1,4 @@
+# post-cleanup baseline
 import json
 from pathlib import Path
 BOOKS=['john','1john','2john','3john','jude','1peter','2peter','james','hebrews']
