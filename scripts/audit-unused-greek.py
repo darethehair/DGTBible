@@ -13,8 +13,8 @@ for slug in BOOKS:
    A=v.get('alignment',{}); G=A.get('greek',[]); D=A.get('dgt',[]); L=A.get('literal',[])
    if not G or not D: continue
    src,pos=source_map(G); litmap=literal_terms_by_id(L)
-   used={id for x in D for id in x.get('ids',[])}
-   unlinked=[(i,x) for i,x in enumerate(D) if not x.get('ids') and any(w not in LOW for w in atoms(x.get('text','')))]
+   used={id for x in D for id in (x.get('ids',[])+x.get('phraseIds',[]))}
+   unlinked=[(i,x) for i,x in enumerate(D) if not (x.get('ids') or x.get('phraseIds')) and any(w not in LOW for w in atoms(x.get('text','')))]
    for id,g in src.items():
     if id in used: continue
     terms=[w for w in semantic_terms(g,id,litmap) if w not in LOW]
