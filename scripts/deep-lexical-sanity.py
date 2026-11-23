@@ -1,3 +1,4 @@
+# post-repair corpus rescan
 # full-corpus bidirectional lexical sanity
 import json,collections
 from pathlib import Path
