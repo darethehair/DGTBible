@@ -1,4 +1,4 @@
-import re,json,collections,os
+import re,json,collections,os,unicodedata
 from pathlib import Path
 from epistle_common import map_words
 from john_batch_dgt import align
@@ -18,6 +18,10 @@ for path in sorted((R/'data/authoring').glob('galatians-*-dgt.tsv')):
 
 # Regenerate generated chapters whenever bundled-pronoun logic changes.
 def authored_dgt(text,src,spec,ref):
+ def greek_key(s):
+  s=unicodedata.normalize('NFD',str(s)).replace('ʼ','').replace('᾽','').replace('’','').replace("'","")
+  s=''.join(x for x in s if unicodedata.category(x)!='Mn').lower()
+  return ''.join(x for x in s if x.isalnum())
  def resolve(refs):
   ids=[]
   for r in refs:
@@ -38,7 +42,7 @@ def authored_dgt(text,src,spec,ref):
      q,n=q.rsplit('#',1)
      try: occurrence=int(n)
      except ValueError: raise SystemExit(f'{ref}: bad Greek surface occurrence in {r!r}')
-    key=norm(q); matches=[x['id'] for x in src if norm(x.get('text',''))==key]
+    key=greek_key(q); matches=[x['id'] for x in src if greek_key(x.get('text',''))==key]
     if occurrence<1 or occurrence>len(matches):
      raise SystemExit(f'{ref}: cannot find Greek surface {q!r} occurrence {occurrence}')
     ids.append(matches[occurrence-1])
