@@ -30,6 +30,16 @@ def authored_dgt(text,src,spec,ref):
     for n in ns:
      if n<1 or n>len(src):raise SystemExit(f'{ref}: authored Greek ordinal @{n} outside 1..{len(src)}')
      ids.append(src[n-1]['id'])
+   elif r.startswith('%'):
+    q=r[1:]; occurrence=1
+    if '#' in q:
+     q,n=q.rsplit('#',1)
+     try: occurrence=int(n)
+     except ValueError: raise SystemExit(f'{ref}: bad Greek surface occurrence in {r!r}')
+    key=norm(q); matches=[x['id'] for x in src if norm(x.get('text',''))==key]
+    if occurrence<1 or occurrence>len(matches):
+     raise SystemExit(f'{ref}: cannot find Greek surface {q!r} occurrence {occurrence}')
+    ids.append(matches[occurrence-1])
    else:ids.append(r)
   valid={x['id'] for x in src};bad=[x for x in ids if x not in valid]
   if bad:raise SystemExit(f'{ref}: unknown authored Greek source IDs: {bad}')
