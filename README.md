@@ -5,10 +5,10 @@ Experimental original-language Bible PWA with the **DGT — Direct Greek Transla
 ## Current prototype
 
 - Installable static PWA; no API key and no runtime AI cost.
-- John 1–21 complete: all 878 SBLGNT verses include SBLGNT Greek, literal Greek-order English, DGT English, and translation notes where useful.
+- John 1–21, 1–3 John, and Jude are complete with SBLGNT Greek, literal Greek-order English, fresh DGT English, and selective translation notes.
 - **SBLGNT** Greek base text, licensed under CC BY 4.0.
 - DGT English translation stored locally alongside each verse.
-- Linked Greek/transliteration/literal/DGT highlighting across John 1–21, assisted by pinned STEPBible TAGNT word data.
+- Linked Greek/transliteration/literal/DGT highlighting across the completed books, assisted by pinned STEPBible TAGNT word data.
 - Study mode and continuous chapter-reading mode with remembered layer preferences.
 - Direct verse lookup (`John 1:18`) and shareable URL hashes (`#John.1.18`).
 - Offline cache through a service worker; core Scripture and alignment data are local and do not depend on STEPBible at runtime.
