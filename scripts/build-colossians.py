@@ -25,7 +25,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
    {'bond','bonds','chain','chains','imprisonment'},
    {'fellowship','participation','partnership'},
    {'confident','confidence','persuaded','persuasion','trusting','trust'},
-   {'think','thinking','minded','minding','mind'},
+   {'think','thinking','minded','minding','mind','feel','feeling'},
    {'watch','beware','heed','look'},
    {'lordship','lordships','dominion','dominions'},
    {'affliction','afflictions','tribulation','tribulations'},
