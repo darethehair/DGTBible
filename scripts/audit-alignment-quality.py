@@ -77,11 +77,11 @@ for slug in BOOKS:
    if not G or not D:continue
    pos={id:i for i,g in enumerate(G) for id in g.get('ids',[])}
    src={id:g for g in G for id in g.get('ids',[])}
-   used={id for x in D for id in x.get('ids',[])}
+   used={id for x in D for id in (x.get('ids',[])+x.get('phraseIds',[]))}
    for i,x in enumerate(D):
     w=norm(x.get('text',''))
     if not w:continue
-    if not x.get('ids') and w not in GLUE:
+    if not (x.get('ids') or x.get('phraseIds')) and w not in GLUE:
      candidates=[]
      for id,g in src.items():
       z=max([sim(w,a) for a in src_words(g)] or [0])
