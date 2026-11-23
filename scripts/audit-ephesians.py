@@ -56,11 +56,17 @@ for ch in range(start,end+1):
    if not x.get('ids'):
     k=pk(x.get('text',''))
     if k:pd[k].append(i)
+  usedp=collections.defaultdict(set)
+  for x in D:
+   k=pk(x.get('text',''))
+   if k and x.get('ids'):
+    usedp[k].update(x.get('ids',[]))
   for k,idxs in pd.items():
    lids=[]
    for y in L:
     if k in {pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)}:
-     lids.extend(y.get('ids',[]))
+     for id in y.get('ids',[]):
+      if id not in usedp[k]:lids.append(id)
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
     recoverable_pronouns.append((ch,v['v'],k,len(idxs),lids))
