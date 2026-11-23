@@ -2139,7 +2139,7 @@
           {
             "text": "or",
             "ids": [
-              "w14"
+              "w12"
             ],
             "after": " ",
             "confidence": "quality-scan"
@@ -2173,15 +2173,15 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "stand,",
             "ids": [
-              "w11"
+              "w14"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "quality-scan"
           },
           {
             "text": "for",
@@ -2194,7 +2194,7 @@
           {
             "text": "the",
             "ids": [
-              "w21"
+              "w19"
             ],
             "after": " ",
             "confidence": "quality-scan"
@@ -2209,9 +2209,7 @@
           },
           {
             "text": "is",
-            "ids": [
-              "w21"
-            ],
+            "ids": [],
             "after": " ",
             "confidence": "quality-scan"
           },
@@ -2233,10 +2231,11 @@
           },
           {
             "text": "make",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "quality-scan"
           },
           {
             "text": "them",
@@ -2248,10 +2247,11 @@
           },
           {
             "text": "stand.",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": "",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           }
         ]
       }
