@@ -629,6 +629,29 @@ def authored_dgt(text,src,spec,ref,literal=None):
     x['confidence']='authored-auto-precise-postguard-relative-personal'
     x.pop('reason',None)
     used_ids.add(candidates[0])
+ # Post-guard neighboring bundled-pronoun recovery. A nearby precisely
+ # linked Greek token may bundle the English pronoun in its literal gloss.
+ if literal:
+  lit_terms=collections.defaultdict(set)
+  for y in literal:
+   terms={norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))}
+   for id in y.get('ids',[]):lit_terms[id].update(terms)
+  for i,x in enumerate(out):
+   if x.get('ids'):continue
+   k=pronoun_key(x.get('text',''))
+   if not k or k=='relative':continue
+   allowed=set(x.get('phraseIds',[]))
+   candidates=[]
+   for j in (i-1,i+1,i-2,i+2):
+    if not (0<=j<len(out)):continue
+    for id in out[j].get('ids',[]):
+     if allowed and id not in allowed:continue
+     if any(pronoun_key(t)==k for t in lit_terms.get(id,set())) and id not in candidates:
+      candidates.append(id)
+   if len(candidates)==1:
+    x['ids']=[candidates[0]]
+    x['confidence']='authored-auto-precise-postguard-bundled-pronoun'
+    x.pop('reason',None)
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
