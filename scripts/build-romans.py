@@ -2,7 +2,7 @@ import re,json,collections,os
 from pathlib import Path
 from epistle_common import map_words
 from john_batch_dgt import align
-from repair_alignments import repair_verse
+from alignment_repair import repair_verse
 
 R=Path('.'); A=R/'authoring'; S=R/'data/sources'; S.mkdir(parents=True,exist_ok=True)
 raw={}
