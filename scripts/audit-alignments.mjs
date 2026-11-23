@@ -35,6 +35,8 @@ const semanticGroups=[
   ['bring','brings','brought','bringing'],
   ['write','writes','wrote','written','writing'],
   ['stumble','stumbles','stumbled','stumbling'],
+  ['witness','witnesses','witnessed','testify','testified','testifies','testimony'],
+  ['desire','desires','desired','want','wants','wanted','wish','wishes','wished'],
   ['judge','judged','judging','condemn','condemned'],
 ];
 const sem=new Map();
