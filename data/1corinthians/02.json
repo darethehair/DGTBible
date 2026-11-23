@@ -5160,10 +5160,11 @@
           },
           {
             "text": "just",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "quality-scan"
           },
           {
             "text": "as",
@@ -5287,17 +5288,19 @@
           },
           {
             "text": "what",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "has",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "quality-scan"
           },
           {
             "text": "not",
@@ -5325,11 +5328,9 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w20"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "human",
@@ -5342,10 +5343,11 @@
           {
             "text": "heart—what",
             "ids": [
-              "w14"
+              "w14",
+              "s18"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "quality-scan"
           },
           {
             "text": "God",
