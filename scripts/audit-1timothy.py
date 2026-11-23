@@ -27,11 +27,13 @@ recoverable=[]
 collisions=[]
 synthetic_unlinked=[]
 out_of_span=[]
+orphan_content=[]
 recoverable_pronouns=[]
 recoverable_relative_pronouns=[]
 recoverable_context_relative=[]
 recoverable_bundled_pronouns=[]
 recoverable_positional=[]
+CONTENT_GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over is am are was were be been being has have had do does did will would shall should may might can could must he she it they we you i me him her them us my his their our your who whom whose which that this these those there here not no never none nothing one thing things its'.split())
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'1timothy'/f'{ch:02}.json').read_text(encoding='utf8'))
@@ -46,6 +48,10 @@ for ch in range(start,end+1):
    if x.get('phraseIds') and any(i not in set(x.get('phraseIds',[])) for i in x.get('ids',[])):
     out_of_span.append((ch,v['v'],x.get('text',''),x.get('ids',[]),x.get('phraseIds',[]),x.get('confidence','')))
    assert all(i in ids for i in (x.get('ids',[])+x.get('phraseIds',[]))),f'dangling alignment 1 Timothy {ch}:{v["v"]}'
+  for x in D:
+   cw=n(x.get('text',''))
+   if cw and cw not in CONTENT_GLUE and not x.get('ids',[]):
+    orphan_content.append((ch,v['v'],x.get('text',''),x.get('phraseIds',[])))
   used_precise={i for x in D for i in x.get('ids',[])}
   for g in v['alignment']['greek']:
    gid=(g.get('ids') or [None])[0]
@@ -181,6 +187,7 @@ assert not recoverable_context_relative, f'recoverable contextual relative-prono
 assert not recoverable_bundled_pronouns, f'recoverable neighboring bundled-pronoun links left unlinked: {recoverable_bundled_pronouns[:20]}'
 assert not recoverable_positional, f'recoverable positional exact links left unlinked: {recoverable_positional[:20]}'
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
+assert not orphan_content, f'unlinked DGT content words: {orphan_content[:40]}'
 assert not out_of_span, f'precise DGT links escaped authored phrase spans: {out_of_span[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
 print(f'1 Timothy {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 recoverable relative-pronoun bridges left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
