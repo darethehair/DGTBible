@@ -5,6 +5,7 @@ on:
       - 'scripts/extract-stepbible-luke.mjs'
       - 'scripts/build-luke.py'
       - 'scripts/audit-luke.py'
+      - 'scripts/repair-luke-final.py'
       - 'scripts/audit-luke-hover-breadth.py'
       - 'scripts/epistle_common.py'
       - 'scripts/alignment_repair.py'
@@ -41,6 +42,8 @@ jobs:
         run: python scripts/build-luke.py
       - name: Apply reviewed alignment quality overrides
         run: python scripts/apply-quality-overrides.py
+      - name: Repair deterministic Luke links after overrides
+        run: python scripts/repair-luke-final.py
       - name: Audit Luke range
         run: python scripts/audit-luke.py
       - name: Audit Luke hover breadth
