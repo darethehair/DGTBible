@@ -5,6 +5,7 @@ on:
       - 'scripts/extract-stepbible-mark.mjs'
       - 'scripts/build-mark.py'
       - 'scripts/audit-mark.py'
+      - 'scripts/audit-mark-hover-breadth.py'
       - 'scripts/epistle_common.py'
       - 'scripts/alignment_repair.py'
       - 'data/authoring/mark-*-dgt.tsv'
@@ -42,6 +43,8 @@ jobs:
         run: python scripts/apply-quality-overrides.py
       - name: Audit Mark range
         run: python scripts/audit-mark.py
+      - name: Audit Mark hover breadth
+        run: python scripts/audit-mark-hover-breadth.py
       - name: Commit clean generated Mark range
         run: |
           git config user.name "DGTBible authoring bot"
