@@ -164,6 +164,7 @@ REVIEWED_SYNTHETICS={
  (22,61,'s13'):('word',1),
  (23,42,'s8'):('into',1),
  (24,47,'s8'):('and',2),
+ (24,49,'s4'):('sending',1),
 }
 
 def reviewed_synthetic_links(D,G,ch,vn):
