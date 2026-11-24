@@ -890,37 +890,38 @@ def auto_alignment_spec(text,src):
 def repair_auto_dgt(out,literal,src):
  # Luke's auto scaffold deliberately keeps ambiguous phrase windows small.
  # After that safe first pass, recover only globally deterministic lexical
- # links. This closes exact/synonym misses without broadening hover spans.
+ # links. Multiple English words may legitimately share one Greek source ID,
+ # so exact recovery tracks reuse per English lexeme rather than globally.
  srcpos={g['id']:i for i,g in enumerate(src)}
- used={id for x in out for id in x.get('ids',[])}
 
  def words(text):
   return [norm(t) for t in re.findall(r"[A-Za-z0-9]+",str(text)) if norm(t)]
 
- # Exact literal recovery: when the remaining unlinked English occurrences
- # and remaining source-linked literal occurrences are one-to-one, pair them
- # in source order even if the initial local phrase window missed the source.
- byword=collections.defaultdict(list)
- for i,x in enumerate(out):
-  if not x.get('ids'):
+ def exact_recover():
+  byword=collections.defaultdict(list)
+  used_by_word=collections.defaultdict(set)
+  for i,x in enumerate(out):
    w=norm(x.get('text',''))
-   if w:byword[w].append(i)
- literal_ids=collections.defaultdict(list)
- for y in literal or []:
-  for w in words(y.get('text','')):
-   for id in y.get('ids',[]):
-    if id not in literal_ids[w]:literal_ids[w].append(id)
- for w,idxs in byword.items():
-  candidates=[id for id in literal_ids.get(w,[]) if id not in used]
-  candidates.sort(key=lambda id:srcpos.get(id,10**9))
-  if candidates and len(candidates)==len(idxs):
-   for i,id in zip(idxs,candidates):
-    out[i]['ids']=[id];out[i]['phraseIds']=[id]
-    out[i]['confidence']='authored-auto-exact-global'
-    out[i].pop('reason',None);used.add(id)
+   if not w:continue
+   if x.get('ids'):used_by_word[w].update(x.get('ids',[]))
+   else:byword[w].append(i)
+  literal_ids=collections.defaultdict(list)
+  for y in literal or []:
+   for w in words(y.get('text','')):
+    for id in y.get('ids',[]):
+     if id not in literal_ids[w]:literal_ids[w].append(id)
+  for w,idxs in byword.items():
+   candidates=[id for id in literal_ids.get(w,[]) if id not in used_by_word[w]]
+   candidates.sort(key=lambda id:srcpos.get(id,10**9))
+   if candidates and len(candidates)==len(idxs):
+    for i,id in zip(idxs,candidates):
+     out[i]['ids']=[id];out[i]['phraseIds']=[id]
+     out[i]['confidence']='authored-auto-exact-global'
+     out[i].pop('reason',None)
+     used_by_word[w].add(id)
 
- # Conservative semantic families for recurrent Luke renderings whose
- # STEPBible gloss uses a different English inflection/idiom.
+ exact_recover()
+
  families=[
   {'must','necessary','behooves','behoove','ought','needs','need','needed'},
   {'generation','generations'},
@@ -931,33 +932,43 @@ def repair_auto_dgt(out,literal,src):
   z=sim(a,b)
   for g in families:
    if a in g and b in g:z=max(z,12)
-  # Possessive English tokenization drops the apostrophe but leaves final s.
-  # Only treat this as equivalent for a unique unused source candidate.
   if a in {'caesars','gods'} and b==a[:-1]:z=max(z,12)
   return z
 
+ # Global semantic recovery is allowed to reuse a Greek ID when the lexeme
+ # naturally supplies more than one English token (e.g. dei -> "must"/auxiliary).
+ # Require a unique best candidate; break a same-score tie only when source
+ # position clearly favors one candidate.
  for i,x in enumerate(out):
   if x.get('ids'):continue
   w=norm(x.get('text',''))
   if not w:continue
   scored=[]
   for g in src:
-   id=g['id']
-   if id in used:continue
-   terms=set(semantic_terms(g,id,None))
+   id=g['id'];terms=set(semantic_terms(g,id,None))
    z=max((family_score(w,t) for t in terms),default=0)
    if z>=8:scored.append((z,id))
   if not scored:continue
   best=max(z for z,_ in scored)
   tops=[id for z,id in scored if z==best]
-  second=max((z for z,_ in scored if z<best),default=0)
-  if len(tops)==1 and (best>=12 or (best>=9 and best-second>=1) or (best>=8 and best-second>=2)):
-   id=tops[0]
-   x['ids']=[id];x['phraseIds']=[id]
+  chosen=None
+  if len(tops)==1:
+   second=max((z for z,_ in scored if z<best),default=0)
+   if best>=12 or (best>=9 and best-second>=1) or (best>=8 and best-second>=2):
+    chosen=tops[0]
+  elif best>=12:
+   erel=i/max(1,len(out)-1)
+   ranked=sorted((abs(erel-srcpos.get(id,0)/max(1,len(src)-1)),id) for id in tops)
+   if len(ranked)>=2 and ranked[1][0]-ranked[0][0]>=0.08:
+    chosen=ranked[0][1]
+  if chosen:
+   x['ids']=[chosen];x['phraseIds']=[chosen]
    x['confidence']='authored-auto-semantic-global'
-   x.pop('reason',None);used.add(id)
- return out
+   x.pop('reason',None)
 
+ # Semantic assignments can make a formerly ambiguous exact word deterministic.
+ exact_recover()
+ return out
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
 D=R/'data/luke';D.mkdir(parents=True,exist_ok=True)
 sbl={}
