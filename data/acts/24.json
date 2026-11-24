@@ -4876,17 +4876,14 @@
           },
           {
             "text": "joined",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "in",
@@ -4910,45 +4907,34 @@
           },
           {
             "text": "attack,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "affirming",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "that",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "reason": "English supplied for natural rendering; no separate Greek token",
+            "supplied": true
           },
           {
             "text": "these",
@@ -4974,17 +4960,14 @@
           },
           {
             "text": "were",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
+            "ids": [
               "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "so.",
