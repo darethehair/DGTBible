@@ -20217,17 +20217,14 @@
           },
           {
             "text": "kill",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-final-family",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "me",
