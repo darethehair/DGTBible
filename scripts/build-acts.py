@@ -981,7 +981,7 @@ if missing:raise SystemExit(f'Acts missing DGT verses: {missing[:20]} (total {le
 
 step=collections.defaultdict(list)
 for line in (A/'step-acts.tsv').read_text(encoding='utf8').splitlines():
- m=re.match(r'^Luk\.(\d+)\.(\d+)(?:\[[^\]]+\])?#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
+ m=re.match(r'^Act\.(\d+)\.(\d+)(?:\[[^\]]+\])?#(\d+)=([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)\t([^\t]*)',line)
  if not m:continue
  f=m[5];q=re.match(r'(.+?)\s+\(([^()]*)\)\s*$',f);o=(q.group(1) if q else f).strip();t=(q.group(2) if q else '')
  tag=m[7];a,b=(tag.split('=',1)+[''])[:2] if '=' in tag else (tag,'')
