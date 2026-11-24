@@ -886,6 +886,78 @@ def auto_alignment_spec(text,src):
   out.append([x['id'] for x in src[lo:hi]])
  return out
 
+
+def repair_auto_dgt(out,literal,src):
+ # Luke's auto scaffold deliberately keeps ambiguous phrase windows small.
+ # After that safe first pass, recover only globally deterministic lexical
+ # links. This closes exact/synonym misses without broadening hover spans.
+ srcpos={g['id']:i for i,g in enumerate(src)}
+ used={id for x in out for id in x.get('ids',[])}
+
+ def words(text):
+  return [norm(t) for t in re.findall(r"[A-Za-z0-9]+",str(text)) if norm(t)]
+
+ # Exact literal recovery: when the remaining unlinked English occurrences
+ # and remaining source-linked literal occurrences are one-to-one, pair them
+ # in source order even if the initial local phrase window missed the source.
+ byword=collections.defaultdict(list)
+ for i,x in enumerate(out):
+  if not x.get('ids'):
+   w=norm(x.get('text',''))
+   if w:byword[w].append(i)
+ literal_ids=collections.defaultdict(list)
+ for y in literal or []:
+  for w in words(y.get('text','')):
+   for id in y.get('ids',[]):
+    if id not in literal_ids[w]:literal_ids[w].append(id)
+ for w,idxs in byword.items():
+  candidates=[id for id in literal_ids.get(w,[]) if id not in used]
+  candidates.sort(key=lambda id:srcpos.get(id,10**9))
+  if candidates and len(candidates)==len(idxs):
+   for i,id in zip(idxs,candidates):
+    out[i]['ids']=[id];out[i]['phraseIds']=[id]
+    out[i]['confidence']='authored-auto-exact-global'
+    out[i].pop('reason',None);used.add(id)
+
+ # Conservative semantic families for recurrent Luke renderings whose
+ # STEPBible gloss uses a different English inflection/idiom.
+ families=[
+  {'must','necessary','behooves','behoove','ought','needs','need','needed'},
+  {'generation','generations'},
+  {'humble','humbles','humbled','humbling','lowly'},
+ ]
+ def family_score(a,b):
+  a=norm(a);b=norm(b)
+  z=sim(a,b)
+  for g in families:
+   if a in g and b in g:z=max(z,12)
+  # Possessive English tokenization drops the apostrophe but leaves final s.
+  # Only treat this as equivalent for a unique unused source candidate.
+  if a in {'caesars','gods'} and b==a[:-1]:z=max(z,12)
+  return z
+
+ for i,x in enumerate(out):
+  if x.get('ids'):continue
+  w=norm(x.get('text',''))
+  if not w:continue
+  scored=[]
+  for g in src:
+   id=g['id']
+   if id in used:continue
+   terms=set(semantic_terms(g,id,None))
+   z=max((family_score(w,t) for t in terms),default=0)
+   if z>=8:scored.append((z,id))
+  if not scored:continue
+  best=max(z for z,_ in scored)
+  tops=[id for z,id in scored if z==best]
+  second=max((z for z,_ in scored if z<best),default=0)
+  if len(tops)==1 and (best>=12 or (best>=9 and best-second>=1) or (best>=8 and best-second>=2)):
+   id=tops[0]
+   x['ids']=[id];x['phraseIds']=[id]
+   x['confidence']='authored-auto-semantic-global'
+   x.pop('reason',None);used.add(id)
+ return out
+
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
 D=R/'data/luke';D.mkdir(parents=True,exist_ok=True)
 sbl={}
@@ -919,10 +991,12 @@ for ch in range(start,end+1):
    ga.append(g);ta.append({'text':x['translit'],'after':af,'ids':[x['id']]});la.append({'text':x['gloss'] or x['text'],'after':af,'ids':[x['id']]})
   dgt=raw[(ch,v)]
   spec=authored.get((ch,v))
-  if isinstance(spec,dict) and spec.get('auto') is True:
+  auto_mode=isinstance(spec,dict) and spec.get('auto') is True
+  if auto_mode:
    spec=auto_alignment_spec(dgt,src)
   if spec is not None:
    da=authored_dgt(dgt,src,spec,f'Luke {ch}:{v}',la);authored_verses+=1
+   if auto_mode:da=repair_auto_dgt(da,la,src)
   else:
    if ch>=1:raise SystemExit(f'Luke {ch}:{v}: new translation requires authored Greek source IDs in the fourth TSV column')
    da=align(dgt,src);repairs+=len(repair_verse(da,ga))
