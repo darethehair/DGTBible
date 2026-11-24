@@ -272,6 +272,22 @@ def authored_dgt(text,src,spec,ref,literal=None):
      glue_safe=w in GLUE and best>=12
      if len(tops)==1 and (content_safe or glue_safe):
       ids=[tops[0]];confidence='authored-auto-precise'
+     elif len(tops)>1 and w not in GLUE and best>=9:
+      # Within an explicitly authored phrase span, resolve only strong lexical
+      # ties when one candidate is clearly closer to the English token's
+      # relative position. This keeps repeated words from remaining needlessly
+      # unlinked without allowing a candidate outside the authored span.
+      src_pos={g['id']:j for j,g in enumerate(src)}
+      phrase_pos=[src_pos[id] for id in phrase_ids if id in src_pos]
+      if phrase_pos:
+       lo,hi=min(phrase_pos),max(phrase_pos)
+       eng_idxs=[j for j,r in enumerate(spec) if r==refs]
+       if eng_idxs:
+        elo,ehi=min(eng_idxs),max(eng_idxs)
+        erel=(i-elo)/max(1,ehi-elo)
+        ranked=sorted((abs(erel-(src_pos[id]-lo)/max(1,hi-lo)),id) for id in tops if id in src_pos)
+        if len(ranked)>=2 and ranked[1][0]-ranked[0][0]>=0.10:
+         ids=[ranked[0][1]];confidence='authored-auto-precise-phrase-positional'
   if ids is None:ids=[]
   x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':confidence,'phraseIds':phrase_ids}
   if not ids:x['reason']='Covered by authored phrase span; no safe lexical hover target'
