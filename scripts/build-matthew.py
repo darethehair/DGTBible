@@ -823,6 +823,36 @@ def authored_dgt(text,src,spec,ref,literal=None):
    for i,id in zip(personal_idxs,rel_candidates):
     if out[i].get('phraseIds') and id not in out[i].get('phraseIds',[]):continue
     out[i]['ids']=[id];out[i]['confidence']='authored-auto-precise-postguard-relative';out[i].pop('reason',None)
+ # Post-guard positional exact recovery. This mirrors the audit's final
+ # deterministic check for one unresolved English occurrence with multiple
+ # exact literal candidates: honor the authored phrase span, then choose only
+ # when the nearest source is clearly separated from the runner-up.
+ if literal:
+  byword=collections.defaultdict(list)
+  used_exact=collections.defaultdict(set)
+  for i,x in enumerate(out):
+   w=norm(x.get('text',''))
+   if not w:continue
+   if x.get('ids'):used_exact[w].update(x.get('ids',[]))
+   else:byword[w].append(i)
+  lpos={}
+  for li,y in enumerate(literal):
+   for id in y.get('ids',[]):lpos[id]=li
+  for w,idxs in byword.items():
+   if len(idxs)!=1:continue
+   i=idxs[0];allowed=set(out[i].get('phraseIds',[]));candidates=[]
+   for y in literal:
+    if w not in [norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]:continue
+    for id in y.get('ids',[]):
+     if id in used_exact[w]:continue
+     if allowed and id not in allowed:continue
+     if id not in candidates:candidates.append(id)
+   if len(candidates)<2:continue
+   erel=i/max(1,len(out)-1)
+   ranked=sorted((abs(erel-lpos[id]/max(1,len(literal)-1)),id) for id in candidates if id in lpos)
+   if len(ranked)>=2 and ranked[1][0]-ranked[0][0]>=0.12:
+    out[i]['ids']=[ranked[0][1]];out[i]['confidence']='authored-auto-precise-postguard-positional';out[i].pop('reason',None)
+
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
