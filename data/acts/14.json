@@ -5634,12 +5634,12 @@
           {
             "text": "to",
             "ids": [
-              "w4"
+              "w15"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w4"
+              "w15"
             ]
           },
           {
@@ -5817,17 +5817,14 @@
           },
           {
             "text": "saved,",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
+            "ids": [
               "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w15"
+            ]
           }
         ]
       }
