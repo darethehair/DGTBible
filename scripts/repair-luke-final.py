@@ -37,7 +37,9 @@ def exact_fixed_point(D,L):
     for id in y.get('ids',[]):
      if id not in lids[w]:lids[w].append(id)
   for w,idxs in byword.items():
-   cand=[id for id in lids.get(w,[]) if id not in used[w]]
+   allowed=set()
+   for i in idxs:allowed.update(D[i].get('phraseIds',[]))
+   cand=[id for id in lids.get(w,[]) if id not in used[w] and (not allowed or id in allowed)]
    if cand and len(cand)==len(idxs):
     for i,id in zip(idxs,cand):
      D[i]['ids']=[id];D[i]['phraseIds']=[id]
@@ -53,8 +55,10 @@ def semantic_pass(D,G,L):
   if x.get('ids'):continue
   w=norm(x.get('text',''))
   if not w:continue
+  allowed=set(x.get('phraseIds',[]))
   scored=[]
   for id,g in src.items():
+   if allowed and id not in allowed:continue
    terms=set(semantic_terms(g,id,None))
    z=max((fscore(w,t) for t in terms),default=0)
    if z>=8:scored.append((z,id,g))
