@@ -205,6 +205,32 @@ def apply_reviewed_precision_fixes(D,ch,vn):
   # Luke 22:55: English auxiliary "had" belongs with περιάψαντων
   # ("having kindled"), and the final "sat" belongs with ἐκάθητο
   # ("was sitting"), not συγκαθισάντων ("having sat down together").
+  (18,20):[
+   ('you',1,['w3']),
+   ('know',1,['w3']),
+   ('the',1,['w1']),
+   ('commandments',1,['w2']),
+   ('do',1,['w5']),
+   ('not',1,['w4']),
+   ('commit',1,['w5']),
+   ('adultery',1,['w5']),
+   ('do',2,['w7']),
+   ('not',2,['w6']),
+   ('murder',1,['w7']),
+   ('do',3,['w9']),
+   ('not',3,['w8']),
+   ('steal',1,['w9']),
+   ('do',4,['w11']),
+   ('not',4,['w10']),
+   ('bear',1,['w11']),
+   ('false',1,['w11']),
+   ('witness',1,['w11']),
+   ('honor',1,['w12']),
+   ('your',1,['w15']),
+   ('father',1,['w14']),
+   ('and',1,['w16']),
+   ('mother',1,['w18']),
+  ],
   (10,15):[
    ('you',1,['w2']),
    ('capernaum',1,['w3']),
