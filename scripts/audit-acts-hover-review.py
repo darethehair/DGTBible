@@ -36,9 +36,12 @@ for ch in range(1,29):
         for wid,words in byid.items():
             if (ref,wid) in ACCEPTED_PRECISE: continue
             frac=len(words)/ec
-            # Four English words from one Greek token is review-worthy;
-            # 2-3 words are queued when scattered or unusually dominant.
-            if len(words)>=4 or frac>=0.40:
+            pos=positions.get(wid,[])
+            contiguous=all(pos[i]==pos[i-1]+1 for i in range(1,len(pos)))
+            # A contiguous English phrase can legitimately unpack one inflected
+            # Greek word ("will you be exalted").  Queue only extreme contiguous
+            # fan-outs; ordinary non-contiguous cases are handled below.
+            if contiguous and len(words)>=7:
                 rows.append(("precise-fanout",ref,wid,len(words),ec,frac))
 
         for wid,pos in positions.items():
