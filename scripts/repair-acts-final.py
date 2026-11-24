@@ -352,6 +352,72 @@ def reconcile_repeated_exact(D,L):
    D[i].pop('reason',None);changes+=1
  return changes
 
+
+HELPERS=set('i you he she it we they me him her us them my your his our their mine yours hers ours theirs am is are was were be been being have has had do does did will would shall should may might can could must'.split())
+SUPPLIED_GLUE=set('a an the and but or so for because since if then than as of to from in into on at by with through before after about against under over until when while where why how what whether though although toward'.split())
+
+def reviewed_token(x):
+ return str(x.get('confidence','')).startswith('acts-reviewed-')
+
+def boundary_between(D,a,b):
+ lo=min(a,b);hi=max(a,b)
+ for k in range(lo,hi):
+  t=str(D[k].get('text',''))
+  if any(c in t for c in '.;:?!'):
+   return True
+ return False
+
+def helper_verb_recover(D,G):
+ # English subject pronouns and auxiliaries often unpack person/tense/voice
+ # encoded inside one Greek verb.  Attach a still-unlinked helper only to a
+ # nearby, already-precise verbal source ID inside its authored phrase span.
+ # Never cross strong punctuation and never override reviewed decisions.
+ byid={id:g for g in G for id in g.get('ids',[])}
+ changes=0
+ for i,x in enumerate(D):
+  if x.get('ids') or x.get('supplied') or reviewed_token(x):continue
+  w=norm(x.get('text',''))
+  if w not in HELPERS:continue
+  allowed=set(x.get('phraseIds',[]))
+  cand=[]
+  # Prefer the next verbal English token for subjects/auxiliaries, then prior.
+  order=[1,2,3,-1,-2,-3]
+  for off in order:
+   j=i+off
+   if not (0<=j<len(D)) or boundary_between(D,i,j):continue
+   for id in D[j].get('ids',[]):
+    if allowed and id not in allowed:continue
+    g=byid.get(id,{})
+    if str(g.get('morph','')).startswith('V-'):
+     cand.append((abs(off),0 if off>0 else 1,id))
+  if not cand:continue
+  cand.sort()
+  best=cand[0]
+  # Require a unique nearest verbal ID; ambiguity stays for review.
+  same=[c for c in cand if c[:2]==best[:2]]
+  ids=list(dict.fromkeys(c[2] for c in same))
+  if len(ids)!=1:continue
+  id=ids[0]
+  x['ids']=[id];x['phraseIds']=[id];x['confidence']='acts-final-helper-verb'
+  x.pop('reason',None);changes+=1
+ return changes
+
+def mark_unresolved_glue_supplied(D):
+ # If a pure English glue word still has no defensible precise source after
+ # exact/family/helper recovery, leaving a 4-5-token hover is more misleading
+ # than explicitly recording it as supplied English.  Content words are never
+ # handled here.
+ changes=0
+ for x in D:
+  if x.get('ids') or x.get('supplied') or reviewed_token(x):continue
+  w=norm(x.get('text',''))
+  if w in SUPPLIED_GLUE and len(x.get('phraseIds',[]))>=4:
+   x['ids']=[];x['phraseIds']=[];x['supplied']=True
+   x['confidence']='acts-final-supplied-glue'
+   x['reason']='English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target'
+   changes+=1
+ return changes
+
 def exact_fixed_point(D,L):
  total=0
  while True:
@@ -412,7 +478,9 @@ for path in sorted(Path('data/acts').glob('[0-9][0-9].json')):
   file_changed+=reconcile_repeated_exact(D,L)
   file_changed+=exact_fixed_point(D,L)
   file_changed+=family_fixed_point(D,G)
+  file_changed+=helper_verb_recover(D,G)
   file_changed+=exact_fixed_point(D,L)
+  file_changed+=mark_unresolved_glue_supplied(D)
  if file_changed:
   path.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
   changed+=file_changed
