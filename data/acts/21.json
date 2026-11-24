@@ -18511,38 +18511,32 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
               "w15"
             ]
           },
           {
             "text": "guard",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "themselves",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+            "ids": [
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "from",
@@ -18558,23 +18552,23 @@
           {
             "text": "what",
             "ids": [
-              "w24"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w24"
+              "w19"
             ]
           },
           {
             "text": "is",
             "ids": [
-              "w24"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w24"
+              "w19"
             ]
           },
           {
@@ -18591,12 +18585,12 @@
           {
             "text": "to",
             "ids": [
-              "w15"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w15"
+              "w19"
             ]
           },
           {
@@ -18612,14 +18606,12 @@
           },
           {
             "text": "from",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "English supplied for natural rendering; no separate Greek token"
           },
           {
             "text": "blood,",
@@ -18634,14 +18626,12 @@
           },
           {
             "text": "from",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "English supplied for natural rendering; no separate Greek token"
           },
           {
             "text": "what",
@@ -18687,14 +18677,12 @@
           },
           {
             "text": "from",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "English supplied for natural rendering; no separate Greek token"
           },
           {
             "text": "sexual",

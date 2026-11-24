@@ -3341,38 +3341,35 @@
           {
             "text": "They",
             "ids": [
-              "w5"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w5"
+              "w1"
             ]
           },
           {
             "text": "have",
             "ids": [
-              "w5"
+              "w1"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w5"
+              "w1"
             ]
           },
           {
             "text": "known",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "me",
@@ -3450,7 +3447,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
               "w5"
             ]
