@@ -780,6 +780,31 @@ def authored_dgt(text,src,spec,ref,literal=None):
      x['ids']=[candidates[0]]
      x['confidence']='authored-auto-precise-postguard-pronoun'
      x.pop('reason',None);used_by_family[k].add(candidates[0]);changed=True
+ # Post-guard bundled-pronoun recovery. A finite verb or pronoun source may
+ # legitimately carry both the neighboring lexical word and an English pronoun
+ # (for example a verb glossed "he says"). Reuse that precise neighboring ID
+ # only when it belongs to the pronoun's authored phrase span and is the sole
+ # matching neighboring candidate.
+ if literal:
+  lit_terms=collections.defaultdict(set)
+  for y in literal:
+   terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+   for id in y.get('ids',[]):lit_terms[id].update(terms)
+  for i,x in enumerate(out):
+   if x.get('ids'):continue
+   k=pronoun_key(x.get('text',''))
+   if not k or k=='relative':continue
+   allowed=set(x.get('phraseIds',[]))
+   candidates=[]
+   for j in (i-1,i+1,i-2,i+2):
+    if not (0<=j<len(out)):continue
+    for id in out[j].get('ids',[]):
+     if allowed and id not in allowed:continue
+     if any(pronoun_key(t)==k for t in lit_terms.get(id,set())):candidates.append(id)
+   unique=list(dict.fromkeys(candidates))
+   if len(unique)==1:
+    x['ids']=[unique[0]];x['confidence']='authored-auto-precise-postguard-bundled-pronoun';x.pop('reason',None)
+
  # Finally bridge a remaining personal pronoun to an unused Greek relative
  # pronoun when the verse has an exact one-to-one remainder. This handles
  # idiomatic changes such as "which" -> "it" without guessing among multiples.
