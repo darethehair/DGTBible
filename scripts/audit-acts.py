@@ -207,6 +207,13 @@ if orphan_content:
   gi={id:(i+1,g.get('text',''),g.get('gloss','')) for i,g in enumerate(vv['alignment']['greek']) for id in g.get('ids',[])}
   print(f"{ch}:{vn}\t{txt}\t"+' | '.join(f"{gi.get(id,('?','',''))[0]}:{gi.get(id,('?','',''))[1]}={gi.get(id,('?','',''))[2]}" for id in pids))
  print('ORPHAN_CONTENT_REPORT_END')
+if synthetic_unlinked:
+ print('SYNTHETIC_UNLINKED_REPORT_BEGIN')
+ for ch,vn,gid,gtxt in synthetic_unlinked:
+  d=json.loads((Path('data')/'acts'/f'{ch:02}.json').read_text(encoding='utf8'))
+  vv=next(v for v in d['verses'] if v['v']==vn)
+  print(f"{ch}:{vn}\t{gid}\t{gtxt}\tDGT={vv['dgt']}\tGREEK={vv['greek']}")
+ print('SYNTHETIC_UNLINKED_REPORT_END')
 pct=linked/(linked+unlinked)*100
 assert pct>=75,pct
 assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverable[:20]}'
