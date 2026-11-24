@@ -6,8 +6,58 @@ from alignment_repair import norm,sim,semantic_terms,source_map
 # Explicit reviewed mappings are added here as the Acts hover-review queue is
 # inspected.  They intentionally fail fast when a later wording change makes
 # a reviewed target disappear.
-REVIEWED_PRECISION={(20,10):[('his',1,['w15'])]}
-REVIEWED_SUPPLIED={(8,10):[('them',1)]}
+REVIEWED_PRECISION={
+ (5,40):[
+  ('and',1,['w1']),('after',1,['w2']),('calling',1,['w2']),('the',1,['w3']),('apostles',1,['w4']),
+  ('they',1,['w5']),('beat',1,['w5']),('them',1,['w5']),
+  ('commanded',1,['w6']),('them',2,['w6']),('not',1,['w7']),('to',1,['w8']),('speak',1,['w8']),
+  ('in',2,['w9']),('the',2,['w10']),('name',1,['w11']),('of',1,['w12']),('jesus',1,['w13']),
+  ('and',3,['w14']),('released',1,['w15']),('them',3,['w15']),
+ ],
+ (7,2):[
+  ('he',1,['w3']),('said',1,['w3']),('he',2,['w18']),('was',1,['w18']),
+  ('he',3,['w25']),('lived',1,['w24']),
+ ],
+ (8,33):[
+  ('was',1,['w8']),('taken',1,['w8']),('away',1,['w8']),
+  ('taken',2,['w16']),('away',2,['w16']),
+ ],
+ (16,34):[
+  ('and',1,['w2']),('his',2,['w12']),('whole',1,['w12']),('household',1,['w12']),
+  ('he',1,['w8']),('set',1,['w8']),('he',2,['w11']),('rejoiced',1,['w11']),
+ ],
+ (16,38):[
+  ('the',1,['w5']),('officers',1,['w6']),('they',1,['w11']),('became',1,['w11']),('afraid',1,['w11']),
+  ('they',2,['w13']),('heard',1,['w13']),('they',3,['w16']),('were',1,['w16']),('romans',1,['w15']),
+ ],
+ (20,10):[('his',1,['w15'])],
+ (21,20):[
+  ('they',1,['w3']),('heard',1,['w3']),('they',2,['w4']),('began',1,['w4']),('glorifying',1,['w4']),
+  ('and',1,['w8']),('they',3,['w7']),('said',1,['w7']),
+  ('and',2,['w20']),('they',4,['w25']),('are',2,['w25']),('all',2,['w21']),
+ ],
+ (23,24):[
+  ('they',1,['w5']),('may',1,['w5']),('put',1,['w5']),('paul',1,['w7']),
+  ('on',1,['w5']),('them',1,['w5']),('bring',1,['w8']),('him',1,['w8']),('safely',1,['w8']),
+ ],
+ (26,16):[
+  ('and',1,['w3']),('and',2,['w17']),('and',3,['w24']),
+  ('things',1,['w19']),('in',2,['w19']),('which',1,['w19']),
+  ('things',2,['w23']),('in',3,['w23']),('which',2,['w23']),
+ ],
+ (27,7):[
+  ('we',1,['w5']),('sailed',1,['w5']),('slowly',1,['w5']),
+  ('we',2,['w17']),('sailed',2,['w17']),('under',1,['w17']),
+ ],
+ (27,21):[
+  ('and',1,['w2']),('and',4,['w25']),('and',5,['w29']),
+ ],
+}
+REVIEWED_SUPPLIED={
+ (8,10):[('them',1)],
+ (16,34):[('his',1)],
+ (27,21):[('and',2),('and',3)],
+}
 REVIEWED_SYNTHETICS={
  (1,11):[('s8','looking',1)],
  (1,15):[('s20','about',1)],
