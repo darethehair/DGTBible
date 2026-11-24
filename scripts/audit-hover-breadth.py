@@ -45,7 +45,18 @@ for book in catalog:
                     rows.append(("precise-fanout",ref,gtext.get(wid,wid),len(words),ecount,frac," ".join(words)))
 
 rows.sort(key=lambda r:(-r[5],-r[3],r[1],r[2]))
+from collections import Counter
+book_interactions=Counter()
+book_verses={}
+for r in rows:
+    ref=r[1]
+    book=next((b["name"] for b in catalog if ref.startswith(b["name"]+" ")), ref.split(" ")[0])
+    book_interactions[book]+=1
+    book_verses.setdefault(book,set()).add(ref)
 print(f"HOVER BREADTH SANITY: {len(rows)} suspicious interactions")
+print("BY BOOK")
+for book,count in sorted(book_interactions.items(), key=lambda kv:(-kv[1],kv[0])):
+    print(f"{book}\t{count}\t{len(book_verses[book])} verses")
 print("kind\tref\tsource/token\tactivated\ttotal\tshare\tdetail")
 for r in rows:
     print(f"{r[0]}\t{r[1]}\t{r[2]}\t{r[3]}\t{r[4]}\t{r[5]*100:.1f}%\t{r[6]}")
