@@ -1,4 +1,4 @@
-const APP_VERSION='v0.64';
+const APP_VERSION='v0.65';
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={};
 const $=id=>document.getElementById(id);
@@ -54,14 +54,14 @@ function setMode(mode){
 function saveLayers(){localStorage.setItem('dgt-layers',JSON.stringify(layers));renderChapter()}
 function renderLayerControls(){document.querySelectorAll('[data-layer]').forEach(cb=>{cb.checked=!!layers[cb.dataset.layer];cb.onchange=()=>{layers[cb.dataset.layer]=cb.checked;saveLayers()}})}
 function clearAlignment(){document.querySelectorAll('.align-token.active').forEach(el=>el.classList.remove('active'))}
-function highlightAlignment(ids){clearAlignment();if(!ids?.length)return;document.querySelectorAll('.align-token').forEach(el=>{const mine=(el.dataset.ids||'').split(',');if(mine.some(id=>ids.includes(id)))el.classList.add('active')})}
+function highlightAlignment(ids,sourceIsPhrase=false){clearAlignment();if(!ids?.length)return;document.querySelectorAll('.align-token').forEach(el=>{if(!sourceIsPhrase&&el.classList.contains('phrase-token'))return;const mine=(el.dataset.ids||'').split(',');if(mine.some(id=>ids.includes(id)))el.classList.add('active')})}
 function renderAligned(container,key,verse,fallback){
  const items=verse.alignment?.[key];if(!items?.length){container.textContent=fallback;return}
  container.innerHTML=items.map(item=>{const ids=(item.ids||[]).join(',');if(ids)return `<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`;if(item.phraseIds?.length){const pids=item.phraseIds.join(',');return `<span class="align-token phrase-token" tabindex="0" data-ids="${pids}" title="Phrase-aligned: highlights the authored Greek source span">${esc(item.text)}</span>${esc(item.after||'')}`;}return `<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`}).join('');
  const activate=e=>{
   const el=e.target.closest?.('.align-token');
   if(!el||!container.contains(el))return;
-  highlightAlignment((el.dataset.ids||'').split(',').filter(Boolean));
+  highlightAlignment((el.dataset.ids||'').split(',').filter(Boolean),el.classList.contains('phrase-token'));
  };
  container.onmouseover=activate;
  container.onclick=activate;
@@ -77,10 +77,11 @@ function alignedHtml(key,verse,fallback){
   return `<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`;
  }).join('');
 }
-function highlightWithin(container,ids){
+function highlightWithin(container,ids,sourceIsPhrase=false){
  container.querySelectorAll('.align-token.active').forEach(el=>el.classList.remove('active'));
  if(!ids?.length)return;
  container.querySelectorAll('.align-token').forEach(el=>{
+  if(!sourceIsPhrase&&el.classList.contains('phrase-token'))return;
   const mine=(el.dataset.ids||'').split(',');
   if(mine.some(id=>ids.includes(id)))el.classList.add('active');
  });
@@ -118,7 +119,7 @@ function renderChapter(){
   const activate=e=>{
    const el=e.target.closest?.('.align-token');
    if(!el||!article.contains(el))return;
-   highlightWithin(article,(el.dataset.ids||'').split(',').filter(Boolean));
+   highlightWithin(article,(el.dataset.ids||'').split(',').filter(Boolean),el.classList.contains('phrase-token'));
   };
   article.onmouseover=activate;
   article.onclick=e=>{
