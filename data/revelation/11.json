@@ -4597,16 +4597,17 @@
           },
           {
             "text": "must",
-            "ids": [],
+            "ids": [
+              "w25"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w24",
               "w25",
               "w26",
               "w27"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "be",

@@ -2895,9 +2895,11 @@
           },
           {
             "text": "must",
-            "ids": [],
+            "ids": [
+              "w28"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w26",
               "w27",
@@ -2906,8 +2908,7 @@
               "w30",
               "w31",
               "w32"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "be",
