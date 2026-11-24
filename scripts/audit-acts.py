@@ -111,7 +111,7 @@ for ch in range(start,end+1):
    if len(relids)!=1:continue
    prev=set(L[li-1].get('ids',[]))
    for i in range(1,len(D)):
-    if D[i].get('ids') or pk(D[i].get('text','')) not in {'he','she','they','it'}:continue
+    if D[i].get('ids') or D[i].get('supplied') or pk(D[i].get('text','')) not in {'he','she','they','it'}:continue
     if prev & set(D[i-1].get('ids',[])):
      recoverable_context_relative.append((ch,v['v'],D[i].get('text',''),relids[0]))
      break
