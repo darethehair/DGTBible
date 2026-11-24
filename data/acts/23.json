@@ -1122,17 +1122,14 @@
           },
           {
             "text": "ordered",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "those",
@@ -1158,17 +1155,14 @@
           },
           {
             "text": "beside",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "him",
@@ -10261,17 +10255,14 @@
           },
           {
             "text": "who",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "made",
@@ -10297,17 +10288,14 @@
           },
           {
             "text": "conspiracy.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w8"
+            ]
           }
         ]
       }
@@ -19865,17 +19853,14 @@
         "dgt": [
           {
             "text": "Also",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "provide",
@@ -19890,17 +19875,14 @@
           },
           {
             "text": "animals",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "so",
@@ -19927,23 +19909,23 @@
           {
             "text": "they",
             "ids": [
-              "w5"
+              "w8"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w5"
+              "w8"
             ]
           },
           {
             "text": "may",
             "ids": [
-              "w5"
+              "w8"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w5"
+              "w8"
             ]
           },
           {
@@ -19952,9 +19934,13 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w5"
+              "w3",
+              "w4",
+              "w5",
+              "w6",
+              "w7"
             ]
           },
           {
@@ -19970,14 +19956,12 @@
           },
           {
             "text": "on",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w5"
-            ]
+            "confidence": "acts-final-supplied-glue",
+            "phraseIds": [],
+            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
+            "supplied": true
           },
           {
             "text": "them",
