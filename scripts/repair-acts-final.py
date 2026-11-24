@@ -7,7 +7,7 @@ from alignment_repair import norm,sim,semantic_terms,source_map
 # inspected.  They intentionally fail fast when a later wording change makes
 # a reviewed target disappear.
 REVIEWED_PRECISION={(20,10):[('his',1,['w15'])]}
-REVIEWED_SUPPLIED={}
+REVIEWED_SUPPLIED={(8,10):[('them',1)]}
 REVIEWED_SYNTHETICS={}
 
 FAMILIES=[
