@@ -142,8 +142,15 @@ for ch in range(start,end+1):
    if 'relative' in {pk(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pk(t)}:
     for id in y.get('ids',[]):
      if id not in usedids and id not in relids:relids.append(id)
-  if personal_idxs and len(personal_idxs)==len(relids):
-   recoverable_relative_pronouns.append((ch,v['v'],[D[i].get('text','') for i in personal_idxs],relids))
+  # A relative-to-personal bridge is recoverable only inside the English
+  # token's already-authored phrase span. Never demand a cross-phrase link.
+  rel_pairs=[]
+  for i in personal_idxs:
+   allowed=set(D[i].get('phraseIds',[]))
+   candidates=[id for id in relids if not allowed or id in allowed]
+   if len(candidates)==1:rel_pairs.append((i,candidates[0]))
+  if personal_idxs and len(rel_pairs)==len(personal_idxs) and len({id for _,id in rel_pairs})==len(rel_pairs):
+   recoverable_relative_pronouns.append((ch,v['v'],[D[i].get('text','') for i,_ in rel_pairs],[id for _,id in rel_pairs]))
   used_exact=collections.defaultdict(set)
   for x in D:
    w=n(x.get('text',''))
