@@ -685,6 +685,35 @@ def authored_dgt(text,src,spec,ref,literal=None):
     x['ids']=list(y['ids']);x['confidence']='authored-auto-precise-compound-state';x.pop('reason',None)
    break
 
+ # Re-run deterministic pronoun recovery after exact and compound passes,
+ # since those passes can consume competing source IDs and make a previously
+ # ambiguous pronoun uniquely resolvable.
+ if literal:
+  changed=True
+  while changed:
+   changed=False
+   used_by_family=collections.defaultdict(set)
+   for x in out:
+    k=pronoun_key(x.get('text',''))
+    if k and k!='relative' and x.get('ids'):
+     used_by_family[k].update(x.get('ids',[]))
+   for i,x in enumerate(out):
+    if x.get('ids'):continue
+    k=pronoun_key(x.get('text',''))
+    if not k or k=='relative':continue
+    allowed=set(x.get('phraseIds',[]))
+    candidates=[]
+    for y in literal:
+     if k not in {pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pronoun_key(t)}:continue
+     for id in y.get('ids',[]):
+      if id in used_by_family[k]:continue
+      if allowed and id not in allowed:continue
+      if id not in candidates:candidates.append(id)
+    if len(candidates)==1:
+     x['ids']=[candidates[0]]
+     x['confidence']='authored-auto-precise-final-pronoun-family'
+     x.pop('reason',None);used_by_family[k].add(candidates[0]);changed=True
+
  # Born-aligned span guard: automatic recovery must never escape the
  # authored source span. This prevents a later exact/synonym pass from stealing
  # a matching Greek token elsewhere in the verse.
