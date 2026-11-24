@@ -16502,17 +16502,14 @@
           },
           {
             "text": "like",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "to",
@@ -16528,12 +16525,12 @@
           {
             "text": "hear",
             "ids": [
-              "w12"
+              "w17"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-exact-global",
             "phraseIds": [
-              "w12"
+              "w17"
             ]
           },
           {
@@ -16620,12 +16617,16 @@
           {
             "text": "hear",
             "ids": [
-              "w17"
+              "w12"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise-phrase-positional",
             "phraseIds": [
-              "w17"
+              "w12",
+              "w15",
+              "w16",
+              "w17",
+              "w18"
             ]
           },
           {
