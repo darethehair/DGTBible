@@ -20701,12 +20701,12 @@
           {
             "text": "they",
             "ids": [
-              "w7"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w7"
+              "w1"
             ]
           },
           {
@@ -20783,14 +20783,17 @@
           },
           {
             "text": "anger,",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w6"
-            ]
+              "w4",
+              "w5",
+              "w6",
+              "w7",
+              "w8"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "they",

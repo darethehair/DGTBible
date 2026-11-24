@@ -19853,14 +19853,17 @@
         "dgt": [
           {
             "text": "Also",
-            "ids": [
-              "w2"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w2"
-            ]
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "provide",
@@ -19875,14 +19878,17 @@
           },
           {
             "text": "animals",
-            "ids": [
-              "w1"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w1"
-            ]
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "so",
@@ -19909,23 +19915,23 @@
           {
             "text": "they",
             "ids": [
-              "w8"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8"
+              "w5"
             ]
           },
           {
             "text": "may",
             "ids": [
-              "w8"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8"
+              "w5"
             ]
           },
           {
@@ -19934,13 +19940,9 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+              "w5"
             ]
           },
           {
