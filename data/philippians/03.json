@@ -18512,9 +18512,11 @@
           },
           {
             "text": "their",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w1",
               "w2",
@@ -18536,8 +18538,7 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "shame;",
@@ -18571,9 +18572,11 @@
           },
           {
             "text": "they",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise-literal-bundled-pronoun",
             "phraseIds": [
               "w1",
               "w2",
@@ -18595,8 +18598,7 @@
               "w18",
               "w19",
               "w20"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "think",
