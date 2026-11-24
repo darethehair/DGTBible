@@ -1,4 +1,4 @@
-# post-cleanup scan checkpoint: 2 Corinthians after 21-word tier
+# post-cleanup scan checkpoint: 2 Corinthians after 20-word tier
 # precise-fanout review marker 2026-11-24
 # diagnostic rerun marker: conservative cleanup wave 2026-11-24
 #!/usr/bin/env python3
