@@ -137,7 +137,10 @@ def authored_dgt(text,src,spec,ref,literal=None):
    {'coin','coins','silver','money'},
    {'gather','gathered','assemble','assembled'},
    {'reason','cause','because'},
-   {'same','likewise','thus','so'},
+   {'same','likewise','thus','so','way','manner'},
+   {'now','then'},
+   {'too','also'},
+   {'up','arisen','arose','rise','risen','awoken'},
    {'own','self','himself','herself','themselves'},
    {'among','amid','midst'},
    {'around','surrounding'},
@@ -156,7 +159,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
   a=norm(a);b=norm(b)
   z=sim(a,b)
   for g in extra:
-   if a in g and b in g:z=max(z,9)
+   if a in g and b in g:z=max(z,12)
   return z
  def pronoun_key(w):
   groups={
@@ -713,6 +716,28 @@ def authored_dgt(text,src,spec,ref,literal=None):
      x['ids']=[candidates[0]]
      x['confidence']='authored-auto-precise-final-pronoun-family'
      x.pop('reason',None);used_by_family[k].add(candidates[0]);changed=True
+
+ # Phrase-bounded pronoun recovery. The audit uses the same criterion:
+ # if one still-unlinked personal pronoun has exactly one matching unused
+ # literal-layer source inside its authored phrase span, the link is deterministic.
+ if literal:
+  lit_terms=collections.defaultdict(set)
+  for y in literal:
+   terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+   for id in y.get('ids',[]):lit_terms[id].update(terms)
+  used_ids={id for x in out for id in x.get('ids',[])}
+  for i,x in enumerate(out):
+   if x.get('ids'):continue
+   k=pronoun_key(x.get('text',''))
+   if not k or k=='relative':continue
+   allowed=set(x.get('phraseIds',[]))
+   candidates=[]
+   for id,terms in lit_terms.items():
+    if id in used_ids or (allowed and id not in allowed):continue
+    if any(pronoun_key(t)==k for t in terms):candidates.append(id)
+   candidates=list(dict.fromkeys(candidates))
+   if len(candidates)==1:
+    x['ids']=[candidates[0]];x['confidence']='authored-auto-precise-phrase-pronoun';x.pop('reason',None);used_ids.add(candidates[0])
 
  # Born-aligned span guard: automatic recovery must never escape the
  # authored source span. This prevents a later exact/synonym pass from stealing
