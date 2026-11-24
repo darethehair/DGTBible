@@ -16073,24 +16073,19 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4",
               "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+              "w6"
+            ]
           },
           {
             "text": "immediately",
@@ -16105,36 +16100,23 @@
               "w3",
               "w4",
               "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+              "w6"
             ]
           },
           {
             "text": "they",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
               "w1",
               "w2",
               "w3",
               "w4",
               "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w6"
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "left",
@@ -16149,13 +16131,7 @@
               "w3",
               "w4",
               "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+              "w6"
             ]
           },
           {
@@ -16171,13 +16147,7 @@
               "w3",
               "w4",
               "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+              "w6"
             ]
           },
           {
@@ -16193,35 +16163,22 @@
               "w3",
               "w4",
               "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+              "w6"
             ]
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
               "w7",
               "w8",
               "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+              "w10"
+            ]
           },
           {
             "text": "their",
@@ -16231,18 +16188,10 @@
             "after": " ",
             "confidence": "authored-auto-precise-pronoun-ordered",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
               "w7",
               "w8",
               "w9",
-              "w10",
-              "w11",
-              "w12"
+              "w10"
             ]
           },
           {
@@ -16253,18 +16202,10 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
               "w7",
               "w8",
               "w9",
-              "w10",
-              "w11",
-              "w12"
+              "w10"
             ]
           },
           {
@@ -16273,16 +16214,6 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
               "w11",
               "w12"
             ],
@@ -16296,16 +16227,6 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
               "w11",
               "w12"
             ]
@@ -16318,16 +16239,6 @@
             "after": "",
             "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
               "w11",
               "w12"
             ]
