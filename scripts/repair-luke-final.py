@@ -84,6 +84,54 @@ def semantic_pass(D,G,L):
  return changes
 
 
+
+CONTENT_STOP={
+ 'a','an','the','and','or','but','so','for','of','to','in','on','at','by','from','with','as',
+ 'that','this','these','those','who','whom','whose','which','what','when','where','why','how',
+ 'i','me','my','mine','we','us','our','ours','you','your','yours','he','him','his','she','her',
+ 'they','them','their','it','its','be','am','is','are','was','were','been','being','do','does',
+ 'did','have','has','had','will','would','shall','should','may','might','can','could','must',
+ 'not','no','nor','if','then','than','also','even','only','very','more','most','all','any',
+ 'some','one','ones','there','here','into','out','up','down','over','under','again','away'
+}
+
+def global_unique_content_recover(D,G,L):
+ changes=0
+ # Build literal word -> unique source IDs for the entire verse.
+ lids=collections.defaultdict(list)
+ for y in L:
+  for w in atoms(y.get('text','')):
+   for id in y.get('ids',[]):
+    if id not in lids[w]:lids[w].append(id)
+
+ for x in D:
+  if x.get('ids'):continue
+  w=norm(x.get('text',''))
+  if not w or w in CONTENT_STOP:continue
+  cand=lids.get(w,[])
+  if len(cand)==1:
+   x['ids']=[cand[0]];x['phraseIds']=[cand[0]]
+   x['confidence']='luke-global-unique-content-exact'
+   x.pop('reason',None);changes+=1
+   continue
+
+  # If literal wording differs, accept only one uniquely best Greek/TAGNT
+  # semantic candidate across the whole verse, with a strong score.
+  scored=[]
+  for g in G:
+   for id in g.get('ids',[]):
+    z=max((fscore(w,t) for t in semantic_terms(g,id,None)),default=0)
+    if z>=9:scored.append((z,id))
+  if scored:
+   best=max(z for z,_ in scored)
+   tops=list(dict.fromkeys(id for z,id in scored if z==best))
+   second=max((z for z,_ in scored if z<best),default=0)
+   if len(tops)==1 and (best>=12 or best-second>=2):
+    x['ids']=[tops[0]];x['phraseIds']=[tops[0]]
+    x['confidence']='luke-global-unique-content-semantic'
+    x.pop('reason',None);changes+=1
+ return changes
+
 def family_fixed_point(D,G):
  src,pos=source_map(G);total=0
  def fkey(w):
@@ -214,6 +262,7 @@ for path in sorted(Path('data/luke').glob('[0-9][0-9].json')):
   A=v.get('alignment',{});D=A.get('dgt',[]);G=A.get('greek',[]);L=A.get('literal',[])
   file_changed+=reviewed_synthetic_links(D,G,int(path.stem),v['v'])
   file_changed+=apply_reviewed_precision_fixes(D,int(path.stem),v['v'])
+  file_changed+=global_unique_content_recover(D,G,L)
   file_changed+=exact_fixed_point(D,L)
   file_changed+=family_fixed_point(D,G)
   file_changed+=semantic_pass(D,G,L)
