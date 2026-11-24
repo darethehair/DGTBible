@@ -1,0 +1,66 @@
+name: Build pinned Luke DGT batch
+on:
+  push:
+    paths:
+      - 'scripts/extract-stepbible-luke.mjs'
+      - 'scripts/build-luke.py'
+      - 'scripts/audit-luke.py'
+      - 'scripts/audit-luke-hover-breadth.py'
+      - 'scripts/epistle_common.py'
+      - 'scripts/alignment_repair.py'
+      - 'data/authoring/luke-*-dgt.tsv'
+  workflow_dispatch:
+    inputs:
+      start_chapter:
+        required: true
+        default: '1'
+      end_chapter:
+        required: true
+        default: '24'
+permissions:
+  contents: write
+  actions: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      START_CHAPTER: ${{ github.event.inputs.start_chapter || '1' }}
+      END_CHAPTER: ${{ github.event.inputs.end_chapter || '3' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Determine authored Luke range on push
+        if: github.event_name == 'push'
+        run: |
+          latest=$(find data/authoring -maxdepth 1 -type f -name 'luke-??-dgt.tsv' -printf '%f\n' | sed -E 's/^luke-([0-9]{2})-dgt\.tsv$/\1/' | sort -n | tail -1)
+          test -n "$latest"
+          echo "START_CHAPTER=1" >> "$GITHUB_ENV"
+          echo "END_CHAPTER=$((10#$latest))" >> "$GITHUB_ENV"
+      - name: Extract pinned SBLGNT and TAGNT
+        run: node scripts/extract-stepbible-luke.mjs
+      - name: Build Luke range
+        run: python scripts/build-luke.py
+      - name: Apply reviewed alignment quality overrides
+        run: python scripts/apply-quality-overrides.py
+      - name: Audit Luke range
+        run: python scripts/audit-luke.py
+      - name: Audit Luke hover breadth
+        run: python scripts/audit-luke-hover-breadth.py
+      - name: Commit clean generated Luke range
+        run: |
+          git config user.name "DGTBible authoring bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/luke/*.json data/sources/step-luke-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate QA-clean Luke $START_CHAPTER-$END_CHAPTER batch"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
+          fi
+
+      - name: Dispatch Pages deployment
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
