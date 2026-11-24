@@ -23,6 +23,15 @@ jobs:
         run: python scripts/repair-alignments.py
       - name: Apply reviewed alignment quality overrides
         run: python scripts/apply-quality-overrides.py
+      - name: Repair deterministic Luke links after overrides
+        run: python scripts/repair-luke-final.py
+      - name: Validate Luke
+        env:
+          START_CHAPTER: '1'
+          END_CHAPTER: '24'
+        run: python scripts/audit-luke.py
+      - name: Audit Luke hover breadth
+        run: python scripts/audit-luke-hover-breadth.py
       - name: Validate Gospel of John
         run: node scripts/validate-john.mjs
       - name: Semantic alignment audit for John
@@ -84,6 +93,11 @@ jobs:
           test -f data/1corinthians/manifest.json
           test -f data/1corinthians/editorial-notes.json
           test -f data/1corinthians/paragraphs.json
+          test -f data/luke/manifest.json
+          test -f data/luke/editorial-notes.json
+          test -f data/luke/paragraphs.json
+          test -f data/luke/01.json
+          test -f data/luke/24.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
