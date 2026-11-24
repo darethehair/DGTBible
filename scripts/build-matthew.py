@@ -593,6 +593,38 @@ def authored_dgt(text,src,spec,ref,literal=None):
      used_by_family[k].add(candidates[0])
      changed=True
 
+ # Final deterministic exact-occurrence recovery using the same phrase-span
+ # rule enforced by the audit. If N unresolved occurrences correspond to
+ # exactly N unused literal source IDs inside their authored spans, pair them
+ # monotonically left-to-right.
+ if literal:
+  byword=collections.defaultdict(list)
+  used_exact=collections.defaultdict(set)
+  for i,x in enumerate(out):
+   w=norm(x.get('text',''))
+   if not w:continue
+   if x.get('ids'):used_exact[w].update(x.get('ids',[]))
+   else:byword[w].append(i)
+  for w,idxs in byword.items():
+   allowed=set()
+   for i in idxs:allowed.update(out[i].get('phraseIds',[]))
+   candidates=[]
+   for y in literal:
+    terms=[norm(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text',''))]
+    if w not in terms:continue
+    for id in y.get('ids',[]):
+     if id in used_exact[w]:continue
+     if allowed and id not in allowed:continue
+     if id not in candidates:candidates.append(id)
+   if candidates and len(candidates)==len(idxs):
+    src_pos={g['id']:j for j,g in enumerate(src)}
+    candidates.sort(key=lambda id:src_pos.get(id,10**9))
+    for i,id in zip(idxs,candidates):
+     if out[i].get('phraseIds') and id not in out[i].get('phraseIds',[]):continue
+     out[i]['ids']=[id]
+     out[i]['confidence']='authored-auto-precise-exact-occurrence'
+     out[i].pop('reason',None)
+
  # Born-aligned span guard: automatic recovery must never escape the
  # authored source span. This prevents a later exact/synonym pass from stealing
  # a matching Greek token elsewhere in the verse.
