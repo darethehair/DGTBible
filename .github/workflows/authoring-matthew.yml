@@ -2,11 +2,6 @@ name: Build pinned Matthew DGT batch
 on:
   push:
     paths:
-      - 'scripts/extract-stepbible-matthew.mjs'
-      - 'scripts/build-matthew.py'
-      - 'scripts/audit-matthew.py'
-      - 'scripts/epistle_common.py'
-      - 'scripts/alignment_repair.py'
       - 'data/authoring/matthew-*-dgt.tsv'
   workflow_dispatch:
     inputs:
