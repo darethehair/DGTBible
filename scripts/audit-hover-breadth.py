@@ -46,6 +46,32 @@ for book in catalog:
                 if len(words)>=5 or frac>=0.35:
                     rows.append(("precise-fanout",ref,gtext.get(wid,wid),len(words),ecount,frac," ".join(words)))
 
+            # One Greek ID scattered across separated DGT runs is more
+            # suspicious than a contiguous multiword rendering.
+            positions=defaultdict(list)
+            for ei,tok in enumerate(dgt):
+                for wid in tok.get("ids",[]):
+                    positions[wid].append(ei)
+            for wid,pos in positions.items():
+                if len(pos)<2:
+                    continue
+                groups=[]
+                start=prev=pos[0]
+                for p0 in pos[1:]:
+                    if p0==prev+1:
+                        prev=p0
+                    else:
+                        groups.append((start,prev))
+                        start=prev=p0
+                groups.append((start,prev))
+                span=(pos[-1]-pos[0]+1)/ecount
+                if len(groups)>=2 and (span>=0.35 or len(pos)>=5):
+                    detail=" | ".join(
+                        " ".join(dgt[i].get("text","") for i in range(a,b+1))
+                        for a,b in groups
+                    )
+                    rows.append(("precise-scattered",ref,gtext.get(wid,wid),len(pos),ecount,span,detail))
+
 rows.sort(key=lambda r:(-r[5],-r[3],r[1],r[2]))
 from collections import Counter
 book_interactions=Counter()
