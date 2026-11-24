@@ -755,6 +755,24 @@ def authored_dgt(text,src,spec,ref,literal=None):
      x['ids']=[candidates[0]]
      x['confidence']='authored-auto-precise-postguard-pronoun'
      x.pop('reason',None);used_by_family[k].add(candidates[0]);changed=True
+ # Finally bridge a remaining personal pronoun to an unused Greek relative
+ # pronoun when the verse has an exact one-to-one remainder. This handles
+ # idiomatic changes such as "which" -> "it" without guessing among multiples.
+ if literal:
+  personal_idxs=[i for i,x in enumerate(out) if not x.get('ids') and pronoun_key(x.get('text','')) in {'he','she','they','it'}]
+  used_ids={id for x in out for id in x.get('ids',[])}
+  rel_candidates=[]
+  for y in literal:
+   ykeys={pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pronoun_key(t)}
+   if 'relative' not in ykeys:continue
+   for id in y.get('ids',[]):
+    if id not in used_ids and id not in rel_candidates:rel_candidates.append(id)
+  if personal_idxs and len(personal_idxs)==len(rel_candidates):
+   src_pos={g['id']:j for j,g in enumerate(src)}
+   rel_candidates.sort(key=lambda id:src_pos.get(id,10**9))
+   for i,id in zip(personal_idxs,rel_candidates):
+    if out[i].get('phraseIds') and id not in out[i].get('phraseIds',[]):continue
+    out[i]['ids']=[id];out[i]['confidence']='authored-auto-precise-postguard-relative';out[i].pop('reason',None)
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
