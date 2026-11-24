@@ -14,9 +14,9 @@ await fs.mkdir('authoring',{recursive:true});
 const sblRes=await fetch(sblUrl);
 if(!sblRes.ok)throw new Error('Mark SBLGNT download failed: '+sblRes.status);
 const patterns=[
-  /(?:^|\\t)(?:Mrk|Mar|Mark|Mk)[ ._-]?(\\d+)[.:](\\d+)/i,
-  /(?:^|\\t)(?:MRK|MAR)\\s+(\\d+):(\\d+)/,
-  /(?:^|\\t)(?:Mrk|Mar|Mark|Mk)\\.(\\d+)\\.(\\d+)/i
+  /(?:^|\t)(?:Mrk|Mar|Mark|Mk)[ ._-]?(\d+)[.:](\d+)/i,
+  /(?:^|\t)(?:MRK|MAR)\s+(\d+):(\d+)/,
+  /(?:^|\t)(?:Mrk|Mar|Mark|Mk)\\.(\d+)\\.(\d+)/i
 ];
 const matched=[];
 const diagnostics=[];
@@ -24,7 +24,7 @@ for(const line of stepLines){
   let m=null;
   for(const p of patterns){ m=line.match(p); if(m) break; }
   if(m) matched.push(line);
-  else if(diagnostics.length<50 && /Mrk|Mar|Mark|\\bMRK\\b|\\bMAR\\b/i.test(line)) diagnostics.push(line);
+  else if(diagnostics.length<50 && /Mrk|Mar|Mark|\bMRK\b|\bMAR\b/i.test(line)) diagnostics.push(line);
 }
 await fs.writeFile('authoring/step-mark.tsv',['# STEPBible TAGNT extraction','# source: STEPBible/STEPBible-Data@'+upstreamSha,'# book: Mark',...matched].join('\n')+'\n');
 const sblLines=(await sblRes.text()).split(/\r?\n/).filter(line=>/^Mark \d+:\d+\t/.test(line));
