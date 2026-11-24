@@ -1,0 +1,16 @@
+name: Hover breadth sanity scan
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/audit-hover-breadth.py'
+      - '.github/workflows/audit-hover-breadth.yml'
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan for over-broad hover interactions
+        run: python scripts/audit-hover-breadth.py
