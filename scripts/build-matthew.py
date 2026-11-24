@@ -726,6 +726,35 @@ def authored_dgt(text,src,spec,ref,literal=None):
     if not kept:
      x['confidence']='authored-phrase-only'
      x['reason']='Automatic recovery candidate fell outside authored phrase span'
+
+ # The span guard can remove a formerly ambiguous automatic candidate and make
+ # a pronoun uniquely recoverable. Reconcile pronoun families one last time,
+ # using only unused literal IDs that remain inside each authored phrase span.
+ if literal:
+  changed=True
+  while changed:
+   changed=False
+   used_by_family=collections.defaultdict(set)
+   for x in out:
+    k=pronoun_key(x.get('text',''))
+    if k and k!='relative' and x.get('ids'):
+     used_by_family[k].update(x.get('ids',[]))
+   for x in out:
+    if x.get('ids'):continue
+    k=pronoun_key(x.get('text',''))
+    if not k or k=='relative':continue
+    allowed=set(x.get('phraseIds',[]))
+    candidates=[]
+    for y in literal:
+     if k not in {pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pronoun_key(t)}:continue
+     for id in y.get('ids',[]):
+      if id in used_by_family[k]:continue
+      if allowed and id not in allowed:continue
+      if id not in candidates:candidates.append(id)
+    if len(candidates)==1:
+     x['ids']=[candidates[0]]
+     x['confidence']='authored-auto-precise-postguard-pronoun'
+     x.pop('reason',None);used_by_family[k].add(candidates[0]);changed=True
  return out
 
 start=int(os.environ.get('START_CHAPTER','1')); end=int(os.environ.get('END_CHAPTER','1'))
