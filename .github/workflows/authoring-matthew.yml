@@ -22,6 +22,13 @@ jobs:
       END_CHAPTER: ${{ github.event.inputs.end_chapter || '3' }}
     steps:
       - uses: actions/checkout@v4
+      - name: Determine authored Matthew range on push
+        if: github.event_name == 'push'
+        run: |
+          latest=$(find data/authoring -maxdepth 1 -type f -name 'matthew-??-dgt.tsv' -printf '%f\n' | sed -E 's/^matthew-([0-9]{2})-dgt\.tsv$/\1/' | sort -n | tail -1)
+          test -n "$latest"
+          echo "START_CHAPTER=1" >> "$GITHUB_ENV"
+          echo "END_CHAPTER=$((10#$latest))" >> "$GITHUB_ENV"
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-matthew.mjs
       - name: Build Matthew range
