@@ -6,7 +6,7 @@ from pathlib import Path
 rows=[]
 # Explicitly reviewed multiword renderings that are semantically correct even
 # though one Greek source ID spans separated English words.
-ACCEPTED_PRECISE={('Acts 13:19','w8')}
+ACCEPTED_PRECISE={('Acts 13:19','w8'),('Acts 26:25','w5'),('Acts 23:24','w5')}
 for ch in range(1,29):
     p=Path("data/acts")/f"{ch:02}.json"
     if not p.exists(): continue
