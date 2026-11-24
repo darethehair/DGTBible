@@ -10,6 +10,7 @@ on:
       - 'scripts/epistle_common.py'
       - 'scripts/alignment_repair.py'
       - 'data/authoring/luke-*-dgt.tsv'
+      - '.github/workflows/authoring-luke.yml'
   workflow_dispatch:
     inputs:
       start_chapter:
@@ -55,6 +56,10 @@ jobs:
           git add data/luke/*.json data/sources/step-luke-*.json
           if ! git diff --cached --quiet; then
             git commit -m "Generate QA-clean Luke $START_CHAPTER-$END_CHAPTER batch"
+            # Extraction/build leaves tracked scratch files changed; keep the
+            # committed generated Luke payload, discard only unstaged scratch
+            # changes before rebasing against any concurrent main updates.
+            git reset --hard HEAD
             for attempt in 1 2 3; do
               git pull --rebase origin main && git push && break
               if [ "$attempt" = 3 ]; then exit 1; fi
