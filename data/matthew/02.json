@@ -21336,7 +21336,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "authored-auto-precise-final-positional",
             "phraseIds": [
               "w8",
               "w9",
@@ -21349,9 +21349,11 @@
           },
           {
             "text": "what",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w8",
               "w9",
@@ -21360,14 +21362,15 @@
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "was",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w8",
               "w9",
@@ -21376,8 +21379,7 @@
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "spoken",
@@ -21449,9 +21451,11 @@
           },
           {
             "text": "might",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-precise",
             "phraseIds": [
               "w8",
               "w9",
@@ -21460,8 +21464,7 @@
               "w12",
               "w13",
               "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "be",
