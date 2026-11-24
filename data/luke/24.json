@@ -982,7 +982,7 @@
       "v": 3,
       "greek": "εἰσελθοῦσαι δὲ οὐχ εὗρον τὸ σῶμα.",
       "literal": "Having entered however not they found the body",
-      "dgt": "but when they entered, they did not find the body of the Lord Jesus.",
+      "dgt": "but when they entered, they did not find the body.",
       "notes": [],
       "alignment": {
         "greek": [
@@ -1203,11 +1203,11 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w2",
               "w3",
               "w4",
               "w5",
-              "w6"
+              "w6",
+              "w7"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -1245,68 +1245,15 @@
             ]
           },
           {
-            "text": "body",
+            "text": "body.",
             "ids": [
               "w7"
             ],
-            "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w7"
-            ]
-          },
-          {
-            "text": "of",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
-          },
-          {
-            "text": "the",
-            "ids": [
-              "w6"
-            ],
-            "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
-          },
-          {
-            "text": "Lord",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
-          },
-          {
-            "text": "Jesus.",
-            "ids": [],
             "after": "",
-            "confidence": "authored-phrase-only",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
               "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           }
         ]
       }
