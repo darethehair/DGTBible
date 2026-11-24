@@ -212,6 +212,40 @@ def apply_reviewed(D,G,ch,vn):
    x['confidence']='acts-reviewed-synthetic';x.pop('reason',None);changes+=1
  return changes
 
+
+def reconcile_repeated_exact(D,L):
+ # Repair a common auto-alignment failure: repeated English helper/content
+ # words collapsing onto one source occurrence.  Only act when the literal
+ # layer provides exactly the same number of source-linked exact occurrences,
+ # making ordered pairing deterministic.  Explicit reviewed mappings win.
+ byword=collections.defaultdict(list)
+ for i,x in enumerate(D):
+  if x.get('supplied'):continue
+  w=norm(x.get('text',''))
+  if w:byword[w].append(i)
+ lids=collections.defaultdict(list)
+ for y in L:
+  for w in atoms(y.get('text','')):
+   for id in y.get('ids',[]):
+    if id not in lids[w]:lids[w].append(id)
+ changes=0
+ for w,idxs in byword.items():
+  if len(idxs)<2:continue
+  cand=lids.get(w,[])
+  if len(cand)!=len(idxs):continue
+  current=[tuple(D[i].get('ids',[])) for i in idxs]
+  if all(cur==(cand[j],) for j,cur in enumerate(current)):continue
+  # Never override an explicit reviewed decision.
+  if any(str(D[i].get('confidence','')).startswith('acts-reviewed-') for i in idxs):continue
+  # Only repair actual collapse/mis-order, not a purposeful multi-ID phrase.
+  flat=[id for cur in current for id in cur]
+  if len(set(flat))>=len(cand) and all(cur for cur in current):continue
+  for j,i in enumerate(idxs):
+   D[i]['ids']=[cand[j]];D[i]['phraseIds']=[cand[j]]
+   D[i]['confidence']='acts-final-repeated-exact'
+   D[i].pop('reason',None);changes+=1
+ return changes
+
 def exact_fixed_point(D,L):
  total=0
  while True:
@@ -269,6 +303,7 @@ for path in sorted(Path('data/acts').glob('[0-9][0-9].json')):
  for v in d.get('verses',[]):
   A=v.get('alignment',{});D=A.get('dgt',[]);G=A.get('greek',[]);L=A.get('literal',[])
   file_changed+=apply_reviewed(D,G,ch,v['v'])
+  file_changed+=reconcile_repeated_exact(D,L)
   file_changed+=exact_fixed_point(D,L)
   file_changed+=family_fixed_point(D,G)
   file_changed+=exact_fixed_point(D,L)
