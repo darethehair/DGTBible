@@ -8,7 +8,47 @@ from alignment_repair import norm,sim,semantic_terms,source_map
 # a reviewed target disappear.
 REVIEWED_PRECISION={(20,10):[('his',1,['w15'])]}
 REVIEWED_SUPPLIED={(8,10):[('them',1)]}
-REVIEWED_SYNTHETICS={}
+REVIEWED_SYNTHETICS={
+ (1,11):[('s8','looking',1)],
+ (1,15):[('s20','about',1)],
+ (2,5):[('s3','in',1)],
+ (3,19):[('s5','so',1)],
+ (4,37):[('s10','at',1)],
+ (5,19):[('s6','opened',1)],
+ (5,26):[('s8','brought',1)],
+ (7,34):[('s14','their',1)],
+ (7,46):[('s12','god',2)],
+ (9,21):[('s13','in',1)],
+ (13,38):[
+  ('s14','and',2),
+  ('s15','from',1),
+  ('s16','all',1),
+  ('s17','which',1),
+  ('s18','not',1),
+  ('s19','you',3),('s19','could',1),
+  ('s20','by',1),
+  ('s21','law',1),
+  ('s22','moses',1),
+  ('s23','be',1),('s23','justified',1),
+ ],
+ (15,4):[('s4','jerusalem',1)],
+ (16,11):[('s2','so',1)],
+ (18,23):[('s13','strengthening',1)],
+ (19,1):[('s15','came',1)],
+ (19,40):[
+  ('s22','and',1),
+  ('s23','these',1),
+  ('s24','saying',1),
+  ('s25','dismissed',1),
+  ('s26','assembly',1),('s27','assembly',1),
+ ],
+ (20,6):[('s21','where',1)],
+ (23,7):[('s4','said',1)],
+ (23,17):[('s12','bring',1)],
+ (23,18):[('s20','young',1),('s20','man',1)],
+ (26,1):[('s9','for',1)],
+ (28,23):[('s5','came',1)],
+}
 
 FAMILIES=[
  {'must','necessary','behooves','behoove','ought','needs','need','needed'},
