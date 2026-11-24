@@ -4,7 +4,7 @@ from collections import defaultdict,Counter
 from pathlib import Path
 
 rows=[]
-for ch in range(1,29):
+# Explicitly reviewed multiword renderings that are semantically correct even\n# though one Greek source ID spans separated English words.\nACCEPTED_PRECISE={('Acts 13:19','w8')}\nfor ch in range(1,29):
     p=Path("data/acts")/f"{ch:02}.json"
     if not p.exists(): continue
     d=json.loads(p.read_text(encoding="utf8"))
@@ -31,6 +31,7 @@ for ch in range(1,29):
                 positions[wid].append(i)
 
         for wid,words in byid.items():
+            if (ref,wid) in ACCEPTED_PRECISE: continue
             frac=len(words)/ec
             # Four English words from one Greek token is review-worthy;
             # 2-3 words are queued when scattered or unusually dominant.
@@ -38,6 +39,7 @@ for ch in range(1,29):
                 rows.append(("precise-fanout",ref,wid,len(words),ec,frac))
 
         for wid,pos in positions.items():
+            if (ref,wid) in ACCEPTED_PRECISE: continue
             if len(pos)<2: continue
             groups=1
             for i in range(1,len(pos)):
