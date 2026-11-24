@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
-rows=[]
+rows=[]  # Mark-only CI diagnostic
 for ch in range(1,17):
     p=Path("data/mark")/f"{ch:02}.json"
     d=json.loads(p.read_text(encoding="utf8"))
