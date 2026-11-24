@@ -83,6 +83,73 @@ def semantic_pass(D,G,L):
    x.pop('reason',None);changes+=1
  return changes
 
+
+def family_fixed_point(D,G):
+ src,pos=source_map(G);total=0
+ def fkey(w):
+  w=norm(w)
+  for n,g in enumerate(FAMILIES):
+   if w in g:return n
+  return None
+ while True:
+  changed=0
+  byfam=collections.defaultdict(list);used=collections.defaultdict(set)
+  for i,x in enumerate(D):
+   k=fkey(x.get('text',''))
+   if k is None:continue
+   if x.get('ids'):used[k].update(x.get('ids',[]))
+   else:byfam[k].append(i)
+  for k,idxs in byfam.items():
+   allowed=set()
+   for i in idxs:allowed.update(D[i].get('phraseIds',[]))
+   cand=[]
+   for id,g in src.items():
+    if id in used[k] or (allowed and id not in allowed):continue
+    if any(fkey(t)==k for t in semantic_terms(g,id,None)):
+     cand.append(id)
+   cand.sort(key=lambda id:pos.get(id,10**9))
+   if cand and len(cand)==len(idxs):
+    for i,id in zip(idxs,cand):
+     D[i]['ids']=[id];D[i]['phraseIds']=[id]
+     D[i]['confidence']='luke-postoverride-family'
+     D[i].pop('reason',None);used[k].add(id);changed+=1
+  total+=changed
+  if not changed:return total
+
+def pronoun_key(w):
+ w=norm(w)
+ groups={
+  'he':{'he','him','his','himself'},
+  'she':{'she','her','hers','herself'},
+  'they':{'they','them','their','theirs','themselves'},
+  'we':{'we','us','our','ours','ourselves'},
+  'you':{'you','your','yours','yourself','yourselves'},
+  'i':{'i','me','my','mine','myself'},
+  'it':{'it','its','itself'},
+ }
+ if w in {'who','whom','whose','which'}:return 'relative'
+ for k,g in groups.items():
+  if w in g:return k
+ return None
+
+def relative_bridge(D,L):
+ used={id for x in D for id in x.get('ids',[])}
+ relids=[]
+ for y in L:
+  if 'relative' in {pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pronoun_key(t)}:
+   for id in y.get('ids',[]):
+    if id not in used and id not in relids:relids.append(id)
+ changes=0
+ for i,x in enumerate(D):
+  if x.get('ids') or pronoun_key(x.get('text','')) not in {'he','she','they','it'}:continue
+  allowed=set(x.get('phraseIds',[]))
+  cand=[id for id in relids if not allowed or id in allowed]
+  if len(cand)==1:
+   id=cand[0];x['ids']=[id];x['phraseIds']=[id]
+   x['confidence']='luke-postoverride-relative'
+   x.pop('reason',None);used.add(id);relids.remove(id);changes+=1
+ return changes
+
 changed=0
 for path in sorted(Path('data/luke').glob('[0-9][0-9].json')):
  d=json.loads(path.read_text(encoding='utf8'))
@@ -90,8 +157,11 @@ for path in sorted(Path('data/luke').glob('[0-9][0-9].json')):
  for v in d.get('verses',[]):
   A=v.get('alignment',{});D=A.get('dgt',[]);G=A.get('greek',[]);L=A.get('literal',[])
   file_changed+=exact_fixed_point(D,L)
+  file_changed+=family_fixed_point(D,G)
   file_changed+=semantic_pass(D,G,L)
+  file_changed+=relative_bridge(D,L)
   file_changed+=exact_fixed_point(D,L)
+  file_changed+=family_fixed_point(D,G)
  if file_changed:
   path.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
   changed+=file_changed
