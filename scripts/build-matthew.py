@@ -625,6 +625,59 @@ def authored_dgt(text,src,spec,ref,literal=None):
      out[i]['confidence']='authored-auto-precise-exact-occurrence'
      out[i].pop('reason',None)
 
+ # Recover English multiword renderings of a single Greek lexeme.
+ # Examples: "got up" <- egeirō, "went away" <- aperchomai,
+ # "cast out" <- ekballō, "hand over" <- paradidōmi.  Reuse a neighboring
+ # precise Greek ID only for reviewed compound patterns and only when that ID
+ # lies inside both words' authored phrase span.
+ compound_pairs={
+  frozenset(('get','up')),frozenset(('got','up')),frozenset(('gets','up')),
+  frozenset(('go','away')),frozenset(('goes','away')),frozenset(('went','away')),frozenset(('going','away')),
+  frozenset(('come','out')),frozenset(('comes','out')),frozenset(('came','out')),frozenset(('coming','out')),
+  frozenset(('go','out')),frozenset(('goes','out')),frozenset(('went','out')),frozenset(('going','out')),
+  frozenset(('cast','out')),frozenset(('casts','out')),frozenset(('casting','out')),
+  frozenset(('throw','out')),frozenset(('throws','out')),frozenset(('threw','out')),
+  frozenset(('throw','away')),frozenset(('threw','away')),
+  frozenset(('send','away')),frozenset(('sends','away')),frozenset(('sent','away')),
+  frozenset(('take','up')),frozenset(('takes','up')),frozenset(('took','up')),
+  frozenset(('pick','up')),frozenset(('picks','up')),frozenset(('picked','up')),
+  frozenset(('cut','off')),frozenset(('cuts','off')),
+  frozenset(('tear','down')),frozenset(('tore','down')),frozenset(('torn','down')),
+  frozenset(('hand','over')),frozenset(('hands','over')),frozenset(('handed','over')),
+  frozenset(('pass','away')),frozenset(('passes','away')),frozenset(('passed','away')),
+  frozenset(('come','down')),frozenset(('came','down')),frozenset(('coming','down')),
+  frozenset(('go','down')),frozenset(('went','down')),frozenset(('going','down')),
+  frozenset(('come','up')),frozenset(('came','up')),frozenset(('coming','up')),
+  frozenset(('go','up')),frozenset(('went','up')),frozenset(('going','up')),
+ }
+ changed=True
+ while changed:
+  changed=False
+  for i,x in enumerate(out):
+   if x.get('ids'):continue
+   w=norm(x.get('text',''))
+   if not w:continue
+   for j in (i-1,i+1):
+    if not (0<=j<len(out)) or len(out[j].get('ids',[]))!=1:continue
+    w2=norm(out[j].get('text',''))
+    if frozenset((w,w2)) not in compound_pairs:continue
+    id=out[j]['ids'][0]
+    if x.get('phraseIds') and id in x.get('phraseIds',[]):
+     x['ids']=[id];x['confidence']='authored-auto-precise-compound';x.pop('reason',None);changed=True;break
+
+ # "became/got + adjective/participle" often renders one inflected Greek verb
+ # (e.g. "became afraid" for ephobēthē).  If the following lexical token is
+ # precisely linked to one source within the same authored span, share it.
+ for i,x in enumerate(out[:-1]):
+  if x.get('ids') or norm(x.get('text','')) not in {'became','become','got'}:continue
+  for j in range(i+1,min(len(out),i+4)):
+   y=out[j]
+   yw=norm(y.get('text',''))
+   if yw in GLUE:continue
+   if len(y.get('ids',[]))==1 and (not x.get('phraseIds') or y['ids'][0] in x.get('phraseIds',[])):
+    x['ids']=list(y['ids']);x['confidence']='authored-auto-precise-compound-state';x.pop('reason',None)
+   break
+
  # Born-aligned span guard: automatic recovery must never escape the
  # authored source span. This prevents a later exact/synonym pass from stealing
  # a matching Greek token elsewhere in the verse.
