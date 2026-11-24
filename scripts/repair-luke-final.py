@@ -150,12 +150,45 @@ def relative_bridge(D,L):
    x.pop('reason',None);used.add(id);relids.remove(id);changes+=1
  return changes
 
+
+REVIEWED_SYNTHETICS={
+ (2,48,'s21'):('and',2),(2,48,'s22'):('i',1),
+ (5,13,'s7'):('saying',1),(5,36,'s20'):('otherwise',1),(5,37,'s11'):('otherwise',1),
+ (6,3,'s14'):('when',1),
+ (10,6,'s15'):('otherwise',1),(10,15,'s11'):('brought',1),(10,39,'s14'):('jesus',1),
+ (11,33,'s19'):('light',1),
+ (13,9,'s10'):('not',1),(13,21,'s7'):('hid',1),
+ (14,32,'s3'):('not',1),
+ (15,16,'s3'):('fill',1),(15,16,'s7'):('with',1),
+ (20,24,'s9'):('answered',1),(20,26,'s5'):('saying',1),
+ (22,61,'s13'):('word',1),
+ (23,42,'s8'):('into',1),
+ (24,47,'s8'):('and',2),
+}
+
+def reviewed_synthetic_links(D,G,ch,vn):
+ source={id for g in G for id in g.get('ids',[])}
+ changes=0
+ for (mc,mv,sid),(word,occ) in REVIEWED_SYNTHETICS.items():
+  if (mc,mv)!=(ch,vn) or sid not in source:continue
+  if any(sid in x.get('ids',[]) for x in D):continue
+  matches=[i for i,x in enumerate(D) if norm(x.get('text',''))==word]
+  if occ<1 or occ>len(matches):
+   raise SystemExit(f'Luke {ch}:{vn}: reviewed synthetic {sid} target {word!r} occurrence {occ} not found')
+  x=D[matches[occ-1]]
+  x['ids']=list(dict.fromkeys(x.get('ids',[])+[sid]))
+  x['phraseIds']=list(dict.fromkeys(x.get('phraseIds',[])+[sid]))
+  x['confidence']='luke-reviewed-synthetic'
+  x.pop('reason',None);changes+=1
+ return changes
+
 changed=0
 for path in sorted(Path('data/luke').glob('[0-9][0-9].json')):
  d=json.loads(path.read_text(encoding='utf8'))
  file_changed=0
  for v in d.get('verses',[]):
   A=v.get('alignment',{});D=A.get('dgt',[]);G=A.get('greek',[]);L=A.get('literal',[])
+  file_changed+=reviewed_synthetic_links(D,G,int(path.stem),v['v'])
   file_changed+=exact_fixed_point(D,L)
   file_changed+=family_fixed_point(D,G)
   file_changed+=semantic_pass(D,G,L)
