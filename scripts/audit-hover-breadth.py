@@ -1,3 +1,4 @@
+# post-cleanup scan checkpoint: 1Cor 15:10, Phil 1:7, Col 1:16, 1Thess 2:13
 # precise-fanout review marker 2026-11-24
 # diagnostic rerun marker: conservative cleanup wave 2026-11-24
 #!/usr/bin/env python3
