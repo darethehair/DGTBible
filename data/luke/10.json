@@ -10033,13 +10033,9 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+              "w2"
             ]
           },
           {
@@ -10067,16 +10063,12 @@
           {
             "text": "you",
             "ids": [
-              "w2"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w7"
+              "w8"
             ]
           },
           {
@@ -10092,17 +10084,14 @@
           },
           {
             "text": "exalted",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w7",
+            "ids": [
               "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "to",
