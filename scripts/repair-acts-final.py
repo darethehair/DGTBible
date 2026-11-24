@@ -288,6 +288,42 @@ FAMILIES=[
  {'come','comes','came','coming','arrive','arrived','approach','approached'},
  {'believe','believes','believed','faith','faithful'},
  {'save','saves','saved','salvation'},
+ {'enter','enters','entered','entering','go','goes','went','gone','going','come','comes','came','coming','arrive','arrived','approach','approached'},
+ {'leave','leaves','left','depart','departs','departed','withdraw','withdrew','withdrawing'},
+ {'carry','carries','carried','bear','bears','bore','borne','bring','brings','brought'},
+ {'put','puts','placed','place','set','sets','lay','lays','laid'},
+ {'ask','asks','asked','request','requested','beg','begged','urge','urged'},
+ {'kill','kills','killed','execute','executed','destroy','destroyed','slay','slain'},
+ {'endure','endured','enduring','bear','bore','put','up','tolerate','tolerated'},
+ {'announce','announcing','evangelize','evangelizing','evangelising','preach','preaching','proclaim','proclaiming'},
+ {'good','news','gospel','evangelize','evangelizing','evangelising'},
+ {'great','much','many','large'},
+ {'think','thinks','thought','suppose','supposed','consider','considered','reason','reasoning'},
+ {'desire','desired','desiring','want','wanted','wanting','intend','intended','intending'},
+ {'find','found','finding','discover','discovered'},
+ {'know','knows','knew','known','recognize','recognized','understand','understood'},
+ {'speak','spoke','spoken','speaking','say','said','saying','tell','told'},
+ {'hear','heard','hearing','listen','listened','listening'},
+ {'see','saw','seen','seeing','look','looked','looking','observe','observed'},
+ {'stand','stood','standing','rise','rose','risen','get','got'},
+ {'sit','sat','sitting','recline','reclined'},
+ {'fear','feared','afraid','frightened','terrified'},
+ {'rejoice','rejoiced','rejoicing','glad','gladness','joy'},
+ {'trouble','troubled','disturb','disturbed','stir','stirred','uproar'},
+ {'strong','strength','strengthened','power','powerful','mighty'},
+ {'heal','healed','healing','cure','cured'},
+ {'write','wrote','written','inscribe','inscribed'},
+ {'read','reading'},
+ {'teach','taught','teaching','instruct','instructed'},
+ {'choose','chose','chosen','select','selected','appoint','appointed'},
+ {'receive','received','welcome','welcomed','accept','accepted'},
+ {'release','released','free','freed','dismiss','dismissed'},
+ {'bind','bound','chain','chains'},
+ {'house','home','dwelling','lodging'},
+ {'road','way','path'},
+ {'ship','boat','vessel'},
+ {'money','silver','coin','coins'},
+ {'work','works','deed','deeds','doing','do','did','done','perform','performed'},
 ]
 
 def atoms(s):
@@ -437,6 +473,40 @@ def mark_unresolved_glue_supplied(D):
    changes+=1
  return changes
 
+
+SEMANTIC_GLUE=set('a an the and but or so for because since if then than as of to from in into on at by with through before after about against under over until when while where why how what whether though although toward i you he she it we they me him her us them my your his our their mine yours hers ours theirs am is are was were be been being have has had do does did will would shall should may might can could must not no'.split())
+
+def global_semantic_recover(D,G):
+ # Recover unresolved content words whose original positional window missed the
+ # right source token.  Require one clearly best semantic candidate across the
+ # entire verse; ambiguous movement/repetition remains for manual review.
+ src,pos=source_map(G);changes=0
+ for i,x in enumerate(D):
+  if x.get('ids') or x.get('supplied') or reviewed_token(x):continue
+  w=norm(x.get('text',''))
+  if not w or w in SEMANTIC_GLUE:continue
+  scored=[]
+  for id,g in src.items():
+   terms=set(semantic_terms(g,id,None))
+   z=max((fscore(w,t) for t in terms),default=0)
+   if z>=9:scored.append((z,id))
+  if not scored:continue
+  best=max(z for z,_ in scored)
+  tops=list(dict.fromkeys(id for z,id in scored if z==best))
+  chosen=None
+  if len(tops)==1:
+   second=max((z for z,_ in scored if z<best),default=0)
+   if best>=12 or best-second>=2:chosen=tops[0]
+  elif best>=12:
+   erel=i/max(1,len(D)-1)
+   ranked=sorted((abs(erel-pos.get(id,0)/max(1,len(G)-1)),id) for id in tops)
+   if len(ranked)>=2 and ranked[1][0]-ranked[0][0]>=0.12:chosen=ranked[0][1]
+  if chosen:
+   x['ids']=[chosen];x['phraseIds']=[chosen]
+   x['confidence']='acts-final-global-semantic'
+   x.pop('reason',None);changes+=1
+ return changes
+
 def exact_fixed_point(D,L):
  total=0
  while True:
@@ -497,6 +567,7 @@ for path in sorted(Path('data/acts').glob('[0-9][0-9].json')):
   file_changed+=reconcile_repeated_exact(D,L)
   file_changed+=exact_fixed_point(D,L)
   file_changed+=family_fixed_point(D,G)
+  file_changed+=global_semantic_recover(D,G)
   file_changed+=helper_verb_recover(D,G)
   file_changed+=exact_fixed_point(D,L)
   file_changed+=mark_unresolved_glue_supplied(D)
