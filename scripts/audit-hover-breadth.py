@@ -1,3 +1,4 @@
+# diagnostic rerun marker: conservative cleanup wave 2026-11-24
 #!/usr/bin/env python3
 import json
 from pathlib import Path
