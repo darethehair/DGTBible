@@ -35,6 +35,65 @@ def authored_dgt(text,src,spec,ref,literal=None):
    {'labor','labour','toil','toiling'},
    {'encourage','encouraging','exhort','exhorting','exhortation'},
    {'equal','equals','equality','equally'},
+   {'record','book'},
+   {'fathered','begat','begotten','bore','born','birth'},
+   {'deportation','carrying','away','exile'},
+   {'birth','origin','genealogy'},
+   {'betrothed','pledging','pledged'},
+   {'wanting','willing','wanted'},
+   {'expose','disgrace','public'},
+   {'intended','purposed','purpose'},
+   {'considering','pondering','pondered'},
+   {'take','receive','received','took'},
+   {'happened','come','pass','occurred'},
+   {'fulfilled','fulfill','fulfilled'},
+   {'risen','arisen','awoken','rise','arise'},
+   {'asked','inquiring','inquired','ask'},
+   {'ruler','leading','leader'},
+   {'determined','ascertained','inquired','exactly'},
+   {'sending','sent'},
+   {'report','news','word'},
+   {'seen','saw'},
+   {'ahead','before'},
+   {'above','over'},
+   {'entering','come','came'},
+   {'road','route','way'},
+   {'withdrawn','withdrawing','withdrew'},
+   {'mocked','outwitted'},
+   {'angry','enraged'},
+   {'killed','executed'},
+   {'surrounding','vicinity','region','district'},
+   {'reigning','rules','rule'},
+   {'settled','dwelt','dwell'},
+   {'clothing','garment'},
+   {'offspring','brood'},
+   {'warned','forewarned'},
+   {'axe','ax'},
+   {'lies','applied'},
+   {'stronger','mightier'},
+   {'worthy','fit'},
+   {'clean','clear','cleared'},
+   {'storehouse','barn'},
+   {'prevent','hindering','hinder'},
+   {'allow','permit','permits','allowed'},
+   {'like','as'},
+   {'coming','alighting','comes','came'},
+   {'tempter','tempting'},
+   {'command','orders','order'},
+   {'lift','bear'},
+   {'put','test'},
+   {'left','leaves','leave'},
+   {'serving','ministering','minister'},
+   {'handed','delivered'},
+   {'leaving','left'},
+   {'darkness','dark'},
+   {'rose','dawned'},
+   {'throughout','all','through'},
+   {'suffering','sick','oppressing'},
+   {'afflicted','oppressing','demonised','epileptic','paralytic'},
+   {'demons','demonised'},
+   {'seizures','epileptic'},
+   {'paralysis','paralytic'},
   ]
   a=norm(a);b=norm(b)
   z=sim(a,b)
@@ -429,6 +488,37 @@ def authored_dgt(text,src,spec,ref,literal=None):
      x['confidence']='authored-auto-precise-final-bundled-pronoun'
      x.pop('reason',None)
      changed=True
+ # Deterministic pronoun-family recovery within the already-authored phrase
+ # span. This mirrors the audit's conservative rule: link only when exactly one
+ # still-unused literal source candidate of the same pronoun family remains.
+ if literal:
+  changed=True
+  while changed:
+   changed=False
+   used_by_family=collections.defaultdict(set)
+   for x in out:
+    k=pronoun_key(x.get('text',''))
+    if k and k!='relative' and x.get('ids'):
+     used_by_family[k].update(x.get('ids',[]))
+   for i,x in enumerate(out):
+    if x.get('ids'):continue
+    k=pronoun_key(x.get('text',''))
+    if not k or k=='relative':continue
+    allowed=set(x.get('phraseIds',[]))
+    candidates=[]
+    for y in literal:
+     if k not in {pronoun_key(t) for t in re.findall(r"[A-Za-z0-9]+",y.get('text','')) if pronoun_key(t)}:continue
+     for id in y.get('ids',[]):
+      if id in used_by_family[k]:continue
+      if allowed and id not in allowed:continue
+      if id not in candidates:candidates.append(id)
+    if len(candidates)==1:
+     x['ids']=[candidates[0]]
+     x['confidence']='authored-auto-precise-pronoun-family'
+     x.pop('reason',None)
+     used_by_family[k].add(candidates[0])
+     changed=True
+
  # Born-aligned span guard: automatic recovery must never escape the
  # authored source span. This prevents a later exact/synonym pass from stealing
  # a matching Greek token elsewhere in the verse.
