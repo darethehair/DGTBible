@@ -449,17 +449,14 @@
           },
           {
             "text": "fulfilled,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "they",
@@ -533,17 +530,14 @@
           },
           {
             "text": "same",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
+            "ids": [
               "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "place.",
@@ -1755,17 +1749,14 @@
           },
           {
             "text": "rested",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "on",
@@ -4153,17 +4144,14 @@
           },
           {
             "text": "astonished",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "and",
@@ -4222,17 +4210,14 @@
           },
           {
             "text": "not",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "all",
@@ -6959,26 +6944,26 @@
           {
             "text": "they",
             "ids": [
-              "w1",
               "w5"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w1",
               "w5"
             ]
           },
           {
             "text": "were",
             "ids": [
-              "w1",
               "w5"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise-bundled",
             "phraseIds": [
               "w1",
+              "w2",
+              "w3",
+              "w4",
               "w5"
             ]
           },
@@ -6995,14 +6980,17 @@
           },
           {
             "text": "astonished",
-            "ids": [
-              "w1"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w1"
-            ]
+              "w2",
+              "w3",
+              "w4",
+              "w5",
+              "w6"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "and",
@@ -7054,31 +7042,25 @@
           },
           {
             "text": "one",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w12"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "another,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w12",
-              "w13"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "“What",
@@ -7095,15 +7077,10 @@
             "text": "does",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "reason": "English supplied for natural rendering; no separate Greek token",
+            "supplied": true
           },
           {
             "text": "this",
@@ -7118,17 +7095,16 @@
           },
           {
             "text": "mean?”",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
+            "ids": [
               "w12",
-              "w13",
               "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w12",
+              "w14"
+            ]
           }
         ]
       }
@@ -8991,17 +8967,14 @@
           },
           {
             "text": "drunk,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "as",
@@ -9071,15 +9044,10 @@
             "text": "only",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "reason": "English supplied for natural rendering; no separate Greek token",
+            "supplied": true
           },
           {
             "text": "the",
@@ -15285,31 +15253,25 @@
         "dgt": [
           {
             "text": "this",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "man,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "delivered",
@@ -15350,9 +15312,13 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w2"
+              "w2",
+              "w3",
+              "w4",
+              "w5",
+              "w6"
             ]
           },
           {
@@ -15446,6 +15412,17 @@
           {
             "text": "by",
             "ids": [
+              "w2"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w2"
+            ]
+          },
+          {
+            "text": "fastening",
+            "ids": [
               "w14"
             ],
             "after": " ",
@@ -15453,20 +15430,6 @@
             "phraseIds": [
               "w14"
             ]
-          },
-          {
-            "text": "fastening",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "him",
@@ -15499,17 +15462,14 @@
           },
           {
             "text": "cross",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w11",
-              "w12",
-              "w13",
+            "ids": [
               "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "through",
@@ -15547,12 +15507,12 @@
           {
             "text": "of",
             "ids": [
-              "w13"
+              "w8"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w13"
+              "w8"
             ]
           },
           {
@@ -15568,17 +15528,14 @@
           },
           {
             "text": "men.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w13"
+            ]
           }
         ]
       }
@@ -29818,31 +29775,25 @@
         "dgt": [
           {
             "text": "Fear",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
+            "ids": [
               "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "came",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "upon",
@@ -29953,31 +29904,25 @@
           },
           {
             "text": "being",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "done",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "through",
