@@ -10793,7 +10793,7 @@
       "v": 18,
       "greek": "ἐν αἷς εὗρόν με ἡγνισμένον ἐν τῷ ἱερῷ, οὐ μετὰ ὄχλου οὐδὲ μετὰ θορύβου,",
       "literal": "during which they found me purified in the temple not with a crowd nor in tumult",
-      "dgt": "in which they found me purified in the temple, not with a crowd or disturbance. But there were some Jews from Asia,",
+      "dgt": "in which they found me purified in the temple, not with a crowd or disturbance.",
       "notes": [],
       "alignment": {
         "greek": [
@@ -11213,11 +11213,11 @@
             "after": " ",
             "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w3",
-              "w4",
               "w5",
               "w6",
-              "w7"
+              "w7",
+              "w8",
+              "w9"
             ]
           },
           {
@@ -11298,94 +11298,6 @@
           {
             "text": "disturbance.",
             "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
-          },
-          {
-            "text": "But",
-            "ids": [],
-            "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
-          },
-          {
-            "text": "there",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
-          },
-          {
-            "text": "were",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
-          },
-          {
-            "text": "some",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
-          },
-          {
-            "text": "Jews",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
-          },
-          {
-            "text": "from",
-            "ids": [],
-            "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
-          },
-          {
-            "text": "Asia,",
-            "ids": [],
             "after": "",
             "confidence": "authored-phrase-only",
             "phraseIds": [
@@ -11404,7 +11316,7 @@
       "v": 19,
       "greek": "τινὲς δὲ ἀπὸ τῆς Ἀσίας Ἰουδαῖοι, οὓς ἔδει ἐπὶ σοῦ παρεῖναι καὶ κατηγορεῖν εἴ τι ἔχοιεν πρὸς ἐμέ,",
       "literal": "Some however are from the Asia Jews 19 who it was necessary before you to appear and to make accusation if anything they would have against me myself.",
-      "dgt": "who ought to be present before you and accuse me if they have anything against me.",
+      "dgt": "But there were some Jews from Asia who ought to be present before you and accuse me if they have anything against me.",
       "notes": [],
       "alignment": {
         "greek": [
@@ -11847,6 +11759,87 @@
         ],
         "dgt": [
           {
+            "text": "But",
+            "ids": [],
+            "after": " ",
+            "confidence": "acts-final-supplied-glue",
+            "phraseIds": [],
+            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
+            "supplied": true
+          },
+          {
+            "text": "there",
+            "ids": [],
+            "after": " ",
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
+          },
+          {
+            "text": "were",
+            "ids": [],
+            "after": " ",
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
+          },
+          {
+            "text": "some",
+            "ids": [
+              "w1"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w1"
+            ]
+          },
+          {
+            "text": "Jews",
+            "ids": [
+              "w6"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w6"
+            ]
+          },
+          {
+            "text": "from",
+            "ids": [
+              "w3"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w3"
+            ]
+          },
+          {
+            "text": "Asia",
+            "ids": [
+              "w5"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w5"
+            ]
+          },
+          {
             "text": "who",
             "ids": [
               "w7"
@@ -11881,17 +11874,14 @@
           },
           {
             "text": "be",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-final-helper-verb",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "present",
@@ -11899,11 +11889,11 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
               "w7",
-              "w8"
+              "w8",
+              "w9",
+              "w10",
+              "w11"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
@@ -11946,11 +11936,11 @@
             "after": " ",
             "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
               "w11",
-              "w12"
+              "w12",
+              "w13",
+              "w14",
+              "w15"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
