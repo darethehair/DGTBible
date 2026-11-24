@@ -860,7 +860,7 @@ def auto_alignment_spec(text,src):
  # Prefer a unique strong lexical source anywhere in the verse; otherwise
  # constrain the fallback phrase hover to a local window of at most five
  # source tokens so no English token can light up half a long verse.
- toks=re.findall(r'\\S+',text)
+ toks=re.findall(r'\S+',text)
  if not toks:return []
  nsrc=len(src)
  out=[]
