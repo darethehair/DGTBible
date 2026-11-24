@@ -11009,12 +11009,8 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
               "w10"
             ]
           },
@@ -11173,12 +11169,12 @@
           {
             "text": "have",
             "ids": [
-              "w10"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w10"
+              "w16"
             ]
           },
           {
@@ -16528,12 +16524,8 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
               "w8"
             ]
           },
@@ -16577,16 +16569,12 @@
           {
             "text": "to",
             "ids": [
-              "w8"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+              "w14"
             ]
           },
           {
@@ -16625,12 +16613,12 @@
           {
             "text": "to",
             "ids": [
-              "w8"
+              "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8"
+              "w15"
             ]
           },
           {
@@ -16731,12 +16719,8 @@
               "w22"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
               "w22"
             ]
           },
@@ -17697,14 +17681,12 @@
           },
           {
             "text": "for",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "English supplied for natural rendering; no separate Greek token"
           },
           {
             "text": "more",
@@ -17793,12 +17775,12 @@
           {
             "text": "are",
             "ids": [
-              "w27"
+              "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w27"
+              "w6"
             ]
           },
           {
@@ -17865,12 +17847,12 @@
           {
             "text": "They",
             "ids": [
-              "w23"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w23"
+              "w14"
             ]
           },
           {
@@ -18027,16 +18009,12 @@
           {
             "text": "they",
             "ids": [
-              "w27"
+              "w23"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
+              "w23"
             ]
           },
           {
@@ -18070,12 +18048,12 @@
           {
             "text": "him,",
             "ids": [
-              "w24"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w24"
+              "w8"
             ]
           },
           {
@@ -18106,13 +18084,9 @@
               "w27"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31"
+              "w27"
             ]
           },
           {
@@ -18151,12 +18125,12 @@
           {
             "text": "for",
             "ids": [
-              "w8"
+              "w29"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8"
+              "w29"
             ]
           },
           {
@@ -20182,23 +20156,23 @@
           {
             "text": "they",
             "ids": [
-              "w8"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8"
+              "w5"
             ]
           },
           {
             "text": "may",
             "ids": [
-              "w8"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8"
+              "w5"
             ]
           },
           {
@@ -20207,13 +20181,9 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+              "w5"
             ]
           },
           {
@@ -20229,17 +20199,14 @@
           },
           {
             "text": "on",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "them",
@@ -20512,29 +20479,21 @@
             "text": "And",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "reason": "English supplied for natural rendering; no separate Greek token",
+            "supplied": true
           },
           {
             "text": "he",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "wrote",

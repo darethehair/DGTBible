@@ -836,12 +836,12 @@
           {
             "text": "And",
             "ids": [
-              "w30"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w30"
+              "w2"
             ]
           },
           {
@@ -1079,12 +1079,12 @@
           {
             "text": "and",
             "ids": [
-              "w30"
+              "w23"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w30"
+              "w23"
             ]
           },
           {
@@ -6334,23 +6334,26 @@
           },
           {
             "text": "of",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "English supplied for natural rendering; no separate Greek token"
           },
           {
             "text": "them,",
             "ids": [],
             "after": " ",
-            "confidence": "acts-reviewed-supplied",
-            "phraseIds": [],
-            "reason": "English supplied for natural rendering; no separate Greek token",
-            "supplied": true
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "from",
@@ -23125,23 +23128,23 @@
           {
             "text": "taken",
             "ids": [
-              "w8"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8"
+              "w16"
             ]
           },
           {
             "text": "away",
             "ids": [
-              "w8"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8"
+              "w16"
             ]
           },
           {
@@ -27631,16 +27634,12 @@
           {
             "text": "was",
             "ids": [
-              "w3"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+              "w8"
             ]
           },
           {
@@ -27846,12 +27845,12 @@
           {
             "text": "he",
             "ids": [
-              "w8"
+              "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8"
+              "w15"
             ]
           },
           {

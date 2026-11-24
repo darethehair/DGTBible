@@ -7719,13 +7719,9 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-final-repeated-exact",
             "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+              "w5"
             ]
           },
           {
@@ -7761,16 +7757,12 @@
           {
             "text": "Lord",
             "ids": [
-              "w5"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-phrase-positional",
+            "confidence": "acts-final-repeated-exact",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+              "w8"
             ]
           },
           {
@@ -21261,28 +21253,21 @@
           },
           {
             "text": "a",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "English supplied for natural rendering; no separate Greek token"
           },
           {
             "text": "citizen.”",
             "ids": [],
             "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "acts-reviewed-supplied",
+            "phraseIds": [],
+            "reason": "English supplied for natural rendering; no separate Greek token",
+            "supplied": true
           }
         ]
       }
