@@ -19,5 +19,6 @@ await fs.writeFile('authoring/step-acts.tsv',['# STEPBible TAGNT extraction','# 
 const sblLines=(await sblRes.text()).split(/\r?\n/).filter(line=>/^Acts \d+:\d+\t/.test(line));
 await fs.writeFile('authoring/sblgnt-acts.txt',['# SBLGNT extraction','# source: Faithlife/SBLGNT@'+sblgntSha,'# book: Acts',...sblLines].join('\n')+'\n');
 console.log('Matched',sblLines.length,'SBLGNT verses and',matched.length,'TAGNT lines for Acts');
+console.log('First Acts TAGNT rows:', matched.slice(0,3));
 if(sblLines.length!==1002)throw new Error('Unexpected SBLGNT verse count for Acts: '+sblLines.length);
 if(matched.length<10000)throw new Error('Too few TAGNT lines for Acts');
