@@ -426,6 +426,25 @@ REVIEWED_PRECISION={
   ('was',1,['w4']),('traveling',1,['w4']),('regions',1,['w6']),
   ('he',1,['w7']),('down',1,['w7']),('ones',1,['w11','w12']),('living',1,['w13'])
  ],
+ (10,12):[
+  ('four-footed',1,['w6']),('animals',1,['w6']),('reptiles',1,['w12'])
+ ],
+ (11,8):[('certainly',1,['w3']),('not',1,['w3'])],
+ (11,14):[('words',1,['w3']),('your',1,['w14'])],
+ (13,44):[('next',1,['w3'])],
+ (14,2):[('who',1,['w3']),('embittered',1,['w7']),('souls',1,['w9'])],
+ (15,8):[('who',1,['w3']),('giving',1,['w7']),('just',1,['w13'])],
+ (15,14):[('described',1,['w2'])],
+ (15,30):[('dismissed',1,['w4']),('together',1,['w9'])],
+ (16,23):[
+  ('inflicting',1,['w3','w5']),('commanding',1,['w9']),
+  ('guard',1,['w13']),('securely',1,['w12'])
+ ],
+ (16,32):[('him',1,['w3']),('together',1,['w8'])],
+ (16,34):[
+  ('bringing',1,['w1']),('up',1,['w1']),('food',1,['w9']),('greatly',1,['w11'])
+ ],
+ (18,28):[('is',1,['w11'])],
 }
 REVIEWED_SUPPLIED={
  (8,10):[('them',1)],
@@ -489,6 +508,9 @@ REVIEWED_SUPPLIED={
  (3,17):[('did',1)],
  (7,31):[('more',1)],
  (9,18):[('something',1)],
+ (10,12):[('kinds',1)],
+ (15,8):[('he',1),('did',1)],
+ (18,28):[('that',1)],
 }
 REVIEWED_SYNTHETICS={
  (1,11):[('s8','looking',1)],
