@@ -1,5 +1,6 @@
 import json,os,re,unicodedata,collections
 from pathlib import Path
+from alignment_repair import sim as lexical_sim
 start=int(os.environ.get('START_CHAPTER','1'));end=int(os.environ.get('END_CHAPTER','1'))
 def n(s):
  s=unicodedata.normalize('NFD',str(s)).lower()
@@ -48,10 +49,21 @@ for ch in range(start,end+1):
    if x.get('phraseIds') and any(i not in set(x.get('phraseIds',[])) for i in x.get('ids',[])):
     out_of_span.append((ch,v['v'],x.get('text',''),x.get('ids',[]),x.get('phraseIds',[]),x.get('confidence','')))
    assert all(i in ids for i in (x.get('ids',[])+x.get('phraseIds',[]))),f'dangling alignment Matthew {ch}:{v["v"]}'
+  # Phrase-only English is valid when the translation is genuinely idiomatic:
+  # the UI highlights its complete authored Greek span. Still fail when a
+  # strong single-token lexical counterpart exists inside that span, because
+  # that should receive a precise hover link rather than hiding in a phrase.
+  lit_by_id=collections.defaultdict(set)
+  for y in L:
+   for id in y.get('ids',[]):
+    lit_by_id[id].update(atoms(y.get('text','')))
   for x in D:
    cw=n(x.get('text',''))
-   if cw and cw not in CONTENT_GLUE and not x.get('ids',[]) and not x.get('supplied'):
-    orphan_content.append((ch,v['v'],x.get('text',''),x.get('phraseIds',[])))
+   if not cw or cw in CONTENT_GLUE or x.get('ids',[]) or x.get('supplied'):continue
+   pids=x.get('phraseIds',[])
+   strong=any(lexical_sim(cw,t)>=8 for id in pids for t in lit_by_id.get(id,set()))
+   if not pids or strong:
+    orphan_content.append((ch,v['v'],x.get('text',''),pids))
   used_precise={i for x in D for i in x.get('ids',[])}
   for g in v['alignment']['greek']:
    gid=(g.get('ids') or [None])[0]
