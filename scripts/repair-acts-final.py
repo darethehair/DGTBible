@@ -561,6 +561,9 @@ REVIEWED_PRECISION_ROWS=[
  ((17,7),[('welcomed',1,['w2']),('them',1,['w1']),('they',1,['w5']),('act',1,['w11']),('saying',1,['w14']),('there',1,['w15']),('is',1,['w15'])]),
  ((18,17),[('began',1,['w9']),('none',1,['w14']),('mattered',1,['w18'])]),
  ((18,23),[('spending',1,['w2'])])
+ ((5,41),[('be',1,['w17'])]),
+ ((26,25),[('speak',1,['w14'])]),
+ ((23,24),[('on',1,['w5'])]),
 ]
 REVIEWED_PRECISION={}
 for _k,_rows in REVIEWED_PRECISION_ROWS:
