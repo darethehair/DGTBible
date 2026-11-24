@@ -12764,14 +12764,17 @@
           },
           {
             "text": "like",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w8"
-            ]
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "scales",
@@ -12852,6 +12855,17 @@
           },
           {
             "text": "saw",
+            "ids": [
+              "w10"
+            ],
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w10"
+            ]
+          },
+          {
+            "text": "again.",
             "ids": [],
             "after": " ",
             "confidence": "authored-phrase-only",
@@ -12863,17 +12877,6 @@
               "w11"
             ],
             "reason": "Covered by authored phrase span; no safe lexical hover target"
-          },
-          {
-            "text": "again.",
-            "ids": [
-              "w10"
-            ],
-            "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w10"
-            ]
           },
           {
             "text": "Then",

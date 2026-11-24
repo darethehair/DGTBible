@@ -5235,12 +5235,12 @@
           {
             "text": "a",
             "ids": [
-              "w4"
+              "w6"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
+            "confidence": "authored-auto-precise",
             "phraseIds": [
-              "w4"
+              "w6"
             ]
           },
           {
@@ -5408,17 +5408,14 @@
           },
           {
             "text": "common.’",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
+            "ids": [
               "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w16"
+            ]
           }
         ]
       }
@@ -14541,17 +14538,14 @@
           },
           {
             "text": "who",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "believed",
