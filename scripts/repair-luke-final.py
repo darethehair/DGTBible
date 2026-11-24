@@ -151,6 +151,29 @@ def relative_bridge(D,L):
  return changes
 
 
+
+def apply_reviewed_precision_fixes(D,ch,vn):
+ fixes={
+  # Luke 22:55: English auxiliary "had" belongs with περιάψαντων
+  # ("having kindled"), and the final "sat" belongs with ἐκάθητο
+  # ("was sitting"), not συγκαθισάντων ("having sat down together").
+  (22,55):[
+   ('had',1,['w1']),
+   ('sat',2,['w11']),
+  ],
+ }
+ changes=0
+ for word,occ,ids in fixes.get((ch,vn),[]):
+  matches=[x for x in D if norm(x.get('text',''))==word]
+  if occ<1 or occ>len(matches):
+   raise SystemExit(f'Luke {ch}:{vn}: reviewed precision target {word!r} occurrence {occ} not found')
+  x=matches[occ-1]
+  if x.get('ids')!=ids or x.get('phraseIds')!=ids:
+   x['ids']=ids[:];x['phraseIds']=ids[:]
+   x['confidence']='luke-reviewed-precision'
+   x.pop('reason',None);changes+=1
+ return changes
+
 REVIEWED_SYNTHETICS={
  (2,48,'s21'):('and',2),(2,48,'s22'):('i',1),
  (5,13,'s7'):('saying',1),(5,36,'s20'):('otherwise',1),(5,37,'s11'):('otherwise',1),
@@ -190,6 +213,7 @@ for path in sorted(Path('data/luke').glob('[0-9][0-9].json')):
  for v in d.get('verses',[]):
   A=v.get('alignment',{});D=A.get('dgt',[]);G=A.get('greek',[]);L=A.get('literal',[])
   file_changed+=reviewed_synthetic_links(D,G,int(path.stem),v['v'])
+  file_changed+=apply_reviewed_precision_fixes(D,int(path.stem),v['v'])
   file_changed+=exact_fixed_point(D,L)
   file_changed+=family_fixed_point(D,G)
   file_changed+=semantic_pass(D,G,L)
