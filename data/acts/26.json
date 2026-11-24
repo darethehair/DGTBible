@@ -8287,31 +8287,29 @@
           },
           {
             "text": "this",
-            "ids": [],
+            "ids": [
+              "w1",
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
               "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+              "w2"
+            ]
           },
           {
             "text": "activity,",
-            "ids": [],
+            "ids": [
+              "w1",
+              "w2"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
               "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+              "w2"
+            ]
           },
           {
             "text": "while",
@@ -8324,17 +8322,14 @@
           },
           {
             "text": "traveling",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "to",
