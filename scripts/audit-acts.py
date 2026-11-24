@@ -73,13 +73,13 @@ for ch in range(start,end+1):
   # N source-linked occurrences of the same word, ordered pairing is deterministic.
   byword=collections.defaultdict(list)
   for i,x in enumerate(D):
-   if not x.get('ids'):
+   if not x.get('ids') and not x.get('supplied'):
     w=n(x.get('text',''))
     if w: byword[w].append(i)
   # Same deterministic check for English pronoun-family variants.
   pd=collections.defaultdict(list)
   for i,x in enumerate(D):
-   if not x.get('ids'):
+   if not x.get('ids') and not x.get('supplied'):
     k=pk(x.get('text',''))
     if k:pd[k].append(i)
   usedp=collections.defaultdict(set)
@@ -122,7 +122,7 @@ for ch in range(start,end+1):
    for id in y.get('ids',[]):
     lit_terms[id].update(terms)
   for i,x in enumerate(D):
-   if x.get('ids'):continue
+   if x.get('ids') or x.get('supplied'):continue
    k=pk(x.get('text',''))
    if not k or k=='relative':continue
    candidates=[]
@@ -137,7 +137,7 @@ for ch in range(start,end+1):
    if len(unique)==1:
     recoverable_bundled_pronouns.append((ch,v['v'],x.get('text',''),unique[0]))
 
-  personal_idxs=[i for i,x in enumerate(D) if not x.get('ids') and pk(x.get('text','')) in {'he','she','they','it'}]
+  personal_idxs=[i for i,x in enumerate(D) if not x.get('ids') and not x.get('supplied') and pk(x.get('text','')) in {'he','she','they','it'}]
   usedids={id for x in D for id in x.get('ids',[])}
   relids=[]
   for y in L:
