@@ -1,4 +1,4 @@
-const APP_VERSION='v0.62';
+const APP_VERSION='v0.63';
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={};
 const $=id=>document.getElementById(id);
@@ -57,7 +57,7 @@ function clearAlignment(){document.querySelectorAll('.align-token.active').forEa
 function highlightAlignment(ids){clearAlignment();if(!ids?.length)return;document.querySelectorAll('.align-token').forEach(el=>{const mine=(el.dataset.ids||'').split(',');if(mine.some(id=>ids.includes(id)))el.classList.add('active')})}
 function renderAligned(container,key,verse,fallback){
  const items=verse.alignment?.[key];if(!items?.length){container.textContent=fallback;return}
- container.innerHTML=items.map(item=>{const ids=(item.ids||[]).join(',');if(ids)return `<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`;if(item.phraseIds?.length)return `<span class="phrase-token" title="Aligned at phrase level; no safe single-word hover target">${esc(item.text)}</span>${esc(item.after||'')}`;return `<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`}).join('');
+ container.innerHTML=items.map(item=>{const ids=(item.ids||[]).join(',');if(ids)return `<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`;if(item.phraseIds?.length){const pids=item.phraseIds.join(',');return `<span class="align-token phrase-token" tabindex="0" data-ids="${pids}" title="Phrase-aligned: highlights the authored Greek source span">${esc(item.text)}</span>${esc(item.after||'')}`;}return `<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`}).join('');
  const activate=e=>{
   const el=e.target.closest?.('.align-token');
   if(!el||!container.contains(el))return;
@@ -73,7 +73,7 @@ function alignedHtml(key,verse,fallback){
  return items.map(item=>{
   const ids=(item.ids||[]).join(',');
   if(ids)return `<span class="align-token" tabindex="0" data-ids="${ids}">${esc(item.text)}</span>${esc(item.after||'')}`;
-  if(item.phraseIds?.length)return `<span class="phrase-token" title="Aligned at phrase level; no safe single-word hover target">${esc(item.text)}</span>${esc(item.after||'')}`;
+  if(item.phraseIds?.length){const pids=item.phraseIds.join(',');return `<span class="align-token phrase-token" tabindex="0" data-ids="${pids}" title="Phrase-aligned: highlights the authored Greek source span">${esc(item.text)}</span>${esc(item.after||'')}`;}
   return `<span class="unaligned-token" title="No high-confidence automatic Greek link">${esc(item.text)}</span>${esc(item.after||'')}`;
  }).join('');
 }
