@@ -210,7 +210,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
   return list(dict.fromkeys(ids))
 
  tokens=re.findall(r'\S+',text)
- precision={}; born_single=set()
+ precision={}; born_single=set(); supplied=set()
  if isinstance(spec,dict) and isinstance(spec.get('segments'),list):
   expanded=[];rebuilt=[]
   for seg in spec['segments']:
@@ -239,6 +239,12 @@ def authored_dgt(text,src,spec,ref,literal=None):
    key=norm(p[0]);matches=[i for i,t in enumerate(tokens) if norm(t)==key]
    if p[1]<1 or p[1]>len(matches):raise SystemExit(f'{ref}: precisionWords cannot find {p[0]!r} occurrence {p[1]}')
    precision[matches[p[1]-1]]=resolve(p[2]);born_single.discard(matches[p[1]-1])
+  for p in spec.get('suppliedWords',[]):
+   if not isinstance(p,list) or len(p)!=2 or not isinstance(p[0],str) or not isinstance(p[1],int):
+    raise SystemExit(f'{ref}: suppliedWords entries must be [token,occurrence]: {p!r}')
+   key=norm(p[0]);matches=[i for i,t in enumerate(tokens) if norm(t)==key]
+   if p[1]<1 or p[1]>len(matches):raise SystemExit(f'{ref}: suppliedWords cannot find {p[0]!r} occurrence {p[1]}')
+   supplied.add(matches[p[1]-1])
   spec=expanded
  if not isinstance(spec,list) or len(spec)!=len(tokens):
   raise SystemExit(f'{ref}: authored alignment must cover each DGT whitespace token ({len(tokens)} expected)')
@@ -290,6 +296,7 @@ def authored_dgt(text,src,spec,ref,literal=None):
          ids=[ranked[0][1]];confidence='authored-auto-precise-phrase-positional'
   if ids is None:ids=[]
   x={'text':token,'ids':ids,'after':' ' if i<len(tokens)-1 else '','confidence':confidence,'phraseIds':phrase_ids}
+  if i in supplied:x['supplied']=True;x['confidence']='authored-supplied'
   if not ids:x['reason']='Covered by authored phrase span; no safe lexical hover target'
   out.append(x)
 
