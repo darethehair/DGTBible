@@ -205,6 +205,134 @@ def apply_reviewed_precision_fixes(D,ch,vn):
   # Luke 22:55: English auxiliary "had" belongs with περιάψαντων
   # ("having kindled"), and the final "sat" belongs with ἐκάθητο
   # ("was sitting"), not συγκαθισάντων ("having sat down together").
+  (5,28):[
+   ('behind',1,['w2']),
+  ],
+  (8,53):[
+   ('began',1,['w2']),
+   ('had',1,['w6']),
+  ],
+  (9,15):[
+   ('had',1,['w5']),
+   ('down',1,['w5']),
+  ],
+  (11,12):[
+   ('he',1,['w4']),
+   ('asks',1,['w4']),
+   ('for',1,['w4']),
+   ('an',1,['w5']),
+   ('egg',1,['w5']),
+   ('will',1,['w7']),
+   ('he',2,['w7']),
+   ('give',1,['w7']),
+   ('him',1,['w8']),
+   ('a',1,['w9']),
+   ('scorpion',1,['w9']),
+  ],
+  (11,25):[
+   ('when',1,['w2']),
+   ('it',1,['w2']),
+   ('comes',1,['w2']),
+   ('it',2,['w3']),
+   ('finds',1,['w3']),
+   ('swept',1,['w5']),
+   ('and',1,['w6']),
+   ('put',1,['w7']),
+   ('in',1,['w7']),
+   ('order',1,['w7']),
+  ],
+  (14,6):[
+   ('unable',1,['w2','w3']),
+   ('to',1,['w4']),
+   ('answer',1,['w4']),
+   ('these',1,['w7']),
+   ('things',1,['w7']),
+  ],
+  (19,1):[
+   ('then',1,['w1']),
+   ('he',1,['w2']),
+   ('entered',1,['w2']),
+   ('jericho',1,['w5']),
+   ('was',1,['w3']),
+   ('passing',1,['w3']),
+   ('through',1,['w3']),
+  ],
+  (19,6):[
+   ('so',1,['w1']),
+   ('he',1,['w3']),
+   ('hurried',1,['w2']),
+   ('down',1,['w3']),
+   ('and',1,['w4']),
+   ('welcomed',1,['w5']),
+   ('him',1,['w6']),
+   ('joyfully',1,['w7']),
+  ],
+  (20,7):[
+   ('so',1,['w1']),
+   ('they',1,['w2']),
+   ('answered',1,['w2']),
+   ('they',2,['w4']),
+   ('did',1,['w4']),
+   ('not',1,['w3']),
+   ('know',1,['w4']),
+   ('where',1,['w5']),
+   ('it',1,['w5']),
+   ('was',1,['w5']),
+   ('from',1,['w5']),
+  ],
+  (20,40):[
+   ('for',1,['w2']),
+   ('they',1,['w3']),
+   ('no',1,['w1']),
+   ('longer',1,['w1']),
+   ('dared',1,['w3']),
+   ('to',1,['w4']),
+   ('ask',1,['w4']),
+   ('him',1,['w5']),
+   ('any',1,['w6']),
+   ('question',1,['w6']),
+  ],
+  (22,68):[
+   ('and',1,['w2']),
+   ('if',1,['w1']),
+   ('i',1,['w4']),
+   ('ask',1,['w4']),
+   ('you',1,['w4']),
+   ('you',2,['w7']),
+   ('will',1,['w7']),
+   ('certainly',1,['w5']),
+   ('not',1,['w6']),
+   ('answer',1,['w7']),
+  ],
+  (24,3):[
+   ('but',1,['w3']),
+   ('when',1,['w2']),
+   ('they',1,['w2']),
+   ('entered',1,['w2']),
+   ('they',2,['w5']),
+   ('did',1,['w5']),
+   ('not',1,['w4']),
+   ('find',1,['w5']),
+   ('the',1,['w6']),
+   ('body',1,['w7']),
+  ],
+  (24,8):[
+   ('then',1,['w1']),
+   ('they',1,['w2']),
+   ('remembered',1,['w2']),
+   ('his',1,['w5']),
+   ('words',1,['w4']),
+  ],
+  (24,43):[
+   ('and',1,['w1']),
+   ('he',1,['w2']),
+   ('took',1,['w2']),
+   ('it',1,['w2']),
+   ('ate',1,['w5']),
+   ('it',2,['w5']),
+   ('before',1,['w3']),
+   ('them',1,['w4']),
+  ],
   (24,37):[
    ('but',1,['w2']),
    ('they',1,['w1']),
@@ -342,6 +470,28 @@ def apply_reviewed_precision_fixes(D,ch,vn):
    x.pop('reason',None);changes+=1
  return changes
 
+
+REVIEWED_SUPPLIED={
+ (11,12):[('if',1)],
+ (11,25):[('the',1),('house',1)],
+ (20,7):[('that',1)],
+ (24,43):[('and',2)],
+}
+
+def apply_reviewed_supplied_fixes(D,ch,vn):
+ changes=0
+ for word,occ in REVIEWED_SUPPLIED.get((ch,vn),[]):
+  matches=[x for x in D if norm(x.get('text',''))==word]
+  if occ<1 or occ>len(matches):
+   raise SystemExit(f'Luke {ch}:{vn}: reviewed supplied target {word!r} occurrence {occ} not found')
+  x=matches[occ-1]
+  if x.get('ids') or x.get('phraseIds') or not x.get('supplied'):
+   x['ids']=[];x['phraseIds']=[];x['supplied']=True
+   x['confidence']='luke-reviewed-supplied'
+   x['reason']='English supplied for natural rendering; no separate Greek token'
+   changes+=1
+ return changes
+
 REVIEWED_SYNTHETICS={
  (2,48,'s21'):('and',2),(2,48,'s22'):('i',1),
  (5,13,'s7'):('saying',1),(5,36,'s20'):('otherwise',1),(5,37,'s11'):('otherwise',1),
@@ -381,6 +531,7 @@ for path in sorted(Path('data/luke').glob('[0-9][0-9].json')):
  for v in d.get('verses',[]):
   A=v.get('alignment',{});D=A.get('dgt',[]);G=A.get('greek',[]);L=A.get('literal',[])
   file_changed+=reviewed_synthetic_links(D,G,int(path.stem),v['v'])
+  file_changed+=apply_reviewed_supplied_fixes(D,int(path.stem),v['v'])
   file_changed+=apply_reviewed_precision_fixes(D,int(path.stem),v['v'])
   file_changed+=global_unique_content_recover(D,G,L)
   file_changed+=exact_fixed_point(D,L)
