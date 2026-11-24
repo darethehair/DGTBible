@@ -17,7 +17,7 @@ for ch in range(1,25):
             span=list(dict.fromkeys(tok.get("phraseIds",[])))
             if not span: continue
             frac=len(span)/gc
-            if len(span)>=6 and frac>=0.50:
+            if len(span)>=5 and frac>=0.35:
                 rows.append(("broad-phrase",ref,tok.get("text",""),len(span),gc,frac))
 
         byid=defaultdict(list)
@@ -40,10 +40,10 @@ for ch in range(1,25):
                 rows.append(("precise-scattered",ref,wid,len(pos),ec,span))
 
 rows.sort(key=lambda r:(-r[3],-r[5],r[1]))
-major=[r for r in rows if r[3]>=20]
+major=[r for r in rows if (r[0]=='broad-phrase' and r[3]>=5 and r[5]>=0.35) or r[3]>=20]
 maxsize=max((r[3] for r in rows),default=0)
-print(f"LUKE HOVER BREADTH: {len(rows)} suspicious interactions; {len({r[1] for r in rows})} verses; 20+ cases={len(major)}; worst={maxsize}")
+print(f"LUKE HOVER BREADTH: {len(rows)} suspicious interactions; {len({r[1] for r in rows})} verses; major cases={len(major)}; worst={maxsize}")
 for r in rows[:40]:
     print("\t".join([r[0],r[1],r[2],str(r[3]),str(r[4]),f"{r[5]*100:.1f}%"]))
 if major:
-    raise SystemExit(f"Luke hover breadth major cutoff failed: {len(major)} cases >=20")
+    raise SystemExit(f"Luke hover breadth major cutoff failed: {len(major)} broad/20+ cases")
