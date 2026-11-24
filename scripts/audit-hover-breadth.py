@@ -1,4 +1,4 @@
-# post-cleanup scan checkpoint: verify 2 Corinthians book completion
+# post-cleanup scan checkpoint: final 2 Corinthians verification
 # precise-fanout review marker 2026-11-24
 # diagnostic rerun marker: conservative cleanup wave 2026-11-24
 #!/usr/bin/env python3
