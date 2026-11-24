@@ -360,7 +360,7 @@ REVIEWED_PRECISION={
  ],
  (23,24):[
   ('they',1,['w5']),('may',1,['w5']),('put',1,['w5']),
-  ('they',2,['w8']),('may',2,['w8']),('bring',1,['w8']),('him',1,['w8']),('safely',1,['w8'])
+  ('bring',1,['w8']),('him',1,['w8']),('safely',1,['w8'])
  ],
 }
 REVIEWED_SUPPLIED={
