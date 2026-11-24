@@ -49,6 +49,9 @@ jobs:
           git add data/mark/*.json data/sources/step-mark-*.json
           if ! git diff --cached --quiet; then
             git commit -m "Generate QA-clean Mark $START_CHAPTER-$END_CHAPTER batch"
+            # Extract/build steps may leave tracked scratch changes that are not
+            # part of the generated Mark payload. Discard them before rebasing.
+            git reset --hard HEAD
             for attempt in 1 2 3; do
               git pull --rebase origin main && git push && break
               if [ "$attempt" = 3 ]; then exit 1; fi
