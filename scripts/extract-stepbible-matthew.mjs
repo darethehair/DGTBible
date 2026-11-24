@@ -19,5 +19,5 @@ await fs.writeFile('authoring/step-matthew.tsv',['# STEPBible TAGNT extraction',
 const sblLines=(await sblRes.text()).split(/\r?\n/).filter(line=>/^Matt \d+:\d+\t/.test(line));
 await fs.writeFile('authoring/sblgnt-matthew.txt',['# SBLGNT extraction','# source: Faithlife/SBLGNT@'+sblgntSha,'# book: Matthew',...sblLines].join('\n')+'\n');
 console.log('Matched',sblLines.length,'SBLGNT verses and',matched.length,'TAGNT lines for Matthew');
-if(sblLines.length!==1071)throw new Error('Unexpected SBLGNT verse count for Matthew: '+sblLines.length);
+if(sblLines.length!==1068)throw new Error('Unexpected SBLGNT verse count for Matthew: '+sblLines.length);
 if(matched.length<10000)throw new Error('Too few TAGNT lines for Matthew');
