@@ -4,7 +4,10 @@ from collections import defaultdict,Counter
 from pathlib import Path
 
 rows=[]
-# Explicitly reviewed multiword renderings that are semantically correct even\n# though one Greek source ID spans separated English words.\nACCEPTED_PRECISE={('Acts 13:19','w8')}\nfor ch in range(1,29):
+# Explicitly reviewed multiword renderings that are semantically correct even
+# though one Greek source ID spans separated English words.
+ACCEPTED_PRECISE={('Acts 13:19','w8')}
+for ch in range(1,29):
     p=Path("data/acts")/f"{ch:02}.json"
     if not p.exists(): continue
     d=json.loads(p.read_text(encoding="utf8"))
