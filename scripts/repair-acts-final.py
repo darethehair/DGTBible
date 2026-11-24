@@ -468,6 +468,17 @@ REVIEWED_PRECISION={
   ('emblem',1,['w13']),('was',1,['w13']),('twin',1,['w14']),('gods',1,['w14'])
  ],
  (28,30):[('who',1,['w13'])],
+ (2,12):[('astonished',1,['w1'])],
+ (19,28):[('anger',1,['w6'])],
+ (20,2):[('regions',1,['w4']),('encouraging',1,['w7']),('words',1,['w9'])],
+ (20,26):[('clean',1,['w9'])],
+ (20,30):[('among',1,['w2']),('twisted',1,['w8'])],
+ (21,23):[('that',1,['w4']),('who',1,['w12']),('upon',1,['w13'])],
+ (21,31):[('trying',1,['w1']),('confusion',1,['w13'])],
+ (22,12):[('well',1,['w9']),('spoken',1,['w9']),('living',1,['w13'])],
+ (23,28):[('wanting',1,['w1']),('reason',1,['w5'])],
+ (23,7):[('dispute',1,['w6']),('multitude',1,['w15'])],
+ (24,18):[('disturbance',1,['w14'])],
 }
 REVIEWED_SUPPLIED={
  (8,10):[('them',1)],
@@ -535,6 +546,8 @@ REVIEWED_SUPPLIED={
  (15,8):[('he',1),('did',1)],
  (18,28):[('that',1)],
  (20,26):[('very',1)],
+ (20,26):[('very',1)],
+ (26,28):[('said',1)],
 }
 REVIEWED_SYNTHETICS={
  (1,11):[('s8','looking',1)],
