@@ -33,6 +33,7 @@ console.log('Matched',sblLines.length,'SBLGNT verses and',matched.length,'TAGNT 
 if(sblLines.length!==673)throw new Error('Unexpected SBLGNT verse count for Mark: '+sblLines.length);
 if(matched.length<5000){
   console.log('Diagnostic Mark-like lines:', diagnostics.slice(0,10));
-  console.log('Sample 42_Mrk data rows:', stepLines.filter(line=>line.includes('42_Mrk.') && line.includes('#')).slice(0,12));
+  console.log('Sample Mrk.001.001 rows:', stepLines.filter(line=>line.includes('Mrk.001.001')).slice(0,12));
+  console.log('Sample Mark opening Greek rows:', stepLines.filter(line=>/Ἀρχὴ|ἀρχὴ|Αρχη/.test(line)).slice(0,12));
   throw new Error('Too few TAGNT lines for Mark');
 }
