@@ -5,6 +5,7 @@ from pathlib import Path
 ROOT=Path("data/matthew")
 ARTICLE=re.compile(r"^(?:ὁ|ἡ|τό|τοῦ|τῆς|τοῖς|ταῖς|τῶν|τόν|τήν|τούς|τάς|τὸ|τῇ|τῷ|οἱ|αἱ|τὰ|τὰς|τοὺς|τὴν|τὸν)[,.;·]?$")
 SOFT_GLOSSES={"and","now","then","however","indeed","maybe","if","only","that","for","also","the","when"}
+REVIEWED_GREEK_OMISSIONS={(7,9,"w3"),(7,9,"w14"),(11,23,"w4"),(13,11,"w6")}
 
 total_phrase=total_unlinked=total_missing=0
 rows=[]
@@ -22,7 +23,7 @@ for ch in range(1,29):
         missing=[]
         for g in G:
             ids=g.get("ids") or []
-            if ids and not any(i in used for i in ids):
+            if ids and not any(i in used for i in ids) and (ch,v.get("v"),ids[0]) not in REVIEWED_GREEK_OMISSIONS:
                 txt=g.get("text","")
                 gloss=(g.get("gloss") or "").lower().strip(" .,:;!?")
                 if not ARTICLE.match(txt) and gloss not in SOFT_GLOSSES:
@@ -63,15 +64,3 @@ for ch in (13,26):
 # final Matthew audit/deploy trigger
 
 # post Greek recovery audit/deploy trigger
-
-
-# M13 final certification diagnostics
-CAND13={10,11,15,20,22,23,25,28,30,35,36,38,44,45,46,48,54}
-d=json.loads((ROOT/"13.json").read_text())
-for v in d.get("verses",[]):
-    if v.get("v") not in CAND13: continue
-    print(f"M13MAP:{v.get('v')}")
-    G=v.get("alignment",{}).get("greek",[])
-    D=v.get("alignment",{}).get("dgt",[])
-    print(" G "+" | ".join(f"{(g.get('ids') or ['?'])[0]}:{g.get('text','')}<{g.get('gloss','')}>" for g in G))
-    print(" D "+" | ".join(f"{i}:{t.get('text','')}=>{'+'.join(t.get('ids') or [])}{'[S]' if t.get('supplied') else ''}" for i,t in enumerate(D)))
