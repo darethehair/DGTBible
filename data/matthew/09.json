@@ -8369,23 +8369,16 @@
           {
             "text": "Why",
             "ids": [
+              "w9",
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
               "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w10"
+            ],
+            "reason": "Bilingual certification: 'Why' renders the phrase Διὰ τί"
           },
           {
             "text": "does",
@@ -14219,14 +14212,20 @@
           {
             "text": "otherwise",
             "ids": [
-              "w8"
+              "w8",
+              "w9",
+              "w10",
+              "w11"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w8"
+              "w8",
+              "w9",
+              "w10",
+              "w11"
             ],
-            "reason": "Matthew bilingual pass: semantic correspondence 'otherwise' ↔ εἰ"
+            "reason": "Bilingual certification: 'otherwise' compresses εἰ δὲ μή γε"
           },
           {
             "text": "the",
@@ -15365,19 +15364,15 @@
           {
             "text": "a",
             "ids": [
-              "w6"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w5",
               "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+              "w7"
+            ],
+            "reason": "Bilingual certification: indefinite 'a' corresponds to εἷς ('one/certain')"
           },
           {
             "text": "ruler",
@@ -17149,11 +17144,16 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'to herself' renders ἐν ἑαυτῇ",
+            "phraseIds": [
+              "w3",
+              "w4"
+            ]
           },
           {
             "text": "herself,",
@@ -18224,11 +18224,17 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w23"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'that' renders demonstrative ἐκείνης",
+            "phraseIds": [
+              "w21",
+              "w22",
+              "w23"
+            ]
           },
           {
             "text": "hour.",
@@ -23981,19 +23987,19 @@
           {
             "text": "throughout",
             "ids": [
+              "w6",
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w4",
-              "w5",
               "w6",
               "w7",
               "w8",
               "w9",
               "w10"
-            ]
+            ],
+            "reason": "Bilingual certification: 'throughout' renders ἐν ὅλῃ"
           },
           {
             "text": "all",
@@ -27702,14 +27708,17 @@
           {
             "text": "without",
             "ids": [
+              "w15",
               "w16"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w16"
+              "w15",
+              "w16",
+              "w17"
             ],
-            "reason": "Matthew bilingual pass: shared source correspondence 'without' ↔ ἔχοντα"
+            "reason": "Bilingual certification: 'without' jointly renders μὴ ἔχοντα"
           },
           {
             "text": "a",
