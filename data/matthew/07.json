@@ -8433,15 +8433,15 @@
           },
           {
             "text": "who",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w24",
-              "w25",
-              "w26"
+            "ids": [
+              "w18"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Matthew bilingual pass: linked 'who' to ὁ by direct Greek/literal correspondence"
           },
           {
             "text": "ask",
@@ -9304,17 +9304,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w9"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew bilingual pass: linked 'the' to οἱ by direct Greek/literal correspondence"
           },
           {
             "text": "same",
@@ -13092,10 +13090,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: linked 'the' to τὸ by direct Greek/literal correspondence",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "same",
@@ -13254,8 +13257,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: English indefinite article is supplied where Greek has no distinct article",
+            "supplied": true
           },
           {
             "text": "rotten",
@@ -15768,24 +15772,15 @@
           },
           {
             "text": "of",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25"
+            "ids": [
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w19"
+            ],
+            "reason": "Matthew bilingual pass: linked 'of' to τοῦ by direct Greek/literal correspondence"
           },
           {
             "text": "my",
