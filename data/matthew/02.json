@@ -519,18 +519,9 @@
             "text": "after",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: temporal 'after' is supplied by the genitive-absolute participle",
+            "supplied": true
           },
           {
             "text": "Jesus",
@@ -552,20 +543,15 @@
           },
           {
             "text": "was",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew restart hover review: passive auxiliary in 'was born' belongs with γεννηθέντος"
           },
           {
             "text": "born",
@@ -2993,35 +2979,27 @@
           },
           {
             "text": "to",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
+            "ids": [
               "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew restart hover review: infinitival support in 'was to be born' belongs with γεννᾶται"
           },
           {
             "text": "be",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
+            "ids": [
               "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew restart hover review: copular support in 'be born' belongs with γεννᾶται"
           },
           {
             "text": "born.",
@@ -3573,48 +3551,31 @@
           },
           {
             "text": "this",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew restart hover review: demonstrative sense in 'this is what...' reflects οὕτως"
           },
           {
             "text": "is",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: English copula in 'this is what...' is supplied",
+            "supplied": true
           },
           {
             "text": "what",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: English nominalizer in 'this is what...' is supplied",
+            "supplied": true
           },
           {
             "text": "has",
@@ -4582,17 +4543,15 @@
           },
           {
             "text": "from",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew restart hover review: 'from' renders ἐκ"
           },
           {
             "text": "you",
@@ -4643,15 +4602,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: English indefinite article before 'ruler' is supplied",
+            "supplied": true
           },
           {
             "text": "ruler",
@@ -6054,16 +6007,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: 'Go and search' has no explicit Greek conjunction here",
+            "supplied": true
           },
           {
             "text": "search",
@@ -6147,17 +6093,15 @@
           },
           {
             "text": "and",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew restart hover review: connective before 'when you find him' renders δὲ"
           },
           {
             "text": "when",
@@ -6358,15 +6302,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: 'come and worship' renders participle + verb without explicit conjunction",
+            "supplied": true
           },
           {
             "text": "worship",
@@ -7019,16 +6957,9 @@
             "text": "After",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: temporal 'After' is supplied by ἀκούσαντες",
+            "supplied": true
           },
           {
             "text": "hearing",
@@ -7048,18 +6979,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew restart hover review: article before 'king' renders τοῦ"
           },
           {
             "text": "king,",
@@ -7153,23 +7081,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew restart hover review: article before 'star' renders ὁ"
           },
           {
             "text": "star",
@@ -7215,23 +7135,15 @@
           },
           {
             "text": "had",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Matthew restart hover review: English pluperfect auxiliary belongs with εἶδον"
           },
           {
             "text": "seen",
@@ -7277,23 +7189,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew restart hover review: article before 'east' renders τῇ"
           },
           {
             "text": "east",
@@ -7360,23 +7264,15 @@
           },
           {
             "text": "of",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew restart hover review: English particle in 'ahead of' belongs with προῆγεν"
           },
           {
             "text": "them",
@@ -7457,18 +7353,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: 'came and stood' renders participle + finite verb without explicit conjunction",
+            "supplied": true
           },
           {
             "text": "stood",
@@ -7791,27 +7678,21 @@
             "text": "When",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: temporal 'When' is supplied by ἰδόντες",
+            "supplied": true
           },
           {
             "text": "they",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
+            "ids": [
+              "w1"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Matthew restart hover review: implied subject 'they' belongs with ἰδόντες"
           },
           {
             "text": "saw",
@@ -8724,25 +8605,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew restart hover review: article before 'house' renders τὴν"
           },
           {
             "text": "house,",
@@ -8815,25 +8686,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Matthew restart hover review: article before 'child' renders τὸ"
           },
           {
             "text": "child",
@@ -9036,20 +8897,15 @@
           },
           {
             "text": "Then",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Matthew restart hover review: transition before opening treasures renders καὶ"
           },
           {
             "text": "opening",
@@ -12581,16 +12437,15 @@
           },
           {
             "text": "to",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew restart hover review: directional 'to' renders εἰς"
           },
           {
             "text": "Egypt,",
@@ -13370,41 +13225,27 @@
           },
           {
             "text": "what",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew restart hover review: nominalizing 'what' renders τὸ"
           },
           {
             "text": "was",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+            "ids": [
+              "w11"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Matthew restart hover review: passive auxiliary belongs with ῥηθὲν"
           },
           {
             "text": "spoken",
@@ -13548,22 +13389,15 @@
           },
           {
             "text": "might",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew restart hover review: modal auxiliary belongs with subjunctive πληρωθῇ"
           },
           {
             "text": "be",
@@ -15074,27 +14908,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25"
+            "ids": [
+              "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew restart hover review: article before 'boys' renders τοὺς"
           },
           {
             "text": "boys",
@@ -15173,27 +14995,15 @@
           },
           {
             "text": "and",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25"
+            "ids": [
+              "w20"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew restart hover review: conjunction joining Bethlehem and surrounding region renders καὶ"
           },
           {
             "text": "in",
@@ -15324,27 +15134,17 @@
             "text": "who",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w26",
-              "w27",
-              "w28",
-              "w29"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: English relative 'who' is supplied in restructuring the age phrase",
+            "supplied": true
           },
           {
             "text": "were",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w26",
-              "w27",
-              "w28",
-              "w29"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: English copula 'were' is supplied in restructuring the age phrase",
+            "supplied": true
           },
           {
             "text": "two",
@@ -15454,20 +15254,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w30",
-              "w31",
-              "w32",
-              "w33",
-              "w34",
-              "w35",
-              "w36",
-              "w37"
+            "ids": [
+              "w31"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w31"
+            ],
+            "reason": "Matthew restart hover review: article before 'time' renders τὸν"
           },
           {
             "text": "time",
@@ -15561,20 +15356,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w30",
-              "w31",
-              "w32",
-              "w33",
-              "w34",
-              "w35",
-              "w36",
-              "w37"
+            "ids": [
+              "w36"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w36"
+            ],
+            "reason": "Matthew restart hover review: article before 'magi' renders τῶν"
           },
           {
             "text": "magi.",
@@ -16792,29 +16582,27 @@
           },
           {
             "text": "she",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Matthew restart hover review: implied subject 'she' belongs with ἤθελεν"
           },
           {
             "text": "did",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Matthew restart hover review: auxiliary in 'did not want' belongs with ἤθελεν"
           },
           {
             "text": "not",
@@ -17306,29 +17094,23 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew restart hover review: discourse connective renders δὲ"
           },
           {
             "text": "after",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: temporal 'after' is supplied by Τελευτήσαντος",
+            "supplied": true
           },
           {
             "text": "Herod",
@@ -18679,20 +18461,15 @@
           },
           {
             "text": "are",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
+            "ids": [
+              "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew restart hover review: auxiliary in 'are dead' belongs with τεθνήκασιν"
           },
           {
             "text": "dead.",
@@ -19972,24 +19749,15 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew restart hover review: discourse connective renders δὲ"
           },
           {
             "text": "hearing",
@@ -20059,24 +19827,15 @@
           },
           {
             "text": "was",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w5"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew restart hover review: auxiliary in 'was reigning' belongs with βασιλεύει"
           },
           {
             "text": "reigning",
@@ -20102,24 +19861,15 @@
           },
           {
             "text": "over",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew restart hover review: governing sense 'reigning over' belongs with βασιλεύει"
           },
           {
             "text": "Judea",
@@ -20355,16 +20105,15 @@
           },
           {
             "text": "and",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Matthew restart hover review: discourse connective before the warning renders δὲ"
           },
           {
             "text": "having",
@@ -20500,18 +20249,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26"
+            "ids": [
+              "w23"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w23"
+            ],
+            "reason": "Matthew restart hover review: article before 'regions' renders τὰ"
           },
           {
             "text": "regions",
