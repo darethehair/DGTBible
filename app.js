@@ -1,9 +1,20 @@
-const APP_VERSION='v0.66';
+const APP_VERSION='v0.67';
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={};
 const $=id=>document.getElementById(id);
 const layerDefaults={greek:true,translit:false,literal:false,dgt:true,notes:false};
 const layers={...layerDefaults,...JSON.parse(localStorage.getItem('dgt-layers')||'{}')};
+const themeMedia=matchMedia('(prefers-color-scheme: dark)');
+function themePreference(){return localStorage.getItem('dgt-theme')||'system'}
+function applyTheme(pref=themePreference()){
+ const dark=pref==='dark'||(pref==='system'&&themeMedia.matches);
+ document.documentElement.dataset.theme=dark?'dark':'light';
+ document.documentElement.dataset.themePreference=pref;
+ const meta=document.querySelector('meta[name="theme-color"]');if(meta)meta.content=dark?'#0b110e':'#18251f';
+ const select=$('themeSelect');if(select)select.value=pref;
+}
+function setTheme(pref){localStorage.setItem('dgt-theme',pref);applyTheme(pref)}
+themeMedia.addEventListener?.('change',()=>{if(themePreference()==='system')applyTheme('system')});
 
 function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function transliterateGreek(s){
@@ -149,7 +160,7 @@ verseCard.addEventListener('mouseleave',clearAlignment);
 verseCard.addEventListener('click',e=>{if(!e.target.closest('.align-token'))clearAlignment()});
 $('prevVerse').onclick=()=>moveVerse(-1);$('nextVerse').onclick=()=>moveVerse(1);
 for(const id of ['prevChapterTop','prevChapterBottom','prevCompactChapterTop','prevCompactChapterBottom']){const el=$(id);if(el)el.onclick=()=>moveChapter(-1)}for(const id of ['nextChapterTop','nextChapterBottom','nextCompactChapterTop','nextCompactChapterBottom']){const el=$(id);if(el)el.onclick=()=>moveChapter(1)}
-document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));$('themeSelect').addEventListener('change',e=>setTheme(e.target.value));applyTheme();document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
 let touchX=null;$('studyView').addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});$('studyView').addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;touchX=null;if(Math.abs(dx)>70)moveVerse(dx>0?-1:1)},{passive:true});
 window.addEventListener('hashchange',async()=>{const h=parseHash();if(!h)return;if(h.slug!==state.slug)await selectBook(h.slug,h.chapter,h.verse,false);else show(h.chapter,h.verse,false,false)});
 (async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await loadCatalog();renderLayerControls();const h=parseHash();await loadBookResources(h?.slug||'john');setMode(state.mode);await show(h?.chapter||availableChapters[0],h?.verse||1,false,false)})();

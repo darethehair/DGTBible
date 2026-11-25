@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#18251f">
+<script>
+(()=>{try{const saved=localStorage.getItem('dgt-theme')||'system';const dark=saved==='dark'||(saved==='system'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.dataset.theme=dark?'dark':'light';document.documentElement.dataset.themePreference=saved}catch{}})();
+</script>
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css"><title>DGTBible</title>
 </head>
@@ -12,7 +15,12 @@
 <section class="lookup">
   <form id="refForm"><label for="ref">Verse lookup</label><div class="search"><input id="ref" value="John 1:1" autocomplete="off" spellcheck="false"><button>Go</button></div></form>
   <div class="selectors"><label>Book<select id="book"><option value="john">John</option><option value="1john">1 John</option></select></label><label>Chapter<select id="chapter"><option>1</option><option>2</option></select></label></div>
-  <div class="mode-switch" aria-label="Reading mode"><button type="button" data-mode="study">Study</button><button type="button" data-mode="chapter">Chapter</button><button type="button" data-mode="compact">Compact</button></div>
+  <div class="view-controls">
+    <div class="mode-switch" aria-label="Reading mode"><button type="button" data-mode="study">Study</button><button type="button" data-mode="chapter">Chapter</button><button type="button" data-mode="compact">Compact</button></div>
+    <label class="theme-control" for="themeSelect">Theme
+      <select id="themeSelect" aria-label="Color theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select>
+    </label>
+  </div>
 </section>
 <section id="status" class="status"></section>
 <section id="studyView"><section id="verseCard" class="verse-card" hidden>
