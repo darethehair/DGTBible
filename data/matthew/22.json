@@ -3832,10 +3832,15 @@
           },
           {
             "text": "seized",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew final bilingual review: 'seized' ↔ κρατήσαντες",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "his",
@@ -8056,10 +8061,15 @@
           },
           {
             "text": "without",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew final bilingual review: 'without' ↔ μὴ",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "wedding",
@@ -12941,10 +12951,15 @@
           },
           {
             "text": "used",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew final bilingual review: 'used' ↔ κήνσου.",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "for",
@@ -15816,18 +15831,15 @@
           },
           {
             "text": "without",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew final bilingual review: 'without' ↔ μὴ"
           },
           {
             "text": "having",
