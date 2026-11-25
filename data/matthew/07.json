@@ -2475,18 +2475,16 @@
           {
             "text": "you",
             "ids": [
-              "w3"
+              "w3",
+              "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w1",
-              "w2",
               "w3",
-              "w4",
-              "w5",
               "w6"
-            ]
+            ],
+            "reason": "Matthew bilingual pass: also represents σου· (of you)"
           },
           {
             "text": "say",
@@ -4644,19 +4642,15 @@
           },
           {
             "text": "lest",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
+            "ids": [
+              "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew bilingual pass: semantic correspondence 'lest' ↔ μήποτε"
           },
           {
             "text": "they",
@@ -4695,19 +4689,18 @@
           {
             "text": "them",
             "ids": [
-              "w16"
-            ],
-            "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
-            "phraseIds": [
-              "w15",
               "w16",
               "w17",
-              "w18",
-              "w19",
-              "w20",
               "w21"
-            ]
+            ],
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w16",
+              "w17",
+              "w21"
+            ],
+            "reason": "Matthew bilingual pass: also represents αὐτοὺς (them); Matthew bilingual pass: also represents αὐτῶν (of them)"
           },
           {
             "text": "with",
@@ -6472,18 +6465,15 @@
           },
           {
             "text": "among",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew bilingual pass: semantic correspondence 'among' ↔ ἐξ"
           },
           {
             "text": "you,",
@@ -8210,11 +8200,17 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w15",
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed; Matthew bilingual pass: also represents ὁ (the); Matthew bilingual pass: also represents τοῖς (the)",
+            "phraseIds": [
+              "w15",
+              "w20"
+            ]
           },
           {
             "text": "heavens",
@@ -8955,22 +8951,17 @@
           },
           {
             "text": "whatever",
-            "ids": [],
+            "ids": [
+              "w1",
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
               "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "reason": "Covered by authored phrase span; no safe lexical hover target; Matthew bilingual pass: also represents Πάντα (All things); Matthew bilingual pass: also represents ὅσα (as much as)"
           },
           {
             "text": "you",
@@ -13570,10 +13561,15 @@
           },
           {
             "text": "cannot",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew bilingual pass: semantic correspondence 'cannot' ↔ δύναται",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "produce",
@@ -15277,19 +15273,16 @@
           {
             "text": "to",
             "ids": [
-              "w5"
+              "w5",
+              "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
               "w5",
-              "w6",
-              "w7"
-            ]
+              "w9"
+            ],
+            "reason": "Matthew bilingual pass: also represents εἰς (into)"
           },
           {
             "text": "me,",
@@ -17504,19 +17497,15 @@
           },
           {
             "text": "practice",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew bilingual pass: semantic correspondence 'practice' ↔ ἐργαζόμενοι"
           },
           {
             "text": "lawlessness.",
@@ -18450,20 +18439,18 @@
           {
             "text": "the",
             "ids": [
-              "w21"
+              "w21",
+              "w6",
+              "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-positional",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
               "w21",
-              "w22"
-            ]
+              "w6",
+              "w18"
+            ],
+            "reason": "Matthew bilingual pass: also represents τοὺς (the); Matthew bilingual pass: also represents τὴν (the)"
           },
           {
             "text": "rock.",
@@ -19378,21 +19365,15 @@
           },
           {
             "text": "against",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
+            "ids": [
               "w17"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w17"
+            ],
+            "reason": "Matthew bilingual pass: semantic correspondence 'against' ↔ ἐκείνῃ,"
           },
           {
             "text": "that",
@@ -20593,20 +20574,18 @@
           {
             "text": "the",
             "ids": [
-              "w22"
+              "w22",
+              "w6",
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-positional",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
               "w22",
-              "w23"
-            ]
+              "w6",
+              "w19"
+            ],
+            "reason": "Matthew bilingual pass: also represents τοὺς (the); Matthew bilingual pass: also represents τὴν (the)"
           },
           {
             "text": "sand.",
@@ -21502,21 +21481,15 @@
           },
           {
             "text": "struck",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew bilingual pass: semantic correspondence 'struck' ↔ προσέκοψαν"
           },
           {
             "text": "that",
@@ -22228,19 +22201,20 @@
           {
             "text": "the",
             "ids": [
-              "w11"
+              "w11",
+              "w5",
+              "w7",
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-postguard-positional",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w10",
               "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w5",
+              "w7",
+              "w14"
+            ],
+            "reason": "Matthew bilingual pass: also represents ὁ (the); Matthew bilingual pass: also represents τοὺς (the); Matthew bilingual pass: also represents τῇ (the)"
           },
           {
             "text": "crowds",
