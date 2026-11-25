@@ -1,0 +1,49 @@
+name: Conservative NT master cleanup
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/run-master-cleanup.py'
+      - '.github/workflows/conservative-master-cleanup.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dgt-master-cleanup
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run conservative cleanup to fixed point and rescan
+        run: python scripts/run-master-cleanup.py
+
+      - name: Commit safe cleanup and persistent checkpoint
+        run: |
+          git config user.name "DGTBible alignment bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No conservative cleanup changes to commit."
+            exit 0
+          fi
+          git commit -m "Apply conservative reviewed NT master alignment batch checkpoint"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep $((attempt*2))
+          done
+
+      - name: Upload current ranked review queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: conservative-master-review
+          path: master-review/
+          retention-days: 14
