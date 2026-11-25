@@ -12592,16 +12592,15 @@
           },
           {
             "text": "must",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w9",
-              "w10",
+            "ids": [
               "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'must' ↔ ποιήσω"
           },
           {
             "text": "I",
