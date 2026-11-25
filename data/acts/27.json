@@ -6090,28 +6090,24 @@
           },
           {
             "text": "when",
+            "ids": [],
+            "after": " ",
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed Acts 27:9 correction after direct visual/user review: English temporal 'when' is supplied by the genitive-absolute construction, not by Ἱκανοῦ"
+          },
+          {
+            "text": "considerable",
             "ids": [
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w1"
-            ]
-          },
-          {
-            "text": "considerable",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "reason": "Human-reviewed Acts 27:9 correction after direct visual/user review: 'considerable' renders Ἱκανοῦ ('much/considerable')"
           },
           {
             "text": "time",
@@ -6241,12 +6237,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Human-reviewed Acts 27:9 correction after direct visual/user review: English article 'the' before Fast renders τὴν"
           },
           {
             "text": "Fast",
@@ -6311,31 +6310,27 @@
           },
           {
             "text": "began",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Human-reviewed Acts 27:9 correction after direct visual/user review: 'began' is aspectual English support for imperfect παρῄνει"
           },
           {
             "text": "advising",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Human-reviewed Acts 27:9 correction after direct visual/user review: 'advising' renders παρῄνει"
           },
           {
             "text": "them,",
@@ -6343,10 +6338,11 @@
               "w18"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w18"
-            ]
+            ],
+            "reason": "Human-reviewed Acts 27:9 correction after direct visual/user review: 'them' is included in the contextual rendering of παρῄνει"
           }
         ]
       }
