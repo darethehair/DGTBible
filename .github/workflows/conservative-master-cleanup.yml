@@ -16,6 +16,7 @@ concurrency:
   group: dgt-master-cleanup
   cancel-in-progress: false
 
+# Exact checkpoint refreshes use the recognized commit message below.
 jobs:
   cleanup:
     if: ${{ github.event_name == 'workflow_dispatch' || startsWith(github.event.head_commit.message, 'Generate QA-clean') || github.event.head_commit.message == 'Refresh exact master cleanup checkpoint' }}
