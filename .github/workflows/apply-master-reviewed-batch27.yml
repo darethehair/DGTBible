@@ -21,6 +21,9 @@ jobs:
       - name: Apply reviewed corrections
         run: python scripts/apply-master-reviewed-batch27.py
       - name: Validate Acts
+        env:
+          START_CHAPTER: '1'
+          END_CHAPTER: '28'
         run: python scripts/audit-acts.py
       - name: Rescan full NT
         run: python scripts/master-nt-review.py
