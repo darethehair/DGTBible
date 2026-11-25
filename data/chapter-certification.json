@@ -587,11 +587,16 @@
       }
     },
     "john/07": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "8a6375d628884c3bf9ca232eb214eadeab48024a",
       "reviewed_verses": "1–53",
       "corrections": 139,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "dbb7b635a13d20462de9d7475eda1890f2431b07",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "At 7:8 the first yet is supplied in this Greek edition, while the second translates οὔπω. Jewish, already, When, mine, belongs, people, longer and said are contextual renderings of the flagged Greek expressions. Verified the repeated Christ and Galilee phrases. Split two compound tokens at existing dashes at 7:22 to isolate conjunction and negation hover targets.",
+        "chapter_sha256": "a7a6a1a6ac91953cf78f8c5a521045f6a33246389d40595a3b854ce286c87aaa"
+      }
     },
     "john/08": {
       "status": "corrected-awaiting-verification",
@@ -692,9 +697,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/07",
+  "resume": "john/08",
   "verification_backlog": [
-    "john/07",
     "john/08",
     "john/09",
     "john/10",
