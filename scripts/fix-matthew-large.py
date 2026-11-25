@@ -165,3 +165,36 @@ for (vn,idx),(ids,reason) in M26_FINAL.items():
     t["reason"]=reason
 p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n")
 print(f"Matthew 26: applied {len(M26_FINAL)} final certification repairs")
+
+
+# FINAL_MATTHEW_13_CERTIFICATION
+M13_FINAL = {
+  (10,8): (["w7","w8"], "Bilingual certification: 'Why' renders Διὰ τί"),
+  (15,20): (["w16"], "Bilingual certification: 'their eyes' renders ὀφθαλμοὺς αὐτῶν"),
+  (20,2): (["w1","w7"], "Bilingual certification: English 'the one' carries resumptive οὗτός"),
+  (22,2): (["w1","w7"], "Bilingual certification: English 'the one' carries resumptive οὗτός"),
+  (23,2): (["w1","w9"], "Bilingual certification: English 'the one' carries resumptive οὗτός"),
+  (25,12): (["w14","w15"], "Bilingual certification: 'among' renders ἀνὰ μέσον"),
+  (28,6): (["w5","w6"], "Bilingual certification: 'enemy' compresses Ἐχθρὸς ἄνθρωπος"),
+  (30,27): (["w25","w27"], "Bilingual certification: purpose 'to burn' carries πρὸς ... κατακαῦσαι"),
+  (35,15): (["w14"], "Bilingual certification: 'my mouth' renders στόμα μου"),
+  (36,2): (["w2"], "Bilingual certification: 'left the crowds' renders ἀφεὶς"),
+  (38,8): (["w10","w11"], "Bilingual certification: 'good seed' carries resumptive οὗτοί"),
+  (44,27): (["w25","w26"], "Bilingual certification: 'everything' carries πάντα ὅσα"),
+  (45,8): (["w8","w9"], "Bilingual certification: 'a merchant/man' carries ἀνθρώπῳ ἐμπόρῳ"),
+  (46,11): (["w9","w10"], "Bilingual certification: 'everything' carries πάντα ὅσα"),
+  (48,24): (["w18","w19"], "Bilingual certification: 'away/out' carries ἔξω ἔβαλον"),
+  (54,3): (["w6"], "Bilingual certification: 'his hometown' renders πατρίδα αὐτοῦ"),
+}
+p=Path("data/matthew/13.json")
+d=json.loads(p.read_text())
+byv={v["v"]:v for v in d["verses"]}
+for (vn,idx),(ids,reason) in M13_FINAL.items():
+    t=byv[vn]["alignment"]["dgt"][idx]
+    t["ids"]=ids
+    t["phraseIds"]=ids
+    t.pop("supplied",None)
+    t["confidence"]="reviewed-bilingual-precise" if len(ids)==1 else "reviewed-bilingual-semantic"
+    t["reason"]=reason
+p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n")
+print(f"Matthew 13: applied {len(M13_FINAL)} final certification repairs")
