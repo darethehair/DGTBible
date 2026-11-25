@@ -2571,11 +2571,11 @@
           {
             "text": "and",
             "after": " ",
-            "ids": [
-              "w10"
-            ],
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 12"
+            "ids": [],
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 44: English clause coordination before 'was trying to persuade' is supplied; τε supplies 'both'",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "was",
@@ -2583,14 +2583,11 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Auxiliary with ἔπειθεν without unrelated phrase span"
           },
           {
             "text": "trying",
@@ -6713,14 +6710,11 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-positional",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Article with Lord without unrelated phrase span"
           },
           {
             "text": "Lord",
@@ -6747,13 +6741,14 @@
           {
             "text": "to",
             "ids": [
-              "w10"
+              "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10"
-            ]
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Dative/article before Paul, not Παύλῳ itself"
           },
           {
             "text": "Paul",
@@ -6811,17 +6806,14 @@
           {
             "text": "the",
             "ids": [
-              "w9"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Article in 'in the night' belongs with ἐν phrase, not τῷ before Paul"
           },
           {
             "text": "night,",
@@ -6851,25 +6843,23 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Renders first μή without unrelated phrase span"
           },
           {
             "text": "be",
             "ids": [
-              "w17"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w17"
-            ]
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: English support in 'be afraid' belongs with φοβοῦ, not σιωπήσῃς"
           },
           {
             "text": "afraid,",
@@ -6895,17 +6885,15 @@
           },
           {
             "text": "keep",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Aspectual rendering of λάλλει ('keep speaking')"
           },
           {
             "text": "speaking",
@@ -6932,17 +6920,14 @@
           {
             "text": "do",
             "ids": [
-              "w14"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
               "w17"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: English auxiliary in 'do not be silent' belongs with σιωπήσῃς"
           },
           {
             "text": "not",
@@ -6950,14 +6935,11 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w16"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Renders second μή without unrelated phrase span"
           },
           {
             "text": "be",
@@ -12017,13 +11999,14 @@
           {
             "text": "they",
             "ids": [
-              "w9"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Subject of 'they seized' carried by participle ἐπιλαβόμενοι, not later ἔτυπτον"
           },
           {
             "text": "all",
@@ -12061,17 +12044,14 @@
           {
             "text": "the",
             "ids": [
-              "w8"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8"
-            ]
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Article with synagogue ruler, not noun ἀρχισυνάγωγον"
           },
           {
             "text": "synagogue",
@@ -12154,14 +12134,11 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Article with judgment seat without unrelated phrase span"
           },
           {
             "text": "judgment",
@@ -13850,13 +13827,14 @@
           {
             "text": "he",
             "ids": [
-              "w14"
+              "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w14"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Subject of 'he left them' carried by κατέλιπεν, not later διελέξατο"
           },
           {
             "text": "left",
@@ -13906,14 +13884,11 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Subject/emphasis of second clause belongs to αὐτὸς without unrelated phrase span"
           },
           {
             "text": "himself",
@@ -13943,14 +13918,11 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Article with synagogue without unrelated phrase span"
           },
           {
             "text": "synagogue",
@@ -14000,14 +13972,11 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w15"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Article/dative with Jews without unrelated phrase span"
           },
           {
             "text": "Jews.",

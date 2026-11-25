@@ -7120,17 +7120,14 @@
           {
             "text": "works",
             "ids": [
-              "w8"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: 'powerful works/miracles' renders Δυνάμεις, not ἐποίει"
           },
           {
             "text": "through",
@@ -7149,14 +7146,11 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Article with hands without unrelated phrase span"
           },
           {
             "text": "hands",
@@ -17479,41 +17473,38 @@
           {
             "text": "He",
             "ids": [
-              "w9"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Subject of 'He gathered' is carried by participle συναθροίσας, not later εἶπεν"
           },
           {
             "text": "gathered",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Renders συναθροίσας"
           },
           {
             "text": "these",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Renders relative οὓς as 'these'"
           },
           {
             "text": "together,",
@@ -17530,15 +17521,10 @@
             "text": "along",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "reason": "Human-reviewed full-NT master pass batch 44: English connective in 'along with' is supplied",
+            "supplied": true
           },
           {
             "text": "with",
@@ -17555,28 +17541,23 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Article with workers without unrelated phrase span"
           },
           {
             "text": "workers",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Renders ἐργάτας"
           },
           {
             "text": "in",
@@ -17591,31 +17572,31 @@
           },
           {
             "text": "related",
-            "ids": [],
+            "ids": [
+              "w6",
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "reason": "Human-reviewed full-NT master pass batch 44: Contextual rendering of τὰ τοιαῦτα ('such/related')"
           },
           {
             "text": "trades,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w5",
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w5",
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Contextual rendering of περὶ ... ἐργάτας ('workers in related trades')"
           },
           {
             "text": "and",
@@ -17720,14 +17701,11 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-family",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Dative ἡμῖν rendered idiomatically as first-person possession without unrelated span"
           },
           {
             "text": "have",
@@ -17747,28 +17725,23 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-postguard-bundled-pronoun",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Possessive rendering of ἡμῖν without unrelated span"
           },
           {
             "text": "prosperity.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 44: Renders εὐπορία"
           }
         ]
       }
