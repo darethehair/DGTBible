@@ -3077,10 +3077,15 @@
           },
           {
             "text": "sanctuary,",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew bilingual pass: shared source correspondence 'sanctuary,' ↔ ναὸν",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "he",
@@ -18881,16 +18886,15 @@
           },
           {
             "text": "cloak",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'cloak' ↔ χλαμύδα"
           },
           {
             "text": "around",
@@ -21268,16 +21272,15 @@
           },
           {
             "text": "cloak",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
+            "ids": [
               "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'cloak' ↔ χλαμύδα"
           },
           {
             "text": "off",
@@ -31716,15 +31719,15 @@
           },
           {
             "text": "wine,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
+            "ids": [
               "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'wine,' ↔ ὄξους"
           },
           {
             "text": "put",
@@ -33376,19 +33379,15 @@
           },
           {
             "text": "curtain",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'curtain' ↔ καταπέτασμα"
           },
           {
             "text": "of",
