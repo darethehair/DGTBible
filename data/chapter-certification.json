@@ -289,11 +289,16 @@
       }
     },
     "luke/06": {
-      "status": "corrected-awaiting-verification",
-      "commit": "5eea785e05cfcb685c0cd38f1695486ac7b8ad3c",
-      "corrections": 258,
+      "status": "verified-awaiting-deployment",
+      "commit": "8968ea0906a54179624a17fc474a439e4f685880",
+      "corrections": 265,
       "reviewed_verses": "1–49",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "8968ea0906a54179624a17fc474a439e4f685880",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. Son in 6:15–16 expands the genitive lineage and others in 6:37 is an inferred object. Indefinite articles, implied copulas and duplicated pronouns remain unlinked where Greek has no separate target. The Latin-style positional candidate for a in 6:39 had no Greek article.",
+        "chapter_sha256": "8164a0eb36dd90c03cb70721ca7378fd90336161592984ee58df873698fd4e20"
+      }
     },
     "luke/07": {
       "status": "corrected-awaiting-verification",
@@ -422,9 +427,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/06",
+  "resume": "luke/07",
   "verification_backlog": [
-    "luke/06",
     "luke/07",
     "luke/08",
     "luke/09",
