@@ -4576,8 +4576,8 @@
           {
             "text": "when",
             "ids": [
-              "w7",
-              "w8"
+              "w8",
+              "w9"
             ],
             "after": " ",
             "confidence": "reviewed-precise"
@@ -5123,17 +5123,11 @@
           {
             "text": "to",
             "ids": [
+              "w7",
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "enter",
@@ -21558,13 +21552,11 @@
           {
             "text": "Mary",
             "ids": [
+              "w2",
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "said",
@@ -22346,13 +22338,11 @@
           {
             "text": "answered",
             "ids": [
-              "w2"
+              "w2",
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "her,",
@@ -24481,13 +24471,10 @@
           {
             "text": "to",
             "ids": [
-              "w10"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "your",
@@ -25461,13 +25448,11 @@
           {
             "text": "entered",
             "ids": [
-              "w2"
+              "w2",
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -30113,10 +30098,13 @@
           },
           {
             "text": "on",
-            "ids": [],
+            "ids": [
+              "w11",
+              "w12",
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "all",
@@ -32899,17 +32887,10 @@
           {
             "text": "to",
             "ids": [
-              "w8"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Abraham",
@@ -44119,17 +44100,11 @@
           {
             "text": "to",
             "ids": [
+              "w1",
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "give",
