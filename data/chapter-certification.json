@@ -528,10 +528,15 @@
       }
     },
     "john/02": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "e2752ce47b784f2eee3618876fca1648bad111a9",
       "reviewed_verses": "1–25",
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "3f5518ff2498be18a37599ae36bb9be45bb85897",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Existential there at 2:1 has no separate location word and the later there is ἐκεῖ. At 2:2–3 and 2:10, καί conveys accompaniment, ὑστερήσαντος conveys running short, λέγει is a historical present rendered said, and τίθησιν means sets out or serves. Removed an English-support auxiliary link and distinguished the implicit relative from the expressed subject at 2:23.",
+        "chapter_sha256": "11bb413c0c4dab53f1bae9f3790a89795288ceaef9d021b4d868bcbbd5b2b1ed"
+      }
     },
     "john/03": {
       "status": "corrected-awaiting-verification",
@@ -667,9 +672,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/02",
+  "resume": "john/03",
   "verification_backlog": [
-    "john/02",
     "john/03",
     "john/04",
     "john/05",
