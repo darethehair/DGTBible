@@ -3297,17 +3297,11 @@
           {
             "text": "his",
             "ids": [
+              "w21",
               "w23"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
-            "phraseIds": [
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "paths",
@@ -4150,13 +4144,11 @@
           {
             "text": "smooth,",
             "ids": [
+              "w19",
               "w21"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w21"
-            ]
+            "confidence": "reviewed-precise"
           }
         ]
       }
@@ -9284,10 +9276,11 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "collect.”",
@@ -14515,10 +14508,11 @@
           },
           {
             "text": "them",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "all:",
