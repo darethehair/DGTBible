@@ -551,11 +551,16 @@
       }
     },
     "john/04": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "ededc47a946ebd457c0011f6f3e578f6d1a550af",
       "reviewed_verses": "1–54",
       "corrections": 177,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "e9d01d64a9dc9263543f7ccf29e3af0af8374e67",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "John 4:7 and 4:49 use historical presents rendered as past English verbs. In 4:33 something is a supplied object, in 4:46 There is existential, and in 4:48 people makes the plural address explicit. No in 4:44 expresses οὐκ, and homeland corresponds to πατρίς. In 4:26 split a token at the existing dash to leave the supplied predicate pronoun unlinked and allow the article to hover on its own.",
+        "chapter_sha256": "63cfb54ec52b0cb85c43b349c0b6b4c49b07ff6836f7a826d260d931118532fd"
+      }
     },
     "john/05": {
       "status": "corrected-awaiting-verification",
@@ -677,9 +682,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/04",
+  "resume": "john/05",
   "verification_backlog": [
-    "john/04",
     "john/05",
     "john/06",
     "john/07",
