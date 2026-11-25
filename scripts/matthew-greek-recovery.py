@@ -41,3 +41,5 @@ print(f"HIGH_CONFIDENCE_UNUSED_GREEK_CANDIDATES {total}")
 for row in candidates:
     print("M%d:%s %s %s <%s> -> token %d %r overlap=%s"%(
         row[0],row[1],row[2],row[3],row[4],row[5][0],row[5][1],row[5][2]))
+
+# final recovery verification
