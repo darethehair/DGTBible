@@ -4098,19 +4098,15 @@
           },
           {
             "text": "standing",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
+            "ids": [
               "w20"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'standing' ↔ ἀργοί;"
           },
           {
             "text": "here",
@@ -10462,16 +10458,15 @@
           },
           {
             "text": "good?",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20"
+            "ids": [
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w19"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'good?' ↔ ἀγαθός"
           }
         ]
       }
