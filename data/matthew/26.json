@@ -1323,14 +1323,16 @@
           {
             "text": "over",
             "ids": [
-              "w14"
+              "w14",
+              "w15"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-semantic",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w14"
+              "w14",
+              "w15"
             ],
-            "reason": "Matthew 26 bilingual pass: over ↔ παραδίδοται"
+            "reason": "Matthew Greek coverage audit: added directly represented Greek source token"
           },
           {
             "text": "to",
@@ -11679,21 +11681,16 @@
           {
             "text": "with",
             "ids": [
-              "w27"
+              "w27",
+              "w22"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-positional",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
               "w27",
-              "w28",
-              "w29",
-              "w30"
-            ]
+              "w22"
+            ],
+            "reason": "Matthew Greek coverage audit: added directly represented Greek source token"
           },
           {
             "text": "my",
