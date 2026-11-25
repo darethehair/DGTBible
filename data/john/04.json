@@ -1430,10 +1430,10 @@
           {
             "text": "to",
             "ids": [
-              "w4"
+              "w1"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "pass",
@@ -15297,12 +15297,18 @@
             "confidence": "auto-high"
           },
           {
-            "text": "he—the",
+            "text": "he—",
+            "after": "",
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "Supplied English predicate pronoun"
+          },
+          {
+            "text": "the",
+            "after": " ",
             "ids": [
-              "w6",
               "w7"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
