@@ -719,11 +719,16 @@
       }
     },
     "john/18": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "21a0205f91ec8129a640cbffa39a070f03114f12",
       "reviewed_verses": "1–40",
       "corrections": 138,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "1b6e3b3b4a174a9861051b8e530c3d29ad6da7f0",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "There at 18:1 is existential and the locations in 18:2–3 correspond to distinct instances of ἐκεῖ. Own at 18:35 expresses the possessive σὸν. Confirmed the separate occurrences of disciples, entry, denial, kingdom, and release. Split me and shall at the dash in 18:11 to give each its own source.",
+        "chapter_sha256": "32a5235c66f9f4958e05efc3ca64771e083877be7c4b9758a50110532b5f4501"
+      }
     },
     "john/19": {
       "status": "corrected-awaiting-verification",
@@ -747,9 +752,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/18",
+  "resume": "john/19",
   "verification_backlog": [
-    "john/18",
     "john/19",
     "john/20",
     "john/21"
