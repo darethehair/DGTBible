@@ -277,11 +277,16 @@
       }
     },
     "luke/05": {
-      "status": "corrected-awaiting-verification",
-      "commit": "accbfb8cd73e835a4e0b29f12d592129de2b321a",
-      "corrections": 228,
+      "status": "verified-awaiting-deployment",
+      "commit": "7b374b893239a27b18a1eefe3f3ef5632690d19e",
+      "corrections": 234,
       "reviewed_verses": "1–39",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "7b374b893239a27b18a1eefe3f3ef5632690d19e",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. The indefinite articles and the possessives in 5:7 and 5:12 are implied. In 5:18 the second him resumes the object of bring and no second Greek object accompanies place. The repetition of from in 5:17 reflects the common Greek preposition governing the coordinated geography. No phrase-only hover links remain.",
+        "chapter_sha256": "66b98d0de1fe454c4fda28ff1fc78bf13b376d9e17051ff5e0f6d41bdef8a33b"
+      }
     },
     "luke/06": {
       "status": "corrected-awaiting-verification",
@@ -417,9 +422,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/05",
+  "resume": "luke/06",
   "verification_backlog": [
-    "luke/05",
     "luke/06",
     "luke/07",
     "luke/08",
