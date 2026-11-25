@@ -89,3 +89,24 @@ for ch, fixes in FIXES.items():
         changed+=1
     p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n")
     print(f"Matthew {ch}: {changed} oversized-file mappings repaired")
+
+
+# Add high-confidence Greek source IDs to already-correct English tokens.
+EXTRA_ADD = {
+  13: {(2,10): "w12"},
+  26: {(2,17): "w15", (18,30): "w22"},
+}
+for ch, adds in EXTRA_ADD.items():
+    p=Path(f"data/matthew/{ch:02}.json")
+    d=json.loads(p.read_text())
+    byv={v["v"]:v for v in d["verses"]}
+    for (vn,idx),gid in adds.items():
+        t=byv[vn]["alignment"]["dgt"][idx]
+        ids=list(dict.fromkeys((t.get("ids") or [])+[gid]))
+        t["ids"]=ids
+        t["phraseIds"]=ids
+        t.pop("supplied",None)
+        t["confidence"]="reviewed-bilingual-precise"
+        t["reason"]="Matthew Greek coverage audit: added directly represented Greek source token"
+    p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n")
+    print(f"Matthew {ch}: added {len(adds)} high-confidence Greek coverage IDs")
