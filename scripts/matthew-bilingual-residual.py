@@ -38,3 +38,22 @@ for ch,v,phrase,unlinked,missing in rows:
     if unlinked: parts.append("unlinked="+",".join(f"{i}:{t}" for i,t in unlinked))
     if missing: parts.append("greek="+",".join(f"{i}:{t}<{g}>" for i,t,g in missing))
     print(f"M{ch}:{v} "+" | ".join(parts))
+
+
+# Detailed candidate spans for oversized chapters 13 and 26
+for ch in (13,26):
+    p=ROOT/f"{ch:02}.json"
+    d=json.loads(p.read_text())
+    print(f"DETAIL_CHAPTER_{ch}")
+    for v in d.get("verses",[]):
+        G=v.get("alignment",{}).get("greek",[])
+        byid={i:g for g in G for i in (g.get("ids") or [])}
+        D=v.get("alignment",{}).get("dgt",[])
+        for i,t in enumerate(D):
+            ids=t.get("ids") or []
+            phrase=t.get("phraseIds") or []
+            if not ids and not t.get("supplied") and len(phrase)>=2:
+                cand=[(x,byid.get(x,{}).get("text",""),byid.get(x,{}).get("gloss","")) for x in phrase]
+                print(f"M{ch}:{v.get('v')} TOKEN {i} {t.get('text')!r} CAND {cand}")
+            elif not ids and not t.get("supplied") and not phrase:
+                print(f"M{ch}:{v.get('v')} TOKEN {i} {t.get('text')!r} UNLINKED")
