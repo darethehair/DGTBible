@@ -11581,10 +11581,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-master-unaligned",
-            "reason": "Human-reviewed full-NT master pass batch 24"
+            "confidence": "reviewed-master-precise",
+            "reason": "Reviewed idiom: 'because of' renders ἀπὸ ('from')",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "her",
@@ -12367,8 +12372,10 @@
             "text": "of",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-unaligned",
-            "reason": "Human-reviewed full-NT master pass batch 24"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Reviewed supplied idiom: 'out of your mind' renders Μαίνῃ; no separate Greek 'of'",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "your",
@@ -17430,8 +17437,10 @@
             "text": "an",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-unaligned",
-            "reason": "Human-reviewed full-NT master pass batch 10"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Reviewed supplied English indefinite article; Greek has no separate 'an'",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "appointed",
