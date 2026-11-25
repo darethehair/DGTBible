@@ -1052,17 +1052,16 @@
           {
             "text": "his",
             "ids": [
-              "w2"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
-              "w2",
               "w3",
               "w4",
               "w5"
-            ]
+            ],
+            "reason": "Bilingual certification: 'his servants' renders παισὶν αὐτοῦ"
           },
           {
             "text": "servants,",
@@ -1350,20 +1349,15 @@
           {
             "text": "works",
             "ids": [
-              "w21"
+              "w20"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
               "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ]
+              "w20"
+            ],
+            "reason": "Bilingual certification: 'powerful works' renders δυνάμεις; operating remains ἐνεργοῦσιν"
           },
           {
             "text": "are",
@@ -4174,11 +4168,15 @@
         "dgt": [
           {
             "text": "so",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: discourse/result 'so' renders ὅθεν",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "that",
@@ -8203,11 +8201,16 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'in a boat' renders ἐν πλοίῳ",
+            "phraseIds": [
+              "w8",
+              "w9"
+            ]
           },
           {
             "text": "a",
@@ -8295,14 +8298,15 @@
           {
             "text": "by",
             "ids": [
-              "w8"
+              "w13"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w8"
+              "w13",
+              "w14"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span; Matthew bilingual pass: also represents ἐν (by)"
+            "reason": "Bilingual certification: 'by himself' renders κατʼ ἰδίαν"
           },
           {
             "text": "himself.",
@@ -9101,11 +9105,16 @@
           },
           {
             "text": "on",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'on them' renders ἐπʼ αὐτοῖς",
+            "phraseIds": [
+              "w10",
+              "w11"
+            ]
           },
           {
             "text": "them",
@@ -9911,20 +9920,16 @@
           {
             "text": "came,",
             "ids": [
-              "w4"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
               "w1",
               "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w9"
-            ]
+              "w3"
+            ],
+            "reason": "Bilingual certification: first 'came' in 'evening came' renders γενομένης"
           },
           {
             "text": "the",
@@ -15301,11 +15306,20 @@
           },
           {
             "text": "while",
-            "ids": [],
+            "ids": [
+              "w19",
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'while' renders ἕως οὗ",
+            "phraseIds": [
+              "w19",
+              "w20",
+              "w21",
+              "w22",
+              "w23"
+            ]
           },
           {
             "text": "he",
@@ -16921,11 +16935,19 @@
           },
           {
             "text": "was",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: second 'was' renders ἦν",
+            "phraseIds": [
+              "w15",
+              "w16",
+              "w17",
+              "w18",
+              "w19"
+            ]
           },
           {
             "text": "against",
@@ -18323,11 +18345,17 @@
           },
           {
             "text": "from",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'from fear' renders ἀπὸ τοῦ φόβου",
+            "phraseIds": [
+              "w16",
+              "w17",
+              "w18"
+            ]
           },
           {
             "text": "fear.",
@@ -20350,11 +20378,17 @@
           },
           {
             "text": "toward",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'toward Jesus' renders πρὸς τὸν Ἰησοῦν",
+            "phraseIds": [
+              "w18",
+              "w19",
+              "w20"
+            ]
           },
           {
             "text": "Jesus.",
@@ -22971,11 +23005,17 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "s4"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'to the land' renders ἐπὶ τὴν γῆν",
+            "phraseIds": [
+              "s4",
+              "w5",
+              "w6"
+            ]
           },
           {
             "text": "the",
@@ -23016,20 +23056,15 @@
           {
             "text": "at",
             "ids": [
-              "s4"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
               "w7",
               "w8"
-            ]
+            ],
+            "reason": "Bilingual certification: 'at Gennesaret' renders εἰς Γεννησαρέτ"
           },
           {
             "text": "Gennesaret.",
@@ -23932,19 +23967,16 @@
           {
             "text": "sick,",
             "ids": [
-              "w20"
-            ],
-            "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
               "w20",
               "w21"
-            ]
+            ],
+            "after": "",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w20",
+              "w21"
+            ],
+            "reason": "Bilingual certification: 'sick' renders κακῶς ἔχοντας"
           }
         ]
       }
