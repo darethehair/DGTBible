@@ -12163,18 +12163,15 @@
           },
           {
             "text": "pregnant",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'pregnant' ↔ γαστρὶ"
           },
           {
             "text": "and",
@@ -13412,10 +13409,15 @@
           },
           {
             "text": "happened",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew bilingual pass: shared source correspondence 'happened' ↔ γένηται.",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "from",
@@ -17995,16 +17997,15 @@
           },
           {
             "text": "eagles",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
+            "ids": [
               "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'eagles' ↔ ἀετοί."
           },
           {
             "text": "will",
