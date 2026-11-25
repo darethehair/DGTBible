@@ -26403,16 +26403,15 @@
           },
           {
             "text": "down",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w20",
-              "w21",
-              "w22",
-              "w23"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew bilingual audit: phrasal 'come down/descend' maps to κατάβηθι"
           },
           {
             "text": "from",
