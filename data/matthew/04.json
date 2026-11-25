@@ -4589,18 +4589,14 @@
           {
             "text": "his",
             "ids": [
-              "w18"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+              "w17"
+            ],
+            "reason": "Matthew final bilingual review: 'his' renders αὐτοῦ"
           },
           {
             "text": "angels",
@@ -4829,19 +4825,15 @@
           },
           {
             "text": "not",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
+            "ids": [
+              "w26"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w26"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target; Matthew final bilingual review: negative purpose 'not' represents μήποτε"
           },
           {
             "text": "strike",
@@ -9238,11 +9230,15 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed; Matthew final bilingual review: locative 'in' renders εἰς",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "Capernaum",
@@ -10962,21 +10958,16 @@
           {
             "text": "people",
             "ids": [
-              "w3"
+              "w3",
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
-              "w2",
               "w3",
-              "w4",
-              "w5",
-              "s6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w2"
+            ],
+            "reason": "Matthew final bilingual review: 'people' represents λαός"
           },
           {
             "text": "sitting",
@@ -18052,24 +18043,16 @@
           {
             "text": "suffering",
             "ids": [
-              "w16"
+              "w16",
+              "w15"
             ],
             "after": " ",
-            "confidence": "authored-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
               "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+              "w15"
+            ],
+            "reason": "Matthew final bilingual review: 'suffering' also represents κακῶς"
           },
           {
             "text": "with",
@@ -18184,31 +18167,24 @@
           {
             "text": "afflicted",
             "ids": [
-              "w23"
+              "w23",
+              "w21"
             ],
             "after": " ",
-            "confidence": "authored-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
               "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ]
+              "w21"
+            ],
+            "reason": "Matthew final bilingual review: 'afflicted' represents συνεχομένους"
           },
           {
             "text": "by",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Automatic recovery candidate fell outside authored phrase span; Matthew final bilingual review: 'by' is English scaffolding in 'afflicted by demons'",
+            "supplied": true
           },
           {
             "text": "demons,",
