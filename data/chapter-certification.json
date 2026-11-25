@@ -517,10 +517,15 @@
       }
     },
     "john/01": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "e2752ce47b784f2eee3618876fca1648bad111a9",
       "reviewed_verses": "1–51",
-      "verification_note": "Compared Greek and DGT in both directions. Two grouped DGT tokens in 1:1 were split for precise hover, preserving every character. Wording and source IDs checked against main."
+      "final_verification": {
+        "commit": "5035ad690517f361f24c9dfa6a414c14b68477ef",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "The semantic candidates at 1:3 and 1:12 are valid renderings of ἕν, ἐξουσίαν and γενέσθαι. Existential there at 1:47 is supplied. Rechecked the repeated Word and God links at 1:1 and left English auxiliary do unlinked where supplied. Narrowed the purpose clause at 1:31, speech verb at 1:33 and partitive at 1:35.",
+        "chapter_sha256": "4ae8662a861b62e1e2b60134423d801888ed5acebbef2bc5368e1513f65d8c51"
+      }
     },
     "john/02": {
       "status": "corrected-awaiting-verification",
@@ -662,9 +667,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/01",
+  "resume": "john/02",
   "verification_backlog": [
-    "john/01",
     "john/02",
     "john/03",
     "john/04",
