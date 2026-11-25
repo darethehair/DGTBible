@@ -10,6 +10,7 @@ on:
       - 'scripts/audit-acts-hover-review.py'
       - 'scripts/epistle_common.py'
       - 'scripts/alignment_repair.py'
+      - 'scripts/preserve-reviewed-alignments.py'
       - 'data/authoring/acts-*-dgt.tsv'
       - '.github/workflows/authoring-acts.yml'
   workflow_dispatch:
@@ -41,6 +42,8 @@ jobs:
           test -n "$latest"
           echo "START_CHAPTER=1" >> "$GITHUB_ENV"
           echo "END_CHAPTER=$((10#$latest))" >> "$GITHUB_ENV"
+      - name: Snapshot reviewed Acts alignments
+        run: python scripts/preserve-reviewed-alignments.py save acts /tmp/acts-reviewed.json
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-acts.mjs
       - name: Build Acts range
@@ -51,6 +54,8 @@ jobs:
         run: python scripts/repair-acts-final.py
       - name: Reapply reviewed master narrowing corrections
         run: python scripts/apply-master-reviewed-batch26.py
+      - name: Restore reviewed Acts alignments
+        run: python scripts/preserve-reviewed-alignments.py restore acts /tmp/acts-reviewed.json
       - name: Audit Acts range
         run: python scripts/audit-acts.py
       - name: Produce structural Acts hover review queue
