@@ -63,15 +63,3 @@ for ch in (13,26):
 # final Matthew audit/deploy trigger
 
 # post Greek recovery audit/deploy trigger
-
-
-# M26 detailed reverse-certification diagnostics
-CAND26={1,4,6,8,9,10,11,12,13,16,18,23,24,27,31,34,36,38,39,42,43,45,47,48,52,55,58,61,64,65}
-d=json.loads((ROOT/"26.json").read_text())
-for v in d.get("verses",[]):
-    if v.get("v") not in CAND26: continue
-    print(f"M26MAP:{v.get('v')}")
-    G=v.get("alignment",{}).get("greek",[])
-    D=v.get("alignment",{}).get("dgt",[])
-    print(" G "+" | ".join(f"{(g.get('ids') or ['?'])[0]}:{g.get('text','')}<{g.get('gloss','')}>" for g in G))
-    print(" D "+" | ".join(f"{i}:{t.get('text','')}=>{'+'.join(t.get('ids') or [])}{'[S]' if t.get('supplied') else ''}" for i,t in enumerate(D)))
