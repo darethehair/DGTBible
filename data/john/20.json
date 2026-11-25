@@ -3261,11 +3261,10 @@
           },
           {
             "text": "there,",
-            "ids": [
-              "w4"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "but",
@@ -3285,11 +3284,10 @@
           },
           {
             "text": "did",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "not",
@@ -3807,10 +3805,11 @@
           {
             "text": "entered",
             "ids": [
-              "w9"
+              "w9",
+              "w10"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -3886,11 +3885,10 @@
           },
           {
             "text": "there,",
-            "ids": [
-              "w17"
-            ],
+            "ids": [],
             "after": "",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           }
         ]
       }
@@ -5441,11 +5439,10 @@
           },
           {
             "text": "did",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "not",
@@ -9842,12 +9839,19 @@
             "confidence": "auto-high"
           },
           {
-            "text": "“Rabboni!”—which",
+            "text": "“Rabboni!”—",
+            "after": "",
             "ids": [
-              "w11",
+              "w11"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "which",
+            "after": " ",
+            "ids": [
               "w12"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
@@ -11541,10 +11545,11 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "he",
@@ -17693,10 +17698,11 @@
           },
           {
             "text": "though",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
