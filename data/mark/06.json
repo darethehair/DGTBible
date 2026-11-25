@@ -2024,29 +2024,10 @@
           {
             "text": "did",
             "ids": [
-              "w34"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32",
-              "w33",
-              "w34"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "this",
@@ -2159,42 +2140,17 @@
           },
           {
             "text": "is",
-            "ids": [
-              "w19"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32",
-              "w33",
-              "w34"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English idiom or grammatical wording without a distinct Greek hover target"
           },
           {
             "text": "this",
-            "ids": [
-              "w20"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-bilingual",
-            "reason": "Direct Greek-English alignment review",
-            "phraseIds": [
-              "w20"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English idiom or grammatical wording without a distinct Greek hover target"
           },
           {
             "text": "wisdom",
@@ -4790,15 +4746,10 @@
           },
           {
             "text": "“A",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-bilingual",
-            "reason": "Direct Greek-English alignment review",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English idiom or grammatical wording without a distinct Greek hover target"
           },
           {
             "text": "prophet",
@@ -4857,11 +4808,11 @@
           {
             "text": "except",
             "ids": [
+              "w12",
               "w13"
             ],
             "after": " ",
-            "confidence": "master-exact-precise",
-            "reason": "Master review: unique unused Greek source with exact lexical/stem match"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "in",
@@ -5084,10 +5035,11 @@
           },
           {
             "text": "own",
-            "ids": [],
+            "ids": [
+              "w27"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "household.”",
@@ -38874,10 +38826,11 @@
           },
           {
             "text": "also",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "from",
@@ -47083,30 +47036,16 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual",
-            "phraseIds": [
-              "w2"
-            ],
-            "reason": "Direct Greek-English alignment review"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "out",
             "ids": [
+              "w2",
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "of",
