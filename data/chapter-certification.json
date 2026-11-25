@@ -539,11 +539,16 @@
       }
     },
     "john/03": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "bbeddd137a74164bc049be8bd04c218f5ec04fb4",
       "reviewed_verses": "1–36",
       "corrections": 144,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "92f25da3cf123190e8217091278a2553e1d20b22",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "The first there in 3:1 and 3:23 introduces existential clauses. The location at 3:23 is the second there. Way in 3:16 is part of the rendering of οὕτως, and thrown in 3:24 corresponds to βεβλημένος. Confirmed the three distinct earth phrases at 3:31. The contextual possessive in 3:16 has no distinct source token.",
+        "chapter_sha256": "adacb40505b5c18f4fe60fda6b44265e07d7caf80b332a41cf69b70d3d80e282"
+      }
     },
     "john/04": {
       "status": "corrected-awaiting-verification",
@@ -672,9 +677,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/03",
+  "resume": "john/04",
   "verification_backlog": [
-    "john/03",
     "john/04",
     "john/05",
     "john/06",
