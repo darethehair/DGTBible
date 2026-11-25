@@ -599,11 +599,16 @@
       }
     },
     "john/08": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "ef9082bb5f62655699eb474a675562ded34428df",
       "reviewed_verses": "1–59",
       "corrections": 202,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "3380264e23af89dd6f61b6b81c546714f33cae3f",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "In 8:10 the English direct address Woman is supplied in the displayed Greek and is distinct from the woman seen earlier in the Greek clause. At 8:44 there is existential. Let in 8:7 reflects the third-person imperative, condemn in 8:11 is the contextual meaning of κρίνω, testifies in 8:18 renders μαρτυρεῖ, and what I say in 8:43 renders the nominal phrase my speech. Confirmed the separate source IDs for stooped and wrote at 8:8. Split Father and God at the dash in 8:41.",
+        "chapter_sha256": "6db27a57facfe975d532d159c07635a20a2cdf8a6c4157420057e77f26a67a2e"
+      }
     },
     "john/09": {
       "status": "corrected-awaiting-verification",
@@ -697,9 +702,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/08",
+  "resume": "john/09",
   "verification_backlog": [
-    "john/08",
     "john/09",
     "john/10",
     "john/11",
