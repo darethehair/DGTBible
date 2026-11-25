@@ -2145,15 +2145,16 @@
           },
           {
             "text": "though",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "unique-lexical-repaired",
             "phraseIds": [
               "w5",
               "w6",
               "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "absent",

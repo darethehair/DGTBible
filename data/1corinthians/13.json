@@ -1657,9 +1657,11 @@
           },
           {
             "text": "know",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "unique-lexical-repaired",
             "phraseIds": [
               "w5",
               "w6",
@@ -1670,8 +1672,7 @@
               "w11",
               "w12",
               "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            ]
           },
           {
             "text": "all",

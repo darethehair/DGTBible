@@ -12260,12 +12260,13 @@
           },
           {
             "text": "person",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-master-supplied",
+            "confidence": "context-repaired",
             "phraseIds": [],
-            "supplied": true,
-            "reason": "Human-reviewed full-NT master pass batch 61: English explicit subject 'that person' is supplied from the imperative context"
+            "supplied": true
           },
           {
             "text": "know",
