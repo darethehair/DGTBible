@@ -265,11 +265,16 @@
       }
     },
     "luke/04": {
-      "status": "corrected-awaiting-verification",
-      "commit": "876538299dd584bedd7383b8ae3449fdb55e0cc7",
-      "corrections": 238,
+      "status": "verified-awaiting-deployment",
+      "commit": "3149c1bc675e4725e1a37a9816cf407fc14fbdac",
+      "corrections": 243,
       "reviewed_verses": "1–44",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "3149c1bc675e4725e1a37a9816cf407fc14fbdac",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. The devil in 4:5 supplies the Greek verb subject from context, and the object of rebuking in 4:41 is implicit. Repeated it candidates are expletives or implied objects. The two Greek pronouns and idiomatic conjunction in 4:34 each retain their own targets. No phrase-only hover links remain.",
+        "chapter_sha256": "572233d8e04eb54f9385d677051e73cbbd7a5a58565a0930df4012c9db3a417a"
+      }
     },
     "luke/05": {
       "status": "corrected-awaiting-verification",
@@ -412,9 +417,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/04",
+  "resume": "luke/05",
   "verification_backlog": [
-    "luke/04",
     "luke/05",
     "luke/06",
     "luke/07",
