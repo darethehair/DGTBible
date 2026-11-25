@@ -33,7 +33,13 @@
     "mark/06": {
       "status": "corrected-awaiting-verification",
       "commit": "88ed539c",
-      "corrections": 283
+      "corrections": 283,
+      "follow_up": {
+        "commit": "a842166",
+        "corrections": 9,
+        "scope": "Mark 6:2, 4, 43, 54",
+        "verification_note": "The legacy audit still flags “is” and “a” as exact-link candidates and “get” and “people” as orphan content. These are idiomatic English in their passages and have no discrete Greek tokens."
+      }
     },
     "mark/07": {
       "status": "corrected-awaiting-verification",
@@ -46,6 +52,14 @@
       "corrections": 196,
       "verification_note": "Initial bilingual correction pass. Legacy Mark audit flags exact-link candidates, including supplied English articles and objects. Final verification pending.",
       "commit": "89d2dfa"
+    },
+    "mark/09": {
+      "status": "correction-in-progress",
+      "commit": "b3ddf6e",
+      "corrections": 78,
+      "reviewed_verses": "1–13",
+      "next_verse": 14,
+      "verification_note": "Original verse and token text and source IDs validated for the correction pass. Full chapter audit and final bilingual verification remain pending."
     }
   },
   "resume": "mark/09",
@@ -60,7 +74,7 @@
     "mark/08"
   ],
   "verification_baseline": {
-    "scope": "mark/01\u201306",
-    "result": "Legacy audit failed on orphan-content assertions for Mark 2\u20136. Inspect each case in context during final bilingual verification."
+    "scope": "mark/01–06",
+    "result": "Legacy audit failed on orphan-content assertions for Mark 2–6. Inspect each case in context during final bilingual verification."
   }
 }
