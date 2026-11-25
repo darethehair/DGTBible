@@ -1,0 +1,16 @@
+name: Report Acts master review tail
+on:
+  push:
+    paths:
+      - 'scripts/report-acts-master-tail.py'
+      - '.github/workflows/report-acts-master-tail.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print Acts-only master review tail
+        run: python scripts/report-acts-master-tail.py
