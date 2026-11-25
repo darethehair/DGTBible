@@ -4903,11 +4903,10 @@
           },
           {
             "text": "your",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "mat.”",
@@ -8703,10 +8702,11 @@
           },
           {
             "text": "too",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "am",
@@ -17343,12 +17343,19 @@
             "confidence": "auto-high"
           },
           {
-            "text": "out—those",
+            "text": "out—",
+            "after": "",
             "ids": [
-              "w2",
+              "w2"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "those",
+            "after": " ",
+            "ids": [
               "w3"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
@@ -19410,7 +19417,6 @@
           {
             "text": "gives",
             "ids": [
-              "w14",
               "w15"
             ],
             "after": " ",
@@ -21770,12 +21776,19 @@
             "confidence": "reviewed-precise"
           },
           {
-            "text": "complete—the",
+            "text": "complete—",
+            "after": "",
             "ids": [
-              "w18",
+              "w18"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "the",
+            "after": " ",
+            "ids": [
               "w21"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
@@ -21811,12 +21824,19 @@
             "confidence": "reviewed-precise"
           },
           {
-            "text": "doing—testify",
+            "text": "doing—",
+            "after": "",
             "ids": [
-              "w25",
+              "w25"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "testify",
+            "after": " ",
+            "ids": [
               "w26"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
