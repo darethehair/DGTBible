@@ -3655,11 +3655,16 @@
           },
           {
             "text": "because",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'because of me' renders ἐν ἐμοί",
+            "phraseIds": [
+              "w8",
+              "w9"
+            ]
           },
           {
             "text": "of",
@@ -4403,11 +4408,16 @@
           },
           {
             "text": "about",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'about John' renders περὶ Ἰωάννου",
+            "phraseIds": [
+              "w10",
+              "w11"
+            ]
           },
           {
             "text": "John:",
@@ -6625,11 +6635,16 @@
           },
           {
             "text": "about",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'about whom' renders περὶ οὗ",
+            "phraseIds": [
+              "w4",
+              "w5"
+            ]
           },
           {
             "text": "whom",
@@ -9995,11 +10010,16 @@
           },
           {
             "text": "has",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'has ears' renders ἔχων ὦτα",
+            "phraseIds": [
+              "w2",
+              "w3"
+            ]
           },
           {
             "text": "ears,",
@@ -14646,25 +14666,17 @@
           {
             "text": "in",
             "ids": [
-              "w18"
+              "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-positional",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w7",
-              "w8",
               "w9",
               "w10",
               "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w12"
+            ],
+            "reason": "Bilingual certification: first 'in' introduces Tyre and renders the first ἐν"
           },
           {
             "text": "Tyre",
@@ -18754,19 +18766,27 @@
           },
           {
             "text": "because",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'because' renders ὅτι",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "this",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'this/so' renders οὕτως",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "was",
