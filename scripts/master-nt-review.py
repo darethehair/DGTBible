@@ -137,6 +137,34 @@ for book in catalog:
                         rows.append({'severity':sev,'kind':'broad-phrase','book':name,'ref':ref,'token':x.get('text',''),'activated':len(span),'total':len(G),'share':round(frac,3),'detail':span})
                         stats[name]['broad_phrase']+=1
 
+            # Phrase-only lexical candidates.
+            # A token can be "covered" by a phrase span while still lacking the
+            # precise lexical hover target that a reader expects.  Review
+            # phrase-only content tokens when exactly one Greek source inside
+            # their declared phrase span is a strong lexical match.
+            for i,x in enumerate(D):
+                if x.get('ids') or x.get('supplied'):continue
+                span=list(dict.fromkeys(x.get('phraseIds',[])))
+                if not span:continue
+                words=content_words(x.get('text',''))
+                if not words:continue
+                cand=[]
+                for wid in span:
+                    g=src.get(wid)
+                    if not g:continue
+                    terms=src_terms(g,literal_by_id,wid)
+                    z=max((sim(w,t) for w in words for t in terms),default=0)
+                    if z>=8:cand.append((z,wid,g.get('text',''),g.get('gloss','')))
+                if cand:
+                    bestz=max(z for z,_,_,_ in cand)
+                    top=[c for c in cand if c[0]==bestz]
+                    if len(top)==1:
+                        z,wid,gt,gl=top[0]
+                        akey=f"phrase-only-lexical|{slug}|{chinfo['chapter']}|{v['v']}|{i}|{wid}"
+                        if akey not in allow:
+                            rows.append({'severity':82,'kind':'phrase-only-lexical','book':name,'ref':ref,'token':x.get('text',''),'detail':{'greek_id':wid,'greek':gt,'gloss':gl,'score':z,'phrase_span':span}})
+                            stats[name]['phrase_only_lexical']+=1
+
             # Precise fanout and scattered reuse.
             for wid,pos in used.items():
                 # Fan-out is about a single Greek source lighting an unusually
