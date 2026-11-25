@@ -12286,18 +12286,16 @@
           {
             "text": "sick,",
             "ids": [
-              "w16"
+              "w16",
+              "w17"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
               "w16",
-              "w17",
-              "w18"
-            ]
+              "w17"
+            ],
+            "reason": "Bilingual certification: 'sick' renders the phrase κακῶς ἔχοντας"
           }
         ]
       }
@@ -13493,20 +13491,16 @@
           {
             "text": "crowd",
             "ids": [
+              "w5",
               "s6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
               "w5",
-              "s6",
-              "w7",
-              "w8"
-            ]
+              "s6"
+            ],
+            "reason": "Bilingual certification: singular English 'crowd' compresses πολλοὺς ὄχλους"
           },
           {
             "text": "around",
@@ -15284,14 +15278,17 @@
           {
             "text": "nowhere",
             "ids": [
+              "w21",
               "w23"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
+              "w21",
+              "w22",
               "w23"
             ],
-            "reason": "Matthew bilingual pass: shared source correspondence 'nowhere' ↔ ποῦ"
+            "reason": "Bilingual certification: 'nowhere' jointly renders οὐκ ... ποῦ"
           },
           {
             "text": "to",
@@ -16996,17 +16993,17 @@
           {
             "text": "got",
             "ids": [
-              "w6"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-compound-state",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
               "w2",
               "w3",
               "w4",
               "w6"
-            ]
+            ],
+            "reason": "Bilingual certification: 'got [into]' renders ἐμβάντι, not πλοῖον"
           },
           {
             "text": "into",
@@ -21248,11 +21245,17 @@
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w25"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'one' in 'no one' renders τινά",
+            "phraseIds": [
+              "w23",
+              "w24",
+              "w25"
+            ]
           },
           {
             "text": "was",
