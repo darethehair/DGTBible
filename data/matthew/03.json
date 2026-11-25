@@ -5048,10 +5048,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: linked 'the' to τὸ by direct Greek/literal correspondence",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "Pharisees",
@@ -8776,20 +8781,15 @@
           },
           {
             "text": "is",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
+            "ids": [
               "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew bilingual pass: linked 'is' to ἐστιν, by direct Greek/literal correspondence"
           },
           {
             "text": "stronger",
