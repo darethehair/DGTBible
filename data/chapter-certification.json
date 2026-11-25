@@ -611,9 +611,16 @@
       "reviewed_verses": "1–31",
       "corrections": 87,
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+    },
+    "john/15": {
+      "status": "corrected-awaiting-verification",
+      "commit": "bca8848c8415a49d4c74326cf2c57086dffe7114",
+      "reviewed_verses": "1–27",
+      "corrections": 70,
+      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/15",
+  "resume": "john/16",
   "verification_backlog": [
     "john/01",
     "john/02",
@@ -628,7 +635,8 @@
     "john/11",
     "john/12",
     "john/13",
-    "john/14"
+    "john/14",
+    "john/15"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
