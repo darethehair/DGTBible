@@ -6,7 +6,7 @@
   },
   "chapters": {
     "mark/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "976f34a4",
       "corrections": 175,
       "final_verification": {
@@ -18,7 +18,7 @@
       }
     },
     "mark/02": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "8222660b",
       "corrections": 137,
       "follow_up": {
@@ -35,7 +35,7 @@
       }
     },
     "mark/03": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "30d02b35",
       "corrections": 122,
       "follow_up": {
@@ -52,7 +52,7 @@
       }
     },
     "mark/04": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "d2664607",
       "corrections": 201,
       "follow_up": {
@@ -69,7 +69,7 @@
       }
     },
     "mark/05": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "12016e1e",
       "corrections": 182,
       "follow_up": {
@@ -86,7 +86,7 @@
       }
     },
     "mark/06": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "88ed539c",
       "corrections": 283,
       "follow_up": {
@@ -104,7 +104,7 @@
       }
     },
     "mark/07": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "corrections": 209,
       "commit": "89d2dfa",
       "follow_up": {
@@ -121,7 +121,7 @@
       }
     },
     "mark/08": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "corrections": 196,
       "commit": "89d2dfa",
       "final_verification": {
@@ -133,7 +133,7 @@
       }
     },
     "mark/09": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "400c299",
       "corrections": 281,
       "final_verification": {
@@ -145,7 +145,7 @@
       }
     },
     "mark/10": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "400c299",
       "corrections": 300,
       "final_verification": {
@@ -157,7 +157,7 @@
       }
     },
     "mark/11": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "400c299",
       "corrections": 132,
       "final_verification": {
@@ -169,7 +169,7 @@
       }
     },
     "mark/12": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "400c299",
       "corrections": 241,
       "final_verification": {
@@ -181,7 +181,7 @@
       }
     },
     "mark/13": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "400c299",
       "corrections": 210,
       "final_verification": {
@@ -193,7 +193,7 @@
       }
     },
     "mark/14": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "400c299",
       "corrections": 383,
       "final_verification": {
@@ -205,7 +205,7 @@
       }
     },
     "mark/15": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "400c299",
       "corrections": 231,
       "final_verification": {
@@ -217,7 +217,7 @@
       }
     },
     "mark/16": {
-      "status": "verified-awaiting-deployment",
+      "status": "verified-deployed-awaiting-public-verification",
       "commit": "400c299",
       "corrections": 114,
       "final_verification": {
@@ -238,6 +238,12 @@
     "hover_regression": "45 diagnostic interactions, zero at the major cutoff. Four bidirectional Chromium checks passed at Mark 12:14 and Mark 15:20.",
     "legacy_audit": "The strict audit remains failing on heuristic candidate assertions. Bilingual dispositions are recorded per chapter. No synthetic-token coverage, source-span or collision findings.",
     "local_pages_validation": "All required shell checks passed. All 44 protected Matthew and Mark chapter files remained byte-identical. Existing advisory John 11:37 finding persists.",
-    "deployment": "Pending. Compare the deployed chapter bytes with the recorded SHA-256 values before marking certified."
+    "deployment": {
+      "commit": "e0046dc2c8ae64a2f4d5adfd8fb9eb1840a7d995",
+      "app_version": "v0.68",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45713442752",
+      "workflow_status": "success",
+      "public_verification": "Pending. The environment blocks darethehair.github.io. Verify the live app version and the public chapter bytes against the recorded hashes before marking certified."
+    }
   }
 }
