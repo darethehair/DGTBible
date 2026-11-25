@@ -2058,14 +2058,12 @@
           },
           {
             "text": "you",
-            "ids": [
-              "w4"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 32: Object in 'I ask you to listen' is supplied; σε w4 belongs to 'you are an expert'"
           },
           {
             "text": "to",
@@ -6601,13 +6599,14 @@
           {
             "text": "And",
             "ids": [
-              "w6"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Opening connective renders initial καί w2"
           },
           {
             "text": "this",
@@ -7753,13 +7752,14 @@
           {
             "text": "And",
             "ids": [
-              "w1"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1"
-            ]
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Second clause connective renders τε w12, not opening καί"
           },
           {
             "text": "being",
@@ -15665,14 +15665,12 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 32: Article before 'Jews' is supplied English; Greek has bare Ἰουδαῖοι"
           },
           {
             "text": "Jews",
@@ -15795,14 +15793,12 @@
           },
           {
             "text": "me.",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 32: Object of 'kill me' is contextual English; no repeated Greek με"
           }
         ]
       }
@@ -18178,13 +18174,14 @@
           {
             "text": "saying",
             "ids": [
-              "w10"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10"
-            ]
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: First 'saying' describes Paul's defense and belongs to ἀπολογουμένου"
           },
           {
             "text": "these",
@@ -18222,13 +18219,14 @@
           {
             "text": "his",
             "ids": [
-              "w4"
+              "w3"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w4"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Possessive subject in 'his defense' belongs to αὐτοῦ"
           },
           {
             "text": "defense,",
@@ -18425,13 +18423,14 @@
           {
             "text": "is",
             "ids": [
-              "w4"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w4"
-            ]
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Progressive auxiliary in 'is driving' belongs to περιτρέπει"
           },
           {
             "text": "driving",

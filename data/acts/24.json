@@ -1433,13 +1433,14 @@
           {
             "text": "And",
             "ids": [
-              "w14"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w14"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Opening connective renders δέ, not the later καί"
           },
           {
             "text": "when",
@@ -4872,14 +4873,12 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w4"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 32: Article in 'the attack' is supplied English; Greek article w4 belongs to 'The Jews'"
           },
           {
             "text": "attack,",
@@ -5611,14 +5610,12 @@
           },
           {
             "text": "for",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 32: Purpose 'for him to speak' is natural English around λέγειν; not ἐκ w10"
           },
           {
             "text": "him",
@@ -14465,14 +14462,12 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 32: Verse-opening English connective has no separate Greek conjunction"
           },
           {
             "text": "he",
@@ -16658,13 +16653,14 @@
           {
             "text": "when",
             "ids": [
-              "w1"
+              "w25"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1"
-            ]
+              "w25"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Second temporal 'when I find' belongs to μεταλαβών ('having found')"
           },
           {
             "text": "I",
@@ -17246,13 +17242,14 @@
           {
             "text": "was",
             "ids": [
-              "w20"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w20"
-            ]
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Auxiliary in 'was hoping' belongs to ἐλπίζων"
           },
           {
             "text": "also",
@@ -17400,24 +17397,26 @@
           {
             "text": "he",
             "ids": [
-              "w20"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w20"
-            ]
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Subject of 'he was sending' is carried by μεταπεμπόμενος"
           },
           {
             "text": "was",
             "ids": [
-              "w20"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w20"
-            ]
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Auxiliary in 'was sending' belongs to μεταπεμπόμενος"
           },
           {
             "text": "sending",
@@ -17495,17 +17494,15 @@
           },
           {
             "text": "conversing",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: 'conversing' directly renders ὡμίλει"
           },
           {
             "text": "with",

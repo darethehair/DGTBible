@@ -8675,13 +8675,14 @@
           {
             "text": "And",
             "ids": [
-              "w27"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w27"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: Opening connective renders δέ, not later καί"
           },
           {
             "text": "since",
@@ -20459,13 +20460,14 @@
           {
             "text": "from",
             "ids": [
-              "w18"
+              "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w18"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 32: 'from the ship' renders first ἐκ w6"
           },
           {
             "text": "the",
@@ -20619,14 +20621,12 @@
           },
           {
             "text": "of",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 32: 'under pretense of intending' uses supplied English 'of', not ἐκ"
           },
           {
             "text": "intending",
