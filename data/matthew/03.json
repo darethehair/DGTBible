@@ -8820,20 +8820,15 @@
           },
           {
             "text": "am,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
+            "ids": [
               "w16"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew bilingual audit: copular 'am/is' corresponds to ἐστιν"
           },
           {
             "text": "whose",
@@ -11669,17 +11664,15 @@
           },
           {
             "text": "are",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew bilingual audit: 'are coming' corresponds to ἔρχῃ"
           },
           {
             "text": "coming",
