@@ -12064,18 +12064,15 @@
           },
           {
             "text": "not",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew bilingual audit: negation corresponds to μὴ"
           },
           {
             "text": "forgive",
@@ -26854,16 +26851,15 @@
           },
           {
             "text": "things.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
+            "ids": [
               "w17"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": "",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w17"
+            ],
+            "reason": "Matthew bilingual audit: 'these things' corresponds to τούτων; narrowed from phrase fallback"
           }
         ]
       }
