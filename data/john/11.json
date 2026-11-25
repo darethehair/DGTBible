@@ -6641,10 +6641,11 @@
           {
             "text": "he",
             "ids": [
-              "w8"
+              "w9"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 6"
           },
           {
             "text": "will",
@@ -6656,10 +6657,12 @@
           },
           {
             "text": "recover.”",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": "",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 6"
           }
         ]
       }
