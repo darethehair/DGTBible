@@ -2898,14 +2898,12 @@
           },
           {
             "text": "of",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 33: 'shelter of Cyprus' is idiomatic English; διὰ w6 belongs to 'because'"
           },
           {
             "text": "Cyprus",
@@ -6214,13 +6212,14 @@
           {
             "text": "was",
             "ids": [
-              "w18"
+              "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w18"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 33: Copula in 'voyage was dangerous' renders ὄντος"
           },
           {
             "text": "already",
@@ -6288,17 +6287,15 @@
           },
           {
             "text": "had",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
+            "ids": [
               "w17"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w17"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 33: Perfect auxiliary in 'the Fast had passed' belongs to παρεληλυθέναι"
           },
           {
             "text": "already",
@@ -6318,13 +6315,14 @@
           {
             "text": "passed,",
             "ids": [
-              "w4"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w4"
-            ]
+              "w17"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 33: Second 'passed' renders παρεληλυθέναι, not earlier διαγενομένου"
           },
           {
             "text": "Paul",
@@ -10038,13 +10036,14 @@
           {
             "text": "the",
             "ids": [
-              "w12"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12"
-            ]
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 33: Article in 'called the Northeaster' belongs to ὁ w10"
           },
           {
             "text": "Northeaster",
@@ -10092,14 +10091,12 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 33: Article in 'from the island' is supplied by English for pronominal αὐτῆς"
           },
           {
             "text": "island.",
@@ -22615,13 +22612,14 @@
           {
             "text": "take",
             "ids": [
-              "w21"
+              "w11"
             ],
             "after": " ",
-            "confidence": "acts-final-global-semantic",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w21"
-            ]
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 33: First 'take food' renders μεταλαβεῖν, not later προσλαβόμενοι"
           },
           {
             "text": "food,",
@@ -22722,13 +22720,14 @@
           {
             "text": "have",
             "ids": [
-              "w21"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w21"
-            ]
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 33: Perfect auxiliary in 'you have continued' belongs to διατελεῖτε"
           },
           {
             "text": "continued",
@@ -22769,13 +22768,14 @@
           {
             "text": "food,",
             "ids": [
-              "w12"
+              "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12"
-            ]
+              "w18"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 33: Second 'without food' renders ἄσιτοι, not the earlier τροφῆς"
           },
           {
             "text": "taking",
