@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "policy": "Never redo certified chapters. Review Greek to English and English to Greek. A correction commit is not certification; require explicit bilingual review and successful deployment. Preserve certified chapter content. Resume at first unfinished chapter.",
+  "policy": "Preserve reviewed Matthew and all checkpointed chapter alignments during automated repair and deployment. Review both alignment directions. Corrected records a bilingual correction pass; verified requires explicit final bilingual verification and regression evidence. Record deployment separately with evidence. Certification requires verification and successful deployment of the same chapter content. Resume at the recorded chapter.",
   "preserved_previous_scope": {
     "matthew": "Prior session reported completed; preserve without rescanning. Historical certification evidence not independently recovered."
   },
@@ -29,7 +29,38 @@
       "status": "corrected-awaiting-verification",
       "commit": "12016e1e",
       "corrections": 182
+    },
+    "mark/06": {
+      "status": "corrected-awaiting-verification",
+      "commit": "88ed539c",
+      "corrections": 283
+    },
+    "mark/07": {
+      "status": "corrected-awaiting-verification",
+      "corrections": 209,
+      "verification_note": "Initial bilingual correction pass. Legacy Mark audit flags exact-link candidates, including English articles and objects without distinct Greek equivalents. Final verification pending.",
+      "commit": "89d2dfa"
+    },
+    "mark/08": {
+      "status": "corrected-awaiting-verification",
+      "corrections": 196,
+      "verification_note": "Initial bilingual correction pass. Legacy Mark audit flags exact-link candidates, including supplied English articles and objects. Final verification pending.",
+      "commit": "89d2dfa"
     }
   },
-  "resume": "mark/06"
+  "resume": "mark/09",
+  "verification_backlog": [
+    "mark/01",
+    "mark/02",
+    "mark/03",
+    "mark/04",
+    "mark/05",
+    "mark/06",
+    "mark/07",
+    "mark/08"
+  ],
+  "verification_baseline": {
+    "scope": "mark/01\u201306",
+    "result": "Legacy audit failed on orphan-content assertions for Mark 2\u20136. Inspect each case in context during final bilingual verification."
+  }
 }

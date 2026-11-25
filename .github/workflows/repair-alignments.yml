@@ -14,9 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Repair semantic alignments
-        run: python scripts/repair-alignments.py
+        run: python scripts/preserve-certification.py python scripts/repair-alignments.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Re-audit semantic alignments
         run: python scripts/audit-alignment-quality.py
       - name: Commit repaired alignments

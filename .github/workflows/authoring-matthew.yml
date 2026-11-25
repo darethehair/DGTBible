@@ -37,9 +37,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-matthew.mjs
       - name: Build Matthew range
-        run: python scripts/build-matthew.py
+        run: python scripts/preserve-certification.py python scripts/build-matthew.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Matthew range
         run: python scripts/audit-matthew.py
       - name: Commit clean generated Matthew range

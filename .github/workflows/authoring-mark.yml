@@ -38,9 +38,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-mark.mjs
       - name: Build Mark range
-        run: python scripts/build-mark.py
+        run: python scripts/preserve-certification.py python scripts/build-mark.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Mark range
         run: python scripts/audit-mark.py
       - name: Audit Mark hover breadth
