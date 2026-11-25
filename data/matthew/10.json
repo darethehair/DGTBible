@@ -27616,10 +27616,15 @@
           },
           {
             "text": "whoever",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'whoever/he who' maps to ὃς",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "does",
@@ -29142,14 +29147,11 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
               "w10"
-            ]
+            ],
+            "reason": "Matthew bilingual audit: third 'receives' maps to δέχεται"
           },
           {
             "text": "me",
@@ -30245,10 +30247,15 @@
           },
           {
             "text": "person's",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: possessive 'righteous person's' maps to δικαίου",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "reward.",
