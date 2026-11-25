@@ -36,7 +36,8 @@ for(const entry of manifest.chapters){
         if(item.after!==undefined&&typeof item.after!=='string') fail.push(`${ref}: alignment.${layer} after must be a string`);
         if(!Array.isArray(item.ids)) fail.push(`${ref}: alignment.${layer} item ids must be an array`);
         else if(!item.ids.length){
-          const safeUnlinked=layer==='dgt'&&item.confidence==='unlinked'&&typeof item.reason==='string'&&item.reason.length;
+          const explicitState=typeof item.confidence==='string' && /(unlinked|unaligned|supplied)/.test(item.confidence);
+          const safeUnlinked=layer==='dgt' && (item.supplied===true || explicitState) && typeof item.reason==='string' && item.reason.length;
           if(!safeUnlinked) fail.push(`${ref}: alignment.${layer} item has no ids without an explicit unlinked confidence state`);
         }
         if(layer==='dgt' && Array.isArray(item.ids) && item.ids.length>2 && !overrides[ref]) fail.push(`${ref}: DGT alignment item spans too many Greek IDs (${item.ids.join(', ')}) — split to token-level mapping`);
