@@ -18267,13 +18267,14 @@
           {
             "text": "understand.",
             "ids": [
-              "w3"
+              "w19"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w3"
-            ]
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 53: Second 'understand' renders συνῆκαν, not earlier συνιέναι"
           }
         ]
       }
@@ -19552,66 +19553,59 @@
           {
             "text": "who",
             "ids": [
-              "w9"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 53: Relative English support for participle ἀδικῶν, not later interrogative Τίς"
           },
           {
             "text": "was",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 53: Auxiliary with ἀδικῶν"
           },
           {
             "text": "wronging",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 53: Renders ἀδικῶν"
           },
           {
             "text": "his",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 53: English possessive in 'his neighbor' is supplied"
           },
           {
             "text": "neighbor",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 53: Renders πλησίον"
           },
           {
             "text": "pushed",
@@ -21929,14 +21923,14 @@
           {
             "text": "When",
             "ids": [
-              "w8"
+              "w4"
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w8"
+              "w4"
             ],
-            "reason": "Human-reviewed full-NT master pass batch 48: Temporal clause belongs to προσερχομένου ('when approaching'), not first sight clause"
+            "reason": "Human-reviewed full-NT master pass batch 53: First temporal 'When Moses saw it' belongs to participle ἰδών, not later προσερχομένου"
           },
           {
             "text": "Moses",
@@ -35766,15 +35760,14 @@
           {
             "text": "God",
             "ids": [
-              "w6",
               "s12"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-synthetic",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
               "s12"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 53: Second God in 'God of Jacob' belongs to the synthetic/dative source for θεῷ, not earlier θεοῦ"
           },
           {
             "text": "of",
@@ -43558,14 +43551,14 @@
           {
             "text": "as",
             "ids": [
-              "w1"
+              "w5"
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1"
+              "w5"
             ],
-            "reason": "Human-reviewed full-NT master pass batch 48: English subordinate force of opening καί retained as 'as'"
+            "reason": "Human-reviewed full-NT master pass batch 53: Temporal/subordinate English 'as he called out' belongs to participle ἐπικαλούμενον, not opening καί"
           },
           {
             "text": "he",
