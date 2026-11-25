@@ -57,3 +57,5 @@ for ch in (13,26):
                 print(f"M{ch}:{v.get('v')} TOKEN {i} {t.get('text')!r} CAND {cand}")
             elif not ids and not t.get("supplied") and not phrase:
                 print(f"M{ch}:{v.get('v')} TOKEN {i} {t.get('text')!r} UNLINKED")
+
+# audit trigger after oversized repair
