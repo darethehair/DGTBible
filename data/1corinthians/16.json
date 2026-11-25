@@ -14084,10 +14084,17 @@
           },
           {
             "text": "hand—Paul’s.",
-            "ids": [],
+            "ids": [
+              "w5",
+              "w6"
+            ],
             "after": "",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Reviewed orphan fix: merged English token spans χειρί + Παύλου",
+            "phraseIds": [
+              "w5",
+              "w6"
+            ]
           }
         ]
       }
