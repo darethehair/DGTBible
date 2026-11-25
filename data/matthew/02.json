@@ -10850,22 +10850,9 @@
             "text": "after",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Temporal 'after' is supplied by the genitive-absolute participial construction",
+            "supplied": true
           },
           {
             "text": "they",
@@ -10891,24 +10878,15 @@
           },
           {
             "text": "had",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "English perfect auxiliary 'had' belongs with Ἀναχωρησάντων"
           },
           {
             "text": "withdrawn,",
@@ -11286,24 +11264,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24"
+            "ids": [
+              "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Article 'the' before child renders τὸ"
           },
           {
             "text": "child",
@@ -11439,24 +11408,15 @@
           },
           {
             "text": "to",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24"
+            "ids": [
+              "w23"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w23"
+            ],
+            "reason": "Directional 'to' renders εἰς"
           },
           {
             "text": "Egypt,",
@@ -11534,19 +11494,16 @@
           {
             "text": "until",
             "ids": [
-              "w28"
+              "w28",
+              "w29"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w25",
-              "w26",
-              "w27",
               "w28",
-              "w29",
-              "w30",
-              "w31"
-            ]
+              "w29"
+            ],
+            "reason": "'until' represents ἕως with conditional particle ἂν"
           },
           {
             "text": "I",
@@ -11639,21 +11596,15 @@
           },
           {
             "text": "is",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w32",
-              "w33",
-              "w34",
-              "w35",
-              "w36",
-              "w37",
-              "w38",
-              "w39",
-              "w40"
+            "ids": [
+              "w32"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w32"
+            ],
+            "reason": "Copular 'is' is part of μέλλει = 'is about'"
           },
           {
             "text": "about",
@@ -11714,21 +11665,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w32",
-              "w33",
-              "w34",
-              "w35",
-              "w36",
-              "w37",
-              "w38",
-              "w39",
-              "w40"
+            "ids": [
+              "w36"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w36"
+            ],
+            "reason": "Article 'the' before child renders τὸ"
           },
           {
             "text": "child",
@@ -11752,21 +11697,14 @@
           {
             "text": "to",
             "ids": [
-              "w39"
+              "w38"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w32",
-              "w33",
-              "w34",
-              "w35",
-              "w36",
-              "w37",
-              "w38",
-              "w39",
-              "w40"
-            ]
+              "w38"
+            ],
+            "reason": "Infinitival 'to' in 'to destroy' represents the articular infinitive marker τοῦ"
           },
           {
             "text": "destroy",
