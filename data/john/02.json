@@ -4854,9 +4854,9 @@
           {
             "text": "did",
             "after": " ",
-            "ids": [
-              "w12"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "not",
@@ -9022,9 +9022,10 @@
           {
             "text": "them",
             "after": " ",
-            "ids": [],
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "ids": [
+              "w6"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "all",
@@ -13907,7 +13908,6 @@
             "text": "he",
             "after": " ",
             "ids": [
-              "w23",
               "w24"
             ],
             "confidence": "reviewed-precise"
