@@ -8794,10 +8794,15 @@
           },
           {
             "text": "yield",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Renders ὑπείκετε",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "to",
@@ -8809,10 +8814,17 @@
           },
           {
             "text": "them,",
-            "ids": [],
+            "ids": [
+              "w2",
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Contextual object 'them' refers to leaders",
+            "phraseIds": [
+              "w2",
+              "w3"
+            ]
           },
           {
             "text": "for",
@@ -8834,8 +8846,10 @@
             "text": "keep",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 60: English aspectual support in 'keep watch' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "watch",
@@ -8855,10 +8869,15 @@
           },
           {
             "text": "your",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Renders ὑμῶν",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "souls",
@@ -8878,25 +8897,36 @@
           },
           {
             "text": "those",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Emphatic/substantival αὐτοί supplies 'those'",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "who",
-            "ids": [
-              "w13"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 60: English relative pronoun is supplied"
           },
           {
             "text": "will",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Future/participial sense of ἀποδώσοντες",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "give",
@@ -8924,10 +8954,15 @@
           },
           {
             "text": "so",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Purpose ἵνα rendered as 'so that'",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "that",
@@ -9005,8 +9040,10 @@
             "text": "with",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 60: English preposition in 'with groaning' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "groaning,",
@@ -9018,33 +9055,51 @@
           },
           {
             "text": "for",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: γάρ rendered as causal 'for'",
+            "phraseIds": [
+              "w26"
+            ]
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w28"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Demonstrative τοῦτο supplies 'that'",
+            "phraseIds": [
+              "w28"
+            ]
           },
           {
             "text": "would",
             "ids": [
-              "w16"
+              "w25"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w25"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: English modal/copular support with ἀλυσιτελές, not ἀποδώσοντες"
           },
           {
             "text": "be",
             "ids": [
-              "w16"
+              "w25"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w25"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: Copular support with ἀλυσιτελές"
           },
           {
             "text": "unprofitable",
@@ -9057,10 +9112,14 @@
           {
             "text": "for",
             "ids": [
-              "w26"
+              "w27"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w27"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: Dative ὑμῖν rendered as 'for you'"
           },
           {
             "text": "you.",

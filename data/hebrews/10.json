@@ -7553,10 +7553,15 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: δὲ rendered as connective 'And'",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "the",
@@ -7601,10 +7606,14 @@
           {
             "text": "to",
             "ids": [
-              "w12"
+              "w3"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: Dative 'to us' belongs with ἡμῖν, not εἰρηκέναι"
           },
           {
             "text": "us,",

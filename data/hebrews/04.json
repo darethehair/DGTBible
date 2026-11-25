@@ -387,17 +387,27 @@
           },
           {
             "text": "let",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Hortatory/subjunctive force of Φοβηθῶμεν",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "us",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: First-person plural carried by Φοβηθῶμεν",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "fear,",
@@ -427,8 +437,10 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 60: English article before promise is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "promise",
@@ -440,11 +452,12 @@
           },
           {
             "text": "of",
-            "ids": [
-              "w7"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 60: English genitive/infinitival glue in 'promise of entering' is supplied"
           },
           {
             "text": "entering",
@@ -504,10 +517,15 @@
           },
           {
             "text": "should",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Subjunctive/modal force of δοκῇ",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "seem",
@@ -5067,10 +5085,15 @@
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Past-perfect auxiliary belongs with κατέπαυσεν ('had given rest')",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "given",
@@ -5130,10 +5153,15 @@
           },
           {
             "text": "have",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Perfect English support in 'would not ... have spoken' belongs with ἐλάλει",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "spoken",

@@ -325,16 +325,22 @@
             "text": "at",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 60: English preposition in 'at many times' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "many",
             "ids": [
-              "w3"
+              "w1"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: First 'many' belongs with Πολυμερῶς ('many portions/times'), not πολυτρόπως"
           },
           {
             "text": "times",
@@ -418,10 +424,15 @@
           },
           {
             "text": "through",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Greek ἐν is rendered idiomatically as 'through' the prophets",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "the",
@@ -5968,10 +5979,14 @@
           {
             "text": "You",
             "ids": [
-              "w9"
+              "w1"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: Opening subject is carried by ἠγάπησας, not later σε"
           },
           {
             "text": "loved",

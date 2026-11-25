@@ -4563,10 +4563,15 @@
           },
           {
             "text": "your",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Renders ὑμῶν",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "fathers",
@@ -4579,18 +4584,23 @@
           {
             "text": "tested",
             "ids": [
-              "w8"
+              "w2"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: Verb 'tested' renders ἐπείρασαν, not δοκιμασίᾳ"
           },
           {
             "text": "me",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 60: Object 'me' is supplied by the quotation context"
           },
           {
             "text": "by",

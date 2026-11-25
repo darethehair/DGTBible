@@ -4858,18 +4858,24 @@
           },
           {
             "text": "indicates",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Renders δηλοῦντος",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "that",
-            "ids": [
-              "w7"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 60: English complementizer after 'indicates' is supplied; μήπω means 'not yet'"
           },
           {
             "text": "the",
@@ -4921,17 +4927,27 @@
           },
           {
             "text": "has",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Perfect auxiliary with πεφανερῶσθαι",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Negative force of μήπω",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "yet",
@@ -4939,7 +4955,11 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: Temporal force of μήπω"
           },
           {
             "text": "been",
@@ -4991,10 +5011,15 @@
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Copular support with ἐχούσης",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "still",
@@ -7556,34 +7581,48 @@
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Renders οὐδὲ",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "through",
             "ids": [
-              "w7"
+              "w2"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: First 'through' belongs to διʼ before goat blood, not later διὰ"
           },
           {
             "text": "the",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 60: English article before blood is supplied"
           },
           {
             "text": "blood",
             "ids": [
-              "w11"
+              "w3"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: First blood renders αἵματος, not later own-blood αἵματος"
           },
           {
             "text": "of",
@@ -7627,17 +7666,27 @@
           },
           {
             "text": "through",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Second 'through' renders later διὰ",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "his",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Possessive force of ἰδίου",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "own",
@@ -9071,10 +9120,14 @@
           {
             "text": "the",
             "ids": [
-              "w5"
+              "w3"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: Article with blood, not article before God"
           },
           {
             "text": "blood",
@@ -9118,11 +9171,12 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 60: Greek πνεύματος has no article; English 'the eternal Spirit' article is supplied"
           },
           {
             "text": "eternal",
@@ -9158,17 +9212,27 @@
           },
           {
             "text": "without",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Contextual rendering of ἄμωμον as 'without blemish'",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "blemish",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Completes ἄμωμον rendering",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "to",

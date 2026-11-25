@@ -15260,17 +15260,27 @@
         "dgt": [
           {
             "text": "considering",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Renders ἡγησάμενος",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Article with reproach",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "reproach",
@@ -15282,10 +15292,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Genitive article before Christ",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "Christ",
@@ -15321,11 +15336,12 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 60: English article before treasures is supplied"
           },
           {
             "text": "treasures",
@@ -15338,10 +15354,14 @@
           {
             "text": "of",
             "ids": [
-              "w11"
+              "w6"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: Genitive Egypt belongs with Αἰγύπτου, not Χριστοῦ"
           },
           {
             "text": "Egypt,",
@@ -22092,15 +22112,22 @@
             "text": "these,",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 60: English demonstrative is supplied from discourse context",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "though",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Concessive English rendering of participle μαρτυρηθέντες",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "having",
@@ -22113,17 +22140,26 @@
           {
             "text": "received",
             "ids": [
-              "w9"
+              "w4"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: First 'received testimony' renders μαρτυρηθέντες, not ἐκομίσαντο"
           },
           {
             "text": "testimony",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Contextual rendering of μαρτυρηθέντες",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "through",
@@ -22143,10 +22179,15 @@
           },
           {
             "text": "did",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: English auxiliary with ἐκομίσαντο",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "not",

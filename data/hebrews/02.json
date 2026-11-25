@@ -10507,32 +10507,51 @@
           },
           {
             "text": "he",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Subject/support of ὤφειλεν ('he had to')",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Past modal rendering of ὤφειλεν",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Infinitival support governed by ὤφειλεν",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "become",
             "ids": [
-              "w10"
+              "w7"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: First 'become like' renders ὁμοιωθῆναι, not later γένηται"
           },
           {
             "text": "like",
@@ -10562,8 +10581,10 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 60: English coordination in 'brothers and sisters' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "sisters",
@@ -10571,7 +10592,11 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 60: Inclusive English rendering of ἀδελφοῖς"
           },
           {
             "text": "in",
@@ -10583,17 +10608,27 @@
           },
           {
             "text": "every",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Renders πάντα in 'every way'",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "way,",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Completes πάντα contextual rendering",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "so",
@@ -10693,10 +10728,15 @@
           },
           {
             "text": "matters",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Substantival τὰ in τὰ πρὸς τὸν θεόν rendered as 'matters'",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "relating",
@@ -10724,10 +10764,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Purpose εἰς rendered as 'to/in order to'",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "make",
@@ -10747,10 +10792,15 @@
           },
           {
             "text": "for",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 60: Part of ἱλάσκεσθαι contextual rendering 'make atonement for'",
+            "phraseIds": [
+              "w20"
+            ]
           },
           {
             "text": "the",
