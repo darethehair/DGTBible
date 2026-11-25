@@ -6,52 +6,87 @@
   },
   "chapters": {
     "mark/01": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "976f34a4",
-      "corrections": 175
+      "corrections": 175,
+      "final_verification": {
+        "commit": "00c90bc",
+        "corrections": 58,
+        "method": "Verse-by-verse Greek and DGT comparison in both directions and structural regression",
+        "legacy_audit": "Heuristic findings reviewed. Articles with no discrete original target, implied copulas, embedded clause markup and connective wording triggered the legacy heuristic. The idiom at 1:24 was narrowed to its four Greek words.",
+        "chapter_sha256": "3604fd7d5f26b2821ce2d71d389c6c5b665c57d453eeb25d960eb46a7dde2941"
+      }
     },
     "mark/02": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "8222660b",
       "corrections": 137,
       "follow_up": {
         "commit": "400c299",
         "corrections": 9,
         "scope": "Targeted legacy audit candidate review"
+      },
+      "final_verification": {
+        "commit": "00c90bc",
+        "corrections": 30,
+        "method": "Verse-by-verse Greek and DGT comparison in both directions and structural regression",
+        "legacy_audit": "Heuristic findings reviewed. Legacy candidates include implied indefinite articles and objects, and English expansions at 2:1, 2:12, 2:18, 2:22 and 2:26.",
+        "chapter_sha256": "4b32476b88fd9d89e10b8e13d50452a4355393750f737cf8ff47f6ee66df170e"
       }
     },
     "mark/03": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "30d02b35",
       "corrections": 122,
       "follow_up": {
         "commit": "400c299",
         "corrections": 3,
         "scope": "Targeted legacy audit candidate review"
+      },
+      "final_verification": {
+        "commit": "f83c8f5",
+        "corrections": 39,
+        "method": "Verse-by-verse Greek and DGT comparison in both directions and structural regression",
+        "legacy_audit": "Heuristic findings reviewed. Legacy candidates include English articles and implied objects, the implied purpose verb “see” at 3:2 and the conjunction supplied for the participle at 3:27.",
+        "chapter_sha256": "7fe12ebd5bf0242905849a1555b5aa40b85722cc2ad98547a6e9da8828a10cac"
       }
     },
     "mark/04": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "d2664607",
       "corrections": 201,
       "follow_up": {
         "commit": "400c299",
         "corrections": 6,
         "scope": "Targeted legacy audit candidate review"
+      },
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 46,
+        "method": "Verse-by-verse Greek and DGT comparison in both directions and structural regression",
+        "legacy_audit": "Heuristic findings reviewed. Legacy candidates include English articles and implied objects, participial coordination and the implied “more” at 4:25.",
+        "chapter_sha256": "2e6143355f73eed3d382ef1f4142c43ac59c70928c1edea951d5292d6752501f"
       }
     },
     "mark/05": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "12016e1e",
       "corrections": 182,
       "follow_up": {
         "commit": "400c299",
         "corrections": 2,
         "scope": "Targeted legacy audit candidate review"
+      },
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 52,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. Remaining flags include supplied “people” at 5:14 and 5:35 and “something” at 5:43, plus implied objects, indefinite articles and copulas.",
+        "chapter_sha256": "30306f4a92ba7277a585f24581741422fc2e82dcebfab2311667a761e90d6484"
       }
     },
     "mark/06": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "88ed539c",
       "corrections": 283,
       "follow_up": {
@@ -59,87 +94,150 @@
         "corrections": 9,
         "scope": "Mark 6:2, 4, 43, 54",
         "verification_note": "The legacy audit still flags “is” and “a” as exact-link candidates and “get” and “people” as orphan content. These are idiomatic English in their passages and have no discrete Greek tokens."
+      },
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 88,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. “Get” at 6:2 and “people” at 6:54 are contextual English. Remaining flags include indefinite articles, implied copulas and implicit objects such as the bread at 6:37 and 6:41.",
+        "chapter_sha256": "3fc024fe39232089958cfd5d7d2f6484005f2fcce69d4fa13e81d59b6d6603a5"
       }
     },
     "mark/07": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "corrections": 209,
-      "verification_note": "Initial bilingual correction pass. Legacy Mark audit flags exact-link candidates, including English articles and objects without distinct Greek equivalents. Final verification pending.",
       "commit": "89d2dfa",
       "follow_up": {
         "commit": "400c299",
         "corrections": 2,
         "scope": "Targeted legacy audit candidate review"
+      },
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 4,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. “Come” and “traditions” at 7:4, “way” at 7:9, and “Thus” at 7:19 express contextual or idiomatic English. Other flags include implied objects and articles.",
+        "chapter_sha256": "dafb61d39c479352bb343e973021db6903ddc2cf235336b9fe66412ca5d9254a"
       }
     },
     "mark/08": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "corrections": 196,
-      "verification_note": "Initial bilingual correction pass. Legacy Mark audit flags exact-link candidates, including supplied English articles and objects. Final verification pending.",
-      "commit": "89d2dfa"
+      "commit": "89d2dfa",
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 2,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. The first “crowd” reference in the distribution clause at 8:6 and “boat” at 8:13 are implicit. Other flags include English articles and implied objects.",
+        "chapter_sha256": "f3829c404fa396518613445948c3c2cd48195613bb8c812f3db1aaf78bd6f389"
+      }
     },
     "mark/09": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "400c299",
-      "corrections": 281
+      "corrections": 281,
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 7,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. The legacy heuristic flags supplied articles, English copulas and introductory “it”, and the separate “for” in English infinitive constructions at 9:43, 9:45 and 9:47.",
+        "chapter_sha256": "2ae5610b377419a22958b16abe068274f9bec4518d0afe86376035ca2489b23c"
+      }
     },
     "mark/10": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "400c299",
-      "corrections": 300
+      "corrections": 300,
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 4,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. The preserved English at 10:2 names the Pharisees and their arrival beyond the supplied Greek alignment text. “People” at 10:13 supplies the subject. Other flags include English articles and implied objects.",
+        "chapter_sha256": "bf9c82d32410bab496229e1409f29566837cb569c9077bbbc219b74018f57a31"
+      }
     },
     "mark/11": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "400c299",
-      "corrections": 132
+      "corrections": 132,
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 4,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. “Spread” at 11:8 is understood from the preceding clause. “See” at 11:13 introduces an English purpose clause. Other flags include articles and implied objects.",
+        "chapter_sha256": "a84166d1bb2e0979723f18fa40b0046fce0e4d157a19e653c09e78aae403ff59"
+      }
     },
     "mark/12": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "400c299",
-      "corrections": 241
+      "corrections": 241,
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 3,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. “Passage” (12:26), “receive” (12:38), “people” (12:41), and “money” (12:43) are English expansions. The two Greek words with source suffix 36 at 12:14 were checked independently.",
+        "chapter_sha256": "3c45f14a21613b1af6b6d50fc3aaba6e67161cd29c3a139d17b0655dc4d9f210"
+      }
     },
     "mark/13": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "400c299",
-      "corrections": 210
+      "corrections": 210,
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 3,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. Remaining flags arise from supplied copulas and English subjects, articles and temporal prepositions.",
+        "chapter_sha256": "fe9a2a68b2231df0aea9a015b8f8151175fdaa9cc2c11e3e794555a41a3ffdaa"
+      }
     },
     "mark/14": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "400c299",
-      "corrections": 383
+      "corrections": 383,
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 6,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. “Want” in the second coordinate at 14:36 and “theirs” at 14:70 are ellipses made explicit in English. Remaining flags include implied objects and copulas and English articles.",
+        "chapter_sha256": "343234650b80d6cb12c3e1824f8e4b38fcd80a14d025bc6c209d0176905c88ed"
+      }
     },
     "mark/15": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "400c299",
-      "corrections": 231
+      "corrections": 231,
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 1,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. “Determine” at 15:24 introduces the English purpose clause and “mother” at 15:47 makes the relationship explicit. The two Greek words with source suffix 15 at 15:20 were checked independently.",
+        "chapter_sha256": "58c7bf2c3859a934929ac7f3771bd769cc72597a0cca0e820588bc105f5379b1"
+      }
     },
     "mark/16": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "400c299",
-      "corrections": 114
+      "corrections": 114,
+      "final_verification": {
+        "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+        "corrections": 0,
+        "method": "Greek and DGT review in both directions, followed by reverse-link and structural regression checks",
+        "legacy_audit": "Heuristic findings reviewed. “Mother” at 16:1 makes the relationship explicit. Remaining flags include indefinite articles and implicit objects of “reported” at 16:10 and 16:13.",
+        "chapter_sha256": "667851ea34758e21c969f37bc330f928f0905f451d0dfbcefd915b7e3352992d"
+      }
     }
   },
-  "resume": "mark/01",
-  "verification_backlog": [
-    "mark/01",
-    "mark/02",
-    "mark/03",
-    "mark/04",
-    "mark/05",
-    "mark/06",
-    "mark/07",
-    "mark/08",
-    "mark/09",
-    "mark/10",
-    "mark/11",
-    "mark/12",
-    "mark/13",
-    "mark/14",
-    "mark/15",
-    "mark/16"
-  ],
-  "verification_baseline": {
-    "scope": "mark/01–16",
-    "result": "Structural regression passed for all chapters. Hover breadth passed the major cutoff with 68 diagnostic interactions. The strict legacy audit passed Mark 1 before final verification and reported heuristic findings for Mark 2–16."
+  "resume": "luke/01",
+  "verification_backlog": [],
+  "mark_verification": {
+    "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
+    "verses": 673,
+    "structural_regression": "All Greek and DGT tokens reconstruct the original text. Original wording, token boundaries and source IDs preserved. All links resolve to source tokens.",
+    "hover_regression": "45 diagnostic interactions, zero at the major cutoff. Four bidirectional Chromium checks passed at Mark 12:14 and Mark 15:20.",
+    "legacy_audit": "The strict audit remains failing on heuristic candidate assertions. Bilingual dispositions are recorded per chapter. No synthetic-token coverage, source-span or collision findings.",
+    "local_pages_validation": "All required shell checks passed. All 44 protected Matthew and Mark chapter files remained byte-identical. Existing advisory John 11:37 finding persists.",
+    "deployment": "Pending. Compare the deployed chapter bytes with the recorded SHA-256 values before marking certified."
   }
 }
