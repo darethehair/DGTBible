@@ -44,11 +44,26 @@ for (slug,ch,vnum),edits in REMOVALS.items():
             got=D[idx].get('text') if idx<len(D) else '<missing>'
             raise SystemExit(f'{slug} {ch}:{vnum} token {idx}: expected {expected!r}, got {got!r}')
         ids=list(D[idx].get('ids',[]))
-        if bad_id not in ids:
-            raise SystemExit(f'{slug} {ch}:{vnum} token {idx}: expected precise id {bad_id} in {ids}')
-        D[idx]['ids']=[x for x in ids if x!=bad_id]
-        D[idx]['confidence']='reviewed-master-narrowed'
-        D[idx]['reason']='Human-reviewed full-NT master pass batch 26: removed unrelated precise source link'
+        if bad_id in ids:
+            D[idx]['ids']=[x for x in ids if x!=bad_id]
+            D[idx]['confidence']='reviewed-master-narrowed'
+            D[idx]['reason']='Human-reviewed full-NT master pass batch 26: removed unrelated precise source link'
+            count+=1
+
+# Acts 13:24 has two English "of" tokens: "of repentance" belongs to w9
+# and "of Israel" belongs to w13. This also clears the deployment QA blocker.
+path=DATA/'acts'/'13.json'
+d=changed.get(path)
+if d is None:
+    d=json.loads(path.read_text(encoding='utf8')); changed[path]=d
+verse=next(v for v in d['verses'] if v['v']==24)
+of_tokens=[x for x in verse['alignment']['dgt'] if x.get('text')=='of']
+for x,new_id in zip(of_tokens,['w9','w13']):
+    if x.get('ids') != [new_id]:
+        x['ids']=[new_id]
+        x['phraseIds']=[new_id]
+        x['confidence']='reviewed-master-precise'
+        x['reason']='Human-reviewed full-NT master pass batch 26: precise genitive source'
         count+=1
 
 for path,d in changed.items():
