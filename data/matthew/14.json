@@ -5486,14 +5486,9 @@
             "text": "although",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew final bilingual review: English wording is supplied by idiom/ellipsis; broad fallback removed",
+            "supplied": true
           },
           {
             "text": "the",
@@ -7433,17 +7428,15 @@
           },
           {
             "text": "went",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew final bilingual review: precise local Greek correspondence"
           },
           {
             "text": "and",
@@ -7466,11 +7459,11 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-semantic",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
               "w14"
             ],
-            "reason": "Matthew final bilingual review: 'reported' ↔ ἀπήγγειλαν"
+            "reason": "Matthew final bilingual review: precise local Greek correspondence"
           },
           {
             "text": "it",
@@ -10991,14 +10984,9 @@
             "text": "something",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew final bilingual review: English wording is supplied by idiom/ellipsis; broad fallback removed",
+            "supplied": true
           },
           {
             "text": "to",
@@ -11487,10 +11475,15 @@
           },
           {
             "text": "nothing",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew final bilingual review: precise local Greek correspondence",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "here",
@@ -13366,15 +13359,9 @@
             "text": "gave",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w30",
-              "w31",
-              "w32",
-              "w33",
-              "w34"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew final bilingual review: English wording is supplied by idiom/ellipsis; broad fallback removed",
+            "supplied": true
           },
           {
             "text": "them",
@@ -15989,19 +15976,15 @@
           },
           {
             "text": "by",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew final bilingual review: precise local Greek correspondence"
           },
           {
             "text": "himself",
@@ -23765,16 +23748,9 @@
             "text": "word",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew final bilingual review: English wording is supplied by idiom/ellipsis; broad fallback removed",
+            "supplied": true
           },
           {
             "text": "into",
@@ -24641,29 +24617,27 @@
           },
           {
             "text": "completely",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
+            "ids": [
               "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew final bilingual review: precise local Greek correspondence"
           },
           {
             "text": "healed.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
+            "ids": [
               "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew final bilingual review: precise local Greek correspondence"
           }
         ]
       }
