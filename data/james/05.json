@@ -12240,10 +12240,15 @@
         "dgt": [
           {
             "text": "let",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Imperatival force of γινωσκέτω",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "that",
@@ -12255,11 +12260,12 @@
           },
           {
             "text": "person",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 61: English explicit subject 'that person' is supplied from the imperative context"
           },
           {
             "text": "know",
@@ -12273,22 +12279,34 @@
             "text": "that",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 61: Second English complementizer introducing the one-who-turns clause is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "whoever",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Substantival article ὁ before ἐπιστρέψας supplies 'whoever/the one who'",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "turns",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Renders ἐπιστρέψας",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "a",
@@ -12324,11 +12342,12 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 61: Greek πλάνης lacks an article; English 'the error' article is supplied"
           },
           {
             "text": "error",
@@ -12341,10 +12360,14 @@
           {
             "text": "of",
             "ids": [
-              "w12"
+              "w8"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 61: Genitive ὁδοῦ supplies relation in 'error of their way'"
           },
           {
             "text": "their",
@@ -12382,8 +12405,10 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 61: English article before 'soul' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "soul",
@@ -12445,8 +12470,10 @@
             "text": "of",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 61: English genitive glue in 'multitude of sins' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "sins.",

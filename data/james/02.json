@@ -3767,33 +3767,44 @@
           {
             "text": "person.",
             "ids": [
-              "w6"
+              "w5"
             ],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 61: Substantival πτωχόν supplies 'poor person'; do not borrow interrogative οὐχ"
           },
           {
             "text": "Is",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 61: English interrogative auxiliary in 'Is it not...' is supplied"
           },
           {
             "text": "it",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 61: English expletive subject in the interrogative is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "not",
             "ids": [
-              "w7"
+              "w6"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 61: Renders οὐχ"
           },
           {
             "text": "the",
@@ -3813,10 +3824,15 @@
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Substantival article οἱ introduces 'the rich who...'",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "oppress",

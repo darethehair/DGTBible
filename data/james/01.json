@@ -3539,11 +3539,12 @@
         "dgt": [
           {
             "text": "a",
-            "ids": [
-              "w1"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 61: English article before 'double-minded person' is supplied; ἀνήρ supplies 'person'"
           },
           {
             "text": "double-minded",
@@ -3559,7 +3560,11 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 61: Renders ἀνήρ"
           },
           {
             "text": "unstable",

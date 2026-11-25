@@ -1655,10 +1655,15 @@
           },
           {
             "text": "we",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Subject of βάλλομεν ('we put')",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "put",
@@ -1702,17 +1707,29 @@
           },
           {
             "text": "so",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Purpose/result εἰς rendered idiomatically as 'so that'",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w12",
+              "w13"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Article + infinitive construction supplies 'that they obey'",
+            "phraseIds": [
+              "w12",
+              "w13"
+            ]
           },
           {
             "text": "they",
@@ -1741,24 +1758,38 @@
           {
             "text": "we",
             "ids": [
-              "w10"
+              "w21"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w21"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 61: Second 'we' belongs to μετάγομεν ('we guide/turn'), not βάλλομεν"
           },
           {
             "text": "also",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Renders καί adverbially as 'also'",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "guide",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Contextual rendering of μετάγομεν",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "their",
@@ -3009,10 +3040,14 @@
           {
             "text": "great",
             "ids": [
-              "w12"
+              "w9"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 61: First 'great' belongs to μεγάλα ('great things'), not ἡλίκον"
           },
           {
             "text": "things.",
@@ -3041,10 +3076,14 @@
           {
             "text": "small",
             "ids": [
-              "w5"
+              "w12"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 61: Second 'small' belongs to comparative/exclamatory ἡλίκον describing the fire"
           },
           {
             "text": "a",
@@ -3064,17 +3103,27 @@
           },
           {
             "text": "sets",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Renders ἀνάπτει",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "ablaze",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Completes contextual rendering of ἀνάπτει",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "how",
@@ -5067,24 +5116,35 @@
           {
             "text": "human",
             "ids": [
-              "w4"
+              "w7"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 61: Genitive ἀνθρώπων supplies 'human'"
           },
           {
             "text": "being",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 61: English noun completion 'human being' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Copular/modal support with δύναται ('is able')",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "able",
@@ -5104,10 +5164,15 @@
           },
           {
             "text": "tame",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 61: Renders δαμάσαι",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "the",
@@ -5135,26 +5200,33 @@
           },
           {
             "text": "is",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 61: Second-clause copula in 'It is a restless evil' is supplied"
           },
           {
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 61: English article before 'restless evil' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "restless",
             "ids": [
-              "w7"
+              "w8"
             ],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 61: Renders ἀκατάστατον, not ἀνθρώπων"
           },
           {
             "text": "evil,",
