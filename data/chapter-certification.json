@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "policy": "Never redo certified chapters. Review Greek to English and English to Greek. A correction commit is not certification; require explicit bilingual review and successful deployment. Preserve certified chapter content. Resume at first unfinished chapter.",
+  "preserved_previous_scope": {
+    "matthew": "Prior session reported completed; preserve without rescanning. Historical certification evidence not independently recovered."
+  },
+  "chapters": {
+    "mark/01": {
+      "status": "corrected-awaiting-verification",
+      "commit": "976f34a4",
+      "corrections": 175
+    },
+    "mark/02": {
+      "status": "corrected-awaiting-verification",
+      "commit": "8222660b",
+      "corrections": 137
+    },
+    "mark/03": {
+      "status": "corrected-awaiting-verification",
+      "commit": "30d02b35",
+      "corrections": 122
+    },
+    "mark/04": {
+      "status": "corrected-awaiting-verification",
+      "commit": "d2664607",
+      "corrections": 201
+    },
+    "mark/05": {
+      "status": "scanned-awaiting-corrections"
+    }
+  },
+  "resume": "mark/05"
+}
