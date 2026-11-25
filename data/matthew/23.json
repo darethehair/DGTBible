@@ -16203,15 +16203,15 @@
           },
           {
             "text": "without",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w35",
-              "w36",
-              "w37"
+            "ids": [
+              "w36"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w36"
+            ],
+            "reason": "Matthew final bilingual review: 'without' ↔ μὴ"
           },
           {
             "text": "neglecting",
@@ -19156,17 +19156,15 @@
           },
           {
             "text": "outwardly",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Matthew final bilingual review: 'outwardly' ↔ ἔξωθεν"
           },
           {
             "text": "appear",
@@ -19902,10 +19900,15 @@
           },
           {
             "text": "outwardly",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew final bilingual review: 'outwardly' ↔ ἔξωθεν",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "appear",
