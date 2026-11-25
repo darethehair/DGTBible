@@ -772,11 +772,19 @@
       "chapter_sha256": "44dcfa75cc84ab3ac46d69b4d05655a0d23e496783c9ae95540a98cbdc4f0bb5",
       "scope": "Acts 1:1–26. Bilingual comparison in both directions. Narrowed broad phrase links, restored missing prepositions and repeated conjunctions, separated two English tokens at dashes, and preserved supplied wording. The modal “must” in 1:22 reflects δεῖ in 1:21, outside the verse hover scope.",
       "regression": "Acts chapter audit and all 26 verse reconstructions passed. Original Greek, transliteration, literal, DGT wording and Greek source IDs preserved."
+    },
+    "acts/02": {
+      "status": "corrected",
+      "commit": "b492166",
+      "chapter_sha256": "71b443ce8c89b7c0d044beaef22205115c9384e2f739b21edad3bae7c4241bc8",
+      "scope": "Acts 2:1–47. Bilingual comparison in both directions. Restored narrower preposition, verb and repeated possessive links, corrected repeated conjunctions and pronouns, separated two different sources across English dashes, and classified supplied articles and clause support.",
+      "regression": "The Acts 1–2 audit passed across 73 verses. All 47 Acts 2 verses preserve the original wording and source IDs and reconstruct the DGT."
     }
   },
-  "resume": "acts/02",
+  "resume": "acts/03",
   "verification_backlog": [
-    "acts/01"
+    "acts/01",
+    "acts/02"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
