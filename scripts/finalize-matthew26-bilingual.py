@@ -4,7 +4,7 @@ from pathlib import Path
 
 P=Path("data/matthew/26.json")
 d=json.loads(P.read_text())
-STRUCT=set("""a an the and but or so for of to in on at as is are am was were be been being has have had do did does will would shall should may might can could he she it they we you i his her their our your him them us me this that these those who whom which what when after before while than one thing about because toward from with into upon there if not no how let then yet still even just by""".split())
+STRUCT=set("""a an the and but or so for of to in on at as is are am was were be been being has have had do did does will would shall should may might can could he she it they we you i his her their our your him them us me this that these those who whom which what when after before while than one thing about because toward from with into upon there if not no how let then yet still even just by now why whether though""".split())
 ALIASES={
  "said":{"say","speaking"},"say":{"said","speaking"},"asked":{"ask","questioning"},
  "took":{"take","taken"},"gave":{"give","given"},"went":{"go","departed"},"came":{"come","arrived"},
@@ -23,6 +23,21 @@ ALIASES={
  "false":{"false"},"witnesses":{"witnesses"},"blasphemy":{"blasphemy"},
  "death":{"death"},"alive":{"living"},"prophecy":{"prophesy"},"prophet":{"prophet"},
  "galilee":{"galilee"},"peter":{"peter"},"jesus":{"jesus"},"judas":{"judas"},
+ "deceit":{"guile"},"jar":{"flask","alabaster"},"expensive":{"costly"},"perfume":{"oil","fragrant"},
+ "why":{"purpose"},"knowing":{"known"},"good":{"beautiful"},"prepare":{"bury"},"burial":{"bury"},
+ "memory":{"memorial"},"went":{"go","went","departed"},"hand":{"betray","deliver"},"over":{"betray","deliver"},
+ "house":{"house"},"deeply":{"exceedingly","very"},"bowl":{"dish"},"man":{"him"},"gave":{"giving","give"},
+ "taking":{"taken","take"},"giving":{"thanks","give"},"new":{"anew"},"singing":{"sung","hymn"},
+ "stumbles":{"fall"},"grieved":{"sorrowful","distressed"},"point":{"death"},"keep":{"watch"},
+ "farther":{"forward"},"cannot":{"possible","able"},"heavy":{"sleeping"},"words":{"thing","word"},
+ "take":{"taken"},"provide":{"furnish"},"now":{"presently"},"happen":{"being","happen"},
+ "arrest":{"capture"},"sat":{"sitting"},"left":{"forsaken"},"distance":{"afar"},"far":{"afar"},
+ "attendants":{"guards"},"none":{"not"},"though":{"many"},"later":{"finally"},"tear":{"destroy"},
+ "down":{"destroy"},"build":{"rebuild"},"nothing":{"nothing","no"},"men":{"these"},
+ "testifying":{"witness"},"remained":{"silent"},"oath":{"adjure"},"whether":{"are"},
+ "nevertheless":{"but"},"tore":{"tears"},"further":{"more"},"fists":{"struck"},
+ "gateway":{"porch"},"nazarene":{"nazareth"},"standing":{"stood"},"truly":{"surely"},
+ "makes":{"gives"},"evident":{"away"},"outside":{"out"},
 }
 def words(s):
     return re.findall(r"[A-Za-z0-9]+", (s or "").lower())
@@ -58,6 +73,17 @@ for v in d.get("verses",[]):
             s=max([score(e,bag) for e in ew] or [0])
             scored.append((s,id,g.get("text",""),g.get("gloss","")))
         scored.sort(reverse=True)
+        if (not scored or scored[0][0] < 8) and t.get("phraseIds"):
+            scored=[]
+            for id in [id for g in G for id in g.get("ids",[])]:
+                g=next((x for x in G if id in x.get("ids",[])),None)
+                if not g: continue
+                bag=words(g.get("gloss",""))
+                for x in L:
+                    if id in x.get("ids",[]): bag+=words(x.get("text",""))
+                ss=max([score(e,bag) for e in ew] or [0])
+                scored.append((ss,id,g.get("text",""),g.get("gloss","")))
+            scored.sort(reverse=True)
         if scored and scored[0][0]>=8 and (len(scored)==1 or scored[0][0]>scored[1][0]):
             _,id,gt,gg=scored[0]
             t["ids"]=[id]; t["phraseIds"]=[id]; t.pop("supplied",None)
