@@ -623,11 +623,16 @@
       }
     },
     "john/10": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "b791fb58a3a1f6a23ff80c5b6e5a0e4e0f6833db",
       "reviewed_verses": "1–42",
       "corrections": 125,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "a35f037b582daec056d891c1c632f9af5a1c007c",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Hired worker in 10:13 represents μισθωτός, and care represents μέλει. Picked up in 10:31 expresses Ἐβάστασαν. In 10:29 the Greek relative is neuter and the DGT renders the clause with a personal relative, so the second them and English who have no distinct Greek source. Verified repeated sheep, shepherd, voice and hand references. Split came and and at the existing dash in 10:35.",
+        "chapter_sha256": "045f32436e90fc8d43df2102b07c4aac7d12dd8cda275907a73241284310e3e3"
+      }
     },
     "john/11": {
       "status": "corrected-awaiting-verification",
@@ -707,9 +712,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/10",
+  "resume": "john/11",
   "verification_backlog": [
-    "john/10",
     "john/11",
     "john/12",
     "john/13",
