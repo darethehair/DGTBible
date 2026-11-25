@@ -5134,10 +5134,17 @@
           },
           {
             "text": "twenty-three",
-            "ids": [],
+            "ids": [
+              "w12",
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Reviewed orphan fix: twenty-three maps to εἴκοσι + τρεῖς",
+            "phraseIds": [
+              "w12",
+              "w13"
+            ]
           },
           {
             "text": "thousand",
@@ -18571,10 +18578,15 @@
           },
           {
             "text": "person’s",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Reviewed orphan fix: substantival ἑτέρου supplies 'other person’s'",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "conscience,",
