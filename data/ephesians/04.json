@@ -10328,17 +10328,14 @@
           {
             "text": "by",
             "ids": [
-              "w5"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Human trickery phrase is introduced by ἐν, not κλυδωνιζόμενοι"
           },
           {
             "text": "human",
@@ -10373,19 +10370,14 @@
           {
             "text": "by",
             "ids": [
-              "w8"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ]
+              "w17"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Craftiness phrase is introduced by the later ἐν, not παντί"
           },
           {
             "text": "craftiness",
@@ -16465,35 +16457,26 @@
           {
             "text": "according",
             "ids": [
-              "w12"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: First 'according to' renders the first κατά, not the later κατά"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Completes first κατά rendering",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "your",
@@ -16627,10 +16610,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Article with old man",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "old",
@@ -16686,10 +16674,15 @@
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Article/relative before φθειρόμενον supplies 'who'",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "is",
@@ -20128,60 +20121,26 @@
           {
             "text": "the",
             "ids": [
-              "w9"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Opening substantival article ὁ supplies 'the one'"
           },
           {
             "text": "one",
             "ids": [
-              "w17"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Completes substantival rendering of ὁ"
           },
           {
             "text": "who",
@@ -20330,10 +20289,15 @@
           },
           {
             "text": "but",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Contrastive δὲ renders 'but'",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "rather",
@@ -20368,37 +20332,22 @@
             "text": "let",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 58: English imperative support before κοπιάτω is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "him",
             "ids": [
-              "w4"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Subject of κοπιάτω, not earlier κλεπτέτω"
           },
           {
             "text": "labor,",
@@ -20577,31 +20526,14 @@
           {
             "text": "his",
             "ids": [
-              "w7"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Possessive force of ἰδίαις in 'his own hands'"
           },
           {
             "text": "own",
@@ -20896,31 +20828,14 @@
           {
             "text": "with",
             "ids": [
-              "w10"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w17"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Dative article τῷ in 'share with the one', not earlier ἰδίαις"
           },
           {
             "text": "the",
@@ -20982,10 +20897,15 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: English 'in need' belongs with χρείαν",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "need.",
@@ -21563,39 +21483,27 @@
         "dgt": [
           {
             "text": "Let",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
+            "ids": [
               "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Imperatival force of ἐκπορευέσθω supplies 'Let'"
           },
           {
             "text": "no",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Negation μή supplies 'no'"
           },
           {
             "text": "rotten",
@@ -21637,21 +21545,15 @@
           },
           {
             "text": "come",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
+            "ids": [
               "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Renders ἐκπορευέσθω"
           },
           {
             "text": "out",
@@ -21749,54 +21651,41 @@
           },
           {
             "text": "only",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
+            "ids": [
               "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w11",
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Contextual rendering of εἴ τις as restrictive 'only what'"
           },
           {
             "text": "what",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Substantival τις rendered as 'what'"
           },
           {
             "text": "is",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: English copula with ἀγαθός"
           },
           {
             "text": "good",
@@ -21854,55 +21743,39 @@
           },
           {
             "text": "up",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Completes idiom 'building up' from οἰκοδομή"
           },
           {
             "text": "according",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Genitive article/need phrase rendered idiomatically as 'according to'"
           },
           {
             "text": "to",
             "ids": [
-              "w21"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w16"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Completes 'according to' phrase; do not borrow later τοῖς"
           },
           {
             "text": "the",
@@ -21987,17 +21860,15 @@
           },
           {
             "text": "may",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
+            "ids": [
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Subjunctive/modal force of δῷ"
           },
           {
             "text": "give",
@@ -22061,17 +21932,15 @@
           },
           {
             "text": "who",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
+            "ids": [
+              "w21"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w21"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Substantival article τοῖς before ἀκούουσιν supplies relative 'who'"
           },
           {
             "text": "hear.",

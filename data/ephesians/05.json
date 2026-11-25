@@ -969,23 +969,15 @@
           },
           {
             "text": "just",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Part of καθὼς rendered as 'just as'"
           },
           {
             "text": "as",
@@ -1308,20 +1300,14 @@
           {
             "text": "for",
             "ids": [
-              "w14"
+              "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ]
+              "w21"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Final 'for a fragrant aroma' renders εἰς, not earlier ὑπέρ"
           },
           {
             "text": "a",
@@ -5539,10 +5525,15 @@
           },
           {
             "text": "but",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Contrastive δὲ renders 'but'",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "now",
@@ -5569,33 +5560,21 @@
           },
           {
             "text": "you",
-            "ids": [
-              "w1"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 58: Second-clause subject is supplied in English; Greek has no repeated ὑμεῖς"
           },
           {
             "text": "are",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 58: Second-clause copula is supplied in English",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "light",
@@ -14776,10 +14755,15 @@
           },
           {
             "text": "just",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Part of ὡς rendered as 'just as'",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "as",
@@ -14808,10 +14792,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Article with assembly",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "assembly",
@@ -14990,49 +14979,51 @@
           },
           {
             "text": "should",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Elliptical second clause inherits the submit verb ὑποτάσσεται",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "submit",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Second-clause verbal sense is inherited from ὑποτάσσεται",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "to",
             "ids": [
-              "w7"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 58: Dative article with husbands, not earlier Χριστῷ"
           },
           {
             "text": "their",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 58: Possessive English rendering with husbands",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "husbands",
