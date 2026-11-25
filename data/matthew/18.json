@@ -1136,14 +1136,15 @@
           {
             "text": "child",
             "ids": [
-              "w6"
+              "w7"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w6"
+              "w6",
+              "w7"
             ],
-            "reason": "Matthew final bilingual review: precise local Greek correspondence"
+            "reason": "Bilingual certification: second 'child' represents pronoun αὐτό"
           },
           {
             "text": "in",
@@ -1992,20 +1993,18 @@
           {
             "text": "enter",
             "ids": [
-              "w16"
+              "w16",
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w14",
-              "w15",
               "w16",
               "w17",
               "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+              "w19"
+            ],
+            "reason": "Bilingual certification: transitive English 'enter the kingdom' absorbs εἰς"
           },
           {
             "text": "the",
@@ -2651,21 +2650,16 @@
           {
             "text": "is",
             "ids": [
+              "w9",
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
               "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w10"
+            ],
+            "reason": "Bilingual certification: resumptive οὗτός ἐστιν is rendered by 'is' after 'whoever'"
           },
           {
             "text": "the",
@@ -10054,12 +10048,14 @@
           {
             "text": "always",
             "ids": [
+              "w17",
               "w18"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
-            "reason": "Matthew final bilingual review: 'always' ↔ παντὸς",
+            "reason": "Bilingual certification: 'always' renders διὰ παντός",
             "phraseIds": [
+              "w17",
               "w18"
             ]
           },
@@ -11109,23 +11105,17 @@
           {
             "text": "has",
             "ids": [
+              "w5",
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w4",
               "w5",
               "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+              "w7"
+            ],
+            "reason": "Bilingual certification: 'a man has' renders γένηταί ... ἀνθρώπῳ"
           },
           {
             "text": "a",
@@ -18297,22 +18287,30 @@
           },
           {
             "text": "about",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'about' renders περὶ",
+            "phraseIds": [
+              "w14",
+              "w15",
+              "w16"
+            ]
           },
           {
             "text": "anything",
             "ids": [
-              "w15"
+              "w15",
+              "w16"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
-            "reason": "Matthew final bilingual review: 'anything' ↔ παντὸς",
+            "reason": "Bilingual certification: 'anything' renders παντὸς πράγματος",
             "phraseIds": [
-              "w15"
+              "w15",
+              "w16"
             ]
           },
           {
@@ -19140,11 +19138,18 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'in my name' renders εἰς τὸ ἐμὸν ὄνομα",
+            "phraseIds": [
+              "w8",
+              "w9",
+              "w10",
+              "w11"
+            ]
           },
           {
             "text": "my",
@@ -22635,18 +22640,12 @@
           },
           {
             "text": "his",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w11"
-            ]
+            "confidence": "reviewed-bilingual-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Bilingual certification: possessive 'his' is idiomatic English; removed erroneous link to ἐκέλευσεν"
           },
           {
             "text": "lord",
@@ -22821,22 +22820,16 @@
           {
             "text": "everything",
             "ids": [
-              "w20"
+              "w20",
+              "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
               "w20",
-              "w21",
-              "w22"
-            ]
+              "w21"
+            ],
+            "reason": "Bilingual certification: 'everything' renders πάντα ὅσα"
           },
           {
             "text": "he",
@@ -22860,11 +22853,15 @@
           },
           {
             "text": "had,",
-            "ids": [],
+            "ids": [
+              "w22"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'had' renders ἔχει in contextual past tense",
+            "phraseIds": [
+              "w22"
+            ]
           },
           {
             "text": "and",
@@ -24765,11 +24762,17 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'that slave' renders demonstrative ἐκεῖνος",
+            "phraseIds": [
+              "w3",
+              "w4",
+              "w5"
+            ]
           },
           {
             "text": "slave",
@@ -25168,11 +25171,18 @@
           },
           {
             "text": "what",
-            "ids": [],
+            "ids": [
+              "w23",
+              "w24"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'what' in 'what you owe' renders εἴ τι",
+            "phraseIds": [
+              "w23",
+              "w24",
+              "w25"
+            ]
           },
           {
             "text": "you",
@@ -26259,14 +26269,16 @@
           {
             "text": "unwilling.",
             "ids": [
+              "w3",
               "w4"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
+              "w3",
               "w4"
             ],
-            "reason": "Matthew final bilingual review: precise local Greek correspondence"
+            "reason": "Bilingual certification: 'unwilling' jointly renders οὐκ ἤθελεν"
           },
           {
             "text": "Instead,",
@@ -28367,11 +28379,16 @@
         "dgt": [
           {
             "text": "Should",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: modal 'Should' renders ἔδει",
+            "phraseIds": [
+              "w1",
+              "w2"
+            ]
           },
           {
             "text": "you",
