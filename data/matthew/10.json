@@ -5550,10 +5550,15 @@
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: negation maps to μὴ",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "acquire",
