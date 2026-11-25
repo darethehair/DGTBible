@@ -269,13 +269,14 @@
           {
             "text": "he",
             "ids": [
-              "w10"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10"
-            ]
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 27: Subject of 'he departed' is carried by χωρισθείς"
           },
           {
             "text": "departed",
@@ -312,14 +313,12 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w1"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 27: English coordination before 'came' has no separate Greek conjunction"
           },
           {
             "text": "came",
@@ -7695,13 +7694,14 @@
           {
             "text": "I",
             "ids": [
-              "w2"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w2"
-            ]
+              "w16"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 27: Idiomatic 'I have' renders μοι ('to me') with ἐστί"
           },
           {
             "text": "have",
@@ -10147,13 +10147,14 @@
           {
             "text": "was",
             "ids": [
-              "w17"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w17"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 27: 'Paul was about to' is carried by μέλλοντος, not later ἦν"
           },
           {
             "text": "about",
