@@ -2854,14 +2854,16 @@
           {
             "text": "of",
             "ids": [
-              "w9"
+              "w9",
+              "w8"
             ],
             "after": " ",
-            "confidence": "reviewed-hover-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w9"
+              "w9",
+              "w8"
             ],
-            "reason": "Matthew restart hover review: 'of' in 'made of camel hair' renders ἀπὸ"
+            "reason": "Matthew restart hover review: 'of' in 'made of camel hair' renders ἀπὸ; Matthew bilingual pass: also represents αὐτοῦ (of him)"
           },
           {
             "text": "camel",
@@ -4276,20 +4278,16 @@
           {
             "text": "the",
             "ids": [
-              "w4"
+              "w4",
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
               "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+              "w10"
+            ],
+            "reason": "Matthew bilingual pass: also represents τὰς (the)"
           },
           {
             "text": "Jordan",
@@ -8937,19 +8935,16 @@
           {
             "text": "to",
             "ids": [
-              "w23"
+              "w23",
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ]
+              "w23",
+              "w7"
+            ],
+            "reason": "Matthew bilingual pass: also represents εἰς (to)"
           },
           {
             "text": "carry.",
@@ -10857,11 +10852,23 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w3",
+              "w6",
+              "w9",
+              "w12",
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed; Matthew bilingual pass: also represents ὁ (the); Matthew bilingual pass: also represents τῆς (the); Matthew bilingual pass: also represents τὸν (the); Matthew bilingual pass: also represents τὸν (the); Matthew bilingual pass: also represents τοῦ (the)",
+            "phraseIds": [
+              "w3",
+              "w6",
+              "w9",
+              "w12",
+              "w14"
+            ]
           },
           {
             "text": "Jordan",
@@ -14196,19 +14203,18 @@
           {
             "text": "the",
             "ids": [
-              "w5"
+              "w5",
+              "w10",
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
               "w5",
-              "w6",
-              "w7"
-            ]
+              "w10",
+              "w13"
+            ],
+            "reason": "Matthew bilingual pass: also represents ὁ (the); Matthew bilingual pass: also represents ὁ (the)"
           },
           {
             "text": "heavens",
