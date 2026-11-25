@@ -3041,27 +3041,26 @@
           {
             "text": "of",
             "ids": [
-              "w19"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w19"
-            ]
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 45: Genitive article τῶν introduces 'of devout Greeks'; γυναικῶν belongs only to 'women'"
           },
           {
             "text": "devout",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
+            "ids": [
+              "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 45: Renders σεβομένων"
           },
           {
             "text": "Greeks",
