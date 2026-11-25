@@ -227,6 +227,14 @@
         "legacy_audit": "Heuristic findings reviewed. “Mother” at 16:1 makes the relationship explicit. Remaining flags include indefinite articles and implicit objects of “reported” at 16:10 and 16:13.",
         "chapter_sha256": "667851ea34758e21c969f37bc330f928f0905f451d0dfbcefd915b7e3352992d"
       }
+    },
+    "luke/01": {
+      "status": "correction-in-progress",
+      "commit": "4a1756937a59439403bd9e789be52f7ebb77958e",
+      "corrections": 152,
+      "reviewed_verses": "1–25",
+      "next_verse": 26,
+      "verification_note": "Structural checks passed for this slice. The legacy Luke audit flags candidates including supplied English articles and objects. Review remaining verses and resolve the chapter audit before release."
     }
   },
   "resume": "luke/01",
