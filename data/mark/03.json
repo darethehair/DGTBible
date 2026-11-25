@@ -7854,10 +7854,11 @@
           },
           {
             "text": "small",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "boat",
@@ -22460,22 +22461,11 @@
           {
             "text": "whoever",
             "ids": [
-              "w1"
+              "w1",
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "blasphemes",
@@ -22624,10 +22614,13 @@
           },
           {
             "text": "forever,",
-            "ids": [],
+            "ids": [
+              "w13",
+              "w14",
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "but",

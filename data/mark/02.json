@@ -2461,24 +2461,10 @@
           {
             "text": "him",
             "ids": [
-              "w5"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "to",
@@ -2486,28 +2472,15 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Jesus",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "because",
@@ -2677,10 +2650,11 @@
           },
           {
             "text": "above",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "where",
@@ -8969,20 +8943,8 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "went",
@@ -9089,24 +9051,10 @@
           {
             "text": "that",
             "ids": [
-              "w19"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "they",
@@ -19057,20 +19005,8 @@
             "text": "an",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "old",
@@ -19114,10 +19050,13 @@
           },
           {
             "text": "Otherwise,",
-            "ids": [],
+            "ids": [
+              "w10",
+              "w11",
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -19301,15 +19240,10 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-bilingual",
-            "phraseIds": [
-              "w14"
-            ],
-            "reason": "Direct Greek-English alignment review"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "tear",
