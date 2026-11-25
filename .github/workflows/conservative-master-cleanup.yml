@@ -38,7 +38,27 @@ jobs:
           fi
           git commit -m "Apply conservative reviewed NT master alignment batch checkpoint"
           for attempt in 1 2 3; do
-            if git pull --rebase origin main && git push; then exit 0; fi
+            if git pull --rebase origin main; then
+              # A concurrent book/data commit may have landed after the cleanup
+              # scan. Recompute the checkpoint on the rebased tree before push.
+              python scripts/master-nt-review.py
+              python - <<'PY'
+          import json
+          from pathlib import Path
+          summary=json.loads(Path('master-review/summary.json').read_text(encoding='utf8'))
+          payload={
+              'schema':1,
+              'purpose':'Persistent checkpoint for the conservative full-NT master alignment cleanup',
+              'summary':summary,
+          }
+          Path('data/master-review-progress.json').write_text(
+              json.dumps(payload,ensure_ascii=False,indent=2)+'\\n',encoding='utf8'
+          )
+          PY
+              git add data/master-review-progress.json
+              git commit --amend --no-edit
+              if git push; then exit 0; fi
+            fi
             if [ "$attempt" = 3 ]; then exit 1; fi
             sleep $((attempt*2))
           done
