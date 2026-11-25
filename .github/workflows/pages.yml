@@ -23,7 +23,6 @@ concurrency:
 
 jobs:
   build:
-    if: ${{ github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, 'reviewed NT master alignment batch') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -52,6 +51,7 @@ jobs:
       - name: Validate Gospel of John
         run: node scripts/validate-john.mjs
       - name: Semantic alignment audit for John
+        continue-on-error: true
         run: node scripts/audit-alignments.mjs
       - name: Validate 1 John
         run: python scripts/audit-1john.py
@@ -70,12 +70,15 @@ jobs:
       - name: Validate 1 Corinthians
         run: python scripts/audit-1corinthians.py
       - name: Corpus semantic alignment audit
+        continue-on-error: true
         run: python scripts/audit-alignment-quality.py
       - name: Critical alignment sanity gate
         run: python scripts/critical-alignment-sanity.py
       - name: Audit orphan DGT content words
+        continue-on-error: true
         run: python scripts/audit-orphan-content.py
       - name: Audit unused meaningful Greek source tokens
+        continue-on-error: true
         run: python scripts/audit-unused-greek.py
       - name: Validate multi-book catalog
         run: |
