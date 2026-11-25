@@ -7066,17 +7066,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
+            "ids": [
+              "w20"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to ὁ"
           },
           {
             "text": "one",
@@ -7125,15 +7123,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "divorced",
@@ -7800,8 +7792,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "man",
@@ -11641,22 +11634,15 @@
           },
           {
             "text": "do",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to κωλύετε"
           },
           {
             "text": "not",
@@ -24068,16 +24054,15 @@
           },
           {
             "text": "of",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w20",
-              "w21",
-              "w22",
-              "w23"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to ἕνεκεν"
           },
           {
             "text": "my",
