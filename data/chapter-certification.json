@@ -793,14 +793,22 @@
       "chapter_sha256": "5fd09adae11c129aa8b90696ca96770caa0924e7c4834a8fbc0924e5942f3dcd",
       "scope": "Acts 4:1–37. Bilingual comparison in both directions. Corrected repeated articles, prepositions, negatives and pronouns. Split three English dash tokens by source and marked implied English objects separately from explicit Greek pronouns.",
       "regression": "The Acts 1–4 audit passed across 136 verses. All 37 Acts 4 verses preserve DGT wording and Greek sources, and every link resolves."
+    },
+    "acts/05": {
+      "status": "corrected",
+      "commit": "58842e8",
+      "chapter_sha256": "bb209d89ceddb1a054755dd35dd81150dbb8f7984f7f311a26db13ef810c689c",
+      "scope": "Acts 5:1–42. Bilingual comparison in both directions. Disambiguated the distinct source IDs for “night” and “opened” in 5:19, preserved Greek object pronouns where explicit, and recorded supplied English repeats and idioms.",
+      "regression": "The Acts 1–5 audit passed across 178 verses. All 42 Acts 5 verses retain the original Greek and DGT wording, and all links resolve."
     }
   },
-  "resume": "acts/05",
+  "resume": "acts/06",
   "verification_backlog": [
     "acts/01",
     "acts/02",
     "acts/03",
-    "acts/04"
+    "acts/04",
+    "acts/05"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
