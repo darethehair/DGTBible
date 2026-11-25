@@ -661,11 +661,15 @@
           },
           {
             "text": "which",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed; Matthew final bilingual review: first 'which' renders ᾧ",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "you",
@@ -831,11 +835,15 @@
           },
           {
             "text": "which",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed; Matthew final bilingual review: second 'which' renders ᾧ",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "you",
@@ -3476,19 +3484,9 @@
             "text": "own",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Covered by authored phrase span; no safe lexical hover target; Matthew final bilingual review: 'own' is English emphasis with no separate Greek token",
+            "supplied": true
           },
           {
             "text": "eye,",
@@ -4827,14 +4825,9 @@
             "text": "apart.",
             "ids": [],
             "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Covered by authored phrase span; no safe lexical hover target; Matthew final bilingual review: 'apart' is carried by the Greek tearing verb",
+            "supplied": true
           }
         ]
       }
@@ -6441,11 +6434,15 @@
           },
           {
             "text": "what",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed; Matthew final bilingual review: 'what' renders τίς",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "person",
@@ -7064,16 +7061,15 @@
           },
           {
             "text": "snake,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target; Matthew final bilingual review: 'snake' renders ὄφιν"
           },
           {
             "text": "will",
@@ -9033,11 +9029,15 @@
           },
           {
             "text": "do",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed; Matthew final bilingual review: 'do' renders ποιῶσιν",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "to",
@@ -15537,11 +15537,15 @@
           },
           {
             "text": "does",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed; Matthew final bilingual review: 'does' renders ποιῶν",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "the",
@@ -18113,11 +18117,15 @@
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed; Matthew final bilingual review: 'who' renders ὅστις",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "hears",
@@ -20438,15 +20446,15 @@
           },
           {
             "text": "like",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target; Matthew final bilingual review: 'like' is part of the verb rendered 'will be like'"
           },
           {
             "text": "a",
