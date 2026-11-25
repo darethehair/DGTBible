@@ -368,11 +368,19 @@
           "after": " "
         },
         {
-          "text": "the beginning",
+          "text": "the",
+          "ids": [],
+          "after": " ",
+          "confidence": "reviewed-unaligned",
+          "reason": "English article has no separate Greek counterpart"
+        },
+        {
+          "text": "beginning",
           "ids": [
             "w2"
           ],
-          "after": " "
+          "after": " ",
+          "confidence": "reviewed-precise"
         },
         {
           "text": "was",
@@ -433,10 +441,10 @@
         {
           "text": "God",
           "ids": [
-            "w11",
             "w12"
           ],
-          "after": ", "
+          "after": ", ",
+          "confidence": "reviewed-precise"
         },
         {
           "text": "and",
@@ -446,14 +454,36 @@
           "after": " "
         },
         {
-          "text": "the Word was God",
+          "text": "the",
           "ids": [
-            "w14",
-            "w15",
-            "w16",
+            "w16"
+          ],
+          "after": " ",
+          "confidence": "reviewed-precise"
+        },
+        {
+          "text": "Word",
+          "ids": [
             "w17"
           ],
-          "after": "."
+          "after": " ",
+          "confidence": "reviewed-precise"
+        },
+        {
+          "text": "was",
+          "ids": [
+            "w15"
+          ],
+          "after": " ",
+          "confidence": "reviewed-precise"
+        },
+        {
+          "text": "God",
+          "ids": [
+            "w14"
+          ],
+          "after": ".",
+          "confidence": "reviewed-precise"
         }
       ]
     }
