@@ -29995,10 +29995,15 @@
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: negation maps to οὐκ",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "give",
@@ -31939,10 +31944,15 @@
           },
           {
             "text": "hungry",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'hungry/hungering' maps to πεινῶντα",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "or",
@@ -31973,10 +31983,15 @@
           },
           {
             "text": "thirsty",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'thirsty/thirsting' maps to διψῶντα",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "or",
@@ -32981,14 +32996,14 @@
           {
             "text": "not",
             "ids": [
-              "w16"
+              "w10"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w16"
+              "w10"
             ],
-            "reason": "Matthew bilingual audit: negation maps to οὐδὲ"
+            "reason": "Matthew bilingual audit: negation maps to οὐκ"
           },
           {
             "text": "do",
