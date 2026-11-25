@@ -4966,20 +4966,11 @@
           {
             "text": "to",
             "ids": [
-              "w8"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 15"
           },
           {
             "text": "one",
@@ -5008,10 +4999,12 @@
           },
           {
             "text": "born,",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 15"
           },
           {
             "text": "he",
