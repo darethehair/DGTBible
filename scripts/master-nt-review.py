@@ -154,7 +154,11 @@ for book in catalog:
                     span=(pos[-1]-pos[0]+1)/max(1,len(D))
                     if groups>=2 and (span>=0.35 or len(pos)>=5):
                         akey=f"precise-scattered|{slug}|{chinfo['chapter']}|{v['v']}|{wid}"
-                        if akey not in allow:
+                        fanout_key=f"precise-fanout|{slug}|{chinfo['chapter']}|{v['v']}|{wid}"
+                        # A reviewed legitimate fan-out is the same complete
+                        # interaction pattern; do not re-report it merely
+                        # because its words form multiple English runs.
+                        if akey not in allow and fanout_key not in allow:
                             rows.append({'severity':84,'kind':'precise-scattered','book':name,'ref':ref,'token':gtext.get(wid,wid),'activated':len(pos),'total':len(D),'share':round(span,3),'detail':[D[i].get('text','') for i in pos]})
                             stats[name]['precise_scattered']+=1
 
