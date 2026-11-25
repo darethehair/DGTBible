@@ -2106,14 +2106,12 @@
           },
           {
             "text": "him,",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 26: supplied English grammar"
           },
           {
             "text": "he",
@@ -2139,13 +2137,15 @@
           },
           {
             "text": "him",
-            "ids": [],
-            "after": " ",
-            "confidence": "reviewed-master-narrowed",
-            "phraseIds": [
-              "w28"
+            "ids": [
+              "w11"
             ],
-            "reason": "Human-reviewed full-NT master pass batch 26: removed unrelated precise source link"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 26: retargeted to correct source"
           },
           {
             "text": "because",
@@ -9008,17 +9008,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "reviewed-master-narrowed",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w8"
             ],
-            "reason": "Human-reviewed full-NT master pass batch 26: removed unrelated precise source link"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 26: retargeted to correct source"
           },
           {
             "text": "gate",
@@ -22030,13 +22028,15 @@
           },
           {
             "text": "he",
-            "ids": [],
-            "after": " ",
-            "confidence": "reviewed-master-narrowed",
-            "phraseIds": [
-              "w5"
+            "ids": [
+              "w2"
             ],
-            "reason": "Human-reviewed full-NT master pass batch 26: removed unrelated precise source link"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 26: retargeted to correct source"
           },
           {
             "text": "brought",
