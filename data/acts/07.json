@@ -1886,14 +1886,11 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders πρός without unrelated phrase span"
           },
           {
             "text": "him,",
@@ -1934,14 +1931,11 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders first ἐκ without unrelated phrase span"
           },
           {
             "text": "your",
@@ -1949,25 +1943,23 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders σου without unrelated phrase span"
           },
           {
             "text": "land",
             "ids": [
-              "w19"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w19"
-            ]
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: First 'land' renders γῆς w8, not later γῆν w19"
           },
           {
             "text": "and",
@@ -1975,14 +1967,11 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders καί without unrelated phrase span"
           },
           {
             "text": "from",
@@ -1990,14 +1979,11 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders second ἐκ without unrelated phrase span"
           },
           {
             "text": "your",
@@ -2005,28 +1991,23 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
               "w14"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders second σου without unrelated phrase span"
           },
           {
             "text": "relatives",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders συγγενείας"
           },
           {
             "text": "and",
@@ -2034,14 +2015,11 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w15"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders third καί without unrelated phrase span"
           },
           {
             "text": "come",
@@ -2071,14 +2049,11 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w18"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article with second land without unrelated phrase span"
           },
           {
             "text": "land",
@@ -2093,17 +2068,15 @@
           },
           {
             "text": "that",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Relative pronoun ἣν rendered as 'that'"
           },
           {
             "text": "I",
@@ -2144,14 +2117,11 @@
               "w22"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ]
+              "w22"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders dative σοι without unrelated phrase span"
           }
         ]
       }
@@ -4851,13 +4821,14 @@
           {
             "text": "And",
             "ids": [
-              "w15"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w15"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Opening connective renders δὲ, not later καί w15"
           },
           {
             "text": "God",
@@ -4883,17 +4854,15 @@
           },
           {
             "text": "this",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Part of οὕτως ('this way')"
           },
           {
             "text": "way:",
@@ -4924,13 +4893,14 @@
           {
             "text": "his",
             "ids": [
-              "w7"
+              "w10"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7"
-            ]
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Possessive 'his offspring' renders αὐτοῦ, not ἔσται"
           },
           {
             "text": "offspring",
@@ -4967,17 +4937,15 @@
           },
           {
             "text": "foreigners",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Contextual rendering of πάροικον"
           },
           {
             "text": "in",
@@ -4993,17 +4961,14 @@
           {
             "text": "a",
             "ids": [
-              "w11"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: English article with γῇ, not πάροικον"
           },
           {
             "text": "land",
@@ -5018,17 +4983,15 @@
           },
           {
             "text": "belonging",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Contextual rendering of ἀλλοτρίᾳ ('belonging to others/foreign')"
           },
           {
             "text": "to",
@@ -5041,17 +5004,15 @@
           },
           {
             "text": "others,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Completes contextual rendering of ἀλλοτρίᾳ"
           },
           {
             "text": "and",
@@ -5059,14 +5020,11 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w15"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders καί without unrelated phrase span"
           },
           {
             "text": "they",
@@ -5074,14 +5032,11 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
               "w16"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Subject carried by δουλώσουσιν without unrelated phrase span"
           },
           {
             "text": "would",
@@ -5111,14 +5066,11 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w18"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders second καί without unrelated phrase span"
           },
           {
             "text": "mistreat",
@@ -5134,17 +5086,16 @@
           {
             "text": "them",
             "ids": [
+              "w17",
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w16",
               "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Object αὐτό carried through both coordinated verbs"
           },
           {
             "text": "for",
@@ -5183,10 +5134,11 @@
               "w20"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w20"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἔτη"
           }
         ]
       }
@@ -10407,14 +10359,11 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders opening καί without unrelated phrase span"
           },
           {
             "text": "on",
@@ -10433,14 +10382,11 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article with second visit without unrelated phrase span"
           },
           {
             "text": "second",
@@ -10455,17 +10401,15 @@
           },
           {
             "text": "visit",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Contextual rendering of δευτέρῳ ('second time/visit')"
           },
           {
             "text": "Joseph",
@@ -10473,14 +10417,11 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders Ἰωσὴφ without unrelated phrase span"
           },
           {
             "text": "was",
@@ -10495,43 +10436,41 @@
           },
           {
             "text": "made",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Part of passive rendering ἀνεγνωρίσθη ('was made known/recognized')"
           },
           {
             "text": "known",
             "ids": [
-              "w11"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w11"
-            ]
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: First 'known' renders ἀνεγνωρίσθη, not later φανερόν"
           },
           {
             "text": "to",
             "ids": [
+              "w7",
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Dative relation to brothers"
           },
           {
             "text": "his",
@@ -10539,14 +10478,11 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders αὐτοῦ without unrelated phrase span"
           },
           {
             "text": "brothers,",
@@ -10565,28 +10501,23 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders second καί without unrelated phrase span"
           },
           {
             "text": "Joseph’s",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Genitival English rendering of Ἰωσήφ"
           },
           {
             "text": "family",
@@ -10616,25 +10547,23 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w11"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Second 'known' renders φανερόν"
           },
           {
             "text": "to",
             "ids": [
-              "w14"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w18"
-            ]
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Dative/article before Pharaoh without unrelated phrase span"
           },
           {
             "text": "Pharaoh.",
@@ -11083,14 +11012,12 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 48: English coordination between sent and called is supplied"
           },
           {
             "text": "called",
@@ -11131,14 +11058,11 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-postguard-pronoun",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders αὐτοῦ without unrelated phrase span"
           },
           {
             "text": "father",
@@ -11157,10 +11081,11 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w9"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders καί without unrelated phrase span"
           },
           {
             "text": "all",
@@ -11168,56 +11093,49 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders πᾶσαν without unrelated phrase span"
           },
           {
             "text": "his",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w14"
+            "ids": [
+              "w8"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Possessive 'his relatives' carried by αὐτοῦ"
           },
           {
             "text": "relatives,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w14",
-              "w15"
+            "ids": [
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders συγγένειαν"
           },
           {
             "text": "seventy-five",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w16",
+              "w17"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w16",
+              "w17"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἑβδομήκοντα πέντε"
           },
           {
             "text": "souls",
@@ -11247,14 +11165,11 @@
               "w14"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w14"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἐν as 'in all' without unrelated phrase span"
           }
         ]
       }
@@ -15579,13 +15494,14 @@
           {
             "text": "And",
             "ids": [
-              "w9"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Opening connective renders δὲ, leaving καί w9 for second clause"
           },
           {
             "text": "when",
@@ -15670,29 +15586,23 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders first αὐτόν without unrelated phrase span"
           },
           {
             "text": "up",
             "ids": [
-              "w10"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Completes 'took him up' rendering of ἀνείλατο, not later ἀνεθρέψατο"
           },
           {
             "text": "and",
@@ -15700,10 +15610,11 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w9"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders καί"
           },
           {
             "text": "raised",
@@ -15722,14 +15633,11 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders second αὐτόν without unrelated phrase span"
           },
           {
             "text": "as",
@@ -15746,14 +15654,11 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἑαυτῇ without unrelated phrase span"
           },
           {
             "text": "own",
@@ -15761,14 +15666,11 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Part of reflexive rendering ἑαυτῇ without unrelated phrase span"
           },
           {
             "text": "son.",
@@ -16140,14 +16042,11 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w5",
-              "w6"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders opening καί without unrelated phrase span"
           },
           {
             "text": "Moses",
@@ -16166,14 +16065,11 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w5",
-              "w6"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Passive auxiliary with ἐπαιδεύθη without unrelated phrase span"
           },
           {
             "text": "educated",
@@ -16188,14 +16084,12 @@
           },
           {
             "text": "in",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 48: English preposition before 'all the wisdom' is supplied"
           },
           {
             "text": "all",
@@ -16214,14 +16108,11 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w3",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article within 'the wisdom' tied to σοφίᾳ without unrelated span"
           },
           {
             "text": "wisdom",
@@ -16240,14 +16131,11 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Genitival rendering of Αἰγυπτίων without unrelated phrase span"
           },
           {
             "text": "the",
@@ -16255,14 +16143,11 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: English article with Egyptians tied to Αἰγυπτίων"
           },
           {
             "text": "Egyptians,",
@@ -16278,13 +16163,14 @@
           {
             "text": "and",
             "ids": [
-              "w13"
+              "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w13"
-            ]
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Second-clause connective renders δὲ, not καί w13"
           },
           {
             "text": "he",
@@ -22046,10 +21932,11 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w8"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Temporal clause belongs to προσερχομένου ('when approaching'), not first sight clause"
           },
           {
             "text": "Moses",
@@ -22068,29 +21955,23 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἰδὼν without unrelated phrase span"
           },
           {
             "text": "it,",
             "ids": [
-              "w4"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Object 'it' refers to ὅραμα"
           },
           {
             "text": "he",
@@ -22154,13 +22035,14 @@
           {
             "text": "and",
             "ids": [
-              "w2"
+              "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w2"
-            ]
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Connective before approach clause renders δὲ, not earlier δὲ w2"
           },
           {
             "text": "as",
@@ -22177,10 +22059,11 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w10"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders αὐτοῦ without unrelated phrase span"
           },
           {
             "text": "approached",
@@ -22210,14 +22093,11 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
               "w11"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders κατανοῆσαι without unrelated phrase span"
           },
           {
             "text": "more",
@@ -22245,14 +22125,11 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
               "w13"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article in English 'the voice' tied to φωνή"
           },
           {
             "text": "voice",
@@ -22278,18 +22155,12 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-final-positional",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 48: English article in 'of the Lord' is supplied"
           },
           {
             "text": "Lord",
@@ -28419,14 +28290,11 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἐστιν without unrelated phrase span"
           },
           {
             "text": "the",
@@ -28434,14 +28302,11 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article with 'one' without unrelated phrase span"
           },
           {
             "text": "one",
@@ -28457,27 +28322,26 @@
           {
             "text": "who",
             "ids": [
-              "w14"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w14"
-            ]
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Relative English support for substantival participle γενόμενος, not later τοῦ w14"
           },
           {
             "text": "was",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders γενόμενος"
           },
           {
             "text": "in",
@@ -28485,14 +28349,11 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-positional",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders first ἐν without unrelated phrase span"
           },
           {
             "text": "the",
@@ -28500,14 +28361,11 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article with assembly without unrelated phrase span"
           },
           {
             "text": "assembly",
@@ -28515,14 +28373,11 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἐκκλησίᾳ without unrelated phrase span"
           },
           {
             "text": "in",
@@ -28530,14 +28385,11 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders second ἐν without unrelated phrase span"
           },
           {
             "text": "the",
@@ -28545,14 +28397,11 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article with wilderness without unrelated phrase span"
           },
           {
             "text": "wilderness",
@@ -28582,14 +28431,11 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article with angel without unrelated phrase span"
           },
           {
             "text": "angel",
@@ -28608,14 +28454,11 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w14"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Relative article τοῦ introducing λαλοῦντος"
           },
           {
             "text": "spoke",
@@ -28634,14 +28477,11 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ]
+              "w16"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Dative 'to him' without unrelated phrase span"
           },
           {
             "text": "him",
@@ -28699,13 +28539,14 @@
           {
             "text": "with",
             "ids": [
-              "w11"
+              "w22"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w11"
-            ]
+              "w22"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Second 'with our fathers' is carried by the genitive coordination, not first μετὰ"
           },
           {
             "text": "our",
@@ -28713,14 +28554,11 @@
               "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w20",
-              "w21",
-              "w22",
-              "w23",
               "w24"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἡμῶν without unrelated phrase span"
           },
           {
             "text": "fathers,",
@@ -28739,14 +28577,11 @@
               "w25"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26"
-            ]
+              "w25"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders relative ὃς without unrelated phrase span"
           },
           {
             "text": "received",
@@ -28772,17 +28607,15 @@
           },
           {
             "text": "words",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28"
+            "ids": [
+              "w27"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w27"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders λόγια"
           },
           {
             "text": "to",
@@ -28790,14 +28623,11 @@
               "w29"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w25",
-              "w26",
-              "w27",
-              "w28",
               "w29"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Infinitival marker with δοῦναι without unrelated phrase span"
           },
           {
             "text": "give",
@@ -28816,14 +28646,11 @@
               "w30"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w26",
-              "w27",
-              "w28",
-              "w29",
               "w30"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Dative 'to us' without unrelated phrase span"
           },
           {
             "text": "us.",
@@ -28831,14 +28658,11 @@
               "w30"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w26",
-              "w27",
-              "w28",
-              "w29",
               "w30"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἡμῖν without unrelated phrase span"
           }
         ]
       }
@@ -30150,17 +29974,14 @@
           {
             "text": "to",
             "ids": [
-              "w3"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Dative/article before Aaron, not Aaron itself"
           },
           {
             "text": "Aaron,",
@@ -30198,13 +30019,14 @@
           {
             "text": "for",
             "ids": [
-              "w11"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w11"
-            ]
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Dative ἡμῖν rendered as 'for us', not γὰρ w11"
           },
           {
             "text": "us",
@@ -30212,14 +30034,11 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἡμῖν without unrelated phrase span"
           },
           {
             "text": "who",
@@ -30227,14 +30046,11 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders relative οἳ without unrelated phrase span"
           },
           {
             "text": "will",
@@ -30275,14 +30091,11 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἡμῶν without unrelated phrase span"
           },
           {
             "text": "for",
@@ -30323,14 +30136,11 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+              "w14"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders relative ὃς without unrelated phrase span"
           },
           {
             "text": "led",
@@ -30349,14 +30159,11 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
               "w16"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders ἡμᾶς without unrelated phrase span"
           },
           {
             "text": "out",
@@ -30386,14 +30193,11 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
               "w18"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article supplied within γῆς 'the land' without unrelated span"
           },
           {
             "text": "land",
@@ -30419,28 +30223,24 @@
           },
           {
             "text": "Egypt—we",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
+            "ids": [
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders Αἰγύπτου plus English clause boundary"
           },
           {
             "text": "do",
-            "ids": [
-              "w4"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 48: English auxiliary in 'do not know' is supplied"
           },
           {
             "text": "not",
@@ -35957,14 +35757,11 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "s12",
-              "w13"
-            ]
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Article/dative in 'for the God' without unrelated phrase span"
           },
           {
             "text": "God",
@@ -37856,10 +37653,11 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w5"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: English interrogative auxiliary tied to ἐποίησεν"
           },
           {
             "text": "not",
@@ -37878,14 +37676,11 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders μου without unrelated phrase span"
           },
           {
             "text": "hand",
@@ -43710,14 +43505,11 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders καί without unrelated phrase span"
           },
           {
             "text": "they",
@@ -43769,10 +43561,11 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w1"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: English subordinate force of opening καί retained as 'as'"
           },
           {
             "text": "he",
@@ -43813,14 +43606,11 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders second καί without unrelated phrase span"
           },
           {
             "text": "said,",
@@ -43872,14 +43662,11 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
               "w13"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 48: Renders μου without unrelated phrase span"
           },
           {
             "text": "spirit.”",
