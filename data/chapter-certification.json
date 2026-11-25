@@ -301,11 +301,16 @@
       }
     },
     "luke/07": {
-      "status": "corrected-awaiting-verification",
-      "commit": "93602424830b0e89d9693583a5457baacf2930ae",
-      "corrections": 304,
+      "status": "verified-awaiting-deployment",
+      "commit": "58e3c771aa46309053f2d5037bced65f43773af5",
+      "corrections": 314,
       "reviewed_verses": "1–50",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "58e3c771aa46309053f2d5037bced65f43773af5",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. Objects supplied by context in 7:8, 7:14, 7:19, 7:38, 7:40 and 7:44 have no additional Greek pronoun. The two by-context relative clauses in 7:39 retain distinct links. Much in 7:26 shares the degree expressed by περισσότερον. No phrase-only hover links remain.",
+        "chapter_sha256": "292fabbe6543ee2208b35d0075b927b87cc219721fbd62397faab286020405ef"
+      }
     },
     "luke/08": {
       "status": "corrected-awaiting-verification",
@@ -427,9 +432,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/07",
+  "resume": "luke/08",
   "verification_backlog": [
-    "luke/07",
     "luke/08",
     "luke/09",
     "luke/10",
