@@ -578,16 +578,14 @@
           {
             "text": "his",
             "ids": [
-              "w11"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
               "w14"
-            ]
+            ],
+            "reason": "Bilingual certification: 'his disciples' renders μαθηταῖς αὐτοῦ"
           },
           {
             "text": "disciples,",
@@ -2442,11 +2440,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: purpose 'to seize' renders ἵνα",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "seize",
@@ -3441,11 +3443,15 @@
           },
           {
             "text": "was",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'was' in 'when Jesus was' renders γενομένου",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "in",
@@ -4707,14 +4713,16 @@
           {
             "text": "Why",
             "ids": [
+              "w8",
               "w9"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
+              "w8",
               "w9"
             ],
-            "reason": "Matthew 26 bilingual pass: Why ↔ τί"
+            "reason": "Bilingual certification: 'Why' renders Εἰς τί"
           },
           {
             "text": "this",
@@ -4989,11 +4997,15 @@
           },
           {
             "text": "could",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: modal 'could' renders ἐδύνατο",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "have",
@@ -5849,18 +5861,14 @@
           {
             "text": "for",
             "ids": [
-              "w13"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w16"
+            ],
+            "reason": "Bilingual certification: 'for me' renders εἰς ἐμέ"
           },
           {
             "text": "me.",
@@ -6305,19 +6313,14 @@
           {
             "text": "you,",
             "ids": [
-              "w5"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
               "w7"
-            ]
+            ],
+            "reason": "Bilingual certification: 'with you' includes ἑαυτῶν"
           },
           {
             "text": "but",
@@ -6818,13 +6821,13 @@
           {
             "text": "she",
             "ids": [
-              "w15"
+              "w3"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-semantic",
-            "reason": "Matthew 26 bilingual pass: she ↔ ἐποίησεν.",
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'she' renders αὕτη",
             "phraseIds": [
-              "w15"
+              "w3"
             ]
           },
           {
@@ -6849,11 +6852,15 @@
           },
           {
             "text": "this",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: demonstrative 'this perfume' renders τοῦτο",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "perfume",
@@ -7792,26 +7799,27 @@
           },
           {
             "text": "what",
-            "ids": [],
-            "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
-          },
-          {
-            "text": "she",
             "ids": [
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-relative-pronoun",
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: relative 'what' renders ὃ",
             "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+              "w16"
             ]
+          },
+          {
+            "text": "she",
+            "ids": [
+              "w18"
+            ],
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Bilingual certification: 'she/this woman' renders αὕτη"
           },
           {
             "text": "has",
@@ -9470,11 +9478,15 @@
           },
           {
             "text": "then",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'then' renders τότε",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "on",
@@ -11340,11 +11352,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'to a certain man' renders πρὸς",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "a",
@@ -14445,11 +14461,15 @@
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: resumptive 'one' renders οὗτος",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "who",
@@ -15773,11 +15793,15 @@
           },
           {
             "text": "been",
-            "ids": [],
+            "ids": [
+              "w24"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'been' renders ἦν in 'would have been good'",
+            "phraseIds": [
+              "w24"
+            ]
           },
           {
             "text": "good",
@@ -15798,32 +15822,35 @@
               "w25"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w23",
-              "w24",
               "w25"
-            ]
+            ],
+            "reason": "Bilingual certification: 'for' renders αὐτῷ"
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w31"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'that' renders ἐκεῖνος",
+            "phraseIds": [
+              "w31"
+            ]
           },
           {
             "text": "man",
             "ids": [
-              "w25"
+              "w30"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-semantic",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w25"
+              "w30"
             ],
-            "reason": "Matthew 26 bilingual pass: man ↔ αὐτῷ"
+            "reason": "Bilingual certification: 'man' renders ἄνθρωπος"
           },
           {
             "text": "if",
@@ -18017,11 +18044,15 @@
           },
           {
             "text": "from",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'from it' renders ἐξ αὐτοῦ",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "it,",
@@ -21258,21 +21289,16 @@
           {
             "text": "this",
             "ids": [
+              "w11",
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
               "w11",
-              "w12",
-              "w13",
               "w14"
-            ]
+            ],
+            "reason": "Bilingual certification: 'this night' carries ἐν ... ταύτῃ"
           },
           {
             "text": "night,",
@@ -23151,20 +23177,16 @@
           {
             "text": "this",
             "ids": [
+              "w9",
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w8",
               "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+              "w10"
+            ],
+            "reason": "Bilingual certification: 'this night' carries ἐν ταύτῃ"
           },
           {
             "text": "night,",
@@ -25018,11 +25040,17 @@
           },
           {
             "text": "while",
-            "ids": [],
+            "ids": [
+              "w17",
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'while' renders ἕως οὗ",
+            "phraseIds": [
+              "w17",
+              "w18"
+            ]
           },
           {
             "text": "I",
@@ -26252,11 +26280,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'to ... death' renders ἕως",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "the",
@@ -27276,31 +27308,27 @@
           },
           {
             "text": "on",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'on his face' renders ἐπὶ",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "his",
             "ids": [
-              "w4"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w7"
+            ],
+            "reason": "Bilingual certification: 'his face' renders πρόσωπον αὐτοῦ"
           },
           {
             "text": "face,",
@@ -27634,11 +27662,15 @@
           },
           {
             "text": "will,",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'I will/wish' renders θέλω",
+            "phraseIds": [
+              "w26"
+            ]
           },
           {
             "text": "but",
@@ -30096,14 +30128,16 @@
           {
             "text": "cannot",
             "ids": [
+              "w10",
               "w11"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
+              "w10",
               "w11"
             ],
-            "reason": "Matthew 26 bilingual pass: cannot ↔ δύναται"
+            "reason": "Bilingual certification: 'cannot' jointly renders οὐ δύναται"
           },
           {
             "text": "pass",
@@ -30748,13 +30782,13 @@
           {
             "text": "heavy.",
             "ids": [
-              "w6"
+              "w12"
             ],
             "after": "",
-            "confidence": "reviewed-bilingual-semantic",
-            "reason": "Matthew 26 bilingual pass: heavy. ↔ καθεύδοντας,",
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'heavy' renders βεβαρημένοι",
             "phraseIds": [
-              "w6"
+              "w12"
             ]
           }
         ]
@@ -32160,11 +32194,15 @@
           },
           {
             "text": "still",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'still' carries λοιπὸν",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "sleeping",
@@ -33577,11 +33615,15 @@
           },
           {
             "text": "still",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'still' renders ἔτι",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "speaking,",
@@ -34627,11 +34669,15 @@
           },
           {
             "text": "one",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'one' in 'the one I kiss' renders Ὃν",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "I",
@@ -37664,11 +37710,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'to its place' renders εἰς",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "its",
@@ -40282,11 +40332,15 @@
           },
           {
             "text": "after",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'day after day' carries καθʼ",
+            "phraseIds": [
+              "w20"
+            ]
           },
           {
             "text": "day",
@@ -42640,11 +42694,15 @@
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'as far as' renders ἕως",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "the",
@@ -44445,15 +44503,14 @@
           {
             "text": "said,",
             "ids": [
-              "w1"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
-              "w2",
               "w3"
-            ]
+            ],
+            "reason": "Bilingual certification: second 'said' renders ἔφη, not εἶπαν"
           },
           {
             "text": "I",
@@ -47174,18 +47231,14 @@
           {
             "text": "said",
             "ids": [
-              "w6"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ]
+              "w1"
+            ],
+            "reason": "Bilingual certification: Jesus 'said' renders λέγει"
           },
           {
             "text": "to",
@@ -47603,11 +47656,15 @@
           },
           {
             "text": "on",
-            "ids": [],
+            "ids": [
+              "w24"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'on the clouds' renders ἐπὶ",
+            "phraseIds": [
+              "w24"
+            ]
           },
           {
             "text": "the",
@@ -48303,11 +48360,15 @@
           },
           {
             "text": "What",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: interrogative 'What/why' renders τί",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "further",
