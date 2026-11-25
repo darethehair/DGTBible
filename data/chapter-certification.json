@@ -635,11 +635,16 @@
       }
     },
     "john/11": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "2d5426b8ab04f0c8087fa05db23e111c57988082",
       "reviewed_verses": "1–57",
       "corrections": 144,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "eafaf9f61f52647f9bdefa243edc96dc21dd3733",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "There at 11:9 is existential. At 11:37 the idiom kept this man from dying renders ποιῆσαι ἵνα μὴ ἀποθάνῃ, with scope of the negation over dying and not kept. Man at 11:39 belongs to the substantival participle for the deceased. Confirmed the different instances of death, rising, believing and speech throughout the chapter.",
+        "chapter_sha256": "2446d5b92fbcab715106b9e51a4b39ea2ade59b7e9beee2da682bbd35d50ea67"
+      }
     },
     "john/12": {
       "status": "corrected-awaiting-verification",
@@ -712,9 +717,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/11",
+  "resume": "john/12",
   "verification_backlog": [
-    "john/11",
     "john/12",
     "john/13",
     "john/14",
