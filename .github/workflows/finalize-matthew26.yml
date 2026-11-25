@@ -1,0 +1,27 @@
+name: One-time Matthew 26 bilingual cleanup
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/finalize-matthew26-bilingual.py'
+      - '.github/workflows/finalize-matthew26.yml'
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Matthew 26 bilingual cleanup
+        run: python scripts/finalize-matthew26-bilingual.py
+      - name: Commit Matthew 26 cleanup
+        run: |
+          if git diff --quiet -- data/matthew/26.json; then
+            echo "No Matthew 26 changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/matthew/26.json
+          git commit -m "Apply Matthew 26 bilingual cleanup"
+          git push
