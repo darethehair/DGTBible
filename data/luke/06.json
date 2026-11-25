@@ -693,11 +693,10 @@
           },
           {
             "text": "them",
-            "ids": [
-              "w19"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "in",
@@ -753,11 +752,10 @@
           },
           {
             "text": "them.",
-            "ids": [
-              "w19"
-            ],
+            "ids": [],
             "after": "",
-            "confidence": "reviewed-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           }
         ]
       }
@@ -2802,11 +2800,9 @@
           {
             "text": "it,",
             "after": " ",
-            "ids": [
-              "w10"
-            ],
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "and",
@@ -2886,10 +2882,11 @@
           },
           {
             "text": "although",
-            "ids": [],
+            "ids": [
+              "w22"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "it",
@@ -4744,17 +4741,19 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "see",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "whether",
@@ -4892,10 +4891,11 @@
           },
           {
             "text": "reason",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "to",
@@ -6617,11 +6617,9 @@
           {
             "text": "it?”",
             "after": "",
-            "ids": [
-              "w16"
-            ],
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 14"
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           }
         ]
       }
@@ -15112,10 +15110,11 @@
           },
           {
             "text": "you,",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "and",
@@ -16128,10 +16127,10 @@
             "text": "same",
             "after": " ",
             "ids": [
+              "w17",
               "w19"
             ],
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 16"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "things",
@@ -22507,13 +22506,10 @@
           {
             "text": "those",
             "ids": [
-              "w3"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "from",
@@ -23594,6 +23590,7 @@
           {
             "text": "and",
             "ids": [
+              "w6",
               "w8"
             ],
             "after": " ",
@@ -26279,13 +26276,11 @@
           {
             "text": "“Can",
             "ids": [
+              "w6",
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "a",
@@ -29246,10 +29241,11 @@
           },
           {
             "text": "own",
-            "ids": [],
+            "ids": [
+              "w23"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "eye?",
@@ -29359,10 +29355,11 @@
           },
           {
             "text": "own",
-            "ids": [],
+            "ids": [
+              "w35"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "eye,",
@@ -32935,13 +32932,11 @@
           {
             "text": "hears",
             "ids": [
+              "w6",
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "my",
@@ -34152,7 +34147,8 @@
           {
             "text": "against",
             "ids": [
-              "w19"
+              "w19",
+              "w22"
             ],
             "after": " ",
             "confidence": "reviewed-precise"
@@ -34242,13 +34238,11 @@
           {
             "text": "because",
             "ids": [
-              "w30"
+              "w30",
+              "w31"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w30"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "it",
