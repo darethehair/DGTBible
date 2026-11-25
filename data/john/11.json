@@ -19739,18 +19739,26 @@
           {
             "text": "“Could",
             "ids": [
-              "w5"
+              "w7"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Modal 'Could' renders ἐδύνατο, not εἶπαν"
           },
           {
             "text": "not",
             "ids": [
-              "w19"
+              "w6"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: First negation οὐκ supplies 'not'; later μή is absorbed by 'kept ... from dying'"
           },
           {
             "text": "this",
@@ -19802,10 +19810,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Genitive article before blind man",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "the",
@@ -19826,10 +19839,14 @@
           {
             "text": "man,",
             "ids": [
-              "w8"
+              "w14"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Second 'man' belongs to τυφλοῦ ('blind man'), not οὗτος"
           },
           {
             "text": "have",
@@ -19841,10 +19858,17 @@
           },
           {
             "text": "kept",
-            "ids": [],
+            "ids": [
+              "w15",
+              "w19"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Contextual rendering of ποιῆσαι ... μή as 'kept ... from'",
+            "phraseIds": [
+              "w15",
+              "w19"
+            ]
           },
           {
             "text": "this",
@@ -19872,10 +19896,17 @@
           },
           {
             "text": "from",
-            "ids": [],
+            "ids": [
+              "w15",
+              "w19"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Part of contextual negative prevention construction",
+            "phraseIds": [
+              "w15",
+              "w19"
+            ]
           },
           {
             "text": "dying?”",

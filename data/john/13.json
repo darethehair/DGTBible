@@ -11662,15 +11662,23 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: First 'it happens' belongs to γενέσθαι"
           },
           {
             "text": "happens,",
             "ids": [
-              "w11"
+              "w7"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: First 'happens' renders γενέσθαι, not later γένηται"
           },
           {
             "text": "so",
@@ -11698,10 +11706,15 @@
           },
           {
             "text": "it",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Second 'it happens' belongs to γένηται",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "happens",
@@ -11722,10 +11735,14 @@
           {
             "text": "may",
             "ids": [
-              "w11"
+              "w9"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Modal force belongs to πιστεύσητε, not γένηται"
           },
           {
             "text": "believe",

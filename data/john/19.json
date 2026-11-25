@@ -21229,26 +21229,33 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w13"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 62: English article in 'the day of preparation' is supplied"
           },
           {
             "text": "day",
             "ids": [
-              "w22"
+              "w5"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Preparation παρασκευή is rendered idiomatically as 'day of preparation'; later ἡμέρα is the Sabbath day"
           },
           {
             "text": "of",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 62: English genitive glue in 'day of preparation' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "preparation,",
@@ -21277,10 +21284,14 @@
           {
             "text": "the",
             "ids": [
-              "w11"
+              "w13"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Article with bodies belongs to τὰ, not cross article"
           },
           {
             "text": "bodies",
@@ -21292,10 +21303,15 @@
           },
           {
             "text": "would",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Subjunctive/modal force of μείνῃ",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "not",
@@ -21316,18 +21332,26 @@
           {
             "text": "on",
             "ids": [
-              "w15"
+              "w10"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: First 'on' belongs to cross phrase ἐπὶ τοῦ σταυροῦ"
           },
           {
             "text": "the",
             "ids": [
-              "w16"
+              "w11"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Article with cross"
           },
           {
             "text": "cross",
@@ -21340,26 +21364,40 @@
           {
             "text": "on",
             "ids": [
-              "w10"
+              "w15"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Second 'on' belongs to Sabbath phrase ἐν τῷ σαββάτῳ"
           },
           {
             "text": "the",
             "ids": [
-              "w21"
+              "w16"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Article with first Sabbath"
           },
           {
             "text": "Sabbath—for",
             "ids": [
+              "w17",
               "w19"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w17",
+              "w19"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Punctuation-bound token carries σαββάτῳ and causal γάρ"
           },
           {
             "text": "that",
@@ -21372,10 +21410,14 @@
           {
             "text": "Sabbath",
             "ids": [
-              "w17"
+              "w25"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w25"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Second Sabbath renders σαββάτου, not first σαββάτῳ"
           },
           {
             "text": "day",
@@ -21404,10 +21446,14 @@
           {
             "text": "great",
             "ids": [
-              "w25"
+              "w20"
             ],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Renders μεγάλη, not second Sabbath"
           },
           {
             "text": "one—asked",
@@ -21415,7 +21461,11 @@
               "w26"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w26"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: English 'one' is supplied by the preceding day phrase; lexical content here is 'asked'"
           },
           {
             "text": "Pilate",
@@ -21485,8 +21535,10 @@
             "text": "they",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 62: English subject of final passive clause is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "might",

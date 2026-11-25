@@ -18830,22 +18830,35 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: First 'it happens' belongs to γενέσθαι"
           },
           {
             "text": "happens,",
             "ids": [
-              "w9"
+              "w6"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: First 'happens' renders γενέσθαι, not later γένηται"
           },
           {
             "text": "so",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Purpose ἵνα rendered as 'so that'",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "that",
@@ -18865,10 +18878,15 @@
           },
           {
             "text": "it",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Second 'it happens' belongs to γένηται",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "happens",
@@ -18880,18 +18898,27 @@
           },
           {
             "text": "you",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Subject carried by πιστεύσητε",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "may",
             "ids": [
-              "w9"
+              "w10"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Modal force of πιστεύσητε"
           },
           {
             "text": "believe.",

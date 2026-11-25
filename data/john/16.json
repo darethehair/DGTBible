@@ -12786,25 +12786,36 @@
           },
           {
             "text": "given",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Second birth clause renders γεννήσῃ, not earlier τίκτῃ",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "birth",
             "ids": [
-              "w4"
+              "w14"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Completes second γεννήσῃ rendering"
           },
           {
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 62: English dative/idiomatic support in 'give birth to the child' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "the",
@@ -12824,10 +12835,15 @@
           },
           {
             "text": "she",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Subject of 'she no longer remembers' carried by μνημονεύει",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "no",
@@ -12871,10 +12887,15 @@
           },
           {
             "text": "because",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Causal διά rendered as 'because of'",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "of",
@@ -12927,10 +12948,14 @@
           {
             "text": "being",
             "ids": [
-              "w25"
+              "w26"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w26"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: ἄνθρωπος supplies the noun phrase 'human being'; birth verb remains w25"
           },
           {
             "text": "has",

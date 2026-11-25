@@ -8373,18 +8373,27 @@
           },
           {
             "text": "my",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Second 'my own' belongs to second ἐμά",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "own",
             "ids": [
-              "w10"
+              "w15"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Second 'own' renders second ἐμά, not first ἐμά"
           },
           {
             "text": "know",

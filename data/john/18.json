@@ -14765,10 +14765,15 @@
           },
           {
             "text": "wrongly,",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Renders κακῶς",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "testify",
@@ -14836,11 +14841,12 @@
           },
           {
             "text": "do",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 62: English interrogative auxiliary in 'why do you hit me?' is supplied"
           },
           {
             "text": "you",
@@ -14852,10 +14858,15 @@
           },
           {
             "text": "hit",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Renders δέρεις",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "me?”",
@@ -16660,8 +16671,10 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 62: English article before 'relative' is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "relative",
@@ -16677,7 +16690,11 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Part of participial relation ὢν ('being a relative of')"
           },
           {
             "text": "the",
@@ -16690,17 +16707,26 @@
           {
             "text": "man",
             "ids": [
-              "w2"
+              "w10"
             ],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 62: Relative οὗ supplies referent 'man whose ear...'"
           },
           {
             "text": "whose",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-precise",
+            "reason": "Human-reviewed full-NT master pass batch 62: Renders relative οὗ",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "ear",
@@ -16754,8 +16780,10 @@
             "text": "“Did",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-master-supplied",
+            "reason": "Human-reviewed full-NT master pass batch 62: English interrogative auxiliary is supplied",
+            "phraseIds": [],
+            "supplied": true
           },
           {
             "text": "I",
