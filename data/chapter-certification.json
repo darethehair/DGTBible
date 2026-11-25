@@ -521,11 +521,18 @@
       "commit": "150c285ae865e9804349716b006f6a52e1f0e22f",
       "reviewed_verses": "1–51",
       "verification_note": "Compared Greek and DGT in both directions. Two grouped DGT tokens in 1:1 were split for precise hover, preserving every character. Wording and source IDs checked against main."
+    },
+    "john/02": {
+      "status": "corrected-awaiting-verification",
+      "commit": "86811c5e41406f7fb9d0aefea0355b6d8937f66e",
+      "reviewed_verses": "1–25",
+      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/02",
+  "resume": "john/03",
   "verification_backlog": [
-    "john/01"
+    "john/01",
+    "john/02"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
