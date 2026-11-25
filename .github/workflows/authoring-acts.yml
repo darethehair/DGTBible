@@ -48,6 +48,8 @@ jobs:
         run: python scripts/apply-quality-overrides.py
       - name: Repair deterministic/reviewed Acts links after overrides
         run: python scripts/repair-acts-final.py
+      - name: Reapply reviewed master narrowing corrections
+        run: python scripts/apply-master-reviewed-batch26.py
       - name: Audit Acts range
         run: python scripts/audit-acts.py
       - name: Produce structural Acts hover review queue
