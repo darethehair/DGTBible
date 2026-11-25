@@ -731,11 +731,16 @@
       }
     },
     "john/19": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "d5eac5e12eb1d917d4bd8cdcb25f0a757c022084",
       "reviewed_verses": "1–42",
       "corrections": 164,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "f95e38afc56d9e4de033afa3b43173e2447149c1",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Statement at 19:8 renders λόγος, became afraid renders ἐφοβήθη, and when at 19:33 reflects the temporal participle. There in 19:29 is situational and in 19:41 is existential. Assigned the two Crucify calls to separate Greek imperatives. Split the adjacent words on opposite sides of the dashes in 19:5, 19:26–27, 19:31 and 19:39.",
+        "chapter_sha256": "dff27731d7268cb00adcf1aaace3f1b052e439f177c5ab8307afb9aa0870d7ea"
+      }
     },
     "john/20": {
       "status": "corrected-awaiting-verification",
@@ -752,9 +757,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/19",
+  "resume": "john/20",
   "verification_backlog": [
-    "john/19",
     "john/20",
     "john/21"
   ],
