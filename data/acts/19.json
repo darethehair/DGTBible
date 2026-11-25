@@ -29378,20 +29378,27 @@
           {
             "text": "concerning",
             "ids": [
-              "w6"
+              "w12"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 3"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "today,",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 3"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w7",
+              "w8",
+              "w9",
+              "w10",
+              "w11"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "since",
@@ -29536,12 +29543,17 @@
           },
           {
             "text": "give",
-            "ids": [
-              "w16"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 3"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w16",
+              "w17",
+              "w18",
+              "w19",
+              "w20"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "an",
@@ -29554,12 +29566,17 @@
           },
           {
             "text": "account",
-            "ids": [
-              "w17"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 3"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w17",
+              "w18",
+              "w19",
+              "w20",
+              "w21"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "for",
@@ -29593,12 +29610,17 @@
           },
           {
             "text": "gathering.”",
-            "ids": [
-              "w20"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 3"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w19",
+              "w20",
+              "w21",
+              "s22",
+              "s23"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "And",

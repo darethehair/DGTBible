@@ -27156,11 +27156,13 @@
           {
             "text": "you",
             "ids": [
-              "w1"
+              "w3"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 9"
+            "confidence": "acts-final-helper-verb",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "and",
@@ -27253,12 +27255,17 @@
           },
           {
             "text": "who",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 9"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w9",
+              "w10",
+              "w11",
+              "w12",
+              "w13"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "are",
@@ -27276,21 +27283,31 @@
           },
           {
             "text": "far",
-            "ids": [
+            "ids": [],
+            "after": " ",
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w10",
+              "w11",
+              "w12",
+              "w13",
               "w14"
             ],
-            "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 9"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "away,",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 9"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w11",
+              "w12",
+              "w13",
+              "w14",
+              "w15"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "as",
@@ -27354,11 +27371,13 @@
           {
             "text": "our",
             "ids": [
-              "w21"
+              "w17"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 9"
+            "confidence": "acts-final-helper-verb",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "God",
