@@ -2294,19 +2294,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τὰ"
           },
           {
             "text": "signs",
@@ -2876,16 +2872,9 @@
             "text": "An",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "evil",
@@ -14131,20 +14120,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τὰς"
           },
           {
             "text": "kingdom",
@@ -16313,18 +16297,15 @@
           },
           {
             "text": "to",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w14"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to εἰς"
           },
           {
             "text": "Jerusalem",
@@ -20283,10 +20264,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to ἕνεκεν",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "me",
@@ -20919,21 +20905,15 @@
         "dgt": [
           {
             "text": "For",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to γὰρ"
           },
           {
             "text": "what",
@@ -22228,22 +22208,15 @@
           },
           {
             "text": "of",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τοῦ"
           },
           {
             "text": "his",
