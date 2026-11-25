@@ -229,16 +229,25 @@
       }
     },
     "luke/01": {
+      "status": "corrected-awaiting-verification",
+      "commit": "020a057155536d835f0f6dbe63b225e3a8077868",
+      "corrections": 370,
+      "reviewed_verses": "1–80",
+      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+    },
+    "luke/02": {
       "status": "correction-in-progress",
-      "commit": "4a1756937a59439403bd9e789be52f7ebb77958e",
-      "corrections": 152,
-      "reviewed_verses": "1–25",
-      "next_verse": 26,
-      "verification_note": "Structural checks passed for this slice. The legacy Luke audit flags candidates including supplied English articles and objects. Review remaining verses and resolve the chapter audit before release."
+      "commit": "2d27fe35787962a709576766dac412f73f7afefe",
+      "corrections": 118,
+      "reviewed_verses": "1–20",
+      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending.",
+      "next_verse": 21
     }
   },
-  "resume": "luke/01",
-  "verification_backlog": [],
+  "resume": "luke/02",
+  "verification_backlog": [
+    "luke/01"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
