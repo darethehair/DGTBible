@@ -35557,11 +35557,15 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Targeted review of explicit Greek conjunction in its clause",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "those",
