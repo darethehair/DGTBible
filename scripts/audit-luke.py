@@ -1,4 +1,5 @@
 import json,os,re,unicodedata,collections
+from hashlib import sha256
 from pathlib import Path
 from alignment_repair import sim as lexical_sim
 start=int(os.environ.get('START_CHAPTER','1'));end=int(os.environ.get('END_CHAPTER','1'))
@@ -24,6 +25,7 @@ def pk(w):
  return None
 
 linked=unlinked=count=0
+legacy_linked=legacy_unlinked=0
 recoverable=[]
 collisions=[]
 synthetic_unlinked=[]
@@ -36,19 +38,44 @@ recoverable_bundled_pronouns=[]
 recoverable_positional=[]
 CONTENT_GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over until when while where why how what whatever whenever whether though although having toward is am are was were be been being has have had do does did will would shall should may might can could he she it they we you i me him her them us my his their our your who whom whose which that this these those there here not no never none nothing one thing things its'.split())
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
+checkpoint_path = Path('data/chapter-certification.json')
+checkpoint = json.loads(checkpoint_path.read_text()) if checkpoint_path.exists() else {}
+verified_chapters = []
 for ch in range(start,end+1):
- d=json.loads((Path('data')/'luke'/f'{ch:02}.json').read_text(encoding='utf8'))
+ key = f'luke/{ch:02}'
+ chapter_bytes = Path('data', f'{key}.json').read_bytes()
+ d = json.loads(chapter_bytes)
+ verification = checkpoint.get('chapters', {}).get(key, {})
+ verified = verification.get('status') in {'verified-awaiting-deployment', 'certified'}
+ if verified:
+  final = verification['final_verification']
+  assert final.get('legacy_audit'), f'{key} lacks a bilingual disposition of legacy audit findings'
+  assert sha256(chapter_bytes).hexdigest() == final['chapter_sha256'], f'{key} differs from the verified chapter'
+  verified_chapters.append(ch)
  count+=len(d['verses'])
  for v in d['verses']:
   assert v['greek'] and v['dgt'] and v['literal']
-  ids={x['ids'][0] for x in v['alignment']['greek']}
+  source_ids = [i for word in v['alignment']['greek'] for i in word['ids']]
+  ids = set(source_ids)
+  if verified:
+   assert len(ids) == len(source_ids), f'{key}:{v["v"]} duplicate source IDs'
   D=v['alignment']['dgt']; L=v['alignment']['literal']
   for x in D:
-   if x.get('ids') or x.get('phraseIds'):linked+=1
-   else:unlinked+=1
+   if x.get('ids') or x.get('phraseIds'):
+    linked+=1
+    if not verified: legacy_linked+=1
+   else:
+    unlinked+=1
+    if not verified: legacy_unlinked+=1
    if x.get('phraseIds') and any(i not in set(x.get('phraseIds',[])) for i in x.get('ids',[])):
     out_of_span.append((ch,v['v'],x.get('text',''),x.get('ids',[]),x.get('phraseIds',[]),x.get('confidence','')))
    assert all(i in ids for i in (x.get('ids',[])+x.get('phraseIds',[]))),f'dangling alignment Luke {ch}:{v["v"]}'
+  if verified:
+   for layer in ('greek', 'dgt'):
+    tokens = v['alignment'][layer]
+    reconstructed = ''.join(token['text'] + token.get('after', '') for token in tokens)
+    assert reconstructed.strip() == v[layer].strip(), f'{key}:{v["v"]} {layer} reconstruction mismatch'
+   continue
   # Phrase-only English is valid when the translation is genuinely idiomatic:
   # the UI highlights its complete authored Greek span. Still fail when a
   # strong single-token lexical counterpart exists inside that span, because
@@ -208,7 +235,9 @@ if orphan_content:
   print(f"{ch}:{vn}\t{txt}\t"+' | '.join(f"{gi.get(id,('?','',''))[0]}:{gi.get(id,('?','',''))[1]}={gi.get(id,('?','',''))[2]}" for id in pids))
  print('ORPHAN_CONTENT_REPORT_END')
 pct=linked/(linked+unlinked)*100
-assert pct>=75,pct
+if legacy_linked + legacy_unlinked:
+ legacy_pct = legacy_linked / (legacy_linked + legacy_unlinked) * 100
+ assert legacy_pct >= 75, legacy_pct
 assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverable[:20]}'
 assert not recoverable_pronouns, f'recoverable pronoun-family DGT links left unlinked: {recoverable_pronouns[:20]}'
 assert not recoverable_relative_pronouns, f'recoverable relative-to-personal pronoun links left unlinked: {recoverable_relative_pronouns[:20]}'
@@ -219,4 +248,8 @@ assert not collisions, f'suspicious authored-precise Greek ID collisions: {colli
 assert not orphan_content, f'unlinked DGT content words: {orphan_content[:40]}'
 assert not out_of_span, f'precise DGT links escaped authored phrase spans: {out_of_span[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
-print(f'Luke {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 recoverable relative-pronoun bridges left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
+print(f'Luke {start}-{end}: {count} verses; {pct:.1f}% authored DGT token coverage.')
+if verified_chapters:
+ print(f'Bilingual verification hashes and structural checks passed for chapters {verified_chapters}.')
+if len(verified_chapters) < end - start + 1:
+ print('Unverified chapters passed the legacy alignment heuristics.')
