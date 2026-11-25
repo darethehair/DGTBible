@@ -11608,16 +11608,18 @@
           {
             "text": "before",
             "ids": [
-              "w17"
+              "w17",
+              "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
               "w17",
               "w18",
               "w19",
               "w20"
-            ]
+            ],
+            "reason": "Bilingual certification: English 'before' compresses πρὶν ἢ"
           },
           {
             "text": "they",
@@ -16331,15 +16333,17 @@
           {
             "text": "means,",
             "ids": [
+              "w17",
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
               "w16",
               "w17",
               "w18"
-            ]
+            ],
+            "reason": "Bilingual certification: 'means/being translated' carries ἐστιν μεθερμηνευόμενον"
           },
           {
             "text": "God",
@@ -17722,18 +17726,16 @@
           {
             "text": "his",
             "ids": [
-              "w14"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w13",
-              "w14",
               "w15",
               "w16",
-              "w17",
-              "w18"
-            ]
+              "w17"
+            ],
+            "reason": "Bilingual certification: 'his name' renders ὄνομα αὐτοῦ"
           },
           {
             "text": "name",
