@@ -1,0 +1,38 @@
+name: Repair master exact unlinked content
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/repair-master-exact-unlinked.py'
+      - '.github/workflows/repair-master-exact-unlinked.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dgt-master-cleanup
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repair unique exact unlinked content
+        run: python scripts/repair-master-exact-unlinked.py
+      - name: Re-run full NT master review
+        run: python scripts/master-nt-review.py
+      - name: Commit safe exact repairs
+        run: |
+          git config user.name "DGTBible alignment bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "Repair unique exact unlinked NT alignments"
+            for attempt in 1 2 3; do
+              if git pull --rebase origin main && git push; then exit 0; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep $((attempt*2))
+            done
+          fi
