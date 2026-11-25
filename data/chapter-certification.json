@@ -313,11 +313,16 @@
       }
     },
     "luke/08": {
-      "status": "corrected-awaiting-verification",
-      "commit": "93602424830b0e89d9693583a5457baacf2930ae",
-      "corrections": 390,
+      "status": "verified-awaiting-deployment",
+      "commit": "96ee439df64c3f259c4b3321730c2a87817a8041",
+      "corrections": 419,
       "reviewed_verses": "1–56",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "96ee439df64c3f259c4b3321730c2a87817a8041",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. Seed, boat, demons, Jesus and house are supplied by context where their Greek nouns are absent. The physician and expenditure clause in 8:43 has no DGT rendering. Greek participles supply some English auxiliaries, while expletive subjects and duplicated objects remain unlinked. Removed broad phrase-only fallbacks.",
+        "chapter_sha256": "4840159ee3efa1cf39cbf1063f1994a5c191409792d924437d363527516baccf"
+      }
     },
     "luke/09": {
       "status": "corrected-awaiting-verification",
@@ -432,9 +437,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/08",
+  "resume": "luke/09",
   "verification_backlog": [
-    "luke/08",
     "luke/09",
     "luke/10",
     "luke/11",
