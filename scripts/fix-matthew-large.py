@@ -110,3 +110,58 @@ for ch, adds in EXTRA_ADD.items():
         t["reason"]="Matthew Greek coverage audit: added directly represented Greek source token"
     p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n")
     print(f"Matthew {ch}: added {len(adds)} high-confidence Greek coverage IDs")
+
+
+# FINAL_MATTHEW_26_CERTIFICATION
+M26_FINAL = {
+  (1,12): (["w14"], "Bilingual certification: 'his disciples' renders μαθηταῖς αὐτοῦ"),
+  (4,4): (["w3"], "Bilingual certification: purpose 'to seize' renders ἵνα"),
+  (6,3): (["w4"], "Bilingual certification: 'was' in 'when Jesus was' renders γενομένου"),
+  (8,10): (["w8","w9"], "Bilingual certification: 'Why' renders Εἰς τί"),
+  (9,2): (["w1"], "Bilingual certification: modal 'could' renders ἐδύνατο"),
+  (10,22): (["w16"], "Bilingual certification: 'for me' renders εἰς ἐμέ"),
+  (11,7): (["w7"], "Bilingual certification: 'with you' includes ἑαυτῶν"),
+  (12,2): (["w3"], "Bilingual certification: 'she' renders αὕτη"),
+  (12,4): (["w6"], "Bilingual certification: demonstrative 'this perfume' renders τοῦτο"),
+  (13,14): (["w16"], "Bilingual certification: relative 'what' renders ὃ"),
+  (13,15): (["w18"], "Bilingual certification: 'she/this woman' renders αὕτη"),
+  (16,2): (["w3"], "Bilingual certification: 'then' renders τότε"),
+  (18,7): (["w8"], "Bilingual certification: 'to a certain man' renders πρὸς"),
+  (23,18): (["w14"], "Bilingual certification: resumptive 'one' renders οὗτος"),
+  (24,30): (["w24"], "Bilingual certification: 'been' renders ἦν in 'would have been good'"),
+  (24,32): (["w25"], "Bilingual certification: 'for' renders αὐτῷ"),
+  (24,33): (["w31"], "Bilingual certification: 'that' renders ἐκεῖνος"),
+  (24,34): (["w30"], "Bilingual certification: 'man' renders ἄνθρωπος"),
+  (27,14): (["w11"], "Bilingual certification: 'from it' renders ἐξ αὐτοῦ"),
+  (31,13): (["w11","w14"], "Bilingual certification: 'this night' carries ἐν ... ταύτῃ"),
+  (34,9): (["w9","w10"], "Bilingual certification: 'this night' carries ἐν ταύτῃ"),
+  (36,18): (["w17","w18"], "Bilingual certification: 'while' renders ἕως οὗ"),
+  (38,10): (["w11"], "Bilingual certification: 'to ... death' renders ἕως"),
+  (39,7): (["w5"], "Bilingual certification: 'on his face' renders ἐπὶ"),
+  (39,8): (["w7"], "Bilingual certification: 'his face' renders πρόσωπον αὐτοῦ"),
+  (39,29): (["w26"], "Bilingual certification: 'I will/wish' renders θέλω"),
+  (42,15): (["w10","w11"], "Bilingual certification: 'cannot' jointly renders οὐ δύναται"),
+  (43,11): (["w12"], "Bilingual certification: 'heavy' renders βεβαρημένοι"),
+  (45,12): (["w12"], "Bilingual certification: 'still' carries λοιπὸν"),
+  (47,4): (["w2"], "Bilingual certification: 'still' renders ἔτι"),
+  (48,12): (["w9"], "Bilingual certification: 'one' in 'the one I kiss' renders Ὃν"),
+  (52,8): (["w10"], "Bilingual certification: 'to its place' renders εἰς"),
+  (55,24): (["w20"], "Bilingual certification: 'day after day' carries καθʼ"),
+  (58,9): (["w8"], "Bilingual certification: 'as far as' renders ἕως"),
+  (61,4): (["w3"], "Bilingual certification: second 'said' renders ἔφη, not εἶπαν"),
+  (64,1): (["w1"], "Bilingual certification: Jesus 'said' renders λέγει"),
+  (64,30): (["w24"], "Bilingual certification: 'on the clouds' renders ἐπὶ"),
+  (65,10): (["w11"], "Bilingual certification: interrogative 'What/why' renders τί"),
+}
+p=Path("data/matthew/26.json")
+d=json.loads(p.read_text())
+byv={v["v"]:v for v in d["verses"]}
+for (vn,idx),(ids,reason) in M26_FINAL.items():
+    t=byv[vn]["alignment"]["dgt"][idx]
+    t["ids"]=ids
+    t["phraseIds"]=ids
+    t.pop("supplied",None)
+    t["confidence"]="reviewed-bilingual-precise" if len(ids)==1 else "reviewed-bilingual-semantic"
+    t["reason"]=reason
+p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n")
+print(f"Matthew 26: applied {len(M26_FINAL)} final certification repairs")
