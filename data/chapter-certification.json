@@ -384,13 +384,20 @@
     },
     "luke/23": {
       "status": "corrected-awaiting-verification",
-      "commit": "9fbe585d965cce955e25695e6cc7e0a8398cc467",
-      "corrections": 273,
+      "commit": "c34624457d3fe080ba3155c4245ea8995e6ded87",
+      "corrections": 275,
       "reviewed_verses": "1–56",
+      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+    },
+    "luke/24": {
+      "status": "corrected-awaiting-verification",
+      "commit": "c34624457d3fe080ba3155c4245ea8995e6ded87",
+      "corrections": 256,
+      "reviewed_verses": "1–53",
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/24",
+  "resume": "luke/01",
   "verification_backlog": [
     "luke/01",
     "luke/02",
@@ -414,7 +421,8 @@
     "luke/20",
     "luke/21",
     "luke/22",
-    "luke/23"
+    "luke/23",
+    "luke/24"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -430,5 +438,6 @@
       "workflow_status": "success",
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
-  }
+  },
+  "resume_phase": "final-verification"
 }
