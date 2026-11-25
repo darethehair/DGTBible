@@ -765,10 +765,19 @@
         "legacy_audit": "Some in 21:6 supplies the implicit object of find, and there at 21:11 is existential. Confirmed the two components of fifty-three, each instance of asking and answering Peter, the distinct commands Feed and Shepherd, and the repeated condition in 21:22–23. Split dash-joined words in 21:7 and 21:20 so the clauses retain separate hover targets.",
         "chapter_sha256": "5119eb1c71cb693af9f622978456d456314a47d728843b05000192016cfa20b0"
       }
+    },
+    "acts/01": {
+      "status": "corrected",
+      "commit": "b3e0ccf",
+      "chapter_sha256": "44dcfa75cc84ab3ac46d69b4d05655a0d23e496783c9ae95540a98cbdc4f0bb5",
+      "scope": "Acts 1:1–26. Bilingual comparison in both directions. Narrowed broad phrase links, restored missing prepositions and repeated conjunctions, separated two English tokens at dashes, and preserved supplied wording. The modal “must” in 1:22 reflects δεῖ in 1:21, outside the verse hover scope.",
+      "regression": "Acts chapter audit and all 26 verse reconstructions passed. Original Greek, transliteration, literal, DGT wording and Greek source IDs preserved."
     }
   },
-  "resume": "acts/01",
-  "verification_backlog": [],
+  "resume": "acts/02",
+  "verification_backlog": [
+    "acts/01"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
