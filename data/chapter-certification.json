@@ -311,9 +311,16 @@
       "corrections": 339,
       "reviewed_verses": "1–59",
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+    },
+    "luke/13": {
+      "status": "corrected-awaiting-verification",
+      "commit": "0894d35aba464137fa904560beb286131b51dc13",
+      "corrections": 206,
+      "reviewed_verses": "1–35",
+      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/13",
+  "resume": "luke/14",
   "verification_backlog": [
     "luke/01",
     "luke/02",
@@ -326,7 +333,8 @@
     "luke/09",
     "luke/10",
     "luke/11",
-    "luke/12"
+    "luke/12",
+    "luke/13"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
