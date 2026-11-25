@@ -13,22 +13,42 @@
     "mark/02": {
       "status": "corrected-awaiting-verification",
       "commit": "8222660b",
-      "corrections": 137
+      "corrections": 137,
+      "follow_up": {
+        "commit": "400c299",
+        "corrections": 9,
+        "scope": "Targeted legacy audit candidate review"
+      }
     },
     "mark/03": {
       "status": "corrected-awaiting-verification",
       "commit": "30d02b35",
-      "corrections": 122
+      "corrections": 122,
+      "follow_up": {
+        "commit": "400c299",
+        "corrections": 3,
+        "scope": "Targeted legacy audit candidate review"
+      }
     },
     "mark/04": {
       "status": "corrected-awaiting-verification",
       "commit": "d2664607",
-      "corrections": 201
+      "corrections": 201,
+      "follow_up": {
+        "commit": "400c299",
+        "corrections": 6,
+        "scope": "Targeted legacy audit candidate review"
+      }
     },
     "mark/05": {
       "status": "corrected-awaiting-verification",
       "commit": "12016e1e",
-      "corrections": 182
+      "corrections": 182,
+      "follow_up": {
+        "commit": "400c299",
+        "corrections": 2,
+        "scope": "Targeted legacy audit candidate review"
+      }
     },
     "mark/06": {
       "status": "corrected-awaiting-verification",
@@ -45,7 +65,12 @@
       "status": "corrected-awaiting-verification",
       "corrections": 209,
       "verification_note": "Initial bilingual correction pass. Legacy Mark audit flags exact-link candidates, including English articles and objects without distinct Greek equivalents. Final verification pending.",
-      "commit": "89d2dfa"
+      "commit": "89d2dfa",
+      "follow_up": {
+        "commit": "400c299",
+        "corrections": 2,
+        "scope": "Targeted legacy audit candidate review"
+      }
     },
     "mark/08": {
       "status": "corrected-awaiting-verification",
@@ -54,15 +79,47 @@
       "commit": "89d2dfa"
     },
     "mark/09": {
-      "status": "correction-in-progress",
-      "commit": "b3ddf6e",
-      "corrections": 78,
-      "reviewed_verses": "1–13",
-      "next_verse": 14,
-      "verification_note": "Original verse and token text and source IDs validated for the correction pass. Full chapter audit and final bilingual verification remain pending."
+      "status": "corrected-awaiting-verification",
+      "commit": "400c299",
+      "corrections": 281
+    },
+    "mark/10": {
+      "status": "corrected-awaiting-verification",
+      "commit": "400c299",
+      "corrections": 300
+    },
+    "mark/11": {
+      "status": "corrected-awaiting-verification",
+      "commit": "400c299",
+      "corrections": 132
+    },
+    "mark/12": {
+      "status": "corrected-awaiting-verification",
+      "commit": "400c299",
+      "corrections": 241
+    },
+    "mark/13": {
+      "status": "corrected-awaiting-verification",
+      "commit": "400c299",
+      "corrections": 210
+    },
+    "mark/14": {
+      "status": "corrected-awaiting-verification",
+      "commit": "400c299",
+      "corrections": 383
+    },
+    "mark/15": {
+      "status": "corrected-awaiting-verification",
+      "commit": "400c299",
+      "corrections": 231
+    },
+    "mark/16": {
+      "status": "corrected-awaiting-verification",
+      "commit": "400c299",
+      "corrections": 114
     }
   },
-  "resume": "mark/09",
+  "resume": "mark/01",
   "verification_backlog": [
     "mark/01",
     "mark/02",
@@ -71,10 +128,18 @@
     "mark/05",
     "mark/06",
     "mark/07",
-    "mark/08"
+    "mark/08",
+    "mark/09",
+    "mark/10",
+    "mark/11",
+    "mark/12",
+    "mark/13",
+    "mark/14",
+    "mark/15",
+    "mark/16"
   ],
   "verification_baseline": {
-    "scope": "mark/01–06",
-    "result": "Legacy audit failed on orphan-content assertions for Mark 2–6. Inspect each case in context during final bilingual verification."
+    "scope": "mark/01–16",
+    "result": "Structural regression passed for all chapters. Hover breadth passed the major cutoff with 68 diagnostic interactions. The strict legacy audit passed Mark 1 before final verification and reported heuristic findings for Mark 2–16."
   }
 }
