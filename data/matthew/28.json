@@ -488,11 +488,18 @@
           },
           {
             "text": "after",
-            "ids": [],
+            "ids": [
+              "w1",
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'after the Sabbath' renders Ὀψὲ σαββάτων",
+            "phraseIds": [
+              "w1",
+              "w2",
+              "w3"
+            ]
           },
           {
             "text": "the",
@@ -2698,16 +2705,14 @@
           {
             "text": "became",
             "ids": [
-              "w11"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-compound-state",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w10"
+            ],
+            "reason": "Bilingual certification: 'became/were' renders ἐγενήθησαν, not ὡς"
           },
           {
             "text": "like",
@@ -10667,19 +10672,33 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'to this day' renders μέχρι",
+            "phraseIds": [
+              "w16",
+              "w17",
+              "w18",
+              "w19"
+            ]
           },
           {
             "text": "this",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: temporal 'this/present' renders σήμερον",
+            "phraseIds": [
+              "w16",
+              "w17",
+              "w18",
+              "w19"
+            ]
           },
           {
             "text": "day.",
@@ -11179,13 +11198,16 @@
           {
             "text": "to",
             "ids": [
-              "w9"
+              "w6"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-precise",
-            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to εἰς",
+            "reason": "Bilingual certification: first 'to' in 'went to Galilee' renders first εἰς",
             "phraseIds": [
-              "w9"
+              "w5",
+              "w6",
+              "w7",
+              "w8"
             ]
           },
           {
@@ -11209,20 +11231,16 @@
           {
             "text": "to",
             "ids": [
-              "w14"
+              "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
               "w9",
               "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w11"
+            ],
+            "reason": "Bilingual certification: second 'to' before mountain renders second εἰς"
           },
           {
             "text": "the",
@@ -13896,19 +13914,18 @@
           {
             "text": "everything",
             "ids": [
-              "w4"
+              "w4",
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
               "w4",
               "w5",
               "w6",
               "w7"
-            ]
+            ],
+            "reason": "Bilingual certification: 'everything' carries πάντα ὅσα"
           },
           {
             "text": "I",
