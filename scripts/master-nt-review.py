@@ -181,9 +181,11 @@ for book in catalog:
                     top=[c for c in candidates if c[0]==bestz]
                     if len(top)==1 and top[0][1]<=0.35:
                         z,dist,wid,gt,gl=top[0]
-                        sev=78 if wid not in already else 72
-                        rows.append({'severity':sev,'kind':'unique-unlinked-content','book':name,'ref':ref,'token':x.get('text',''),'detail':{'greek_id':wid,'greek':gt,'gloss':gl,'score':z,'distance':round(dist,3),'greek_already_used':wid in already}})
-                        stats[name]['unique_unlinked_content']+=1
+                        akey=f"unique-unlinked-content|{slug}|{chinfo['chapter']}|{v['v']}|{i}|{wid}"
+                        if akey not in allow:
+                            sev=78 if wid not in already else 72
+                            rows.append({'severity':sev,'kind':'unique-unlinked-content','book':name,'ref':ref,'token':x.get('text',''),'detail':{'greek_id':wid,'greek':gt,'gloss':gl,'score':z,'distance':round(dist,3),'greek_already_used':wid in already}})
+                            stats[name]['unique_unlinked_content']+=1
                     else:
                         stats[name]['ambiguous_unlinked_content']+=1
                 else:
@@ -203,8 +205,10 @@ for book in catalog:
                 if best:
                     best.sort(reverse=True)
                     z,i,et=best[0]
-                    rows.append({'severity':74,'kind':'unused-greek-with-rendering','book':name,'ref':ref,'token':g.get('text',''),'detail':{'greek_id':wid,'gloss':g.get('gloss',''),'possible_english':et,'score':z}})
-                    stats[name]['unused_greek_with_rendering']+=1
+                    akey=f"unused-greek-with-rendering|{slug}|{chinfo['chapter']}|{v['v']}|{wid}"
+                    if akey not in allow:
+                        rows.append({'severity':74,'kind':'unused-greek-with-rendering','book':name,'ref':ref,'token':g.get('text',''),'detail':{'greek_id':wid,'gloss':g.get('gloss',''),'possible_english':et,'score':z}})
+                        stats[name]['unused_greek_with_rendering']+=1
 
 rows.sort(key=lambda r:(-r.get('severity',0),r.get('book',''),r.get('ref',''),r.get('kind','')))
 summary={
