@@ -373,11 +373,16 @@
       }
     },
     "luke/13": {
-      "status": "corrected-awaiting-verification",
-      "commit": "0894d35aba464137fa904560beb286131b51dc13",
-      "corrections": 206,
+      "status": "verified-awaiting-deployment",
+      "commit": "284ec7c0336d0af9f2b051e608609b37d187da60",
+      "corrections": 221,
       "reviewed_verses": "1–35",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "284ec7c0336d0af9f2b051e608609b37d187da60",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. Gathers in 13:34 reprises the first infinitive, time in 13:35 supplies the unexpressed subject of comes, and only in 13:23 is an English clarification of the question about a few. Removed phrase-only fallbacks.",
+        "chapter_sha256": "81950ac4bf1d183e92e879fef451ffc647c4bd5b336c6b51c822e013fdec1d71"
+      }
     },
     "luke/14": {
       "status": "corrected-awaiting-verification",
@@ -457,9 +462,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/13",
+  "resume": "luke/14",
   "verification_backlog": [
-    "luke/13",
     "luke/14",
     "luke/15",
     "luke/16",
