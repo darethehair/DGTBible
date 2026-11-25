@@ -22399,11 +22399,15 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: Opening 'And' renders δὲ",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "if",
