@@ -8120,16 +8120,15 @@
           },
           {
             "text": "that",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w13"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to ὅτι"
           },
           {
             "text": "Elijah",
@@ -20011,10 +20010,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τῆς",
+            "phraseIds": [
+              "w20"
+            ]
           },
           {
             "text": "the",
@@ -21779,17 +21783,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w20"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τὸ"
           },
           {
             "text": "sea,",
