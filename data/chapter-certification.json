@@ -647,11 +647,16 @@
       }
     },
     "john/12": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "b80fce64c48eedbad6c134ee6f07a21df865a41f",
       "reviewed_verses": "1–50",
       "corrections": 163,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "429466161859d6182b56a89b9689ebf7dba400bf",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Used to take at 12:6 represents the imperfect ἐβάσταζεν, planned in 12:10 represents ἐβουλεύσαντο, and for my sake at 12:30 is the idiomatic διά plus accusative. The concessive though at 12:37 reflects the genitive absolute in context, and gave at 12:49 is the contextual rendering of δέδωκεν. The existential there at 12:20 is supplied. Rechecked repeated works, coming, light and world.",
+        "chapter_sha256": "7bf94833842578da90a7a46aa64c9d118f60c9c993635b52ba89ad75c3d5d307"
+      }
     },
     "john/13": {
       "status": "corrected-awaiting-verification",
@@ -717,9 +722,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/12",
+  "resume": "john/13",
   "verification_backlog": [
-    "john/12",
     "john/13",
     "john/14",
     "john/15",
