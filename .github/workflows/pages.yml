@@ -8,6 +8,8 @@ on:
       - '.github/workflows/apply-master-reviewed-batch*.yml'
       - 'master-review/**'
       - 'data/master-review-progress.json'
+      - 'scripts/run-master-cleanup.py'
+      - '.github/workflows/conservative-master-cleanup.yml'
   workflow_dispatch:
 
 permissions:
