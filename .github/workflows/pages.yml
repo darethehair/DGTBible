@@ -3,6 +3,11 @@ name: Deploy DGTBible to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'scripts/apply-master-reviewed-batch*.py'
+      - '.github/workflows/apply-master-reviewed-batch*.yml'
+      - 'master-review/**'
+      - 'data/master-review-progress.json'
   workflow_dispatch:
 
 permissions:
@@ -16,6 +21,7 @@ concurrency:
 
 jobs:
   build:
+    if: ${{ github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, 'reviewed NT master alignment batch') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
