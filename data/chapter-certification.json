@@ -755,17 +755,20 @@
       }
     },
     "john/21": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "7b1fd856f3b9c882a15540a37d2b97555835a943",
       "reviewed_verses": "1–25",
       "corrections": 92,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "cc4af1ab4f014a36dc576b251e785b366ae67b04",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Some in 21:6 supplies the implicit object of find, and there at 21:11 is existential. Confirmed the two components of fifty-three, each instance of asking and answering Peter, the distinct commands Feed and Shepherd, and the repeated condition in 21:22–23. Split dash-joined words in 21:7 and 21:20 so the clauses retain separate hover targets.",
+        "chapter_sha256": "5119eb1c71cb693af9f622978456d456314a47d728843b05000192016cfa20b0"
+      }
     }
   },
-  "resume": "john/21",
-  "verification_backlog": [
-    "john/21"
-  ],
+  "resume": "john",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
