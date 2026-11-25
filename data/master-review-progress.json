@@ -6,9 +6,10 @@
     "books_scanned": 27,
     "verses_scanned": 7939,
     "dgt_tokens_scanned": 174408,
-    "suspicious_interactions": 1596,
+    "suspicious_interactions": 1578,
     "by_kind": {
-      "precise-scattered": 871,
+      "precise-fanout": 1,
+      "precise-scattered": 852,
       "unique-unlinked-content": 69,
       "unused-greek-with-rendering": 656
     },
@@ -40,7 +41,8 @@
       },
       "Acts": {
         "unused_greek_with_rendering": 59,
-        "precise_scattered": 181
+        "precise_scattered": 162,
+        "precise_fanout": 1
       },
       "Romans": {
         "unlinked_content_no_candidate": 464,
