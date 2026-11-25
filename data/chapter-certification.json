@@ -575,11 +575,16 @@
       }
     },
     "john/06": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "b2254ee702eefc80028af55a2c68199db0716aca",
       "reviewed_verses": "1–71",
       "corrections": 214,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "7e0333455f780d77e8c52432489a01ffc6e989ca",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "The second Sea at 6:1 repeats an implied noun. Corrected the distinct locative there at 6:22 and the adversative yet at 6:36. The gloss differences for large, becoming rough, hearing, want, and going reflect the Greek in context. The what in the elliptical question at 6:62 is supplied. Checked repeated bread, heaven, and the negative constructions in both directions.",
+        "chapter_sha256": "6effd4e270374ac23b12dbdf1e344d689ccd70ace94e3440d836898a484a111b"
+      }
     },
     "john/07": {
       "status": "corrected-awaiting-verification",
@@ -687,9 +692,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/06",
+  "resume": "john/07",
   "verification_backlog": [
-    "john/06",
     "john/07",
     "john/08",
     "john/09",
