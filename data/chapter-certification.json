@@ -517,7 +517,7 @@
       }
     }
   },
-  "resume": "luke",
+  "resume": "john/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -534,5 +534,17 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification"
+  "resume_phase": "initial-review",
+  "luke_verification": {
+    "commit": "3790c2d",
+    "verses": 1149,
+    "app_version": "v0.69",
+    "cache": "dgtbible-v079",
+    "structural_regression": "All 24 chapters passed Greek and DGT reconstruction, source ID validation and verified SHA-256 checks.",
+    "hover_regression": "Luke hover audit passed with zero broad fallback spans and zero major cases.",
+    "local_pages_validation": "All required Pages build commands passed in a temporary copy. All 68 protected Matthew, Mark and Luke chapter files remained byte-identical. The existing advisory John semantic audit finding persists.",
+    "deployment": {
+      "status": "pending"
+    }
+  }
 }
