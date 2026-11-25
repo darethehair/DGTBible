@@ -5792,17 +5792,14 @@
           {
             "text": "myself",
             "ids": [
-              "w1"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-phrase-positional",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
               "w5"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 55: Renders reflexive ἐμαυτῷ; Ἐγώ remains English 'I'"
           },
           {
             "text": "indeed",
@@ -16790,13 +16787,16 @@
           {
             "text": "and",
             "ids": [
+              "w22",
               "w28"
             ],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
+              "w22",
               "w28"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 55: English 'and' carries Greek correlative τε ... καί joining prophets and Moses"
           },
           {
             "text": "Moses",
