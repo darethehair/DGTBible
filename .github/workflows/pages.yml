@@ -72,6 +72,10 @@ jobs:
       - name: Corpus semantic alignment audit
         continue-on-error: true
         run: python scripts/audit-alignment-quality.py
+      - name: Recover clear falsely supplied Matthew articles
+        run: python scripts/audit-supplied-words.py --apply
+      - name: Verify supplied article regression
+        run: python scripts/audit-supplied-words.py --strict
       - name: Critical alignment sanity gate
         run: python scripts/critical-alignment-sanity.py
       - name: Audit orphan DGT content words
