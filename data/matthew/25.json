@@ -1544,10 +1544,15 @@
           },
           {
             "text": "took",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew final bilingual review: 'took' ↔ ἔλαβον",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "their",
@@ -11846,17 +11851,15 @@
           },
           {
             "text": "entrusted",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
+            "ids": [
               "w17"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w17"
+            ],
+            "reason": "Matthew final bilingual review: 'entrusted' ↔ παρέδωκας·"
           },
           {
             "text": "five",
@@ -13742,17 +13745,15 @@
           },
           {
             "text": "entrusted",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
+            "ids": [
               "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew final bilingual review: 'entrusted' ↔ παρέδωκας·"
           },
           {
             "text": "two",
