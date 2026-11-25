@@ -611,11 +611,16 @@
       }
     },
     "john/09": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "dd749f9d214acc8e619c15477502528811308c00",
       "reviewed_verses": "1–41",
       "corrections": 122,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "846fe357456dc828aacb15b3966727cdc261c327",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "The candidate for man’s at 9:6 correctly points to the possessive pronoun αὐτοῦ. The blind man at 9:13 is the substantival adjective, when at 9:14 is the temporal relative inside on the day when, and mud corresponds to πηλός. There at 9:16 is existential. The two negations at 9:33 belong to separate clauses. Checked the repeated uses of born blind, received sight, and see.",
+        "chapter_sha256": "b15ff57034f53013f355a809d25a3d1c4417d322e4bc1ca70a6cc7cee6c39670"
+      }
     },
     "john/10": {
       "status": "corrected-awaiting-verification",
@@ -702,9 +707,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/09",
+  "resume": "john/10",
   "verification_backlog": [
-    "john/09",
     "john/10",
     "john/11",
     "john/12",
