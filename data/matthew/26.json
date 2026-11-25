@@ -1322,18 +1322,15 @@
           },
           {
             "text": "over",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
+            "ids": [
               "w14"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew 26 bilingual pass: over ↔ παραδίδοται"
           },
           {
             "text": "to",
@@ -2130,13 +2127,9 @@
             "text": "was",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "called",
@@ -2449,15 +2442,9 @@
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "seize",
@@ -2546,12 +2533,9 @@
             "text": "him.",
             "ids": [],
             "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           }
         ]
       }
@@ -2886,12 +2870,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "they",
@@ -2989,8 +2970,9 @@
             "text": "so",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "that",
@@ -3013,8 +2995,9 @@
             "text": "there",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "may",
@@ -3054,8 +3037,9 @@
             "text": "be",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "a",
@@ -3434,8 +3418,9 @@
             "text": "when",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Jesus",
@@ -3457,8 +3442,9 @@
             "text": "was",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "in",
@@ -4161,16 +4147,9 @@
             "text": "she",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "poured",
@@ -4581,15 +4560,17 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "when",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
@@ -4641,17 +4622,23 @@
           },
           {
             "text": "this,",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew 26 bilingual pass: this, ↔ αὕτη;",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "they",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "became",
@@ -4990,22 +4977,25 @@
             "text": "could",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "have",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "been",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "sold",
@@ -5059,12 +5049,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "given",
@@ -5543,16 +5530,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Jesus,",
@@ -5668,15 +5648,9 @@
             "text": "are",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -5727,15 +5701,9 @@
             "text": "for",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
@@ -5803,16 +5771,9 @@
             "text": "has",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "done",
@@ -6354,15 +6315,9 @@
             "text": "but",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -6383,15 +6338,9 @@
             "text": "do",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "not",
@@ -6854,15 +6803,21 @@
             "text": "when",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "she",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew 26 bilingual pass: she ↔ ἐποίησεν.",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "poured",
@@ -6888,8 +6843,9 @@
             "text": "this",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "perfume",
@@ -7733,20 +7689,9 @@
             "text": "is",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "proclaimed",
@@ -7792,20 +7737,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "whole",
@@ -7851,15 +7785,9 @@
             "text": "what",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "she",
@@ -7880,15 +7808,9 @@
             "text": "has",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "done",
@@ -7984,13 +7906,9 @@
             "text": "in",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w19",
-              "w20",
-              "w21"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "memory",
@@ -8970,15 +8888,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "said,",
@@ -9104,14 +9016,9 @@
             "text": "if",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "I",
@@ -9247,16 +9154,9 @@
             "text": "for",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "him",
@@ -9565,29 +9465,17 @@
             "text": "then",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "on",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "he",
@@ -9668,13 +9556,9 @@
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "hand",
@@ -10286,16 +10170,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "disciples",
@@ -10398,17 +10275,9 @@
             "text": "do",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -11438,20 +11307,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "city",
@@ -11477,20 +11335,9 @@
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "a",
@@ -11588,16 +11435,9 @@
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "him,",
@@ -11746,19 +11586,9 @@
             "text": "will",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "keep",
@@ -11783,19 +11613,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Passover",
@@ -11820,19 +11640,9 @@
             "text": "at",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "your",
@@ -12427,14 +12237,9 @@
             "text": "they",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "prepared",
@@ -12691,25 +12496,17 @@
             "text": "And",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "when",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "evening",
@@ -13189,14 +12986,9 @@
             "text": "while",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "they",
@@ -14505,8 +14297,9 @@
             "text": "who",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "dipped",
@@ -14531,8 +14324,9 @@
             "text": "his",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "hand",
@@ -14640,49 +14434,33 @@
             "text": "is",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "one",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "who",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "will",
@@ -15568,20 +15346,9 @@
             "text": "is",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "going",
@@ -15627,20 +15394,9 @@
             "text": "just",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "as",
@@ -15686,20 +15442,9 @@
             "text": "is",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "written",
@@ -15765,22 +15510,9 @@
             "text": "but",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "woe",
@@ -15808,22 +15540,9 @@
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "that",
@@ -15917,22 +15636,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Son",
@@ -16048,49 +15754,33 @@
             "text": "It",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w23",
-              "w24",
-              "w25"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "would",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w23",
-              "w24",
-              "w25"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "have",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w23",
-              "w24",
-              "w25"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "been",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w23",
-              "w24",
-              "w25"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "good",
@@ -16122,13 +15812,9 @@
             "text": "that",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w23",
-              "w24",
-              "w25"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "man",
@@ -16162,31 +15848,17 @@
             "text": "he",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "had",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "not",
@@ -16208,16 +15880,9 @@
             "text": "been",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "born.",
@@ -16616,17 +16281,9 @@
             "text": "And",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Judas,",
@@ -16666,17 +16323,9 @@
             "text": "was",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "betraying",
@@ -16733,17 +16382,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "said,",
@@ -16934,14 +16575,9 @@
             "text": "it.",
             "ids": [],
             "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           }
         ]
       }
@@ -17492,33 +17128,17 @@
             "text": "And",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w8"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "while",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w8"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "they",
@@ -17590,19 +17210,15 @@
           },
           {
             "text": "took",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w8"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew 26 bilingual pass: took ↔ λαβὼν"
           },
           {
             "text": "bread,",
@@ -17638,13 +17254,9 @@
             "text": "after",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "blessing",
@@ -17731,15 +17343,9 @@
             "text": "it",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w17"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "to",
@@ -18422,14 +18028,9 @@
             "text": "from",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "it,",
@@ -18958,15 +18559,17 @@
             "text": "of",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "covenant,",
@@ -18990,27 +18593,17 @@
             "text": "which",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "is",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "being",
@@ -19875,13 +19468,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "I",
@@ -19947,21 +19536,9 @@
             "text": "will",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "certainly",
@@ -20072,21 +19649,9 @@
             "text": "on",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "of",
@@ -20702,12 +20267,9 @@
             "text": "after",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "singing",
@@ -20812,8 +20374,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Mount",
@@ -21773,12 +21336,9 @@
             "text": "is",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "written,",
@@ -22262,15 +21822,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "after",
@@ -22306,15 +21860,9 @@
             "text": "am",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "raised,",
@@ -22395,15 +21943,9 @@
             "text": "of",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -22807,16 +22349,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Peter",
@@ -22854,16 +22389,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "said",
@@ -22917,15 +22445,9 @@
             "text": "Even",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "if",
@@ -23701,18 +23223,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "rooster",
@@ -24581,16 +24094,9 @@
             "text": "And",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "all",
@@ -25531,17 +25037,9 @@
             "text": "while",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "I",
@@ -25615,17 +25113,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "pray.",
@@ -26041,8 +25531,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "two",
@@ -26784,17 +26275,9 @@
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
@@ -27830,20 +27313,9 @@
             "text": "on",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "his",
@@ -28039,16 +27511,9 @@
             "text": "let",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "this",
@@ -28206,18 +27671,9 @@
             "text": "will,",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "but",
@@ -28277,18 +27733,9 @@
             "text": "will.",
             "ids": [],
             "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           }
         ]
       }
@@ -29210,18 +28657,9 @@
             "text": "for",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "one",
@@ -29715,15 +29153,9 @@
             "text": "so",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "that",
@@ -29904,14 +29336,9 @@
             "text": "but",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
@@ -29945,14 +29372,9 @@
             "text": "is",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "weak.",
@@ -30525,16 +29947,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "second",
@@ -30620,16 +30035,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "prayed,",
@@ -30842,14 +30250,9 @@
             "text": "let",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "your",
@@ -31826,14 +31229,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "prayed",
@@ -31853,14 +31251,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "third",
@@ -32789,15 +32182,9 @@
             "text": "Are",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -32818,15 +32205,9 @@
             "text": "still",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "sleeping",
@@ -32980,19 +32361,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Son",
@@ -33074,19 +32445,9 @@
             "text": "being",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "handed",
@@ -33485,29 +32846,17 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "one",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "betraying",
@@ -34243,14 +33592,9 @@
             "text": "while",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "he",
@@ -34270,27 +33614,17 @@
             "text": "was",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "still",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "speaking,",
@@ -35232,8 +34566,9 @@
             "text": "had",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "given",
@@ -35329,29 +34664,17 @@
             "text": "The",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "one",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "I",
@@ -36410,19 +35733,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Jesus",
@@ -36630,12 +35943,9 @@
             "text": "they",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "came",
@@ -36653,16 +35963,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "laid",
@@ -37511,19 +36814,9 @@
             "text": "his",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "hand,",
@@ -37702,14 +36995,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "cut",
@@ -38421,18 +37709,9 @@
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "its",
@@ -38504,15 +37783,9 @@
             "text": "who",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "take",
@@ -39071,8 +38344,9 @@
             "text": "do",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -39249,8 +38523,9 @@
             "text": "on",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "my",
@@ -39376,14 +38651,9 @@
             "text": "with",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w16",
-              "w17",
-              "w18"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "more",
@@ -39403,14 +38673,9 @@
             "text": "than",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w16",
-              "w17",
-              "w18"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "twelve",
@@ -39735,15 +39000,9 @@
             "text": "would",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
@@ -39864,14 +39123,9 @@
             "text": "this",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "way?",
@@ -40780,20 +40034,9 @@
             "text": "Have",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -41096,18 +40339,9 @@
             "text": "after",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w20",
-              "w21",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "day",
@@ -41238,13 +40472,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w30",
-              "w31",
-              "w32"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -41740,14 +40970,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "all",
@@ -41809,16 +41034,9 @@
             "text": "so",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "that",
@@ -41920,16 +41138,9 @@
             "text": "might",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "be",
@@ -42068,17 +41279,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "fled.",
@@ -42526,15 +41729,9 @@
             "text": "And",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "those",
@@ -42555,29 +41752,17 @@
             "text": "who",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "had",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "seized",
@@ -42835,17 +42020,9 @@
             "text": "had",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "gathered.",
@@ -43413,17 +42590,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Peter",
@@ -43497,17 +42666,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "distance",
@@ -43529,15 +42690,9 @@
             "text": "as",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "far",
@@ -43557,15 +42712,9 @@
             "text": "as",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
@@ -43584,17 +42733,15 @@
           },
           {
             "text": "courtyard",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew 26 bilingual pass: courtyard ↔ αὐλῆς"
           },
           {
             "text": "of",
@@ -44290,17 +43437,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
@@ -44486,13 +43625,9 @@
             "text": "might",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "put",
@@ -44935,14 +44070,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "later",
@@ -45356,13 +44486,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "said,",
@@ -46132,12 +45258,9 @@
             "text": "Do",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -46192,14 +45315,9 @@
             "text": "are",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "these",
@@ -46962,14 +46080,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Jesus",
@@ -47220,17 +46333,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "living",
@@ -47379,22 +46484,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Christ,",
@@ -47422,22 +46514,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Son",
@@ -48294,16 +47373,9 @@
             "text": "it.",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Nevertheless",
@@ -48394,17 +47466,9 @@
             "text": "on",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "you",
@@ -48461,17 +47525,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Son",
@@ -48667,33 +47723,17 @@
             "text": "on",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "clouds",
@@ -49388,15 +48428,9 @@
             "text": "What",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "further",
@@ -49431,15 +48465,9 @@
             "text": "do",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "we",
@@ -50479,25 +49507,17 @@
             "text": "with",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "their",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "fists,",
@@ -50515,13 +49535,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "others",
@@ -51618,20 +50634,15 @@
           },
           {
             "text": "courtyard,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
+            "ids": [
               "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew 26 bilingual pass: courtyard, ↔ αὐλῇ·"
           },
           {
             "text": "and",
@@ -52141,8 +51152,9 @@
             "text": "But",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "he",
@@ -52180,8 +51192,9 @@
             "text": "it",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "before",
@@ -52249,14 +51262,9 @@
             "text": "do",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "not",
@@ -52318,14 +51326,9 @@
             "text": "are",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "saying.",
@@ -52794,43 +51797,25 @@
             "text": "And",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "when",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "he",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "went",
@@ -52966,13 +51951,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "said",
@@ -53462,8 +52443,9 @@
             "text": "it",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "with",
@@ -53531,14 +52513,9 @@
             "text": "do",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "not",
@@ -54169,16 +53146,9 @@
             "text": "And",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "after",
@@ -54279,16 +53249,9 @@
             "text": "there",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "came",
@@ -54310,13 +53273,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "said",
@@ -54424,16 +53383,9 @@
             "text": "one",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "of",
@@ -55074,14 +54026,9 @@
             "text": "do",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "not",
@@ -55767,19 +54714,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w8",
-              "w9",
-              "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "word",
@@ -55823,19 +54760,9 @@
             "text": "had",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w8",
-              "w9",
-              "w11"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "spoken:",
@@ -55873,13 +54800,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "rooster",
