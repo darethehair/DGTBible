@@ -378,11 +378,18 @@
             "after": " "
           },
           {
-            "text": "the beginning",
+            "text": "the",
+            "ids": [],
+            "after": " ",
+            "confidence": "reviewed-unaligned"
+          },
+          {
+            "text": "beginning",
             "ids": [
               "w2"
             ],
-            "after": " "
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "was",
@@ -443,10 +450,10 @@
           {
             "text": "God",
             "ids": [
-              "w11",
               "w12"
             ],
-            "after": ", "
+            "after": ", ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "and",
@@ -456,14 +463,36 @@
             "after": " "
           },
           {
-            "text": "the Word was God",
+            "text": "the",
             "ids": [
-              "w14",
-              "w15",
-              "w16",
+              "w16"
+            ],
+            "after": " ",
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "Word",
+            "ids": [
               "w17"
             ],
-            "after": "."
+            "after": " ",
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "was",
+            "ids": [
+              "w15"
+            ],
+            "after": " ",
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "God",
+            "ids": [
+              "w14"
+            ],
+            "after": ".",
+            "confidence": "reviewed-precise"
           }
         ]
       }
@@ -673,9 +702,9 @@
           {
             "text": "the",
             "after": " ",
-            "ids": [
-              "w6"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "beginning",
@@ -696,7 +725,8 @@
             "after": ".",
             "ids": [
               "w7"
-            ]
+            ],
+            "confidence": "reviewed-precise"
           }
         ],
         "method": "step-gloss-v2",
@@ -1585,8 +1615,9 @@
             "text": "of",
             "after": " ",
             "ids": [
-              "w12"
-            ]
+              "w11"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "humanity",
@@ -2008,9 +2039,9 @@
           {
             "text": "did",
             "after": " ",
-            "ids": [
-              "w10"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "not",
@@ -2023,15 +2054,17 @@
             "text": "overcome",
             "after": " ",
             "ids": [
-              "w12"
-            ]
+              "w13"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "it",
             "after": ".",
             "ids": [
-              "w13"
-            ]
+              "w11"
+            ],
+            "confidence": "reviewed-precise"
           }
         ],
         "method": "step-gloss-v2",
@@ -2295,9 +2328,9 @@
           {
             "text": "a",
             "after": " ",
-            "ids": [
-              "w2"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "man",
@@ -2331,8 +2364,9 @@
             "text": "whose",
             "after": " ",
             "ids": [
-              "w5"
-            ]
+              "w7"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "name",
@@ -2344,9 +2378,9 @@
           {
             "text": "was",
             "after": " ",
-            "ids": [
-              "w8"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "John",
@@ -2775,9 +2809,9 @@
           {
             "text": "a",
             "after": " ",
-            "ids": [
-              "w4"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "witness",
@@ -2790,8 +2824,9 @@
             "text": "so",
             "after": " ",
             "ids": [
-              "w4"
-            ]
+              "w5"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "that",
@@ -2846,8 +2881,9 @@
             "text": "so",
             "after": " ",
             "ids": [
-              "w9"
-            ]
+              "w10"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "that",
@@ -2867,8 +2903,9 @@
             "text": "might",
             "after": " ",
             "ids": [
-              "w11"
-            ]
+              "w12"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "believe",
@@ -3246,16 +3283,17 @@
           {
             "text": "came",
             "after": " ",
-            "ids": [
-              "w6"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "so",
             "after": " ",
             "ids": [
-              "w6"
-            ]
+              "w7"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "that",
@@ -3687,9 +3725,10 @@
           {
             "text": "to",
             "after": " ",
-            "ids": [],
-            "confidence": "unlinked",
-            "reason": "English syntax supplied by translation"
+            "ids": [
+              "w7"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "every",
@@ -4251,8 +4290,9 @@
             "text": "yet",
             "after": " ",
             "ids": [
-              "w9"
-            ]
+              "w11"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -4271,9 +4311,9 @@
           {
             "text": "did",
             "after": " ",
-            "ids": [
-              "w13"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "not",
@@ -4648,9 +4688,9 @@
           {
             "text": "did",
             "after": " ",
-            "ids": [
-              "w7"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "not",
@@ -5163,11 +5203,9 @@
           {
             "text": "did",
             "after": " ",
-            "ids": [
-              "w3"
-            ],
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 6"
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "receive",
@@ -5769,8 +5807,9 @@
             "text": "born",
             "after": ", ",
             "ids": [
-              "w2"
-            ]
+              "w16"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "not",
@@ -5810,9 +5849,9 @@
           {
             "text": "the",
             "after": " ",
-            "ids": [
-              "w6"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "will",
@@ -5831,9 +5870,9 @@
           {
             "text": "the",
             "after": " ",
-            "ids": [
-              "w8"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "flesh",
@@ -5859,9 +5898,9 @@
           {
             "text": "the",
             "after": " ",
-            "ids": [
-              "w10"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "will",
@@ -5880,9 +5919,9 @@
           {
             "text": "a",
             "after": " ",
-            "ids": [
-              "w12"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "man",
@@ -6552,15 +6591,16 @@
             "text": "made",
             "after": " ",
             "ids": [
-              "w6"
-            ]
+              "w7"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "his",
             "after": " ",
-            "ids": [
-              "w7"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "dwelling",
@@ -6573,8 +6613,9 @@
             "text": "among",
             "after": " ",
             "ids": [
-              "w7"
-            ]
+              "w8"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "us",
@@ -6615,8 +6656,9 @@
             "text": "glory",
             "after": " ",
             "ids": [
-              "w13"
-            ]
+              "w15"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "as",
@@ -6629,29 +6671,32 @@
             "text": "of",
             "after": " ",
             "ids": [
-              "w14"
-            ]
+              "w17"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
             "after": " ",
-            "ids": [
-              "w12"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "one",
             "after": " ",
             "ids": [
-              "w14"
-            ]
+              "w17"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "and",
             "after": " ",
             "ids": [
-              "w22"
-            ]
+              "w17"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "only",
@@ -6670,9 +6715,9 @@
           {
             "text": "the",
             "after": " ",
-            "ids": [
-              "w19"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "Father",
@@ -7409,9 +7454,9 @@
             "text": "one",
             "after": " ",
             "ids": [
-              "w12"
+              "w10"
             ],
-            "confidence": "context-repaired"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "of",
@@ -7493,9 +7538,9 @@
           {
             "text": "his",
             "after": " ",
-            "ids": [
-              "w18"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "place",
@@ -9075,9 +9120,9 @@
           {
             "text": "him",
             "after": " ",
-            "ids": [
-              "w15"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "known",
@@ -9692,8 +9737,9 @@
             "text": "of",
             "after": " ",
             "ids": [
-              "w7"
-            ]
+              "w6"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "John",
@@ -9769,8 +9815,9 @@
             "text": "to",
             "after": " ",
             "ids": [
-              "w13"
-            ]
+              "w17"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "ask",
@@ -10175,9 +10222,9 @@
           {
             "text": "did",
             "after": " ",
-            "ids": [
-              "w3"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "not",
@@ -11428,15 +11475,17 @@
             "text": "need",
             "after": " ",
             "ids": [
-              "w8"
-            ]
+              "w6"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "to",
             "after": " ",
             "ids": [
-              "w9"
-            ]
+              "w6"
+            ],
+            "confidence": "reviewed-precise"
           },
           {
             "text": "give",
@@ -11448,9 +11497,9 @@
           {
             "text": "an",
             "after": " ",
-            "ids": [
-              "w7"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "answer",
@@ -11509,9 +11558,9 @@
           {
             "text": "do",
             "after": " ",
-            "ids": [
-              "w12"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "you",
@@ -12033,16 +12082,16 @@
           {
             "text": "am",
             "after": " ",
-            "ids": [
-              "w2"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "a",
             "after": " ",
-            "ids": [
-              "w3"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "voice",
@@ -12124,9 +12173,9 @@
           {
             "text": "the",
             "after": " ",
-            "ids": [
-              "w11"
-            ]
+            "ids": [],
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "Lord",
