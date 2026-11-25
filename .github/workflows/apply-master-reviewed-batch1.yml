@@ -1,0 +1,43 @@
+name: Apply first reviewed master corrections
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/apply-master-reviewed-batch1.py'
+      - '.github/workflows/apply-master-reviewed-batch1.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dgt-master-cleanup
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply reviewed corrections
+        run: python scripts/apply-master-reviewed-batch1.py
+      - name: Audit affected 1 Corinthians chapters
+        env:
+          START_CHAPTER: 11
+          END_CHAPTER: 16
+        run: python scripts/audit-1corinthians.py
+      - name: Re-run full NT master review
+        run: python scripts/master-nt-review.py
+      - name: Commit reviewed batch
+        run: |
+          git config user.name "DGTBible alignment bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "Apply first reviewed NT master alignment batch"
+            for attempt in 1 2 3; do
+              if git pull --rebase origin main && git push; then exit 0; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep $((attempt*2))
+            done
+          fi
