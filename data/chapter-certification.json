@@ -337,11 +337,16 @@
       }
     },
     "luke/10": {
-      "status": "corrected-awaiting-verification",
-      "commit": "ea4ccda921f18e7a53a0195b45bd334b8858d5d2",
-      "corrections": 219,
+      "status": "verified-awaiting-deployment",
+      "commit": "091655e47603466fa86cd1e7854bbec3f2584531",
+      "corrections": 240,
       "reviewed_verses": "1–42",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "091655e47603466fa86cd1e7854bbec3f2584531",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. House in 10:38 is implicit in the welcome. In 10:42 the DGT renders one thing and leaves few or without a counterpart. Where Greek has no separate object or copula, English supplies it. Removed broad phrase-only fallbacks.",
+        "chapter_sha256": "549712e73b11568f2a4fa6175e2679c89daf100e7b4731c7a38c982df0894c8e"
+      }
     },
     "luke/11": {
       "status": "corrected-awaiting-verification",
@@ -442,9 +447,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/10",
+  "resume": "luke/11",
   "verification_backlog": [
-    "luke/10",
     "luke/11",
     "luke/12",
     "luke/13",
