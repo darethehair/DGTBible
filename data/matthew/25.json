@@ -1543,13 +1543,16 @@
           {
             "text": "took",
             "ids": [
-              "w9"
+              "w4"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-semantic",
-            "reason": "Matthew final bilingual review: 'took' ↔ ἔλαβον",
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: first 'took' renders participle λαβοῦσαι",
             "phraseIds": [
-              "w9"
+              "w4",
+              "w5",
+              "w6",
+              "w7"
             ]
           },
           {
@@ -1637,14 +1640,12 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
               "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w9"
+            ],
+            "reason": "Bilingual certification: second 'take' renders finite ἔλαβον"
           },
           {
             "text": "oil",
@@ -4849,36 +4850,33 @@
           {
             "text": "may",
             "ids": [
+              "w6",
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
               "w6",
               "w7",
               "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w9"
+            ],
+            "reason": "Bilingual certification: 'may ... be enough' carries Μήποτε ... ἀρκέσῃ"
           },
           {
             "text": "not",
             "ids": [
+              "w7",
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w6",
               "w7",
               "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w9"
+            ],
+            "reason": "Bilingual certification: emphatic negation carries οὐ μὴ"
           },
           {
             "text": "be",
@@ -8769,15 +8767,16 @@
           {
             "text": "one,",
             "ids": [
-              "w10"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
               "w10",
               "w11",
               "w12"
-            ]
+            ],
+            "reason": "Bilingual certification: final 'one' talent renders ἕν"
           },
           {
             "text": "to",
@@ -15859,19 +15858,19 @@
           {
             "text": "you",
             "ids": [
+              "w12",
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w10",
               "w11",
               "w12",
               "w13",
               "w14",
-              "w15",
-              "w16"
-            ]
+              "w15"
+            ],
+            "reason": "Bilingual certification: English 'you' carries object σε and subject of εἶ in 'I knew that you are'"
           },
           {
             "text": "are",
@@ -19021,11 +19020,19 @@
           },
           {
             "text": "has",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'has' renders participle ἔχοντι",
+            "phraseIds": [
+              "w9",
+              "w10",
+              "w11",
+              "w12",
+              "w13"
+            ]
           },
           {
             "text": "the",
@@ -19558,11 +19565,17 @@
           },
           {
             "text": "has,",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: first 'has' renders ἔχοντι",
+            "phraseIds": [
+              "w1",
+              "w3",
+              "w4"
+            ]
           },
           {
             "text": "more",
@@ -19767,11 +19780,18 @@
           },
           {
             "text": "have,",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'does not have' renders μὴ ἔχοντος",
+            "phraseIds": [
+              "w9",
+              "w10",
+              "w11",
+              "w12"
+            ]
           },
           {
             "text": "even",
@@ -19875,17 +19895,16 @@
           {
             "text": "away.",
             "ids": [
-              "w16"
+              "w18"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w14",
-              "w15",
               "w16",
               "w17",
               "w18"
-            ]
+            ],
+            "reason": "Bilingual certification: 'taken away' absorbs αὐτοῦ in ἀπʼ αὐτοῦ"
           }
         ]
       }
@@ -21586,18 +21605,17 @@
           {
             "text": "his",
             "ids": [
-              "w20"
+              "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w19",
-              "w20",
               "w21",
               "w22",
               "w23",
               "w24"
-            ]
+            ],
+            "reason": "Bilingual certification: second 'his' in 'his glorious throne' renders αὐτοῦ after δόξης"
           },
           {
             "text": "glorious",
@@ -28223,11 +28241,16 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'to the extent that' carries ἐφʼ ὅσον",
+            "phraseIds": [
+              "w10",
+              "w11"
+            ]
           },
           {
             "text": "you",
@@ -32961,11 +32984,16 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'to the extent that' carries ἐφʼ ὅσον",
+            "phraseIds": [
+              "w8",
+              "w9"
+            ]
           },
           {
             "text": "you",
