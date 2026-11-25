@@ -1221,16 +1221,15 @@
           },
           {
             "text": "and",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w5"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to καὶ"
           },
           {
             "text": "handed",
@@ -2030,15 +2029,15 @@
           },
           {
             "text": "to",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w18"
+            "ids": [
+              "w14"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τοῖς"
           },
           {
             "text": "the",
@@ -9258,10 +9257,15 @@
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to οὐκ",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "answer",
@@ -29298,14 +29302,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12"
+            "ids": [
+              "w5"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to οἱ"
           },
           {
             "text": "same",
@@ -32202,12 +32207,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "drink.",
@@ -36932,18 +36934,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "distance,",
@@ -38588,16 +38581,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "disciple",
