@@ -1112,27 +1112,20 @@
           {
             "text": "otherwise",
             "ids": [
-              "w15"
+              "w15",
+              "w16",
+              "w17",
+              "w18"
             ],
             "after": " ",
-            "confidence": "authored-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
               "w15",
               "w16",
               "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29"
-            ]
+              "w18"
+            ],
+            "reason": "Bilingual certification: 'otherwise' compresses εἰ δὲ μή γε"
           },
           {
             "text": "you",
@@ -7724,11 +7717,18 @@
           },
           {
             "text": "because",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: causal 'because of many words' carries ἐν",
+            "phraseIds": [
+              "w11",
+              "w12",
+              "w13",
+              "w14"
+            ]
           },
           {
             "text": "of",
