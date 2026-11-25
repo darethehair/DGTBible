@@ -12359,14 +12359,14 @@
           {
             "text": "my",
             "ids": [
-              "w9"
+              "w4"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w9"
+              "w4"
             ],
-            "reason": "Matthew bilingual audit: first possessive maps to μου"
+            "reason": "Matthew bilingual audit: 'my servant' maps to first μου"
           },
           {
             "text": "servant",
@@ -12431,14 +12431,14 @@
           {
             "text": "my",
             "ids": [
-              "w15"
+              "w9"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w15"
+              "w9"
             ],
-            "reason": "Matthew bilingual audit: second possessive maps to μου"
+            "reason": "Matthew bilingual audit: 'my beloved' maps to second μου"
           },
           {
             "text": "beloved",
@@ -12499,21 +12499,15 @@
           },
           {
             "text": "my",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
+            "ids": [
               "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew bilingual audit: 'my soul' maps to μου after ψυχή"
           },
           {
             "text": "soul",
@@ -12617,18 +12611,14 @@
           {
             "text": "my",
             "ids": [
-              "w16"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+              "w19"
+            ],
+            "reason": "Matthew bilingual audit: 'my Spirit' maps to μου after πνεῦμα"
           },
           {
             "text": "Spirit",
@@ -35553,19 +35543,15 @@
           },
           {
             "text": "put",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w15",
-              "w16",
+            "ids": [
               "w17"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w17"
+            ],
+            "reason": "Matthew bilingual audit: 'put in order' is carried by κεκοσμημένον"
           },
           {
             "text": "in",
@@ -36822,22 +36808,17 @@
           },
           {
             "text": "condition",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
+            "ids": [
               "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25"
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w18",
+              "w19"
+            ],
+            "reason": "Matthew bilingual audit: 'last condition/state' maps to τὰ ἔσχατα"
           },
           {
             "text": "of",
@@ -38541,10 +38522,15 @@
           },
           {
             "text": "are",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'are standing' maps to ἑστήκασιν",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "standing",
