@@ -5726,11 +5726,18 @@
           },
           {
             "text": "Because",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'Because of' renders πρὸς in the sense 'in view of'",
+            "phraseIds": [
+              "w5",
+              "w6",
+              "w7",
+              "w8"
+            ]
           },
           {
             "text": "of",
@@ -9824,32 +9831,33 @@
           },
           {
             "text": "because",
-            "ids": [],
-            "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
-          },
-          {
-            "text": "of",
             "ids": [
-              "w22"
+              "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'because of' renders διὰ",
             "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
               "w24",
               "w25",
               "w26",
               "w27",
               "w28"
             ]
+          },
+          {
+            "text": "of",
+            "ids": [
+              "w24"
+            ],
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w24",
+              "w25",
+              "w26"
+            ],
+            "reason": "Bilingual certification: 'of' in 'because of the kingdom' belongs with διὰ; removed wrong link to εὐνούχισαν"
           },
           {
             "text": "the",
@@ -11657,11 +11665,17 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'to me' renders πρός με",
+            "supplied": true,
+            "phraseIds": [
+              "w13",
+              "w14"
+            ]
           },
           {
             "text": "such",
@@ -13623,19 +13637,18 @@
           {
             "text": "enter",
             "ids": [
+              "w23",
               "w26"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w15",
-              "w21",
-              "w22",
               "w23",
               "w24",
               "w25",
               "w26"
-            ]
+            ],
+            "reason": "Bilingual certification: 'enter life' renders εἰς ... εἰσελθεῖν"
           },
           {
             "text": "life,",
@@ -17031,11 +17044,18 @@
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: contextual past 'had' renders participle ἔχων",
+            "phraseIds": [
+              "w10",
+              "w12",
+              "w13",
+              "w14"
+            ]
           },
           {
             "text": "many",
