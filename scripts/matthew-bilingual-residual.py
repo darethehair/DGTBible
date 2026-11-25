@@ -63,3 +63,15 @@ for ch in (13,26):
 # final Matthew audit/deploy trigger
 
 # post Greek recovery audit/deploy trigger
+
+
+# M13 final certification diagnostics
+CAND13={10,11,15,20,22,23,25,28,30,35,36,38,44,45,46,48,54}
+d=json.loads((ROOT/"13.json").read_text())
+for v in d.get("verses",[]):
+    if v.get("v") not in CAND13: continue
+    print(f"M13MAP:{v.get('v')}")
+    G=v.get("alignment",{}).get("greek",[])
+    D=v.get("alignment",{}).get("dgt",[])
+    print(" G "+" | ".join(f"{(g.get('ids') or ['?'])[0]}:{g.get('text','')}<{g.get('gloss','')}>" for g in G))
+    print(" D "+" | ".join(f"{i}:{t.get('text','')}=>{'+'.join(t.get('ids') or [])}{'[S]' if t.get('supplied') else ''}" for i,t in enumerate(D)))
