@@ -66,8 +66,6 @@ def restore(slug, in_path):
             x.pop(k,None)
         x.update(row.get("fields",{}))
         touched.add(path); restored+=1
-    for path in touched:
-        d=by_ch[int(path.stem)][1] if False else None
     # Write from the chapter objects retained in by_ch.
     for ch,(path,d) in by_ch.items():
         if path in touched:
