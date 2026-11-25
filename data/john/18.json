@@ -746,7 +746,6 @@
           {
             "text": "which",
             "ids": [
-              "w18",
               "w19"
             ],
             "after": " ",
@@ -787,10 +786,11 @@
           {
             "text": "entered.",
             "ids": [
+              "w18",
               "w20"
             ],
             "after": "",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           }
         ]
       }
@@ -6775,12 +6775,19 @@
             "confidence": "auto-high"
           },
           {
-            "text": "me—shall",
+            "text": "me—",
+            "after": "",
             "ids": [
-              "w18",
+              "w18"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "shall",
+            "after": " ",
+            "ids": [
               "w23"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
@@ -8355,17 +8362,19 @@
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "advised",
@@ -13558,11 +13567,10 @@
           },
           {
             "text": "do",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "you",
@@ -16791,11 +16799,10 @@
           },
           {
             "text": "“Did",
-            "ids": [
-              "w18"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "I",
@@ -18566,11 +18573,10 @@
           },
           {
             "text": "do",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "you",
@@ -21051,10 +21057,11 @@
           {
             "text": "entered",
             "ids": [
-              "w1"
+              "w1",
+              "w4"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -21107,10 +21114,10 @@
           {
             "text": "and",
             "ids": [
-              "w9"
+              "w13"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "said",
@@ -21594,11 +21601,10 @@
           },
           {
             "text": "did",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "others",
@@ -26474,11 +26480,10 @@
           },
           {
             "text": "do",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "you",
@@ -26506,10 +26511,11 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "release",
