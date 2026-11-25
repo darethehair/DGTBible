@@ -325,11 +325,16 @@
       }
     },
     "luke/09": {
-      "status": "corrected-awaiting-verification",
-      "commit": "c42ef7530a5f19c23d0c90ecd2d82b4ccc8b3e16",
-      "corrections": 368,
+      "status": "verified-awaiting-deployment",
+      "commit": "f0f6b80c18ccbbe5c3c305134f0f809ac183e73f",
+      "corrections": 394,
       "reviewed_verses": "1–62",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "f0f6b80c18ccbbe5c3c305134f0f809ac183e73f",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. Second glory in 9:26 and second became in 9:29 unpack Greek ellipsis. The second them in 9:16 and the householder subject in 9:53 are supplied by English. Supplied question auxiliaries and repeated articles retain discrete links only where supported by Greek. Removed broad phrase-only fallbacks.",
+        "chapter_sha256": "1bee303efc84ecb7537d0db00a8f79d95c630b6409fb9f06ba8a9a24e02e3726"
+      }
     },
     "luke/10": {
       "status": "corrected-awaiting-verification",
@@ -437,9 +442,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/09",
+  "resume": "luke/10",
   "verification_backlog": [
-    "luke/09",
     "luke/10",
     "luke/11",
     "luke/12",
