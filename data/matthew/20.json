@@ -5531,16 +5531,15 @@
           {
             "text": "of",
             "ids": [
-              "w7",
-              "w21"
+              "w7"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-semantic",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
               "w7",
-              "w21"
+              "w8"
             ],
-            "reason": "Matthew bilingual pass: also represents ἀπὸ (from)"
+            "reason": "Bilingual certification: 'of the vineyard' renders τοῦ ἀμπελῶνος; removed stray ἀπό"
           },
           {
             "text": "the",
@@ -5765,27 +5764,29 @@
           {
             "text": "beginning",
             "ids": [
-              "w26"
+              "w20"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Bilingual certification: 'beginning' renders ἀρξάμενος, not πρώτων"
+          },
+          {
+            "text": "with",
+            "ids": [
+              "w21"
+            ],
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'beginning with the last' renders ἀρξάμενος ἀπὸ τῶν ἐσχάτων",
             "phraseIds": [
               "w20",
               "w21",
               "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26"
+              "w23"
             ]
-          },
-          {
-            "text": "with",
-            "ids": [],
-            "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
           },
           {
             "text": "the",
@@ -5830,11 +5831,17 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w24"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'to the first' renders ἕως τῶν πρώτων",
+            "phraseIds": [
+              "w24",
+              "w25",
+              "w26"
+            ]
           },
           {
             "text": "the",
@@ -6870,19 +6877,16 @@
           {
             "text": "also",
             "ids": [
-              "w15"
-            ],
-            "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
               "w15",
               "w16"
-            ]
+            ],
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w15",
+              "w16"
+            ],
+            "reason": "Bilingual certification: 'they also' carries καὶ αὐτοί"
           },
           {
             "text": "received",
@@ -13090,18 +13094,17 @@
           {
             "text": "to",
             "ids": [
+              "w6",
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
+              "w6",
               "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w8"
+            ],
+            "reason": "Bilingual certification: purpose 'to mock' renders εἰς τὸ ἐμπαῖξαι"
           },
           {
             "text": "mock",
@@ -15233,11 +15236,17 @@
           },
           {
             "text": "at",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'at/on your right' renders ἐκ δεξιῶν",
+            "phraseIds": [
+              "w18",
+              "w19",
+              "w20"
+            ]
           },
           {
             "text": "your",
@@ -15336,11 +15345,17 @@
           },
           {
             "text": "at",
-            "ids": [],
+            "ids": [
+              "w23"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'at/on your left' renders ἐξ εὐωνύμων",
+            "phraseIds": [
+              "w23",
+              "w24",
+              "w25"
+            ]
           },
           {
             "text": "your",
@@ -16212,11 +16227,18 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: relative 'that' renders ὃ",
+            "phraseIds": [
+              "w14",
+              "w15",
+              "w16",
+              "w17"
+            ]
           },
           {
             "text": "I",
@@ -17273,11 +17295,17 @@
           },
           {
             "text": "at",
-            "ids": [],
+            "ids": [
+              "w19"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'at/on my right' renders ἐκ δεξιῶν",
+            "phraseIds": [
+              "w19",
+              "w20",
+              "w21"
+            ]
           },
           {
             "text": "my",
@@ -17374,25 +17402,16 @@
           {
             "text": "left",
             "ids": [
+              "w23",
               "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w10",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
               "w23",
-              "w24",
-              "w26",
-              "w27",
-              "w28",
-              "w30"
-            ]
+              "w24"
+            ],
+            "reason": "Bilingual certification: 'left' carries ἐξ εὐωνύμων"
           },
           {
             "text": "is",
