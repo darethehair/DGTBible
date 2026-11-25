@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   cleanup:
-    if: ${{ github.event_name == 'workflow_dispatch' || startsWith(github.event.head_commit.message, 'Generate QA-clean') || contains(github.event.head_commit.message, 'conservative NT cleanup') }}
+    if: ${{ github.event_name == 'workflow_dispatch' || startsWith(github.event.head_commit.message, 'Generate QA-clean') || github.event.head_commit.message == 'Trigger conservative NT cleanup workflow' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
