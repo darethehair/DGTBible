@@ -15290,23 +15290,15 @@
           },
           {
             "text": "nowhere",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26"
+            "ids": [
+              "w23"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w23"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'nowhere' ↔ ποῦ"
           },
           {
             "text": "to",
@@ -16507,17 +16499,15 @@
           },
           {
             "text": "said",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'said' ↔ λέγει"
           },
           {
             "text": "to",
@@ -18905,16 +18895,15 @@
           },
           {
             "text": "afraid,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'afraid,' ↔ δειλοί"
           },
           {
             "text": "you",
@@ -22120,18 +22109,15 @@
           },
           {
             "text": "appointed",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+            "ids": [
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew bilingual pass: shared source correspondence 'appointed' ↔ καιροῦ"
           },
           {
             "text": "time",
@@ -22470,10 +22456,15 @@
           },
           {
             "text": "large",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew bilingual pass: shared source correspondence 'large' ↔ πολλῶν",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "herd",
