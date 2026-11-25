@@ -6540,20 +6540,27 @@
           {
             "text": "had",
             "ids": [
-              "w3"
+              "w16"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 11"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "seized",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 11"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "him",
@@ -8099,20 +8106,27 @@
           {
             "text": "they",
             "ids": [
-              "w2"
+              "w10"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 14"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "had",
-            "ids": [
-              "w2"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 14"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "brought",
@@ -21459,17 +21473,14 @@
           },
           {
             "text": "behind,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "he",

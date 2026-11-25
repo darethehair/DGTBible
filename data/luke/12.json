@@ -32405,11 +32405,13 @@
           {
             "text": "does",
             "ids": [
-              "w17"
+              "w11"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "not",
@@ -32551,12 +32553,17 @@
           },
           {
             "text": "assign",
-            "ids": [
-              "w28"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w21",
+              "w22",
+              "w23",
+              "w24",
+              "w25"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "him",
@@ -32576,11 +32583,13 @@
           {
             "text": "a",
             "ids": [
-              "w23"
+              "w8"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "place",
@@ -32621,12 +32630,17 @@
           },
           {
             "text": "unfaithful.",
-            "ids": [
-              "w27"
-            ],
+            "ids": [],
             "after": "",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w24",
+              "w25",
+              "w26",
+              "w27",
+              "w28"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           }
         ]
       }
@@ -34483,20 +34497,24 @@
           {
             "text": "the",
             "ids": [
-              "w21"
+              "w1"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 13"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "one",
             "ids": [
-              "w21"
+              "w1"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 13"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "to",
@@ -34615,20 +34633,27 @@
           {
             "text": "be",
             "ids": [
-              "w25"
+              "w17"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 13"
+            "confidence": "authored-auto-semantic-global",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "demanded.",
-            "ids": [
-              "w25"
-            ],
+            "ids": [],
             "after": "",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 13"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w22",
+              "w23",
+              "w24",
+              "w25",
+              "w26"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           }
         ]
       }

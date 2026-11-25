@@ -11153,11 +11153,17 @@
           {
             "text": "your",
             "ids": [
-              "w4"
+              "w5"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 10"
+            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "phraseIds": [
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ]
           },
           {
             "text": "endurance",
@@ -11213,20 +11219,31 @@
           {
             "text": "your",
             "ids": [
-              "w8"
+              "w5"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 10"
+            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "phraseIds": [
+              "w4",
+              "w5",
+              "w6",
+              "w7",
+              "w8"
+            ]
           },
           {
             "text": "lives.",
-            "ids": [
-              "w7"
-            ],
+            "ids": [],
             "after": "",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 10"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w4",
+              "w5",
+              "w6",
+              "w7",
+              "w8"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           }
         ]
       }

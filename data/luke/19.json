@@ -139,17 +139,14 @@
         "dgt": [
           {
             "text": "Then",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "he",
@@ -157,8 +154,10 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 11"
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "entered",
@@ -597,10 +596,14 @@
           },
           {
             "text": "was",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-master-unaligned",
-            "reason": "Human-reviewed full-NT master pass batch 14"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "a",
@@ -761,11 +764,13 @@
           {
             "text": "was",
             "ids": [
-              "w14"
+              "w9"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 14"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "rich.",
@@ -3244,17 +3249,14 @@
         "dgt": [
           {
             "text": "So",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "he",
@@ -3295,28 +3297,21 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+              "w4"
             ]
           },
           {
             "text": "welcomed",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "him",
@@ -3331,17 +3326,14 @@
           },
           {
             "text": "joyfully.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
+            "ids": [
               "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w7"
+            ]
           }
         ]
       }
@@ -9591,11 +9583,13 @@
           {
             "text": "he",
             "ids": [
-              "w6"
+              "w22"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-auto-exact-global",
+            "phraseIds": [
+              "w22"
+            ]
           },
           {
             "text": "returned",
@@ -9662,20 +9656,28 @@
           {
             "text": "he",
             "ids": [
-              "w11"
+              "w6"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-auto-precise-postguard-pronoun",
+            "phraseIds": [
+              "w4",
+              "w5",
+              "w6",
+              "w7",
+              "w8"
+            ]
           },
           {
             "text": "ordered",
             "ids": [
-              "w11"
+              "w21"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "that",
@@ -9694,21 +9696,31 @@
           },
           {
             "text": "those",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w6",
+              "w7",
+              "w8",
+              "w9",
+              "w10"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "slaves",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w7",
+              "w8",
+              "w9",
+              "w10",
+              "w11"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "to",
@@ -9824,11 +9836,17 @@
           {
             "text": "to",
             "ids": [
-              "w13"
+              "w17"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w14",
+              "w15",
+              "w16",
+              "w17",
+              "w18"
+            ]
           },
           {
             "text": "him,",
@@ -9843,12 +9861,17 @@
           },
           {
             "text": "so",
-            "ids": [
-              "w21"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w15",
+              "w16",
+              "w17",
+              "w18",
+              "w19"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "that",
@@ -9864,11 +9887,17 @@
           {
             "text": "he",
             "ids": [
-              "w22"
+              "w18"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w17",
+              "w18",
+              "w19",
+              "w20",
+              "w21"
+            ]
           },
           {
             "text": "might",
@@ -9949,20 +9978,27 @@
           {
             "text": "in",
             "ids": [
-              "w25"
+              "w21"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "business.",
-            "ids": [
+            "ids": [],
+            "after": "",
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w20",
+              "w21",
+              "w22",
+              "w23",
               "w25"
             ],
-            "after": "",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           }
         ]
       }
@@ -11910,11 +11946,13 @@
           {
             "text": "to",
             "ids": [
-              "w8"
+              "w4"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 16"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "be",
@@ -14116,11 +14154,17 @@
           {
             "text": "You",
             "ids": [
-              "w12"
+              "w9"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 12"
+            "confidence": "authored-auto-precise-ordered",
+            "phraseIds": [
+              "w9",
+              "w10",
+              "w11",
+              "w12",
+              "w13"
+            ]
           },
           {
             "text": "knew,",
@@ -14136,11 +14180,13 @@
           {
             "text": "did",
             "ids": [
-              "w12"
+              "w21"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 12"
+            "confidence": "authored-auto-semantic-global",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "you,",
@@ -14148,8 +14194,14 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 12"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w11",
+              "w12",
+              "w13",
+              "w14",
+              "w15"
+            ]
           },
           {
             "text": "that",
@@ -14308,12 +14360,17 @@
           },
           {
             "text": "put",
-            "ids": [
-              "w21"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 12"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w19",
+              "w20",
+              "w21",
+              "w22",
+              "w23"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "down",
@@ -19258,10 +19315,14 @@
           },
           {
             "text": "you.",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-master-unaligned",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "As",
@@ -19280,11 +19341,13 @@
           {
             "text": "you",
             "ids": [
-              "w9"
+              "w10"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "enter",
@@ -20958,12 +21021,17 @@
           },
           {
             "text": "were",
-            "ids": [
-              "w1"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w5"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "untying",
@@ -21008,21 +21076,31 @@
           },
           {
             "text": "its",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w4",
+              "w5",
+              "w6",
+              "w7",
+              "w8"
+            ],
+            "reason": "Automatic recovery candidate fell outside authored phrase span"
           },
           {
             "text": "owners",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w5",
+              "w6",
+              "w7",
+              "w8",
+              "w9"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "said",
@@ -21071,11 +21149,13 @@
           {
             "text": "are",
             "ids": [
-              "w13"
+              "w1"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "you",
@@ -21091,11 +21171,13 @@
           {
             "text": "untying",
             "ids": [
-              "w13"
+              "w1"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 15"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "the",

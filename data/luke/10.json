@@ -10122,29 +10122,39 @@
           {
             "text": "You",
             "ids": [
-              "s11"
+              "w8"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w5",
+              "w7",
+              "w8",
+              "w9",
+              "w10"
+            ]
           },
           {
             "text": "will",
             "ids": [
-              "s11"
+              "w8"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "be",
             "ids": [
-              "s11"
+              "w8"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "brought",
@@ -10163,12 +10173,17 @@
           },
           {
             "text": "down",
-            "ids": [
+            "ids": [],
+            "after": " ",
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w8",
+              "w9",
+              "w10",
+              "w11",
               "s11"
             ],
-            "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "to",
@@ -23183,11 +23198,13 @@
           {
             "text": "he",
             "ids": [
-              "w12"
+              "w14"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 7"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "saw",

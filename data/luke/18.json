@@ -2416,12 +2416,17 @@
           },
           {
             "text": "unwilling,",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 11"
+            "confidence": "authored-phrase-only",
+            "phraseIds": [
+              "w4",
+              "w5",
+              "w6",
+              "w8",
+              "w7"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "but",
@@ -2477,11 +2482,13 @@
           {
             "text": "to",
             "ids": [
-              "w10"
+              "w3"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 11"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "himself,",
@@ -2533,11 +2540,13 @@
           {
             "text": "do",
             "ids": [
-              "w17"
+              "w3"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 11"
+            "confidence": "authored-auto-precise",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "not",
