@@ -8,6 +8,8 @@ OUT=ROOT/'master-review'
 OUT.mkdir(exist_ok=True)
 
 catalog=json.loads((DATA/'books.json').read_text(encoding='utf8'))['books']
+allow_path=DATA/'master-review-allowlist.json'
+allow=set((json.loads(allow_path.read_text(encoding='utf8')).get('interactions',[])) if allow_path.exists() else [])
 
 GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over is am are was were be been being has have had do does did will would shall should may might can could must he she it they we you i me him her them us my his their our your who whom whose which that this these those there here not no never none nothing one thing things its'.split())
 
@@ -141,16 +143,20 @@ for book in catalog:
                 # long English rendering. A large percentage of a very short
                 # verse is not, by itself, suspicious.
                 if len(pos)>=5:
-                    rows.append({'severity':88,'kind':'precise-fanout','book':name,'ref':ref,'token':gtext.get(wid,wid),'activated':len(pos),'total':len(D),'share':round(len(pos)/max(1,len(D)),3),'detail':[D[i].get('text','') for i in pos]})
-                    stats[name]['precise_fanout']+=1
+                    akey=f"precise-fanout|{slug}|{chinfo['chapter']}|{v['v']}|{wid}"
+                    if akey not in allow:
+                        rows.append({'severity':88,'kind':'precise-fanout','book':name,'ref':ref,'token':gtext.get(wid,wid),'activated':len(pos),'total':len(D),'share':round(len(pos)/max(1,len(D)),3),'detail':[D[i].get('text','') for i in pos]})
+                        stats[name]['precise_fanout']+=1
                 if len(pos)>=2:
                     groups=1
                     for a,b in zip(pos,pos[1:]):
                         if b!=a+1:groups+=1
                     span=(pos[-1]-pos[0]+1)/max(1,len(D))
                     if groups>=2 and (span>=0.35 or len(pos)>=5):
-                        rows.append({'severity':84,'kind':'precise-scattered','book':name,'ref':ref,'token':gtext.get(wid,wid),'activated':len(pos),'total':len(D),'share':round(span,3),'detail':[D[i].get('text','') for i in pos]})
-                        stats[name]['precise_scattered']+=1
+                        akey=f"precise-scattered|{slug}|{chinfo['chapter']}|{v['v']}|{wid}"
+                        if akey not in allow:
+                            rows.append({'severity':84,'kind':'precise-scattered','book':name,'ref':ref,'token':gtext.get(wid,wid),'activated':len(pos),'total':len(D),'share':round(span,3),'detail':[D[i].get('text','') for i in pos]})
+                            stats[name]['precise_scattered']+=1
 
             # Unlinked meaningful English with a unique plausible unused Greek candidate.
             already=set(used)
