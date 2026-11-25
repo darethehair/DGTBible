@@ -37308,10 +37308,15 @@
           },
           {
             "text": "falls",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew bilingual pass: shared source correspondence 'falls' ↔ πέσῃ",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "on",
