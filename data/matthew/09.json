@@ -13308,19 +13308,9 @@
             "text": "an",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "old",
@@ -15579,16 +15569,15 @@
           },
           {
             "text": "was",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
+            "ids": [
+              "w9"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to προσεκύνει"
           },
           {
             "text": "saying",
