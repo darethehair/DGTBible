@@ -10874,11 +10874,15 @@
         "dgt": [
           {
             "text": "Because",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'Because' renders ὅτι",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "narrow",
@@ -13547,12 +13551,14 @@
           {
             "text": "cannot",
             "ids": [
+              "w1",
               "w2"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
-            "reason": "Matthew bilingual pass: semantic correspondence 'cannot' ↔ δύναται",
+            "reason": "Bilingual certification: 'cannot' jointly renders οὐ δύναται",
             "phraseIds": [
+              "w1",
               "w2"
             ]
           },
@@ -14420,11 +14426,16 @@
         "dgt": [
           {
             "text": "So",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: discourse emphasis 'So' corresponds to γε in ἄρα γε",
+            "phraseIds": [
+              "w1",
+              "w2"
+            ]
           },
           {
             "text": "then,",
@@ -21487,21 +21498,16 @@
           {
             "text": "that",
             "ids": [
-              "w15"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
               "w15",
               "w16",
               "w17"
-            ]
+            ],
+            "reason": "Bilingual certification: 'that' renders demonstrative ἐκείνῃ, not the article τῇ"
           },
           {
             "text": "house,",
