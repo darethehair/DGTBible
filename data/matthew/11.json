@@ -1307,10 +1307,15 @@
         "dgt": [
           {
             "text": "Now",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: discourse 'Now' maps to δὲ",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "when",
@@ -3142,17 +3147,15 @@
           },
           {
             "text": "people",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew bilingual audit: 'deaf people' shares κωφοὶ"
           },
           {
             "text": "hear;",
@@ -5390,10 +5393,15 @@
           },
           {
             "text": "soft",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: second 'soft' maps to μαλακὰ",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "clothing",
@@ -14544,17 +14552,27 @@
           },
           {
             "text": "done",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'done/having occurred' maps to γενόμεναι",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "among",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'among/in you' maps to ἐν",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "you",
