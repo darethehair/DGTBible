@@ -5046,14 +5046,11 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Renders opening Καί without unrelated phrase span"
           },
           {
             "text": "the",
@@ -5061,14 +5058,11 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Article with word without unrelated phrase span"
           },
           {
             "text": "word",
@@ -5084,17 +5078,14 @@
           {
             "text": "of",
             "ids": [
-              "w5"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Genitive article relation in 'of God', not θεοῦ itself"
           },
           {
             "text": "God",
@@ -5109,31 +5100,27 @@
           },
           {
             "text": "kept",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Aspectual English rendering of ηὔξανεν"
           },
           {
             "text": "growing,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Renders ηὔξανεν"
           },
           {
             "text": "and",
@@ -5141,14 +5128,11 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Renders second καί without unrelated phrase span"
           },
           {
             "text": "the",
@@ -5156,14 +5140,11 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
               "w9"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Article with number without unrelated phrase span"
           },
           {
             "text": "number",
@@ -5182,14 +5163,11 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
               "w11"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Genitive article before disciples without unrelated phrase span"
           },
           {
             "text": "disciples",
@@ -5230,10 +5208,11 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w8"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Passive auxiliary with ἐπληθύνετο"
           },
           {
             "text": "multiplying",
@@ -5249,24 +5228,26 @@
           {
             "text": "greatly,",
             "ids": [
-              "w16"
+              "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w16"
-            ]
+              "w15"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Renders σφόδρα, not πολύς"
           },
           {
             "text": "and",
             "ids": [
-              "w7"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7"
-            ]
+              "w17"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Third-clause connective renders τε, not earlier καί w7"
           },
           {
             "text": "a",
@@ -5274,10 +5255,11 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w16"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Article-like English support with πολύς"
           },
           {
             "text": "large",
@@ -5285,24 +5267,23 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w16"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Renders πολύς"
           },
           {
             "text": "crowd",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Renders ὄχλος"
           },
           {
             "text": "of",
@@ -5310,14 +5291,11 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
               "w19"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Genitive article before priests without unrelated phrase span"
           },
           {
             "text": "priests",
@@ -5380,14 +5358,11 @@
               "w22"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-postguard-positional",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ]
+              "w22"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Article/dative in 'to the faith' without unrelated phrase span"
           },
           {
             "text": "faith.",
@@ -9168,10 +9143,11 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w1"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Subject carried by ἔστησαν"
           },
           {
             "text": "also",
@@ -9187,27 +9163,26 @@
           {
             "text": "put",
             "ids": [
-              "w16"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w16"
-            ]
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Part of 'put forward' rendering of ἔστησαν, not τόπου"
           },
           {
             "text": "forward",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Completes contextual rendering of ἔστησαν"
           },
           {
             "text": "false",
@@ -9233,17 +9208,15 @@
           },
           {
             "text": "who",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Relative English support for participle λέγοντας"
           },
           {
             "text": "said,",
@@ -9251,14 +9224,11 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Renders λέγοντας without unrelated phrase span"
           },
           {
             "text": "“This",
@@ -9328,17 +9298,15 @@
           },
           {
             "text": "words",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Renders ῥήματα"
           },
           {
             "text": "against",
@@ -9354,13 +9322,16 @@
           {
             "text": "this",
             "ids": [
-              "w8"
+              "w15",
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w8"
-            ]
+              "w15",
+              "w16"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: English demonstrative in 'this holy place' tied to the place phrase, not οὗτος w8"
           },
           {
             "text": "holy",
@@ -9401,14 +9372,11 @@
               "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-positional",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w20",
-              "w21",
-              "w22"
-            ]
+              "w21"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 49: Article with law without unrelated phrase span"
           },
           {
             "text": "law.",
