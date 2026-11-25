@@ -3206,12 +3206,19 @@
             "confidence": "auto-high"
           },
           {
-            "text": "him—this",
+            "text": "him—",
+            "after": "",
             "ids": [
-              "w14",
+              "w14"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "this",
+            "after": " ",
+            "ids": [
               "w15"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
@@ -12062,10 +12069,11 @@
           },
           {
             "text": "for",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "this",
@@ -12077,10 +12085,11 @@
           },
           {
             "text": "reason",
-            "ids": [],
+            "ids": [
+              "w27"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -16716,12 +16725,19 @@
             "confidence": "reviewed-precise"
           },
           {
-            "text": "Father—the",
+            "text": "Father—",
+            "after": "",
             "ids": [
-              "w12",
+              "w12"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "the",
+            "after": " ",
+            "ids": [
               "w13"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
@@ -16781,12 +16797,19 @@
             "confidence": "auto-high"
           },
           {
-            "text": "Father—he",
+            "text": "Father—",
+            "after": "",
             "ids": [
-              "w20",
+              "w20"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "he",
+            "after": " ",
+            "ids": [
               "w22"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
