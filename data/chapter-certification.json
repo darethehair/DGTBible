@@ -784,7 +784,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "publication",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -801,5 +801,15 @@
       "workflow_status": "success",
       "public_verification": "Public app and service worker report the release versions. All 24 public Luke chapter files match the recorded SHA-256 hashes."
     }
+  },
+  "john_verification": {
+    "commit": "67d12a2",
+    "verses": 878,
+    "app_version": "v0.70",
+    "cache": "dgtbible-v080",
+    "structural_regression": "All 21 chapters passed Greek, transliteration, literal and DGT reconstruction, source ID validation and verified SHA-256 checks.",
+    "hover_regression": "39 breadth diagnostics across 34 verses, no broad fallback spans and at most five English tokens per Greek token. Four bidirectional Chromium hover checks passed at John 5:36 and 19:6.",
+    "semantic_regression": "John semantic audit passed with 43 individually reviewed contextual constructions. Critical lexical gate passed with 23 reviewed links and eight reviewed unlinked tokens for John.",
+    "local_pages_validation": "All required Pages commands passed. All 89 protected Matthew, Mark, Luke and John chapter files remained byte-identical. The corpus orphan DGT content diagnostic remains advisory and reported 1,511 orphan and 10 lexical candidates."
   }
 }

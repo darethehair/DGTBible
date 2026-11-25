@@ -42,18 +42,22 @@ for slug in BOOKS:
     if len(top)!=1: continue
     z,dist,best,gt,gl=top[0]
     if best in linked: continue
+    reviewed_key=f"{slug}.{path.stem}.{v['v']}|{i}|{x.get('text','')}|{','.join(linked)}|{best}"
     if not linked:
      if phrase_linked: continue
      if dist<=0.35:
       key=f"{slug}.{path.stem}.{v['v']}|{x.get('text','')}"
-      if key in allow:
+      if key in allow or reviewed_key in allow:
        stats[slug]['reviewed_unlinked']+=1
       else:
        stats[slug]['unique_unlinked']+=1
        examples.append((slug,path.stem,v['v'],'UNLINKED',x.get('text',''),best,gt,gl,z,round(dist,3)))
     elif current<8 and dist<=0.35 and not str(x.get('confidence','')).startswith('reviewed-master-') and x.get('confidence') not in {'phrase-repaired','quality-scan','authored','authored-precise','authored-auto-precise','authored-auto-precise-bundled'}:
-     stats[slug]['unique_wrong_link']+=1
-     examples.append((slug,path.stem,v['v'],'WRONG_LINK',x.get('text',''),linked,best,gt,gl,z,round(dist,3)))
+     if reviewed_key in allow:
+      stats[slug]['reviewed_link']+=1
+     else:
+      stats[slug]['unique_wrong_link']+=1
+      examples.append((slug,path.stem,v['v'],'WRONG_LINK',x.get('text',''),linked,best,gt,gl,z,round(dist,3)))
 
 for slug in BOOKS: print(slug,dict(stats[slug]))
 print('TOTALS',dict(sum((stats[s] for s in BOOKS),collections.Counter())))

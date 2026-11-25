@@ -6,10 +6,17 @@ if not p.exists():
  print('No alignment quality overrides present.')
  raise SystemExit(0)
 over=json.loads(p.read_text(encoding='utf8'))
+checkpoint_path = Path('data/chapter-certification.json')
+checkpoint = json.loads(checkpoint_path.read_text(encoding='utf8')) if checkpoint_path.exists() else {}
+reviewed_chapters = checkpoint.get('chapters', {})
+preserved_books = checkpoint.get('preserved_previous_scope', {})
 changed=0
 for key,val in over.items():
  slug,ch,vnum,idx=key.rsplit('.',3)
- path=Path('data')/slug/f'{int(ch):02}.json'
+ chapter = f'{slug}/{int(ch):02}'
+ if slug in preserved_books or chapter in reviewed_chapters:
+  continue
+ path=Path('data')/f'{chapter}.json'
  if not path.exists():
   continue
  d=json.loads(path.read_text(encoding='utf8'))
