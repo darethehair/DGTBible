@@ -683,11 +683,16 @@
       }
     },
     "john/15": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "bca8848c8415a49d4c74326cf2c57086dffe7114",
       "reviewed_verses": "1–27",
       "corrections": 70,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "e944e5bddf1a6df42fa187ae45fee5f3817af098",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Confirmed the different occurrences of vine, branches, fruit, remain, love, world and commands, and paired each both with its own Greek conjunction at 15:24. The clauses in 15:4 and 15:25 have legitimate English expansions. Split dash-joined words in 15:5 and 15:26 to distinguish pronouns, the article and the repeated Father.",
+        "chapter_sha256": "cb7cddc92432b6cbaa04b65be7c472b8cd0c90b16032564b1bc4a339f667af82"
+      }
     },
     "john/16": {
       "status": "corrected-awaiting-verification",
@@ -732,9 +737,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/15",
+  "resume": "john/16",
   "verification_backlog": [
-    "john/15",
     "john/16",
     "john/17",
     "john/18",
