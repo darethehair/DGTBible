@@ -10766,14 +10766,17 @@
           },
           {
             "text": "had",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "luke-reviewed-precision",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w5"
-            ]
+              "w2",
+              "w3",
+              "w4",
+              "w5",
+              "w6"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           },
           {
             "text": "everyone",
@@ -10803,14 +10806,17 @@
           },
           {
             "text": "down.",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": "",
-            "confidence": "luke-reviewed-precision",
+            "confidence": "authored-phrase-only",
             "phraseIds": [
-              "w5"
-            ]
+              "w2",
+              "w3",
+              "w4",
+              "w5",
+              "w6"
+            ],
+            "reason": "Covered by authored phrase span; no safe lexical hover target"
           }
         ]
       }
