@@ -9262,10 +9262,15 @@
           },
           {
             "text": "by",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'by the sea' is carried by παραθαλασσία, 'seaside'",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "the",
