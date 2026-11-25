@@ -12761,17 +12761,14 @@
           },
           {
             "text": "like",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "scales",
@@ -12809,12 +12806,12 @@
           {
             "text": "his",
             "ids": [
-              "w10"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w10"
+              "w4"
             ]
           },
           {
@@ -12845,7 +12842,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
               "w10"
             ]
@@ -12863,17 +12860,14 @@
           },
           {
             "text": "again.",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "Then",
@@ -12887,12 +12881,12 @@
           {
             "text": "he",
             "ids": [
-              "w15"
+              "w14"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w15"
+              "w14"
             ]
           },
           {
@@ -13335,7 +13329,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
               "w4"
             ]
@@ -13343,12 +13337,12 @@
           {
             "text": "was",
             "ids": [
-              "w5"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w5"
+              "w4"
             ]
           },
           {
@@ -13379,7 +13373,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
               "w5"
             ]

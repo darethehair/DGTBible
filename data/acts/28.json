@@ -7716,12 +7716,12 @@
           {
             "text": "They",
             "ids": [
-              "w9"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w9"
+              "w1"
             ]
           },
           {
@@ -7813,15 +7813,11 @@
           {
             "text": "we",
             "ids": [
-              "w6"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-postguard-pronoun",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
               "w8"
             ]
           },
@@ -7831,28 +7827,32 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
               "w8"
             ]
           },
           {
             "text": "about",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "acts-reviewed-precision",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "sail,",
@@ -7882,7 +7882,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "acts-final-family",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
               "w9"
             ]
@@ -7893,13 +7893,9 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+              "w9"
             ]
           },
           {
@@ -8487,8 +8483,8 @@
             "after": " ",
             "confidence": "acts-reviewed-supplied",
             "phraseIds": [],
-            "reason": "English supplied for natural rendering; no separate Greek token",
-            "supplied": true
+            "supplied": true,
+            "reason": "English supplied for natural rendering; no separate Greek token"
           },
           {
             "text": "emblem",
@@ -8507,8 +8503,8 @@
             "after": " ",
             "confidence": "acts-reviewed-supplied",
             "phraseIds": [],
-            "reason": "English supplied for natural rendering; no separate Greek token",
-            "supplied": true
+            "supplied": true,
+            "reason": "English supplied for natural rendering; no separate Greek token"
           },
           {
             "text": "the",
@@ -9279,12 +9275,12 @@
           {
             "text": "came",
             "ids": [
-              "w13"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w13"
+              "w3"
             ]
           },
           {
@@ -9468,13 +9464,9 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+              "w13"
             ]
           },
           {
@@ -14480,27 +14472,24 @@
           {
             "text": "I",
             "ids": [
-              "w5"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "acts-reviewed-precision",
             "phraseIds": [
-              "w5"
+              "w13"
             ]
           },
           {
             "text": "had",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
+            "ids": [
               "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "acts-final-helper-verb",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "anything",
