@@ -74,6 +74,12 @@ jobs:
               sleep 2
             done
           fi
+      - name: Dispatch conservative master cleanup
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run conservative-master-cleanup.yml --ref main
+
       - name: Dispatch Pages deployment
         if: success()
         env:
