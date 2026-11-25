@@ -786,13 +786,21 @@
       "chapter_sha256": "b7f22b6fda658107e28782602ff5567bb2816e205ed58f4745f0bdd166fe35a0",
       "scope": "Acts 3:1–26. Bilingual comparison in both directions. Restored precise source links for omitted prepositions and articles, resolved repeated pronouns and names, and narrowed idiomatic hover spans. Acts 3:22 supplies “your” before God, where the Greek has no possessive.",
       "regression": "The Acts 1–3 audit passed across 99 verses. All 26 Acts 3 verses preserve Greek, DGT English, literal, transliteration and source IDs."
+    },
+    "acts/04": {
+      "status": "corrected",
+      "commit": "7799e1b",
+      "chapter_sha256": "5fd09adae11c129aa8b90696ca96770caa0924e7c4834a8fbc0924e5942f3dcd",
+      "scope": "Acts 4:1–37. Bilingual comparison in both directions. Corrected repeated articles, prepositions, negatives and pronouns. Split three English dash tokens by source and marked implied English objects separately from explicit Greek pronouns.",
+      "regression": "The Acts 1–4 audit passed across 136 verses. All 37 Acts 4 verses preserve DGT wording and Greek sources, and every link resolves."
     }
   },
-  "resume": "acts/04",
+  "resume": "acts/05",
   "verification_backlog": [
     "acts/01",
     "acts/02",
-    "acts/03"
+    "acts/03",
+    "acts/04"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
