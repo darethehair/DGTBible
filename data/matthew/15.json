@@ -4352,11 +4352,16 @@
           },
           {
             "text": "about",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'about you' renders περὶ ὑμῶν",
+            "phraseIds": [
+              "w4",
+              "w5"
+            ]
           },
           {
             "text": "you,",
@@ -6524,18 +6529,18 @@
           {
             "text": "comes",
             "ids": [
-              "w13"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-compound",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w10",
               "w11",
               "w12",
               "w13",
               "w14",
               "w15"
-            ]
+            ],
+            "reason": "Bilingual certification: 'comes out' renders ἐκπορευόμενον"
           },
           {
             "text": "out",
@@ -7868,22 +7873,16 @@
           {
             "text": "plant",
             "ids": [
-              "w6"
+              "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w5",
-              "w6",
               "w7",
               "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+              "w9"
+            ],
+            "reason": "Bilingual certification: verbal 'plant' renders ἐφύτευσεν, not noun φυτεία"
           },
           {
             "text": "will",
@@ -9943,23 +9942,19 @@
           {
             "text": "entering",
             "ids": [
-              "w6"
+              "w6",
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w3",
-              "w4",
               "w5",
               "w6",
               "w7",
               "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+              "w9"
+            ],
+            "reason": "Bilingual certification: transitive English 'entering the mouth' absorbs εἰς"
           },
           {
             "text": "the",
@@ -10569,18 +10564,17 @@
           {
             "text": "coming",
             "ids": [
-              "w4"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-compound",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
-              "w2",
               "w3",
               "w4",
               "w5",
               "w6"
-            ]
+            ],
+            "reason": "Bilingual certification: 'coming out' renders ἐκπορευόμενα"
           },
           {
             "text": "out",
@@ -13167,11 +13161,17 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'that region' renders demonstrative ἐκείνων",
+            "phraseIds": [
+              "w6",
+              "w7",
+              "w8"
+            ]
           },
           {
             "text": "region",
@@ -13218,23 +13218,14 @@
           {
             "text": "out",
             "ids": [
-              "w10"
+              "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w12"
-            ]
+              "w9"
+            ],
+            "reason": "Bilingual certification: 'came out' renders ἐξελθοῦσα; removed wrong link to ἔκραζεν"
           },
           {
             "text": "and",
@@ -21768,20 +21759,16 @@
           {
             "text": "his",
             "ids": [
-              "w4"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
               "w5",
               "w6",
-              "w7",
-              "w8"
-            ]
+              "w7"
+            ],
+            "reason": "Bilingual certification: 'his disciples' renders μαθητὰς αὐτοῦ"
           },
           {
             "text": "disciples",
@@ -21822,16 +21809,14 @@
           {
             "text": "him",
             "ids": [
-              "w4",
-              "w7"
+              "w4"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w4",
-              "w7"
+              "w4"
             ],
-            "reason": "Matthew bilingual pass: also represents αὐτοῦ (of Him)"
+            "reason": "Bilingual certification: 'called ... to him' is carried by προσκαλεσάμενος; removed possessive αὐτοῦ from this token"
           },
           {
             "text": "and",
@@ -21907,11 +21892,17 @@
           },
           {
             "text": "on",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'compassion on the crowd' renders ἐπὶ τὸν ὄχλον",
+            "phraseIds": [
+              "w10",
+              "w11",
+              "w12"
+            ]
           },
           {
             "text": "the",
@@ -22888,17 +22879,16 @@
           {
             "text": "to",
             "ids": [
-              "w3"
+              "w13",
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w13",
+              "w14"
+            ],
+            "reason": "Bilingual certification: infinitival 'to satisfy' renders ὥστε χορτάσαι"
           },
           {
             "text": "him,",
