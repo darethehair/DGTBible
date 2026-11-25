@@ -11364,20 +11364,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew restart hover review: article in 'the birth' renders ἡ, not the whole opening clause"
           },
           {
             "text": "birth",
@@ -11471,20 +11466,15 @@
           },
           {
             "text": "this",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Matthew restart hover review: 'this way' renders οὕτως; removed eight-word phrase fan-out"
           },
           {
             "text": "way:",
@@ -11508,17 +11498,9 @@
             "text": "when",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: temporal 'when' is supplied by the participial construction; no fake clause-wide hover",
+            "supplied": true
           },
           {
             "text": "his",
@@ -11573,35 +11555,27 @@
           },
           {
             "text": "had",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew restart hover review: English perfect auxiliary belongs with μνηστευθείσης"
           },
           {
             "text": "been",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew restart hover review: English passive/perfect auxiliary belongs with μνηστευθείσης"
           },
           {
             "text": "betrothed",
@@ -11765,33 +11739,17 @@
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: infinitival 'to' in 'found to be pregnant' is supplied English syntax",
+            "supplied": true
           },
           {
             "text": "be",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: 'be' in 'found to be pregnant' is supplied English syntax",
+            "supplied": true
           },
           {
             "text": "pregnant",
@@ -11814,19 +11772,15 @@
           },
           {
             "text": "by",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
+            "ids": [
+              "w25"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w25"
+            ],
+            "reason": "Matthew restart hover review: 'by' renders ἐκ; removed seven-word phrase fan-out"
           },
           {
             "text": "the",
@@ -12282,19 +12236,15 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew restart hover review: discourse connective renders δὲ; removed seven-word phrase fan-out"
           },
           {
             "text": "Joseph",
@@ -13349,29 +13299,23 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew restart hover review: discourse connective renders δὲ; removed four-word phrase fan-out"
           },
           {
             "text": "while",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: temporal 'while' is supplied by the genitive-absolute construction",
+            "supplied": true
           },
           {
             "text": "he",
@@ -13731,19 +13675,15 @@
           },
           {
             "text": "do",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
+            "ids": [
+              "w17"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w17"
+            ],
+            "reason": "Matthew restart hover review: English auxiliary in 'do not be afraid' belongs with φοβηθῇς, not the whole command"
           },
           {
             "text": "not",
@@ -13764,19 +13704,15 @@
           },
           {
             "text": "be",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
+            "ids": [
+              "w17"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w17"
+            ],
+            "reason": "Matthew restart hover review: English copular support in 'be afraid' belongs with φοβηθῇς"
           },
           {
             "text": "afraid",
@@ -13918,39 +13854,27 @@
           },
           {
             "text": "what",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31"
+            "ids": [
+              "w23"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w23"
+            ],
+            "reason": "Matthew restart hover review: nominalizing 'what' renders τὸ"
           },
           {
             "text": "has",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31"
+            "ids": [
+              "w27"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w27"
+            ],
+            "reason": "Matthew restart hover review: perfect auxiliary in 'has been conceived' belongs with γεννηθὲν"
           },
           {
             "text": "been",
@@ -14695,18 +14619,15 @@
           },
           {
             "text": "shall",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew restart hover review: future auxiliary belongs with καλέσεις; removed six-word phrase fan-out"
           },
           {
             "text": "call",
@@ -15385,29 +15306,27 @@
           },
           {
             "text": "what",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w11"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Matthew restart hover review: 'what' renders nominalizing τὸ"
           },
           {
             "text": "was",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w11"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew restart hover review: passive auxiliary belongs with ῥηθὲν"
           },
           {
             "text": "spoken",
@@ -15441,14 +15360,9 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w11"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-hover-supplied",
+            "reason": "Matthew restart hover review: English article before 'Lord' is supplied; Greek κυρίου has no article here",
+            "supplied": true
           },
           {
             "text": "Lord",
@@ -16971,19 +16885,15 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w2"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew restart hover review: clause connective renders δὲ; removed seven-word phrase fan-out"
           },
           {
             "text": "Joseph,",
@@ -17666,16 +17576,15 @@
           },
           {
             "text": "did",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
+            "ids": [
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-hover-precise",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Matthew restart hover review: auxiliary in 'did not know' belongs with imperfect ἐγίνωσκεν"
           },
           {
             "text": "not",
