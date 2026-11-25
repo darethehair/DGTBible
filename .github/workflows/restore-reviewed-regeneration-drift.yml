@@ -1,0 +1,81 @@
+name: Restore reviewed Luke and Acts after regeneration drift
+
+on:
+  push:
+    paths:
+      - '.github/workflows/restore-reviewed-regeneration-drift.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dgt-master-recovery
+  cancel-in-progress: false
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore last reviewed Luke and Acts data
+        run: |
+          git checkout 2a3138c346bb8cbb212c4730b1a7a8e061ba5c7c -- data/luke/*.json
+          git checkout abb0cd2620551dc8208d6f0cc686c10d31e25681 -- data/acts/*.json
+
+      - name: Preserve intentional Luke 15:6 supplied possessive
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/luke/15.json')
+          d=json.loads(p.read_text(encoding='utf8'))
+          v=next(v for v in d['verses'] if v['v']==6)
+          hits=[x for x in v['alignment']['dgt'] if x.get('text')=='his']
+          if len(hits)!=1:
+              raise SystemExit(f'Expected one Luke 15:6 his token, found {len(hits)}')
+          x=hits[0]
+          x['ids']=[]
+          x['phraseIds']=[]
+          x['supplied']=True
+          x['confidence']='reviewed-master-supplied'
+          x['reason']='Reviewed supplied possessive: English ownership is contextual, not the verb συγκαλεῖ'
+          p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+          PY
+
+      - name: Reapply current reviewed Acts batch
+        run: python scripts/apply-master-reviewed-batch26.py
+
+      - name: Validate restored books
+        run: |
+          python scripts/audit-luke.py
+          python scripts/audit-acts.py
+
+      - name: Conservative cleanup and fresh checkpoint
+        run: python scripts/run-master-cleanup.py
+
+      - name: Commit recovered reviewed state
+        run: |
+          git config user.name "DGTBible alignment bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/luke data/acts data/master-review-progress.json
+          if git diff --cached --quiet; then
+            echo "No recovery changes needed."
+            exit 0
+          fi
+          git commit -m "Restore reviewed Luke and Acts master alignment state"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep $((attempt*2))
+          done
+
+      - name: Upload recovered review queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: recovered-master-review
+          path: master-review/
+          retention-days: 14
