@@ -229,11 +229,16 @@
       }
     },
     "luke/01": {
-      "status": "corrected-awaiting-verification",
-      "commit": "cb82c61430b2d1ba1325f2232651c1dc911d9988",
-      "corrections": 370,
+      "status": "verified-awaiting-deployment",
+      "commit": "74e1e92e1b9770003e380aff820b2413003d4cd3",
+      "corrections": 377,
       "reviewed_verses": "1–80",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Legacy exact and pronoun candidate review completed. Remaining articles, copulas and pronouns reflect Greek and English grammatical differences, including the omitted objects in 1:12 and 1:66 and the implicit second-person possessive in 1:31. Reverse coverage and hover review pending."
+      "final_verification": {
+        "commit": "74e1e92e1b9770003e380aff820b2413003d4cd3",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. Remaining hits concern implied articles and copulas, dative or genitive shifts and objects absent in the Greek. Shared verb at 1:64 governs both coordinated subjects. No dangling links, phrase escapes, synthetic omissions or unrelated precise collisions.",
+        "chapter_sha256": "1032c82b73e70b1c4bfd0d379e8cec8fed64be12d2e567ed9faa8477322bd96a"
+      }
     },
     "luke/02": {
       "status": "corrected-awaiting-verification",
@@ -397,9 +402,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/01",
+  "resume": "luke/02",
   "verification_backlog": [
-    "luke/01",
     "luke/02",
     "luke/03",
     "luke/04",
