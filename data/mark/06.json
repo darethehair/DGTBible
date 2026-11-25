@@ -680,27 +680,14 @@
           {
             "text": "his",
             "ids": [
-              "w12"
+              "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
               "w15"
-            ]
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "disciples",
@@ -755,27 +742,14 @@
           {
             "text": "him.",
             "ids": [
-              "w15"
+              "w12"
             ],
             "after": "",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+              "w12"
+            ],
+            "reason": "Direct Greek-English alignment review"
           }
         ]
       }
@@ -1692,28 +1666,15 @@
           },
           {
             "text": "came,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "he",
@@ -1847,28 +1808,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "synagogue;",
@@ -1950,28 +1898,15 @@
           },
           {
             "text": "who",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "heard",
@@ -2115,10 +2050,15 @@
           },
           {
             "text": "this",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "man",
@@ -2246,10 +2186,15 @@
           },
           {
             "text": "this",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w20"
+            ]
           },
           {
             "text": "wisdom",
@@ -2443,36 +2388,26 @@
           {
             "text": "works",
             "ids": [
-              "w34"
+              "w28"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32",
-              "w33",
-              "w34"
-            ]
+              "w28"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "being",
-            "ids": [],
+            "ids": [
+              "w34"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w34"
+            ]
           },
           {
             "text": "done",
@@ -3395,51 +3330,27 @@
           },
           {
             "text": "not",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "carpenter,",
@@ -3468,27 +3379,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "son",
@@ -3742,75 +3641,39 @@
           },
           {
             "text": "Judas",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w17"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w17"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "and",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w18"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "Simon?",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w19"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w19"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "And",
@@ -3866,10 +3729,15 @@
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "his",
@@ -4081,24 +3949,39 @@
           },
           {
             "text": "taking",
-            "ids": [],
+            "ids": [
+              "w30"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w30"
+            ]
           },
           {
             "text": "offense",
-            "ids": [],
+            "ids": [
+              "w30"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w30"
+            ]
           },
           {
             "text": "at",
-            "ids": [],
+            "ids": [
+              "w31"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w31"
+            ]
           },
           {
             "text": "him.",
@@ -4907,10 +4790,15 @@
           },
           {
             "text": "“A",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "prophet",
@@ -4923,17 +4811,27 @@
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "without",
@@ -4946,10 +4844,15 @@
           },
           {
             "text": "honor",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "except",
@@ -4963,25 +4866,14 @@
           {
             "text": "in",
             "ids": [
-              "w24"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ]
+              "w14"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "his",
@@ -5649,10 +5541,15 @@
           },
           {
             "text": "could",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "do",
@@ -5681,10 +5578,17 @@
           },
           {
             "text": "no",
-            "ids": [],
+            "ids": [
+              "w2",
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2",
+              "w6"
+            ]
           },
           {
             "text": "mighty",
@@ -5714,27 +5618,14 @@
           {
             "text": "work",
             "ids": [
-              "w5"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-phrase-positional",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+              "w7"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "there,",
@@ -5846,27 +5737,14 @@
           {
             "text": "his",
             "ids": [
-              "w15"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+              "w13"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "hands",
@@ -5995,10 +5873,15 @@
           },
           {
             "text": "people",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "and",
@@ -6052,10 +5935,15 @@
           },
           {
             "text": "them.",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": "",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w15"
+            ]
           }
         ]
       }
@@ -6672,24 +6560,39 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "a",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "circuit,",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "teaching.",
@@ -7305,58 +7208,26 @@
           {
             "text": "to",
             "ids": [
-              "w8"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ]
+              "w2"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "himself",
             "ids": [
-              "w6"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ]
+              "w2"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "and",
@@ -7417,30 +7288,14 @@
           {
             "text": "to",
             "ids": [
-              "w13"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ]
+              "w8"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "send",
@@ -7500,10 +7355,15 @@
           },
           {
             "text": "out",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "two",
@@ -7675,10 +7535,15 @@
           },
           {
             "text": "giving",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "them",
@@ -8591,100 +8456,65 @@
           },
           {
             "text": "a",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w11"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "staff",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w11"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "only—no",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w12",
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w12",
+              "w13"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "bread,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w14"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "no",
             "ids": [
-              "w13"
+              "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+              "w15"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "bag,",
@@ -8710,23 +8540,14 @@
           {
             "text": "no",
             "ids": [
-              "w13"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+              "w17"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "money",
@@ -8772,10 +8593,15 @@
           },
           {
             "text": "their",
-            "ids": [],
+            "ids": [
+              "w19"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w19"
+            ]
           },
           {
             "text": "belt—",
@@ -9027,17 +8853,27 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "wear",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "sandals",
@@ -9904,17 +9740,27 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "place.",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": "",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           }
         ]
       }
@@ -10550,23 +10396,15 @@
           },
           {
             "text": "does",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "not",
@@ -10633,23 +10471,15 @@
           },
           {
             "text": "or",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "listen",
@@ -10674,23 +10504,15 @@
           },
           {
             "text": "to",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "you,",
@@ -10715,39 +10537,39 @@
           },
           {
             "text": "when",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "you",
             "ids": [
-              "w20"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ]
+              "w11"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "leave",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "there,",
@@ -10817,10 +10639,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "dust",
@@ -10868,10 +10695,15 @@
           },
           {
             "text": "your",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w20"
+            ]
           },
           {
             "text": "feet",
@@ -10897,10 +10729,15 @@
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "a",
@@ -10948,10 +10785,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w23"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w23"
+            ]
           },
           {
             "text": "them.”",
@@ -11204,31 +11046,27 @@
           },
           {
             "text": "people",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
+            "ids": [
               "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "should",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
+            "ids": [
               "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "repent,",
@@ -11759,10 +11597,15 @@
           },
           {
             "text": "people",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "with",
@@ -12680,10 +12523,15 @@
           },
           {
             "text": "Jesus’",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "name",
@@ -12711,34 +12559,27 @@
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "become",
             "ids": [
-              "w6"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-compound-state",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+              "w8"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "well",
@@ -12814,10 +12655,15 @@
           },
           {
             "text": "people",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "were",
@@ -12917,10 +12763,15 @@
           },
           {
             "text": "Baptizer",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "has",
@@ -13092,10 +12943,15 @@
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w23"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w23"
+            ]
           },
           {
             "text": "is",
@@ -13106,10 +12962,15 @@
           },
           {
             "text": "why",
-            "ids": [],
+            "ids": [
+              "w22"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w22"
+            ]
           },
           {
             "text": "the",
@@ -13161,24 +13022,39 @@
           },
           {
             "text": "are",
-            "ids": [],
+            "ids": [
+              "w24"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w24"
+            ]
           },
           {
             "text": "at",
-            "ids": [],
+            "ids": [
+              "w24"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w24"
+            ]
           },
           {
             "text": "work",
-            "ids": [],
+            "ids": [
+              "w24"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w24"
+            ]
           },
           {
             "text": "in",
@@ -13607,10 +13483,15 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "others",
@@ -13764,10 +13645,15 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "others",
@@ -13847,52 +13733,26 @@
           {
             "text": "“He",
             "ids": [
-              "w6"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w11"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "is",
             "ids": [
-              "w6"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w11"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "a",
@@ -14352,17 +14212,27 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "when",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "Herod",
@@ -14555,17 +14425,27 @@
           },
           {
             "text": "has",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "been",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "raised.”",
@@ -15249,10 +15129,15 @@
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "sent",
@@ -15300,10 +15185,15 @@
           },
           {
             "text": "arrested",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "John",
@@ -15426,17 +15316,27 @@
           },
           {
             "text": "because",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "Herodias,",
@@ -15493,10 +15393,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w19"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w19"
+            ]
           },
           {
             "text": "his",
@@ -16129,17 +16034,27 @@
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "been",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "saying",
@@ -16812,10 +16727,15 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "Herodias",
@@ -16863,17 +16783,27 @@
           },
           {
             "text": "a",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "grudge",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "against",
@@ -16921,17 +16851,27 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "wanted",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "to",
@@ -17001,24 +16941,39 @@
           },
           {
             "text": "but",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "she",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "could",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "not,",
@@ -17924,82 +17879,62 @@
           {
             "text": "and",
             "ids": [
-              "w11"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w13"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "he",
             "ids": [
-              "w8"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w14"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "kept",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "him",
             "ids": [
-              "w8"
+              "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w15"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "safe.",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "When",
@@ -18026,24 +17961,14 @@
           {
             "text": "he",
             "ids": [
-              "w14"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24"
-            ]
+              "w17"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "heard",
@@ -18069,10 +17994,15 @@
           },
           {
             "text": "him,",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "he",
@@ -18120,10 +18050,15 @@
           },
           {
             "text": "greatly",
-            "ids": [],
+            "ids": [
+              "w19"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w19"
+            ]
           },
           {
             "text": "perplexed,",
@@ -18149,32 +18084,27 @@
           },
           {
             "text": "yet",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "he",
             "ids": [
-              "w20"
+              "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
               "w24"
-            ]
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "listened",
@@ -18200,17 +18130,27 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w24"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w24"
+            ]
           },
           {
             "text": "him",
-            "ids": [],
+            "ids": [
+              "w23"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w23"
+            ]
           },
           {
             "text": "gladly.",
@@ -18802,10 +18742,15 @@
           },
           {
             "text": "an",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "opportune",
@@ -18977,17 +18922,27 @@
           },
           {
             "text": "gave",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "a",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "banquet",
@@ -19042,10 +18997,15 @@
           },
           {
             "text": "nobles",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "and",
@@ -19070,17 +19030,27 @@
           },
           {
             "text": "military",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "commanders",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "and",
@@ -19105,10 +19075,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "leading",
@@ -19999,26 +19974,15 @@
           },
           {
             "text": "of",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "s5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "s11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "Herodias",
@@ -20094,26 +20058,15 @@
           },
           {
             "text": "in",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "s5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "s11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "and",
@@ -20261,102 +20214,63 @@
           },
           {
             "text": "those",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "s5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "s11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w15"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "reclining",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "s5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "s11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w16"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "with",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "s5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "s11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w16"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "him,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "s5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "s11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w16"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "king",
@@ -20435,10 +20349,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "girl,",
@@ -21458,35 +21377,27 @@
           },
           {
             "text": "up",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "to",
             "ids": [
-              "w3"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w12"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "half",
@@ -21515,10 +21426,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "my",
@@ -22207,10 +22123,15 @@
           },
           {
             "text": "should",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "I",
@@ -22370,10 +22291,15 @@
           },
           {
             "text": "“The",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "head",
@@ -22455,17 +22381,27 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "Baptizer.”",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": "",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w18"
+            ]
           }
         ]
       }
@@ -23077,17 +23013,27 @@
           },
           {
             "text": "went",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "with",
@@ -23259,17 +23205,27 @@
           },
           {
             "text": "“I",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "want",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "you",
@@ -23295,23 +23251,14 @@
           {
             "text": "to",
             "ids": [
-              "w15"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
-            ]
+              "w14"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "give",
@@ -24040,24 +23987,39 @@
           },
           {
             "text": "became",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "deeply",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "grieved,",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "but",
@@ -24068,10 +24030,15 @@
           },
           {
             "text": "because",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "of",
@@ -24100,10 +24067,15 @@
           },
           {
             "text": "his",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "oaths",
@@ -24282,10 +24254,15 @@
           },
           {
             "text": "did",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "not",
@@ -24314,10 +24291,15 @@
           },
           {
             "text": "want",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "to",
@@ -24845,10 +24827,15 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "immediately",
@@ -24880,10 +24867,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "king",
@@ -25006,10 +24998,15 @@
           },
           {
             "text": "ordered",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "him",
@@ -25097,10 +25094,15 @@
           },
           {
             "text": "John’s",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "head.",
@@ -25132,10 +25134,15 @@
           },
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "he",
@@ -25286,10 +25293,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "prison",
@@ -26018,30 +26030,27 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "the",
             "ids": [
-              "w3"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w11"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "girl,",
@@ -26641,10 +26650,15 @@
           },
           {
             "text": "when",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "his",
@@ -27830,28 +27844,14 @@
           {
             "text": "everything",
             "ids": [
-              "w11"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w16"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "they",
@@ -28620,10 +28620,15 @@
           },
           {
             "text": "says",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "to",
@@ -28696,17 +28701,27 @@
           },
           {
             "text": "away",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "by",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "yourselves",
@@ -28780,10 +28795,15 @@
           },
           {
             "text": "deserted",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "place",
@@ -28857,25 +28877,14 @@
           {
             "text": "a",
             "ids": [
-              "w10"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+              "w14"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "little.”",
@@ -29072,10 +29081,15 @@
           },
           {
             "text": "did",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w26"
+            ]
           },
           {
             "text": "not",
@@ -29125,24 +29139,39 @@
           },
           {
             "text": "have",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w26"
+            ]
           },
           {
             "text": "an",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w26"
+            ]
           },
           {
             "text": "opportunity",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w26"
+            ]
           },
           {
             "text": "to",
@@ -29589,10 +29618,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "a",
@@ -29616,10 +29650,15 @@
           },
           {
             "text": "deserted",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "place",
@@ -29643,10 +29682,15 @@
           },
           {
             "text": "by",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "themselves.",
@@ -30204,30 +30248,14 @@
           {
             "text": "them",
             "ids": [
-              "w2"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w7",
-              "w8",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+              "w3"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "going",
@@ -30316,30 +30344,14 @@
           {
             "text": "them,",
             "ids": [
-              "w2"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w7",
-              "w8",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+              "w8"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "and",
@@ -30679,10 +30691,15 @@
           },
           {
             "text": "arrived",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w20"
+            ]
           },
           {
             "text": "ahead",
@@ -30714,10 +30731,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w20"
+            ]
           },
           {
             "text": "them.",
@@ -31450,22 +31472,15 @@
           },
           {
             "text": "had",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "compassion",
@@ -31489,22 +31504,15 @@
           },
           {
             "text": "on",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "them",
@@ -31549,137 +31557,88 @@
           {
             "text": "they",
             "ids": [
-              "w11"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-postguard-bundled-pronoun",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w13"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "were",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w13"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "like",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w14"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "sheep",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w15"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "without",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w16",
+              "w17"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w16",
+              "w17"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "a",
             "ids": [
-              "w6"
+              "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+              "w18"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "shepherd;",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w18"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "and",
@@ -32428,10 +32387,15 @@
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "already",
@@ -32455,10 +32419,15 @@
           },
           {
             "text": "grown",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "late,",
@@ -32602,10 +32571,15 @@
           },
           {
             "text": "were",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "saying,",
@@ -32665,10 +32639,15 @@
           },
           {
             "text": "deserted,",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "and",
@@ -33145,10 +33124,15 @@
         "dgt": [
           {
             "text": "Send",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "them",
@@ -33177,33 +33161,26 @@
           {
             "text": "away",
             "ids": [
-              "w4"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w16"
-            ]
+              "w1"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "so",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "that",
@@ -33232,50 +33209,26 @@
           {
             "text": "they",
             "ids": [
-              "w11"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w16"
-            ]
+              "w4"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "may",
             "ids": [
-              "w11"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w16"
-            ]
+              "w4"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "go",
@@ -33303,10 +33256,15 @@
           },
           {
             "text": "into",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "the",
@@ -33358,10 +33316,15 @@
           },
           {
             "text": "farms",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "and",
@@ -33510,26 +33473,14 @@
           {
             "text": "to",
             "ids": [
-              "w5"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
               "w16"
-            ]
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "eat.”",
@@ -34363,10 +34314,15 @@
           },
           {
             "text": "“Should",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "we",
@@ -34517,10 +34473,15 @@
           },
           {
             "text": "worth",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "of",
@@ -35102,10 +35063,15 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "he",
@@ -35291,10 +35257,15 @@
           },
           {
             "text": "do",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "you",
@@ -35409,17 +35380,27 @@
           },
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "when",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "they",
@@ -35553,10 +35534,15 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "two",
@@ -35998,10 +35984,15 @@
           },
           {
             "text": "have",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "everyone",
@@ -36047,10 +36038,17 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w6",
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w6",
+              "w7"
+            ]
           },
           {
             "text": "groups",
@@ -36469,10 +36467,15 @@
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "groups",
@@ -36495,10 +36498,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "hundreds",
@@ -37370,17 +37378,27 @@
           },
           {
             "text": "taking",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "five",
@@ -37462,10 +37480,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "two",
@@ -37626,28 +37649,14 @@
           {
             "text": "he",
             "ids": [
-              "w20"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
-            ]
+              "w14"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "blessed",
@@ -37660,10 +37669,15 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "broke",
@@ -37676,10 +37690,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "loaves",
@@ -37735,10 +37754,15 @@
           },
           {
             "text": "kept",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w20"
+            ]
           },
           {
             "text": "giving",
@@ -37821,28 +37845,14 @@
           {
             "text": "his",
             "ids": [
-              "w20"
+              "w23"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
-            ]
+              "w23"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "disciples",
@@ -37873,28 +37883,14 @@
           {
             "text": "to",
             "ids": [
-              "w21"
+              "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
-            ]
+              "w24"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "set",
@@ -37950,17 +37946,27 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w26"
+            ]
           },
           {
             "text": "people;",
-            "ids": [],
+            "ids": [
+              "w26"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w26"
+            ]
           },
           {
             "text": "and",
@@ -38042,10 +38048,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w28"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w28"
+            ]
           },
           {
             "text": "two",
@@ -38331,17 +38342,15 @@
           },
           {
             "text": "they",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "all",
@@ -38797,31 +38806,51 @@
           },
           {
             "text": "full",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "broken",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "pieces,",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "and",
@@ -38852,10 +38881,15 @@
           },
           {
             "text": "from",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "the",
@@ -39144,17 +39178,27 @@
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "ate",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "the",
@@ -39896,23 +39940,14 @@
           {
             "text": "his",
             "ids": [
-              "w3"
+              "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+              "w6"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "disciples",
@@ -39958,10 +39993,15 @@
           },
           {
             "text": "get",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "into",
@@ -39986,10 +40026,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w9"
+            ]
           },
           {
             "text": "boat",
@@ -40035,45 +40080,51 @@
           },
           {
             "text": "go",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "ahead",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "to",
             "ids": [
-              "w7"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+              "w13"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "other",
@@ -40086,17 +40137,27 @@
           },
           {
             "text": "side",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "toward",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "Bethsaida,",
@@ -40109,10 +40170,15 @@
           },
           {
             "text": "while",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "he",
@@ -40158,10 +40224,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w21"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w21"
+            ]
           },
           {
             "text": "crowd.",
@@ -41445,10 +41516,15 @@
           },
           {
             "text": "on",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "the",
@@ -42289,26 +42365,15 @@
           },
           {
             "text": "distressed",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w15"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "in",
@@ -42384,26 +42449,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w15"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "wind",
@@ -42455,26 +42509,15 @@
           },
           {
             "text": "against",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w15"
+            "ids": [
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "them,",
@@ -42502,10 +42545,15 @@
           },
           {
             "text": "about",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w15"
+            ]
           },
           {
             "text": "the",
@@ -42809,10 +42857,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w25"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w25"
+            ]
           },
           {
             "text": "sea;",
@@ -42891,10 +42944,15 @@
           },
           {
             "text": "intended",
-            "ids": [],
+            "ids": [
+              "w28"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w28"
+            ]
           },
           {
             "text": "to",
@@ -43351,41 +43409,39 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "when",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "they",
             "ids": [
-              "w9"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+              "w3"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "saw",
@@ -43581,17 +43637,27 @@
           },
           {
             "text": "he",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "was",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "a",
@@ -44232,10 +44298,15 @@
           },
           {
             "text": "they",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "all",
@@ -44359,10 +44430,15 @@
           },
           {
             "text": "But",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "immediately",
@@ -44376,42 +44452,26 @@
           {
             "text": "he",
             "ids": [
-              "w18"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+              "w10"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "spoke",
             "ids": [
-              "w14"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+              "w10"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "with",
@@ -44575,17 +44635,27 @@
           },
           {
             "text": "it",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w18"
+            ]
           },
           {
             "text": "I.",
@@ -44649,10 +44719,15 @@
           },
           {
             "text": "be",
-            "ids": [],
+            "ids": [
+              "w20"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w20"
+            ]
           },
           {
             "text": "afraid.”",
@@ -45573,10 +45648,19 @@
           },
           {
             "text": "utterly",
-            "ids": [],
+            "ids": [
+              "w13",
+              "w14",
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w13",
+              "w14",
+              "w15"
+            ]
           },
           {
             "text": "amazed",
@@ -45608,10 +45692,15 @@
           },
           {
             "text": "within",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w16"
+            ]
           },
           {
             "text": "themselves,",
@@ -45992,10 +46081,15 @@
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "not",
@@ -46043,10 +46137,15 @@
           },
           {
             "text": "about",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "the",
@@ -46160,17 +46259,27 @@
           },
           {
             "text": "had",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "been",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w12"
+            ]
           },
           {
             "text": "hardened.",
@@ -46473,17 +46582,27 @@
           },
           {
             "text": "after",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "crossing",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "over",
@@ -46507,10 +46626,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "the",
@@ -46594,10 +46718,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "Gennesaret",
@@ -46641,10 +46770,15 @@
           },
           {
             "text": "anchored",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "there.",
@@ -46946,21 +47080,14 @@
           {
             "text": "came",
             "ids": [
-              "w4"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-compound",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w2"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "out",
@@ -47833,38 +47960,27 @@
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "were",
             "ids": [
-              "w16"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w19"
-            ]
+              "w13"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "sick",
@@ -48092,10 +48208,15 @@
           },
           {
             "text": "was.",
-            "ids": [],
+            "ids": [
+              "w19"
+            ],
             "after": "",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w19"
+            ]
           }
         ]
       }
@@ -49037,29 +49158,19 @@
           },
           {
             "text": "entered—villages",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
+            "ids": [
               "w4",
               "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w4",
+              "w5",
+              "w6"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "or",
@@ -49144,108 +49255,55 @@
           },
           {
             "text": "farms—they",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
+            "ids": [
               "w11",
               "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w11",
+              "w12",
+              "w16"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "laid",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "the",
             "ids": [
-              "w14"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
               "w17"
-            ]
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "sick",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "in",
@@ -49331,343 +49389,158 @@
           {
             "text": "and",
             "ids": [
-              "w1"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w19"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "begged",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "him",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w21"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w21"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "that",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w22"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w22"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "they",
             "ids": [
-              "w16"
+              "w29"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w29"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "might",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w29"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w29"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "touch",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w29"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w29"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "even",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w23"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w23"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "the",
             "ids": [
-              "w14"
+              "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+              "w24"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "fringe",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w25"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w25"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "of",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w24"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w24"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "his",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w28"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w28"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "garment;",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w27"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual",
+            "phraseIds": [
+              "w27"
+            ],
+            "reason": "Direct Greek-English alignment review"
           },
           {
             "text": "and",
@@ -49867,10 +49740,15 @@
           },
           {
             "text": "saved.",
-            "ids": [],
+            "ids": [
+              "w35"
+            ],
             "after": "",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual",
+            "reason": "Direct Greek-English alignment review",
+            "phraseIds": [
+              "w35"
+            ]
           }
         ]
       }
