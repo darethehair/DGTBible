@@ -1,0 +1,15 @@
+name: Diagnose ranked master scattered links
+on:
+  push:
+    paths:
+      - 'scripts/diagnose-master-scattered.py'
+      - '.github/workflows/diagnose-master-scattered.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/diagnose-master-scattered.py
