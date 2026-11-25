@@ -253,11 +253,16 @@
       }
     },
     "luke/03": {
-      "status": "corrected-awaiting-verification",
-      "commit": "0981aaf69792bf075fcd3cbdb4269b0e403edd68",
-      "corrections": 343,
+      "status": "verified-awaiting-deployment",
+      "commit": "fcfd12b22dcde9ea66220ca8ca71aa0004915879",
+      "corrections": 345,
       "reviewed_verses": "1–38",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "fcfd12b22dcde9ea66220ca8ca71aa0004915879",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. The repeated English son in 3:23–38 renders an understood relationship after the first explicit υἱός. Each of and each name was checked against its own Greek occurrence. Ministry in 3:23 is implied by began. Anyone in 3:14 repeats an object left implicit in the second coordinated Greek prohibition. No phrase-only hover links remain.",
+        "chapter_sha256": "44ffa828e832ddcc1dc18a7027209cdccf109d602d7e4597d7e3e9f4e7d2dc4a"
+      }
     },
     "luke/04": {
       "status": "corrected-awaiting-verification",
@@ -407,9 +412,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/03",
+  "resume": "luke/04",
   "verification_backlog": [
-    "luke/03",
     "luke/04",
     "luke/05",
     "luke/06",
