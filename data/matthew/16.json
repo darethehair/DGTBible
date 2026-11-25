@@ -2202,14 +2202,16 @@
           {
             "text": "cannot",
             "ids": [
+              "w23",
               "w24"
             ],
             "after": " ",
             "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
+              "w23",
               "w24"
             ],
-            "reason": "Matthew bilingual pass: shared source correspondence 'cannot' ↔ δύνασθε."
+            "reason": "Bilingual certification: 'cannot' jointly renders οὐ δύνασθε"
           },
           {
             "text": "discern",
@@ -7133,11 +7135,16 @@
           },
           {
             "text": "about",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'about bread' renders περὶ ἄρτων",
+            "phraseIds": [
+              "w6",
+              "w7"
+            ]
           },
           {
             "text": "bread?",
@@ -9018,17 +9025,16 @@
           {
             "text": "his",
             "ids": [
-              "w11"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w11",
               "w12",
               "w13",
-              "w14",
-              "w15"
-            ]
+              "w14"
+            ],
+            "reason": "Bilingual certification: 'his disciples' renders μαθητὰς αὐτοῦ"
           },
           {
             "text": "disciples,",
