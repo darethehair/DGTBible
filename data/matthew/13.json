@@ -1277,14 +1277,14 @@
           {
             "text": "while",
             "ids": [
-              "w21"
+              "w14"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w21"
+              "w14"
             ],
-            "reason": "Matthew bilingual audit: narrowed to direct Greek correspondence"
+            "reason": "Targeted conjunction and clause-boundary review"
           },
           {
             "text": "the",
@@ -4462,11 +4462,15 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual audit: supplied English required by idiomatic rendering",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Targeted conjunction and clause-boundary review",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "the",
@@ -4538,11 +4542,15 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual audit: supplied English required by idiomatic rendering",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Targeted conjunction and clause-boundary review",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "choked",
@@ -37459,23 +37467,14 @@
           {
             "text": "and",
             "ids": [
-              "w23"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ]
+              "w17"
+            ],
+            "reason": "Targeted conjunction and clause-boundary review"
           },
           {
             "text": "because",
