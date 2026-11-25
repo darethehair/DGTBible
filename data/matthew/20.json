@@ -801,15 +801,15 @@
           },
           {
             "text": "early",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
+            "ids": [
               "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew final bilingual review: 'early' ↔ πρωῒ"
           },
           {
             "text": "in",
@@ -19618,10 +19618,15 @@
           },
           {
             "text": "wants",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew final bilingual review: 'wants' ↔ θέλῃ",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "to",
@@ -20084,10 +20089,15 @@
           },
           {
             "text": "wants",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew final bilingual review: 'wants' ↔ θέλῃ",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "to",
@@ -20682,20 +20692,15 @@
         "dgt": [
           {
             "text": "just",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Matthew final bilingual review: 'just' ↔ ὥσπερ"
           },
           {
             "text": "as",
