@@ -44,6 +44,22 @@ jobs:
           x['confidence']='reviewed-master-supplied'
           x['reason']='Reviewed supplied possessive: English ownership is contextual, not the verb συγκαλεῖ'
           p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+
+          # Luke 1:35: restore the reviewed book state, then satisfy the stricter
+          # exact-link audit by attaching the English article to τὸ (w23).
+          p=Path('data/luke/01.json')
+          d=json.loads(p.read_text(encoding='utf8'))
+          v=next(v for v in d['verses'] if v['v']==35)
+          candidates=[x for x in v['alignment']['dgt'] if x.get('text')=='the' and not x.get('ids')]
+          if len(candidates)!=1:
+              raise SystemExit(f'Expected one unlinked Luke 1:35 the token, found {len(candidates)}')
+          x=candidates[0]
+          x['ids']=['w23']
+          x['phraseIds']=['w23']
+          x['confidence']='reviewed-master-precise'
+          x['reason']='Reviewed recovery: English article maps to Greek τὸ'
+          x.pop('supplied',None)
+          p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
           PY
 
       - name: Reapply current reviewed Acts batch
