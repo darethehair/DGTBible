@@ -33778,10 +33778,10 @@
           },
           {
             "text": "him,",
+            "after": " ",
             "ids": [
               "w3"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 7"
           },
@@ -33798,10 +33798,10 @@
           },
           {
             "text": "him",
+            "after": " ",
             "ids": [
               "w3"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 7"
           },
@@ -33881,10 +33881,10 @@
           },
           {
             "text": "house",
+            "after": " ",
             "ids": [
               "w10"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 7"
           },
@@ -33999,10 +33999,10 @@
           },
           {
             "text": "distance.",
+            "after": "",
             "ids": [
               "w17"
             ],
-            "after": "",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 7"
           }
@@ -34361,10 +34361,10 @@
         "dgt": [
           {
             "text": "When",
+            "after": " ",
             "ids": [
               "w1"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 12"
           },
@@ -41933,17 +41933,14 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "if",
@@ -41984,43 +41981,32 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w6"
+              "w4"
             ]
           },
           {
             "text": "you",
             "ids": [
-              "w4"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w2",
-              "w4",
-              "w5",
-              "w6",
               "w7"
             ]
           },
           {
             "text": "will",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w4",
-              "w5",
-              "w6",
+            "ids": [
               "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "certainly",

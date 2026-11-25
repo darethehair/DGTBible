@@ -6539,19 +6539,19 @@
           },
           {
             "text": "had",
+            "after": " ",
             "ids": [
               "w3"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
           {
             "text": "seized",
+            "after": " ",
             "ids": [
               "w3"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -8098,19 +8098,19 @@
           },
           {
             "text": "they",
+            "after": " ",
             "ids": [
               "w2"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 14"
           },
           {
             "text": "had",
+            "after": " ",
             "ids": [
               "w2"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 14"
           },
@@ -21459,17 +21459,14 @@
           },
           {
             "text": "behind,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "he",

@@ -1608,10 +1608,10 @@
           },
           {
             "text": "may",
+            "after": " ",
             "ids": [
               "w13"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -1654,28 +1654,28 @@
           },
           {
             "text": "made",
+            "after": " ",
             "ids": [
               "w13"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
           {
             "text": "holy.",
+            "after": " ",
             "ids": [
               "w13"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
           {
             "text": "May",
+            "after": " ",
             "ids": [
               "w17"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -6093,28 +6093,28 @@
           },
           {
             "text": "he",
+            "after": " ",
             "ids": [
               "w11"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
           {
             "text": "is",
+            "after": " ",
             "ids": [
               "w11"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
           {
             "text": "his",
+            "after": " ",
             "ids": [
               "w13"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -6172,10 +6172,10 @@
           },
           {
             "text": "his",
+            "after": " ",
             "ids": [
               "w18"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -6206,10 +6206,10 @@
           },
           {
             "text": "he",
+            "after": " ",
             "ids": [
               "w20"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -6241,10 +6241,10 @@
           },
           {
             "text": "up",
+            "after": " ",
             "ids": [
               "w19"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -6279,10 +6279,10 @@
           },
           {
             "text": "him",
+            "after": " ",
             "ids": [
               "w21"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -8477,15 +8477,10 @@
             "text": "if",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "luke-reviewed-supplied",
+            "phraseIds": [],
+            "reason": "English supplied for natural rendering; no separate Greek token",
+            "supplied": true
           },
           {
             "text": "he",
@@ -8493,13 +8488,9 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w7"
+              "w4"
             ]
           },
           {
@@ -8552,13 +8543,9 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w7",
-              "w8",
-              "w9"
+              "w7"
             ]
           },
           {
@@ -8567,13 +8554,9 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w7",
-              "w8",
-              "w9"
+              "w7"
             ]
           },
           {
@@ -13598,10 +13581,10 @@
           },
           {
             "text": "they",
+            "after": " ",
             "ids": [
               "w17"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 7"
           },
@@ -17383,27 +17366,24 @@
         "dgt": [
           {
             "text": "When",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w5",
-              "w6"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "it",
             "ids": [
-              "w3"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w3"
+              "w2"
             ]
           },
           {
@@ -17443,29 +17423,19 @@
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "luke-reviewed-supplied",
+            "phraseIds": [],
+            "reason": "English supplied for natural rendering; no separate Greek token",
+            "supplied": true
           },
           {
             "text": "house",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "luke-reviewed-supplied",
+            "phraseIds": [],
+            "reason": "English supplied for natural rendering; no separate Greek token",
+            "supplied": true
           },
           {
             "text": "swept",
@@ -17484,42 +17454,32 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w2",
-              "w3",
-              "w5",
-              "w6",
-              "w7"
+              "w6"
             ]
           },
           {
             "text": "put",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w5",
-              "w6",
+            "ids": [
               "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "in",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w5",
-              "w6",
+            "ids": [
               "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "order.",

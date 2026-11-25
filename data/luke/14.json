@@ -3405,17 +3405,16 @@
           },
           {
             "text": "unable",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
+            "ids": [
               "w2",
-              "w3",
-              "w4",
-              "w6"
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w2",
+              "w3"
+            ]
           },
           {
             "text": "to",
@@ -3423,13 +3422,9 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w6",
-              "w7"
+              "w4"
             ]
           },
           {
@@ -8785,19 +8780,19 @@
           },
           {
             "text": "invite",
+            "after": " ",
             "ids": [
               "w13"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 12"
           },
           {
             "text": "your",
+            "after": " ",
             "ids": [
               "w16"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 12"
           },
@@ -8866,10 +8861,10 @@
           },
           {
             "text": "or",
+            "after": " ",
             "ids": [
               "w25"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 12"
           },
@@ -8886,10 +8881,10 @@
           },
           {
             "text": "neighbors,",
+            "after": " ",
             "ids": [
               "w26"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 12"
           },

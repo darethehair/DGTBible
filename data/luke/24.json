@@ -1138,41 +1138,35 @@
         "dgt": [
           {
             "text": "but",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "when",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "they",
             "ids": [
-              "w5"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w5"
+              "w2"
             ]
           },
           {
@@ -1199,17 +1193,14 @@
           },
           {
             "text": "did",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "not",
@@ -4230,17 +4221,14 @@
         "dgt": [
           {
             "text": "Then",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "they",
@@ -4270,28 +4258,21 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
               "w5"
             ]
           },
           {
             "text": "words.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w4"
+            ]
           }
         ]
       }
@@ -14382,10 +14363,10 @@
           },
           {
             "text": "they",
+            "after": " ",
             "ids": [
               "w3"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -14475,10 +14456,10 @@
           },
           {
             "text": "saying",
+            "after": " ",
             "ids": [
               "w8"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -14498,10 +14479,10 @@
           },
           {
             "text": "they",
+            "after": " ",
             "ids": [
               "w12"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -19276,10 +19257,10 @@
           },
           {
             "text": "he",
+            "after": " ",
             "ids": [
               "w6"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -19380,10 +19361,10 @@
           },
           {
             "text": "took",
+            "after": " ",
             "ids": [
               "w9"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -19441,19 +19422,19 @@
           },
           {
             "text": "broke",
+            "after": " ",
             "ids": [
               "w14"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
           {
             "text": "it,",
+            "after": " ",
             "ids": [
               "w14"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -19474,10 +19455,10 @@
           },
           {
             "text": "began",
+            "after": " ",
             "ids": [
               "w15"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -19494,10 +19475,10 @@
           },
           {
             "text": "it",
+            "after": " ",
             "ids": [
               "w15"
             ],
-            "after": " ",
             "confidence": "reviewed-master-precise",
             "reason": "Human-reviewed full-NT master pass batch 11"
           },
@@ -26690,27 +26671,24 @@
           {
             "text": "he",
             "ids": [
-              "w5"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w5"
+              "w2"
             ]
           },
           {
             "text": "took",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "luke-reviewed-precision",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "it",
@@ -26718,13 +26696,9 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+              "w2"
             ]
           },
           {
@@ -26733,10 +26707,11 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "luke-postoverride-semantic",
             "phraseIds": [
               "w1"
-            ]
+            ],
+            "supplied": true
           },
           {
             "text": "ate",
@@ -26755,12 +26730,8 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-ordered",
+            "confidence": "luke-reviewed-precision",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
               "w5"
             ]
           },
