@@ -25,6 +25,20 @@ Experimental original-language Bible PWA with the **DGT — Direct Greek Transla
 - Count real SBLGNT source tokens and displayed DGT word tokens, excluding punctuation and synthetic alignment artifacts.
 - Possible later expansion: English/Greek word ratio, unique Greek lemmas, vocabulary statistics, and a richer statistics popover.
 
+### Display themes
+- Add a **dark mode** option with a comfortable low-glare palette for extended reading.
+- Preserve Greek/DGT alignment highlighting, selected-word emphasis, notes, and accessibility contrast in both light and dark themes.
+- Remember the reader's theme preference locally and allow an optional follow-system setting later.
+
+### Chronological reading plans and progress tracking
+- Add automated chronological-order reading plans, beginning with a **90-day New Testament plan** and leaving room for other durations later.
+- Divide the plan into dated daily portions and clearly show what must be read **today**, what is completed, and what remains to stay on schedule.
+- Let the reader mark a day's portion **complete** with a simple click/tap; preserve progress locally so the static PWA works offline without an account.
+- Highlight the currently assigned reading portion in chapter/compact reading views so the user can read directly through the plan rather than merely seeing a checklist.
+- Show useful schedule status such as days completed, today's assignment, overdue portions, ahead/behind status, and the next reading.
+- Design progress data so a future optional sync/account layer could be added without changing the reading-plan model.
+- Future enhancement: **read-aloud / text-to-speech** for the assigned daily portion, with highlighting that follows the spoken text if practical.
+
 ### Greek word / lemma explorer
 - Keep hover as the lightweight Greek ↔ English alignment interaction.
 - Make a Greek-word click open lexical details: surface form, transliteration, lemma, gloss, morphology, and the aligned DGT rendering.
