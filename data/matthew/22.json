@@ -22757,10 +22757,15 @@
           },
           {
             "text": "great",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'great/greatest' maps to μεγάλη",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "in",
