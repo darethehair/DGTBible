@@ -653,9 +653,16 @@
       "reviewed_verses": "1–31",
       "corrections": 91,
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+    },
+    "john/21": {
+      "status": "corrected-awaiting-verification",
+      "commit": "7b1fd856f3b9c882a15540a37d2b97555835a943",
+      "reviewed_verses": "1–25",
+      "corrections": 92,
+      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/21",
+  "resume": "john/01",
   "verification_backlog": [
     "john/01",
     "john/02",
@@ -676,7 +683,8 @@
     "john/17",
     "john/18",
     "john/19",
-    "john/20"
+    "john/20",
+    "john/21"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -693,7 +701,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "initial-review",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
