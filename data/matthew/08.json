@@ -4984,16 +4984,16 @@
           {
             "text": "say",
             "ids": [
-              "w19"
+              "w19",
+              "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w17",
-              "w18",
               "w19",
-              "w20"
-            ]
+              "w6"
+            ],
+            "reason": "Matthew Greek coverage audit: added directly represented Greek source token"
           },
           {
             "text": "the",
