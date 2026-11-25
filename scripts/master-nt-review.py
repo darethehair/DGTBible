@@ -137,7 +137,10 @@ for book in catalog:
 
             # Precise fanout and scattered reuse.
             for wid,pos in used.items():
-                if len(pos)>=5 or len(pos)/max(1,len(D))>=0.35:
+                # Fan-out is about a single Greek source lighting an unusually
+                # long English rendering. A large percentage of a very short
+                # verse is not, by itself, suspicious.
+                if len(pos)>=5:
                     rows.append({'severity':88,'kind':'precise-fanout','book':name,'ref':ref,'token':gtext.get(wid,wid),'activated':len(pos),'total':len(D),'share':round(len(pos)/max(1,len(D)),3),'detail':[D[i].get('text','') for i in pos]})
                     stats[name]['precise_fanout']+=1
                 if len(pos)>=2:
