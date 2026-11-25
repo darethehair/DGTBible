@@ -2493,17 +2493,15 @@
           },
           {
             "text": "deceit",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Matthew 26 bilingual pass: deceit ↔ δόλῳ"
           },
           {
             "text": "and",
@@ -3411,8 +3409,9 @@
             "text": "Now",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "when",
@@ -4074,10 +4073,15 @@
           },
           {
             "text": "jar",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew 26 bilingual pass: jar ↔ ἀλάβαστρον",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "of",
@@ -4115,17 +4119,27 @@
           },
           {
             "text": "expensive",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew 26 bilingual pass: expensive ↔ βαρυτίμου",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "perfume,",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew 26 bilingual pass: perfume, ↔ μύρου",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "and",
@@ -4690,17 +4704,15 @@
           },
           {
             "text": "Why",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew 26 bilingual pass: Why ↔ τί"
           },
           {
             "text": "this",
@@ -5552,18 +5564,15 @@
           },
           {
             "text": "knowing",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Matthew 26 bilingual pass: knowing ↔ γνοὺς"
           },
           {
             "text": "this,",
@@ -5809,18 +5818,15 @@
           },
           {
             "text": "good",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew 26 bilingual pass: good ↔ καλὸν"
           },
           {
             "text": "work",
@@ -6849,10 +6855,15 @@
           },
           {
             "text": "perfume",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew 26 bilingual pass: perfume ↔ μύρον",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "on",
@@ -6976,17 +6987,15 @@
           },
           {
             "text": "prepare",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew 26 bilingual pass: prepare ↔ ἐνταφιάσαι"
           },
           {
             "text": "me",
@@ -7020,17 +7029,15 @@
           },
           {
             "text": "burial.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew 26 bilingual pass: burial. ↔ ἐνταφιάσαι"
           }
         ]
       }
@@ -7912,15 +7919,15 @@
           },
           {
             "text": "memory",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w19",
-              "w20",
-              "w21"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew 26 bilingual pass: memory ↔ μνημόσυνον"
           },
           {
             "text": "of",
@@ -9036,16 +9043,15 @@
           },
           {
             "text": "hand",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew 26 bilingual pass: hand ↔ παραδώσω"
           },
           {
             "text": "him",
@@ -9063,16 +9069,15 @@
           },
           {
             "text": "over",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew 26 bilingual pass: over ↔ παραδώσω"
           },
           {
             "text": "to",
@@ -9562,15 +9567,15 @@
           },
           {
             "text": "hand",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
+            "ids": [
               "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew 26 bilingual pass: hand ↔ παραδῷ."
           },
           {
             "text": "him",
@@ -9587,15 +9592,15 @@
           },
           {
             "text": "over.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
+            "ids": [
               "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew 26 bilingual pass: over. ↔ παραδῷ."
           }
         ]
       }
@@ -13557,15 +13562,15 @@
           },
           {
             "text": "deeply",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
+            "ids": [
               "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Matthew 26 bilingual pass: deeply ↔ σφόδρα"
           },
           {
             "text": "grieved,",
@@ -14425,10 +14430,15 @@
           },
           {
             "text": "bowl",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew 26 bilingual pass: bowl ↔ τρυβλίῳ",
+            "phraseIds": [
+              "w13"
+            ]
           },
           {
             "text": "is",
@@ -15818,15 +15828,15 @@
           },
           {
             "text": "man",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w23",
-              "w24",
+            "ids": [
               "w25"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w25"
+            ],
+            "reason": "Matthew 26 bilingual pass: man ↔ αὐτῷ"
           },
           {
             "text": "if",
@@ -17327,17 +17337,15 @@
           },
           {
             "text": "gave",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w17"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew 26 bilingual pass: gave ↔ δοὺς"
           },
           {
             "text": "it",
@@ -17846,17 +17854,15 @@
           },
           {
             "text": "taking",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew 26 bilingual pass: taking ↔ λαβὼν"
           },
           {
             "text": "a",
@@ -17905,17 +17911,15 @@
           },
           {
             "text": "giving",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
+            "ids": [
               "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Matthew 26 bilingual pass: giving ↔ εὐχαριστήσας"
           },
           {
             "text": "thanks,",
@@ -19921,22 +19925,15 @@
           },
           {
             "text": "new",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
+            "ids": [
               "w25"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w25"
+            ],
+            "reason": "Matthew 26 bilingual pass: new ↔ καινὸν"
           },
           {
             "text": "with",
@@ -20273,14 +20270,15 @@
           },
           {
             "text": "singing",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
+            "ids": [
               "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew 26 bilingual pass: singing ↔ ὑμνήσαντες"
           },
           {
             "text": "a",
@@ -22481,17 +22479,15 @@
           },
           {
             "text": "stumbles",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew 26 bilingual pass: stumbles ↔ σκανδαλισθήσονται"
           },
           {
             "text": "because",
@@ -25484,10 +25480,15 @@
           },
           {
             "text": "taking",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew 26 bilingual pass: taking ↔ παραλαβὼν",
+            "phraseIds": [
+              "w2"
+            ]
           },
           {
             "text": "Peter",
@@ -26241,35 +26242,27 @@
           },
           {
             "text": "deeply",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Matthew 26 bilingual pass: deeply ↔ Περίλυπός"
           },
           {
             "text": "grieved",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Matthew 26 bilingual pass: grieved ↔ Περίλυπός"
           },
           {
             "text": "to",
@@ -26298,19 +26291,15 @@
           },
           {
             "text": "point",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
+            "ids": [
               "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Matthew 26 bilingual pass: point ↔ θανάτου·"
           },
           {
             "text": "of",
@@ -26396,18 +26385,15 @@
           },
           {
             "text": "keep",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+            "ids": [
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew 26 bilingual pass: keep ↔ γρηγορεῖτε"
           },
           {
             "text": "watch",
@@ -27252,22 +27238,15 @@
           },
           {
             "text": "farther,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew 26 bilingual pass: farther, ↔ προελθὼν"
           },
           {
             "text": "he",
@@ -28584,20 +28563,15 @@
           },
           {
             "text": "keep",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
+            "ids": [
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w19"
+            ],
+            "reason": "Matthew 26 bilingual pass: keep ↔ γρηγορῆσαι"
           },
           {
             "text": "watch",
@@ -29100,15 +29074,15 @@
         "dgt": [
           {
             "text": "Keep",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3"
+            "ids": [
+              "w1"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Matthew 26 bilingual pass: Keep ↔ γρηγορεῖτε"
           },
           {
             "text": "watch",
@@ -30135,21 +30109,15 @@
           },
           {
             "text": "cannot",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w15",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
+            "ids": [
+              "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Matthew 26 bilingual pass: cannot ↔ δύναται"
           },
           {
             "text": "pass",
@@ -30793,10 +30761,15 @@
           },
           {
             "text": "heavy.",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": "",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Matthew 26 bilingual pass: heavy. ↔ καθεύδοντας,",
+            "phraseIds": [
+              "w6"
+            ]
           }
         ]
       }
@@ -31330,17 +31303,15 @@
           },
           {
             "text": "words",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Matthew 26 bilingual pass: words ↔ λόγον"
           },
           {
             "text": "again.",
@@ -37789,17 +37760,15 @@
           },
           {
             "text": "take",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+            "ids": [
+              "w17"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w17"
+            ],
+            "reason": "Matthew 26 bilingual pass: take ↔ λαβόντες"
           },
           {
             "text": "the",
@@ -38609,16 +38578,15 @@
           },
           {
             "text": "provide",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Matthew 26 bilingual pass: provide ↔ παραστήσει"
           },
           {
             "text": "me",
@@ -38636,16 +38604,15 @@
           },
           {
             "text": "now",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
+            "ids": [
               "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew 26 bilingual pass: now ↔ ἄρτι"
           },
           {
             "text": "with",
@@ -39108,16 +39075,15 @@
           },
           {
             "text": "happen",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
+            "ids": [
               "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew 26 bilingual pass: happen ↔ γενέσθαι;"
           },
           {
             "text": "this",
@@ -40200,22 +40166,15 @@
           },
           {
             "text": "arrest",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w18"
+            ],
+            "reason": "Matthew 26 bilingual pass: arrest ↔ συλλαβεῖν"
           },
           {
             "text": "me",
@@ -40381,20 +40340,15 @@
           },
           {
             "text": "sat",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w20",
-              "w21",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29"
+            "ids": [
+              "w27"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w27"
+            ],
+            "reason": "Matthew 26 bilingual pass: sat ↔ ἐκαθεζόμην"
           },
           {
             "text": "in",
@@ -41244,19 +41198,15 @@
           },
           {
             "text": "left",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew 26 bilingual pass: left ↔ ἀφέντες"
           },
           {
             "text": "him",
@@ -42672,19 +42622,15 @@
           },
           {
             "text": "distance",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
+            "ids": [
               "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Matthew 26 bilingual pass: distance ↔ μακρόθεν"
           },
           {
             "text": "as",
@@ -42696,17 +42642,15 @@
           },
           {
             "text": "far",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Matthew 26 bilingual pass: far ↔ μακρόθεν"
           },
           {
             "text": "as",
@@ -42873,19 +42817,15 @@
           },
           {
             "text": "sat",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
+            "ids": [
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew 26 bilingual pass: sat ↔ ἐκάθητο"
           },
           {
             "text": "with",
@@ -42923,19 +42863,15 @@
           },
           {
             "text": "attendants",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
+            "ids": [
               "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w19"
+            ],
+            "reason": "Matthew 26 bilingual pass: attendants ↔ ὑπηρετῶν"
           },
           {
             "text": "to",
@@ -43370,17 +43306,9 @@
             "text": "Now",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w8",
-              "w9",
-              "w10"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "the",
@@ -43979,27 +43907,27 @@
           },
           {
             "text": "none,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Matthew 26 bilingual pass: none, ↔ οὐχ"
           },
           {
             "text": "though",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew 26 bilingual pass: though ↔ πολλῶν"
           },
           {
             "text": "many",
@@ -44076,16 +44004,15 @@
           },
           {
             "text": "later",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew 26 bilingual pass: later ↔ ὕστερον"
           },
           {
             "text": "two",
@@ -44608,33 +44535,27 @@
           },
           {
             "text": "tear",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew 26 bilingual pass: tear ↔ καταλῦσαι"
           },
           {
             "text": "down",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew 26 bilingual pass: down ↔ καταλῦσαι"
           },
           {
             "text": "the",
@@ -44717,17 +44638,15 @@
           },
           {
             "text": "build",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
+            "ids": [
               "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew 26 bilingual pass: build ↔ οἰκοδομῆσαι."
           },
           {
             "text": "it",
@@ -45288,14 +45207,15 @@
           },
           {
             "text": "nothing?",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Matthew 26 bilingual pass: nothing? ↔ Οὐδὲν"
           },
           {
             "text": "What",
@@ -45335,29 +45255,27 @@
           },
           {
             "text": "men",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew 26 bilingual pass: men ↔ οὗτοί"
           },
           {
             "text": "testifying",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
+            "ids": [
               "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Matthew 26 bilingual pass: testifying ↔ καταμαρτυροῦσιν;"
           },
           {
             "text": "against",
@@ -46100,16 +46018,15 @@
           },
           {
             "text": "remained",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
+            "ids": [
               "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew 26 bilingual pass: remained ↔ ἐσιώπα."
           },
           {
             "text": "silent.",
@@ -46298,19 +46215,15 @@
           },
           {
             "text": "oath",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Matthew 26 bilingual pass: oath ↔ Ἐξορκίζω"
           },
           {
             "text": "by",
@@ -46417,24 +46330,15 @@
           },
           {
             "text": "whether",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27",
-              "w28",
-              "w29"
+            "ids": [
+              "w23"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w23"
+            ],
+            "reason": "Matthew 26 bilingual pass: whether ↔ εἶ"
           },
           {
             "text": "you",
@@ -47379,15 +47283,15 @@
           },
           {
             "text": "Nevertheless",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Matthew 26 bilingual pass: Nevertheless ↔ πλὴν"
           },
           {
             "text": "I",
@@ -48333,20 +48237,15 @@
           },
           {
             "text": "tore",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew 26 bilingual pass: tore ↔ διέρρηξεν"
           },
           {
             "text": "his",
@@ -48434,17 +48333,15 @@
           },
           {
             "text": "further",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Matthew 26 bilingual pass: further ↔ ἔτι"
           },
           {
             "text": "need",
@@ -49521,15 +49418,15 @@
           },
           {
             "text": "fists,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew 26 bilingual pass: fists, ↔ ἐκολάφισαν"
           },
           {
             "text": "and",
@@ -50511,18 +50408,9 @@
             "text": "Now",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew 26 bilingual pass: English structural wording has no distinct safe Greek token",
+            "supplied": true
           },
           {
             "text": "Peter",
@@ -51879,17 +51767,15 @@
           },
           {
             "text": "gateway,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w4",
-              "w5",
+            "ids": [
               "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Matthew 26 bilingual pass: gateway, ↔ πυλῶνα"
           },
           {
             "text": "another",
@@ -52105,18 +51991,15 @@
           },
           {
             "text": "Nazarene.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
+            "ids": [
               "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew 26 bilingual pass: Nazarene. ↔ Ναζωραίου·"
           }
         ]
       }
@@ -53232,18 +53115,15 @@
           },
           {
             "text": "standing",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
+            "ids": [
               "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Matthew 26 bilingual pass: standing ↔ ἑστῶτες"
           },
           {
             "text": "there",
@@ -53318,18 +53198,15 @@
           },
           {
             "text": "Truly",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew 26 bilingual pass: Truly ↔ Ἀληθῶς"
           },
           {
             "text": "you",
@@ -53493,20 +53370,15 @@
           },
           {
             "text": "makes",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
+            "ids": [
               "w23"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w23"
+            ],
+            "reason": "Matthew 26 bilingual pass: makes ↔ ποιεῖ·"
           },
           {
             "text": "you",
@@ -53528,20 +53400,15 @@
           },
           {
             "text": "evident.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
+            "ids": [
+              "w21"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w21"
+            ],
+            "reason": "Matthew 26 bilingual pass: evident. ↔ δῆλόν"
           }
         ]
       }
@@ -54955,17 +54822,15 @@
           },
           {
             "text": "outside",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-semantic",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew 26 bilingual pass: outside ↔ ἔξω"
           },
           {
             "text": "and",
