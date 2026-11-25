@@ -6617,13 +6617,14 @@
           {
             "text": "And",
             "ids": [
-              "w5"
+              "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5"
-            ]
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 31: Opening connective renders δέ, not later καί"
           },
           {
             "text": "a",
@@ -6836,14 +6837,12 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w5"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 31: English coordination between 'stood up' and 'began arguing' has no separate Greek καί"
           },
           {
             "text": "began",
@@ -14475,14 +14474,12 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 31: English coordination between 'took' and 'brought' has no separate Greek καί"
           },
           {
             "text": "brought",
@@ -14642,14 +14639,12 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 31: English coordination before 'asked' has no separate Greek καί"
           },
           {
             "text": "asked",
@@ -14680,28 +14675,26 @@
           {
             "text": "to",
             "ids": [
-              "w15"
+              "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+              "w21"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 31: Infinitive marker before 'bring' belongs to ἀγαγεῖν"
           },
           {
             "text": "bring",
             "ids": [
-              "w6"
+              "w21"
             ],
             "after": " ",
-            "confidence": "acts-final-global-semantic",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6"
-            ]
+              "w21"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 31: Second 'bring' renders ἀγαγεῖν, not earlier ἤγαγεν"
           },
           {
             "text": "this",
@@ -14784,24 +14777,26 @@
           {
             "text": "he",
             "ids": [
-              "w17"
+              "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w17"
-            ]
+              "w24"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 31: Subject of 'he has something' is carried by ἔχοντα ('having')"
           },
           {
             "text": "has",
             "ids": [
-              "w26"
+              "w24"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w26"
-            ]
+              "w24"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 31: 'has something' renders ἔχοντα ('having')"
           },
           {
             "text": "something",
@@ -21261,14 +21256,12 @@
           },
           {
             "text": "them",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 31: Object in 'came upon them' is supplied by English; no second αὐτῶν"
           },
           {
             "text": "with",
@@ -21309,14 +21302,12 @@
           },
           {
             "text": "and",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 31: English coordination before 'rescued' has no separate Greek καί"
           },
           {
             "text": "rescued",
@@ -21331,14 +21322,12 @@
           },
           {
             "text": "him,",
-            "ids": [
-              "w19"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
-            "phraseIds": [
-              "w19"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 31: Object of 'rescued him' is the continuing man; μαθών belongs to the following 'having learned'"
           },
           {
             "text": "having",
