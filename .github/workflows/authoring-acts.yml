@@ -54,7 +54,7 @@ jobs:
         run: python scripts/repair-acts-final.py
       - name: Reapply reviewed master narrowing corrections
         run: python scripts/apply-master-reviewed-batch26.py
-      - name: Restore reviewed Acts alignments
+      - name: Restore reviewed Acts alignments before audit
         run: python scripts/preserve-reviewed-alignments.py restore acts /tmp/acts-reviewed.json
       - name: Audit Acts range
         run: python scripts/audit-acts.py
