@@ -627,11 +627,10 @@
           },
           {
             "text": "did",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "not",
@@ -10650,11 +10649,10 @@
         "dgt": [
           {
             "text": "Did",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "not",
@@ -12130,12 +12128,19 @@
             "confidence": "auto-high"
           },
           {
-            "text": "circumcision—not",
+            "text": "circumcision—",
+            "after": "",
             "ids": [
-              "w7",
+              "w7"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "not",
+            "after": " ",
+            "ids": [
               "w8"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
@@ -12203,12 +12208,19 @@
             "confidence": "auto-high"
           },
           {
-            "text": "fathers—and",
+            "text": "fathers—",
+            "after": "",
             "ids": [
-              "w17",
+              "w17"
+            ],
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "and",
+            "after": " ",
+            "ids": [
               "w18"
             ],
-            "after": " ",
             "confidence": "reviewed-precise"
           },
           {
@@ -26200,11 +26212,10 @@
           },
           {
             "text": "did",
-            "ids": [
-              "w17"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target"
           },
           {
             "text": "you",
