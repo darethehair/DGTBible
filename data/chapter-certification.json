@@ -743,11 +743,16 @@
       }
     },
     "john/20": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "88179021f6d74e196da86a9ea8ca5c2b596070e5",
       "reviewed_verses": "1–31",
       "corrections": 91,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "4892120d56fbd93c05796d8cf82605aac53163f6",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Out in 20:3 expresses the compound ἐξῆλθεν. Their own homes in 20:10 renders the reflexive destination idiom. There in 20:14 is situational, and the second sins in 20:23 restates an elliptical object, so it stays unlinked. Confirmed the repeated mentions of the tomb, peace, the marks, and the two purposes in 20:31. Split Rabboni and which at the existing dash.",
+        "chapter_sha256": "dee1e6d814de05c146a398c023dd7c84b0e4ec8f9808e70b76ac3bed40b2013c"
+      }
     },
     "john/21": {
       "status": "corrected-awaiting-verification",
@@ -757,9 +762,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/20",
+  "resume": "john/21",
   "verification_backlog": [
-    "john/20",
     "john/21"
   ],
   "mark_verification": {
