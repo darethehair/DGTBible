@@ -385,32 +385,52 @@
       }
     },
     "luke/14": {
-      "status": "corrected-awaiting-verification",
-      "commit": "5c9d228c406206c524466e924ae8dfbd5a1469c4",
-      "corrections": 209,
+      "status": "verified-awaiting-deployment",
+      "commit": "57f6045cf73b2b2600c0bb36fe688d6485a3d343",
+      "corrections": 228,
       "reviewed_verses": "1–35",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "57f6045cf73b2b2600c0bb36fe688d6485a3d343",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Reviewed legacy candidates in both directions. The objects supplied in 14:4 and 14:23 are implied by the verbs and preceding text. English expresses several Greek articles through possessives or leaves them implicit. Removed broad phrase-only fallbacks.",
+        "chapter_sha256": "dad7026036869bc24f3f6bcc5b5b0d7d4843db6432e4f8e092e03c11983f573a"
+      }
     },
     "luke/15": {
-      "status": "corrected-awaiting-verification",
-      "commit": "fa6645d5c9962d8377f8c00e34b1bc8f5204d636",
-      "corrections": 184,
+      "status": "verified-awaiting-deployment",
+      "commit": "57f6045cf73b2b2600c0bb36fe688d6485a3d343",
+      "corrections": 192,
       "reviewed_verses": "1–32",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "57f6045cf73b2b2600c0bb36fe688d6485a3d343",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Reviewed legacy candidates in both directions. Servant in 15:27 identifies the speaker from the preceding verse. The implied objects in 15:16 and 15:22 and the English subject of the impersonal verb in 15:32 have no separate Greek target. Removed broad phrase-only fallbacks.",
+        "chapter_sha256": "79b9ee67cddaecf1edb777cc41762a817a0a0b78ba1a7f691222603d918aa1f7"
+      }
     },
     "luke/16": {
-      "status": "corrected-awaiting-verification",
-      "commit": "504af156812e8357b385d71c036113c25b176fc8",
-      "corrections": 187,
+      "status": "verified-awaiting-deployment",
+      "commit": "57f6045cf73b2b2600c0bb36fe688d6485a3d343",
+      "corrections": 189,
       "reviewed_verses": "1–31",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "57f6045cf73b2b2600c0bb36fe688d6485a3d343",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Reviewed legacy candidates in both directions. In 16:26 the English indefinite subject expresses the implicit subject of the Greek plural verb. English indefinite articles and a copula in 16:12 have no distinct Greek target. Removed phrase-only fallbacks.",
+        "chapter_sha256": "fe588738ee546e6e707fe07cf3e3fe6e47d5e7a58a3885d42a32b757f25aa6fe"
+      }
     },
     "luke/17": {
-      "status": "corrected-awaiting-verification",
-      "commit": "cd759f704048cf453e7c09e82fca5dba8889df08",
-      "corrections": 166,
+      "status": "verified-awaiting-deployment",
+      "commit": "57f6045cf73b2b2600c0bb36fe688d6485a3d343",
+      "corrections": 177,
       "reviewed_verses": "1–37",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "57f6045cf73b2b2600c0bb36fe688d6485a3d343",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Reviewed legacy candidates in both directions. Restated conjunctions, English question auxiliaries and the implied copula in 17:31 have no separate Greek target. The paired Greek sky expressions in 17:24 are represented in the two corresponding English phrases. Removed broad phrase-only fallbacks.",
+        "chapter_sha256": "56d737b7831cf18580d4ccf9e1c90c0afb66ca4e210c1b055c2f6749a436a8bd"
+      }
     },
     "luke/18": {
       "status": "corrected-awaiting-verification",
@@ -462,12 +482,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/14",
+  "resume": "luke/18",
   "verification_backlog": [
-    "luke/14",
-    "luke/15",
-    "luke/16",
-    "luke/17",
     "luke/18",
     "luke/19",
     "luke/20",
