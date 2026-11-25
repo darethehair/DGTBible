@@ -563,11 +563,16 @@
       }
     },
     "john/05": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "08c82a9e683cceb683f5c11349019870f2cc280d",
       "reviewed_verses": "1–47",
       "corrections": 165,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "f38c9b9fa2b0ba70ef2d03e07028b7ea3cceea2c",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Distinguished the existential and locative occurrences of there at 5:5 and kept existential there supplied at 5:1–2. Thirty-eight correctly spans the Greek tens and units. The links for receive, people and when at 5:41 and 5:44 reflect contextual senses and participial syntax. Split three English tokens at existing dashes in 5:29 and 5:36 to stop adjacent words from highlighting together.",
+        "chapter_sha256": "4f715ac2b3517261889555e31ae4101eff0ba9086d4144b47a8ba598134bb4ef"
+      }
     },
     "john/06": {
       "status": "corrected-awaiting-verification",
@@ -682,9 +687,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/05",
+  "resume": "john/06",
   "verification_backlog": [
-    "john/05",
     "john/06",
     "john/07",
     "john/08",
