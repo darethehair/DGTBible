@@ -1915,16 +1915,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w20",
-              "w21",
-              "w22",
-              "w23"
+            "ids": [
+              "w22"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w22"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τοῦ"
           },
           {
             "text": "son",
@@ -3696,15 +3695,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "road",
@@ -3832,16 +3825,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "city",
@@ -6211,14 +6197,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "bag",
@@ -6459,19 +6440,15 @@
           },
           {
             "text": "of",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+            "ids": [
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τῆς"
           },
           {
             "text": "his",
@@ -10334,15 +10311,15 @@
           },
           {
             "text": "the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w14"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τῇ"
           },
           {
             "text": "day",
@@ -14269,18 +14246,15 @@
           },
           {
             "text": "of",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τοῦ"
           },
           {
             "text": "your",
@@ -14922,13 +14896,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "father",
@@ -15681,10 +15651,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to διὰ",
+            "phraseIds": [
+              "w6"
+            ]
           },
           {
             "text": "my",
@@ -26246,18 +26221,15 @@
           },
           {
             "text": "mother-in-law,",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
+            "ids": [
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w19"
+            ],
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to πενθερᾶς"
           }
         ]
       }
@@ -26465,8 +26437,9 @@
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual pass: supplied English indefinite article",
+            "supplied": true
           },
           {
             "text": "man's",
@@ -26525,10 +26498,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to τοῦ",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "his",
@@ -29109,10 +29087,15 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: direct Greek/literal correspondence to ἕνεκεν",
+            "phraseIds": [
+              "w14"
+            ]
           },
           {
             "text": "me",
