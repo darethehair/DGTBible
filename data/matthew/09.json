@@ -7428,19 +7428,15 @@
           },
           {
             "text": "table",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew bilingual audit: 'reclining at table' is carried by ἀνακειμένου"
           },
           {
             "text": "in",
@@ -22920,10 +22916,15 @@
           },
           {
             "text": "let",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: jussive 'let it be done' maps to γενηθήτω",
+            "phraseIds": [
+              "w11"
+            ]
           },
           {
             "text": "it",
