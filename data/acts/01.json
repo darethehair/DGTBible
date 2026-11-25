@@ -2823,14 +2823,12 @@
           },
           {
             "text": "he",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 30: Editorial 'he said' in the English quotation is supplied; it is not the earlier παρήγγειλεν"
           },
           {
             "text": "said,",
@@ -2871,13 +2869,14 @@
           {
             "text": "from",
             "ids": [
-              "w5"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5"
-            ]
+              "w17"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 30: 'from me' belongs with μου, not the earlier ἀπό before Jerusalem"
           },
           {
             "text": "me.",
