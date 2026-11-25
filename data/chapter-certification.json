@@ -361,11 +361,16 @@
       }
     },
     "luke/12": {
-      "status": "corrected-awaiting-verification",
-      "commit": "22b2d3d97f5cf3358e6c6e849b0359f20d39f32f",
-      "corrections": 339,
+      "status": "verified-awaiting-deployment",
+      "commit": "4d9464aaf34a07f392c231647bc736434890e201",
+      "corrections": 362,
       "reviewed_verses": "1–59",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "4d9464aaf34a07f392c231647bc736434890e201",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. More in 12:23 repeats the predicate from the first clause, serve in 12:37 supplies the purpose of girding, and every in 12:58 strengthens the effort idiom. The hypothetical repeats clothe in 12:28 by ellipsis. Removed broad phrase-only fallbacks.",
+        "chapter_sha256": "6ecc6760694c848c90cffbfb8780a6ff51f0ba8cc33390168593f832882cab64"
+      }
     },
     "luke/13": {
       "status": "corrected-awaiting-verification",
@@ -452,9 +457,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/12",
+  "resume": "luke/13",
   "verification_backlog": [
-    "luke/12",
     "luke/13",
     "luke/14",
     "luke/15",
