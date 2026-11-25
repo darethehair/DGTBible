@@ -1542,17 +1542,15 @@
           },
           {
             "text": "through",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Matthew bilingual audit: 'through' maps to διὰ"
           },
           {
             "text": "his",
@@ -1976,15 +1974,15 @@
           },
           {
             "text": "expect",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
+            "ids": [
               "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew bilingual audit: 'expect/look for' maps to προσδοκῶμεν"
           },
           {
             "text": "another?",
@@ -2989,14 +2987,14 @@
           {
             "text": "people",
             "ids": [
-              "w1"
+              "w9"
             ],
             "after": " ",
-            "confidence": "reviewed-bilingual-semantic",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w1"
+              "w9"
             ],
-            "reason": "Matthew bilingual pass: shared source correspondence 'people' ↔ τυφλοὶ"
+            "reason": "Matthew bilingual audit: 'deaf people' maps to κωφοὶ"
           },
           {
             "text": "see,",
@@ -3280,15 +3278,15 @@
           },
           {
             "text": "given",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
+            "ids": [
               "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew bilingual audit: 'good news is given/preached' maps to εὐαγγελίζονται"
           },
           {
             "text": "the",
@@ -3598,14 +3596,15 @@
           },
           {
             "text": "anyone",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew bilingual audit: relative 'anyone who' maps to ὃς"
           },
           {
             "text": "who",
@@ -3629,14 +3628,15 @@
           },
           {
             "text": "not",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Matthew bilingual audit: negation maps to μὴ"
           },
           {
             "text": "stumble",
@@ -5315,16 +5315,15 @@
           },
           {
             "text": "clothing?",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w9"
+            "ids": [
+              "w7"
             ],
-            "reason": "Automatic recovery candidate fell outside authored phrase span"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Matthew bilingual audit: 'soft clothing' maps to μαλακοῖς"
           },
           {
             "text": "Look,",
@@ -6726,19 +6725,9 @@
             "text": "am",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual audit: English copula in 'I am sending' is supplied by finite ἀποστέλλω",
+            "supplied": true
           },
           {
             "text": "sending",
@@ -7737,21 +7726,15 @@
           },
           {
             "text": "arisen",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w5"
+            ],
+            "reason": "Matthew bilingual audit: 'arisen/raised' maps to ἐγήγερται"
           },
           {
             "text": "anyone",
@@ -8825,17 +8808,15 @@
           },
           {
             "text": "advanced,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
+            "ids": [
               "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w14"
+            ],
+            "reason": "Matthew bilingual audit: kingdom 'advances/is taken by force' maps to βιάζεται"
           },
           {
             "text": "and",
@@ -8865,16 +8846,15 @@
           },
           {
             "text": "people",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18"
+            "ids": [
+              "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w16"
+            ],
+            "reason": "Matthew bilingual audit: 'forceful/violent people' maps to βιασταὶ"
           },
           {
             "text": "seize",
@@ -10029,16 +10009,15 @@
           },
           {
             "text": "let",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
+            "ids": [
               "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Matthew bilingual audit: jussive 'let him hear' maps to ἀκουέτω"
           },
           {
             "text": "him",
@@ -11129,15 +11108,15 @@
           },
           {
             "text": "flute",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4"
+            "ids": [
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Matthew bilingual audit: 'played the flute/piped' maps to Ηὐλήσαμεν"
           },
           {
             "text": "for",
@@ -11306,15 +11285,15 @@
           },
           {
             "text": "beat",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
+            "ids": [
               "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Matthew bilingual audit: 'beat/wail' maps to ἐκόψασθε"
           },
           {
             "text": "your",
@@ -11326,15 +11305,15 @@
           },
           {
             "text": "breasts.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
+            "ids": [
               "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w12"
+            ],
+            "reason": "Matthew bilingual audit: idiom 'beat the breasts/wail' maps to ἐκόψασθε"
           }
         ]
       }
@@ -12793,19 +12772,15 @@
           },
           {
             "text": "wine-drinker,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
+            "ids": [
               "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew bilingual audit: maps directly to οἰνοπότης"
           },
           {
             "text": "a",
@@ -12907,20 +12882,15 @@
           },
           {
             "text": "Yet",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25",
-              "w26",
-              "w27"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew bilingual audit: contrastive 'Yet/But' maps to καὶ here"
           },
           {
             "text": "wisdom",
@@ -13457,17 +13427,15 @@
           },
           {
             "text": "reproach",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w3"
+            ],
+            "reason": "Matthew bilingual audit: 'reproach/denounce' maps to ὀνειδίζειν"
           },
           {
             "text": "the",
@@ -13631,19 +13599,15 @@
           },
           {
             "text": "happened,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Matthew bilingual audit: 'happened/took place' maps to ἐγένοντο"
           },
           {
             "text": "because",
@@ -16496,23 +16460,15 @@
           },
           {
             "text": "done",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w20"
+            ],
+            "reason": "Matthew bilingual audit: 'done/happened' maps to γενόμεναι"
           },
           {
             "text": "in",
@@ -18158,21 +18114,15 @@
           },
           {
             "text": "praise",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w9"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w9"
+            ],
+            "reason": "Matthew bilingual audit: 'praise/acknowledge' maps to Ἐξομολογοῦμαί"
           },
           {
             "text": "you,",
@@ -18334,19 +18284,15 @@
           },
           {
             "text": "hid",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24"
+            "ids": [
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w19"
+            ],
+            "reason": "Matthew bilingual audit: maps directly to ἔκρυψας"
           },
           {
             "text": "these",
@@ -18519,16 +18465,15 @@
           },
           {
             "text": "infants.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w25",
-              "w26",
-              "w27",
+            "ids": [
               "w28"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w28"
+            ],
+            "reason": "Matthew bilingual audit: maps to νηπίοις"
           }
         ]
       }
@@ -19879,21 +19824,15 @@
           },
           {
             "text": "fully",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Matthew bilingual audit: 'fully knows' maps to ἐπιγινώσκει"
           },
           {
             "text": "knows",
@@ -20050,21 +19989,14 @@
           {
             "text": "anyone",
             "ids": [
-              "w20"
+              "w27"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23",
-              "w24",
-              "w25"
-            ]
+              "w27"
+            ],
+            "reason": "Matthew bilingual audit: 'anyone/to whom' maps to ᾧ"
           },
           {
             "text": "fully",
