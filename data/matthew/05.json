@@ -11177,23 +11177,17 @@
           {
             "text": "not",
             "ids": [
+              "w18",
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
               "w18",
               "w19",
-              "w20",
-              "w21",
-              "w22",
-              "w23"
-            ]
+              "w20"
+            ],
+            "reason": "Bilingual certification: emphatic negation 'not' carries οὐ μὴ"
           },
           {
             "text": "one",
@@ -22925,11 +22919,24 @@
           },
           {
             "text": "than",
-            "ids": [],
+            "ids": [
+              "w25",
+              "w26"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: comparative English 'than' renders Greek καὶ μὴ in the contrast",
+            "phraseIds": [
+              "w25",
+              "w26",
+              "w27",
+              "w28",
+              "w29",
+              "w30",
+              "w31",
+              "w32",
+              "w33"
+            ]
           },
           {
             "text": "that",
@@ -24383,11 +24390,24 @@
           },
           {
             "text": "than",
-            "ids": [],
+            "ids": [
+              "w24",
+              "w25"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: comparative English 'than' renders Greek καὶ μὴ in the contrast",
+            "phraseIds": [
+              "w24",
+              "w25",
+              "w26",
+              "w27",
+              "w28",
+              "w29",
+              "w30",
+              "w31",
+              "w32"
+            ]
           },
           {
             "text": "that",
