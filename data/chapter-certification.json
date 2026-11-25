@@ -241,11 +241,16 @@
       }
     },
     "luke/02": {
-      "status": "corrected-awaiting-verification",
-      "commit": "3a5bf9e9b86f5f062a7ed3082a85a738c816fc51",
-      "corrections": 294,
+      "status": "verified-awaiting-deployment",
+      "commit": "c14f1ccb81413894bb0923bf73dca466b3b73e1d",
+      "corrections": 300,
       "reviewed_verses": "1–52",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "c14f1ccb81413894bb0923bf73dca466b3b73e1d",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. Expletive it in 2:20, 2:23 and 2:26 and implied English articles remain unlinked. The Greek relative in 2:20 is expressed with everything. Luke 2:48 distinguishes I from anguish by their full source IDs. No phrase-only hover links remain.",
+        "chapter_sha256": "49dbadabd18b61c06a706fc6f5e5a21bfceee84b72744777d1a6c4050185b62d"
+      }
     },
     "luke/03": {
       "status": "corrected-awaiting-verification",
@@ -402,9 +407,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/02",
+  "resume": "luke/03",
   "verification_backlog": [
-    "luke/02",
     "luke/03",
     "luke/04",
     "luke/05",
