@@ -17993,11 +17993,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-article",
+            "reason": "Unused Greek article directly precedes the uniquely linked following English word",
+            "phraseIds": [
+              "w4"
+            ]
           },
           {
             "text": "child",
@@ -18896,11 +18900,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-article",
+            "reason": "Unused Greek article directly precedes the uniquely linked following English word",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "child",

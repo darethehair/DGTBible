@@ -7961,11 +7961,15 @@
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w17"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-article",
+            "reason": "Unused Greek article directly precedes the uniquely linked following English word",
+            "phraseIds": [
+              "w17"
+            ]
           },
           {
             "text": "kingdom",
