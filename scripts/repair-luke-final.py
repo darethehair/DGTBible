@@ -472,6 +472,7 @@ def apply_reviewed_precision_fixes(D,ch,vn):
 
 
 REVIEWED_SUPPLIED={
+ (15,6):[('his',1)],
  (11,12):[('if',1)],
  (11,25):[('the',1),('house',1)],
  (20,7):[('that',1)],
