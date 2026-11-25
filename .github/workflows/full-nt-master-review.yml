@@ -1,0 +1,31 @@
+name: Full NT master review
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/master-nt-review.py'
+      - '.github/workflows/full-nt-master-review.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dgt-full-nt-master-review
+  cancel-in-progress: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate scanner syntax
+        run: python -m py_compile scripts/master-nt-review.py
+      - name: Scan all 27 New Testament books
+        run: python scripts/master-nt-review.py
+      - name: Upload ranked master-review bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-nt-master-review
+          path: master-review/
+          retention-days: 14
