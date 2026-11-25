@@ -1395,17 +1395,15 @@
           },
           {
             "text": "Adramyttian",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Renders Ἀδραμυττηνῷ directly"
           },
           {
             "text": "ship",
@@ -1422,26 +1420,22 @@
             "text": "that",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "reason": "Human-reviewed full-NT master pass batch 36: Relative connector supplied in English",
+            "supplied": true
           },
           {
             "text": "was",
             "ids": [
-              "w14"
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w14"
-            ]
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Auxiliary in 'was about to sail' belongs to μέλλοντι, not later ὄντος"
           },
           {
             "text": "about",
@@ -1460,14 +1454,11 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Infinitival marker with πλεῖν"
           },
           {
             "text": "sail",
@@ -1475,29 +1466,23 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Renders πλεῖν"
           },
           {
             "text": "to",
             "ids": [
-              "w6"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Destination preposition before places renders εἰς"
           },
           {
             "text": "places",
@@ -1534,26 +1519,19 @@
             "text": "coast",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "reason": "Human-reviewed full-NT master pass batch 36: English expansion of 'places along Asia'; no separate Greek lexical item",
+            "supplied": true
           },
           {
             "text": "of",
-            "ids": [
-              "w4"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "supplied": true,
+            "reason": "Human-reviewed full-NT master pass batch 36: English glue in 'coast of Asia'"
           },
           {
             "text": "Asia,",
@@ -1583,39 +1561,35 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Part of 'put to sea' rendering of ἀνήχθημεν"
           },
           {
             "text": "to",
             "ids": [
-              "w7"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7"
-            ]
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Part of idiomatic 'put to sea' rendering of ἀνήχθημεν"
           },
           {
             "text": "sea,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
+            "ids": [
+              "w13"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Part of idiomatic 'put to sea' rendering of ἀνήχθημεν"
           },
           {
             "text": "with",
@@ -10442,14 +10416,11 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Article with ship without unrelated phrase span"
           },
           {
             "text": "ship",
@@ -10514,14 +10485,11 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
               "w8"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Infinitival marker with ἀντοφθαλμεῖν"
           },
           {
             "text": "face",
@@ -10549,14 +10517,11 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
               "w9"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Article/preposition element with wind without unrelated phrase span"
           },
           {
             "text": "wind,",
@@ -10572,13 +10537,14 @@
           {
             "text": "we",
             "ids": [
-              "w12"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w12"
-            ]
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Subject of 'we gave way' is carried by participle ἐπιδόντες, leaving ἐφερόμεθα for 'were driven along'"
           },
           {
             "text": "gave",
@@ -19551,15 +19517,10 @@
             "text": "that",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-master-supplied",
+            "phraseIds": [],
+            "reason": "Human-reviewed full-NT master pass batch 36: English complementizer supplied for μή-clause",
+            "supplied": true
           },
           {
             "text": "we",
@@ -19567,63 +19528,59 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w8"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Subject carried by ἐκπέσωμεν"
           },
           {
             "text": "might",
             "ids": [
-              "w1"
+              "w8"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1"
-            ]
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Modal force of subjunctive ἐκπέσωμεν"
           },
           {
             "text": "run",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Part of contextual rendering of ἐκπέσωμεν"
           },
           {
             "text": "aground",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w8"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Part of contextual rendering of ἐκπέσωμεν"
           },
           {
             "text": "somewhere",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w4"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Renders που"
           },
           {
             "text": "on",
@@ -19661,13 +19618,14 @@
           {
             "text": "they",
             "ids": [
-              "w14"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w14"
-            ]
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Subject of 'they threw' is carried by participle ῥίψαντες, not later ηὔχοντο"
           },
           {
             "text": "threw",
@@ -19675,14 +19633,11 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
               "w11"
-            ]
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Renders ῥίψαντες without unrelated phrase span"
           },
           {
             "text": "four",
@@ -24475,13 +24430,14 @@
           {
             "text": "they",
             "ids": [
-              "w7"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Subject of 'they became encouraged' is carried by γενόμενοι"
           },
           {
             "text": "all",
@@ -24497,17 +24453,14 @@
           {
             "text": "became",
             "ids": [
-              "w1"
+              "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-compound-state",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+              "w3"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 36: Renders γενόμενοι, while εὔθυμοι supplies 'encouraged'"
           },
           {
             "text": "encouraged",
