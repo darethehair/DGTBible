@@ -707,11 +707,16 @@
       }
     },
     "john/17": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "77e706877c1d50a51b4b285d3108701dabcaaacb",
       "reviewed_verses": "1–26",
       "corrections": 58,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "bf9a92fe61ed0a9254b7a490d38dd83e81903ec3",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Verified the repeated clauses about the world, the distinct instances of give and keep, and each purpose clause in 17:21–23. Supplied English copulas at 17:11, 17:21 and 17:22 have no separate source token. At 17:24 the fronted Greek relative is rendered with what and English concerning is supplied.",
+        "chapter_sha256": "74353bc4740ee9028ce7bdd22fe44b5753eb49ed6357a5ea006d725ff2c8899b"
+      }
     },
     "john/18": {
       "status": "corrected-awaiting-verification",
@@ -742,9 +747,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/17",
+  "resume": "john/18",
   "verification_backlog": [
-    "john/17",
     "john/18",
     "john/19",
     "john/20",
