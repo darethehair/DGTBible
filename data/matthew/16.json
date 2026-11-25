@@ -379,11 +379,15 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Targeted review of explicit Greek conjunction in its clause",
+            "phraseIds": [
+              "w1"
+            ]
           },
           {
             "text": "the",
@@ -417,11 +421,15 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Targeted review of explicit Greek conjunction in its clause",
+            "phraseIds": [
+              "w5"
+            ]
           },
           {
             "text": "Sadducees",
