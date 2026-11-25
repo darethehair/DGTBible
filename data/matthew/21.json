@@ -14021,10 +14021,15 @@
           },
           {
             "text": "returning",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'returning/coming back' maps to ἐπανάγων",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "to",
@@ -21375,18 +21380,17 @@
           },
           {
             "text": "John—from",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
+            "ids": [
               "w4",
-              "w5",
-              "w6"
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w4",
+              "w5"
+            ],
+            "reason": "Matthew bilingual audit: combined 'John—from' maps to Ἰωάννου + πόθεν"
           },
           {
             "text": "where",
@@ -37256,10 +37260,15 @@
           },
           {
             "text": "pieces,",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'broken to pieces' is carried by συνθλασθήσεται",
+            "phraseIds": [
+              "w8"
+            ]
           },
           {
             "text": "but",
@@ -38406,14 +38415,9 @@
             "text": "although",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual audit: concessive 'although' is supplied by English restructuring",
+            "supplied": true
           },
           {
             "text": "they",
