@@ -349,11 +349,16 @@
       }
     },
     "luke/11": {
-      "status": "corrected-awaiting-verification",
-      "commit": "e9786574609383918669a486ff2e7f953dd215e8",
-      "corrections": 328,
+      "status": "verified-awaiting-deployment",
+      "commit": "df4aeb7da2f541f3e1b2bbef0b2b0b3346a76d4d",
+      "corrections": 353,
       "reviewed_verses": "1–54",
-      "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
+      "final_verification": {
+        "commit": "df4aeb7da2f541f3e1b2bbef0b2b0b3346a76d4d",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Legacy candidates reviewed. Divided in the second clause of 11:17 and tombs in 11:48 are understood from context. Jesus in 11:38 supplies an unexpressed subject. Distinct article and light IDs were checked at 11:33. Removed broad phrase-only fallbacks.",
+        "chapter_sha256": "b900c49695ece202a4d4b4686fbb9ba01f0b9a6e5a2dc60316bbaef07a2164f2"
+      }
     },
     "luke/12": {
       "status": "corrected-awaiting-verification",
@@ -447,9 +452,8 @@
       "verification_note": "Wording, token boundaries and source IDs checked against main. Final bilingual verification and legacy audit review remain pending."
     }
   },
-  "resume": "luke/11",
+  "resume": "luke/12",
   "verification_backlog": [
-    "luke/11",
     "luke/12",
     "luke/13",
     "luke/14",
