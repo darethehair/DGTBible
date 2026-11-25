@@ -1000,20 +1000,16 @@
           {
             "text": "on",
             "ids": [
-              "w23"
+              "w20"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
               "w20",
               "w21",
-              "w22",
-              "w23",
-              "w24"
-            ]
+              "w22"
+            ],
+            "reason": "Bilingual certification: 'on a high mountain' renders εἰς ὄρος ὑψηλόν"
           },
           {
             "text": "a",
@@ -1852,21 +1848,17 @@
           {
             "text": "his",
             "ids": [
-              "w17"
+              "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-literal-bundled-pronoun",
+            "confidence": "reviewed-bilingual-precise",
             "phraseIds": [
               "w13",
               "w14",
               "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+              "w16"
+            ],
+            "reason": "Bilingual certification: second 'his' renders αὐτοῦ after ἱμάτια"
           },
           {
             "text": "clothes",
@@ -6334,19 +6326,16 @@
           {
             "text": "Jesus",
             "ids": [
+              "w10",
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
               "w10",
-              "w11",
-              "w12"
-            ]
+              "w11"
+            ],
+            "reason": "Bilingual certification: object 'Jesus' carries αὐτὸν Ἰησοῦν"
           },
           {
             "text": "alone.",
@@ -10177,11 +10166,18 @@
           },
           {
             "text": "about",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: 'about John' renders περὶ Ἰωάννου",
+            "phraseIds": [
+              "w6",
+              "w7",
+              "w8",
+              "w9"
+            ]
           },
           {
             "text": "John",
@@ -14457,21 +14453,16 @@
           {
             "text": "privately",
             "ids": [
+              "w7",
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
               "w7",
-              "w8",
-              "w9"
-            ]
+              "w8"
+            ],
+            "reason": "Bilingual certification: 'privately' renders κατʼ ἰδίαν"
           },
           {
             "text": "and",
@@ -14503,19 +14494,16 @@
           {
             "text": "Why",
             "ids": [
+              "w10",
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
               "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+              "w11"
+            ],
+            "reason": "Bilingual certification: 'Why' renders Διὰ τί"
           },
           {
             "text": "were",
@@ -19358,22 +19346,18 @@
           {
             "text": "entered",
             "ids": [
-              "w5"
+              "w5",
+              "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
-              "w3",
               "w5",
               "w6",
               "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+              "w8"
+            ],
+            "reason": "Bilingual certification: transitive English 'entered the house' absorbs εἰς"
           },
           {
             "text": "the",
@@ -19547,11 +19531,16 @@
           },
           {
             "text": "From",
-            "ids": [],
+            "ids": [
+              "w22"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: first 'From whom' renders ἀπὸ τίνων",
+            "phraseIds": [
+              "w22",
+              "w23"
+            ]
           },
           {
             "text": "whom",
@@ -19863,11 +19852,17 @@
           },
           {
             "text": "from",
-            "ids": [],
+            "ids": [
+              "w33"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-semantic",
+            "reason": "Bilingual certification: final 'from strangers' renders ἀπὸ τῶν ἀλλοτρίων",
+            "phraseIds": [
+              "w33",
+              "w34",
+              "w35"
+            ]
           },
           {
             "text": "strangers?",
@@ -20409,18 +20404,16 @@
           {
             "text": "Then",
             "ids": [
-              "w13"
+              "w13",
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-bilingual-semantic",
             "phraseIds": [
               "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ]
+              "w14"
+            ],
+            "reason": "Bilingual certification: emphatic Ἄρα γε is rendered by 'Then'"
           },
           {
             "text": "the",
