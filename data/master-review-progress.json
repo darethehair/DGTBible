@@ -6,11 +6,12 @@
     "books_scanned": 27,
     "verses_scanned": 7939,
     "dgt_tokens_scanned": 174408,
-    "suspicious_interactions": 1691,
+    "suspicious_interactions": 1818,
     "by_kind": {
-      "precise-scattered": 961,
+      "precise-fanout": 20,
+      "precise-scattered": 1053,
       "unique-unlinked-content": 69,
-      "unused-greek-with-rendering": 661
+      "unused-greek-with-rendering": 676
     },
     "by_book": {
       "Matthew": {
@@ -28,8 +29,9 @@
         "unique_unlinked_content": 36
       },
       "Luke": {
-        "precise_scattered": 313,
-        "unused_greek_with_rendering": 143
+        "precise_scattered": 365,
+        "unused_greek_with_rendering": 154,
+        "precise_fanout": 15
       },
       "John": {
         "unused_greek_with_rendering": 38,
@@ -39,8 +41,9 @@
         "unique_unlinked_content": 4
       },
       "Acts": {
-        "precise_scattered": 274,
-        "unused_greek_with_rendering": 60
+        "precise_scattered": 314,
+        "precise_fanout": 5,
+        "unused_greek_with_rendering": 64
       },
       "Romans": {
         "unlinked_content_no_candidate": 464,
