@@ -6765,11 +6765,15 @@
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-bilingual-supplied",
-            "reason": "Matthew bilingual pass: English structural word has no distinct safe Greek token; broad fallback removed",
-            "supplied": true
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Bilingual certification: 'and pray' renders καὶ",
+            "phraseIds": [
+              "w10"
+            ]
           },
           {
             "text": "pray",
