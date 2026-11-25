@@ -695,11 +695,16 @@
       }
     },
     "john/16": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "0b9135826aa408007bc4de4b8812f75ab06dca00",
       "reviewed_verses": "1–33",
       "corrections": 102,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "ff696b632691468d6e934220dc72fd4be8d2d4cf",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Going, takes, figures, and not at 16:10, 16:15, 16:25 and 16:29 are supported by the Greek in context. Confirmed both occurrences of παροιμίαις, both emphatic negatives in 16:7, and the repeated references to seeing and departure. Kept the correct token IDs when the source numbering has both w19 and s19.",
+        "chapter_sha256": "32ad0902499d719ef0a0ca2479648c8d09b6c62de442af750ebdd46178f29502"
+      }
     },
     "john/17": {
       "status": "corrected-awaiting-verification",
@@ -737,9 +742,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/16",
+  "resume": "john/17",
   "verification_backlog": [
-    "john/16",
     "john/17",
     "john/18",
     "john/19",
