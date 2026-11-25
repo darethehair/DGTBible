@@ -43,7 +43,13 @@ FIXES={
 changed={}
 for (slug,ch,vnum),edits in FIXES.items():
     path=ROOT/'data'/slug/f'{ch:02}.json'
-    d=json.loads(path.read_text(encoding='utf8'))
+    # Multiple reviewed verses can live in the same chapter. Reuse the
+    # already-modified in-memory document so a later verse cannot overwrite
+    # an earlier repair from the same file.
+    d=changed.get(path)
+    if d is None:
+        d=json.loads(path.read_text(encoding='utf8'))
+        changed[path]=d
     verse=next((v for v in d['verses'] if v['v']==vnum),None)
     if verse is None: raise SystemExit(f'missing verse {slug} {ch}:{vnum}')
     D=verse['alignment']['dgt']
@@ -55,7 +61,6 @@ for (slug,ch,vnum),edits in FIXES.items():
         D[idx].pop('phraseIds',None)
         D[idx]['confidence']='reviewed-master-precise' if new_ids else 'reviewed-master-unaligned'
         D[idx]['reason']='Human-reviewed full-NT master pass'
-    changed[path]=d
 
 for path,d in changed.items():
     path.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
