@@ -9763,10 +9763,15 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual pass: linked 'to' to πρὸς by direct Greek/literal correspondence",
+            "phraseIds": [
+              "w7"
+            ]
           },
           {
             "text": "their",
