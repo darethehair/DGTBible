@@ -11942,17 +11942,15 @@
           },
           {
             "text": "brothers—the",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w11"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 56: Renders ἀδελφῶν within punctuation-bound token"
           },
           {
             "text": "number",
@@ -12058,17 +12056,15 @@
           },
           {
             "text": "twenty—and",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "s20",
-              "w21",
+            "ids": [
               "w22"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w22"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 56: Renders εἴκοσι within punctuation-bound token"
           },
           {
             "text": "said,",
@@ -14013,12 +14009,15 @@
           },
           {
             "text": "from",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w6"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 56: Renders ἐκ in 'from the reward'"
           },
           {
             "text": "the",

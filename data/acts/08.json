@@ -4559,17 +4559,17 @@
           },
           {
             "text": "voice—and",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
+            "ids": [
+              "w8",
+              "w12"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w8",
+              "w12"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 56: Punctuation-bound token carries φωνῇ and discourse δὲ rendered as 'and'"
           },
           {
             "text": "many",
@@ -6319,17 +6319,15 @@
           },
           {
             "text": "greatest,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 56: Renders μεγάλου in 'from the least to the greatest'"
           },
           {
             "text": "were",
@@ -15440,13 +15438,16 @@
           {
             "text": "answered,",
             "ids": [
-              "w1"
+              "w1",
+              "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w1"
-            ]
+              "w1",
+              "w5"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 56: English 'answered' compresses ἀποκριθείς ... εἶπεν ('answering ... said')"
           },
           {
             "text": "“You",
@@ -23287,17 +23288,17 @@
           },
           {
             "text": "responded",
-            "ids": [],
+            "ids": [
+              "w1",
+              "w7"
+            ],
             "after": " ",
-            "confidence": "authored-phrase-only",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "reason": "Human-reviewed full-NT master pass batch 56: English 'responded' compresses ἀποκριθείς ... εἶπεν"
           },
           {
             "text": "to",
@@ -25564,17 +25565,16 @@
           {
             "text": "both",
             "ids": [
-              "w8"
+              "w8",
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w6",
-              "w7",
               "w8",
-              "w9",
-              "w10"
-            ]
+              "w13"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 56: Single English 'both' carries ἀμφότεροι and the later τε ... καί correlative"
           },
           {
             "text": "of",
