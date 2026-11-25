@@ -1,11 +1,17 @@
 # DGTBible
 
-Experimental original-language Bible PWA with the **DGT — Direct Greek Translation**.
+Original-language New Testament PWA featuring the **DGT — Direct Greek Translation**.
 
-## Current prototype
+## Open the app
+
+**[Launch DGTBible on GitHub Pages](https://darethehair.github.io/DGTBible/)**
+
+Install it as a PWA in a supported browser, or use it directly in the browser.
+
+## Current edition
 
 - Installable static PWA; no API key and no runtime AI cost.
-- **24 of 27 New Testament books are complete** with SBLGNT Greek, literal Greek-order English, fresh DGT English, and linked alignment data. Matthew 1–28 is complete; the remaining books are Mark, Luke, and Acts.
+- **All 27 New Testament books are complete** with SBLGNT Greek, literal Greek-order English, fresh DGT English, and linked alignment data.
 - **SBLGNT** Greek base text, licensed under CC BY 4.0.
 - DGT English translation stored locally alongside each verse.
 - Linked Greek/transliteration/literal/DGT highlighting across the completed books, assisted by pinned STEPBible TAGNT word data.
@@ -60,15 +66,15 @@ DGT translation and notes are separate original project content.
 
 ## Status
 
-Experimental study edition; not a formally published or peer-reviewed critical edition.
+DGTBible now contains the complete New Testament and is usable as a reading and study edition. Alignment quality and interface features continue to be refined through corpus-wide QA and review.
+
+DGT is an independently produced study translation with AI assistance; it is not a formally published or peer-reviewed critical edition.
 
 ## Data validation
 
-Before deployment, GitHub Actions runs `node scripts/validate-john.mjs`. It checks chapter/verse coverage, alignment reconstruction, alignment IDs, preserved STEPBible source coverage and metadata consistency, and curated overrides. John 1:1 is stored as a protected hand-curated override in `data/john/curated-overrides.json`; after any generated alignment pass, run `node scripts/apply-curated-overrides.mjs` before validation.
+GitHub Actions validates the generated New Testament data before deployment. The checks include chapter/verse coverage, alignment reconstruction, source-ID integrity, semantic alignment sanity, structural hover breadth, and corpus-level checks for suspicious missing or overly broad links.
 
-The deployment also runs a semantic alignment audit that flags suspicious reuse of a Greek word ID across separated English phrases. Reviewed legitimate split phrases are kept in `data/john/semantic-audit-allowlist.json`; any new high-risk case fails CI until reviewed.
-
-John 3 was added as the first pilot chapter generated under the structural + semantic QA pipeline before scaling to the rest of John.
+Reviewed exceptions and precision repairs are stored explicitly so later regeneration does not silently discard earlier human-reviewed decisions. Ambiguous cases are preferred as unlinked or explicitly supplied English rather than being forced into misleading Greek-word links.
 
 ## Alignment safety
 
