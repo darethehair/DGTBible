@@ -1,0 +1,47 @@
+name: Apply forty-first reviewed master batch
+on:
+  push:
+    paths:
+      - 'scripts/apply-master-reviewed-batch41.py'
+      - '.github/workflows/apply-master-reviewed-batch41.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: dgt-master-cleanup
+  cancel-in-progress: false
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply reviewed corrections
+        run: python scripts/apply-master-reviewed-batch41.py
+      - name: Validate full Acts
+        env:
+          START_CHAPTER: '1'
+          END_CHAPTER: '28'
+        run: python scripts/audit-acts.py
+      - name: Rescan full NT
+        run: python scripts/master-nt-review.py
+      - name: Commit reviewed batch
+        run: |
+          git config user.name "DGTBible alignment bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/acts
+          if ! git diff --cached --quiet; then
+            git commit -m "Apply forty-first reviewed NT master alignment batch"
+            for attempt in 1 2 3; do
+              if git pull --rebase origin main && git push; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep $((attempt*2))
+            done
+          fi
+      - name: Dispatch conservative checkpoint refresh
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run conservative-master-cleanup.yml --ref main
