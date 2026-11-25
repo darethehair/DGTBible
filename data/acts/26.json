@@ -7007,14 +7007,11 @@
           {
             "text": "my",
             "after": " ",
-            "ids": [
-              "w24"
-            ],
-            "phraseIds": [
-              "w24"
-            ],
-            "confidence": "reviewed-master-precise",
-            "reason": "Reviewed first-person bundle: 'my vote' is supplied by κατήνεγκα ('I cast')"
+            "ids": [],
+            "phraseIds": [],
+            "confidence": "reviewed-master-supplied",
+            "reason": "Reviewed supplied possessive: Greek has 'I cast a vote'; 'my' is natural English, not a separate source token",
+            "supplied": true
           },
           {
             "text": "vote",
