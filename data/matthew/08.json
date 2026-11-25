@@ -22570,10 +22570,15 @@
           },
           {
             "text": "away",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-precise",
+            "reason": "Matthew bilingual audit: 'far away' maps together to μακρὰν",
+            "phraseIds": [
+              "w3"
+            ]
           },
           {
             "text": "from",
@@ -25104,14 +25109,9 @@
             "text": "happened",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-bilingual-supplied",
+            "reason": "Matthew bilingual audit: English 'happened' is supplied in the idiomatic rendering",
+            "supplied": true
           },
           {
             "text": "to",
@@ -25151,16 +25151,15 @@
           },
           {
             "text": "men.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
+            "ids": [
               "w15"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-bilingual-precise",
+            "phraseIds": [
+              "w15"
+            ],
+            "reason": "Matthew bilingual audit: plural demon-possessed people maps to δαιμονιζομένων"
           }
         ]
       }
