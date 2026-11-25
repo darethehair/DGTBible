@@ -9848,13 +9848,14 @@
           {
             "text": "also,",
             "ids": [
-              "w23"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w23"
-            ]
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 54: Renders καί modifying 'in Berea also'; κἀκεῖ supplies later 'there too'"
           },
           {
             "text": "they",
@@ -16686,17 +16687,16 @@
           {
             "text": "something",
             "ids": [
-              "w14"
+              "w14",
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-phrase-positional",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
               "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ]
+              "w17"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 54: Single English 'something' serves both coordinated Greek τι objects"
           },
           {
             "text": "new.",
@@ -22310,17 +22310,15 @@
           },
           {
             "text": "even",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
+            "ids": [
+              "w10"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 54: Renders καί adverbially as 'even'"
           },
           {
             "text": "some",
@@ -24504,12 +24502,15 @@
         "dgt": [
           {
             "text": "because",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w1"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 54: Renders καθότι contextually as causal 'because'"
           },
           {
             "text": "he",

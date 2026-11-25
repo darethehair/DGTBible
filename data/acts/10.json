@@ -1299,17 +1299,15 @@
           },
           {
             "text": "continually.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
+            "ids": [
               "w22"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w22"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 54: Renders διὰ παντός idiomatically as 'continually'"
           }
         ]
       }
@@ -1841,17 +1839,15 @@
           },
           {
             "text": "hour",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 54: Renders ὥραν"
           },
           {
             "text": "of",
@@ -17076,17 +17072,14 @@
           {
             "text": "myself",
             "ids": [
-              "w9"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-phrase-positional",
+            "confidence": "reviewed-master-precise",
             "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+              "w10"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 54: Renders emphatic αὐτός"
           },
           {
             "text": "also",
@@ -18930,12 +18923,15 @@
           },
           {
             "text": "So",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w7"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 54: Second discourse connective renders οὖν"
           },
           {
             "text": "I",
@@ -21995,12 +21991,15 @@
         "dgt": [
           {
             "text": "So",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-master-precise",
+            "phraseIds": [
+              "w2"
+            ],
+            "reason": "Human-reviewed full-NT master pass batch 54: Opening οὖν rendered as 'So'"
           },
           {
             "text": "I",
