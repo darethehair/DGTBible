@@ -671,11 +671,16 @@
       }
     },
     "john/14": {
-      "status": "corrected-awaiting-verification",
+      "status": "verified-awaiting-deployment",
       "commit": "8f85b311b9f6784ef1d92d16905394464f6a7adf",
       "reviewed_verses": "1–31",
       "corrections": 87,
-      "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
+      "final_verification": {
+        "commit": "f255d1a0dfd8e550a30d321af0a16aed29db78ed",
+        "method": "Bilingual comparison in both directions, legacy candidate and hover review, reconstruction, and source-ID regression",
+        "legacy_audit": "Where at 14:4 renders ὅπου, commands at 14:15 renders ἐντολάς, and while at 14:25 reflects the simultaneous participial construction. Confirmed the two occurrences of seeing in 14:9 and the distinct occurrences of Father, works, love, and peace. English copulas in 14:11 and 14:20 are supplied where the Greek is elliptical.",
+        "chapter_sha256": "878ad7f4f2fd7dd25cbfccea730a59d86603f0f99599ffc7b2e20499acdd8946"
+      }
     },
     "john/15": {
       "status": "corrected-awaiting-verification",
@@ -727,9 +732,8 @@
       "verification_note": "Compared Greek and DGT in both directions. Wording and source IDs checked against main. Final bilingual verification pending."
     }
   },
-  "resume": "john/14",
+  "resume": "john/15",
   "verification_backlog": [
-    "john/14",
     "john/15",
     "john/16",
     "john/17",
