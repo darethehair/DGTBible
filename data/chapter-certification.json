@@ -947,9 +947,16 @@
       "chapter_sha256": "85331a1ef903da3cc25b558bb0c072556855abc3200d8a3a5156945bb1f0d03c",
       "scope": "Reviewed all 32 verses in both directions, including Paul’s defense, the account of his calling, and the exchange with Agrippa and Festus.",
       "regression": "Verse reconstruction, alignment structure, and Acts 1–26 audit passed."
+    },
+    "acts/27": {
+      "status": "corrected",
+      "commit": "87f84f6",
+      "chapter_sha256": "c73c1d17bf4ee79cf2c030f6c52e87232232be929208aca6cf89757341d21fec",
+      "scope": "Reviewed all 44 verses in both directions, including sailing and shipwreck idioms, the repeated words for successive actions, and wording supplied from context.",
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–27 audit passed."
     }
   },
-  "resume": "acts/27",
+  "resume": "acts/28",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -976,7 +983,8 @@
     "acts/23",
     "acts/24",
     "acts/25",
-    "acts/26"
+    "acts/26",
+    "acts/27"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
