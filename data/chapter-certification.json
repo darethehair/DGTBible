@@ -3046,5 +3046,40 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all six public 1 Timothy chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "2timothy_verification": {
+    "commit": "cf6cca1f011ba49899b88687bb6630529124b400",
+    "verses": 83,
+    "app_version": "v0.82",
+    "cache": "dgtbible-v092",
+    "structural_regression": "All four chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 94.5%.",
+    "semantic_regression": "The full 2 Timothy audit passed with 56 scoped exceptions and no unexplained exact, pronoun, synthetic or content-word candidates. The critical sanity audit reported no 2 Timothy candidates.",
+    "hover_regression": "Reviewed 13 diagnostic cases for valid inflection, shared objects and government. Sixteen bidirectional Chromium checks passed, including the distinct fourfold for in 3:16.",
+    "reviewed_hover_flags": [
+      "1:8 w3 ἐπαισχυνθῇς 1:do 3:be 4:ashamed 5:of 12:of",
+      "4:4 w8 ἀποστρέψουσιν, 1:they 2:will 3:turn 6:away",
+      "4:6 w4 σπένδομαι, 2:am 4:being 5:poured 6:out,",
+      "2:11 w8 συζήσομεν· 10:we 11:will 13:live 14:with",
+      "2:12 w4 συμβασιλεύσομεν· 3:we 4:will 6:reign 7:with",
+      "1:17 w6 ἐζήτησέν 6:he 8:searched 9:for",
+      "2:6 w8 μεταλαμβάνειν. 8:to 9:receive 11:share",
+      "4:16 w15 λογισθείη— 13:May 16:be 17:counted",
+      "2:19 w18 Ἀποστήτω 16:Let 25:depart",
+      "4:18 w3 με 4:me 11:me",
+      "1:17 w7 με 10:me 13:me.",
+      "2:15 w9 ὀρθοτομοῦντα 16:handling 21:correctly.",
+      "4:15 w7 ἀντέστη 7:he 9:opposed"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "3:9 evident is implicit after became; the earlier Greek adjective is only expressed in the first clause.",
+      "3:13 bad is supplied in the English expansion from bad to worse. The Greek comparative renders worse."
+    ],
+    "reviewed_advisory_unused_greek": "No unused meaningful Greek tokens were flagged.",
+    "chapter_sha256": {
+      "2timothy/01": "408b749ac17a09e13c3451dc2bebbb8c752e165f5c51b4c88770833d2f2d1171",
+      "2timothy/02": "d6b23456144ccec5afc3371c18efda2d8f196c3d9eaa09b84874255071812602",
+      "2timothy/03": "6ac076c43bb9099050e0a4b6448319deb7f00286442f95432e52970a8a99099f",
+      "2timothy/04": "04eb54ac3419dae5c6cc70a5032da067eb584a50eb9a78aa10ef453f6a786efe"
+    }
   }
 }
