@@ -2678,7 +2678,7 @@
       }
     },
     "3john/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "61e807eca628d5d348c24732a6e70e62454d1451",
       "chapter_sha256": "d0a3bc4321d7c825c73252dd91998dfd33d37b4f68fc8b47a06077d7027d2334",
       "scope": "Reviewed all 15 verses in both directions. Matched all repeated forms in 15 verses, corrected pronouns and dative prepositions, and preserved each instance of face to face and the closing greetings.",
@@ -2691,7 +2691,7 @@
       }
     }
   },
-  "resume": "3john",
+  "resume": "jude/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2708,7 +2708,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -3953,6 +3953,14 @@
       "3john/01": "d0a3bc4321d7c825c73252dd91998dfd33d37b4f68fc8b47a06077d7027d2334"
     },
     "local_pages_validation": "Every required Pages validation passed. The preflight checked all 209 recorded chapter hashes and release preparation preserved all 237 reviewed and preserved chapter files byte-for-byte.",
-    "hover_regression": "Reviewed 0 structural hover diagnostics and passed 10 bidirectional Chromium checks."
+    "hover_regression": "Reviewed 0 structural hover diagnostics and passed 10 bidirectional Chromium checks.",
+    "deployment": {
+      "commit": "38d518fa1143ef9c4612869b376390fec1b53c86",
+      "app_version": "v0.91",
+      "cache": "dgtbible-v101",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45825433433",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all 1 public 3 John chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
