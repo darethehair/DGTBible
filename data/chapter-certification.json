@@ -1027,11 +1027,17 @@
       }
     },
     "acts/21": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "8bea14c",
       "chapter_sha256": "9f340793e67b738e37dc7b498decd2f2b4ae1faec874db545549a1c7148853ff",
       "scope": "Reviewed all 40 verses in both directions, correcting travel expressions, speech and reported commands, repeated articles and prepositions, and legitimate supplied wording.",
-      "regression": "Verse reconstruction, alignment structure, and Acts 1–21 audit passed."
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–21 audit passed.",
+      "final_verification": {
+        "commit": "975ad22cb62cb08257bdead749341a005afc649d",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 40 verses, including changes of speaker, repeated travel and arrest terms, and the distinction between Greek subjects and English existential or repeated pronouns.",
+        "chapter_sha256": "ab55275917767ce4043a2e469dc839aa544b823437ff6177c169c155e9ae4ae7"
+      }
     },
     "acts/22": {
       "status": "corrected",
@@ -1083,9 +1089,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/21",
+  "resume": "acts/22",
   "verification_backlog": [
-    "acts/21",
     "acts/22",
     "acts/23",
     "acts/24",
