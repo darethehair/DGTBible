@@ -1545,9 +1545,16 @@
         "notes": "Verified repeated coming, sending, greeting and other verbs against their distinct occurrences. Separated the purpose and recipient links, confirmed the supplied benedictory copulas, and checked that the Aramaic expression in 16:22 uses IDs distinct from the preceding Greek demand.",
         "chapter_sha256": "6e114f9749213c9d154d298941f06a6dfc7298f2af7afc89688f5b4d94fdc5c5"
       }
+    },
+    "2corinthians/01": {
+      "status": "corrected",
+      "commit": "bdaf1b40946d601304c185f174d0b2e891cdd27f",
+      "chapter_sha256": "6dd1d6179a9aff4a914100e81fc23900314f199ac9ffe37993bff91f53253e8e",
+      "scope": "Reviewed all 24 verses in both directions. Reviewed the salutation, alternating comfort and suffering, rescue, prayer, travel plans and the repeated Yes and No. Distinguished the main and relative occurrences of plan in 1:17.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–1 audit passed."
     }
   },
-  "resume": "2corinthians/01",
+  "resume": "2corinthians/02",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
