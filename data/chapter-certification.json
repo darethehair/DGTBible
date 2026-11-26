@@ -1339,11 +1339,17 @@
       }
     },
     "1corinthians/01": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "c6fa3e88d102e7f98aa985d6c0713671bc65c245",
       "chapter_sha256": "6fce85b7b9069cb3d71d024b9d173b9d338d19d8f65dc6ad1bba1488e065716d",
       "scope": "Reviewed all 31 verses in both directions. Reviewed the greeting, divisions, baptism, and the wisdom contrast. Distinguished repeated names, questions and possessives, and split the dash between news and not at 1:17.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–1 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–1 audit passed.",
+      "final_verification": {
+        "commit": "c0449832e6e5d76258c18718ea474de8a823ee96",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Rechecked the greeting, the four factions and the repeated questions and conjunctions. Refined the genitive with fellowship and the resumed subject in the closing quotation. Retained God as supplied in 1:14 because the loaded Greek omits that object.",
+        "chapter_sha256": "0d7cc993e57f39ac61642c0d21e0d21251c13c4bfd832d69d2482d4c9776e601"
+      }
     },
     "1corinthians/02": {
       "status": "corrected",
@@ -1451,9 +1457,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed."
     }
   },
-  "resume": "1corinthians/01",
+  "resume": "1corinthians/02",
   "verification_backlog": [
-    "1corinthians/01",
     "1corinthians/02",
     "1corinthians/03",
     "1corinthians/04",
