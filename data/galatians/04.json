@@ -3972,7 +3972,7 @@
           {
             "text": "to",
             "ids": [
-              "w12"
+              "w8"
             ],
             "after": " ",
             "confidence": "reviewed-precise"
@@ -8372,11 +8372,11 @@
           },
           {
             "text": "but",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "not",
@@ -14118,12 +14118,11 @@
           },
           {
             "text": "those",
-            "ids": [
-              "w22"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 59: Genitive article τῆς supplies substantival 'those/of her who'"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "of",
@@ -14152,10 +14151,10 @@
           {
             "text": "who",
             "ids": [
-              "w22"
+              "w23"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "has",
