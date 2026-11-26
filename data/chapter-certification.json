@@ -1129,9 +1129,16 @@
         "notes": "Reviewed Malta, the journey to Rome, and the final speech in both directions. Checked each Caesar and negative occurrence, explicit versus inferred possessives in the Isaiah quotation, and the legitimate seven-token temporal rendering of διασωθέντες at 28:1.",
         "chapter_sha256": "4188050d6a56975863444ec0cad7929080755883b88155ff81df4c4c00739d28"
       }
+    },
+    "romans/01": {
+      "status": "corrected",
+      "commit": "11cb3b5900713a529f03cb614ce97d9a9b31d025",
+      "chapter_sha256": "cd87c0f043f17a4e3d2e44f6a2fb703f6d097a7ea6189eba93467b40f975a018",
+      "scope": "Reviewed all 32 verses in both directions. Corrected word shifts in the opening, restored links for prayer, faith, and the concluding lists, and split two dash-fused English tokens at 1:20 while preserving the text.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–1 audit passed."
     }
   },
-  "resume": "romans/01",
+  "resume": "romans/02",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
