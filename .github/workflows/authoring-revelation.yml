@@ -36,6 +36,7 @@ jobs:
       - name: Audit Revelation range
         run: python scripts/audit-revelation.py
       - name: Commit clean generated Revelation range
+        id: publish-authoring
         run: |
           git config user.name "DGTBible authoring bot"
           git config user.email "actions@users.noreply.github.com"
@@ -43,14 +44,17 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Generate QA-clean Revelation $START_CHAPTER-$END_CHAPTER batch"
             for attempt in 1 2 3; do
-              git pull --rebase origin main && python scripts/preserve-certification.py --check && git push && break
+              if git pull --rebase origin main && python scripts/preserve-certification.py --check && git push; then
+                echo "pushed=true" >> "$GITHUB_OUTPUT"
+                break
+              fi
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep 2
             done
           fi
 
       - name: Dispatch Pages deployment
-        if: success()
+        if: steps.publish-authoring.outputs.pushed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main

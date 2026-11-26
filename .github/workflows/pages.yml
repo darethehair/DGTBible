@@ -99,6 +99,11 @@ jobs:
           START_CHAPTER: '1'
           END_CHAPTER: '4'
         run: python scripts/audit-colossians.py
+      - name: Validate 1 Thessalonians
+        env:
+          START_CHAPTER: '1'
+          END_CHAPTER: '5'
+        run: python scripts/audit-1thessalonians.py
       - name: Corpus semantic alignment audit
         continue-on-error: true
         run: python scripts/audit-alignment-quality.py

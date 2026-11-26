@@ -54,6 +54,7 @@ jobs:
       - name: Audit Luke hover breadth
         run: python scripts/audit-luke-hover-breadth.py
       - name: Commit clean generated Luke range
+        id: publish-authoring
         run: |
           git config user.name "DGTBible authoring bot"
           git config user.email "actions@users.noreply.github.com"
@@ -65,7 +66,10 @@ jobs:
             # changes before rebasing against any concurrent main updates.
             git reset --hard HEAD
             for attempt in 1 2 3; do
-              git pull --rebase origin main && python scripts/preserve-certification.py --check && git push && break
+              if git pull --rebase origin main && python scripts/preserve-certification.py --check && git push; then
+                echo "pushed=true" >> "$GITHUB_OUTPUT"
+                break
+              fi
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep 2
             done
@@ -78,7 +82,7 @@ jobs:
         run: gh workflow run conservative-master-cleanup.yml --ref main
 
       - name: Dispatch Pages deployment
-        if: success()
+        if: steps.publish-authoring.outputs.pushed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main

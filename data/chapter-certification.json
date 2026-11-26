@@ -2744,5 +2744,42 @@
       "superseded_push_workflow": "https://github.com/darethehair/DGTBible/actions/runs/45743639609",
       "public_verification": "Verified the successful Pages run at the release commit on main, the public app version and service-worker cache, and all four public Colossians SHA-256 values against the final bilingual review."
     }
+  },
+  "1thessalonians_verification": {
+    "commit": "974e6f08d37a6ae889b163ae9db980339b98f606",
+    "verses": 89,
+    "app_version": "v0.79",
+    "cache": "dgtbible-v089",
+    "structural_regression": "All five chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 95.6%.",
+    "semantic_regression": "The full 1 Thessalonians audit passed with 35 scoped supplied-word exceptions. The critical sanity gate had six exact lexical exceptions and two supplied-ellipsis exceptions, all documented.",
+    "hover_regression": "Reviewed 13 diagnostic cases as legitimate verbal inflection, dative relations and shared grammatical phrases. Eighteen bidirectional Chromium checks passed, including distinct links on both sides of three em dashes.",
+    "reviewed_hover_flags": [
+      "3:1 w3 στέγοντες → 1:when 2:we 3:could 6:endure",
+      "3:12 w5 πλεονάσαι → 1:may 4:cause 6:to 7:increase",
+      "4:4 w1 εἰδέναι → 0:that 5:know 6:how",
+      "3:12 w7 περισσεύσαι → 1:may 4:cause 9:abound",
+      "5:23 w30 τηρηθείη. → 11:may 19:be 20:kept",
+      "5:27 w5 ἀναγνωσθῆναι → 7:that 10:be 11:read",
+      "5:11 w11 ποιεῖτε. → 11:you 13:are 14:doing.",
+      "5:20 w3 ἐξουθενεῖτε· → 0:Do 2:despise",
+      "3:11 w14 κατευθύναι → 1:may 11:direct",
+      "5:19 w4 σβέννυτε, → 0:Do 2:quench",
+      "5:28 w4 κυρίου → 2:of 4:Lord",
+      "4:7 w3 ἐκάλεσεν → 2:did 4:call",
+      "5:27 w11 ἀδελφοῖς. → 12:to 15:brothers."
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "2:11 dealt is a supplied bridge to the participles in 2:12.",
+      "3:6 the second long and see are supplied in an elliptical comparison.",
+      "5:1 anything is supplied as the subject of the English passive."
+    ],
+    "reviewed_advisory_unused_greek": "In 2:7 ἐάν is implicit in the comparison, and in 2:19 the alternative ἢ is implicit at the question break. The attributive article in 4:10 has no separate English rendering.",
+    "chapter_sha256": {
+      "1thessalonians/01": "a15c9042bbc92e53158503135c5c088d588e5052f1654a48e5812162bb6cbec4",
+      "1thessalonians/02": "52281990f26dbff641821a5538019f91e133f6a3b14383d557cf5010aa226890",
+      "1thessalonians/03": "b318439467e9712ab0d7da021130f952c948b2ba5486ca91f2cf564f806b4744",
+      "1thessalonians/04": "2ad4ebcdc6b6fbf26153a7eca9daa0e38824be3be78f7c238cec21faa0afc16e",
+      "1thessalonians/05": "f4815d0641f2f72728088beead4e986cb22517ad784567e25375b9e939b2a1fd"
+    }
   }
 }
