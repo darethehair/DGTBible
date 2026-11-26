@@ -72,6 +72,11 @@ jobs:
           START_CHAPTER: '1'
           END_CHAPTER: '16'
         run: python scripts/audit-1corinthians.py
+      - name: Validate 2 Corinthians
+        env:
+          START_CHAPTER: '1'
+          END_CHAPTER: '13'
+        run: python scripts/audit-2corinthians.py
       - name: Corpus semantic alignment audit
         continue-on-error: true
         run: python scripts/audit-alignment-quality.py

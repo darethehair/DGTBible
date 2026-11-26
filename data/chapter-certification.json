@@ -1592,10 +1592,10 @@
       "scope": "Reviewed all 18 verses in both directions. Reviewed the veiled gospel, light, jar imagery, contrasting suffering clauses and the two seen/unseen lists. Linked the parallel forms and preserved the implicit copulas.",
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–4 audit passed.",
       "final_verification": {
-        "commit": "08f68e9df35c2fe23cdc448d3433e085ce142e93",
+        "commit": "b1c632e6abdf10b25da73250c2a0af4737447a7d",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Checked paired uses of veiled, glory, Jesus, life and body, the suffering contrasts and the repeated seen clauses. Refined the purpose expression in 4:6 and the elliptical inner person in 4:16.",
-        "chapter_sha256": "50d50e1f20a7353bc5f21ee0328ca73caaf4b19089ddf7e171f830f6234579d3"
+        "notes": "Checked paired uses of veiled, glory, Jesus, life and body, the suffering contrasts and the repeated seen clauses. Refined the purpose expression in 4:6 and the elliptical inner person in 4:16. In the hover audit, the second at in 4:18 was marked supplied because English repeats the preposition under the same verb.",
+        "chapter_sha256": "3ad5f1af1261728cb8c69de2f2478fd1744ea71bf330ed7c0ed7690a126f36be"
       }
     },
     "2corinthians/05": {
@@ -1670,10 +1670,10 @@
       "scope": "Reviewed all 18 verses in both directions. Reviewed the appeal, paired flesh expressions and repeated comparison, exhortation, boasting and recommendation words. Checked genitives, ellipses, letters and presence, and the series of reflexive pronouns.",
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–10 audit passed.",
       "final_verification": {
-        "commit": "2fc3c6a8ff47486f5a690a69760c859ffadfd600",
+        "commit": "b1c632e6abdf10b25da73250c2a0af4737447a7d",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Verified the repeated flesh, tearing down, reflexive and measure expressions, the comparison of letters with presence, and both predicates of belonging to Christ.",
-        "chapter_sha256": "66542b9cfb90cd68c864b804ce17dca78e2fd05c0725b84aeaa03a28020d1fc4"
+        "notes": "Verified the repeated flesh, tearing down, reflexive and measure expressions, the comparison of letters with presence, and both predicates of belonging to Christ. At 10:11 and 10:18 the hover audit identified supplied English where the Greek has an implicit subject or an English cleft. At 10:16 it distinguished the purpose of the infinitive from direction before its location.",
+        "chapter_sha256": "9b631c47ce83b8bb10c04d523fb801cde18795e32a8267e898e86a9a8f60c11f"
       }
     },
     "2corinthians/11": {
@@ -1683,10 +1683,10 @@
       "scope": "Reviewed all 33 verses in both directions. Reviewed the jealous and betrothal language, repeated boasting and masquerading clauses, hardship lists, and Damascus. Separated so and in across the em dash in 11:23.",
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–11 audit passed.",
       "final_verification": {
-        "commit": "f8fce9e80fdff503be993fb4eefe829b2137d8e0",
+        "commit": "b1c632e6abdf10b25da73250c2a0af4737447a7d",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Verified repeated apostle, boasting, taking, disguising and all eight dangers, including omitted copulas and objects. Separated the two Greek terms in super-apostles and checked the em-dash in 11:23.",
-        "chapter_sha256": "98772c8e57ee582ef80693612e6f5ea63aae42458c10d41a8be668079b2a8386"
+        "notes": "Verified repeated apostle, boasting, taking, disguising and all eight dangers, including omitted copulas and objects. Separated the two Greek terms in super-apostles and checked the em-dash in 11:23. At 11:19 the hover audit identified yourselves as a supplied intensifier.",
+        "chapter_sha256": "021e846427d0c4f514f2ee09b1cb3d49c7c50ba6cbb28f4ea06a5d175e422fb8"
       }
     },
     "2corinthians/12": {
@@ -2118,6 +2118,67 @@
       "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45739627257",
       "workflow_status": "success",
       "public_verification": "The public app.js and sw.js report the release versions. All 16 public 1 Corinthians chapter files match the verified SHA-256 hashes."
+    }
+  },
+  "2corinthians_verification": {
+    "commit": "b1c632e6abdf10b25da73250c2a0af4737447a7d",
+    "verses": 256,
+    "app_version": "v0.74",
+    "cache": "dgtbible-v084",
+    "structural_regression": "All 13 chapters passed preservation of source texts, Greek and DGT reconstruction, unique source IDs, link integrity, supplied-token checks and the full chapter audit. Direct DGT link coverage was 93.9%.",
+    "semantic_regression": "Reviewed all 22 critical lexical candidates and recorded exact keys and bilingual explanations in the quality allowlist. The critical sanity gate now covers 2 Corinthians and passed.",
+    "hover_regression": "Reviewed 28 diagnostics, refined duplicated and overlapping helpers, and checked the 24 remaining cases across 22 verses for legitimate English expressions of inflection and grammar. Twenty-five bidirectional Chromium checks passed, including each of the eight occurrences of dangers in 11:26.",
+    "reviewed_hover_flags": [
+      "10:16 w5 εὐαγγελίσασθαι, → 0:so 1:that 2:we 3:may 4:proclaim 6:gospel",
+      "5:9 w3 φιλοτιμούμεθα, → 1:we 3:make 4:it 5:our 6:aim,",
+      "12:2 w22 ἁρπαγέντα → 6:who 30:was 31:caught 32:up",
+      "5:3 w7 εὑρεθησόμεθα. → 5:we 6:will 8:be 9:found",
+      "5:21 w9 ἐποίησεν, → 0:He 1:made 8:to 9:be",
+      "4:1 w10 ἐγκακοῦμεν, → 9:we 10:do 12:lose 13:heart.",
+      "10:3 w8 στρατευόμεθα— → 7:we 8:do 10:wage 11:war",
+      "2:11 w12 ἀγνοοῦμεν. → 10:we 11:are 13:unaware 14:of",
+      "2:11 w3 πλεονεκτηθῶμεν → 2:we 3:might 5:be 6:outwitted",
+      "11:29 w11 πυροῦμαι; → 15:do 17:burn 18:with 19:concern?",
+      "8:20 w1 στελλόμενοι → 0:We 1:are 2:taking 4:precaution,",
+      "11:11 w5 ἀγαπῶ → 2:I 3:do 5:love",
+      "11:19 w3 ἀνέχεσθε → 1:you 3:bear 4:with",
+      "6:12 w2 στενοχωρεῖσθε → 0:You 1:are 3:restricted",
+      "10:9 w3 δόξω → 2:I 3:may 5:seem",
+      "6:3 w8 μωμηθῇ → 11:may 13:be 14:discredited,",
+      "12:16 w1 ἔστω → 1:be 4:it 5:may,",
+      "3:8 w8 ἔσται → 3:will 9:be",
+      "11:5 w4 ὑστερηκέναι → 3:myself 7:inferior",
+      "9:13 w10 ἐπὶ → 9:for 21:for",
+      "8:4 w4 δεόμενοι → 0:begging 5:for",
+      "11:5 w7 ἀποστόλων· → 8:to 11:apostles.",
+      "6:7 w15 ἀριστερῶν, → 15:for 21:left,",
+      "3:9 w10 περισσεύει → 12:does 17:abound"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "1:11 given (24) — Gift is the head of the English phrase. The single Greek passive thanksgiving verb renders the earlier thanks may be given.",
+      "2:3 joy (35) — The English repeats joy as the subject complement. The Greek χαρά renders the earlier my joy.",
+      "2:5 grieved (22) — The English repeats the verb after the parenthetical. The first grieved already represents the second Greek verb.",
+      "2:10 forgive (7) — The English supplies a verb after I also. The Greek second-person verb is in the preceding clause.",
+      "3:7 glory (36) — The English repeats glory before the participle where Greek has an article and participle.",
+      "5:12 answer (23) — The object of may have is implicit in the Greek.",
+      "11:24 lashes (8) — The Greek leaves the unit counted by forty implicit.",
+      "13:2 anyone (37) — English makes the object of spare explicit."
+    ],
+    "reviewed_advisory_unused_greek": "Reviewed all 11 flags. The particles and resumptive words in 1:17, 8:6, 11:6, 11:16, 12:2 and 13:2 lack an independent English word. The DGT omits explicit persons in 1:11, the first reflexive in 10:7, the unspecified object in 12:6 and the additional comparative in 12:9. In 12:20 the second μή sets up a subordinate verbless fear clause.",
+    "chapter_sha256": {
+      "2corinthians/01": "6dd1d6179a9aff4a914100e81fc23900314f199ac9ffe37993bff91f53253e8e",
+      "2corinthians/02": "1ff432a786eb3acbdcd10c12d90cc2586102a0c1b2bcdcabb09ca54dc2d99a7a",
+      "2corinthians/03": "0a03a1ac280c1695fb8d2354fd65e98b2ca08889981adc403be383f1bfc4087f",
+      "2corinthians/04": "3ad5f1af1261728cb8c69de2f2478fd1744ea71bf330ed7c0ed7690a126f36be",
+      "2corinthians/05": "7ed40b6b669bcd3517e45d868547eb56ee52a54f0849d085f4e18cd0edb369c6",
+      "2corinthians/06": "ac71129757cd861d148e1f8bf4321749ccb245e97cd76191393f9adc609eafc6",
+      "2corinthians/07": "e4a28ecfb28a7b1bd0a21c3c01c83038042c3503f7824e5ec9309e563be4f7c1",
+      "2corinthians/08": "466461b664176f3a81da86b08494ccfc687017f65d3b3b56fbdf860ddf33536d",
+      "2corinthians/09": "618766afd6b33af52c260f0f9107ddc4d976f2701910637eb344f88d3279bea9",
+      "2corinthians/10": "9b631c47ce83b8bb10c04d523fb801cde18795e32a8267e898e86a9a8f60c11f",
+      "2corinthians/11": "021e846427d0c4f514f2ee09b1cb3d49c7c50ba6cbb28f4ea06a5d175e422fb8",
+      "2corinthians/12": "98371ddd704e3b4e7abb7a9bc128f3cc784a832b42da2311f68e32e4eb2fd298",
+      "2corinthians/13": "8c16948840868b2695d52bc280a87c33daf30a75c2501aff34fd796197a33033"
     }
   }
 }
