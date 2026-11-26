@@ -4287,5 +4287,50 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all 1 public Jude chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "revelation_verification": {
+    "commit": "9f4e00d61ad4bb73ece9fe3069f8c96d7499ffc4",
+    "verses": 405,
+    "app_version": "v0.93",
+    "cache": "dgtbible-v103",
+    "structural_regression": "All chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 95.7%.",
+    "semantic_regression": "The reviewed-book audit passed for 405 verses with 347 scoped exceptions. The Revelation critical audit reviewed 16 lexical link flags and 12 unlinked wording flags.",
+    "reviewed_hover_flags": [
+      "12:8 w3 ἴσχυσεν, 1:he 2:was 4:strong 5:enough,",
+      "2:3 w11 κεκοπίακες. 13:you 14:have 16:grown 17:weary.",
+      "2:15 w5 κρατοῦντας 4:some 5:who 7:hold",
+      "21:25 w7 κλεισθῶσιν 3:will 6:be 7:shut",
+      "8:1 w14 ἡμιώριον. 12:for 14:half 16:hour.",
+      "21:27 w2 οὐ 1:nothing 12:ever",
+      "21:27 w3 μὴ 1:nothing 12:ever",
+      "3:17 w18 ὁ 21:the 31:one,",
+      "16:20 w8 εὑρέθησαν. 6:were 8:found.",
+      "11:3 w9 ἡμέρας 13:for 19:days,"
+    ],
+    "reviewed_advisories": "The supplied-word review retained eight inferred expressions, including authority at 6:4 and 11:3, possessive predicates at 7:10 and 19:1, and action verbs in the nominal or prepositional constructions at 11:8 and 14:18. Six unused Greek diagnostics reflect articles, a redundant possessive emphasis, or the documented variant at 18:3.",
+    "chapter_sha256": {
+      "revelation/01": "3e25de37386b269bbf6256d2e207473048856dc2a41119300d9d53b6e64d0fc5",
+      "revelation/02": "f9780805b2ae32fdbeebfb926e7a377ad535e73e8c7b853126728f0924b2b8c3",
+      "revelation/03": "974091eb84ba7e2c16c9c7aa068e3118db92f86a61aa73c3252bc72f56cc265a",
+      "revelation/04": "aea7ca956d3e76718a58eb2a46a4dfd8df2e5bf2d6ede9c76e66c5fa4a82db83",
+      "revelation/05": "7e47cc91aa9d8f485eb80a2f0fa4ac9616e5843dcd0f484380330f597c460c9a",
+      "revelation/06": "8daf1c5cc89602f1a2acd7beb937d5f7867bc8b60c7c59c494092cac268fb1bf",
+      "revelation/07": "44aeb25dc81149644b6d22fe617b01e9d223ddd625801d69f455acea4a1b8d68",
+      "revelation/08": "303afa75eb47246d528d534d9a162a22e041eba4b628ebe4a1ea9cf3eb2bb40e",
+      "revelation/09": "0d25a9298089b896572bc95cbf7bd67ce1072516c9449abfa58114fe853d7f5c",
+      "revelation/10": "db1aac4b41ab14d50d125d3e0f1f246e8d81352102bc185e9d8004eac141d296",
+      "revelation/11": "aad9d86b52ea0fc84d95107ce92e9204a98c95fb2a34dd6ec05a91df416c9132",
+      "revelation/12": "b6c1c321a5257aac27b52ec5460325ebc0f3ad2c0b23ff52efe23ed0e4b39164",
+      "revelation/13": "23718f7933c8dd6afe493f831044d25ebdcc147460c35f5d6b0d2f9cbf2c1ba8",
+      "revelation/14": "2030bea2e548d08c1c1b79fde2bef8ec6c165a32d8933eb19698621fe5b37634",
+      "revelation/15": "3ab9175da94f78bbe18eadba8ed25e1a195fef0151d44f0c000467eaa5eb91bf",
+      "revelation/16": "1e7b63214430e437b87ac174076ad62ed0ba193cb31d27f8ea0bd62854906cd1",
+      "revelation/17": "2b4c04faf65562d56438fa4a3c7e5dfeed79e4e055c50a2b144f035ee081ebd9",
+      "revelation/18": "9e0c055d8624f8f156e646752134984c566583693e2340269be9e5c95d138800",
+      "revelation/19": "2c851d6b6a6ac59141b14b3b47262cd113a27d3584b503abb2384862a8342170",
+      "revelation/20": "1ed470b62e94b84fc63ea2fcec494cbdbed921a98cd203834772efd4b81bb51f",
+      "revelation/21": "7f44831ddc6885ea70dca20cfebeae05d1a00cffb4bc913c4315f8f10687443e",
+      "revelation/22": "6df3fd0678ae7e0b92d3985a86d247f11caddc25cc6f667bc3db557c24f35b51"
+    }
   }
 }
