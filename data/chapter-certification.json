@@ -1300,11 +1300,17 @@
       }
     },
     "romans/14": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "06726fa38b0c58c10e110336594bc72384601867",
       "chapter_sha256": "0b6f6d9d896966a6d99d6e33927243b769d69ffcaef5aa823ad1b60db3ec707e",
       "scope": "Reviewed all 23 verses in both directions. Distinguished repeated eat, live, die and judge forms and attached their pronouns and auxiliaries locally. Preserved the Greek variant wording at 14:21 with the untranslated alternatives unlinked.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–14 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–14 audit passed.",
+      "final_verification": {
+        "commit": "75f926d36e92b0a8c76efddf55115b2f97b2e8cd",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the repeated eat, live, die, judge and Lord occurrences and the supplied phrases. Confirmed the Greek variants at 14:21 remain unlinked where the DGT sentence ends at stumbles.",
+        "chapter_sha256": "9b035f9c859e13673346048650a8d0b7a117d13b6a5f919d1853eb195bcbd016"
+      }
     },
     "romans/15": {
       "status": "corrected",
@@ -1321,9 +1327,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/14",
+  "resume": "romans/15",
   "verification_backlog": [
-    "romans/14",
     "romans/15",
     "romans/16"
   ],
