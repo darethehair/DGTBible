@@ -70,7 +70,11 @@ for ch in range(start,end+1):
   for g in v['alignment']['greek']:
    gid=(g.get('ids') or [None])[0]
    if gid and gid.startswith('s') and gid not in used_precise:
-    synthetic_unlinked.append((ch,v['v'],gid,g.get('text','')))
+    key=f"1timothy.{ch:02}.{v['v']}|greek|{g['text']}|{gid}|"
+    if key in allowlist:
+     reviewed.add(key)
+    else:
+     synthetic_unlinked.append((ch,v['v'],gid,g['text']))
   # If an unlinked DGT word occurs N times and the literal layer contains exactly
   # N source-linked occurrences of the same word, ordered pairing is deterministic.
   byword=collections.defaultdict(list)
@@ -204,4 +208,4 @@ assert not orphan_content, f'Unexplained unlinked DGT content words: {orphan_con
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
 assert not out_of_span, f'precise DGT links escaped authored phrase spans: {out_of_span[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
-print(f'1 Timothy {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; {len(reviewed)} reviewed supplied-word exceptions; 0 unexplained exact, pronoun-family or relative-pronoun candidates; 0 unexplained unlinked content words; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
+print(f'1 Timothy {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; {len(reviewed)} reviewed exceptions; 0 unexplained exact, pronoun-family or relative-pronoun candidates; 0 unexplained unlinked content words; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
