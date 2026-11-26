@@ -331,10 +331,11 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "working",
@@ -342,22 +343,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "together",
@@ -365,36 +351,23 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "with",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "him,",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "we",
@@ -402,22 +375,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "also",
@@ -425,22 +383,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "urge",
@@ -448,22 +391,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "you",
@@ -471,22 +399,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "not",
@@ -494,22 +407,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "to",
@@ -517,22 +415,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "receive",
@@ -540,29 +423,15 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "grace",
@@ -570,45 +439,15 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "of",
             "ids": [
-              "w11"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "God",
@@ -616,22 +455,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
@@ -639,22 +463,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "vain.",
@@ -662,22 +471,7 @@
               "w7"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -1182,11 +976,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "he",
@@ -1194,11 +984,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "says,",
@@ -1206,25 +992,23 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "“At",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "an",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "acceptable",
@@ -1232,19 +1016,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "time",
@@ -1252,19 +1024,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "I",
@@ -1272,19 +1032,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "listened",
@@ -1292,39 +1040,15 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "to",
             "ids": [
-              "w5"
+              "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "you,",
@@ -1332,19 +1056,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
@@ -1352,46 +1064,23 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "on",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "a",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "day",
@@ -1399,19 +1088,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "of",
@@ -1419,19 +1096,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "salvation",
@@ -1439,19 +1104,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "I",
@@ -1459,19 +1112,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "helped",
@@ -1479,19 +1120,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "you.”",
@@ -1499,19 +1128,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "Look,",
@@ -1519,13 +1136,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "now",
@@ -1533,41 +1144,23 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "is",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "the",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "acceptable",
@@ -1575,13 +1168,7 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "time;",
@@ -1589,13 +1176,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "look,",
@@ -1603,13 +1184,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "now",
@@ -1617,41 +1192,23 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "is",
-            "ids": [
-              "w19"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "the",
-            "ids": [
-              "w19"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "day",
@@ -1659,13 +1216,7 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "of",
@@ -1673,13 +1224,7 @@
               "w20"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "salvation.",
@@ -1687,13 +1232,7 @@
               "w20"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -1954,30 +1493,19 @@
         "dgt": [
           {
             "text": "giving",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "no",
             "ids": [
-              "w3"
+              "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "cause",
@@ -1985,26 +1513,15 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "for",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "stumbling",
@@ -2012,33 +1529,23 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "anything,",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "so",
@@ -2046,19 +1553,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "that",
@@ -2066,19 +1561,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -2086,19 +1569,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "ministry",
@@ -2106,19 +1577,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "may",
@@ -2126,19 +1585,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "not",
@@ -2146,19 +1593,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "be",
@@ -2166,19 +1601,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "discredited,",
@@ -2186,19 +1609,7 @@
               "w8"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -2624,17 +2035,19 @@
         "dgt": [
           {
             "text": "but",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "everything",
@@ -2642,26 +2055,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "commending",
@@ -2669,26 +2063,7 @@
               "s4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "ourselves",
@@ -2696,26 +2071,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "as",
@@ -2723,26 +2079,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "God’s",
@@ -2750,26 +2087,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "servants:",
@@ -2777,40 +2095,23 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "much",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "endurance,",
@@ -2818,33 +2119,15 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "afflictions,",
@@ -2852,33 +2135,15 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "hardships,",
@@ -2886,33 +2151,15 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "distresses,",
@@ -2920,26 +2167,7 @@
               "w17"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "s4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -3248,10 +2476,11 @@
         "dgt": [
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "beatings,",
@@ -3259,28 +2488,15 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "prisons,",
@@ -3288,28 +2504,15 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "disturbances,",
@@ -3317,28 +2520,15 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "labors,",
@@ -3346,28 +2536,15 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "sleepless",
@@ -3375,35 +2552,23 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "nights,",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "fastings,",
@@ -3411,21 +2576,7 @@
               "w12"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -3782,10 +2933,11 @@
         "dgt": [
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "purity,",
@@ -3793,30 +2945,15 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "knowledge,",
@@ -3824,30 +2961,15 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "patience,",
@@ -3855,30 +2977,15 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "kindness,",
@@ -3886,23 +2993,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
@@ -3910,47 +3001,15 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "the",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "Holy",
@@ -3958,23 +3017,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "Spirit,",
@@ -3982,30 +3025,15 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "sincere",
@@ -4013,23 +3041,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "love,",
@@ -4037,23 +3049,7 @@
               "w13"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -4434,17 +3430,19 @@
         "dgt": [
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "word",
@@ -4452,24 +3450,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "of",
@@ -4477,24 +3458,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "truth,",
@@ -4502,38 +3466,23 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "power",
@@ -4541,24 +3490,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "of",
@@ -4566,24 +3498,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "God,",
@@ -4591,38 +3506,23 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "through",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "weapons",
@@ -4630,49 +3530,15 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "of",
             "ids": [
-              "w11"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "righteousness",
@@ -4680,38 +3546,24 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "for",
-            "ids": [],
+            "ids": [
+              "w13",
+              "w15"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "right",
@@ -4719,24 +3571,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "hand",
@@ -4744,24 +3579,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -4769,49 +3587,15 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
             "ids": [
-              "w15"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "left,",
@@ -4819,24 +3603,7 @@
               "w15"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -5145,10 +3912,11 @@
         "dgt": [
           {
             "text": "through",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "glory",
@@ -5156,28 +3924,15 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "dishonor,",
@@ -5185,28 +3940,15 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "through",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "bad",
@@ -5214,35 +3956,23 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "report",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "good",
@@ -5250,28 +3980,15 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "report;",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "as",
@@ -5279,21 +3996,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "deceivers",
@@ -5301,21 +4004,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
@@ -5323,21 +4012,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "yet",
@@ -5345,21 +4020,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "true,",
@@ -5367,21 +4028,7 @@
               "w12"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -5738,10 +4385,11 @@
         "dgt": [
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "unknown",
@@ -5749,30 +4397,15 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "yet",
@@ -5789,23 +4422,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "known;",
@@ -5813,30 +4430,15 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "dying,",
@@ -5844,30 +4446,15 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "look,",
@@ -5875,23 +4462,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "we",
@@ -5899,23 +4470,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "live;",
@@ -5923,30 +4478,15 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "disciplined",
@@ -5954,30 +4494,15 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "yet",
@@ -5994,37 +4519,23 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "put",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w14"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "death,",
@@ -6032,23 +4543,7 @@
               "w14"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -6453,10 +4948,11 @@
         "dgt": [
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "sorrowful",
@@ -6464,25 +4960,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "yet",
@@ -6499,25 +4977,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "rejoicing,",
@@ -6525,32 +4985,15 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "poor",
@@ -6558,25 +5001,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "yet",
@@ -6589,10 +5014,11 @@
           },
           {
             "text": "making",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "many",
@@ -6600,25 +5026,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "rich,",
@@ -6626,32 +5034,15 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "having",
@@ -6659,25 +5050,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "nothing",
@@ -6685,25 +5058,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "yet",
@@ -6720,25 +5075,7 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "all",
@@ -6746,25 +5083,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "things.",
@@ -6772,25 +5091,7 @@
               "w15"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -7079,20 +5380,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "mouth",
@@ -7100,20 +5388,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "has",
@@ -7121,20 +5396,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "been",
@@ -7142,20 +5404,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "opened",
@@ -7163,20 +5412,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "to",
@@ -7184,20 +5420,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "you,",
@@ -7205,20 +5428,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "Corinthians;",
@@ -7226,20 +5436,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "our",
@@ -7247,20 +5444,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "heart",
@@ -7268,20 +5452,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "has",
@@ -7289,20 +5460,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "been",
@@ -7310,20 +5468,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "enlarged.",
@@ -7331,20 +5476,7 @@
               "w11"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -7605,10 +5737,11 @@
         "dgt": [
           {
             "text": "You",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "are",
@@ -7616,19 +5749,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "not",
@@ -7636,19 +5757,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "restricted",
@@ -7656,19 +5765,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "by",
@@ -7676,19 +5773,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "us,",
@@ -7696,26 +5781,15 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "but",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "you",
@@ -7723,19 +5797,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "are",
@@ -7743,19 +5805,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "restricted",
@@ -7763,19 +5813,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "in",
@@ -7783,19 +5821,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "your",
@@ -7803,26 +5829,15 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "own",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "affections.",
@@ -7830,19 +5845,7 @@
               "w9"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -8107,53 +6110,32 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "in",
-            "ids": [],
-            "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
-          },
-          {
-            "text": "return",
             "ids": [
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "return",
+            "ids": [
               "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+              "w4"
+            ],
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "—",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "I",
@@ -8161,19 +6143,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "speak",
@@ -8181,26 +6151,15 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "to",
@@ -8208,19 +6167,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "children",
@@ -8228,26 +6175,15 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "—",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "widen",
@@ -8255,19 +6191,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "your",
@@ -8275,26 +6199,15 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "hearts",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "also.",
@@ -8302,19 +6215,7 @@
               "w9"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -8723,25 +6624,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "not",
@@ -8749,25 +6632,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "become",
@@ -8775,25 +6640,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "unevenly",
@@ -8801,25 +6648,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "yoked",
@@ -8827,25 +6656,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "with",
@@ -8853,25 +6664,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "unbelievers.",
@@ -8879,25 +6672,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "For",
@@ -8905,25 +6680,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "what",
@@ -8940,34 +6697,15 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "does",
-            "ids": [
-              "w7"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 22"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "righteousness",
@@ -8975,51 +6713,15 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "have",
-            "ids": [
-              "w7"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "with",
@@ -9036,25 +6738,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "Or",
@@ -9062,25 +6746,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "what",
@@ -9097,34 +6763,15 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "does",
-            "ids": [
-              "w13"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 22"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "light",
@@ -9132,34 +6779,15 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "have",
-            "ids": [
-              "w13"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 22"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "with",
@@ -9176,25 +6804,7 @@
               "w16"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -9503,10 +7113,11 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "what",
@@ -9523,28 +7134,15 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "does",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "Christ",
@@ -9552,35 +7150,23 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "have",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "with",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Belial?",
@@ -9588,21 +7174,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "Or",
@@ -9610,21 +7182,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "what",
@@ -9641,50 +7199,23 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "does",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "a",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "believer",
@@ -9692,57 +7223,31 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "have",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "with",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "an",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "unbeliever?",
@@ -9750,21 +7255,7 @@
               "w12"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -10553,19 +8044,11 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "what",
@@ -10573,16 +8056,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "agreement",
@@ -10590,32 +8064,15 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "does",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "God’s",
@@ -10623,16 +8080,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "temple",
@@ -10640,32 +8088,15 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "have",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "with",
@@ -10673,16 +8104,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "idols?",
@@ -10690,16 +8112,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "For",
@@ -10707,31 +8120,15 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "we",
             "ids": [
-              "w12"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "are",
@@ -10739,30 +8136,15 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "a",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "temple",
@@ -10770,15 +8152,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "of",
@@ -10786,30 +8160,15 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
             "ids": [],
             "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "living",
@@ -10817,15 +8176,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "God,",
@@ -10833,28 +8184,15 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "just",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17"
+            "ids": [
+              "w14"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "as",
@@ -10862,27 +8200,15 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "God",
             "ids": [
-              "w11"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "said:",
@@ -10890,13 +8216,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "“I",
@@ -10904,13 +8224,7 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "will",
@@ -10918,13 +8232,7 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "dwell",
@@ -10932,26 +8240,15 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "among",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21"
+            "ids": [
+              "w20"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "them",
@@ -10959,13 +8256,7 @@
               "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -10973,11 +8264,7 @@
               "w22"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w22",
-              "w23"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "walk",
@@ -10985,11 +8272,7 @@
               "w23"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w22",
-              "w23"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "among",
@@ -10997,23 +8280,15 @@
               "w23"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w22",
-              "w23"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "them,",
-            "ids": [
-              "w23"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w22",
-              "w23"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "and",
@@ -11021,13 +8296,7 @@
               "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "I",
@@ -11035,13 +8304,7 @@
               "w25"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "will",
@@ -11049,13 +8312,7 @@
               "w25"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "be",
@@ -11063,13 +8320,7 @@
               "w25"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "their",
@@ -11077,13 +8328,7 @@
               "w26"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "God,",
@@ -11091,13 +8336,7 @@
               "w27"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w24",
-              "w25",
-              "w26",
-              "w27"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
@@ -11105,14 +8344,7 @@
               "w28"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "they",
@@ -11120,14 +8352,7 @@
               "w29"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "will",
@@ -11135,14 +8360,7 @@
               "w30"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "be",
@@ -11150,28 +8368,15 @@
               "w30"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "my",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
+            "ids": [
+              "w31"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "people.”",
@@ -11179,14 +8384,7 @@
               "w32"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w28",
-              "w29",
-              "w30",
-              "w31",
-              "w32"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -11595,25 +8793,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "come",
@@ -11621,25 +8801,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "out",
@@ -11647,25 +8809,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "from",
@@ -11673,25 +8817,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "among",
@@ -11699,25 +8825,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "them",
@@ -11725,32 +8833,15 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "be",
@@ -11758,25 +8849,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "separate,",
@@ -11784,25 +8857,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "says",
@@ -11810,51 +8865,15 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "Lord,",
@@ -11862,32 +8881,15 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "do",
@@ -11895,32 +8897,15 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "not",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "touch",
@@ -11928,39 +8913,23 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "what",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "is",
             "ids": [],
             "after": " ",
             "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "unclean;",
@@ -11968,25 +8937,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
@@ -11994,25 +8945,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "I",
@@ -12020,25 +8953,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "will",
@@ -12046,25 +8961,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "receive",
@@ -12072,25 +8969,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "you.",
@@ -12098,25 +8977,7 @@
               "w16"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
@@ -12521,10 +9382,11 @@
         "dgt": [
           {
             "text": "And",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "I",
@@ -12532,25 +9394,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "will",
@@ -12558,25 +9402,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "be",
@@ -12584,51 +9410,15 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "a",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "Father",
@@ -12636,25 +9426,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "to",
@@ -12662,25 +9434,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "you,",
@@ -12688,72 +9442,39 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "you",
             "ids": [
-              "w3"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "will",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "be",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "sons",
@@ -12761,32 +9482,15 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "Legacy over-broad fallback removed; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "daughters",
@@ -12794,25 +9498,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "to",
@@ -12820,25 +9506,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "me,",
@@ -12846,25 +9514,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "says",
@@ -12872,51 +9522,15 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "Lord",
@@ -12924,25 +9538,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           },
           {
             "text": "Almighty.",
@@ -12950,25 +9546,7 @@
               "w16"
             ],
             "after": "",
-            "confidence": "authored-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-precise"
           }
         ]
       }
