@@ -2247,10 +2247,19 @@
         "notes": "Verified the supplied first done in 3:5 and the explicit second verb, the distinct instances of works and good, article nominalization and the final greeting.",
         "chapter_sha256": "80a0dc9c1386eeee372820dd790c54a0586ad29ab06ac01c00489e0d6e78e385"
       }
+    },
+    "philemon/01": {
+      "status": "corrected",
+      "commit": "f6e9d1413fdbb5e0ce3cc7245289d45565cfe1f4",
+      "chapter_sha256": "fd74848f9a258aea4586e701d4789d00611e3b4e869e51342e82a415d4a32262",
+      "scope": "Reviewed all 25 verses in both directions. Corrected the repeated greeting datives and possessives, the contrast in Onesimus’s usefulness, the separate objects in the appeal and repayment, and the closing greetings and blessing.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Philemon 1–1 audit passed."
     }
   },
   "resume": "philemon/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "philemon/01"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2266,7 +2275,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
