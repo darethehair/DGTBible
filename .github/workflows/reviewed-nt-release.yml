@@ -1,0 +1,44 @@
+name: Publish reviewed NT baseline
+
+on:
+  push:
+    tags: [v0.93-reviewed-nt]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reviewed-nt-release
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: refs/tags/v0.93-reviewed-nt
+          fetch-depth: 0
+      - name: Package and verify standalone PWA and reviewed data
+        run: |
+          git diff --exit-code 31a5c5e94f683de41d98823f2731fa290a649c4c HEAD -- data app.js index.html style.css sw.js manifest.webmanifest icons
+          python scripts/package-reviewed-baseline.py "$RUNNER_TEMP/reviewed-nt"
+          cd "$RUNNER_TEMP/reviewed-nt"
+          sha256sum *.zip *.sha256 > SHA256SUMS
+      - name: Publish the anchored baseline and verify release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag=v0.93-reviewed-nt
+          assets="$RUNNER_TEMP/reviewed-nt"
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" "$assets"/* --verify-tag --title "$tag" --latest=false --notes-file baseline/README.md
+          fi
+          gh release view "$tag" --json url,isDraft,tagName,assets \
+            --jq 'select(.isDraft == false and .tagName == "v0.93-reviewed-nt") | .url' | grep -F "/releases/tag/$tag"
+          for asset in "$assets"/*; do
+            expected=$(sha256sum "$asset" | cut -d ' ' -f 1)
+            actual=$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$tag" --jq ".assets[] | select(.name == \"$(basename "$asset")\") | .digest")
+            test "$actual" = "sha256:$expected"
+          done
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$tag" --jq '{url: .html_url, immutable: .immutable, assets: [.assets[].name]}'

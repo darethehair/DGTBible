@@ -14,6 +14,8 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
+  issues: read
   pages: write
   id-token: write
 
@@ -26,14 +28,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check reviewed chapter hashes before deployment preparation
-        run: python scripts/preserve-certification.py --check
-      - name: Repair context-aware alignments for deployment
-        run: python scripts/preserve-certification.py python scripts/repair-alignments.py
-      - name: Apply reviewed alignment quality overrides
-        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
-      - name: Repair deterministic Luke links after overrides
-        run: python scripts/preserve-certification.py python scripts/repair-luke-final.py
+        with:
+          fetch-depth: 0
+      - name: Enforce the permanent reviewed NT baseline
+        env:
+          BEFORE: ${{ github.event.before }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          guard="$RUNNER_TEMP/check-reviewed-baseline.py"
+          git show refs/tags/v0.93-reviewed-nt:scripts/check-reviewed-baseline.py > "$guard"
+          args=(--root "$GITHUB_WORKSPACE" --approval-repo "$GITHUB_REPOSITORY")
+          if [[ -n "$BEFORE" ]]; then
+            args+=(--against "$BEFORE")
+          fi
+          python "$guard" "${args[@]}"
       - name: Validate Luke
         env:
           START_CHAPTER: '1'
@@ -41,8 +49,6 @@ jobs:
         run: python scripts/audit-luke.py
       - name: Audit Luke hover breadth
         run: python scripts/audit-luke-hover-breadth.py
-      - name: Repair deterministic/reviewed Acts links after overrides
-        run: python scripts/preserve-certification.py python scripts/repair-acts-final.py
       - name: Validate Acts
         env:
           START_CHAPTER: '1'
@@ -143,8 +149,6 @@ jobs:
       - name: Corpus semantic alignment audit
         continue-on-error: true
         run: python scripts/audit-alignment-quality.py
-      - name: Recover clear falsely supplied Matthew articles
-        run: python scripts/preserve-certification.py python scripts/audit-supplied-words.py --apply
       - name: Verify supplied article regression
         run: python scripts/audit-supplied-words.py --strict
       - name: Critical alignment sanity gate
@@ -199,6 +203,8 @@ jobs:
           test -f data/acts/01.json
           test -f data/acts/28.json
       - uses: actions/configure-pages@v5
+      - name: Verify protected data immediately before artifact upload
+        run: python "$RUNNER_TEMP/check-reviewed-baseline.py" --root "$GITHUB_WORKSPACE"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .

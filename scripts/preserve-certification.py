@@ -14,6 +14,9 @@ def main(command):
     data_dir = Path(__file__).resolve().parents[1] / "data"
     checkpoint = json.loads((data_dir / "chapter-certification.json").read_text())
     if command == ["--check"]:
+        guard = data_dir.parent / "scripts" / "check-reviewed-baseline.py"
+        if guard.exists():
+            return subprocess.call([sys.executable, str(guard), "--against", "HEAD"])
         checked = 0
         mismatches = []
         for chapter, entry in checkpoint["chapters"].items():
