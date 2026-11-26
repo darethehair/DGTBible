@@ -974,8 +974,14 @@ def family_fixed_point(D,G):
   total+=changed
   if not changed:return total
 
+checkpoint_path = Path('data/chapter-certification.json')
+checkpoint = json.loads(checkpoint_path.read_text(encoding='utf8')) if checkpoint_path.exists() else {}
+reviewed_chapters = checkpoint.get('chapters', {})
+preserved_books = checkpoint.get('preserved_previous_scope', {})
 changed=0
 for path in sorted(Path('data/acts').glob('[0-9][0-9].json')):
+ if 'acts' in preserved_books or f'acts/{path.stem}' in reviewed_chapters:
+  continue
  d=json.loads(path.read_text(encoding='utf8'));file_changed=0;ch=int(path.stem)
  for v in d.get('verses',[]):
   A=v.get('alignment',{});D=A.get('dgt',[]);G=A.get('greek',[]);L=A.get('literal',[])
