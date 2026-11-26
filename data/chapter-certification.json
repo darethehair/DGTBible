@@ -2561,7 +2561,7 @@
       }
     },
     "2peter/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
       "chapter_sha256": "c4765a4adef601073d6f1b471022febf655b0ce8c9edb6bfef9e095b1eedf179",
       "scope": "Reviewed all 21 verses in both directions. Matched compound and inflected renderings and scoped supplied articles and implicit objects.",
@@ -2574,7 +2574,7 @@
       }
     },
     "2peter/02": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
       "chapter_sha256": "40c4884f91c3b12d3c0862d6c370469bdebe69c5b230c748d487937041af5d40",
       "scope": "Reviewed all 22 verses in both directions. Distinguished repeated words, split the em dash token without changing the translation, and retained source variant wording as supplied.",
@@ -2587,7 +2587,7 @@
       }
     },
     "2peter/03": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
       "chapter_sha256": "9ac98ef13f9ecfbe8c1b618cae2f11eb3d3e2e284463ce22ee1e29be0f3af337",
       "scope": "Reviewed all 18 verses in both directions. Distinguished repeated water, new, and auxiliaries and verified articles and participial constructions.",
@@ -2600,7 +2600,7 @@
       }
     }
   },
-  "resume": "2peter",
+  "resume": "1john/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2617,7 +2617,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -3779,6 +3779,14 @@
       "2peter/03": "9ac98ef13f9ecfbe8c1b618cae2f11eb3d3e2e284463ce22ee1e29be0f3af337"
     },
     "hover_regression": "Eight structural hover diagnostics were reviewed and 21 bidirectional Chromium checks passed across all three chapters.",
-    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 202 recorded chapter hashes and release preparation preserved all 230 reviewed and preserved chapter files byte-for-byte."
+    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 202 recorded chapter hashes and release preparation preserved all 230 reviewed and preserved chapter files byte-for-byte.",
+    "deployment": {
+      "commit": "6da19917c90bacca60a03f1d84653d54f66a1343",
+      "app_version": "v0.88",
+      "cache": "dgtbible-v098",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45824054690",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all three public 2 Peter chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
