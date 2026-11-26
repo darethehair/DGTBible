@@ -3751,5 +3751,32 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all five public 1 Peter chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "2peter_verification": {
+    "commit": "38d670899f9a4002c868c03f52ad82e9d293d901",
+    "verses": 61,
+    "app_version": "v0.88",
+    "cache": "dgtbible-v098",
+    "structural_regression": "All three chapters passed preservation of the original Greek, literal and DGT wording, exact token reconstruction, unique source ID and supplied-token checks. Direct DGT link coverage was 92.0%.",
+    "semantic_regression": "The reviewed-book audit passed with 68 scoped exceptions. Five separate critical lexical false positives were recorded.",
+    "reviewed_hover_flags": [
+      "2:6 w6 τεφρώσας 1:by 2:reducing 9:to 10:ashes",
+      "3:11 w4 λυομένων 0:Since 4:are 5:being 6:dissolved",
+      "1:2 w5 πληθυνθείη 0:May 4:be 5:multiplied",
+      "3:8 w5 λανθανέτω 1:do 3:let 7:escape",
+      "2:19 w11 τις 13:someone 20:person",
+      "1:20 w9 ἐπιλύσεως 8:from 11:interpretation,",
+      "2:8 w4 ἀκοῇ 14:by 19:heard",
+      "3:5 w8 ἦσαν 6:existed 11:was"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "At 2:15 son is the kinship term understood from the patronymic τοῦ Βοσόρ. Bosor is linked to its name."
+    ],
+    "reviewed_advisory_unused_greek": "At 1:3 Ὡς introduces the grounds developed through 1:4. English makes the relationship explicit at 1:5 with for this very reason and has no separate conjunction at 1:3.",
+    "chapter_sha256": {
+      "2peter/01": "c4765a4adef601073d6f1b471022febf655b0ce8c9edb6bfef9e095b1eedf179",
+      "2peter/02": "40c4884f91c3b12d3c0862d6c370469bdebe69c5b230c748d487937041af5d40",
+      "2peter/03": "9ac98ef13f9ecfbe8c1b618cae2f11eb3d3e2e284463ce22ee1e29be0f3af337"
+    }
   }
 }

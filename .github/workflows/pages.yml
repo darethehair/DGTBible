@@ -65,6 +65,8 @@ jobs:
         run: python scripts/audit-peter.py
       - name: Verify reviewed 1 Peter alignment
         run: python scripts/audit-reviewed-book.py 1peter
+      - name: Verify reviewed 2 Peter alignment
+        run: python scripts/audit-reviewed-book.py 2peter
       - name: Validate James
         run: python scripts/audit-james.py
       - name: Validate Hebrews
