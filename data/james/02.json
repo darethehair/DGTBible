@@ -402,11 +402,10 @@
           },
           {
             "text": "sisters,",
-            "ids": [
-              "w1"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "do",
@@ -496,11 +495,10 @@
           },
           {
             "text": "Lord",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "of",
@@ -1008,11 +1006,10 @@
           },
           {
             "text": "man",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "with",
@@ -2451,11 +2448,10 @@
           },
           {
             "text": "thoughts?",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": "",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           }
         ]
       }
@@ -3091,11 +3087,10 @@
           },
           {
             "text": "sisters.",
-            "ids": [
-              "w2"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "Did",
@@ -3122,11 +3117,10 @@
           },
           {
             "text": "choose",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "those",
@@ -3766,45 +3760,33 @@
           },
           {
             "text": "person.",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w5"
-            ],
-            "reason": "Human-reviewed full-NT master pass batch 61: Substantival πτωχόν supplies 'poor person'; do not borrow interrogative οὐχ"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "Is",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "reviewed-master-supplied",
-            "phraseIds": [],
-            "supplied": true,
-            "reason": "Human-reviewed full-NT master pass batch 61: English interrogative auxiliary in 'Is it not...' is supplied"
+            "confidence": "auto-high"
           },
           {
             "text": "it",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-supplied",
-            "reason": "Human-reviewed full-NT master pass batch 61: English expletive subject in the interrogative is supplied",
-            "phraseIds": [],
-            "supplied": true
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "not",
             "ids": [
-              "w6"
+              "w7"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w6"
-            ],
-            "reason": "Human-reviewed full-NT master pass batch 61: Renders οὐχ"
+            "confidence": "auto-high"
           },
           {
             "text": "the",
@@ -3824,23 +3806,17 @@
           },
           {
             "text": "who",
-            "ids": [
-              "w7"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 61: Substantival article οἱ introduces 'the rich who...'",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "oppress",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "you",
@@ -4180,11 +4156,10 @@
           },
           {
             "text": "blaspheme",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "the",
@@ -5571,11 +5546,10 @@
           },
           {
             "text": "whole",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "law",
@@ -6218,11 +6192,10 @@
           },
           {
             "text": "murder.”",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "If",
@@ -6258,19 +6231,17 @@
           },
           {
             "text": "commit",
-            "ids": [
-              "w13"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "adultery",
-            "ids": [
-              "w13"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "but",
@@ -7678,11 +7649,10 @@
           },
           {
             "text": "benefit",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "is",
@@ -7725,11 +7695,10 @@
           },
           {
             "text": "sisters,",
-            "ids": [
-              "w4"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "if",
@@ -8866,11 +8835,10 @@
           },
           {
             "text": "warmed",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "and",
@@ -8890,11 +8858,10 @@
           },
           {
             "text": "filled,”",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "but",
@@ -8945,11 +8912,10 @@
           },
           {
             "text": "what",
-            "ids": [
-              "w21"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "is",
@@ -8991,11 +8957,10 @@
           },
           {
             "text": "what",
-            "ids": [
-              "w21"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "benefit",
@@ -10187,11 +10152,10 @@
           },
           {
             "text": "apart",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "from",
@@ -10763,11 +10727,10 @@
           {
             "text": "believe—and",
             "ids": [
-              "w13"
+              "w14"
             ],
             "after": " ",
-            "confidence": "master-exact-retargeted",
-            "reason": "Master review: replaced lexically implausible target with unique nearby unused exact match"
+            "confidence": "auto-high"
           },
           {
             "text": "shudder.",
@@ -11180,11 +11143,10 @@
           },
           {
             "text": "empty",
-            "ids": [
-              "w4"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "person,",
