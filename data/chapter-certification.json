@@ -2496,7 +2496,7 @@
       }
     },
     "1peter/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "a0eb52d084b897d3d57a6dd9e9544a27da0a262cf81a4e20d20051b35df41d10",
       "scope": "Reviewed all 25 verses in both directions. Corrected the salutations, resurrection and salvation clauses, and repeated pronouns and words in the quotation. Split three em-dash tokens for precise hovering.",
@@ -2509,7 +2509,7 @@
       }
     },
     "1peter/02": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "0a7d0432171e6aaacf11b826b39e84146db3aeb4c761bfde9476ca14ef4f2a8b",
       "scope": "Reviewed all 25 verses in both directions. Corrected the living stone and priesthood contrasts, repeated against and on phrases, and separate pronouns in the closing quotation.",
@@ -2522,7 +2522,7 @@
       }
     },
     "1peter/03": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "660cbdb4506316de2a5f520fb74a0336dfb582314a56098901e115254f9e87e2",
       "scope": "Reviewed all 22 verses in both directions. Corrected household pronouns, repeated references to fear, the baptism clauses, and four em-dash joins.",
@@ -2535,7 +2535,7 @@
       }
     },
     "1peter/04": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "00004dff2b6026c84457d804cd8ddd513195150db7852f356d0e0ce1044fe00b",
       "scope": "Reviewed all 19 verses in both directions. Corrected the participles and prepositions in the suffering and exhortation clauses, and the distinct referents in the doxology.",
@@ -2548,7 +2548,7 @@
       }
     },
     "1peter/05": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "7ab0616415cf62813ffbadf5f574ac9aeedd4081939268ab022f3154fc2f784c",
       "scope": "Reviewed all 14 verses in both directions. Corrected the elders and praise clauses, four separate future verbs, and the distinct occurrences of you in the final greetings.",
@@ -2561,7 +2561,7 @@
       }
     }
   },
-  "resume": "1peter",
+  "resume": "2peter/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2578,7 +2578,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -3703,6 +3703,14 @@
       "1peter/04": "00004dff2b6026c84457d804cd8ddd513195150db7852f356d0e0ce1044fe00b",
       "1peter/05": "7ab0616415cf62813ffbadf5f574ac9aeedd4081939268ab022f3154fc2f784c"
     },
-    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 199 recorded chapter hashes and release preparation preserved all 227 reviewed and preserved chapter files byte-for-byte."
+    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 199 recorded chapter hashes and release preparation preserved all 227 reviewed and preserved chapter files byte-for-byte.",
+    "deployment": {
+      "commit": "07e1e1d58d64de21cdcc4f2b26decc53de433100",
+      "app_version": "v0.87",
+      "cache": "dgtbible-v097",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45820695900",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all five public 1 Peter chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
