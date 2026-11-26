@@ -1716,11 +1716,17 @@
       }
     },
     "galatians/01": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "5e299b8f44fd1ff95729db0cd89940387903c742",
       "chapter_sha256": "3e6897b91fbba2b3e6ffd120c865aa3750c382d7688cc1494a957fb04553ec68",
       "scope": "Reviewed all 24 verses in both directions. Reviewed the salutation, singular and plural human origins, both contrary-proclamation statements, the calling account and the reordered scope of our in the greeting. Separated you and behold across the preserved em dash.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–1 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–1 audit passed.",
+      "final_verification": {
+        "commit": "728e55580109db28c154cc7fcc3c03d647891930",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the paired proclamations and recipients, the origin contrast, the calling and itinerary, and the English placement of our in 1:3. Checked the supplied God in 1:15, the dip in explicit verbs in the doxology, and both sides of the em dash in 1:20.",
+        "chapter_sha256": "394c83d5fba37bd1bad486f25b3282a628f76ce5568e774922839df4146b9b32"
+      }
     },
     "galatians/02": {
       "status": "corrected",
@@ -1758,9 +1764,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–6 audit passed."
     }
   },
-  "resume": "galatians/01",
+  "resume": "galatians/02",
   "verification_backlog": [
-    "galatians/01",
     "galatians/02",
     "galatians/03",
     "galatians/04",
