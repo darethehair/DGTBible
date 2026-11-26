@@ -1651,11 +1651,17 @@
       }
     },
     "2corinthians/09": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "6652a674ccebc2f215619b96f0398097f003b465",
       "chapter_sha256": "618766afd6b33af52c260f0f9107ddc4d976f2701910637eb344f88d3279bea9",
       "scope": "Reviewed all 15 verses in both directions. Reviewed the collection and generosity argument, the repeated sowing and reaping clauses, and both occurrences of before. Separated independent words at the em dashes in 9:4.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–9 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–9 audit passed.",
+      "final_verification": {
+        "commit": "6652a674ccebc2f215619b96f0398097f003b465",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified both preparations, each sow and reap pair, the two before clauses and the dative complements. Confirmed separate Greek targets on both sides of the retained em dashes in 9:4.",
+        "chapter_sha256": "618766afd6b33af52c260f0f9107ddc4d976f2701910637eb344f88d3279bea9"
+      }
     },
     "2corinthians/10": {
       "status": "corrected",
@@ -1686,9 +1692,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/09",
+  "resume": "2corinthians/10",
   "verification_backlog": [
-    "2corinthians/09",
     "2corinthians/10",
     "2corinthians/11",
     "2corinthians/12",
