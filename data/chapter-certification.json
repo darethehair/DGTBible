@@ -1248,11 +1248,17 @@
       }
     },
     "romans/10": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "6dd9760941aa8d5fca817eccc4d91b7011ab6fae",
       "chapter_sha256": "fd9c14de26014f8e53fd43d28957a099ef98cba5ab9869e8056e110fd3c68e67",
       "scope": "Reviewed all 21 verses in both directions. Corrected the mouth and heart possessives, the scope of call on and believe in, and the distinct clauses and possessives in the quotations. Kept DGT expansions where a Greek noun or copula is implicit.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–10 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–10 audit passed.",
+      "final_verification": {
+        "commit": "5a40e771692dd4988f00129c9c468df525e9ab00",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the repeated hearing and believing clauses, the mouth and heart possessives, and the quotations in both directions. Checked the ellipsis in the quotation about righteousness, the relative particle and the distinct placements of negation.",
+        "chapter_sha256": "705f95ad71c8e883440e7f9bf94517a9616a714b60211910bee138369d295e20"
+      }
     },
     "romans/11": {
       "status": "corrected",
@@ -1297,9 +1303,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/10",
+  "resume": "romans/11",
   "verification_backlog": [
-    "romans/10",
     "romans/11",
     "romans/12",
     "romans/13",
