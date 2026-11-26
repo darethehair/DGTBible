@@ -1976,7 +1976,7 @@
       }
     },
     "1thessalonians/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "60fe6dc415f2215e4716dba2e73c7b6579dd05e8",
       "chapter_sha256": "a15c9042bbc92e53158503135c5c088d588e5052f1654a48e5812162bb6cbec4",
       "scope": "Reviewed all 10 verses in both directions. Corrected the greeting, the repeated prepositions and pronouns, and the links to the proclamation and its reception.",
@@ -1989,7 +1989,7 @@
       }
     },
     "1thessalonians/02": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "60fe6dc415f2215e4716dba2e73c7b6579dd05e8",
       "chapter_sha256": "bf89b52a8123af7e14fcec88135e83238023f378c0e81eb6238ee57f87dcfc9d",
       "scope": "Reviewed all 20 verses in both directions. Separated the two references to speaking, corrected the paired negatives and recovered precise hover targets at the three em dashes.",
@@ -2002,7 +2002,7 @@
       }
     },
     "1thessalonians/03": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "60fe6dc415f2215e4716dba2e73c7b6579dd05e8",
       "chapter_sha256": "b318439467e9712ab0d7da021130f952c948b2ba5486ca91f2cf564f806b4744",
       "scope": "Reviewed all 13 verses in both directions. Recovered the clauses about Timothy and the report of faith, distinguishing repeated pronouns and allowing the English to repeat the elliptical verbs.",
@@ -2015,7 +2015,7 @@
       }
     },
     "1thessalonians/04": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "60fe6dc415f2215e4716dba2e73c7b6579dd05e8",
       "chapter_sha256": "2ad4ebcdc6b6fbf26153a7eca9daa0e38824be3be78f7c238cec21faa0afc16e",
       "scope": "Reviewed all 18 verses in both directions. Corrected the paired instruction clauses, commands, related participles and repeated Lord references.",
@@ -2028,7 +2028,7 @@
       }
     },
     "1thessalonians/05": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "60fe6dc415f2215e4716dba2e73c7b6579dd05e8",
       "chapter_sha256": "f4815d0641f2f72728088beead4e986cb22517ad784567e25375b9e939b2a1fd",
       "scope": "Reviewed all 28 verses in both directions. Corrected the successive sleep and drunkenness verbs and the closing imperatives and blessing.",
@@ -2041,7 +2041,7 @@
       }
     }
   },
-  "resume": "1thessalonians",
+  "resume": "2thessalonians/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2058,7 +2058,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -2781,6 +2781,14 @@
       "1thessalonians/04": "2ad4ebcdc6b6fbf26153a7eca9daa0e38824be3be78f7c238cec21faa0afc16e",
       "1thessalonians/05": "f4815d0641f2f72728088beead4e986cb22517ad784567e25375b9e939b2a1fd"
     },
-    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 159 recorded hashes and release preparation preserved all 187 reviewed and preserved chapter files byte-for-byte."
+    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 159 recorded hashes and release preparation preserved all 187 reviewed and preserved chapter files byte-for-byte.",
+    "deployment": {
+      "commit": "380cde33f9bd89c4e4acc2ad4ef809040f6c39fa",
+      "app_version": "v0.79",
+      "cache": "dgtbible-v089",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45814443933",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all five public 1 Thessalonians chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
