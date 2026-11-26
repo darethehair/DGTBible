@@ -5,14 +5,13 @@
     "books_expected": 27,
     "books_scanned": 27,
     "verses_scanned": 7939,
-    "dgt_tokens_scanned": 174491,
-    "suspicious_interactions": 770,
+    "dgt_tokens_scanned": 174528,
+    "suspicious_interactions": 565,
     "by_kind": {
-      "precise-fanout": 106,
-      "precise-scattered": 300,
-      "phrase-only-lexical": 2,
-      "unique-unlinked-content": 218,
-      "unused-greek-with-rendering": 144
+      "precise-fanout": 152,
+      "precise-scattered": 326,
+      "unique-unlinked-content": 27,
+      "unused-greek-with-rendering": 60
     },
     "by_book": {
       "Matthew": {
@@ -37,11 +36,11 @@
         "ambiguous_unlinked_content": 3
       },
       "John": {
-        "unused_greek_with_rendering": 11,
+        "unused_greek_with_rendering": 12,
         "unlinked_content_no_candidate": 27,
         "precise_fanout": 7,
         "precise_scattered": 28,
-        "unique_unlinked_content": 8,
+        "unique_unlinked_content": 9,
         "ambiguous_unlinked_content": 2
       },
       "Acts": {
@@ -69,92 +68,71 @@
         "precise_scattered": 9
       },
       "Ephesians": {
-        "unlinked_content_no_candidate": 68,
-        "unused_greek_with_rendering": 2,
-        "ambiguous_unlinked_content": 1,
-        "precise_scattered": 1
+        "precise_fanout": 1,
+        "precise_scattered": 8
       },
       "Philippians": {
-        "phrase_only_lexical": 1,
-        "unused_greek_with_rendering": 11,
-        "unlinked_content_no_candidate": 131,
-        "precise_scattered": 16,
-        "ambiguous_unlinked_content": 2,
-        "unique_unlinked_content": 1
-      },
-      "Colossians": {
-        "unlinked_content_no_candidate": 92,
-        "ambiguous_unlinked_content": 1,
-        "unused_greek_with_rendering": 6,
-        "unique_unlinked_content": 2,
-        "phrase_only_lexical": 1
-      },
-      "1 Thessalonians": {
-        "unlinked_content_no_candidate": 62,
-        "ambiguous_unlinked_content": 1,
-        "unused_greek_with_rendering": 4
-      },
-      "1 Timothy": {
-        "ambiguous_unlinked_content": 1,
+        "precise_scattered": 4,
+        "precise_fanout": 3,
         "unused_greek_with_rendering": 1
       },
+      "Colossians": {
+        "precise_scattered": 2,
+        "precise_fanout": 1,
+        "unused_greek_with_rendering": 3
+      },
+      "1 Thessalonians": {
+        "precise_fanout": 1,
+        "unused_greek_with_rendering": 1,
+        "precise_scattered": 3
+      },
+      "1 Timothy": {
+        "precise_scattered": 3,
+        "precise_fanout": 1
+      },
+      "2 Timothy": {
+        "precise_fanout": 2,
+        "precise_scattered": 1
+      },
       "Titus": {
-        "precise_scattered": 5
+        "precise_fanout": 1,
+        "precise_scattered": 4
       },
       "Philemon": {
-        "unlinked_content_no_candidate": 2,
         "precise_scattered": 1
       },
       "Hebrews": {
-        "unlinked_content_no_candidate": 529,
-        "ambiguous_unlinked_content": 25,
-        "unique_unlinked_content": 111,
-        "unused_greek_with_rendering": 23,
-        "precise_scattered": 1,
-        "precise_fanout": 1
+        "precise_scattered": 7,
+        "precise_fanout": 15,
+        "unused_greek_with_rendering": 2
       },
       "James": {
-        "unique_unlinked_content": 40,
-        "unlinked_content_no_candidate": 186,
-        "ambiguous_unlinked_content": 14,
-        "unused_greek_with_rendering": 11
+        "precise_scattered": 6,
+        "precise_fanout": 2
       },
       "1 Peter": {
-        "unlinked_content_no_candidate": 133,
-        "ambiguous_unlinked_content": 4,
-        "unique_unlinked_content": 2,
-        "unused_greek_with_rendering": 4
+        "precise_fanout": 10,
+        "precise_scattered": 8
       },
       "2 Peter": {
-        "unlinked_content_no_candidate": 94,
-        "unused_greek_with_rendering": 3,
-        "unique_unlinked_content": 1,
-        "ambiguous_unlinked_content": 1
+        "precise_fanout": 2,
+        "precise_scattered": 1
       },
       "1 John": {
-        "unlinked_content_no_candidate": 113,
-        "unique_unlinked_content": 21,
-        "ambiguous_unlinked_content": 15,
-        "unused_greek_with_rendering": 9
-      },
-      "2 John": {
-        "unlinked_content_no_candidate": 20,
-        "unique_unlinked_content": 3
+        "precise_fanout": 4,
+        "precise_scattered": 2
       },
       "3 John": {
-        "unlinked_content_no_candidate": 21,
-        "unique_unlinked_content": 3
+        "precise_fanout": 1
       },
       "Jude": {
-        "unlinked_content_no_candidate": 53,
-        "unused_greek_with_rendering": 4,
-        "unique_unlinked_content": 8,
-        "ambiguous_unlinked_content": 3
+        "precise_scattered": 2,
+        "precise_fanout": 2
       },
       "Revelation": {
-        "unlinked_content_no_candidate": 6,
-        "unused_greek_with_rendering": 15,
-        "precise_scattered": 4
+        "precise_fanout": 1,
+        "unused_greek_with_rendering": 1,
+        "precise_scattered": 2
       }
     }
   }
