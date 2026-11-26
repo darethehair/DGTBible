@@ -1749,10 +1749,24 @@
       "chapter_sha256": "7f3f2ecd4d8f210131dee8431d0c4a562ab7784894b15a41990e028a313f9432",
       "scope": "Reviewed all 26 verses in both directions. Reviewed freedom and obligation, the repeated uses of flesh and Spirit, and the works and fruit lists. Checked the dative and genitive relationships and both phrases in the closing imperatives.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–5 audit passed."
+    },
+    "galatians/06": {
+      "status": "corrected",
+      "commit": "bc0d898c62772dce81148da9f15f1f0d8207f198",
+      "chapter_sha256": "226e7c551221bd142ecc61d5be5abc4e9e7a99a3f4a1574970ce03a99780e19a",
+      "scope": "Reviewed all 18 verses in both directions. Reviewed the parallel burden terms, receiving instruction, sowing and reaping, the cross and two world references, and the closing benediction.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–6 audit passed."
     }
   },
-  "resume": "galatians/06",
-  "verification_backlog": [],
+  "resume": "galatians/01",
+  "verification_backlog": [
+    "galatians/01",
+    "galatians/02",
+    "galatians/03",
+    "galatians/04",
+    "galatians/05",
+    "galatians/06"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -1768,7 +1782,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
