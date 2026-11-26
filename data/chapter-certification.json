@@ -1222,11 +1222,17 @@
       }
     },
     "romans/08": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "dc5cee2c18a1ebb41f293c3e582bf3afa91b01a4",
       "chapter_sha256": "1c61d4becdcc719af2555ed198122bc4d24484a802b59a73df02925184062711",
       "scope": "Reviewed all 39 verses in both directions. Corrected repeated references to flesh and Spirit, distinguished Greek article and participle IDs at 8:11, split the two occurrences of heirs at 8:17, and restored purpose, intercession, and verbal links.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–8 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–8 audit passed.",
+      "final_verification": {
+        "commit": "6b91fae5515c1fae7df70a7e0aab42a82d4aae19",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the Spirit and flesh contrasts, the distinct source IDs at 8:11, the split heirs at 8:17, the repeated calling and justification clauses, and each negative and pronoun in the closing argument.",
+        "chapter_sha256": "d909f390b87d01aa70018d28705ef815272109bd4443370fb736a75e42303ff1"
+      }
     },
     "romans/09": {
       "status": "corrected",
@@ -1285,9 +1291,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/08",
+  "resume": "romans/09",
   "verification_backlog": [
-    "romans/08",
     "romans/09",
     "romans/10",
     "romans/11",
