@@ -2814,10 +2814,75 @@
       "chapter_sha256": "1e7b63214430e437b87ac174076ad62ed0ba193cb31d27f8ea0bd62854906cd1",
       "scope": "Reviewed all 21 verses in both directions. Reviewed Greek and DGT English in source order, including repeated words, pronouns, and phrase-only links.",
       "regression": "Greek and DGT reconstruction, alignment structure, and supplied-token consistency passed. Semantic flags will be reconciled during final verification."
+    },
+    "revelation/17": {
+      "status": "corrected",
+      "commit": "e3e84f9d4a6e32c22bb88e7e3a4f6643d746f754",
+      "chapter_sha256": "6ef09c26d3c2795f60cccc7402792e1f7893c5f7292eb9a8e71d3a5d2cd71355",
+      "scope": "Reviewed all 18 verses in both directions. Reviewed Greek and DGT English in source order, including repeated forms, inflected verbs, and independent lexical hover targets.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and supplied-token consistency passed. Semantic flags will be reconciled during final verification."
+    },
+    "revelation/18": {
+      "status": "corrected",
+      "commit": "e3e84f9d4a6e32c22bb88e7e3a4f6643d746f754",
+      "chapter_sha256": "9e0c055d8624f8f156e646752134984c566583693e2340269be9e5c95d138800",
+      "scope": "Reviewed all 24 verses in both directions. Reviewed Greek and DGT English in source order, including repeated forms, inflected verbs, and independent lexical hover targets.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and supplied-token consistency passed. Semantic flags will be reconciled during final verification."
+    },
+    "revelation/19": {
+      "status": "corrected",
+      "commit": "e3e84f9d4a6e32c22bb88e7e3a4f6643d746f754",
+      "chapter_sha256": "2c851d6b6a6ac59141b14b3b47262cd113a27d3584b503abb2384862a8342170",
+      "scope": "Reviewed all 21 verses in both directions. Reviewed Greek and DGT English in source order, including repeated forms, inflected verbs, and independent lexical hover targets.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and supplied-token consistency passed. Semantic flags will be reconciled during final verification."
+    },
+    "revelation/20": {
+      "status": "corrected",
+      "commit": "e3e84f9d4a6e32c22bb88e7e3a4f6643d746f754",
+      "chapter_sha256": "1ed470b62e94b84fc63ea2fcec494cbdbed921a98cd203834772efd4b81bb51f",
+      "scope": "Reviewed all 15 verses in both directions. Reviewed Greek and DGT English in source order, including repeated forms, inflected verbs, and independent lexical hover targets.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and supplied-token consistency passed. Semantic flags will be reconciled during final verification."
+    },
+    "revelation/21": {
+      "status": "corrected",
+      "commit": "e3e84f9d4a6e32c22bb88e7e3a4f6643d746f754",
+      "chapter_sha256": "299876ebb21ad2a303d0f0a565232820797d1a68bcdeb8a63a7c68147972a342",
+      "scope": "Reviewed all 27 verses in both directions. Reviewed Greek and DGT English in source order, including repeated forms, inflected verbs, and independent lexical hover targets.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and supplied-token consistency passed. Semantic flags will be reconciled during final verification."
+    },
+    "revelation/22": {
+      "status": "corrected",
+      "commit": "e3e84f9d4a6e32c22bb88e7e3a4f6643d746f754",
+      "chapter_sha256": "aa30f57e32ee8e6fccf748e6f6e425cdad358745805735d6b68538678f8ca4b7",
+      "scope": "Reviewed all 21 verses in both directions. Reviewed Greek and DGT English in source order, including repeated forms, inflected verbs, and independent lexical hover targets.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and supplied-token consistency passed. Semantic flags will be reconciled during final verification."
     }
   },
-  "resume": "revelation/17",
-  "verification_backlog": [],
+  "resume": "revelation/01",
+  "verification_backlog": [
+    "revelation/01",
+    "revelation/02",
+    "revelation/03",
+    "revelation/04",
+    "revelation/05",
+    "revelation/06",
+    "revelation/07",
+    "revelation/08",
+    "revelation/09",
+    "revelation/10",
+    "revelation/11",
+    "revelation/12",
+    "revelation/13",
+    "revelation/14",
+    "revelation/15",
+    "revelation/16",
+    "revelation/17",
+    "revelation/18",
+    "revelation/19",
+    "revelation/20",
+    "revelation/21",
+    "revelation/22"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2833,7 +2898,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
