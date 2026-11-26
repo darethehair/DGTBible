@@ -1053,11 +1053,17 @@
       }
     },
     "acts/23": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "523795a",
       "chapter_sha256": "960c0b958f9224243fd98e508e18549cd8f2071e69d9d8dcb40f4502f26343e7",
       "scope": "Reviewed all 35 verses in both directions, including Paul’s hearing, the ambush and the commander’s letter, with corrections to repeated function words, clauses and implied English objects.",
-      "regression": "Verse reconstruction, alignment structure, and Acts 1–23 audit passed."
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–23 audit passed.",
+      "final_verification": {
+        "commit": "523795a0e1b3d93f9a0d5c1f47430912fc98b863",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Checked the council dispute, the plot, and Lysias’s letter in both directions, including the shifts from participles to coordinated verbs, repeated objects, and implied versus explicit second-person subjects.",
+        "chapter_sha256": "960c0b958f9224243fd98e508e18549cd8f2071e69d9d8dcb40f4502f26343e7"
+      }
     },
     "acts/24": {
       "status": "corrected",
@@ -1095,9 +1101,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/23",
+  "resume": "acts/24",
   "verification_backlog": [
-    "acts/23",
     "acts/24",
     "acts/25",
     "acts/26",
