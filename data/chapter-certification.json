@@ -1629,10 +1629,31 @@
       "chapter_sha256": "8b566ef8aa857eac3cee71e11d635064bc2218ae7f2636b5463cb6a4c3659bac",
       "scope": "Reviewed all 21 verses in both directions. Reviewed the revelations and two body clauses, repeated thorn and weakness statements, the visit and paired exhortations. Distinguished the first nothing in the comparison from the second nothing about the speaker.",
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–12 audit passed."
+    },
+    "2corinthians/13": {
+      "status": "corrected",
+      "commit": "5c84dec30490937cf04dfe05ff5decf3a3e0aa29",
+      "chapter_sha256": "8c16948840868b2695d52bc280a87c33daf30a75c2501aff34fd796197a33033",
+      "scope": "Reviewed all 13 verses in both directions. Reviewed successive appearances, the repeated weakness and power statements, testing and approval, the exhortations and the benediction. Separated you and unless across the retained em dash in 13:5.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/13",
-  "verification_backlog": [],
+  "resume": "2corinthians/01",
+  "verification_backlog": [
+    "2corinthians/01",
+    "2corinthians/02",
+    "2corinthians/03",
+    "2corinthians/04",
+    "2corinthians/05",
+    "2corinthians/06",
+    "2corinthians/07",
+    "2corinthians/08",
+    "2corinthians/09",
+    "2corinthians/10",
+    "2corinthians/11",
+    "2corinthians/12",
+    "2corinthians/13"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -1648,7 +1669,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
