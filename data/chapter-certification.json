@@ -1040,11 +1040,17 @@
       }
     },
     "acts/22": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "769df62",
       "chapter_sha256": "afc98f1d029399813bf82ddc74b802299777ec6ffbcd761bda9861aa4b203976",
       "scope": "Reviewed all 30 verses in both directions, including Paul’s speech, repeated names, participial and infinitival clauses, and the commander’s questions.",
-      "regression": "Verse reconstruction, alignment structure, and Acts 1–22 audit passed."
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–22 audit passed.",
+      "final_verification": {
+        "commit": "769df627da6edf4ccb2b76f085b49a3db2c552d2",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Checked Paul’s speech and the arrest scene in both directions, including the distinct uses of Saul and Lord, the Jerusalem departure, explicit reflexives and pronouns, and supplied citizenship wording.",
+        "chapter_sha256": "afc98f1d029399813bf82ddc74b802299777ec6ffbcd761bda9861aa4b203976"
+      }
     },
     "acts/23": {
       "status": "corrected",
@@ -1089,9 +1095,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/22",
+  "resume": "acts/23",
   "verification_backlog": [
-    "acts/22",
     "acts/23",
     "acts/24",
     "acts/25",
