@@ -1352,11 +1352,17 @@
       }
     },
     "1corinthians/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "9f3a7626b1f019dc5eea25a39d361730626df96f",
       "chapter_sha256": "dd109e81234a6345729270e62d64753c21ab1e893a75c5c4099a9363252dadb4",
       "scope": "Reviewed all 16 verses in both directions. Reviewed the contrasting speech and wisdom clauses, distinct repeated verbs and Spirit references, and the dash at 2:9. Preserved the witness wording in Greek and the English mystery at 2:1 as a textual difference.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–2 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–2 audit passed.",
+      "final_verification": {
+        "commit": "9f3a7626b1f019dc5eea25a39d361730626df96f",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Checked recurring wisdom, Spirit, and knowledge terms in both directions. The DGT mystery in 2:1 and loaded Greek μαρτύριον reflect different readings, so mystery remains unlinked. Reviewed the implied noun after hidden in 2:7 and implicit subject in the passive clause of 2:15.",
+        "chapter_sha256": "dd109e81234a6345729270e62d64753c21ab1e893a75c5c4099a9363252dadb4"
+      }
     },
     "1corinthians/03": {
       "status": "corrected",
@@ -1457,9 +1463,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed."
     }
   },
-  "resume": "1corinthians/02",
+  "resume": "1corinthians/03",
   "verification_backlog": [
-    "1corinthians/02",
     "1corinthians/03",
     "1corinthians/04",
     "1corinthians/05",
