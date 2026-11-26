@@ -910,11 +910,17 @@
       }
     },
     "acts/12": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "a4e2e87",
       "chapter_sha256": "7faca79e9b0b871eccbf8cfdd2c3a28dc520cc946a835483a7eefe9b1776e824",
       "scope": "Acts 12:1–25. Bilingual comparison in both directions. Corrected the chains and hand references in 12:7, separated the guards’ repeated objects from explicit pronouns, and recorded supplied “execution” in 12:19 and the English omission of the Jerusalem destination in 12:25.",
-      "regression": "The Acts 1–12 audit passed across 438 verses. All 25 Acts 12 verses preserve original wording and source IDs, and all links resolve."
+      "regression": "The Acts 1–12 audit passed across 438 verses. All 25 Acts 12 verses preserve original wording and source IDs, and all links resolve.",
+      "final_verification": {
+        "commit": "fd22b733964db19eab339ebbf4fff50c7607a4fb",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 25 verses, including the arrest, escape and speeches. At 12:19, “to execution” explicates the context of “led away.” At 12:25, the stored Greek has εἰς Ἰερουσαλήμ and DGT omits the destination, so no link was forced.",
+        "chapter_sha256": "dcd36e350145f4a14d75bcf3fb29c4f9033513fc3fa834153feb1ead41767101"
+      }
     },
     "acts/13": {
       "status": "corrected",
@@ -1029,9 +1035,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/12",
+  "resume": "acts/13",
   "verification_backlog": [
-    "acts/12",
     "acts/13",
     "acts/14",
     "acts/15",
