@@ -1105,11 +1105,17 @@
       }
     },
     "acts/27": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "87f84f6",
       "chapter_sha256": "c73c1d17bf4ee79cf2c030f6c52e87232232be929208aca6cf89757341d21fec",
       "scope": "Reviewed all 44 verses in both directions, including sailing and shipwreck idioms, the repeated words for successive actions, and wording supplied from context.",
-      "regression": "Verse reconstruction, alignment structure, and Acts 1–27 audit passed."
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–27 audit passed.",
+      "final_verification": {
+        "commit": "87f84f699d2a6b1bc67e9907c9490e81e9c22e55",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Reviewed the voyage and shipwreck in both directions, including nautical compound verbs, repeated directions and ship nouns, shared prepositions, participial sequencing, and the supplied waves at 27:41.",
+        "chapter_sha256": "c73c1d17bf4ee79cf2c030f6c52e87232232be929208aca6cf89757341d21fec"
+      }
     },
     "acts/28": {
       "status": "corrected",
@@ -1119,9 +1125,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/27",
+  "resume": "acts/28",
   "verification_backlog": [
-    "acts/27",
     "acts/28"
   ],
   "mark_verification": {
