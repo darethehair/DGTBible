@@ -6,7 +6,7 @@ from alignment_repair import BOOKS as REPAIR_BOOKS,atoms,norm,GLUE,sim,literal_t
 
 BOOKS = [
  *REPAIR_BOOKS, "2corinthians", "galatians", "ephesians", "philippians",
- "colossians", "1thessalonians", "2thessalonians", "1timothy", "2timothy",
+ "colossians", "1thessalonians", "2thessalonians", "1timothy", "2timothy", "titus",
 ]
 
 LOW=GLUE|{'very','also','even','still','now','then','only','indeed','surely','therefore','thus','yet'}

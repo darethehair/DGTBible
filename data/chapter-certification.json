@@ -3129,5 +3129,34 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all four public 2 Timothy chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "titus_verification": {
+    "commit": "29d876043634bafcc726a8956a8fe44bd39143e8",
+    "verses": 46,
+    "app_version": "v0.83",
+    "cache": "dgtbible-v093",
+    "structural_regression": "All three chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 94.9%.",
+    "semantic_regression": "The full Titus audit passed with 21 scoped exceptions. The critical audit also reviewed the supplied first done in 3:5 and two nominalized article constructions in 3:11 and 3:14.",
+    "hover_regression": "Reviewed nine diagnostic cases covering verbal inflection, shared objects, nominal case and idioms. Nineteen bidirectional Chromium checks passed.",
+    "reviewed_hover_flags": [
+      "3:13 w7 πρόπεμψον, 1:send 7:on 8:their 9:way,",
+      "2:12 w16 ζήσωμεν 9:we 10:may 11:live 16:lives",
+      "2:7 w4 παρεχόμενος 3:present 11:showing",
+      "1:16 w1 θεὸν 4:God, 11:him,",
+      "1:14 w6 ἐντολαῖς 3:to 7:commands",
+      "3:4 w10 σωτῆρος 8:of 11:Savior",
+      "2:15 w12 περιφρονείτω. 9:Let 12:disregard",
+      "2:1 w8 διδασκαλίᾳ. 8:for 10:teaching.",
+      "2:11 w10 ἀνθρώποις 9:to 11:people,"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "3:5 the first done is supplied in the prepositional modifier. The second done is the expressed verb."
+    ],
+    "reviewed_advisory_unused_greek": "No unused meaningful Greek tokens were flagged.",
+    "chapter_sha256": {
+      "titus/01": "b5267b849eefeccdaf2dca4f67cb624bc3458de8035bf10ec478d809378bd213",
+      "titus/02": "87bd96728f8be8cc510c11d7d82e22f9507e7278d5d0ddad42b816b20dd565e6",
+      "titus/03": "80a0dc9c1386eeee372820dd790c54a0586ad29ab06ac01c00489e0d6e78e385"
+    }
   }
 }
