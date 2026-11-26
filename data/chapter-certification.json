@@ -2156,10 +2156,43 @@
         "notes": "Verified the repeated genitives in 6:10 and 6:12, the distinct optatives and articles, and the specific Greek noun in the synthetic blessing at 6:21.",
         "chapter_sha256": "03c29242ec2ceed6f1e5bf4fa3ba2320a79510812878437738eb47452e443cf8"
       }
+    },
+    "2timothy/01": {
+      "status": "corrected",
+      "commit": "f022a25d204cd3a8f5ccef6525ca97ffba886a40",
+      "chapter_sha256": "f6bbc620c9832498298008f4feb8c7cc9bbea62327dba590db42ef5c4701f066",
+      "scope": "Reviewed all 18 verses in both directions. Corrected separate genitives and relative clauses, the repeated Christ Jesus occurrences, the chain and prison language, and the shared object of searched and found.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Timothy 1–1 audit passed."
+    },
+    "2timothy/02": {
+      "status": "corrected",
+      "commit": "f022a25d204cd3a8f5ccef6525ca97ffba886a40",
+      "chapter_sha256": "9e9a590dd6d2f2443b47d95e71091d8e85fbfca9d10986553c15ad6c47288717",
+      "scope": "Reviewed all 26 verses in both directions. Corrected the soldier and farmer comparisons, distinct repeated pronouns, the seal quotation, the contrasting vessels, and the response and purpose clauses.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Timothy 1–2 audit passed."
+    },
+    "2timothy/03": {
+      "status": "corrected",
+      "commit": "f022a25d204cd3a8f5ccef6525ca97ffba886a40",
+      "chapter_sha256": "28c6bd5325c7e1fe08db5fc6027ca360cc95c0a0fed3f5aceb17198fb2c3bc7a",
+      "scope": "Reviewed all 17 verses in both directions. Corrected the opening contrast and the people who creep in, separated the four idiomatic comparisons, and repaired persecution, sacred writings and purpose clauses.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Timothy 1–3 audit passed."
+    },
+    "2timothy/04": {
+      "status": "corrected",
+      "commit": "f022a25d204cd3a8f5ccef6525ca97ffba886a40",
+      "chapter_sha256": "04eb54ac3419dae5c6cc70a5032da067eb584a50eb9a78aa10ef453f6a786efe",
+      "scope": "Reviewed all 22 verses in both directions. Corrected the opening charge, departure, crown and defense clauses, repeated markers in the greetings, and supplied words in the two blessings.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Timothy 1–4 audit passed."
     }
   },
   "resume": "2timothy/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "2timothy/01",
+    "2timothy/02",
+    "2timothy/03",
+    "2timothy/04"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2175,7 +2208,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
