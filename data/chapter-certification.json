@@ -1612,11 +1612,17 @@
       }
     },
     "2corinthians/06": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "4d9e785da41c13e5ca4cc335ce211793c00549e1",
       "chapter_sha256": "ac71129757cd861d148e1f8bf4321749ccb245e97cd76191393f9adc609eafc6",
       "scope": "Reviewed all 18 verses in both directions. Reviewed the quotation, series of parallel prepositions and contrasts, the temple discussion, and repeated speech and covenant clauses.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–6 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–6 audit passed.",
+      "final_verification": {
+        "commit": "4d9e785da41c13e5ca4cc335ce211793c00549e1",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the two statements of acceptable time and salvation, the sequence of repeated prepositions in each parallel list, the nominal rhetorical questions and the distinct temple, God and people references in the quotation.",
+        "chapter_sha256": "ac71129757cd861d148e1f8bf4321749ccb245e97cd76191393f9adc609eafc6"
+      }
     },
     "2corinthians/07": {
       "status": "corrected",
@@ -1668,9 +1674,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/06",
+  "resume": "2corinthians/07",
   "verification_backlog": [
-    "2corinthians/06",
     "2corinthians/07",
     "2corinthians/08",
     "2corinthians/09",
