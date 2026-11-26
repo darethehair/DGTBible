@@ -1521,11 +1521,17 @@
       }
     },
     "1corinthians/15": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "ff4abcd9a2404b3f72ae1376e9b901e125ad04e2",
       "chapter_sha256": "ff77ed45d2821415f2b0370bfce545cabb44ed9432ae8a41333ba72c02cbdf7a",
       "scope": "Reviewed all 58 verses in both directions. Reviewed the resurrection argument in both directions, distinguishing repeated resurrection clauses, comparatives, the seed and body analogies, and the closing quotations. Separated Greek targets on both sides of retained em dashes in chapters 14 and 15.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–15 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–15 audit passed.",
+      "final_verification": {
+        "commit": "198087dc9d6d2888fca8d11fd0ef8469f870981c",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 58 verses in both directions. Checked parallel resurrection and subjection clauses, the four repeated sowing and raising clauses, both Adams, and both addresses to death. Confirmed dash separation and the supplied copulas in the verbless comparisons.",
+        "chapter_sha256": "3abffe0d00302359a0d0f5bce6d6c73ddc10d1fa0690f0c16f628e7729c9147c"
+      }
     },
     "1corinthians/16": {
       "status": "corrected",
@@ -1535,9 +1541,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed."
     }
   },
-  "resume": "1corinthians/15",
+  "resume": "1corinthians/16",
   "verification_backlog": [
-    "1corinthians/15",
     "1corinthians/16"
   ],
   "mark_verification": {
