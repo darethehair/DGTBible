@@ -2329,7 +2329,10 @@
     },
     "regeneration_drift": {
       "commit": "942fa11405a382fd8f4fcb7a14115f3a304610eb",
-      "scope": "A legacy authoring workflow regenerated all six Galatians chapters on main after the initial verified release. The recovery commit restores the exact reviewed bytes and protects future deployments and authoring."
+      "scope": "A legacy authoring workflow regenerated all six Galatians chapters on main after the initial verified release. The recovery commit restores the exact reviewed bytes and protects future deployments and authoring.",
+      "recovery_commit": "639f29ba08ca00b44958d7fe0006af996677cf7d",
+      "cancelled_workflow": "https://github.com/darethehair/DGTBible/actions/runs/45741870766",
+      "recovery_validation": "The Pages rehearsal passed with all 168 protected prior chapter files unchanged. The new hash gate checked 140 recorded hashes and detected a deliberately substituted regenerated Galatians chapter in a temporary copy. Concurrent authoring commits changed only alignment metadata in books outside the checkpoint and the preserved Matthew scope."
     }
   }
 }
