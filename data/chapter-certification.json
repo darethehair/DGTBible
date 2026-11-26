@@ -1755,11 +1755,17 @@
       }
     },
     "galatians/04": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "d41be4d731da7d44714bee398dcfb3d05bb98a6a",
       "chapter_sha256": "89984420f44ed6c38dbd3f2cdb9f329b01c72470e0cb0e2f6917431707464a31",
       "scope": "Reviewed all 31 verses in both directions. Reviewed the heirs and household images, the two births, repeated family terms, and the Hagar quotation. Distinguished the two instances of again in 4:9 and retained the Greek ellipses.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–4 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–4 audit passed.",
+      "final_verification": {
+        "commit": "f0cda947a7d5d0aba8b2fd90f2e8a777be796014",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the separate send and birth clauses, recurring family terms, repeated temporal markers and the contrasting slave and free women. Reviewed the English restructuring of the quotation of Isaiah in 4:27 and the omitted second birth verb in 4:23.",
+        "chapter_sha256": "d59ee99396639b4092357ea5641f4b76f3b415b12f23b90a0ce940ee038fdf1f"
+      }
     },
     "galatians/05": {
       "status": "corrected",
@@ -1776,9 +1782,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–6 audit passed."
     }
   },
-  "resume": "galatians/04",
+  "resume": "galatians/05",
   "verification_backlog": [
-    "galatians/04",
     "galatians/05",
     "galatians/06"
   ],
