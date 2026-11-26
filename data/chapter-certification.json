@@ -1220,9 +1220,16 @@
       "chapter_sha256": "5bb7ff3c4b6affb7e280e87128d52841c0916ade56176d665af2abc92d8fc70a",
       "scope": "Reviewed all 14 verses in both directions. Distinguished the reordered repetitions in the four payment and honor phrases, corrected each prohibition and its subject and negative, and restored alignments for the closing exhortation.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–13 audit passed."
+    },
+    "romans/14": {
+      "status": "corrected",
+      "commit": "06726fa38b0c58c10e110336594bc72384601867",
+      "chapter_sha256": "0b6f6d9d896966a6d99d6e33927243b769d69ffcaef5aa823ad1b60db3ec707e",
+      "scope": "Reviewed all 23 verses in both directions. Distinguished repeated eat, live, die and judge forms and attached their pronouns and auxiliaries locally. Preserved the Greek variant wording at 14:21 with the untranslated alternatives unlinked.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–14 audit passed."
     }
   },
-  "resume": "romans/14",
+  "resume": "romans/15",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
