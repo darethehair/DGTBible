@@ -1508,11 +1508,17 @@
       }
     },
     "1corinthians/14": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "a10f9ea238f6aaad33feed0047a0947b8e1e14ac",
       "chapter_sha256": "4d784e8c1a494f813c66652f3840225c9039000f02f32ca4e8d81aa7733ad3ab",
       "scope": "Reviewed all 40 verses in both directions. Reviewed tongues and prophecy, the instruments and speech analogies, repeated assembly terms and grammatical links through the closing instructions.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–14 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–14 audit passed.",
+      "final_verification": {
+        "commit": "c1f8aa6483332502f21a0799b973225b65a33d24",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the successive prophecy and tongues clauses, instrument comparison, repeated assembly instructions and Closing imperatives. Checked em-dash separated harp and if, repeated dative relations, two different negatives in 14:38, and supplied command in 14:37.",
+        "chapter_sha256": "4483e4a3c92ee0d41e4dbe85e37412df5c1844124c0fa9e8ced53ee2331cffb2"
+      }
     },
     "1corinthians/15": {
       "status": "corrected",
@@ -1529,9 +1535,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed."
     }
   },
-  "resume": "1corinthians/14",
+  "resume": "1corinthians/15",
   "verification_backlog": [
-    "1corinthians/14",
     "1corinthians/15",
     "1corinthians/16"
   ],
