@@ -587,10 +587,11 @@
           },
           {
             "text": "urge",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "you,",
@@ -612,8 +613,9 @@
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "sisters,",
@@ -634,25 +636,26 @@
           {
             "text": "the",
             "ids": [
-              "w8"
+              "w6"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "mercies",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "of",
             "ids": [
-              "w9"
+              "w8"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "God,",
@@ -698,16 +701,17 @@
             "text": "as",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "a",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "living",
@@ -744,10 +748,10 @@
           {
             "text": "to",
             "ids": [
-              "w19"
+              "w18"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "God,",
@@ -767,11 +771,11 @@
           },
           {
             "text": "is",
-            "ids": [
-              "w20"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "your",
@@ -1472,10 +1476,11 @@
           },
           {
             "text": "do",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "not",
@@ -1560,10 +1565,10 @@
           {
             "text": "the",
             "ids": [
-              "w15"
+              "w9"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "renewing",
@@ -1585,8 +1590,9 @@
             "text": "your",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "mind,",
@@ -1598,17 +1604,21 @@
           },
           {
             "text": "so",
-            "ids": [],
+            "ids": [
+              "w14",
+              "w15"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "that",
-            "ids": [],
+            "ids": [
+              "w14",
+              "w15"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "you",
@@ -1620,31 +1630,35 @@
           },
           {
             "text": "may",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "test",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "approve",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "what",
@@ -1657,10 +1671,10 @@
           {
             "text": "the",
             "ids": [
-              "w21"
+              "w19"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "will",
@@ -1673,10 +1687,10 @@
           {
             "text": "of",
             "ids": [
-              "w22"
+              "w21"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "God",
@@ -1687,12 +1701,20 @@
             "confidence": "auto-high"
           },
           {
-            "text": "is—the",
+            "text": "is—",
+            "ids": [],
+            "after": "",
+            "confidence": "reviewed-unaligned",
+            "supplied": true,
+            "reason": "English wording without a distinct Greek hover target."
+          },
+          {
+            "text": "the",
             "ids": [
               "w23"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "good",
@@ -2651,8 +2673,9 @@
             "text": "one",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "ought",
@@ -2705,10 +2728,11 @@
           {
             "text": "toward",
             "ids": [
-              "w22"
+              "w22",
+              "w23"
             ],
             "after": " ",
-            "confidence": "quality-scan"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "sound",
@@ -2768,11 +2792,11 @@
           },
           {
             "text": "a",
-            "ids": [
-              "w30"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "measure",
@@ -3337,10 +3361,11 @@
           },
           {
             "text": "do",
-            "ids": [],
+            "ids": [
+              "w16"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "not",
@@ -3745,24 +3770,27 @@
           },
           {
             "text": "we",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "are",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "many",
@@ -3823,10 +3851,11 @@
           {
             "text": "individually",
             "ids": [
-              "w11"
+              "w11",
+              "w12"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "members",
@@ -3847,10 +3876,10 @@
           {
             "text": "one",
             "ids": [
-              "w12"
+              "w13"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "another.",
@@ -4311,10 +4340,11 @@
           },
           {
             "text": "gracious",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "gifts",
@@ -4366,10 +4396,11 @@
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "us:",
@@ -4726,10 +4757,11 @@
         "dgt": [
           {
             "text": "if",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "service,",
@@ -5687,11 +5719,11 @@
         "dgt": [
           {
             "text": "Let",
-            "ids": [
-              "w2"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "love",
@@ -5703,25 +5735,27 @@
           },
           {
             "text": "be",
-            "ids": [
-              "w2"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "without",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "hypocrisy,",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "abhorring",
@@ -5741,18 +5775,19 @@
           },
           {
             "text": "clinging",
-            "ids": [],
-            "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
-          },
-          {
-            "text": "to",
             "ids": [
               "w7"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "to",
+            "ids": [
+              "w8"
+            ],
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "good;",
@@ -5998,10 +6033,10 @@
           {
             "text": "in",
             "ids": [
-              "w2"
+              "w1"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "brotherly",
@@ -6054,10 +6089,10 @@
           {
             "text": "in",
             "ids": [
-              "w7"
+              "w6"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "honor",
@@ -6069,24 +6104,27 @@
           },
           {
             "text": "giving",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "preference",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "one",
@@ -6371,18 +6409,19 @@
           },
           {
             "text": "lazy",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "in",
             "ids": [
-              "w2"
+              "w1"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "diligence,",
@@ -6403,10 +6442,10 @@
           {
             "text": "in",
             "ids": [
-              "w6"
+              "w5"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "spirit,",
@@ -6684,10 +6723,10 @@
           {
             "text": "in",
             "ids": [
-              "w2"
+              "w1"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "hope,",
@@ -6699,40 +6738,43 @@
           },
           {
             "text": "enduring",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "in",
+            "ids": [
+              "w4"
+            ],
+            "after": " ",
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "affliction,",
             "ids": [
               "w5"
             ],
             "after": " ",
-            "confidence": "auto-high"
-          },
-          {
-            "text": "affliction,",
-            "ids": [],
-            "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "persisting",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "in",
             "ids": [
-              "w8"
+              "w7"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "prayer,",
@@ -6953,25 +6995,27 @@
         "dgt": [
           {
             "text": "sharing",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "in",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
             "ids": [
-              "w3"
+              "w1"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "needs",
@@ -6983,18 +7027,19 @@
           },
           {
             "text": "of",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
             "ids": [
-              "w6"
+              "w3"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "saints,",
@@ -7223,10 +7268,11 @@
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "persecute;",
@@ -7254,10 +7300,11 @@
           },
           {
             "text": "do",
-            "ids": [],
+            "ids": [
+              "w8"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "not",
@@ -7454,17 +7501,19 @@
           },
           {
             "text": "those",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "rejoice;",
@@ -7492,17 +7541,19 @@
           },
           {
             "text": "those",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "who",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "weep.",
@@ -7963,10 +8014,11 @@
         "dgt": [
           {
             "text": "Think",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -8018,10 +8070,11 @@
           },
           {
             "text": "thinking",
-            "ids": [],
+            "ids": [
+              "w9"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "lofty",
@@ -8049,18 +8102,20 @@
           },
           {
             "text": "associating",
-            "ids": [],
+            "ids": [
+              "w13"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "with",
             "ids": [
-              "w11"
+              "w11",
+              "w13"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -8096,10 +8151,11 @@
           },
           {
             "text": "become",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "wise",
@@ -8432,45 +8488,51 @@
           },
           {
             "text": "take",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "thought",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "for",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "what",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "good",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "before",
@@ -8747,38 +8809,46 @@
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w3",
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "far",
-            "ids": [],
+            "ids": [
+              "w3",
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w3",
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "it",
             "ids": [],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "depends",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "on",
@@ -9271,10 +9341,11 @@
         "dgt": [
           {
             "text": "Do",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "not",
@@ -9335,10 +9406,10 @@
           {
             "text": "to",
             "ids": [
-              "w9"
+              "w8"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "wrath,",
@@ -9358,11 +9429,11 @@
           },
           {
             "text": "it",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "is",
@@ -9390,11 +9461,11 @@
           },
           {
             "text": "is",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "mine;",
@@ -9438,11 +9509,11 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "Lord.",
@@ -9999,10 +10070,11 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
+            "ids": [
+              "w1"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "“if",
@@ -10014,10 +10086,11 @@
           },
           {
             "text": "your",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "enemy",
@@ -10029,10 +10102,11 @@
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "hungry,",
@@ -10076,17 +10150,19 @@
           },
           {
             "text": "is",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "thirsty,",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "give",
@@ -10122,10 +10198,11 @@
           },
           {
             "text": "by",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "doing",
@@ -10146,10 +10223,10 @@
           {
             "text": "you",
             "ids": [
-              "w6"
+              "w18"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "will",
@@ -10194,10 +10271,10 @@
           {
             "text": "on",
             "ids": [
-              "w1"
+              "w19"
             ],
             "after": " ",
-            "confidence": "auto-high"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "his",
@@ -10538,17 +10615,19 @@
           },
           {
             "text": "be",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "conquered",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "unlinked",
-            "reason": "No high-confidence lexical anchor"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "by",
