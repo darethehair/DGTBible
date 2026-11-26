@@ -1213,9 +1213,16 @@
       "chapter_sha256": "113cf904f29502dfcfff109892e1ae0c5e8feb70dd309a763b282ab92b256839",
       "scope": "Reviewed all 21 verses in both directions. Repaired the shifts in the sacrifice and renewing passages, distinguished the repeated exhortations and dative phrases, recovered verbal and adjectival renderings, and split the dash at 12:2.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–12 audit passed."
+    },
+    "romans/13": {
+      "status": "corrected",
+      "commit": "e2ed2170fefbce7587468e0aeb8b8a85054e44f9",
+      "chapter_sha256": "5bb7ff3c4b6affb7e280e87128d52841c0916ade56176d665af2abc92d8fc70a",
+      "scope": "Reviewed all 14 verses in both directions. Distinguished the reordered repetitions in the four payment and honor phrases, corrected each prohibition and its subject and negative, and restored alignments for the closing exhortation.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–13 audit passed."
     }
   },
-  "resume": "romans/13",
+  "resume": "romans/14",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
