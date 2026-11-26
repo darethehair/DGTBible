@@ -807,16 +807,24 @@
       "chapter_sha256": "2679716a9e64cbdb121568a28649013c5f0b95cab2977ee17c0679ae7b322ced",
       "scope": "Acts 6:1–15. Bilingual comparison in both directions. Repaired relative clauses, the repeated conjunctions in 6:5 and 6:9, and the two distinct pronoun targets in 6:15.",
       "regression": "The Acts 1–6 audit passed across 193 verses. The 15 Acts 6 verses preserve original wording and all source IDs."
+    },
+    "acts/07": {
+      "status": "corrected",
+      "commit": "93fe8d3",
+      "chapter_sha256": "fd62726f2b59d3c26551260feb3921b745fc2b859f387ddff56acc7a1a56b33d",
+      "scope": "Acts 7:1–60. Bilingual comparison in both directions through Stephen’s speech and its aftermath. Corrected repeated narrative pronouns and conjunctions, restored precise prepositions, split two English dash tokens by source, and preserved names or copulas supplied in English.",
+      "regression": "The Acts 1–7 audit passed across 253 verses. All 60 Acts 7 verses retain original wording and source IDs, and all links resolve."
     }
   },
-  "resume": "acts/07",
+  "resume": "acts/08",
   "verification_backlog": [
     "acts/01",
     "acts/02",
     "acts/03",
     "acts/04",
     "acts/05",
-    "acts/06"
+    "acts/06",
+    "acts/07"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
