@@ -9,6 +9,8 @@ def atoms(s): return [n(x) for x in re.findall(r"[A-Za-z0-9]+",str(s)) if n(x)]
 
 linked=unlinked=count=0
 recoverable=[]
+reviewed=0
+allowlist=json.loads(Path('data/alignment-quality-allowlist.json').read_text(encoding='utf8'))
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'galatians'/f'{ch:02}.json').read_text(encoding='utf8'))
  count+=len(d['verses'])
@@ -34,8 +36,14 @@ for ch in range(start,end+1):
      lids.extend(y.get('ids',[]))
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
-    recoverable.append((ch,v['v'],w,len(idxs),lids))
+    for i,source in zip(idxs,lids,strict=True):
+     token=D[i]
+     key=f"galatians.{ch:02}.{v['v']}|{i}|{token['text']}||{source}"
+     if token.get('supplied') and key in allowlist:
+      reviewed+=1
+     else:
+      recoverable.append((ch,v['v'],i,token['text'],source))
 pct=linked/(linked+unlinked)*100
 assert pct>=75,pct
 assert not recoverable, f'recoverable exact DGT links left unlinked: {recoverable[:20]}'
-print(f'Galatians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked.')
+print(f'Galatians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; {reviewed} reviewed supplied-word exceptions, 0 unexplained exact-link candidates.')
