@@ -1274,11 +1274,17 @@
       }
     },
     "romans/12": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "360e04109cc4969d1e7a8866555d3fd476cabac7",
       "chapter_sha256": "113cf904f29502dfcfff109892e1ae0c5e8feb70dd309a763b282ab92b256839",
       "scope": "Reviewed all 21 verses in both directions. Repaired the shifts in the sacrifice and renewing passages, distinguished the repeated exhortations and dative phrases, recovered verbal and adjectival renderings, and split the dash at 12:2.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–12 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–12 audit passed.",
+      "final_verification": {
+        "commit": "b9f90f0be74d20c04cbed5e193b742439f3675c7",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the imperative and participial constructions, the repeated service, blessing and rejoicing words, the dash boundary at 12:2, and the absence of a separate Greek copula or possessive where English supplies one.",
+        "chapter_sha256": "f78599f483a4cca76ea830c22cd622ca57a89476246866dde69b6782050c7675"
+      }
     },
     "romans/13": {
       "status": "corrected",
@@ -1309,9 +1315,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/12",
+  "resume": "romans/13",
   "verification_backlog": [
-    "romans/12",
     "romans/13",
     "romans/14",
     "romans/15",
