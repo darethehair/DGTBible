@@ -1573,11 +1573,17 @@
       }
     },
     "2corinthians/03": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "3c9fb18b2e48dc583cdb06b1d1532d9e41327f5f",
       "chapter_sha256": "2b3dc9a2507334398148ee5c478f3a54255490b4159151e2f10061a522aab90e",
       "scope": "Reviewed all 18 verses in both directions. Reviewed the letter and tablet imagery, repeated glory and ministry phrases, and the veil passage. Separated the two glorified occurrences in 3:10 and the two occurrences of end in 3:13.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–3 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–3 audit passed.",
+      "final_verification": {
+        "commit": "08f68e9df35c2fe23cdc448d3433e085ce142e93",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Checked the letter image, both sets of stone and heart tablets, the Spirit and letter contrast and each glory and veil occurrence. Updated the dative of face in 3:18.",
+        "chapter_sha256": "0a03a1ac280c1695fb8d2354fd65e98b2ca08889981adc403be383f1bfc4087f"
+      }
     },
     "2corinthians/04": {
       "status": "corrected",
@@ -1650,9 +1656,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/03",
+  "resume": "2corinthians/04",
   "verification_backlog": [
-    "2corinthians/03",
     "2corinthians/04",
     "2corinthians/05",
     "2corinthians/06",
