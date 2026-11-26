@@ -2559,10 +2559,35 @@
         "notes": "Verified the two greetings, the shared meaning of clothed humility, separate future verbs, and the verbless doxology.",
         "chapter_sha256": "7ab0616415cf62813ffbadf5f574ac9aeedd4081939268ab022f3154fc2f784c"
       }
+    },
+    "2peter/01": {
+      "status": "corrected",
+      "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
+      "chapter_sha256": "c4765a4adef601073d6f1b471022febf655b0ce8c9edb6bfef9e095b1eedf179",
+      "scope": "Reviewed all 21 verses in both directions. Matched compound and inflected renderings and scoped supplied articles and implicit objects.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 Peter alignment audit passed."
+    },
+    "2peter/02": {
+      "status": "corrected",
+      "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
+      "chapter_sha256": "40c4884f91c3b12d3c0862d6c370469bdebe69c5b230c748d487937041af5d40",
+      "scope": "Reviewed all 22 verses in both directions. Distinguished repeated words, split the em dash token without changing the translation, and retained source variant wording as supplied.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 Peter alignment audit passed."
+    },
+    "2peter/03": {
+      "status": "corrected",
+      "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
+      "chapter_sha256": "9ac98ef13f9ecfbe8c1b618cae2f11eb3d3e2e284463ce22ee1e29be0f3af337",
+      "scope": "Reviewed all 18 verses in both directions. Distinguished repeated water, new, and auxiliaries and verified articles and participial constructions.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 Peter alignment audit passed."
     }
   },
   "resume": "2peter/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "2peter/01",
+    "2peter/02",
+    "2peter/03"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2578,7 +2603,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
