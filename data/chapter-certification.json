@@ -919,9 +919,16 @@
       "chapter_sha256": "afc98f1d029399813bf82ddc74b802299777ec6ffbcd761bda9861aa4b203976",
       "scope": "Reviewed all 30 verses in both directions, including Paul’s speech, repeated names, participial and infinitival clauses, and the commander’s questions.",
       "regression": "Verse reconstruction, alignment structure, and Acts 1–22 audit passed."
+    },
+    "acts/23": {
+      "status": "corrected",
+      "commit": "523795a",
+      "chapter_sha256": "960c0b958f9224243fd98e508e18549cd8f2071e69d9d8dcb40f4502f26343e7",
+      "scope": "Reviewed all 35 verses in both directions, including Paul’s hearing, the ambush and the commander’s letter, with corrections to repeated function words, clauses and implied English objects.",
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–23 audit passed."
     }
   },
-  "resume": "acts/23",
+  "resume": "acts/24",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -944,7 +951,8 @@
     "acts/19",
     "acts/20",
     "acts/21",
-    "acts/22"
+    "acts/22",
+    "acts/23"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
