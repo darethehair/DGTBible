@@ -856,9 +856,16 @@
       "chapter_sha256": "d6b11b725ffd9a4da6558af7b21bac47c7750f7e3189e185a9e6ed49307e9a56",
       "scope": "Acts 13:1–52. Bilingual comparison in both directions. Corrected list conjunctions, article placement, repeated subjects and objects, and prepositions. Separated the abrupt English transitions at the dashes in 13:8 and preserved the distinction between explicit and implied pronouns.",
       "regression": "The Acts 1–13 audit passed across 490 verses. All 52 Acts 13 verses preserve original wording and source IDs, and every link resolves."
+    },
+    "acts/14": {
+      "status": "corrected",
+      "commit": "cb88ee8",
+      "chapter_sha256": "6fa545d8286ef0132c50df01ccec592f6a9f928f4afb63b7f40831ce0514949a",
+      "scope": "Acts 14:1–28. Bilingual comparison in both directions. Corrected repeated moves and prepositions, linked the relative reference rendered as the second “Paul” in 14:9, and preserved the supplied “temple” and “saying.”",
+      "regression": "The Acts 1–14 audit passed across 518 verses. All 28 Acts 14 verses preserve the original Greek and DGT wording, and every link resolves."
     }
   },
-  "resume": "acts/14",
+  "resume": "acts/15",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -872,7 +879,8 @@
     "acts/10",
     "acts/11",
     "acts/12",
-    "acts/13"
+    "acts/13",
+    "acts/14"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
