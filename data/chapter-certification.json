@@ -3939,5 +3939,18 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all 1 public 2 John chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "3john_verification": {
+    "commit": "2fc951b894012393f901598c3dac22a6c844d075",
+    "verses": 15,
+    "app_version": "v0.91",
+    "cache": "dgtbible-v101",
+    "structural_regression": "All chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 98.2%.",
+    "semantic_regression": "The reviewed-book audit passed with one scoped supplied-token exception. The critical audit recorded the substantival construction at 1:8.",
+    "reviewed_hover_flags": [],
+    "reviewed_advisories": "The two occurrences of τὸ at 1:11 mark the substantival adjectives evil and good. The English nouns need no separate rendering of the Greek articles.",
+    "chapter_sha256": {
+      "3john/01": "d0a3bc4321d7c825c73252dd91998dfd33d37b4f68fc8b47a06077d7027d2334"
+    }
   }
 }
