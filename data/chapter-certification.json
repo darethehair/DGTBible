@@ -2210,7 +2210,7 @@
       }
     },
     "titus/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f9a8088c93a355652630b26166e2f93b61050b40",
       "chapter_sha256": "b5267b849eefeccdaf2dca4f67cb624bc3458de8035bf10ec478d809378bd213",
       "scope": "Reviewed all 16 verses in both directions. Corrected the opening genitives, the two temporal adjectives, the elder and overseer clauses, the distinct appeal and contrast constructions.",
@@ -2223,7 +2223,7 @@
       }
     },
     "titus/02": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f9a8088c93a355652630b26166e2f93b61050b40",
       "chapter_sha256": "87bd96728f8be8cc510c11d7d82e22f9507e7278d5d0ddad42b816b20dd565e6",
       "scope": "Reviewed all 15 verses in both directions. Corrected the household instructions, repeated prepositions and articles, the distinct purpose clauses and the final imperative list.",
@@ -2236,7 +2236,7 @@
       }
     },
     "titus/03": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f9a8088c93a355652630b26166e2f93b61050b40",
       "chapter_sha256": "80a0dc9c1386eeee372820dd790c54a0586ad29ab06ac01c00489e0d6e78e385",
       "scope": "Reviewed all 15 verses in both directions. Corrected repeated datives, the two accounts of works, the two different good phrases in 3:8, and the greetings and blessing.",
@@ -2249,7 +2249,7 @@
       }
     }
   },
-  "resume": "titus",
+  "resume": "philemon/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2266,7 +2266,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -3158,6 +3158,14 @@
       "titus/02": "87bd96728f8be8cc510c11d7d82e22f9507e7278d5d0ddad42b816b20dd565e6",
       "titus/03": "80a0dc9c1386eeee372820dd790c54a0586ad29ab06ac01c00489e0d6e78e385"
     },
-    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 175 recorded chapter hashes and release preparation preserved all 203 reviewed and preserved chapter files byte-for-byte."
+    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 175 recorded chapter hashes and release preparation preserved all 203 reviewed and preserved chapter files byte-for-byte.",
+    "deployment": {
+      "commit": "8593a8cf39e5148ebc73e56463bd6badfe26f174",
+      "app_version": "v0.83",
+      "cache": "dgtbible-v093",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45817090731",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all three public Titus chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
