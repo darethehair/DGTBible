@@ -1878,10 +1878,10 @@
       "scope": "Reviewed all 30 verses in both directions. Separated the repeated articles, pronouns and causal connectives, and corrected the implied subjects and exact links in the opening and prison report.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Philippians 1–1 audit passed.",
       "final_verification": {
-        "commit": "7ae9ff92fbd6ebeb607686cce283f431895594b8",
+        "commit": "35a8e6de5fec56c544f40f3c0829f3005dac0e0c",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Verified the two rejoice verbs and their temporal forms in 1:18, the repeated causal and dative phrases, and the supplied copulas in 1:21 and 1:24.",
-        "chapter_sha256": "bd86acbd82022fa42e59b29cbe70ac9b1cf3034efc2dcab650f4b613231ce0be"
+        "notes": "Verified the two rejoice verbs and their temporal forms in 1:18, the repeated causal and dative phrases, and the supplied copulas in 1:21 and 1:24. Linked the directional preposition in 1:23 to the infinitive marker in the English.",
+        "chapter_sha256": "18c919f72a2bf7b2ccc63906cb393cdcce96066fb382b062c59b30a3bf19e41d"
       }
     },
     "philippians/02": {
@@ -1891,10 +1891,10 @@
       "scope": "Reviewed all 30 verses in both directions. Distinguished conditional and supplied words, and restored the Greek word links in the Christ hymn and the report about Timothy and Epaphroditus.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Philippians 1–2 audit passed.",
       "final_verification": {
-        "commit": "02309e48a6580776410d11bd556994c085db1065",
+        "commit": "35a8e6de5fec56c544f40f3c0829f3005dac0e0c",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Verified four conditional constructions and the repeated same and each, separated works from work in 2:13, and refined the dative and nominalized links in 2:27 and 2:30.",
-        "chapter_sha256": "ba6ef5a593f88f8c02687e2947db59c4312d7d98ea40b1f6d7cb4853666487e1"
+        "notes": "Verified four conditional constructions and the repeated same and each, separated works from work in 2:13, and refined the dative and nominalized links in 2:27 and 2:30. Verified the two Greek prepositions sharing according to in 2:3, the English auxiliary and preposition ellipses in 2:4 and 2:26, and scoped the three on tokens in 2:27 to their own respective objects.",
+        "chapter_sha256": "d2b8ea289f3e237e43a5cf42224b11b8ac75f871cebbf97bc21713fc53384969"
       }
     },
     "philippians/03": {
@@ -1917,10 +1917,10 @@
       "scope": "Reviewed all 23 verses in both directions. Matched the repeated appeals, rejoicing commands and qualifications, with separate links for the two verbs sharing received.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Philippians 1–4 audit passed.",
       "final_verification": {
-        "commit": "fd1229f56f4750be321a5f8e17dd9d72c9ad468c",
+        "commit": "01d9205a24b50e8cd1ae422b4ded4e66c84c7f45",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Verified the two appeals and rejoicing commands, distinct occurrences of received, and shared dative preposition in 4:6. The repeated English copulas in 4:8 remain supplied.",
-        "chapter_sha256": "6b5a7da35d6b9a1e3b1f1cf63208292b0671f0f14776c635e3737514a04503f2"
+        "notes": "Verified the two appeals and rejoicing commands, distinct occurrences of received, and shared dative preposition in 4:6. The repeated English copulas in 4:8 remain supplied. Confirmed that the emphatic yourselves reflects both καὶ and ὑμεῖς in 4:15.",
+        "chapter_sha256": "c0ba294281b5b1b89200a1710c91c1ea6e6fe9141f25d413111823868693ce6b"
       }
     }
   },
@@ -2535,6 +2535,41 @@
       "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45742527110",
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all six chapter SHA-256 values against the final bilingual review."
+    }
+  },
+  "philippians_verification": {
+    "commit": "35a8e6de5fec56c544f40f3c0829f3005dac0e0c",
+    "verses": 104,
+    "app_version": "v0.77",
+    "cache": "dgtbible-v087",
+    "structural_regression": "All four chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 94.8%.",
+    "semantic_regression": "The full Philippians audit passed with 69 scoped supplied-word exceptions and no unexplained exact or pronoun candidates. Five lexical mismatches independently flagged by the critical audit have exact keys and bilingual explanations in the quality allowlist.",
+    "hover_regression": "Reviewed 12 diagnostic cases as legitimate verb inflection, shared grammatical phrases and idioms. Sixteen bidirectional Chromium checks passed, including repeated verbs and the three distinct on targets in 2:27.",
+    "reviewed_hover_flags": [
+      "2:10 w13 καταχθονίων, → 11:of 12:those 19:under 20:the 21:earth,",
+      "2:5 w3 φρονεῖτε → 0:Have 2:way 3:of 4:thinking",
+      "2:10 w11 ἐπιγείων → 11:of 12:those 16:on 17:earth",
+      "4:6 w16 γνωριζέσθω → 13:let 16:be 17:made 18:known",
+      "4:5 w4 γνωσθήτω → 0:Let 3:be 4:known",
+      "2:6 w8 ἡγήσατο → 7:did 9:regard 13:as",
+      "2:18 w3 αὐτὸ → 1:in 3:same 4:way",
+      "3:16 w6 αὐτῷ → 9:by 11:same 12:standard.",
+      "2:8 w5 μέχρι → 5:to 7:point 8:of",
+      "4:14 w7 θλίψει. → 6:in 8:affliction.",
+      "4:23 w4 κυρίου → 2:of 4:Lord",
+      "4:5 w6 ἀνθρώποις. → 5:to 7:people."
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "1:22 means is the supplied predicate in an elliptical clause.",
+      "2:20 else makes the contextual comparison explicit without a separate Greek word.",
+      "2:23 how and go make the expression concerning Paul into a full English clause."
+    ],
+    "reviewed_advisory_unused_greek": "The audit prompted direct links for εἰς in 1:23 and the second κατά in 2:3. In 4:10 the Greek relative phrase ἐφʼ ᾧ has no separate wording at the English sentence break.",
+    "chapter_sha256": {
+      "philippians/01": "18c919f72a2bf7b2ccc63906cb393cdcce96066fb382b062c59b30a3bf19e41d",
+      "philippians/02": "d2b8ea289f3e237e43a5cf42224b11b8ac75f871cebbf97bc21713fc53384969",
+      "philippians/03": "5d828ff1329642d5d19a91d84d323f377aa0603bfcee4dd9fdd77f4e0198e060",
+      "philippians/04": "c0ba294281b5b1b89200a1710c91c1ea6e6fe9141f25d413111823868693ce6b"
     }
   }
 }
