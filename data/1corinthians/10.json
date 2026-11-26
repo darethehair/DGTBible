@@ -8317,10 +8317,10 @@
           {
             "text": "in",
             "ids": [
-              "w10"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -8445,10 +8445,10 @@
           {
             "text": "in",
             "ids": [
-              "w20"
+              "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -9511,10 +9511,10 @@
           {
             "text": "in",
             "ids": [
-              "w12"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -10593,7 +10593,8 @@
           {
             "text": "with",
             "ids": [
-              "w17"
+              "w16",
+              "w18"
             ],
             "after": " ",
             "confidence": "reviewed-precise"
@@ -11140,18 +11141,19 @@
           {
             "text": "of",
             "ids": [
-              "w11"
+              "w11",
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "table",
@@ -13545,11 +13547,11 @@
           },
           {
             "text": "an",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target.",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "unbeliever",
@@ -15390,11 +15392,11 @@
           },
           {
             "text": "for",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "which",
