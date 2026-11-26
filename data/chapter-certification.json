@@ -1534,17 +1534,21 @@
       }
     },
     "1corinthians/16": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "7ffb4f868d91f0676d85f06c20995979e3f3a18a",
       "chapter_sha256": "2cf3af3f41e9aabea50a491204cbcb1ed80b6078678a5e7c6ae1a23e7caeaa58",
       "scope": "Reviewed all 24 verses in both directions. Reviewed the collection instructions, travel plans and greetings. Distinguished repeat verbs and pronouns, and separate source IDs for the Greek command and following Aramaic expression.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed.",
+      "final_verification": {
+        "commit": "7f26701f7a9a8437f69789a51c4b0775781f4125",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified repeated coming, sending, greeting and other verbs against their distinct occurrences. Separated the purpose and recipient links, confirmed the supplied benedictory copulas, and checked that the Aramaic expression in 16:22 uses IDs distinct from the preceding Greek demand.",
+        "chapter_sha256": "6e114f9749213c9d154d298941f06a6dfc7298f2af7afc89688f5b4d94fdc5c5"
+      }
     }
   },
-  "resume": "1corinthians/16",
-  "verification_backlog": [
-    "1corinthians/16"
-  ],
+  "resume": "1corinthians",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -1560,7 +1564,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "deployment",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
