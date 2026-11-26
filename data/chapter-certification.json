@@ -1768,11 +1768,17 @@
       }
     },
     "galatians/05": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "40de0511f88c43f7fc2b515af1dab3e3dcda56c6",
       "chapter_sha256": "7f3f2ecd4d8f210131dee8431d0c4a562ab7784894b15a41990e028a313f9432",
       "scope": "Reviewed all 26 verses in both directions. Reviewed freedom and obligation, the repeated uses of flesh and Spirit, and the works and fruit lists. Checked the dative and genitive relationships and both phrases in the closing imperatives.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–5 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–5 audit passed.",
+      "final_verification": {
+        "commit": "dcd1f54679e4f4ef6f34ad52cd8dc8ea66ca3539",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the parallel freedom, circumcision and law terms, the source IDs for repeated Spirit and flesh, and each fruit and work. Confirmed that the two reciprocal pronouns in 5:26 map to distinct occurrences.",
+        "chapter_sha256": "723e5ba5bdedb41b9be54c05b4446964a21b71771ba332f6dee7ec3022d8c5b0"
+      }
     },
     "galatians/06": {
       "status": "corrected",
@@ -1782,9 +1788,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–6 audit passed."
     }
   },
-  "resume": "galatians/05",
+  "resume": "galatians/06",
   "verification_backlog": [
-    "galatians/05",
     "galatians/06"
   ],
   "mark_verification": {
