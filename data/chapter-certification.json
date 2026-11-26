@@ -1435,9 +1435,16 @@
       "chapter_sha256": "4d784e8c1a494f813c66652f3840225c9039000f02f32ca4e8d81aa7733ad3ab",
       "scope": "Reviewed all 40 verses in both directions. Reviewed tongues and prophecy, the instruments and speech analogies, repeated assembly terms and grammatical links through the closing instructions.",
       "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–14 audit passed."
+    },
+    "1corinthians/15": {
+      "status": "corrected",
+      "commit": "ff4abcd9a2404b3f72ae1376e9b901e125ad04e2",
+      "chapter_sha256": "ff77ed45d2821415f2b0370bfce545cabb44ed9432ae8a41333ba72c02cbdf7a",
+      "scope": "Reviewed all 58 verses in both directions. Reviewed the resurrection argument in both directions, distinguishing repeated resurrection clauses, comparatives, the seed and body analogies, and the closing quotations. Separated Greek targets on both sides of retained em dashes in chapters 14 and 15.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–15 audit passed."
     }
   },
-  "resume": "1corinthians/15",
+  "resume": "1corinthians/16",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
