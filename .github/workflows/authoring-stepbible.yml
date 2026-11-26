@@ -38,9 +38,9 @@ jobs:
       - name: Preflight SBLGNT against TAGNT
         run: node scripts/preflight-john-batch.mjs
       - name: Build generated John range
-        run: python scripts/build-john-batch.py
+        run: python scripts/preserve-certification.py python scripts/build-john-batch.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit generated John range
         run: python scripts/audit-john-batch.py
       - name: Commit clean generated batch

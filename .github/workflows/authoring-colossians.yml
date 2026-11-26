@@ -30,9 +30,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-colossians.mjs
       - name: Build Colossians range
-        run: python scripts/build-colossians.py
+        run: python scripts/preserve-certification.py python scripts/build-colossians.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Colossians range
         run: python scripts/audit-colossians.py
       - name: Commit clean generated Colossians range

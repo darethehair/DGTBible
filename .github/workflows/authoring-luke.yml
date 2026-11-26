@@ -43,13 +43,13 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-luke.mjs
       - name: Build Luke range
-        run: python scripts/build-luke.py
+        run: python scripts/preserve-certification.py python scripts/build-luke.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Repair deterministic Luke links after overrides
-        run: python scripts/repair-luke-final.py
+        run: python scripts/preserve-certification.py python scripts/repair-luke-final.py
       - name: Restore reviewed Luke alignments
-        run: python scripts/preserve-reviewed-alignments.py restore luke /tmp/luke-reviewed.json
+        run: python scripts/preserve-certification.py python scripts/preserve-reviewed-alignments.py restore luke /tmp/luke-reviewed.json
       - name: Audit Luke range
         run: python scripts/audit-luke.py
       - name: Audit Luke hover breadth

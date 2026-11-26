@@ -33,9 +33,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-1corinthians.mjs
       - name: Build 1 Corinthians range
-        run: python scripts/build-1corinthians.py
+        run: python scripts/preserve-certification.py python scripts/build-1corinthians.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit 1 Corinthians range
         run: python scripts/audit-1corinthians.py
       - name: Commit clean generated 1 Corinthians range

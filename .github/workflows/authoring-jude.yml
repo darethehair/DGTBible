@@ -23,9 +23,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-jude.mjs
       - name: Build Jude
-        run: python scripts/build-jude.py
+        run: python scripts/preserve-certification.py python scripts/build-jude.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Jude
         run: python scripts/audit-jude.py
       - name: Commit clean generated Jude

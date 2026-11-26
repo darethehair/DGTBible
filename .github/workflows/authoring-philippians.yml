@@ -30,9 +30,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-philippians.mjs
       - name: Build Philippians range
-        run: python scripts/build-philippians.py
+        run: python scripts/preserve-certification.py python scripts/build-philippians.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Philippians range
         run: python scripts/audit-philippians.py
       - name: Commit clean generated Philippians range

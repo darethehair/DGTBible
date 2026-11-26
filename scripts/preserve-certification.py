@@ -1,5 +1,6 @@
 """Run a data preparation command while preserving reviewed chapter files."""
 
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -12,6 +13,22 @@ def main(command):
 
     data_dir = Path(__file__).resolve().parents[1] / "data"
     checkpoint = json.loads((data_dir / "chapter-certification.json").read_text())
+    if command == ["--check"]:
+        checked = 0
+        mismatches = []
+        for chapter, entry in checkpoint["chapters"].items():
+            expected = entry.get("final_verification", {}).get("chapter_sha256") or entry.get("chapter_sha256")
+            if not expected:
+                continue
+            checked += 1
+            path = data_dir / f"{chapter}.json"
+            if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                mismatches.append(chapter)
+        if mismatches:
+            raise SystemExit("Reviewed chapter hashes do not match the checkpoint: " + ", ".join(mismatches))
+        print(f"Verified {checked} reviewed chapter hashes against the checkpoint")
+        return 0
+
     paths = {data_dir / f"{chapter}.json" for chapter in checkpoint["chapters"]}
     for book in checkpoint["preserved_previous_scope"]:
         paths.update((data_dir / book).glob("[0-9][0-9].json"))

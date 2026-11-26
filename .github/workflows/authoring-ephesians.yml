@@ -29,9 +29,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-ephesians.mjs
       - name: Build Ephesians range
-        run: python scripts/build-ephesians.py
+        run: python scripts/preserve-certification.py python scripts/build-ephesians.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Ephesians range
         run: python scripts/audit-ephesians.py
       - name: Commit clean generated Ephesians range

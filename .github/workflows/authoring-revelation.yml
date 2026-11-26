@@ -30,9 +30,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-revelation.mjs
       - name: Build Revelation range
-        run: python scripts/build-revelation.py
+        run: python scripts/preserve-certification.py python scripts/build-revelation.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Revelation range
         run: python scripts/audit-revelation.py
       - name: Commit clean generated Revelation range

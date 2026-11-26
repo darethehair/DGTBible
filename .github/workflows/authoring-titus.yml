@@ -30,9 +30,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-titus.mjs
       - name: Build Titus range
-        run: python scripts/build-titus.py
+        run: python scripts/preserve-certification.py python scripts/build-titus.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Titus range
         run: python scripts/audit-titus.py
       - name: Commit clean generated Titus range

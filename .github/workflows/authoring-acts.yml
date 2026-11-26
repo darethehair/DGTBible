@@ -47,15 +47,15 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-acts.mjs
       - name: Build Acts range
-        run: python scripts/build-acts.py
+        run: python scripts/preserve-certification.py python scripts/build-acts.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Repair deterministic/reviewed Acts links after overrides
-        run: python scripts/repair-acts-final.py
+        run: python scripts/preserve-certification.py python scripts/repair-acts-final.py
       - name: Reapply reviewed master narrowing corrections
-        run: python scripts/apply-master-reviewed-batch26.py
+        run: python scripts/preserve-certification.py python scripts/apply-master-reviewed-batch26.py
       - name: Restore reviewed Acts alignments before final audit
-        run: python scripts/preserve-reviewed-alignments.py restore acts /tmp/acts-reviewed.json
+        run: python scripts/preserve-certification.py python scripts/preserve-reviewed-alignments.py restore acts /tmp/acts-reviewed.json
       - name: Audit Acts range
         run: python scripts/audit-acts.py
       - name: Produce structural Acts hover review queue

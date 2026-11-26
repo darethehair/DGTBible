@@ -30,9 +30,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-philemon.mjs
       - name: Build Philemon range
-        run: python scripts/build-philemon.py
+        run: python scripts/preserve-certification.py python scripts/build-philemon.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Philemon range
         run: python scripts/audit-philemon.py
       - name: Commit clean generated Philemon range

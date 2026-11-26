@@ -23,9 +23,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-1john.mjs
       - name: Build 1 John
-        run: python scripts/build-1john.py
+        run: python scripts/preserve-certification.py python scripts/build-1john.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit 1 John
         run: python scripts/audit-1john.py
       - name: Commit clean generated book

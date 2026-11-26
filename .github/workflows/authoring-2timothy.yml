@@ -30,9 +30,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-2timothy.mjs
       - name: Build 2 Timothy range
-        run: python scripts/build-2timothy.py
+        run: python scripts/preserve-certification.py python scripts/build-2timothy.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit 2 Timothy range
         run: python scripts/audit-2timothy.py
       - name: Commit clean generated 2 Timothy range

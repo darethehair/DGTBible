@@ -32,9 +32,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-romans.mjs
       - name: Build Romans range
-        run: python scripts/build-romans.py
+        run: python scripts/preserve-certification.py python scripts/build-romans.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Romans range
         run: python scripts/audit-romans.py
       - name: Commit clean generated Romans range

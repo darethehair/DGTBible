@@ -30,9 +30,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-2corinthians.mjs
       - name: Build 2 Corinthians range
-        run: python scripts/build-2corinthians.py
+        run: python scripts/preserve-certification.py python scripts/build-2corinthians.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit 2 Corinthians range
         run: python scripts/audit-2corinthians.py
       - name: Commit clean generated 2 Corinthians range

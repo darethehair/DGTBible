@@ -30,9 +30,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-2thessalonians.mjs
       - name: Build 2 Thessalonians range
-        run: python scripts/build-2thessalonians.py
+        run: python scripts/preserve-certification.py python scripts/build-2thessalonians.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit 2 Thessalonians range
         run: python scripts/audit-2thessalonians.py
       - name: Commit clean generated 2 Thessalonians range

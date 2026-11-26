@@ -23,9 +23,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-hebrews.mjs
       - name: Build Hebrews
-        run: python scripts/build-hebrews.py
+        run: python scripts/preserve-certification.py python scripts/build-hebrews.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Hebrews
         run: python scripts/audit-hebrews.py
       - name: Commit clean generated Hebrews

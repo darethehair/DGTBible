@@ -23,9 +23,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-peter.mjs
       - name: Build 1 and 2 Peter
-        run: python scripts/build-peter.py
+        run: python scripts/preserve-certification.py python scripts/build-peter.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit 1 and 2 Peter
         run: python scripts/audit-peter.py
       - name: Commit clean generated Peter letters

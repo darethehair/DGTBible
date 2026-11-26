@@ -29,9 +29,9 @@ jobs:
       - name: Extract pinned SBLGNT and TAGNT
         run: node scripts/extract-stepbible-galatians.mjs
       - name: Build Galatians range
-        run: python scripts/build-galatians.py
+        run: python scripts/preserve-certification.py python scripts/build-galatians.py
       - name: Apply reviewed alignment quality overrides
-        run: python scripts/apply-quality-overrides.py
+        run: python scripts/preserve-certification.py python scripts/apply-quality-overrides.py
       - name: Audit Galatians range
         run: python scripts/audit-galatians.py
       - name: Commit clean generated Galatians range
