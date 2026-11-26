@@ -954,9 +954,16 @@
       "chapter_sha256": "c73c1d17bf4ee79cf2c030f6c52e87232232be929208aca6cf89757341d21fec",
       "scope": "Reviewed all 44 verses in both directions, including sailing and shipwreck idioms, the repeated words for successive actions, and wording supplied from context.",
       "regression": "Verse reconstruction, alignment structure, and Acts 1–27 audit passed."
+    },
+    "acts/28": {
+      "status": "corrected",
+      "commit": "20f68bc",
+      "chapter_sha256": "4188050d6a56975863444ec0cad7929080755883b88155ff81df4c4c00739d28",
+      "scope": "Reviewed all 29 stored verses in both directions, including the Malta and Rome narratives and the citation of Isaiah, and gave Caesar and the separate negation in 28:19 distinct hover targets.",
+      "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/28",
+  "resume": "acts/01",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -984,7 +991,8 @@
     "acts/24",
     "acts/25",
     "acts/26",
-    "acts/27"
+    "acts/27",
+    "acts/28"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -1001,7 +1009,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "initial-review",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
