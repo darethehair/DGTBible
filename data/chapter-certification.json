@@ -1170,11 +1170,17 @@
       }
     },
     "romans/04": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "86272073ca69d707f2b2f53f05cd6bf23d1f9cb3",
       "chapter_sha256": "80befdbe5a1c3e3f985701a387008acbff42171b514e6ee6caa810fb5cf33ed5",
       "scope": "Reviewed all 25 verses in both directions. Checked Abraham’s faith and the promise in both directions, distinguished repeated case markers and prepositions, separated three fused dash tokens, and restored missing verbs and other lexical links.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–4 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–4 audit passed.",
+      "final_verification": {
+        "commit": "ac7dadedeeb92364594bf2ce959431c196e87c68",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the repeated faith, circumcision and parenthetical readings, including both occurrences of hope and the three dash boundaries. Checked shared relative and dative constructions and the supplied wording in elliptical clauses.",
+        "chapter_sha256": "89e865cb9a8fbc2eae46017fde9e8b5a300761c0c9588f46e31c4a03f6431353"
+      }
     },
     "romans/05": {
       "status": "corrected",
@@ -1261,9 +1267,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/04",
+  "resume": "romans/05",
   "verification_backlog": [
-    "romans/04",
     "romans/05",
     "romans/06",
     "romans/07",
