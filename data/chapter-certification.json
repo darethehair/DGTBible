@@ -1157,9 +1157,16 @@
       "chapter_sha256": "80befdbe5a1c3e3f985701a387008acbff42171b514e6ee6caa810fb5cf33ed5",
       "scope": "Reviewed all 25 verses in both directions. Checked Abraham’s faith and the promise in both directions, distinguished repeated case markers and prepositions, separated three fused dash tokens, and restored missing verbs and other lexical links.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–4 audit passed."
+    },
+    "romans/05": {
+      "status": "corrected",
+      "commit": "4be27d1dd6133312984c9a0150cc70a1814770f1",
+      "chapter_sha256": "fae705e7b0114de46e7c10083a8097ccc789f6b5b056454ab575b26ed9f2c3f3",
+      "scope": "Reviewed all 21 verses in both directions. Restored the verbal links for boasting, standing, reconciling and increasing, corrected case and conjunction links in the Adam–Christ comparison, and retained legitimate elliptical English wording.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–5 audit passed."
     }
   },
-  "resume": "romans/05",
+  "resume": "romans/06",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
