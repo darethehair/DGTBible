@@ -1199,9 +1199,16 @@
       "chapter_sha256": "fd9c14de26014f8e53fd43d28957a099ef98cba5ab9869e8056e110fd3c68e67",
       "scope": "Reviewed all 21 verses in both directions. Corrected the mouth and heart possessives, the scope of call on and believe in, and the distinct clauses and possessives in the quotations. Kept DGT expansions where a Greek noun or copula is implicit.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–10 audit passed."
+    },
+    "romans/11": {
+      "status": "corrected",
+      "commit": "8e873ebbda337d1fde5dfbbce2d4edba710cffcb",
+      "chapter_sha256": "ec792b71124876cb16863023191c1792118fa0818531ba1e354e14a23afafdf1",
+      "scope": "Reviewed all 36 verses in both directions. Reviewed the remnant, olive-tree analogy, covenant and doxology. Restored missing verbs and distinct possessives, corrected repeated prepositions and connective particles, and retained legitimate elliptical English wording.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–11 audit passed."
     }
   },
-  "resume": "romans/11",
+  "resume": "romans/12",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
