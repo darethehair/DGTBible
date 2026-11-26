@@ -1724,7 +1724,7 @@
       "final_verification": {
         "commit": "728e55580109db28c154cc7fcc3c03d647891930",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Verified the paired proclamations and recipients, the origin contrast, the calling and itinerary, and the English placement of our in 1:3. Checked the supplied God in 1:15, the dip in explicit verbs in the doxology, and both sides of the em dash in 1:20.",
+        "notes": "Verified the paired proclamations and recipients, the origin contrast, the calling and itinerary, and the English placement of our in 1:3. Checked the supplied God in 1:15, the supplied copula in the doxology, and both sides of the em dash in 1:20.",
         "chapter_sha256": "394c83d5fba37bd1bad486f25b3282a628f76ce5568e774922839df4146b9b32"
       }
     },
@@ -2266,6 +2266,57 @@
       "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45740747896",
       "workflow_status": "success",
       "public_verification": "The public app.js and sw.js report the release versions. All 13 public 2 Corinthians chapter files match the verified SHA-256 hashes."
+    }
+  },
+  "galatians_verification": {
+    "commit": "ff3521ec9ebe5f870a383dd6bf7fd2453acb9748",
+    "verses": 149,
+    "app_version": "v0.75",
+    "cache": "dgtbible-v085",
+    "structural_regression": "All six chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 95.0%.",
+    "semantic_regression": "The full Galatians audit found no unexplained exact-link candidates after review of 72 scoped supplied-word exceptions. The critical sanity gate identified two already documented supplied candidates and two lexical mismatches with defensible links. All four have exact keys and explanations in the quality allowlist.",
+    "hover_regression": "Reviewed 26 diagnostic cases across 23 verses as legitimate verbal inflection, dative relations, idioms and the do-support construction in 5:17. Sixteen bidirectional Chromium checks passed, including the distinct terms on either side of both em dashes.",
+    "reviewed_hover_flags": [
+      "1:16 w8 εὐαγγελίζωμαι → 8:I 9:might 10:proclaim 12:as 13:good 14:news",
+      "5:25 w6 στοιχῶμεν. → 6:let 7:us 9:keep 10:in 11:step",
+      "4:19 w5 ὠδίνω → 4:I 5:am 7:in 8:birth 9:pains",
+      "1:23 w11 εὐαγγελίζεται → 10:is 12:proclaiming 13:as 14:good 15:news",
+      "6:9 w12 ἐκλυόμενοι. → 17:if 18:we 19:do 21:give 22:up.",
+      "5:4 w1 κατηργήθητε → 0:You 7:have 8:been 9:severed",
+      "5:12 w3 ἀποκόψονται → 7:would 9:cut 10:themselves 11:off.",
+      "3:3 w8 ἐπιτελεῖσθε; → 9:are 10:you 12:being 13:completed",
+      "4:21 w11 ἀκούετε; → 9:do 10:you 12:listen 13:to",
+      "4:8 w5 εἰδότες → 2:when 3:you 4:did 6:know",
+      "2:21 w2 ἀθετῶ → 0:I 1:do 3:set 4:aside",
+      "4:16 w5 ἀληθεύων → 6:by 7:telling 10:truth?",
+      "5:26 w2 γινώμεθα → 0:Let 1:us 3:become",
+      "3:27 w1 ὅσοι → 1:as 2:many 5:as",
+      "1:20 w11 ψεύδομαι. → 9:I 10:am 12:lying.",
+      "3:25 w1 ἐλθούσης → 2:that 4:has 5:come,",
+      "3:27 w5 ἐβαπτίσθητε, → 4:you 6:were 7:baptized",
+      "5:16 w10 τελέσητε. → 8:you 9:will 12:fulfill",
+      "4:31 w5 παιδίσκης → 6:of 8:slave 9:woman",
+      "4:12 w13 ἠδικήσατε· → 15:You 16:did 19:wrong.",
+      "6:6 w1 Κοινωνείτω → 0:Let 7:share",
+      "6:6 w8 κατηχοῦντι → 12:with 16:teaches.",
+      "6:11 w4 γράμμασιν → 1:with 4:letters",
+      "6:11 w8 χειρί. → 10:with 13:hand.",
+      "1:2 w8 ἐκκλησίαις → 6:to 8:assemblies",
+      "5:17 w24 ποιῆτε. → 20:you 21:do 23:do"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "2:9 go (30) — The Greek mission clause is elliptical. ἡμεῖς expresses we.",
+      "2:10 asked (1) — The Greek uses μόνον with the following purpose clause, with no separate verb for asked.",
+      "4:23 born (20) — The English repeats the birth verb. The one Greek occurrence renders the earlier birth."
+    ],
+    "reviewed_advisory_unused_greek": "In 1:23 δέ is implicit at the sentence break. In 4:6 the article before Father is unexpressed in the direct address.",
+    "chapter_sha256": {
+      "galatians/01": "394c83d5fba37bd1bad486f25b3282a628f76ce5568e774922839df4146b9b32",
+      "galatians/02": "a670eca2ab2b8fcfe440906f2cc4b98809d42c1e0fe98f810e9d7f24955e40d9",
+      "galatians/03": "2a21d457b2ff1a53cf63d8d326d2a0221619992cfcbec21bc8ffad585a141a13",
+      "galatians/04": "d59ee99396639b4092357ea5641f4b76f3b415b12f23b90a0ce940ee038fdf1f",
+      "galatians/05": "723e5ba5bdedb41b9be54c05b4446964a21b71771ba332f6dee7ec3022d8c5b0",
+      "galatians/06": "3bf5586a1f370705062e7abbb02ef043a09f535cfa14eb316d0015985f607685"
     }
   }
 }

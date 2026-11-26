@@ -77,6 +77,11 @@ jobs:
           START_CHAPTER: '1'
           END_CHAPTER: '13'
         run: python scripts/audit-2corinthians.py
+      - name: Validate Galatians
+        env:
+          START_CHAPTER: '1'
+          END_CHAPTER: '6'
+        run: python scripts/audit-galatians.py
       - name: Corpus semantic alignment audit
         continue-on-error: true
         run: python scripts/audit-alignment-quality.py
