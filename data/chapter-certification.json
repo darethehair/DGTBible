@@ -1196,11 +1196,17 @@
       }
     },
     "romans/06": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "b53b0c1d668c7a86610a77f40799f47f1409bbcf",
       "chapter_sha256": "5fc09c413b52d32286e7c47103a6f151c39d39739e748c6ba254271ac06b0d9f",
       "scope": "Reviewed all 23 verses in both directions. Restored distinct links for repeated occurrences of baptism, dying, living and presenting. Corrected possessives and dative markers, and reviewed the English expansions of the slavery and righteousness constructions.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–6 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–6 audit passed.",
+      "final_verification": {
+        "commit": "3f91d6ef34917618850c615784dc750b1f139bdd",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified each baptism, death, life and slavery rendering in both directions. Checked the distinct pronouns and prepositions, the subordinate infinitives, and the supplied comparison markers in the parallel clauses.",
+        "chapter_sha256": "16bca3801dcc25348023a8ee9f3985f3ca090aaf2f25a3a84175ee5e59d5b1ae"
+      }
     },
     "romans/07": {
       "status": "corrected",
@@ -1273,9 +1279,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/06",
+  "resume": "romans/07",
   "verification_backlog": [
-    "romans/06",
     "romans/07",
     "romans/08",
     "romans/09",
