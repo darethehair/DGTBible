@@ -845,11 +845,17 @@
       }
     },
     "acts/07": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "93fe8d3",
       "chapter_sha256": "fd62726f2b59d3c26551260feb3921b745fc2b859f387ddff56acc7a1a56b33d",
       "scope": "Acts 7:1–60. Bilingual comparison in both directions through Stephen’s speech and its aftermath. Corrected repeated narrative pronouns and conjunctions, restored precise prepositions, split two English dash tokens by source, and preserved names or copulas supplied in English.",
-      "regression": "The Acts 1–7 audit passed across 253 verses. All 60 Acts 7 verses retain original wording and source IDs, and all links resolve."
+      "regression": "The Acts 1–7 audit passed across 253 verses. All 60 Acts 7 verses retain original wording and source IDs, and all links resolve.",
+      "final_verification": {
+        "commit": "b5f856d451347d272abac4d8d6587b0f2962e512",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 60 verses in both directions, including Stephen’s historical speech, repeated citations and personal references, and idiomatic temporal and interrogative clauses.",
+        "chapter_sha256": "4de3812ebcaa59b7fc415fd8e1c430357fcf2b50745e02f6c0c8db8d8559ed21"
+      }
     },
     "acts/08": {
       "status": "corrected",
@@ -999,9 +1005,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/07",
+  "resume": "acts/08",
   "verification_backlog": [
-    "acts/07",
     "acts/08",
     "acts/09",
     "acts/10",
