@@ -933,9 +933,16 @@
       "chapter_sha256": "2d7ed7c69e0facb6e905447565596c8b2f392a6afc9f65163926f952e9708465",
       "scope": "Reviewed all 26 stored verses in both directions, including the accusation and defense before Felix, repeated prepositions and articles, idiomatic expressions and supplied words.",
       "regression": "Verse reconstruction, alignment structure, and Acts 1–24 audit passed."
+    },
+    "acts/25": {
+      "status": "corrected",
+      "commit": "43f38f3",
+      "chapter_sha256": "b4a2e02df052b2a58f40fff3ee4ab2a89bdc2463db418a5c2b3a42228f855d0a",
+      "scope": "Reviewed all 27 verses in both directions, correcting the accusations, appeals, distinct occurrences of repeated words, and English supplies in the testimony.",
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–25 audit passed."
     }
   },
-  "resume": "acts/25",
+  "resume": "acts/26",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -960,7 +967,8 @@
     "acts/21",
     "acts/22",
     "acts/23",
-    "acts/24"
+    "acts/24",
+    "acts/25"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
