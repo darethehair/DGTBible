@@ -3658,5 +3658,50 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all five public James chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "1peter_verification": {
+    "commit": "0f03439eb5e4a4833de49b64d156eb58c34f3e10",
+    "verses": 105,
+    "app_version": "v0.87",
+    "cache": "dgtbible-v097",
+    "structural_regression": "All five chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 91.6%.",
+    "semantic_regression": "The reviewed-book audit passed with 115 scoped exceptions. The critical sanity audit recorded six further lexical false positives.",
+    "hover_regression": "Reviewed 20 diagnostics for valid verbal inflection, shared grammar and idioms. Twenty bidirectional Chromium checks passed across all five chapters.",
+    "reviewed_hover_flags": [
+      "3:8 w7 φιλάδελφοι, 9:loving 10:one 11:another 12:as 13:brothers 15:sisters,",
+      "1:6 w9 λυπηθέντες 5:though 13:you 14:have 15:been 16:grieved",
+      "1:25 w15 εὐαγγελισθὲν 14:was 15:announced 18:as 19:good 20:news.",
+      "4:16 w6 αἰσχυνέσθω, 5:let 6:that 7:person 9:be 10:ashamed,",
+      "4:15 w14 ἀλλοτριεπίσκοπος· 16:meddler 17:in 19:affairs 20:of 21:others.",
+      "4:4 w5 συντρεχόντων 5:that 7:do 9:run 10:with",
+      "5:4 w2 φανερωθέντος 1:when 5:is 6:revealed,",
+      "4:19 w13 παρατιθέσθωσαν 1:let 11:entrust",
+      "4:18 w13 φανεῖται; 9:will 14:appear?”",
+      "3:19 w9 ἐκήρυξεν, 3:he 6:proclaimed",
+      "3:22 w10 ὑποταγέντων 12:with 18:subjected",
+      "4:5 w6 ἔχοντι 4:to 8:is",
+      "1:9 w5 πίστεως 3:of 5:faith,",
+      "1:9 w8 ψυχῶν. 8:of 10:souls.",
+      "2:22 w6 εὑρέθη 5:was 7:found",
+      "2:13 w5 κτίσει 1:to 4:institution",
+      "2:13 w6 διὰ 5:for 8:sake,",
+      "3:3 w2 ἔστω 0:Let 4:be",
+      "3:4 w14 πνεύματος, 11:of 16:spirit,",
+      "3:19 w7 πνεύμασιν 7:to 9:spirits"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "1:10 come expands the phrase εἰς ὑμᾶς.",
+      "2:9 God’s specifies the inferred owner. The word matter in 2:12 and 3:16 expands the relative construction. In 2:23 himself is an implicit object of entrusted.",
+      "3:7 wives is the understood object of live with.",
+      "4:11 the two let it be constructions are elliptical in Greek."
+    ],
+    "reviewed_advisory_unused_greek": "The remaining candidate δὲ at 4:6 is implicit in the contrast between the two clauses.",
+    "chapter_sha256": {
+      "1peter/01": "a0eb52d084b897d3d57a6dd9e9544a27da0a262cf81a4e20d20051b35df41d10",
+      "1peter/02": "0a7d0432171e6aaacf11b826b39e84146db3aeb4c761bfde9476ca14ef4f2a8b",
+      "1peter/03": "660cbdb4506316de2a5f520fb74a0336dfb582314a56098901e115254f9e87e2",
+      "1peter/04": "00004dff2b6026c84457d804cd8ddd513195150db7852f356d0e0ce1044fe00b",
+      "1peter/05": "7ab0616415cf62813ffbadf5f574ac9aeedd4081939268ab022f3154fc2f784c"
+    }
   }
 }
