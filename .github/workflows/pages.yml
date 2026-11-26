@@ -36,7 +36,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           guard="$RUNNER_TEMP/check-reviewed-baseline.py"
-          git show refs/tags/v0.93-reviewed-nt:scripts/check-reviewed-baseline.py > "$guard"
+          tag=$(git rev-parse --verify refs/tags/v0.93-reviewed-nt)
+          if [[ "$tag" != 2e85deb2b58bf6684424ac53dabe446fa2ffd2e7 ]]; then
+            echo "::error::The permanent reviewed NT tag was replaced."
+            exit 1
+          fi
+          git show "$tag:scripts/check-reviewed-baseline.py" > "$guard"
           args=(--root "$GITHUB_WORKSPACE" --approval-repo "$GITHUB_REPOSITORY")
           if [[ -n "$BEFORE" ]]; then
             args+=(--against "$BEFORE")
