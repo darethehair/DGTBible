@@ -849,9 +849,16 @@
       "chapter_sha256": "7faca79e9b0b871eccbf8cfdd2c3a28dc520cc946a835483a7eefe9b1776e824",
       "scope": "Acts 12:1–25. Bilingual comparison in both directions. Corrected the chains and hand references in 12:7, separated the guards’ repeated objects from explicit pronouns, and recorded supplied “execution” in 12:19 and the English omission of the Jerusalem destination in 12:25.",
       "regression": "The Acts 1–12 audit passed across 438 verses. All 25 Acts 12 verses preserve original wording and source IDs, and all links resolve."
+    },
+    "acts/13": {
+      "status": "corrected",
+      "commit": "7790f56",
+      "chapter_sha256": "d6b11b725ffd9a4da6558af7b21bac47c7750f7e3189e185a9e6ed49307e9a56",
+      "scope": "Acts 13:1–52. Bilingual comparison in both directions. Corrected list conjunctions, article placement, repeated subjects and objects, and prepositions. Separated the abrupt English transitions at the dashes in 13:8 and preserved the distinction between explicit and implied pronouns.",
+      "regression": "The Acts 1–13 audit passed across 490 verses. All 52 Acts 13 verses preserve original wording and source IDs, and every link resolves."
     }
   },
-  "resume": "acts/13",
+  "resume": "acts/14",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -864,7 +871,8 @@
     "acts/09",
     "acts/10",
     "acts/11",
-    "acts/12"
+    "acts/12",
+    "acts/13"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
