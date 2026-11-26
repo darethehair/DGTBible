@@ -2691,7 +2691,7 @@
       }
     },
     "jude/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f1b799ed5730f4413d643cae28a62941090f34a2",
       "chapter_sha256": "80221827f8e52abff9c7a67ffa1fa62643264a61d1525534de6242fcea339ec2",
       "scope": "Reviewed all 25 verses in both directions. Corrected 25 verses, including repeated words for keep, the Greek reading Jesus in 1:5, and the distinct clauses for mercy and rescue.",
@@ -2704,7 +2704,7 @@
       }
     }
   },
-  "resume": "jude",
+  "resume": "revelation/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2721,7 +2721,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -3992,6 +3992,14 @@
       "jude/01": "80221827f8e52abff9c7a67ffa1fa62643264a61d1525534de6242fcea339ec2"
     },
     "local_pages_validation": "Every required Pages validation passed. The preflight checked all 210 recorded chapter hashes and release preparation preserved all 238 reviewed and preserved chapter files byte-for-byte.",
-    "hover_regression": "Reviewed 2 structural hover diagnostics and passed 13 bidirectional Chromium checks."
+    "hover_regression": "Reviewed 2 structural hover diagnostics and passed 13 bidirectional Chromium checks.",
+    "deployment": {
+      "commit": "ab54fa3b87651028bc6acd932609e1d22d20e08b",
+      "app_version": "v0.92",
+      "cache": "dgtbible-v102",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45825870093",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all 1 public Jude chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
