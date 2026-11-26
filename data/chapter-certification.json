@@ -842,9 +842,16 @@
       "chapter_sha256": "6ad8b58ba8e57c4f6f8067a50a5db20d23e1e9f9e390887343ac20c61440b2b2",
       "scope": "Acts 11:1–30. Bilingual comparison in both directions. Corrected repeated prepositions and conjunctions, aligned the participles in Peter’s account, and preserved the supplied second “gave” at 11:17.",
       "regression": "The Acts 1–11 audit passed across 413 verses. All 30 Acts 11 verses preserve Greek and DGT wording and all links resolve."
+    },
+    "acts/12": {
+      "status": "corrected",
+      "commit": "a4e2e87",
+      "chapter_sha256": "7faca79e9b0b871eccbf8cfdd2c3a28dc520cc946a835483a7eefe9b1776e824",
+      "scope": "Acts 12:1–25. Bilingual comparison in both directions. Corrected the chains and hand references in 12:7, separated the guards’ repeated objects from explicit pronouns, and recorded supplied “execution” in 12:19 and the English omission of the Jerusalem destination in 12:25.",
+      "regression": "The Acts 1–12 audit passed across 438 verses. All 25 Acts 12 verses preserve original wording and source IDs, and all links resolve."
     }
   },
-  "resume": "acts/12",
+  "resume": "acts/13",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -856,7 +863,8 @@
     "acts/08",
     "acts/09",
     "acts/10",
-    "acts/11"
+    "acts/11",
+    "acts/12"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
