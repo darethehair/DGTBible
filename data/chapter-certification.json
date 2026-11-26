@@ -2676,10 +2676,19 @@
         "notes": "Verified both Greek occurrences of truth in 1:1, the three negative particles in 1:10, the directed greeting in 1:10–11, and each word of face to face in 1:12. Reviewed the supplied conjunction in the greeting and the implied complement after want in 1:12.",
         "chapter_sha256": "a8476e017e04272c2ae87d5f6a7a5564cc05e58a4193fe3fb5b2aeca069c4043"
       }
+    },
+    "3john/01": {
+      "status": "corrected",
+      "commit": "61e807eca628d5d348c24732a6e70e62454d1451",
+      "chapter_sha256": "d0a3bc4321d7c825c73252dd91998dfd33d37b4f68fc8b47a06077d7027d2334",
+      "scope": "Reviewed all 15 verses in both directions. Matched all repeated forms in 15 verses, corrected pronouns and dative prepositions, and preserved each instance of face to face and the closing greetings.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 3 John alignment audit passed."
     }
   },
   "resume": "3john/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "3john/01"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2695,7 +2704,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
