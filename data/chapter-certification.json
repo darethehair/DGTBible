@@ -3853,5 +3853,30 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all three public 2 Peter chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "1john_verification": {
+    "commit": "3b2b158ea04ccc6d68c1ffa2dabb23b0437309e3",
+    "verses": 105,
+    "app_version": "v0.89",
+    "cache": "dgtbible-v099",
+    "structural_regression": "All five chapters preserved their source wording and passed exact reconstruction, unique source ID, and supplied-token checks. Direct DGT link coverage was 97.0%.",
+    "semantic_regression": "The reviewed-book audit passed with 48 scoped exceptions. The critical audit recorded the separate occurrences of revealed in 3:2.",
+    "reviewed_hover_flags": [
+      "2:26 w6 πλανώντων 10:are 11:trying 12:to 13:lead 15:astray.",
+      "3:13 w3 θαυμάζετε, 0:Do 2:be 3:surprised,",
+      "3:7 w3 πλανάτω 2:let 5:lead 7:astray.",
+      "3:13 w4 ἀδελφοί, 4:brothers 6:sisters,"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "In 4:3 the noun spirit is understood after the Greek neuter article. The explicit πνεῦμα is earlier in the sentence."
+    ],
+    "reviewed_advisory_unused_greek": "The adjective αὐτὸς at 2:6 repeats the subject of ought to walk and is implicit in that English phrase.",
+    "chapter_sha256": {
+      "1john/01": "6e845b7f9c142ae209a22c57617280f5df0591d8103918d46e508876d8d6f684",
+      "1john/02": "c3460d7fe3331ccba9972666ee7eb4731e83d09a0a928f752997411db631e773",
+      "1john/03": "ba4c7bb318732cca977d809e7ac14a8ee99ea7514b805d80fcc1db786f6605a3",
+      "1john/04": "149478a8f2514efee6c89fe2d95a70f3f11c70e700c4b22c6203e25334c8ee93",
+      "1john/05": "6402a8170c3c308f3111707eb942aa2efc484ba1d49934cc562d1810a92a8025"
+    }
   }
 }
