@@ -2494,10 +2494,51 @@
         "notes": "Verified the contrasts in 5:3, the early and late season without an expressed rain, the two yes and no forms and the repeated recipient and prayer constructions. Verified the three distinct oath complements in 5:12.",
         "chapter_sha256": "57dc01bd2cc47175b233ef0694498bb54001b82633f25f5c485a17bfeac6845c"
       }
+    },
+    "1peter/01": {
+      "status": "corrected",
+      "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+      "chapter_sha256": "a0eb52d084b897d3d57a6dd9e9544a27da0a262cf81a4e20d20051b35df41d10",
+      "scope": "Reviewed all 25 verses in both directions. Corrected the salutations, resurrection and salvation clauses, and repeated pronouns and words in the quotation. Split three em-dash tokens for precise hovering.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
+    },
+    "1peter/02": {
+      "status": "corrected",
+      "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+      "chapter_sha256": "0a7d0432171e6aaacf11b826b39e84146db3aeb4c761bfde9476ca14ef4f2a8b",
+      "scope": "Reviewed all 25 verses in both directions. Corrected the living stone and priesthood contrasts, repeated against and on phrases, and separate pronouns in the closing quotation.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
+    },
+    "1peter/03": {
+      "status": "corrected",
+      "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+      "chapter_sha256": "660cbdb4506316de2a5f520fb74a0336dfb582314a56098901e115254f9e87e2",
+      "scope": "Reviewed all 22 verses in both directions. Corrected household pronouns, repeated references to fear, the baptism clauses, and four em-dash joins.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
+    },
+    "1peter/04": {
+      "status": "corrected",
+      "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+      "chapter_sha256": "00004dff2b6026c84457d804cd8ddd513195150db7852f356d0e0ce1044fe00b",
+      "scope": "Reviewed all 19 verses in both directions. Corrected the participles and prepositions in the suffering and exhortation clauses, and the distinct referents in the doxology.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
+    },
+    "1peter/05": {
+      "status": "corrected",
+      "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+      "chapter_sha256": "7ab0616415cf62813ffbadf5f574ac9aeedd4081939268ab022f3154fc2f784c",
+      "scope": "Reviewed all 14 verses in both directions. Corrected the elders and praise clauses, four separate future verbs, and the distinct occurrences of you in the final greetings.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
     }
   },
   "resume": "1peter/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "1peter/01",
+    "1peter/02",
+    "1peter/03",
+    "1peter/04",
+    "1peter/05"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2513,7 +2554,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
