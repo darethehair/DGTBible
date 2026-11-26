@@ -806,11 +806,17 @@
       }
     },
     "acts/04": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "7799e1b",
       "chapter_sha256": "5fd09adae11c129aa8b90696ca96770caa0924e7c4834a8fbc0924e5942f3dcd",
       "scope": "Acts 4:1–37. Bilingual comparison in both directions. Corrected repeated articles, prepositions, negatives and pronouns. Split three English dash tokens by source and marked implied English objects separately from explicit Greek pronouns.",
-      "regression": "The Acts 1–4 audit passed across 136 verses. All 37 Acts 4 verses preserve DGT wording and Greek sources, and every link resolves."
+      "regression": "The Acts 1–4 audit passed across 136 verses. All 37 Acts 4 verses preserve DGT wording and Greek sources, and every link resolves.",
+      "final_verification": {
+        "commit": "768dee71aa21f4c2998bbddee1df30a33bbc653e",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 37 verses, including the authority hearing, Psalm quotation, overlapping negation, and community descriptions. Confirmed punctuation-bound tokens remain independently hoverable.",
+        "chapter_sha256": "108ab1a23b0e725c4463cfc28ee89a1b8a79bccdceabae247c4ef1f4d1f6d117"
+      }
     },
     "acts/05": {
       "status": "corrected",
@@ -981,9 +987,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/04",
+  "resume": "acts/05",
   "verification_backlog": [
-    "acts/04",
     "acts/05",
     "acts/06",
     "acts/07",
