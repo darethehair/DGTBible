@@ -832,11 +832,17 @@
       }
     },
     "acts/06": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "ff571a1",
       "chapter_sha256": "2679716a9e64cbdb121568a28649013c5f0b95cab2977ee17c0679ae7b322ced",
       "scope": "Acts 6:1–15. Bilingual comparison in both directions. Repaired relative clauses, the repeated conjunctions in 6:5 and 6:9, and the two distinct pronoun targets in 6:15.",
-      "regression": "The Acts 1–6 audit passed across 193 verses. The 15 Acts 6 verses preserve original wording and all source IDs."
+      "regression": "The Acts 1–6 audit passed across 193 verses. The 15 Acts 6 verses preserve original wording and all source IDs.",
+      "final_verification": {
+        "commit": "1cd1ce07bc009908dc2281195558b69401707cbc",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 15 verses, including the community appointment and charges against Stephen. The demonstrative in “this holy place” at 6:13 is supplied in the DGT wording for the stored Greek text.",
+        "chapter_sha256": "5822b7e98a7f82604c830d335aa3cf4598ad80fa3a0d0434f0784c9515ca44c6"
+      }
     },
     "acts/07": {
       "status": "corrected",
@@ -993,9 +999,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/06",
+  "resume": "acts/07",
   "verification_backlog": [
-    "acts/06",
     "acts/07",
     "acts/08",
     "acts/09",
