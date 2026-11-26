@@ -1326,17 +1326,21 @@
       }
     },
     "romans/16": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "2bdb0d99a592c0ae8db3b9c17dac2414c56c4a45",
       "chapter_sha256": "1077140d9b9587108c97c7e47c4908770443d7e8c7d5c967dfb88438126faf45",
       "scope": "Reviewed all 24 verses in both directions. Corrected the introductions, greetings and closing exhortation, including the distinct possessives, links to the names and households, and repeated greetings. Reviewed all 24 stored verses.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed.",
+      "final_verification": {
+        "commit": "be42993971d4776ba534eb2e6017bd7a9b9acb56",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified every stored greeting and the closing exhortations in both directions. Checked the distinct names, repeated greetings and possessives, the household references, and the implied verb in the final blessing.",
+        "chapter_sha256": "5451ed138475c252449184f2f3dcb458dcfce6f530a7a36d9962d39e2a31e886"
+      }
     }
   },
-  "resume": "romans/16",
-  "verification_backlog": [
-    "romans/16"
-  ],
+  "resume": "romans",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -1352,7 +1356,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "deployment",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
