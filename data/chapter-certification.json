@@ -1404,11 +1404,17 @@
       }
     },
     "1corinthians/06": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "2ec4a6f993b3631380420be0d04aec645af4064e",
       "chapter_sha256": "81afbf6465fbe7dada6b3ba84b10d1f446242382ea75f1caf8d77ebe9e9cca2e",
       "scope": "Reviewed all 20 verses in both directions. Reviewed the lawsuits, lists and body and temple passages. Linked distinct judicial words and paired negations, restored the multiword renderings at 6:9, and separated the conjunction from defraud at 6:8.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–6 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–6 audit passed.",
+      "final_verification": {
+        "commit": "1200d3720f7aac292d1d3b620e89311beb400531",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the court and body arguments, including repeated questions, participles, imperatives and quotation halves. Isolated the dash-adjacent defraud and conjunction and checked the implied partners in 6:16–17. Paired the dative relations with their noun or verb.",
+        "chapter_sha256": "1a4c52ff9034f1497588903443400696cfb9a079365e185261d08c2a3d92b9f7"
+      }
     },
     "1corinthians/07": {
       "status": "corrected",
@@ -1481,9 +1487,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed."
     }
   },
-  "resume": "1corinthians/06",
+  "resume": "1corinthians/07",
   "verification_backlog": [
-    "1corinthians/06",
     "1corinthians/07",
     "1corinthians/08",
     "1corinthians/09",
