@@ -3975,5 +3975,21 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all 1 public 3 John chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "jude_verification": {
+    "commit": "03059c6bba81ad13a8490a559b4efbadcdec3efe",
+    "verses": 25,
+    "app_version": "v0.92",
+    "cache": "dgtbible-v102",
+    "structural_regression": "All chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 94.5%.",
+    "semantic_regression": "The reviewed-book audit passed with 22 scoped exceptions. The critical audit found no critical Jude candidates.",
+    "reviewed_hover_flags": [
+      "1:2 w7 πληθυνθείη. 0:May 6:be 7:multiplied",
+      "1:20 w9 πίστει, 6:in 10:faith"
+    ],
+    "reviewed_advisories": "The first δὲ at 1:8 and first δὲ at 1:23 are implicit in the list structure. The article οἱ at 1:12 is implicit in the English predication. People in 1:14 and leads in 1:21 make the existing Greek constructions explicit.",
+    "chapter_sha256": {
+      "jude/01": "80221827f8e52abff9c7a67ffa1fa62643264a61d1525534de6242fcea339ec2"
+    }
   }
 }
