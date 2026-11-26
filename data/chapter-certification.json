@@ -1092,11 +1092,17 @@
       }
     },
     "acts/26": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "9bec269",
       "chapter_sha256": "85331a1ef903da3cc25b558bb0c072556855abc3200d8a3a5156945bb1f0d03c",
       "scope": "Reviewed all 32 verses in both directions, including Paul’s defense, the account of his calling, and the exchange with Agrippa and Festus.",
-      "regression": "Verse reconstruction, alignment structure, and Acts 1–26 audit passed."
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–26 audit passed.",
+      "final_verification": {
+        "commit": "830ac123c201b2b866a37d94ae751acd83d3cc0f",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Reviewed Paul’s defense before Agrippa in both directions. Distinguished each speaker and repeated vocative, reviewed the elliptical phrases, and linked the shared English preposition at 26:29 to both Greek occurrences.",
+        "chapter_sha256": "73400f04c0a317dd8dfed2779abfc19136f4aed6918b41547abdb2c5696f8ffb"
+      }
     },
     "acts/27": {
       "status": "corrected",
@@ -1113,9 +1119,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/26",
+  "resume": "acts/27",
   "verification_backlog": [
-    "acts/26",
     "acts/27",
     "acts/28"
   ],
