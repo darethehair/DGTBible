@@ -2330,10 +2330,45 @@
       "chapter_sha256": "f2a2daf18df95aee00ab293c9e66e222454eafb05129174955a7c5dc3cc6d64d",
       "scope": "Reviewed all 39 verses in both directions. Corrected repeated yearly and daily wording, the quotation boundaries, the paired covenant pronouns and the hortatory clauses.",
       "regression": "Greek and DGT reconstruction, alignment structure, and available Hebrews alignment audit passed."
+    },
+    "hebrews/11": {
+      "status": "corrected",
+      "commit": "3dd884b01357d9495b7cc3df9cc8200a4d3c81ea",
+      "chapter_sha256": "6fb0efe1325a65f69c5d37c5c3da728c195b46d330cce624034ba936d2ed5d57",
+      "scope": "Reviewed all 40 verses in both directions. Corrected the repeated faith clauses, quotations and parallel descriptions, and split em-dash joins that combined distinct Greek words.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available Hebrews alignment audit passed."
+    },
+    "hebrews/12": {
+      "status": "corrected",
+      "commit": "3dd884b01357d9495b7cc3df9cc8200a4d3c81ea",
+      "chapter_sha256": "4ab25eaa4f61b2e20fbb355000f3c93aa04a0ecdfef489d64c1d31a957ebd09e",
+      "scope": "Reviewed all 29 verses in both directions. Corrected the two opening exhortations, the contrasts in discipline, and the successive Sinai and Zion dative constructions.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available Hebrews alignment audit passed."
+    },
+    "hebrews/13": {
+      "status": "corrected",
+      "commit": "3dd884b01357d9495b7cc3df9cc8200a4d3c81ea",
+      "chapter_sha256": "54e37e5d83998eb69f320559bb1013d1f799a2664d9c652f2a38e019614d1df6",
+      "scope": "Reviewed all 25 verses in both directions. Corrected repeated negatives and pronouns, the food and sanctuary idioms, the closing blessing and the final greeting.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available Hebrews alignment audit passed."
     }
   },
-  "resume": "hebrews/11",
-  "verification_backlog": [],
+  "resume": "hebrews/01",
+  "verification_backlog": [
+    "hebrews/01",
+    "hebrews/02",
+    "hebrews/03",
+    "hebrews/04",
+    "hebrews/05",
+    "hebrews/06",
+    "hebrews/07",
+    "hebrews/08",
+    "hebrews/09",
+    "hebrews/10",
+    "hebrews/11",
+    "hebrews/12",
+    "hebrews/13"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2349,7 +2384,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
