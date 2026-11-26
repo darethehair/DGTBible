@@ -3901,5 +3901,20 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all 5 public 1 John chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "2john_verification": {
+    "commit": "146ec24242d1bbb32ea533714bf67f242b5098d1",
+    "verses": 13,
+    "app_version": "v0.90",
+    "cache": "dgtbible-v100",
+    "structural_regression": "All chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 95.2%.",
+    "semantic_regression": "The reviewed-book audit passed with eight scoped exceptions and the critical audit found no critical 2 John candidates.",
+    "reviewed_hover_flags": [
+      "1:11 w8 ἔργοις 10:in 13:works."
+    ],
+    "reviewed_advisories": "One scattered hover is valid: in works renders the Greek dative even with the possessive and adjective between the English words.",
+    "chapter_sha256": {
+      "2john/01": "a8476e017e04272c2ae87d5f6a7a5564cc05e58a4193fe3fb5b2aeca069c4043"
+    }
   }
 }
