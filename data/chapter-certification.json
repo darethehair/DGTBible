@@ -1586,11 +1586,17 @@
       }
     },
     "2corinthians/04": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "13c82b50829379570f8019c2ab47e76f2a28264c",
       "chapter_sha256": "d60b0b385d7b55b215a758c793bee6bcf89022806ffff0279489a3e41cd98476",
       "scope": "Reviewed all 18 verses in both directions. Reviewed the veiled gospel, light, jar imagery, contrasting suffering clauses and the two seen/unseen lists. Linked the parallel forms and preserved the implicit copulas.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–4 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–4 audit passed.",
+      "final_verification": {
+        "commit": "08f68e9df35c2fe23cdc448d3433e085ce142e93",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Checked paired uses of veiled, glory, Jesus, life and body, the suffering contrasts and the repeated seen clauses. Refined the purpose expression in 4:6 and the elliptical inner person in 4:16.",
+        "chapter_sha256": "50d50e1f20a7353bc5f21ee0328ca73caaf4b19089ddf7e171f830f6234579d3"
+      }
     },
     "2corinthians/05": {
       "status": "corrected",
@@ -1656,9 +1662,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/04",
+  "resume": "2corinthians/05",
   "verification_backlog": [
-    "2corinthians/04",
     "2corinthians/05",
     "2corinthians/06",
     "2corinthians/07",
