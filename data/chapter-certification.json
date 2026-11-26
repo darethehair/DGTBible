@@ -1079,11 +1079,17 @@
       }
     },
     "acts/25": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "43f38f3",
       "chapter_sha256": "b4a2e02df052b2a58f40fff3ee4ab2a89bdc2463db418a5c2b3a42228f855d0a",
       "scope": "Reviewed all 27 verses in both directions, correcting the accusations, appeals, distinct occurrences of repeated words, and English supplies in the testimony.",
-      "regression": "Verse reconstruction, alignment structure, and Acts 1–25 audit passed."
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–25 audit passed.",
+      "final_verification": {
+        "commit": "43f38f3f97e67b4a7c37f0f2d0f93e9016a342aa",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Checked Festus’s hearings, Paul’s appeal, and both speeches about the case in both directions, with particular attention to each Caesar occurrence, pronoun subjects of infinitives, and implied speech verbs.",
+        "chapter_sha256": "b4a2e02df052b2a58f40fff3ee4ab2a89bdc2463db418a5c2b3a42228f855d0a"
+      }
     },
     "acts/26": {
       "status": "corrected",
@@ -1107,9 +1113,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/25",
+  "resume": "acts/26",
   "verification_backlog": [
-    "acts/25",
     "acts/26",
     "acts/27",
     "acts/28"
