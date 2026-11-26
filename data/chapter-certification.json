@@ -988,11 +988,17 @@
       }
     },
     "acts/18": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "4bc53b2",
       "chapter_sha256": "0ff0ccce468a5e2df7c33171381fb297d164e4beb26193253d45babe94768445",
       "scope": "Acts 18:1–28. Bilingual comparison in both directions. Corrected lexical phrases and repeated articles, restored precise links for the travel narrative and the word of God, and kept discourse and copular additions supplied where appropriate.",
-      "regression": "The Acts 1–18 audit passed across 660 verses. All 28 Acts 18 verses preserve original wording and source IDs, and all links resolve."
+      "regression": "The Acts 1–18 audit passed across 660 verses. All 28 Acts 18 verses preserve original wording and source IDs, and all links resolve.",
+      "final_verification": {
+        "commit": "27d5be642a2df128ea6bab69a457289bae6b5481",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 28 verses in both directions, including Gallio’s conditions, personal names and reports of travel. Confirmed that the English construction with the supplied copula subjects leaves the Greek judgment terms linked locally.",
+        "chapter_sha256": "b122a5bc38d6896cc697adf767413ef95558f87ebdb7811315933c7dc2f57fae"
+      }
     },
     "acts/19": {
       "status": "corrected",
@@ -1065,9 +1071,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/18",
+  "resume": "acts/19",
   "verification_backlog": [
-    "acts/18",
     "acts/19",
     "acts/20",
     "acts/21",
