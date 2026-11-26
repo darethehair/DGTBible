@@ -1178,9 +1178,16 @@
       "chapter_sha256": "bec7b9f797276129c66be5ec9d41c2d474ce2b5cbe46685439cf66b337dd429e",
       "scope": "Reviewed all 25 verses in both directions. Corrected shifts in the marriage analogy and the sin and commandment argument. Distinguished the repeated words for doing, desiring and knowing and split three dash-fused English tokens.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–7 audit passed."
+    },
+    "romans/08": {
+      "status": "corrected",
+      "commit": "dc5cee2c18a1ebb41f293c3e582bf3afa91b01a4",
+      "chapter_sha256": "1c61d4becdcc719af2555ed198122bc4d24484a802b59a73df02925184062711",
+      "scope": "Reviewed all 39 verses in both directions. Corrected repeated references to flesh and Spirit, distinguished Greek article and participle IDs at 8:11, split the two occurrences of heirs at 8:17, and restored purpose, intercession, and verbal links.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–8 audit passed."
     }
   },
-  "resume": "romans/08",
+  "resume": "romans/09",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
