@@ -1066,11 +1066,17 @@
       }
     },
     "acts/24": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "f137007",
       "chapter_sha256": "2d7ed7c69e0facb6e905447565596c8b2f392a6afc9f65163926f952e9708465",
       "scope": "Reviewed all 26 stored verses in both directions, including the accusation and defense before Felix, repeated prepositions and articles, idiomatic expressions and supplied words.",
-      "regression": "Verse reconstruction, alignment structure, and Acts 1–24 audit passed."
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–24 audit passed.",
+      "final_verification": {
+        "commit": "f137007feeac669c58524c3b2c563247a3929b6c",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Reviewed the prosecution, Paul’s defense, and Felix’s decisions in both directions. Checked the paired negatives, resumptive objects, supplied articles and complementizers, and the phrases for determining a case and keeping someone in custody.",
+        "chapter_sha256": "2d7ed7c69e0facb6e905447565596c8b2f392a6afc9f65163926f952e9708465"
+      }
     },
     "acts/25": {
       "status": "corrected",
@@ -1101,9 +1107,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/24",
+  "resume": "acts/25",
   "verification_backlog": [
-    "acts/24",
     "acts/25",
     "acts/26",
     "acts/27",
