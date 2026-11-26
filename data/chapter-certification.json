@@ -1235,11 +1235,17 @@
       }
     },
     "romans/09": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "0b00e1c937822ac89cfb6a78553d1297920bc656",
       "chapter_sha256": "218878784e9bdb3fb0d86a9491a4396cd8f1e236df748f74f47442c7f5e0e1aa",
       "scope": "Reviewed all 33 verses in both directions. Corrected misassigned articles, pronouns and repeated predicates across Paul’s argument and quotations. Restored the verbs about mercy and hardening, corrected each of the repeated people in 9:25, and split the call and subsequent clause at 9:12.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–9 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–9 audit passed.",
+      "final_verification": {
+        "commit": "fe4f74a1b843a264d352705086de793c5ee68c79",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all quotations and parallels in both directions, including the recurring Israel, righteousness, people and loved tokens, the conditional particles, and the speech boundary at 9:12.",
+        "chapter_sha256": "60aea85491c89814521666c9e8f8fa6c1a9c8ba39853206119e2f5f655848c77"
+      }
     },
     "romans/10": {
       "status": "corrected",
@@ -1291,9 +1297,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/09",
+  "resume": "romans/10",
   "verification_backlog": [
-    "romans/09",
     "romans/10",
     "romans/11",
     "romans/12",
