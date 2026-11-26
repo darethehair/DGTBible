@@ -884,11 +884,17 @@
       }
     },
     "acts/10": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "823bfb4",
       "chapter_sha256": "9cd447a81d2c9f4944de7d03beeaabeca9858185d6238354418393e10bc891e6",
       "scope": "Acts 10:1–48. Bilingual comparison in both directions through the Cornelius and Peter accounts. Restored precise prepositions, repaired participles and their subjects, separated Christ and the following pronoun at the dash in 10:36, and preserved “three” as supplied in 10:19.",
-      "regression": "The Acts 1–10 audit passed across 383 verses. All 48 Acts 10 verses preserve original wording and source IDs, and all links resolve."
+      "regression": "The Acts 1–10 audit passed across 383 verses. All 48 Acts 10 verses preserve original wording and source IDs, and all links resolve.",
+      "final_verification": {
+        "commit": "c3fed64ad8c40b483b7eb08da5a124e83a027655",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 48 verses, including the parallel vision and retelling, the speech in Caesarea, and the baptism question. The DGT “three” at 10:19 has no matching numeral in the stored Greek, so it remains supplied.",
+        "chapter_sha256": "7c528a839ec309dfba713976ecf2e72f465761e532ced9d051d515e4aa9acf32"
+      }
     },
     "acts/11": {
       "status": "corrected",
@@ -1017,9 +1023,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/10",
+  "resume": "acts/11",
   "verification_backlog": [
-    "acts/10",
     "acts/11",
     "acts/12",
     "acts/13",
