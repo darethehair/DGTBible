@@ -1150,9 +1150,16 @@
       "chapter_sha256": "c9199c683f9bde6a46bc50a84bc4fd68aa24c581d7a3b8b951c945eebb76bbdf",
       "scope": "Reviewed all 31 verses in both directions. Repaired shifted links in the quotations and argument about faith, linked the Greek phrase carried into 3:26 with its existing synthetic IDs, and split the two fused speech boundaries at 3:8.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–3 audit passed."
+    },
+    "romans/04": {
+      "status": "corrected",
+      "commit": "86272073ca69d707f2b2f53f05cd6bf23d1f9cb3",
+      "chapter_sha256": "80befdbe5a1c3e3f985701a387008acbff42171b514e6ee6caa810fb5cf33ed5",
+      "scope": "Reviewed all 25 verses in both directions. Checked Abraham’s faith and the promise in both directions, distinguished repeated case markers and prepositions, separated three fused dash tokens, and restored missing verbs and other lexical links.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–4 audit passed."
     }
   },
-  "resume": "romans/04",
+  "resume": "romans/05",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
