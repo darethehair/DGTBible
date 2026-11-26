@@ -410,11 +410,10 @@
           },
           {
             "text": "sisters,",
-            "ids": [
-              "w2"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "sharers",
@@ -1579,11 +1578,10 @@
           },
           {
             "text": "house.",
-            "ids": [
-              "w14"
-            ],
+            "ids": [],
             "after": "",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           }
         ]
       }
@@ -1955,11 +1953,10 @@
           },
           {
             "text": "built",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "all",
@@ -2450,11 +2447,10 @@
           },
           {
             "text": "servant,",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "for",
@@ -4563,15 +4559,10 @@
           },
           {
             "text": "your",
-            "ids": [
-              "w6"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Renders ὑμῶν",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "fathers",
@@ -4584,23 +4575,18 @@
           {
             "text": "tested",
             "ids": [
-              "w2"
+              "w8"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w2"
-            ],
-            "reason": "Human-reviewed full-NT master pass batch 60: Verb 'tested' renders ἐπείρασαν, not δοκιμασίᾳ"
+            "confidence": "auto-high"
           },
           {
             "text": "me",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "reviewed-master-supplied",
-            "phraseIds": [],
-            "supplied": true,
-            "reason": "Human-reviewed full-NT master pass batch 60: Object 'me' is supplied by the quotation context"
+            "confidence": "auto-high"
           },
           {
             "text": "by",
@@ -4612,11 +4598,10 @@
           },
           {
             "text": "trial",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "and",
@@ -5330,11 +5315,10 @@
           },
           {
             "text": "known",
-            "ids": [
-              "w17"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "my",
@@ -5737,11 +5721,10 @@
           },
           {
             "text": "enter",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "my",
@@ -6192,19 +6175,17 @@
           },
           {
             "text": "sisters,",
-            "ids": [
-              "w2"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "lest",
-            "ids": [
-              "w3"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "there",
@@ -6906,11 +6887,10 @@
           },
           {
             "text": "long",
-            "ids": [
-              "w7"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "as",
@@ -7429,11 +7409,10 @@
           },
           {
             "text": "become",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "sharers",

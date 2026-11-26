@@ -536,11 +536,10 @@
           },
           {
             "text": "said",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "is",
@@ -1223,11 +1222,10 @@
           },
           {
             "text": "human",
-            "ids": [
-              "w15"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "being.",
@@ -3225,15 +3223,10 @@
           },
           {
             "text": "serve",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Renders λατρεύουσιν",
-            "phraseIds": [
-              "w5"
-            ]
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "a",
@@ -3294,26 +3287,17 @@
           {
             "text": "things,",
             "ids": [
-              "w7"
+              "w19"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w7"
-            ],
-            "reason": "Human-reviewed full-NT master pass batch 60: First 'things' belongs with τῶν ἐπουρανίων, not later πάντα"
+            "confidence": "auto-high"
           },
           {
             "text": "just",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: καθὼς rendered as 'just as'",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "as",
@@ -3337,47 +3321,28 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w9"
-            ],
-            "reason": "Human-reviewed full-NT master pass batch 60: Perfect/passive support with κεχρημάτισται"
+            "confidence": "auto-high"
           },
           {
             "text": "warned",
-            "ids": [
-              "w9"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Contextual rendering of κεχρημάτισται",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "when",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Participial μέλλων supplies temporal 'when'",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "he",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Subject carried by μέλλων",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "was",
@@ -3397,15 +3362,10 @@
           },
           {
             "text": "to",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Infinitival marker with ἐπιτελεῖν",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "complete",
@@ -3481,11 +3441,10 @@
           },
           {
             "text": "everything",
-            "ids": [
-              "w19"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "according",
@@ -3531,10 +3490,8 @@
             "text": "to",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-supplied",
-            "reason": "Human-reviewed full-NT master pass batch 60: English dative preposition before 'you' is supplied",
-            "phraseIds": [],
-            "supplied": true
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "you",
@@ -4125,11 +4082,10 @@
           },
           {
             "text": "better",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "covenant,",
@@ -4536,10 +4492,8 @@
             "text": "covenant",
             "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-supplied",
-            "reason": "Human-reviewed full-NT master pass batch 60: English noun completing substantival 'first' is supplied from context",
-            "phraseIds": [],
-            "supplied": true
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "had",
@@ -4575,11 +4529,10 @@
           },
           {
             "text": "place",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "would",
@@ -4615,24 +4568,18 @@
           },
           {
             "text": "for",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Genitive/contextual δευτέρας rendered as 'for a second'",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "a",
-            "ids": [],
+            "ids": [
+              "w12"
+            ],
             "after": " ",
-            "confidence": "reviewed-master-supplied",
-            "phraseIds": [],
-            "supplied": true,
-            "reason": "Human-reviewed full-NT master pass batch 60: English article in 'for a second [covenant]' is supplied, not τόπος"
+            "confidence": "auto-high"
           },
           {
             "text": "second.",
@@ -5245,11 +5192,10 @@
           },
           {
             "text": "“Look,",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "days",
@@ -9744,63 +9690,38 @@
           },
           {
             "text": "old;",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w5"
-            ],
-            "reason": "Human-reviewed full-NT master pass batch 60: First 'old' belongs to πεπαλαίωκεν ('made obsolete/old'), not later παλαιούμενον"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "and",
-            "ids": [
-              "w11"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Renders καί",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "what",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Substantival article τὸ supplies 'what'",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "is",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Copular support with παλαιούμενον",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "becoming",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 60: Renders παλαιούμενον",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "old",
@@ -9820,19 +9741,17 @@
           },
           {
             "text": "growing",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "context-repaired"
+            "confidence": "unlinked",
+            "reason": "Ambiguous noncontiguous helper-word alignment withheld"
           },
           {
             "text": "aged",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "structural-repaired"
+            "confidence": "unlinked",
+            "reason": "No high-confidence lexical anchor"
           },
           {
             "text": "is",
