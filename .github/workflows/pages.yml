@@ -84,6 +84,11 @@ jobs:
           START_CHAPTER: '1'
           END_CHAPTER: '6'
         run: python scripts/audit-galatians.py
+      - name: Validate Ephesians
+        env:
+          START_CHAPTER: '1'
+          END_CHAPTER: '6'
+        run: python scripts/audit-ephesians.py
       - name: Corpus semantic alignment audit
         continue-on-error: true
         run: python scripts/audit-alignment-quality.py

@@ -2424,5 +2424,56 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all six public Galatians chapter SHA-256 values against the final bilingual review after restoring the reviewed files and protecting the authoring and cleanup workflows."
     }
+  },
+  "ephesians_verification": {
+    "commit": "c71cc950ca09c68ca729965d1a3b9f3017f564d9",
+    "verses": 155,
+    "app_version": "v0.76",
+    "cache": "dgtbible-v086",
+    "structural_regression": "All six chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 96.2%.",
+    "semantic_regression": "The full Ephesians audit passed with 37 scoped supplied-word exceptions and no unexplained exact or pronoun candidates. Four lexical mismatches independently flagged by the critical audit have exact keys and bilingual explanations in the quality allowlist.",
+    "hover_regression": "Reviewed 26 diagnostic cases as legitimate verbal inflection, multiword renderings, grammatical case and shared constructions. Twenty bidirectional Chromium checks passed, including the two distinct Greek tokens with numeric suffix 22 in 1:10.",
+    "reviewed_hover_flags": [
+      "6:4 w5 παροργίζετε → 2:do 4:provoke 7:to 8:anger,",
+      "2:17 w3 εὐηγγελίσατο → 1:he 4:proclaimed 5:good 6:news",
+      "2:5 w7 συνεζωοποίησεν → 7:made 9:alive 10:together 11:with",
+      "4:31 w11 ἀρθήτω → 0:Let 11:be 12:removed",
+      "4:26 w8 ἐπιδυέτω → 8:let 11:go 12:down",
+      "6:15 w8 εὐαγγελίου → 7:from 9:good 10:news",
+      "5:3 w9 ὀνομαζέσθω → 8:must 11:be 12:named",
+      "2:1 w9 ἁμαρτίαις → 4:in 8:sins,",
+      "5:22 w5 ἀνδράσιν → 1:to 4:husbands",
+      "5:10 w6 κυρίῳ· → 4:to 6:Lord.",
+      "5:30 w5 σώματος → 4:of 6:body.",
+      "5:7 w3 γίνεσθε → 1:do 3:become",
+      "2:5 w3 ἡμᾶς → 2:we 8:us",
+      "1:23 w13 πληρουμένου. → 6:of 10:fills",
+      "2:1 w6 παραπτώμασιν → 4:in 6:trespasses",
+      "4:20 w5 ἐμάθετε → 2:did 4:learn",
+      "4:27 w1 μηδὲ → 0:and 2:not",
+      "4:27 w2 δίδοτε → 1:do 3:give",
+      "4:27 w5 διαβόλῳ. → 6:to 8:devil.",
+      "5:19 w8 ᾠδαῖς → 4:with 10:songs,",
+      "5:22 w9 κυρίῳ, → 6:to 8:Lord,",
+      "3:14 w2 χάριν → 0:For 2:reason",
+      "4:23 w4 πνεύματι → 4:in 6:spirit",
+      "4:23 w6 νοὸς → 7:of 9:mind,",
+      "5:11 w5 ἔργοις → 4:in 7:works",
+      "6:7 w6 κυρίῳ → 4:to 6:Lord"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "1:14 God’s is a contextual possessor with περιποιήσεως. There is no separate Greek word for God’s.",
+      "4:28 something is supplied as the English object of ἔχῃ. The Greek uses the verb with the following infinitive.",
+      "5:24 submit is supplied in the second clause. The Greek uses ὑποτάσσεται in the first clause only."
+    ],
+    "reviewed_advisory_unused_greek": "In 2:11 οἱ is absorbed into the English participial clause. In 4:11 the second and third Greek distribution markers are implicit in the list. The check prompted a direct link for καθʼ ἕνα in 5:33.",
+    "chapter_sha256": {
+      "ephesians/01": "a827fed113b4de1affd08c5c1bab0877c184678a0acce6c1e46ff9e4563585a9",
+      "ephesians/02": "fecc3b7a912065a5955f8a37e1d068eb42526eae99dd742aaef757268e35c709",
+      "ephesians/03": "7db08840a5dd1d538251e09dd28b753dc68c8c0c33a1c76886ac9dfc6c11ff18",
+      "ephesians/04": "2af4ce0610fd22917d95a87005aa742aefc3556727c749cf94b106ae22361dbb",
+      "ephesians/05": "7be915f93a000b19f442b726d97d245ded8f5a858c5799a296e288542ae1b5d2",
+      "ephesians/06": "6aabd8b3ef34e1d538818df0a749e94dba5c164d455e437bb8408eac3092dff0"
+    }
   }
 }
