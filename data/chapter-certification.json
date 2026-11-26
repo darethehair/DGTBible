@@ -923,11 +923,17 @@
       }
     },
     "acts/13": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "7790f56",
       "chapter_sha256": "d6b11b725ffd9a4da6558af7b21bac47c7750f7e3189e185a9e6ed49307e9a56",
       "scope": "Acts 13:1–52. Bilingual comparison in both directions. Corrected list conjunctions, article placement, repeated subjects and objects, and prepositions. Separated the abrupt English transitions at the dashes in 13:8 and preserved the distinction between explicit and implied pronouns.",
-      "regression": "The Acts 1–13 audit passed across 490 verses. All 52 Acts 13 verses preserve original wording and source IDs, and every link resolves."
+      "regression": "The Acts 1–13 audit passed across 490 verses. All 52 Acts 13 verses preserve original wording and source IDs, and every link resolves.",
+      "final_verification": {
+        "commit": "0e3ee66b09fa2474a7095d631fefa549c38282a9",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 52 verses, including names and travel, the synagogue speech and citations, compressed English numbers, and supplied subjects. The words “the people” at 13:42 are a subject supplied from context.",
+        "chapter_sha256": "1d62b2d2d75ead64bcd5e2ced55f707868d9cefd3fbd11355a9bb7a73caa5970"
+      }
     },
     "acts/14": {
       "status": "corrected",
@@ -1035,9 +1041,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/13",
+  "resume": "acts/14",
   "verification_backlog": [
-    "acts/13",
     "acts/14",
     "acts/15",
     "acts/16",
