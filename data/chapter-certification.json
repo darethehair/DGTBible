@@ -1144,11 +1144,17 @@
       }
     },
     "romans/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "6a03e2a665369df655c6aeac0ef636d2845d521c",
       "chapter_sha256": "f7e3fa7e80486b84c3746d8c04d3209c670c48711ab5ad80677b10ecbc59700e",
       "scope": "Reviewed all 29 verses in both directions. Corrected shifted conjunctions and articles, distinguished the two occurrences of without law, restored the conscience and circumcision links, and marked repeated predicates supplied where Greek uses ellipsis.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–2 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–2 audit passed.",
+      "final_verification": {
+        "commit": "6a03e2a665369df655c6aeac0ef636d2845d521c",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified each negative and repeated judge, practice, law and circumcision rendering. Checked the article and participle combinations, the distinct possessives, and the English copulas and objects supplied by context.",
+        "chapter_sha256": "f7e3fa7e80486b84c3746d8c04d3209c670c48711ab5ad80677b10ecbc59700e"
+      }
     },
     "romans/03": {
       "status": "corrected",
@@ -1249,9 +1255,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/02",
+  "resume": "romans/03",
   "verification_backlog": [
-    "romans/02",
     "romans/03",
     "romans/04",
     "romans/05",
