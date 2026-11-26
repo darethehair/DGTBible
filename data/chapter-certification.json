@@ -2208,10 +2208,35 @@
         "notes": "Verified the introductory oath and appended purpose, the two occurrences of me in 4:18, the separate greeting conjunctions, and the verbless benedictions.",
         "chapter_sha256": "04eb54ac3419dae5c6cc70a5032da067eb584a50eb9a78aa10ef453f6a786efe"
       }
+    },
+    "titus/01": {
+      "status": "corrected",
+      "commit": "f9a8088c93a355652630b26166e2f93b61050b40",
+      "chapter_sha256": "b5267b849eefeccdaf2dca4f67cb624bc3458de8035bf10ec478d809378bd213",
+      "scope": "Reviewed all 16 verses in both directions. Corrected the opening genitives, the two temporal adjectives, the elder and overseer clauses, the distinct appeal and contrast constructions.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Titus 1–1 audit passed."
+    },
+    "titus/02": {
+      "status": "corrected",
+      "commit": "f9a8088c93a355652630b26166e2f93b61050b40",
+      "chapter_sha256": "87bd96728f8be8cc510c11d7d82e22f9507e7278d5d0ddad42b816b20dd565e6",
+      "scope": "Reviewed all 15 verses in both directions. Corrected the household instructions, repeated prepositions and articles, the distinct purpose clauses and the final imperative list.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Titus 1–2 audit passed."
+    },
+    "titus/03": {
+      "status": "corrected",
+      "commit": "f9a8088c93a355652630b26166e2f93b61050b40",
+      "chapter_sha256": "80a0dc9c1386eeee372820dd790c54a0586ad29ab06ac01c00489e0d6e78e385",
+      "scope": "Reviewed all 15 verses in both directions. Corrected repeated datives, the two accounts of works, the two different good phrases in 3:8, and the greetings and blessing.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Titus 1–3 audit passed."
     }
   },
   "resume": "titus/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "titus/01",
+    "titus/02",
+    "titus/03"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2227,7 +2252,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
