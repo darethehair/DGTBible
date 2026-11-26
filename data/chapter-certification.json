@@ -1599,11 +1599,17 @@
       }
     },
     "2corinthians/05": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "f9007f1ba21b56706bee50f5092c7022ceb5dcec",
       "chapter_sha256": "e9bb9a3c2f17ded5f61ded82dec185c1740d23119c3b8d8d1a538ccefdaa1eec",
       "scope": "Reviewed all 21 verses in both directions. Reviewed the dwelling and clothing imagery, judgment and reconciliation, and repeated sin and righteousness terms. Separated tent-house into two precise hover targets while retaining its rendered spelling.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–5 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–5 audit passed.",
+      "final_verification": {
+        "commit": "f05c2d8bc496a26a2f5dc9411aeb70d272a20213",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the two dwelling nouns, negative clothing compound, repeated body and home terms, and the reconciliation syntax. Checked the two separate sin nouns in 5:21 and narrowed the shared dative in 5:15.",
+        "chapter_sha256": "7ed40b6b669bcd3517e45d868547eb56ee52a54f0849d085f4e18cd0edb369c6"
+      }
     },
     "2corinthians/06": {
       "status": "corrected",
@@ -1662,9 +1668,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/05",
+  "resume": "2corinthians/06",
   "verification_backlog": [
-    "2corinthians/05",
     "2corinthians/06",
     "2corinthians/07",
     "2corinthians/08",
