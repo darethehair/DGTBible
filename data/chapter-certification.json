@@ -800,15 +800,23 @@
       "chapter_sha256": "bb209d89ceddb1a054755dd35dd81150dbb8f7984f7f311a26db13ef810c689c",
       "scope": "Acts 5:1–42. Bilingual comparison in both directions. Disambiguated the distinct source IDs for “night” and “opened” in 5:19, preserved Greek object pronouns where explicit, and recorded supplied English repeats and idioms.",
       "regression": "The Acts 1–5 audit passed across 178 verses. All 42 Acts 5 verses retain the original Greek and DGT wording, and all links resolve."
+    },
+    "acts/06": {
+      "status": "corrected",
+      "commit": "ff571a1",
+      "chapter_sha256": "2679716a9e64cbdb121568a28649013c5f0b95cab2977ee17c0679ae7b322ced",
+      "scope": "Acts 6:1–15. Bilingual comparison in both directions. Repaired relative clauses, the repeated conjunctions in 6:5 and 6:9, and the two distinct pronoun targets in 6:15.",
+      "regression": "The Acts 1–6 audit passed across 193 verses. The 15 Acts 6 verses preserve original wording and all source IDs."
     }
   },
-  "resume": "acts/06",
+  "resume": "acts/07",
   "verification_backlog": [
     "acts/01",
     "acts/02",
     "acts/03",
     "acts/04",
-    "acts/05"
+    "acts/05",
+    "acts/06"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
