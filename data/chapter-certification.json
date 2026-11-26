@@ -1482,11 +1482,17 @@
       }
     },
     "1corinthians/12": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "f3f3b9f34fc9b95d637d3ab03dee6e5526515cd3",
       "chapter_sha256": "7e49831b732fdb4d7c75a265d792a501bfcb446c773491abbbba4787ba75abb1",
       "scope": "Reviewed all 31 verses in both directions. Reviewed the gifts, body-members analogy and concluding questions. Distinguished the repeated Spirit, body and member terms and paired negatives, and left supplied copulas and implied objects without forced links.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–12 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–12 audit passed.",
+      "final_verification": {
+        "commit": "da3f2e1d39c03d6f7a2afcef307a80b59430ae52",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the parallel gifts, successive negative questions, and the body analogy. Separated the English dative prepositions from the articles and checked that the second one in 12:26 is supplied in the loaded Greek reading.",
+        "chapter_sha256": "8b27007f1ba0d9757afd0579ffb6b18daaee964d93efda2bb7f9e0fd6ee1627d"
+      }
     },
     "1corinthians/13": {
       "status": "corrected",
@@ -1517,9 +1523,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed."
     }
   },
-  "resume": "1corinthians/12",
+  "resume": "1corinthians/13",
   "verification_backlog": [
-    "1corinthians/12",
     "1corinthians/13",
     "1corinthians/14",
     "1corinthians/15",
