@@ -1206,9 +1206,16 @@
       "chapter_sha256": "ec792b71124876cb16863023191c1792118fa0818531ba1e354e14a23afafdf1",
       "scope": "Reviewed all 36 verses in both directions. Reviewed the remnant, olive-tree analogy, covenant and doxology. Restored missing verbs and distinct possessives, corrected repeated prepositions and connective particles, and retained legitimate elliptical English wording.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–11 audit passed."
+    },
+    "romans/12": {
+      "status": "corrected",
+      "commit": "360e04109cc4969d1e7a8866555d3fd476cabac7",
+      "chapter_sha256": "113cf904f29502dfcfff109892e1ae0c5e8feb70dd309a763b282ab92b256839",
+      "scope": "Reviewed all 21 verses in both directions. Repaired the shifts in the sacrifice and renewing passages, distinguished the repeated exhortations and dative phrases, recovered verbal and adjectival renderings, and split the dash at 12:2.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–12 audit passed."
     }
   },
-  "resume": "romans/12",
+  "resume": "romans/13",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
