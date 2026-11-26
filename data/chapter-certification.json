@@ -1131,11 +1131,17 @@
       }
     },
     "romans/01": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "11cb3b5900713a529f03cb614ce97d9a9b31d025",
       "chapter_sha256": "cd87c0f043f17a4e3d2e44f6a2fb703f6d097a7ea6189eba93467b40f975a018",
       "scope": "Reviewed all 32 verses in both directions. Corrected word shifts in the opening, restored links for prayer, faith, and the concluding lists, and split two dash-fused English tokens at 1:20 while preserving the text.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–1 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–1 audit passed.",
+      "final_verification": {
+        "commit": "39e06b51ac4bd724e7d7a8d7b0d671f09d3becc5",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Checked the salutation, thanksgiving, faith contrasts and concluding lists in both directions. Verified reconstructed text, both dash boundaries, repeated poles of faith, the local genitives, and implied articles and copulas.",
+        "chapter_sha256": "583791189db51da087f3bc61feb203e1a06f3e60f934946fd0e11172d2f57ae8"
+      }
     },
     "romans/02": {
       "status": "corrected",
@@ -1243,9 +1249,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/01",
+  "resume": "romans/02",
   "verification_backlog": [
-    "romans/01",
     "romans/02",
     "romans/03",
     "romans/04",
