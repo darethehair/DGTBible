@@ -4819,11 +4819,11 @@
         "dgt": [
           {
             "text": "There",
-            "ids": [
-              "w1"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "were",
@@ -10179,12 +10179,10 @@
           {
             "text": "he",
             "ids": [
-              "w10",
               "w11"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "reason": "Human-reviewed full-NT master pass batch 43: Subject/support of 'he would not spend time' belongs to γένηται αὐτῷ, not later ἔσπευδεν"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "would",
@@ -22485,7 +22483,7 @@
           {
             "text": "he",
             "ids": [
-              "w11"
+              "w4"
             ],
             "after": " ",
             "confidence": "reviewed-precise"
@@ -22920,11 +22918,11 @@
           },
           {
             "text": "there",
-            "ids": [
-              "w4"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "was",
