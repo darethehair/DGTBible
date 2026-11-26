@@ -1625,11 +1625,17 @@
       }
     },
     "2corinthians/07": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "9dc10936febbfcc3ca466da39699f12c0ab70434",
       "chapter_sha256": "c9d2bb86b1f2c9f1efc91ca417cfba4a11854f8d36faafcc562f0b2cf6c30622",
       "scope": "Reviewed all 16 verses in both directions. Reviewed the threefold wronging denial, grief, repentance and comfort, and the six emphatic clauses in 7:11.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–7 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–7 audit passed.",
+      "final_verification": {
+        "commit": "de0c6f43f85b144f49bf2d69ab09aaaa46f86455",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the three separate no-one targets, both comfort verbs, each sorrow clause and each exclamation in 7:11. Checked the purpose phrase and the two for-the-sake-of expressions.",
+        "chapter_sha256": "e4a28ecfb28a7b1bd0a21c3c01c83038042c3503f7824e5ec9309e563be4f7c1"
+      }
     },
     "2corinthians/08": {
       "status": "corrected",
@@ -1674,9 +1680,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/07",
+  "resume": "2corinthians/08",
   "verification_backlog": [
-    "2corinthians/07",
     "2corinthians/08",
     "2corinthians/09",
     "2corinthians/10",
