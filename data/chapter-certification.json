@@ -1794,57 +1794,86 @@
       }
     },
     "ephesians/01": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "2b27edfb889ed5bd6611b107748c45ac7e8015b0",
       "chapter_sha256": "a827fed113b4de1affd08c5c1bab0877c184678a0acce6c1e46ff9e4563585a9",
       "scope": "Reviewed all 23 verses in both directions. Separated the repeated relative and possessive pronouns and the two Greek source IDs sharing suffix 22 in 1:10.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–1 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–1 audit passed.",
+      "final_verification": {
+        "commit": "2b27edfb889ed5bd6611b107748c45ac7e8015b0",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Confirmed the synthetic in him tokens and the repeated relative and possessive pronouns in 1:10–11, then isolated praise and glory in 1:14. The supplied possessor in 1:14 remains unlinked.",
+        "chapter_sha256": "a827fed113b4de1affd08c5c1bab0877c184678a0acce6c1e46ff9e4563585a9"
+      }
     },
     "ephesians/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "2b27edfb889ed5bd6611b107748c45ac7e8015b0",
       "chapter_sha256": "fecc3b7a912065a5955f8a37e1d068eb42526eae99dd742aaef757268e35c709",
       "scope": "Reviewed all 22 verses in both directions. Restored the repeated circumstantial prepositions and distinguished the articles in the wall, barrier and hostility sequence.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–2 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–2 audit passed.",
+      "final_verification": {
+        "commit": "2b27edfb889ed5bd6611b107748c45ac7e8015b0",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified dative and genitive prepositions in 2:12 and 2:17 and the individual Greek articles for each noun in 2:14. The repeated English wording supplied with participles and ellipses remains scoped.",
+        "chapter_sha256": "fecc3b7a912065a5955f8a37e1d068eb42526eae99dd742aaef757268e35c709"
+      }
     },
     "ephesians/03": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "fcc052b7a37165f86c1d016440104b4e71dc78b4",
       "chapter_sha256": "7db08840a5dd1d538251e09dd28b753dc68c8c0c33a1c76886ac9dfc6c11ff18",
       "scope": "Reviewed all 21 verses in both directions. Linked the relative pronouns and the three compounds expressing joint participation, and isolated the dative and genitive relations.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–3 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–3 audit passed.",
+      "final_verification": {
+        "commit": "fcc052b7a37165f86c1d016440104b4e71dc78b4",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Rechecked relative clauses and the three coordinated co-participation compounds. The recipient of the request in 3:13 is implicit, so the English pronoun remains supplied.",
+        "chapter_sha256": "7db08840a5dd1d538251e09dd28b753dc68c8c0c33a1c76886ac9dfc6c11ff18"
+      }
     },
     "ephesians/04": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "3a4e1bcae61465f9ba5c6a18d74385bb397afc93",
       "chapter_sha256": "2af4ce0610fd22917d95a87005aa742aefc3556727c749cf94b106ae22361dbb",
       "scope": "Reviewed all 32 verses in both directions. Distinguished the repeated directional, causal and negative constructions, and linked the full imperative and idiomatic expressions.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–4 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–4 audit passed.",
+      "final_verification": {
+        "commit": "3a4e1bcae61465f9ba5c6a18d74385bb397afc93",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified distinct repeated negatives in 4:26–27, multiple occurrences of all, and the Greek noun underlying Christ’s gift. The supplied object something in 4:28 remains unlinked.",
+        "chapter_sha256": "2af4ce0610fd22917d95a87005aa742aefc3556727c749cf94b106ae22361dbb"
+      }
     },
     "ephesians/05": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "2a4c1ef79a5602cff4daa6e554da8b6ca31ce755",
       "chapter_sha256": "7be915f93a000b19f442b726d97d245ded8f5a858c5799a296e288542ae1b5d2",
       "scope": "Reviewed all 33 verses in both directions. Preserved the ellipsis in 5:24 and 5:29, and distinguished the repeated possessive and comparison constructions.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–5 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–5 audit passed.",
+      "final_verification": {
+        "commit": "2a4c1ef79a5602cff4daa6e554da8b6ca31ce755",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the possessive article in 5:23, the two commands in 5:14, and the distributive expression in 5:33. The English repeats submit in 5:24 without a second Greek verb.",
+        "chapter_sha256": "7be915f93a000b19f442b726d97d245ded8f5a858c5799a296e288542ae1b5d2"
+      }
     },
     "ephesians/06": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "f484067652d2427cf19b36ecbe525e5a6a5e1c94",
       "chapter_sha256": "6aabd8b3ef34e1d538818df0a749e94dba5c164d455e437bb8408eac3092dff0",
       "scope": "Reviewed all 24 verses in both directions. Separated the repeated every and speak clauses and matched the successive shield, armor and prayer expressions.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–6 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Ephesians 1–6 audit passed.",
+      "final_verification": {
+        "commit": "f484067652d2427cf19b36ecbe525e5a6a5e1c94",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the first and second every in 6:18 and speak in 6:20 against their separate source words. Rechecked the genitive in 6:12 and the dative in 6:23.",
+        "chapter_sha256": "6aabd8b3ef34e1d538818df0a749e94dba5c164d455e437bb8408eac3092dff0"
+      }
     }
   },
-  "resume": "ephesians/01",
-  "verification_backlog": [
-    "ephesians/01",
-    "ephesians/02",
-    "ephesians/03",
-    "ephesians/04",
-    "ephesians/05",
-    "ephesians/06"
-  ],
+  "resume": "ephesians",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -1860,7 +1889,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "deployment",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
