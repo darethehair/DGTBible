@@ -124,6 +124,8 @@ jobs:
           START_CHAPTER: '1'
           END_CHAPTER: '3'
         run: python scripts/audit-titus.py
+      - name: Validate Philemon
+        run: python scripts/audit-philemon.py
       - name: Corpus semantic alignment audit
         continue-on-error: true
         run: python scripts/audit-alignment-quality.py

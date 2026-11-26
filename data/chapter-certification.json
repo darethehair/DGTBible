@@ -3180,5 +3180,28 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all three public Titus chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "philemon_verification": {
+    "commit": "d311e557e0fcfd76837bd132cd3186c979bccb65",
+    "verses": 25,
+    "app_version": "v0.84",
+    "cache": "dgtbible-v094",
+    "structural_regression": "All 25 verses passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 92.4%.",
+    "semantic_regression": "The Philemon audit passed with 24 scoped exceptions. The critical audit identified two further lexical false positives for man and place, both recorded in the allowlist.",
+    "hover_regression": "Reviewed three diagnostic cases for inflection and grammatical case. Eighteen bidirectional Chromium checks passed, including the three separate to phrases in verse 11.",
+    "reviewed_hover_flags": [
+      "1:12 w2 ἀνέπεμψά 0:I 1:am 2:sending 4:back",
+      "1:25 w4 κυρίου 2:of 4:Lord",
+      "1:4 w1 Εὐχαριστῶ 0:I 2:thank"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "Verse 8 though makes the participial concession explicit.",
+      "Verses 10 and 13 while makes the circumstances of being in chains explicit.",
+      "Verse 11 both is English correlative wording for a pair joined in Greek by one καὶ."
+    ],
+    "reviewed_advisory_unused_greek": "No unused meaningful Greek tokens were flagged.",
+    "chapter_sha256": {
+      "philemon/01": "fd74848f9a258aea4586e701d4789d00611e3b4e869e51342e82a415d4a32262"
+    }
   }
 }
