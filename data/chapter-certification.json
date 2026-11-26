@@ -897,11 +897,17 @@
       }
     },
     "acts/11": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "13fb52a",
       "chapter_sha256": "6ad8b58ba8e57c4f6f8067a50a5db20d23e1e9f9e390887343ac20c61440b2b2",
       "scope": "Acts 11:1–30. Bilingual comparison in both directions. Corrected repeated prepositions and conjunctions, aligned the participles in Peter’s account, and preserved the supplied second “gave” at 11:17.",
-      "regression": "The Acts 1–11 audit passed across 413 verses. All 30 Acts 11 verses preserve Greek and DGT wording and all links resolve."
+      "regression": "The Acts 1–11 audit passed across 413 verses. All 30 Acts 11 verses preserve Greek and DGT wording and all links resolve.",
+      "final_verification": {
+        "commit": "5f0f88db9929fe7d47146c2b504794adc049cc54",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 30 verses, including the retold vision, parallel quotations, and the Antioch narrative. Confirmed the numeral at 11:11 has a source word in this verse.",
+        "chapter_sha256": "59c5db79ffbe2ab9826e0f739004663826daf20df1113d6e0a403f0721c99671"
+      }
     },
     "acts/12": {
       "status": "corrected",
@@ -1023,9 +1029,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/11",
+  "resume": "acts/12",
   "verification_backlog": [
-    "acts/11",
     "acts/12",
     "acts/13",
     "acts/14",
