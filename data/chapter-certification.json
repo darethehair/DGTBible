@@ -1215,10 +1215,10 @@
       "scope": "Reviewed all 25 verses in both directions. Corrected shifts in the marriage analogy and the sin and commandment argument. Distinguished the repeated words for doing, desiring and knowing and split three dash-fused English tokens.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–7 audit passed.",
       "final_verification": {
-        "commit": "48a733b84e7cdab568fa9a1a4c0810d3c29ee879",
+        "commit": "3b2719fa91f5c3dd73b1ef7cc3a9d73225f5f4ea",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Verified the marriage analogy and the recurring clauses about doing and desiring in both directions. Checked the three dash boundaries, repeated negatives, and the coordinated preposition at 7:6.",
-        "chapter_sha256": "7b7c7ebb194faf7a6d3ae9b9fcb39e4c591978dbcacd1166b1c0a05c92ff5d38"
+        "notes": "Verified the marriage analogy and the recurring clauses about doing and desiring in both directions. Checked the three dash boundaries, repeated negatives, and the coordinated preposition at 7:6. The final lexical regression also linked the duration word at 7:1 to the adjacent relative expression.",
+        "chapter_sha256": "0805d03f326c2d28d3ae96639db22544be620241531c6934f295eb9239a86f52"
       }
     },
     "romans/08": {
@@ -1306,10 +1306,10 @@
       "scope": "Reviewed all 23 verses in both directions. Distinguished repeated eat, live, die and judge forms and attached their pronouns and auxiliaries locally. Preserved the Greek variant wording at 14:21 with the untranslated alternatives unlinked.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–14 audit passed.",
       "final_verification": {
-        "commit": "75f926d36e92b0a8c76efddf55115b2f97b2e8cd",
+        "commit": "242f306aba92aa145b960820a7930a882a4b2c37",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Verified the repeated eat, live, die, judge and Lord occurrences and the supplied phrases. Confirmed the Greek variants at 14:21 remain unlinked where the DGT sentence ends at stumbles.",
-        "chapter_sha256": "9b035f9c859e13673346048650a8d0b7a117d13b6a5f919d1853eb195bcbd016"
+        "notes": "Verified the repeated eat, live, die, judge and Lord occurrences and the supplied phrases. Confirmed the Greek variants at 14:21 remain unlinked where the DGT sentence ends at stumbles. The book-wide hover regression refined the normal and emphatic second-person tokens at 14:10.",
+        "chapter_sha256": "777e9bf89ab80a47c9c6dfb70f335ea39fd88ff14e3540c97c6bcd2e9d83f52c"
       }
     },
     "romans/15": {
@@ -1538,6 +1538,70 @@
       "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45735066841",
       "workflow_status": "success",
       "public_verification": "The public app.js and sw.js report the release versions. All 28 public Acts chapter files match the verified SHA-256 hashes."
+    }
+  },
+  "romans_verification": {
+    "commit": "3b2719fa91f5c3dd73b1ef7cc3a9d73225f5f4ea",
+    "verses": 430,
+    "app_version": "v0.72",
+    "cache": "dgtbible-v082",
+    "structural_regression": "All 16 chapters passed original source text preservation, Greek and DGT reconstruction, unique source IDs, link integrity and supplied-token checks. Direct DGT link coverage was 94.2%.",
+    "semantic_regression": "Reviewed 29 critical lexical candidates individually, corrected the duration phrase at 7:1, and recorded the 28 remaining cases with exact token positions and source IDs in the quality allowlist.",
+    "hover_regression": "Reviewed 35 remaining diagnostics across 34 verses. They represent inflected verbs with separated English auxiliaries or subjects, idioms and substantiated relative constructions. Seven bidirectional Chromium tests passed at Romans 8:11, 8:17 and 13:7.",
+    "reviewed_hover_flags": [
+      "14:16 w2 βλασφημείσθω → 3:let 6:be 7:spoken 8:of 9:as 10:evil.",
+      "15:32 w11 συναναπαύσωμαι → 8:may 15:be 16:refreshed 17:together 18:with",
+      "10:11 w11 καταισχυνθήσεται. → 8:will 10:be 11:put 12:to 13:shame.”",
+      "12:18 w4 ἐξ → 2:as 3:far 4:as 6:depends 7:on",
+      "1:15 w3 κατʼ → 1:as 2:far 3:as 5:depends 6:on",
+      "11:14 w3 παραζηλώσω → 2:I 3:might 4:make 7:jealous",
+      "6:8 w9 συζήσομεν → 9:we 10:will 12:live 13:with",
+      "8:32 w22 χαρίσεται; → 16:will 17:he 22:graciously 23:give",
+      "9:19 w7 μέμφεται; → 7:does 8:he 10:find 11:fault?",
+      "15:32 w1 ἵνα → 0:so 1:that 8:may",
+      "3:17 w5 ἔγνωσαν. → 1:they 2:have 4:known",
+      "2:8 w1 τοῖς → 1:to 2:those 6:who",
+      "12:21 w2 νικῶ → 0:Do 2:be 3:conquered",
+      "15:22 w3 ἐνεκοπτόμην → 1:I 3:was 4:hindered",
+      "11:10 w1 σκοτισθήτωσαν → 0:let 3:be 4:darkened",
+      "2:26 w16 λογισθήσεται; → 12:will 17:be 18:counted",
+      "3:31 w3 καταργοῦμεν → 0:Do 1:we 3:nullify",
+      "6:2 w9 ζήσομεν → 8:will 9:we 11:live",
+      "8:25 w5 βλέπομεν → 6:we 7:do 9:see,",
+      "9:11 w3 γεννηθέντων → 1:though 3:were 6:born",
+      "10:7 w12 ἀναγαγεῖν. → 9:to 10:bring 12:up",
+      "6:14 w5 κυριεύσει, → 2:will 4:rule 5:over",
+      "5:15 w39 ἐπερίσσευσεν. → 22:did 39:abound",
+      "15:5 w9 δῴη → 1:may 8:give",
+      "5:17 w28 βασιλεύσουσιν → 15:will 28:reign",
+      "15:2 w6 ἀρεσκέτω → 0:Let 4:please",
+      "12:14 w8 καταρᾶσθε. → 6:do 8:curse.",
+      "15:11 w10 ἐπαινεσάτωσαν → 9:let 13:praise",
+      "3:6 w5 κρινεῖ → 4:will 6:judge",
+      "4:22 w3 ἐλογίσθη → 2:was 4:counted",
+      "4:8 w6 λογίσηται → 8:will 11:count.”",
+      "12:5 w6 ἐσμεν → 1:we 5:are",
+      "14:3 w16 κρινέτω, → 14:let 22:judge",
+      "2:27 w3 ἡ → 1:the 6:who",
+      "7:19 w5 ποιῶ → 1:I 2:do 4:do"
+    ],
+    "chapter_sha256": {
+      "romans/01": "583791189db51da087f3bc61feb203e1a06f3e60f934946fd0e11172d2f57ae8",
+      "romans/02": "f7e3fa7e80486b84c3746d8c04d3209c670c48711ab5ad80677b10ecbc59700e",
+      "romans/03": "387165616d07eb0fed81bf03ba68a160e4a778898dac04252674e79b01b0d923",
+      "romans/04": "89e865cb9a8fbc2eae46017fde9e8b5a300761c0c9588f46e31c4a03f6431353",
+      "romans/05": "2d36b712149b3cc3279d186322e0ed3ac2871f411890500e82568fa7b021f2e6",
+      "romans/06": "16bca3801dcc25348023a8ee9f3985f3ca090aaf2f25a3a84175ee5e59d5b1ae",
+      "romans/07": "0805d03f326c2d28d3ae96639db22544be620241531c6934f295eb9239a86f52",
+      "romans/08": "d909f390b87d01aa70018d28705ef815272109bd4443370fb736a75e42303ff1",
+      "romans/09": "60aea85491c89814521666c9e8f8fa6c1a9c8ba39853206119e2f5f655848c77",
+      "romans/10": "705f95ad71c8e883440e7f9bf94517a9616a714b60211910bee138369d295e20",
+      "romans/11": "d21932aa3bee671a0e465246efcdd885f712947c6c645da17f5f6b5f63df0c79",
+      "romans/12": "f78599f483a4cca76ea830c22cd622ca57a89476246866dde69b6782050c7675",
+      "romans/13": "5bb7ff3c4b6affb7e280e87128d52841c0916ade56176d665af2abc92d8fc70a",
+      "romans/14": "777e9bf89ab80a47c9c6dfb70f335ea39fd88ff14e3540c97c6bcd2e9d83f52c",
+      "romans/15": "92975fae802c24859c6ad9477f8aa4c516a2f27467d1708bde1e0cded51ce329",
+      "romans/16": "5451ed138475c252449184f2f3dcb458dcfce6f530a7a36d9962d39e2a31e886"
     }
   }
 }
