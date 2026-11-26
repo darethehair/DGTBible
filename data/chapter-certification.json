@@ -1118,17 +1118,21 @@
       }
     },
     "acts/28": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "20f68bc",
       "chapter_sha256": "4188050d6a56975863444ec0cad7929080755883b88155ff81df4c4c00739d28",
       "scope": "Reviewed all 30 stored verses in both directions, including the Malta and Rome narratives and the citation of Isaiah, and gave Caesar and the separate negation in 28:19 distinct hover targets.",
-      "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
+      "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed.",
+      "final_verification": {
+        "commit": "20f68bc1c8a40ade7e74a3c5ebf5856729e5e900",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Reviewed Malta, the journey to Rome, and the final speech in both directions. Checked each Caesar and negative occurrence, explicit versus inferred possessives in the Isaiah quotation, and the legitimate seven-token temporal rendering of διασωθέντες at 28:1.",
+        "chapter_sha256": "4188050d6a56975863444ec0cad7929080755883b88155ff81df4c4c00739d28"
+      }
     }
   },
-  "resume": "acts/28",
-  "verification_backlog": [
-    "acts/28"
-  ],
+  "resume": "acts",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -1144,7 +1148,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "deployment",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
