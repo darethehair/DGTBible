@@ -975,11 +975,17 @@
       }
     },
     "acts/17": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "9ad1c1b",
       "chapter_sha256": "c18ef7fa9f927d3085f9d2d057102f34b623155dc22d01d5ce371ee9f0efd0be",
       "scope": "Acts 17:1–34. Bilingual comparison in both directions across Thessalonica, Berea and Athens. Separated the repeated conjunctions and prepositions, restored alignment for the Areopagus references, and distinguished both “or” occurrences in 17:29.",
-      "regression": "The Acts 1–17 audit passed across 632 verses. All 34 Acts 17 verses retain original wording and source IDs, and all links resolve."
+      "regression": "The Acts 1–17 audit passed across 632 verses. All 34 Acts 17 verses retain original wording and source IDs, and all links resolve.",
+      "final_verification": {
+        "commit": "e7a1e9f8bac7984421515402c82d26fc99b03262",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 34 verses, including reported speech, the Thessalonica and Berea accounts, and the Areopagus inscription and speech. English copulas and implied objects remain supplied where appropriate.",
+        "chapter_sha256": "91d466c20febce10844c61e84551c45c9af7c1f188d8b395e848fe41be9526e4"
+      }
     },
     "acts/18": {
       "status": "corrected",
@@ -1059,9 +1065,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/17",
+  "resume": "acts/18",
   "verification_backlog": [
-    "acts/17",
     "acts/18",
     "acts/19",
     "acts/20",
