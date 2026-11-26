@@ -1716,7 +1716,7 @@
       }
     },
     "galatians/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "5e299b8f44fd1ff95729db0cd89940387903c742",
       "chapter_sha256": "3e6897b91fbba2b3e6ffd120c865aa3750c382d7688cc1494a957fb04553ec68",
       "scope": "Reviewed all 24 verses in both directions. Reviewed the salutation, singular and plural human origins, both contrary-proclamation statements, the calling account and the reordered scope of our in the greeting. Separated you and behold across the preserved em dash.",
@@ -1729,7 +1729,7 @@
       }
     },
     "galatians/02": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f60c73dd99e44964af1c7001b54de1c4a79a225a",
       "chapter_sha256": "d4e54e6d58adb4d8fba92be496cc83e7a1d2cbba925106a0b1b2bb6963f94e06",
       "scope": "Reviewed all 21 verses in both directions. Reviewed repeated gospel, circumcision, exhortation and justification language, distinguishing the three works-of-law phrases in 2:16. Preserved the Greek ellipses and separated something and whatever across the retained dash.",
@@ -1742,7 +1742,7 @@
       }
     },
     "galatians/03": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "8ba44b6addfebf2fab18b3526257e726bc4dcd1e",
       "chapter_sha256": "2a21d457b2ff1a53cf63d8d326d2a0221619992cfcbec21bc8ffad585a141a13",
       "scope": "Reviewed all 29 verses in both directions. Reviewed the argument about faith, the repeated blessing and curse terms, the singular and plural seed, and the uses of law. Linked the three parallel identity statements without reusing the negatives.",
@@ -1755,7 +1755,7 @@
       }
     },
     "galatians/04": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "d41be4d731da7d44714bee398dcfb3d05bb98a6a",
       "chapter_sha256": "89984420f44ed6c38dbd3f2cdb9f329b01c72470e0cb0e2f6917431707464a31",
       "scope": "Reviewed all 31 verses in both directions. Reviewed the heirs and household images, the two births, repeated family terms, and the Hagar quotation. Distinguished the two instances of again in 4:9 and retained the Greek ellipses.",
@@ -1768,7 +1768,7 @@
       }
     },
     "galatians/05": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "40de0511f88c43f7fc2b515af1dab3e3dcda56c6",
       "chapter_sha256": "7f3f2ecd4d8f210131dee8431d0c4a562ab7784894b15a41990e028a313f9432",
       "scope": "Reviewed all 26 verses in both directions. Reviewed freedom and obligation, the repeated uses of flesh and Spirit, and the works and fruit lists. Checked the dative and genitive relationships and both phrases in the closing imperatives.",
@@ -1781,7 +1781,7 @@
       }
     },
     "galatians/06": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "bc0d898c62772dce81148da9f15f1f0d8207f198",
       "chapter_sha256": "226e7c551221bd142ecc61d5be5abc4e9e7a99a3f4a1574970ce03a99780e19a",
       "scope": "Reviewed all 18 verses in both directions. Reviewed the parallel burden terms, receiving instruction, sowing and reaping, the cross and two world references, and the closing benediction.",
@@ -1794,7 +1794,7 @@
       }
     }
   },
-  "resume": "galatians",
+  "resume": "ephesians/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -1811,7 +1811,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -2318,6 +2318,14 @@
       "galatians/05": "723e5ba5bdedb41b9be54c05b4446964a21b71771ba332f6dee7ec3022d8c5b0",
       "galatians/06": "3bf5586a1f370705062e7abbb02ef043a09f535cfa14eb316d0015985f607685"
     },
-    "local_pages_validation": "Every required validation in the Pages workflow passed. The deployment protection check confirmed that all 168 previously reviewed chapter files were byte-identical. Galatians advisory output included eight orphan supplied candidates, including three lexical cases reviewed and explained above."
+    "local_pages_validation": "Every required validation in the Pages workflow passed. The deployment protection check confirmed that all 168 previously reviewed chapter files were byte-identical. Galatians advisory output included eight orphan supplied candidates, including three lexical cases reviewed and explained above.",
+    "deployment": {
+      "commit": "0f83891ceecc96cae79deb2778bd2fff28c987ab",
+      "app_version": "v0.75",
+      "cache": "dgtbible-v085",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45741500869",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all six chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
