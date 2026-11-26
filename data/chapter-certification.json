@@ -821,9 +821,16 @@
       "chapter_sha256": "ffbcd311639448f4ca08c465cb73b16d431af023260194c296ee4dc2b439e649",
       "scope": "Acts 8:1–40, 39 verses present in the edition. Bilingual comparison in both directions. Restored preposition and article links, distinguished repeated words and supplied pronouns, and split the compound dash tokens in 8:7.",
       "regression": "The Acts 1–8 audit passed across 292 verses. All Acts 8 verse wording and source IDs are preserved and links resolve."
+    },
+    "acts/09": {
+      "status": "corrected",
+      "commit": "d4a66aa",
+      "chapter_sha256": "ed06aa85ae4e7e3d9067ef3300cbfe5730ac2850ce337086e9f3e1dbd66c2436",
+      "scope": "Acts 9:1–43. Bilingual comparison in both directions. Corrected repeated objects and conjunctions, the paired vocatives in 9:4, the supplied dialogue marker in 9:5, and separate phrase targets in 9:31 and 9:39.",
+      "regression": "The Acts 1–9 audit passed across 335 verses. All 43 Acts 9 verses retain the original Greek and DGT wording, and every link resolves."
     }
   },
-  "resume": "acts/09",
+  "resume": "acts/10",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -832,7 +839,8 @@
     "acts/05",
     "acts/06",
     "acts/07",
-    "acts/08"
+    "acts/08",
+    "acts/09"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
