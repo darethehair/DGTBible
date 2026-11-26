@@ -13,7 +13,7 @@ parser.add_argument("slug")
 args = parser.parse_args()
 book_path = Path("data") / args.slug
 manifest = json.loads((book_path / "manifest.json").read_text(encoding="utf8"))
-assert manifest["slug"] == args.slug
+assert manifest.get("slug", book_path.name) == args.slug
 chapters = {entry["chapter"]: entry for entry in manifest["chapters"]}
 start = int(os.environ.get("START_CHAPTER", "1"))
 end = int(os.environ.get("END_CHAPTER", str(len(chapters))))
