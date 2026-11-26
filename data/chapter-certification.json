@@ -2249,7 +2249,7 @@
       }
     },
     "philemon/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f6e9d1413fdbb5e0ce3cc7245289d45565cfe1f4",
       "chapter_sha256": "fd74848f9a258aea4586e701d4789d00611e3b4e869e51342e82a415d4a32262",
       "scope": "Reviewed all 25 verses in both directions. Corrected the repeated greeting datives and possessives, the contrast in Onesimus’s usefulness, the separate objects in the appeal and repayment, and the closing greetings and blessing.",
@@ -2262,7 +2262,7 @@
       }
     }
   },
-  "resume": "philemon",
+  "resume": "hebrews/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2279,7 +2279,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -3203,6 +3203,14 @@
     "chapter_sha256": {
       "philemon/01": "fd74848f9a258aea4586e701d4789d00611e3b4e869e51342e82a415d4a32262"
     },
-    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 176 recorded chapter hashes and release preparation preserved all 204 reviewed and preserved chapter files byte-for-byte."
+    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 176 recorded chapter hashes and release preparation preserved all 204 reviewed and preserved chapter files byte-for-byte.",
+    "deployment": {
+      "commit": "c5e3223b0c163b7417f804f5815b59d5ac910913",
+      "app_version": "v0.84",
+      "cache": "dgtbible-v094",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45817515523",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and the public Philemon chapter SHA-256 against the final bilingual review."
+    }
   }
 }
