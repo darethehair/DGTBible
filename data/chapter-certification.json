@@ -1287,11 +1287,17 @@
       }
     },
     "romans/13": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "e2ed2170fefbce7587468e0aeb8b8a85054e44f9",
       "chapter_sha256": "5bb7ff3c4b6affb7e280e87128d52841c0916ade56176d665af2abc92d8fc70a",
       "scope": "Reviewed all 14 verses in both directions. Distinguished the reordered repetitions in the four payment and honor phrases, corrected each prohibition and its subject and negative, and restored alignments for the closing exhortation.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–13 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–13 audit passed.",
+      "final_verification": {
+        "commit": "e2ed2170fefbce7587468e0aeb8b8a85054e44f9",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the four reordered obligation and recipient constructions, each distinct prohibition and negative, and the separated verbs for putting away and putting on, with contextually supplied copulas left unlinked.",
+        "chapter_sha256": "5bb7ff3c4b6affb7e280e87128d52841c0916ade56176d665af2abc92d8fc70a"
+      }
     },
     "romans/14": {
       "status": "corrected",
@@ -1315,9 +1321,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/13",
+  "resume": "romans/14",
   "verification_backlog": [
-    "romans/13",
     "romans/14",
     "romans/15",
     "romans/16"
