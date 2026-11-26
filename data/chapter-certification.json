@@ -926,9 +926,16 @@
       "chapter_sha256": "960c0b958f9224243fd98e508e18549cd8f2071e69d9d8dcb40f4502f26343e7",
       "scope": "Reviewed all 35 verses in both directions, including Paul’s hearing, the ambush and the commander’s letter, with corrections to repeated function words, clauses and implied English objects.",
       "regression": "Verse reconstruction, alignment structure, and Acts 1–23 audit passed."
+    },
+    "acts/24": {
+      "status": "corrected",
+      "commit": "f137007",
+      "chapter_sha256": "2d7ed7c69e0facb6e905447565596c8b2f392a6afc9f65163926f952e9708465",
+      "scope": "Reviewed all 26 stored verses in both directions, including the accusation and defense before Felix, repeated prepositions and articles, idiomatic expressions and supplied words.",
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–24 audit passed."
     }
   },
-  "resume": "acts/24",
+  "resume": "acts/25",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -952,7 +959,8 @@
     "acts/20",
     "acts/21",
     "acts/22",
-    "acts/23"
+    "acts/23",
+    "acts/24"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
