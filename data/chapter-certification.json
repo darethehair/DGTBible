@@ -940,9 +940,16 @@
       "chapter_sha256": "b4a2e02df052b2a58f40fff3ee4ab2a89bdc2463db418a5c2b3a42228f855d0a",
       "scope": "Reviewed all 27 verses in both directions, correcting the accusations, appeals, distinct occurrences of repeated words, and English supplies in the testimony.",
       "regression": "Verse reconstruction, alignment structure, and Acts 1–25 audit passed."
+    },
+    "acts/26": {
+      "status": "corrected",
+      "commit": "9bec269",
+      "chapter_sha256": "85331a1ef903da3cc25b558bb0c072556855abc3200d8a3a5156945bb1f0d03c",
+      "scope": "Reviewed all 32 verses in both directions, including Paul’s defense, the account of his calling, and the exchange with Agrippa and Festus.",
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–26 audit passed."
     }
   },
-  "resume": "acts/26",
+  "resume": "acts/27",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -968,7 +975,8 @@
     "acts/22",
     "acts/23",
     "acts/24",
-    "acts/25"
+    "acts/25",
+    "acts/26"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
