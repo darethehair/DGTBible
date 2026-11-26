@@ -4,7 +4,10 @@ import json,collections,sys
 from pathlib import Path
 from alignment_repair import BOOKS as REPAIR_BOOKS,atoms,norm,GLUE,sim,literal_terms_by_id,semantic_terms,source_map
 
-BOOKS = [*REPAIR_BOOKS, "2corinthians", "galatians", "ephesians", "philippians", "colossians", "1thessalonians"]
+BOOKS = [
+ *REPAIR_BOOKS, "2corinthians", "galatians", "ephesians", "philippians",
+ "colossians", "1thessalonians", "2thessalonians",
+]
 
 LOW=GLUE|{'very','also','even','still','now','then','only','indeed','surely','therefore','thus','yet'}
 

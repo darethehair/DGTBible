@@ -2829,5 +2829,29 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all five public 1 Thessalonians chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "2thessalonians_verification": {
+    "commit": "d9c1e2f066f02669f23bb63495898efd63c29751",
+    "verses": 47,
+    "app_version": "v0.80",
+    "cache": "dgtbible-v090",
+    "structural_regression": "All three chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 94.7%.",
+    "semantic_regression": "The full 2 Thessalonians audit passed with 25 scoped supplied-word exceptions and no unexplained exact, pronoun or content-word candidates. The critical sanity audit found one further lexical exception for the word good in 1:11.",
+    "hover_regression": "Reviewed three diagnostic cases as legitimate inflection and grammatical case. Seventeen bidirectional Chromium checks passed, including the three consecutive by phrases and repeated negative and participle forms.",
+    "reviewed_hover_flags": [
+      "3:13 w5 ἐγκακήσητε → 5:do 7:grow 8:weary",
+      "3:16 w7 δῴη → 1:may 7:give",
+      "3:18 w4 κυρίου → 2:of 4:Lord"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "1:7 give makes the coordination with the preceding verse explicit.",
+      "2:3 come belongs to a supplied consequence before unless. The only Greek occurrence is in the following condition."
+    ],
+    "reviewed_advisory_unused_greek": "In 3:4 the first καὶ in the coordinated present and future verbs is implicit in the English.",
+    "chapter_sha256": {
+      "2thessalonians/01": "6a10921ddbb0c109a09539f27158d055e9c7a2b197cd58c626f7298d1dd210df",
+      "2thessalonians/02": "ac17406f6e85aa2d544070c124871270f189be56149dcbaf20232c7dd509dec7",
+      "2thessalonians/03": "634f8e31ea0d43c044602038da8eff09b04321fddd07fb96083993830f6ef0ea"
+    }
   }
 }
