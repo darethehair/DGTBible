@@ -828,9 +828,16 @@
       "chapter_sha256": "ed06aa85ae4e7e3d9067ef3300cbfe5730ac2850ce337086e9f3e1dbd66c2436",
       "scope": "Acts 9:1–43. Bilingual comparison in both directions. Corrected repeated objects and conjunctions, the paired vocatives in 9:4, the supplied dialogue marker in 9:5, and separate phrase targets in 9:31 and 9:39.",
       "regression": "The Acts 1–9 audit passed across 335 verses. All 43 Acts 9 verses retain the original Greek and DGT wording, and every link resolves."
+    },
+    "acts/10": {
+      "status": "corrected",
+      "commit": "823bfb4",
+      "chapter_sha256": "9cd447a81d2c9f4944de7d03beeaabeca9858185d6238354418393e10bc891e6",
+      "scope": "Acts 10:1–48. Bilingual comparison in both directions through the Cornelius and Peter accounts. Restored precise prepositions, repaired participles and their subjects, separated Christ and the following pronoun at the dash in 10:36, and preserved “three” as supplied in 10:19.",
+      "regression": "The Acts 1–10 audit passed across 383 verses. All 48 Acts 10 verses preserve original wording and source IDs, and all links resolve."
     }
   },
-  "resume": "acts/10",
+  "resume": "acts/11",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -840,7 +847,8 @@
     "acts/06",
     "acts/07",
     "acts/08",
-    "acts/09"
+    "acts/09",
+    "acts/10"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
