@@ -1185,9 +1185,16 @@
       "chapter_sha256": "1c61d4becdcc719af2555ed198122bc4d24484a802b59a73df02925184062711",
       "scope": "Reviewed all 39 verses in both directions. Corrected repeated references to flesh and Spirit, distinguished Greek article and participle IDs at 8:11, split the two occurrences of heirs at 8:17, and restored purpose, intercession, and verbal links.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–8 audit passed."
+    },
+    "romans/09": {
+      "status": "corrected",
+      "commit": "0b00e1c937822ac89cfb6a78553d1297920bc656",
+      "chapter_sha256": "218878784e9bdb3fb0d86a9491a4396cd8f1e236df748f74f47442c7f5e0e1aa",
+      "scope": "Reviewed all 33 verses in both directions. Corrected misassigned articles, pronouns and repeated predicates across Paul’s argument and quotations. Restored the verbs about mercy and hardening, corrected each of the repeated people in 9:25, and split the call and subsequent clause at 9:12.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–9 audit passed."
     }
   },
-  "resume": "romans/09",
+  "resume": "romans/10",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
