@@ -1870,10 +1870,43 @@
         "notes": "Verified the first and second every in 6:18 and speak in 6:20 against their separate source words. Rechecked the genitive in 6:12 and the dative in 6:23.",
         "chapter_sha256": "6aabd8b3ef34e1d538818df0a749e94dba5c164d455e437bb8408eac3092dff0"
       }
+    },
+    "philippians/01": {
+      "status": "corrected",
+      "commit": "7ae9ff92fbd6ebeb607686cce283f431895594b8",
+      "chapter_sha256": "bd86acbd82022fa42e59b29cbe70ac9b1cf3034efc2dcab650f4b613231ce0be",
+      "scope": "Reviewed all 30 verses in both directions. Separated the repeated articles, pronouns and causal connectives, and corrected the implied subjects and exact links in the opening and prison report.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Philippians 1–1 audit passed."
+    },
+    "philippians/02": {
+      "status": "corrected",
+      "commit": "7ae9ff92fbd6ebeb607686cce283f431895594b8",
+      "chapter_sha256": "9d3e8b60037243000dfd24e208fcb2f0874e000b149dc7744f11a8725166c506",
+      "scope": "Reviewed all 30 verses in both directions. Distinguished conditional and supplied words, and restored the Greek word links in the Christ hymn and the report about Timothy and Epaphroditus.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Philippians 1–2 audit passed."
+    },
+    "philippians/03": {
+      "status": "corrected",
+      "commit": "7ae9ff92fbd6ebeb607686cce283f431895594b8",
+      "chapter_sha256": "5d828ff1329642d5d19a91d84d323f377aa0603bfcee4dd9fdd77f4e0198e060",
+      "scope": "Reviewed all 21 verses in both directions. Separated three repeated commands, the two instances of having confidence and the paired phrases on loss, faith and attaining.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Philippians 1–3 audit passed."
+    },
+    "philippians/04": {
+      "status": "corrected",
+      "commit": "7ae9ff92fbd6ebeb607686cce283f431895594b8",
+      "chapter_sha256": "26e3f0a9a7f017a6bd3c92384d4d27e60d46b02788e6194e473f17db9ce75166",
+      "scope": "Reviewed all 23 verses in both directions. Matched the repeated appeals, rejoicing commands and qualifications, with separate links for the two verbs sharing received.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Philippians 1–4 audit passed."
     }
   },
   "resume": "philippians/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "philippians/01",
+    "philippians/02",
+    "philippians/03",
+    "philippians/04"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -1889,7 +1922,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
