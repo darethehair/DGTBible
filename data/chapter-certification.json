@@ -1677,11 +1677,17 @@
       }
     },
     "2corinthians/11": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "73e930f9173e3020f1c2d9b17232997cc8ca07b2",
       "chapter_sha256": "5231860407d647513a0b8b8d2cda11f7fcd4cae41c5ce85c7ae787709322d0d5",
       "scope": "Reviewed all 33 verses in both directions. Reviewed the jealous and betrothal language, repeated boasting and masquerading clauses, hardship lists, and Damascus. Separated so and in across the em dash in 11:23.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–11 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–11 audit passed.",
+      "final_verification": {
+        "commit": "f8fce9e80fdff503be993fb4eefe829b2137d8e0",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified repeated apostle, boasting, taking, disguising and all eight dangers, including omitted copulas and objects. Separated the two Greek terms in super-apostles and checked the em-dash in 11:23.",
+        "chapter_sha256": "98772c8e57ee582ef80693612e6f5ea63aae42458c10d41a8be668079b2a8386"
+      }
     },
     "2corinthians/12": {
       "status": "corrected",
@@ -1698,9 +1704,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/11",
+  "resume": "2corinthians/12",
   "verification_backlog": [
-    "2corinthians/11",
     "2corinthians/12",
     "2corinthians/13"
   ],
