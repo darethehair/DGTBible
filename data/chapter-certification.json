@@ -3536,5 +3536,53 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all thirteen public Hebrews chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "james_verification": {
+    "commit": "88e437f6de0ef84d4a6d85d98bb14cc5c7653394",
+    "verses": 108,
+    "app_version": "v0.86",
+    "cache": "dgtbible-v096",
+    "structural_regression": "All five chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 92.8%.",
+    "semantic_regression": "The full James audit passed with 89 scoped exceptions. The critical sanity audit recorded 12 further lexical false positives.",
+    "hover_regression": "Reviewed 22 diagnostics for valid inflection, case and shared grammar. Twenty-one bidirectional Chromium checks passed across all five chapters.",
+    "reviewed_hover_flags": [
+      "2:4 w3 διεκρίθητε 0:have 1:you 3:made 4:distinctions",
+      "1:16 w2 πλανᾶσθε, 0:Do 2:be 3:deceived,",
+      "3:11 w8 βρύει 0:Does 3:pour 4:out",
+      "2:13 w7 ποιήσαντι 5:to 9:has 10:shown",
+      "2:17 w7 ἔχῃ 4:it 5:does 7:have",
+      "4:9 w11 μετατραπήτω 6:Let 9:be 10:turned",
+      "1:9 w1 Καυχάσθω 0:Let 6:boast",
+      "2:21 w8 ἐδικαιώθη, 0:Was 5:justified",
+      "1:16 w3 ἀδελφοί 6:brothers 8:sisters.",
+      "1:3 w7 πίστεως 4:of 6:faith",
+      "2:7 w3 βλασφημοῦσιν 0:Do 3:blaspheme",
+      "2:25 w10 ἐδικαιώθη, 2:was 8:justified",
+      "1:20 w7 ἐργάζεται. 3:does 5:produce",
+      "5:13 w1 Κακοπαθεῖ 0:Is 4:suffering?",
+      "3:18 w9 ποιοῦσιν 9:by 12:make",
+      "1:9 w4 ἀδελφὸς 3:brother 5:sister",
+      "1:24 w9 ὁποῖος 11:what 14:like.",
+      "1:13 w3 λεγέτω 0:Let 5:say,",
+      "1:22 w4 λόγου 3:of 5:word",
+      "5:6 w3 τὸν 4:the 6:person,",
+      "5:6 w6 ἀντιτάσσεται 8:does 10:resist",
+      "5:12 w18 ἤτω 22:let 25:be 30:be"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "1:10 person repeats an implicit subject. In 1:11 midst expands the locative phrase. In 1:26 themselves makes the implicit subject of the complementary infinitive explicit.",
+      "2:1 the second Lord expands the appositional phrase of glory.",
+      "3:6 itself emphasizes the understood subject. In 3:11 both and water expand the two substantival adjectives.",
+      "4:1 come expands a verbless question. In 4:14 bring gives the English a verb in the phrase about tomorrow. In 4:15 ought makes the injunction explicit.",
+      "5:7 rain gives the implied noun of early and late."
+    ],
+    "reviewed_advisory_unused_greek": "The nine candidates are discourse or coordination particles absorbed by the English construction, the direct-address ὦ in 2:20, and the rhetorical interrogative particle in 3:11.",
+    "chapter_sha256": {
+      "james/01": "9f02c92e79d13df020e536d7109bc6d08ef84aa1cb7675d3f3ab943600711ac6",
+      "james/02": "2efe42da1c98fcb6b930a8d44ad3f089efeab06ef426376203e5c9f1d4a00656",
+      "james/03": "b59be1aae7b20f9d518b8250a33b18594ff4b5e6bd0f8e5c352c24e86b6856df",
+      "james/04": "57e2560edd4fa5601c3307d9f2832999aac5b9cdfe7638d0c7adbed57ab8efb8",
+      "james/05": "57dc01bd2cc47175b233ef0694498bb54001b82633f25f5c485a17bfeac6845c"
+    }
   }
 }
