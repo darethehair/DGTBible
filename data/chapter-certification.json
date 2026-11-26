@@ -891,9 +891,16 @@
       "chapter_sha256": "0ff0ccce468a5e2df7c33171381fb297d164e4beb26193253d45babe94768445",
       "scope": "Acts 18:1–28. Bilingual comparison in both directions. Corrected lexical phrases and repeated articles, restored precise links for the travel narrative and the word of God, and kept discourse and copular additions supplied where appropriate.",
       "regression": "The Acts 1–18 audit passed across 660 verses. All 28 Acts 18 verses preserve original wording and source IDs, and all links resolve."
+    },
+    "acts/19": {
+      "status": "corrected",
+      "commit": "f649669",
+      "chapter_sha256": "77cdda262041c3e71f74989595c6de49399582e05d1043a4946f262253088cec",
+      "scope": "Reviewed all 40 verses in both directions, correcting narrative and reported speech, participial clauses, repeated articles and conjunctions, and supplied English wording.",
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–19 audit passed."
     }
   },
-  "resume": "acts/19",
+  "resume": "acts/20",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -912,7 +919,8 @@
     "acts/15",
     "acts/16",
     "acts/17",
-    "acts/18"
+    "acts/18",
+    "acts/19"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
