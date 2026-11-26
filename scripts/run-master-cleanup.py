@@ -12,9 +12,12 @@ SAFE_PASSES = [
 ]
 MAX_PASSES = 4
 
-def run(script):
+def run(script, preserve_reviewed=False):
     print(f"\n=== {script} ===", flush=True)
-    subprocess.run(["python", script], cwd=ROOT, check=True)
+    command = ["python", script]
+    if preserve_reviewed:
+        command = ["python", "scripts/preserve-certification.py", *command]
+    subprocess.run(command, cwd=ROOT, check=True)
 
 def changed_data_files():
     p = subprocess.run(
@@ -28,7 +31,7 @@ for pass_no in range(1, MAX_PASSES + 1):
     start = changed_data_files()
     print(f"\n### conservative cleanup pass {pass_no}/{MAX_PASSES}", flush=True)
     for script in SAFE_PASSES:
-        run(script)
+        run(script, preserve_reviewed=True)
     end = changed_data_files()
     if end == start:
         print("No additional data changes in this pass; fixed point reached.", flush=True)

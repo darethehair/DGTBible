@@ -2,7 +2,6 @@ name: Build pinned Romans DGT batch
 on:
   push:
     paths:
-      - '.github/workflows/authoring-romans.yml'
       - 'scripts/extract-stepbible-romans.mjs'
       - 'scripts/build-romans.py'
       - 'scripts/audit-romans.py'
@@ -45,7 +44,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Generate QA-clean Romans $START_CHAPTER-$END_CHAPTER batch"
             for attempt in 1 2 3; do
-              git pull --rebase origin main && git push && break
+              git pull --rebase origin main && python scripts/preserve-certification.py --check && git push && break
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep 2
             done

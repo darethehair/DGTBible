@@ -5,7 +5,6 @@ on:
   push:
     paths:
       - 'scripts/repair-master-exact-unlinked.py'
-      - '.github/workflows/repair-master-exact-unlinked.yml'
 
 permissions:
   contents: write
@@ -20,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Repair unique exact unlinked content
-        run: python scripts/repair-master-exact-unlinked.py
+        run: python scripts/preserve-certification.py python scripts/repair-master-exact-unlinked.py
       - name: Re-run full NT master review
         run: python scripts/master-nt-review.py
       - name: Commit safe exact repairs
@@ -31,7 +30,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Repair unique exact unlinked NT alignments"
             for attempt in 1 2 3; do
-              if git pull --rebase origin main && git push; then exit 0; fi
+              if git pull --rebase origin main && python scripts/preserve-certification.py --check && git push; then exit 0; fi
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep $((attempt*2))
             done

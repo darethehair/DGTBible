@@ -56,7 +56,7 @@ jobs:
             # part of the generated Mark payload. Discard them before rebasing.
             git reset --hard HEAD
             for attempt in 1 2 3; do
-              git pull --rebase origin main && git push && break
+              git pull --rebase origin main && python scripts/preserve-certification.py --check && git push && break
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep 2
             done

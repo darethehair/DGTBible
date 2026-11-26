@@ -3,7 +3,6 @@ name: Extract pinned STEPBible John range
 on:
   push:
     paths:
-      - '.github/workflows/authoring-stepbible.yml'
       - 'scripts/extract-stepbible-john.mjs'
       - 'scripts/preflight-john-batch.mjs'
       - 'scripts/build-john-batch.py'
@@ -51,7 +50,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Generate QA-clean John $START_CHAPTER-$END_CHAPTER batch"
             for attempt in 1 2 3; do
-              git pull --rebase origin main && git push && break
+              git pull --rebase origin main && python scripts/preserve-certification.py --check && git push && break
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep 2
             done

@@ -6,7 +6,6 @@ on:
   push:
     paths:
       - 'scripts/retarget-master-exact-wrong.py'
-      - '.github/workflows/retarget-master-exact-wrong.yml'
 
 permissions:
   contents: write
@@ -21,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Retarget uniquely wrong exact links
-        run: python scripts/retarget-master-exact-wrong.py
+        run: python scripts/preserve-certification.py python scripts/retarget-master-exact-wrong.py
       - name: Re-run full NT master review
         run: python scripts/master-nt-review.py
       - name: Commit safe exact retargeting
@@ -32,7 +31,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Retarget uniquely wrong exact NT alignments"
             for attempt in 1 2 3; do
-              if git pull --rebase origin main && git push; then exit 0; fi
+              if git pull --rebase origin main && python scripts/preserve-certification.py --check && git push; then exit 0; fi
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep $((attempt*2))
             done

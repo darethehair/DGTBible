@@ -12,7 +12,6 @@ on:
       - 'scripts/alignment_repair.py'
       - 'scripts/preserve-reviewed-alignments.py'
       - 'data/authoring/acts-*-dgt.tsv'
-      - '.github/workflows/authoring-acts.yml'
   workflow_dispatch:
     inputs:
       start_chapter:
@@ -69,7 +68,7 @@ jobs:
             git commit -m "Generate QA-clean Acts $START_CHAPTER-$END_CHAPTER batch"
             git reset --hard HEAD
             for attempt in 1 2 3; do
-              git pull --rebase origin main && git push && break
+              git pull --rebase origin main && python scripts/preserve-certification.py --check && git push && break
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep 2
             done

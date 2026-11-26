@@ -6,7 +6,6 @@ on:
   push:
     paths:
       - 'scripts/sanitize-broad-phrase-alignments.py'
-      - '.github/workflows/sanitize-broad-phrase-alignments.yml'
 
 permissions:
   contents: write
@@ -21,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Remove only UI-suppressed whole-verse fallback spans
-        run: python scripts/sanitize-broad-phrase-alignments.py
+        run: python scripts/preserve-certification.py python scripts/sanitize-broad-phrase-alignments.py
       - name: Re-run full NT master review
         run: python scripts/master-nt-review.py
       - name: Commit deterministic cleanup
@@ -32,7 +31,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Remove legacy over-broad hover fallbacks"
             for attempt in 1 2 3; do
-              if git pull --rebase origin main && git push; then exit 0; fi
+              if git pull --rebase origin main && python scripts/preserve-certification.py --check && git push; then exit 0; fi
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep $((attempt*2))
             done

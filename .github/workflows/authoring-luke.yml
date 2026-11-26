@@ -11,7 +11,6 @@ on:
       - 'scripts/alignment_repair.py'
       - 'scripts/preserve-reviewed-alignments.py'
       - 'data/authoring/luke-*-dgt.tsv'
-      - '.github/workflows/authoring-luke.yml'
   workflow_dispatch:
     inputs:
       start_chapter:
@@ -66,7 +65,7 @@ jobs:
             # changes before rebasing against any concurrent main updates.
             git reset --hard HEAD
             for attempt in 1 2 3; do
-              git pull --rebase origin main && git push && break
+              git pull --rebase origin main && python scripts/preserve-certification.py --check && git push && break
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep 2
             done

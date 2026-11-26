@@ -3,7 +3,6 @@ name: Build pinned 1 John DGT batch
 on:
   push:
     paths:
-      - '.github/workflows/authoring-1john.yml'
       - 'scripts/extract-stepbible-1john.mjs'
       - 'scripts/epistle_common.py'
       - 'scripts/build-1john.py'
@@ -36,7 +35,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Generate QA-clean 1 John batch"
             for attempt in 1 2 3; do
-              git pull --rebase origin main && git push && break
+              git pull --rebase origin main && python scripts/preserve-certification.py --check && git push && break
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep 2
             done

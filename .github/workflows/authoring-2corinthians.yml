@@ -2,7 +2,6 @@ name: Build pinned 2 Corinthians DGT batch
 on:
   push:
     paths:
-      - '.github/workflows/authoring-2corinthians.yml'
       - 'scripts/extract-stepbible-2corinthians.mjs'
       - 'scripts/build-2corinthians.py'
       - 'scripts/audit-2corinthians.py'
@@ -43,7 +42,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Generate QA-clean 2 Corinthians $START_CHAPTER-$END_CHAPTER batch"
             for attempt in 1 2 3; do
-              git pull --rebase origin main && git push && break
+              git pull --rebase origin main && python scripts/preserve-certification.py --check && git push && break
               if [ "$attempt" = 3 ]; then exit 1; fi
               sleep 2
             done
