@@ -819,11 +819,17 @@
       }
     },
     "acts/05": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "58842e8",
       "chapter_sha256": "bb209d89ceddb1a054755dd35dd81150dbb8f7984f7f311a26db13ef810c689c",
       "scope": "Acts 5:1–42. Bilingual comparison in both directions. Disambiguated the distinct source IDs for “night” and “opened” in 5:19, preserved Greek object pronouns where explicit, and recorded supplied English repeats and idioms.",
-      "regression": "The Acts 1–5 audit passed across 178 verses. All 42 Acts 5 verses retain the original Greek and DGT wording, and all links resolve."
+      "regression": "The Acts 1–5 audit passed across 178 verses. All 42 Acts 5 verses retain the original Greek and DGT wording, and all links resolve.",
+      "final_verification": {
+        "commit": "8d8e9d670c35bb2d8847bd26a31e80459d3128a6",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 42 verses, including distinctions between repeated speech and custody terms, the police report, and the prayers and commands with implied English words.",
+        "chapter_sha256": "e13fb2d6b17e59cabab9df1df33e78afbf75ae5a453196f9b35b262a915d2383"
+      }
     },
     "acts/06": {
       "status": "corrected",
@@ -987,9 +993,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/05",
+  "resume": "acts/06",
   "verification_backlog": [
-    "acts/05",
     "acts/06",
     "acts/07",
     "acts/08",
