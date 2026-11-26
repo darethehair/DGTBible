@@ -2633,5 +2633,41 @@
       "superseded_push_workflow": "https://github.com/darethehair/DGTBible/actions/runs/45743137457",
       "public_verification": "The cleanup workflow dispatched a new Pages run for the same main commit, superseding the push run. Verified its commit on the run details, the public app version and service-worker cache, and all four public chapter hashes."
     }
+  },
+  "colossians_verification": {
+    "commit": "7e61c51b32e6105f64ead69b0a6e54cb4b68ec38",
+    "verses": 95,
+    "app_version": "v0.78",
+    "cache": "dgtbible-v088",
+    "structural_regression": "All four chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 95.9%.",
+    "semantic_regression": "The full Colossians audit passed with 45 scoped supplied-word exceptions and no unexplained exact or pronoun candidates. Six additional lexical mismatches flagged by the critical audit have exact keys and bilingual explanations in the quality allowlist. Two critical supplied candidates are already covered by the scoped exceptions.",
+    "hover_regression": "Reviewed 12 diagnostic cases as legitimate verb inflection, shared grammatical phrases and idioms. Seventeen bidirectional Chromium checks passed, including each repeated person, him, nor, with and read.",
+    "reviewed_hover_flags": [
+      "4:4 w2 φανερώσω → 2:I 3:may 4:make 6:clear,",
+      "3:21 w10 ἀθυμῶσιν. → 8:they 9:do 11:become 12:discouraged.",
+      "3:19 w8 πικραίνεσθε → 5:do 7:be 8:bitter",
+      "2:17 w5 μελλόντων, → 4:of 7:to 8:come,",
+      "2:1 w8 ὑπὲρ → 12:for 15:for 20:for",
+      "1:3 w1 Εὐχαριστοῦμεν → 0:We 2:give 3:thanks",
+      "2:21 w2 ἅψῃ → 0:“Do 2:handle,",
+      "2:10 w13 ἐξουσίας, → 11:of 15:authority.",
+      "1:15 w5 θεοῦ → 4:of 7:God,",
+      "3:15 w6 βραβευέτω → 1:let 6:rule",
+      "3:18 w6 ἀνδράσιν, → 2:to 4:husbands,",
+      "4:18 w5 χειρὶ → 3:in 6:hand,"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "2:17 belongs is a supplied verb expressing the possessive genitive.",
+      "3:14 put on carries forward the verb from 3:12.",
+      "4:6 Let supplies the exhortative framing of a verbless clause.",
+      "4:11 greets repeats the verb supplied by the greeting in 4:10."
+    ],
+    "reviewed_advisory_unused_greek": "In 1:22 δέ is implicit after the introductory clause. In 3:14 and 4:6 the articles do not render the English verbs supplied by the translation.",
+    "chapter_sha256": {
+      "colossians/01": "11f9958639baff44b6c9f6b36ad7e55cd61f41aca29163458f2e3f63a8383d68",
+      "colossians/02": "06f32945e01b24ee42a50eaa1103ace8f5a46e9ea4e44b6a50c4d1faac0e5c5f",
+      "colossians/03": "f4b2acf8f4ceeb3d88a1552426e9113672a748cba0595e67c1d6d72c0b95f9c1",
+      "colossians/04": "adad83e45edeed8c64e5a6598c37ee8681f32d92a133758878811968a7f4283d"
+    }
   }
 }
