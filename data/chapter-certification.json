@@ -858,11 +858,17 @@
       }
     },
     "acts/08": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "3923ce0",
       "chapter_sha256": "ffbcd311639448f4ca08c465cb73b16d431af023260194c296ee4dc2b439e649",
       "scope": "Acts 8:1–40, 39 verses present in the edition. Bilingual comparison in both directions. Restored preposition and article links, distinguished repeated words and supplied pronouns, and split the compound dash tokens in 8:7.",
-      "regression": "The Acts 1–8 audit passed across 292 verses. All Acts 8 verse wording and source IDs are preserved and links resolve."
+      "regression": "The Acts 1–8 audit passed across 292 verses. All Acts 8 verse wording and source IDs are preserved and links resolve.",
+      "final_verification": {
+        "commit": "63cd57a326d58929099e9dd3ec9b3bbe7c02c76e",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 39 stored verses, including the Samaria and Ethiopian narratives, the Isaiah citation, and English wording carried by Greek interrogatives, participles and pronouns.",
+        "chapter_sha256": "1aca55ae59bb3277b34d1aab9b617d427721c0a78fd60047118f1d19c4dbe8bd"
+      }
     },
     "acts/09": {
       "status": "corrected",
@@ -1005,9 +1011,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/08",
+  "resume": "acts/09",
   "verification_backlog": [
-    "acts/08",
     "acts/09",
     "acts/10",
     "acts/11",
