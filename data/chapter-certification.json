@@ -1209,11 +1209,17 @@
       }
     },
     "romans/07": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "3b5fa16cb5d4e0cce080628ded75f146607ee3f2",
       "chapter_sha256": "bec7b9f797276129c66be5ec9d41c2d474ce2b5cbe46685439cf66b337dd429e",
       "scope": "Reviewed all 25 verses in both directions. Corrected shifts in the marriage analogy and the sin and commandment argument. Distinguished the repeated words for doing, desiring and knowing and split three dash-fused English tokens.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–7 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–7 audit passed.",
+      "final_verification": {
+        "commit": "48a733b84e7cdab568fa9a1a4c0810d3c29ee879",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the marriage analogy and the recurring clauses about doing and desiring in both directions. Checked the three dash boundaries, repeated negatives, and the coordinated preposition at 7:6.",
+        "chapter_sha256": "7b7c7ebb194faf7a6d3ae9b9fcb39e4c591978dbcacd1166b1c0a05c92ff5d38"
+      }
     },
     "romans/08": {
       "status": "corrected",
@@ -1279,9 +1285,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/07",
+  "resume": "romans/08",
   "verification_backlog": [
-    "romans/07",
     "romans/08",
     "romans/09",
     "romans/10",
