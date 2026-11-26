@@ -1313,11 +1313,17 @@
       }
     },
     "romans/15": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "3311db49f50feabb960017aeed41ba134147d502",
       "chapter_sha256": "aeefbaae37df9448389b9fc77723ac5ecaee4e7c07fb0d31b5796771cdce9011",
       "scope": "Reviewed all 33 verses in both directions. Reviewed the opening exhortation, quotations, ministry description and travel plans. Restored repeated verbs and purpose phrases, linked the distinct references to praising and giving thanks, and separated Spain from the next clause at 15:24.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–15 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–15 audit passed.",
+      "final_verification": {
+        "commit": "9841aaf726cb2e0e38ad7181752754175b1b12ee",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Checked the quotations, travel clauses and blessing in both directions. Verified the separate confess and sing praise renderings, the split boundary at 15:24, and the relations in the purpose clauses.",
+        "chapter_sha256": "92975fae802c24859c6ad9477f8aa4c516a2f27467d1708bde1e0cded51ce329"
+      }
     },
     "romans/16": {
       "status": "corrected",
@@ -1327,9 +1333,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/15",
+  "resume": "romans/16",
   "verification_backlog": [
-    "romans/15",
     "romans/16"
   ],
   "mark_verification": {
