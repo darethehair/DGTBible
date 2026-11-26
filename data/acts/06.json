@@ -623,10 +623,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "in",
@@ -634,28 +631,15 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "those",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
+            "ids": [
               "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "days,",
@@ -663,28 +647,23 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "as",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "disciples",
@@ -692,10 +671,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "were",
@@ -703,49 +679,31 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "increasing,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "a",
+            "ids": [],
+            "after": " ",
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
+          },
+          {
+            "text": "complaint",
             "ids": [
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
-          },
-          {
-            "text": "complaint",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "arose",
@@ -753,28 +711,23 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "from",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Hellenists",
@@ -782,10 +735,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "against",
@@ -793,10 +743,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -804,14 +751,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Hebrews",
@@ -819,10 +759,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "because",
@@ -830,21 +767,15 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "their",
             "ids": [
-              "w17"
+              "w25"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
-            "phraseIds": [
-              "w17"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "widows",
@@ -852,10 +783,7 @@
               "w24"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w24"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "were",
@@ -863,10 +791,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "being",
@@ -874,10 +799,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "overlooked",
@@ -885,10 +807,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "in",
@@ -896,21 +815,15 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
-            "phraseIds": [
-              "w18"
-            ]
+            "confidence": "authored-auto-exact-global"
           },
           {
             "text": "the",
             "ids": [
-              "w23"
+              "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
-            "phraseIds": [
-              "w23"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "daily",
@@ -918,10 +831,7 @@
               "w22"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w22"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "distribution.",
@@ -929,10 +839,7 @@
               "w20"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w20"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -1433,12 +1340,11 @@
         "dgt": [
           {
             "text": "So",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -1446,10 +1352,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-semantic-global"
           },
           {
             "text": "twelve",
@@ -1457,10 +1360,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "called",
@@ -1468,19 +1368,15 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w5"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "multitude",
@@ -1488,10 +1384,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "of",
@@ -1499,14 +1392,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -1514,14 +1400,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "disciples",
@@ -1529,16 +1408,13 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
             "ids": [],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
+            "confidence": "reviewed-unaligned",
             "phraseIds": [],
             "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
             "supplied": true
@@ -1549,10 +1425,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "“It",
@@ -1560,10 +1433,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "is",
@@ -1571,10 +1441,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "not",
@@ -1582,35 +1449,23 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "right",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
+            "ids": [
+              "w11"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "for",
             "ids": [
-              "w12"
+              "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "us",
@@ -1618,21 +1473,15 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "to",
             "ids": [
-              "w19"
+              "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w19"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "neglect",
@@ -1640,19 +1489,15 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "word",
@@ -1660,25 +1505,15 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "of",
             "ids": [
-              "w18"
+              "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "God",
@@ -1686,10 +1521,7 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w18"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "to",
@@ -1697,24 +1529,15 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w19"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "serve",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w16",
-              "w17",
-              "w18",
-              "w19",
-              "w20"
+            "ids": [
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "tables.",
@@ -1722,10 +1545,7 @@
               "w20"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w20"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -2182,10 +2002,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "brothers,",
@@ -2193,10 +2010,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "select",
@@ -2204,10 +2018,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "from",
@@ -2215,24 +2026,15 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "among",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
+            "ids": [
+              "w5"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "you",
@@ -2240,14 +2042,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-auto-precise-pronoun-ordered"
           },
           {
             "text": "seven",
@@ -2255,10 +2050,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "men",
@@ -2266,49 +2058,31 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "of",
             "ids": [
-              "w10"
+              "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "good",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "reputation,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w12"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "full",
@@ -2316,10 +2090,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "of",
@@ -2327,10 +2098,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Spirit",
@@ -2338,10 +2106,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -2349,10 +2114,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "wisdom,",
@@ -2360,10 +2122,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "whom",
@@ -2371,10 +2130,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "we",
@@ -2382,10 +2138,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "will",
@@ -2393,10 +2146,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "appoint",
@@ -2404,10 +2154,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "over",
@@ -2415,10 +2162,7 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "this",
@@ -2426,24 +2170,15 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w19"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "need.",
-            "ids": [],
-            "after": "",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
+            "ids": [
+              "w18"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": "",
+            "confidence": "reviewed-precise"
           }
         ]
       }
@@ -2704,12 +2439,11 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "we",
@@ -2717,10 +2451,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "will",
@@ -2728,10 +2459,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "devote",
@@ -2739,30 +2467,23 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "ourselves",
             "ids": [
-              "w1"
+              "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "prayer",
@@ -2770,10 +2491,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -2781,19 +2499,15 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w6"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
@@ -2801,14 +2515,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+            "confidence": "authored-auto-precise-ordered"
           },
           {
             "text": "ministry",
@@ -2816,10 +2523,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "of",
@@ -2827,10 +2531,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -2838,14 +2539,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise-ordered"
           },
           {
             "text": "word.”",
@@ -2853,10 +2547,7 @@
               "w9"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -3625,14 +3316,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -3640,28 +3324,15 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "word",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w4"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "pleased",
@@ -3669,10 +3340,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -3680,14 +3348,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-ordered",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-auto-precise-final-ordered"
           },
           {
             "text": "whole",
@@ -3695,10 +3356,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "multitude,",
@@ -3706,10 +3364,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -3717,14 +3372,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "they",
@@ -3732,10 +3380,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "chose",
@@ -3743,10 +3388,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Stephen,",
@@ -3754,25 +3396,15 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "a",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "man",
@@ -3780,10 +3412,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "full",
@@ -3791,10 +3420,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "of",
@@ -3802,14 +3428,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "faith",
@@ -3817,34 +3436,23 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w15"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
-            "ids": [
-              "w16"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "Holy",
@@ -3852,10 +3460,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Spirit,",
@@ -3863,19 +3468,15 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w18"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Philip,",
@@ -3883,10 +3484,7 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w19"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Prochorus,",
@@ -3894,10 +3492,7 @@
               "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Nicanor,",
@@ -3905,10 +3500,7 @@
               "w23"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w23"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Timon,",
@@ -3916,10 +3508,7 @@
               "w25"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w25"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Parmenas,",
@@ -3927,71 +3516,47 @@
               "w27"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w27"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
-            "ids": [],
+            "ids": [
+              "w28"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Nicolaus,",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w25",
-              "w26",
-              "w27",
-              "w28",
+            "ids": [
               "w29"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "a",
+            "ids": [],
+            "after": " ",
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
+          },
+          {
+            "text": "proselyte",
             "ids": [
               "w30"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w26",
-              "w27",
-              "w28",
-              "w29",
-              "w30"
-            ]
-          },
-          {
-            "text": "proselyte",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w27",
-              "w28",
-              "w29",
-              "w30",
-              "w31"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "from",
-            "ids": [],
+            "ids": [
+              "w31"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Antioch.",
@@ -3999,10 +3564,7 @@
               "w31"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w31"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -4291,14 +3853,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "stood",
@@ -4306,10 +3861,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "these",
@@ -4317,10 +3869,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "men",
@@ -4328,10 +3877,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "before",
@@ -4339,10 +3885,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -4350,14 +3893,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "apostles,",
@@ -4365,10 +3901,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -4376,19 +3909,15 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "after",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "praying,",
@@ -4396,10 +3925,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "they",
@@ -4407,14 +3933,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6",
-              "w7",
-              "w8",
-              "w9",
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "laid",
@@ -4422,21 +3941,15 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "their",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "hands",
@@ -4444,10 +3957,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "on",
@@ -4455,10 +3965,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "them.",
@@ -4466,10 +3973,7 @@
               "w9"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -5047,9 +4551,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w1"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Renders opening Καί without unrelated phrase span"
           },
           {
@@ -5059,9 +4560,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w2"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Article with word without unrelated phrase span"
           },
           {
@@ -5070,10 +4568,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "of",
@@ -5082,9 +4577,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w4"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Genitive article relation in 'of God', not θεοῦ itself"
           },
           {
@@ -5093,10 +4585,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "kept",
@@ -5105,9 +4594,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w6"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Aspectual English rendering of ηὔξανεν"
           },
           {
@@ -5117,9 +4603,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w6"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Renders ηὔξανεν"
           },
           {
@@ -5129,9 +4612,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w7"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Renders second καί without unrelated phrase span"
           },
           {
@@ -5141,9 +4621,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w9"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Article with number without unrelated phrase span"
           },
           {
@@ -5152,10 +4629,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "of",
@@ -5164,9 +4638,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w11"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Genitive article before disciples without unrelated phrase span"
           },
           {
@@ -5175,10 +4646,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "in",
@@ -5186,10 +4654,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Jerusalem",
@@ -5197,10 +4662,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "was",
@@ -5209,9 +4671,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w8"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Passive auxiliary with ἐπληθύνετο"
           },
           {
@@ -5220,10 +4679,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "greatly,",
@@ -5232,9 +4688,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w15"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Renders σφόδρα, not πολύς"
           },
           {
@@ -5244,22 +4697,15 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w17"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Third-clause connective renders τε, not earlier καί w7"
           },
           {
             "text": "a",
-            "ids": [
-              "w16"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w16"
-            ],
-            "reason": "Human-reviewed full-NT master pass batch 49: Article-like English support with πολύς"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "large",
@@ -5268,9 +4714,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w16"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Renders πολύς"
           },
           {
@@ -5280,9 +4723,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w18"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Renders ὄχλος"
           },
           {
@@ -5292,9 +4732,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w19"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Genitive article before priests without unrelated phrase span"
           },
           {
@@ -5303,10 +4740,7 @@
               "w20"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w20"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "were",
@@ -5314,10 +4748,7 @@
               "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "becoming",
@@ -5325,10 +4756,7 @@
               "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "obedient",
@@ -5336,10 +4764,7 @@
               "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "to",
@@ -5347,10 +4772,7 @@
               "w22"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w22"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -5359,9 +4781,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w22"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Article/dative in 'to the faith' without unrelated phrase span"
           },
           {
@@ -5370,10 +4789,7 @@
               "w23"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w23"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -5734,10 +5150,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Stephen,",
@@ -5745,10 +5158,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "full",
@@ -5756,10 +5166,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "of",
@@ -5767,10 +5174,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "grace",
@@ -5778,10 +5182,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -5789,14 +5190,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "power,",
@@ -5804,10 +5198,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "was",
@@ -5815,10 +5206,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "doing",
@@ -5826,10 +5214,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "great",
@@ -5837,10 +5222,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "wonders",
@@ -5848,10 +5230,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -5859,14 +5238,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "signs",
@@ -5874,10 +5246,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "among",
@@ -5885,10 +5254,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -5896,10 +5262,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "people.",
@@ -5907,10 +5270,7 @@
               "w14"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -6483,26 +5843,19 @@
         "dgt": [
           {
             "text": "But",
-            "ids": [],
+            "ids": [
+              "w2"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "some",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w3"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "from",
@@ -6510,14 +5863,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -6525,14 +5871,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2",
-              "w3",
-              "w4",
-              "w5",
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "synagogue",
@@ -6540,10 +5879,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "called",
@@ -6551,25 +5887,15 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
             "ids": [
-              "w6"
+              "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Freedmen,",
@@ -6577,43 +5903,31 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
             "ids": [
-              "w13"
+              "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "of",
             "ids": [
-              "w4"
+              "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "the",
-            "ids": [
-              "w22"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-exact-global",
-            "phraseIds": [
-              "w22"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "Cyrenians",
@@ -6621,10 +5935,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -6632,14 +5943,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9",
-              "w10",
-              "w11",
-              "w12",
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Alexandrians,",
@@ -6647,39 +5951,23 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
             "ids": [
-              "w13"
+              "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "some",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
+            "ids": [
               "w16"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "from",
@@ -6687,14 +5975,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Cilicia",
@@ -6702,61 +5983,7 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w18"
-            ]
-          },
-          {
-            "text": "and",
-            "ids": [
-              "w15"
-            ],
-            "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14",
-              "w15",
-              "w16",
-              "w17",
-              "w18"
-            ]
-          },
-          {
-            "text": "Asia,",
-            "ids": [
-              "w20"
-            ],
-            "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w20"
-            ]
-          },
-          {
-            "text": "rose",
-            "ids": [
-              "w1"
-            ],
-            "after": " ",
-            "confidence": "acts-final-global-semantic",
-            "phraseIds": [
-              "w1"
-            ]
-          },
-          {
-            "text": "up",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -6764,28 +5991,47 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
-            ]
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "Asia,",
+            "ids": [
+              "w20"
+            ],
+            "after": " ",
+            "confidence": "authored-auto-precise"
+          },
+          {
+            "text": "rose",
+            "ids": [
+              "w1"
+            ],
+            "after": " ",
+            "confidence": "acts-final-global-semantic"
+          },
+          {
+            "text": "up",
+            "ids": [
+              "w1"
+            ],
+            "after": " ",
+            "confidence": "reviewed-precise"
+          },
+          {
+            "text": "and",
+            "ids": [],
+            "after": " ",
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "began",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w18",
-              "w19",
-              "w20",
-              "w21",
-              "w22"
+            "ids": [
+              "w21"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "disputing",
@@ -6793,21 +6039,15 @@
               "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "with",
             "ids": [
-              "w23"
+              "w22"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w23"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Stephen.",
@@ -6815,10 +6055,7 @@
               "w23"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w23"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -7107,14 +6344,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "they",
@@ -7122,10 +6352,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "were",
@@ -7133,10 +6360,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "not",
@@ -7144,10 +6368,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "able",
@@ -7155,10 +6376,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "to",
@@ -7166,10 +6384,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "withstand",
@@ -7177,10 +6392,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -7188,14 +6400,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3",
-              "w4",
-              "w5",
-              "w6",
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "wisdom",
@@ -7203,10 +6408,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -7214,14 +6416,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -7229,14 +6424,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-final-ordered",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+            "confidence": "authored-auto-precise-final-ordered"
           },
           {
             "text": "Spirit",
@@ -7244,19 +6432,15 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "with",
-            "ids": [],
+            "ids": [
+              "w10"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "which",
@@ -7264,10 +6448,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "he",
@@ -7275,10 +6456,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "was",
@@ -7286,10 +6464,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "speaking.",
@@ -7297,10 +6472,7 @@
               "w11"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -7685,10 +6857,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "they",
@@ -7696,10 +6865,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "secretly",
@@ -7707,10 +6873,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "induced",
@@ -7718,10 +6881,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "men",
@@ -7729,19 +6889,15 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "to",
-            "ids": [],
+            "ids": [
+              "w4"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "say,",
@@ -7749,14 +6905,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-phrase-positional",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+            "confidence": "authored-auto-precise-phrase-positional"
           },
           {
             "text": "“We",
@@ -7764,10 +6913,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "have",
@@ -7775,10 +6921,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "heard",
@@ -7786,10 +6929,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "him",
@@ -7797,14 +6937,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-pronoun-ordered",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
-            ]
+            "confidence": "authored-auto-precise-pronoun-ordered"
           },
           {
             "text": "speaking",
@@ -7812,10 +6945,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "blasphemous",
@@ -7823,10 +6953,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "words",
@@ -7834,10 +6961,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "acts-reviewed-precision",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "acts-reviewed-precision"
           },
           {
             "text": "against",
@@ -7845,10 +6969,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Moses",
@@ -7856,10 +6977,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -7867,10 +6985,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "God.”",
@@ -7878,10 +6993,7 @@
               "w15"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -8359,13 +7471,10 @@
           {
             "text": "And",
             "ids": [
-              "w5"
+              "w2"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w5"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "they",
@@ -8373,14 +7482,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "stirred",
@@ -8388,10 +7490,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "up",
@@ -8399,10 +7498,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -8410,10 +7506,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "acts-final-repeated-exact"
           },
           {
             "text": "people,",
@@ -8421,10 +7514,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -8432,10 +7522,7 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "acts-final-repeated-exact"
           },
           {
             "text": "elders,",
@@ -8443,10 +7530,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -8454,10 +7538,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "acts-final-repeated-exact"
           },
           {
             "text": "the",
@@ -8465,10 +7546,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "acts-final-repeated-exact"
           },
           {
             "text": "scribes,",
@@ -8476,10 +7554,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -8487,10 +7562,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "acts-final-repeated-exact"
           },
           {
             "text": "coming",
@@ -8498,10 +7570,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "upon",
@@ -8509,25 +7578,15 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "him,",
-            "ids": [
-              "w12"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "they",
@@ -8535,14 +7594,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "seized",
@@ -8550,10 +7602,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "him",
@@ -8561,14 +7610,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-ordered",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "authored-auto-precise-ordered"
           },
           {
             "text": "and",
@@ -8576,10 +7618,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "acts-final-repeated-exact"
           },
           {
             "text": "brought",
@@ -8587,25 +7626,15 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "him",
-            "ids": [
-              "w16"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "to",
@@ -8613,10 +7642,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -8624,10 +7650,7 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w18"
-            ]
+            "confidence": "acts-final-repeated-exact"
           },
           {
             "text": "council.",
@@ -8635,10 +7658,7 @@
               "w19"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w19"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -9144,9 +8164,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w1"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Subject carried by ἔστησαν"
           },
           {
@@ -9155,10 +8172,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "put",
@@ -9167,9 +8181,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w1"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Part of 'put forward' rendering of ἔστησαν, not τόπου"
           },
           {
@@ -9179,9 +8190,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w1"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Completes contextual rendering of ἔστησαν"
           },
           {
@@ -9190,10 +8198,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "witnesses",
@@ -9201,10 +8206,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "who",
@@ -9213,9 +8215,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w5"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Relative English support for participle λέγοντας"
           },
           {
@@ -9225,9 +8224,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w5"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Renders λέγοντας without unrelated phrase span"
           },
           {
@@ -9236,10 +8232,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "man",
@@ -9247,10 +8240,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "does",
@@ -9258,10 +8248,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "not",
@@ -9269,10 +8256,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "stop",
@@ -9280,10 +8264,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "speaking",
@@ -9291,10 +8272,7 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "words",
@@ -9303,9 +8281,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w12"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Renders ῥήματα"
           },
           {
@@ -9314,24 +8289,15 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "this",
             "ids": [
-              "w15",
-              "w16"
+              "w15"
             ],
             "after": " ",
-            "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w15",
-              "w16"
-            ],
-            "reason": "Human-reviewed full-NT master pass batch 49: English demonstrative in 'this holy place' tied to the place phrase, not οὗτος w8"
+            "confidence": "reviewed-precise"
           },
           {
             "text": "holy",
@@ -9339,10 +8305,7 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w18"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "place",
@@ -9350,10 +8313,7 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w16"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -9361,10 +8321,7 @@
               "w20"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w20"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -9373,9 +8330,6 @@
             ],
             "after": " ",
             "confidence": "reviewed-master-precise",
-            "phraseIds": [
-              "w21"
-            ],
             "reason": "Human-reviewed full-NT master pass batch 49: Article with law without unrelated phrase span"
           },
           {
@@ -9384,10 +8338,7 @@
               "w22"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w22"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -9916,10 +8867,7 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "we",
@@ -9927,10 +8875,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "have",
@@ -9938,10 +8883,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "heard",
@@ -9949,10 +8891,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "him",
@@ -9960,10 +8899,7 @@
               "w3"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w3"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "saying",
@@ -9971,10 +8907,7 @@
               "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "that",
@@ -9982,14 +8915,7 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w4",
-              "w5",
-              "w6",
-              "w7",
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "this",
@@ -9997,14 +8923,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Jesus",
@@ -10012,33 +8931,23 @@
               "w6"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w6"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
-            "ids": [],
+            "ids": [
+              "w7"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "Nazarene",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w7",
-              "w8",
-              "w9",
-              "w10",
-              "w11"
+            "ids": [
+              "w8"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "will",
@@ -10046,14 +8955,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8",
-              "w9",
-              "w10",
-              "w11",
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "destroy",
@@ -10061,10 +8963,7 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "this",
@@ -10072,14 +8971,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10",
-              "w11",
-              "w12",
-              "w13",
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "place",
@@ -10087,10 +8979,7 @@
               "w12"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w12"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "and",
@@ -10098,10 +8987,7 @@
               "w14"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "change",
@@ -10109,10 +8995,7 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -10120,14 +9003,7 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "customs",
@@ -10135,10 +9011,7 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "that",
@@ -10146,14 +9019,7 @@
               "w18"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w15",
-              "w16",
-              "w17",
-              "w18",
-              "w19"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "Moses",
@@ -10161,10 +9027,7 @@
               "w21"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "handed",
@@ -10172,28 +9035,15 @@
               "w19"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "down",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w17",
-              "w18",
-              "w19",
-              "w20",
-              "w21"
+            "ids": [
+              "w19"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "to",
@@ -10201,10 +9051,7 @@
               "w20"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w20"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "us.”",
@@ -10212,10 +9059,7 @@
               "w20"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w20"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
@@ -10648,10 +9492,7 @@
               "w1"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w1"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "all",
@@ -10659,38 +9500,23 @@
               "w5"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w5"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "who",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w6"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "were",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w1",
-              "w2",
-              "w3",
-              "w4",
-              "w5"
+            "ids": [
+              "w7"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "sitting",
@@ -10698,10 +9524,7 @@
               "w7"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w7"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "in",
@@ -10709,10 +9532,7 @@
               "w8"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w8"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
@@ -10720,10 +9540,7 @@
               "w9"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
-            "phraseIds": [
-              "w9"
-            ]
+            "confidence": "authored-auto-semantic-global"
           },
           {
             "text": "council,",
@@ -10731,24 +9548,15 @@
               "w10"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w10"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "looking",
-            "ids": [],
-            "after": " ",
-            "confidence": "authored-phrase-only",
-            "phraseIds": [
-              "w5",
-              "w6",
-              "w7",
-              "w8",
-              "w9"
+            "ids": [
+              "w2"
             ],
-            "reason": "Covered by authored phrase span; no safe lexical hover target"
+            "after": " ",
+            "confidence": "reviewed-precise"
           },
           {
             "text": "intently",
@@ -10756,30 +9564,23 @@
               "w2"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w2"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "at",
-            "ids": [],
+            "ids": [
+              "w3"
+            ],
             "after": " ",
-            "confidence": "acts-final-supplied-glue",
-            "phraseIds": [],
-            "reason": "English connective/article/preposition supplied for natural rendering; no safe separate Greek hover target",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "him,",
             "ids": [
-              "w14"
+              "w4"
             ],
             "after": " ",
-            "confidence": "authored-auto-semantic-global",
-            "phraseIds": [
-              "w14"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "saw",
@@ -10787,21 +9588,15 @@
               "w11"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "his",
             "ids": [
-              "w11"
+              "w14"
             ],
             "after": " ",
-            "confidence": "acts-final-helper-verb",
-            "phraseIds": [
-              "w11"
-            ]
+            "confidence": "reviewed-precise"
           },
           {
             "text": "face",
@@ -10809,10 +9604,7 @@
               "w13"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w13"
-            ]
+            "confidence": "acts-final-repeated-exact"
           },
           {
             "text": "like",
@@ -10820,29 +9612,15 @@
               "w15"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w11",
-              "w12",
-              "w13",
-              "w14",
-              "w15"
-            ]
+            "confidence": "authored-auto-precise"
           },
           {
             "text": "the",
-            "ids": [
-              "w16"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise-exact-occurrence",
-            "phraseIds": [
-              "w12",
-              "w13",
-              "w14",
-              "w15",
-              "w16"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "face",
@@ -10850,10 +9628,7 @@
               "w16"
             ],
             "after": " ",
-            "confidence": "acts-final-repeated-exact",
-            "phraseIds": [
-              "w16"
-            ]
+            "confidence": "acts-final-repeated-exact"
           },
           {
             "text": "of",
@@ -10861,25 +9636,15 @@
               "w17"
             ],
             "after": " ",
-            "confidence": "authored-auto-precise-bundled",
-            "phraseIds": [
-              "w13",
-              "w14",
-              "w15",
-              "w16",
-              "w17"
-            ]
+            "confidence": "authored-auto-precise-bundled"
           },
           {
             "text": "an",
-            "ids": [
-              "w17"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17"
-            ]
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "angel.",
@@ -10887,10 +9652,7 @@
               "w17"
             ],
             "after": "",
-            "confidence": "authored-auto-precise",
-            "phraseIds": [
-              "w17"
-            ]
+            "confidence": "authored-auto-precise"
           }
         ]
       }
