@@ -2041,7 +2041,7 @@
       }
     },
     "2thessalonians/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "8e249d01f0e5ca4942b059033a8a28138395c7e2",
       "chapter_sha256": "6a10921ddbb0c109a09539f27158d055e9c7a2b197cd58c626f7298d1dd210df",
       "scope": "Reviewed all 12 verses in both directions. Corrected the greeting, the paired dative phrases and the repeated relative and genitive expressions. Preserved the elliptical clause in 1:7.",
@@ -2054,7 +2054,7 @@
       }
     },
     "2thessalonians/02": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "8e249d01f0e5ca4942b059033a8a28138395c7e2",
       "chapter_sha256": "ac17406f6e85aa2d544070c124871270f189be56149dcbaf20232c7dd509dec7",
       "scope": "Reviewed all 17 verses in both directions. Separated the three by phrases, the repeated lawlessness terms and the supplied consequence in 2:3.",
@@ -2067,7 +2067,7 @@
       }
     },
     "2thessalonians/03": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "8e249d01f0e5ca4942b059033a8a28138395c7e2",
       "chapter_sha256": "94719ebbda2f9b178769cf4964c87b267423c26a5b49f77b5d52a5bc10e7fa8a",
       "scope": "Reviewed all 18 verses in both directions. Distinguished the paired commands, explicit and implicit objects and the closing greetings and blessing.",
@@ -2080,7 +2080,7 @@
       }
     }
   },
-  "resume": "2thessalonians",
+  "resume": "1timothy/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2097,7 +2097,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -2853,6 +2853,14 @@
       "2thessalonians/02": "ac17406f6e85aa2d544070c124871270f189be56149dcbaf20232c7dd509dec7",
       "2thessalonians/03": "634f8e31ea0d43c044602038da8eff09b04321fddd07fb96083993830f6ef0ea"
     },
-    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 162 recorded hashes and release preparation preserved all 190 reviewed and preserved chapter files byte-for-byte."
+    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 162 recorded hashes and release preparation preserved all 190 reviewed and preserved chapter files byte-for-byte.",
+    "deployment": {
+      "commit": "d3ab01822685f46f9d3ec04207eb8c705a4caf94",
+      "app_version": "v0.80",
+      "cache": "dgtbible-v090",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45814925633",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all three public 2 Thessalonians chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
