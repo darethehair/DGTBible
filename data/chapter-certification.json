@@ -898,9 +898,16 @@
       "chapter_sha256": "77cdda262041c3e71f74989595c6de49399582e05d1043a4946f262253088cec",
       "scope": "Reviewed all 40 verses in both directions, correcting narrative and reported speech, participial clauses, repeated articles and conjunctions, and supplied English wording.",
       "regression": "Verse reconstruction, alignment structure, and Acts 1–19 audit passed."
+    },
+    "acts/20": {
+      "status": "corrected",
+      "commit": "9dccc7d",
+      "chapter_sha256": "83c784d015f6acd63c583ccdd4b0a83b85ed8d633bcfb4c05ceae8570e553cb0",
+      "scope": "Reviewed all 38 verses in both directions, including the travel narrative and farewell speech, with precise links for repeated prepositions, participles, articles and English paraphrases.",
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–20 audit passed."
     }
   },
-  "resume": "acts/20",
+  "resume": "acts/21",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -920,7 +927,8 @@
     "acts/16",
     "acts/17",
     "acts/18",
-    "acts/19"
+    "acts/19",
+    "acts/20"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
