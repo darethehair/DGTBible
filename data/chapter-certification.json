@@ -1171,9 +1171,16 @@
       "chapter_sha256": "5fc09c413b52d32286e7c47103a6f151c39d39739e748c6ba254271ac06b0d9f",
       "scope": "Reviewed all 23 verses in both directions. Restored distinct links for repeated occurrences of baptism, dying, living and presenting. Corrected possessives and dative markers, and reviewed the English expansions of the slavery and righteousness constructions.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–6 audit passed."
+    },
+    "romans/07": {
+      "status": "corrected",
+      "commit": "3b5fa16cb5d4e0cce080628ded75f146607ee3f2",
+      "chapter_sha256": "bec7b9f797276129c66be5ec9d41c2d474ce2b5cbe46685439cf66b337dd429e",
+      "scope": "Reviewed all 25 verses in both directions. Corrected shifts in the marriage analogy and the sin and commandment argument. Distinguished the repeated words for doing, desiring and knowing and split three dash-fused English tokens.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–7 audit passed."
     }
   },
-  "resume": "romans/07",
+  "resume": "romans/08",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
