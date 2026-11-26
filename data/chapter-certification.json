@@ -1001,11 +1001,17 @@
       }
     },
     "acts/19": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "f649669",
       "chapter_sha256": "77cdda262041c3e71f74989595c6de49399582e05d1043a4946f262253088cec",
       "scope": "Reviewed all 40 verses in both directions, correcting narrative and reported speech, participial clauses, repeated articles and conjunctions, and supplied English wording.",
-      "regression": "Verse reconstruction, alignment structure, and Acts 1–19 audit passed."
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–19 audit passed.",
+      "final_verification": {
+        "commit": "1b4242ffadb461de3aaaab0fd9588ab446a7e413",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 40 verses, including the Ephesus narrative, repeated speech and crowd terms, distinct existential subjects, and nominal phrases rendered idiomatically.",
+        "chapter_sha256": "6a7549bef98642f352ee712f38541524df2ebb68b2da38a64291ce8dec62c6c6"
+      }
     },
     "acts/20": {
       "status": "corrected",
@@ -1071,9 +1077,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/19",
+  "resume": "acts/20",
   "verification_backlog": [
-    "acts/19",
     "acts/20",
     "acts/21",
     "acts/22",
