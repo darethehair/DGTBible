@@ -1234,10 +1234,34 @@
       "chapter_sha256": "aeefbaae37df9448389b9fc77723ac5ecaee4e7c07fb0d31b5796771cdce9011",
       "scope": "Reviewed all 33 verses in both directions. Reviewed the opening exhortation, quotations, ministry description and travel plans. Restored repeated verbs and purpose phrases, linked the distinct references to praising and giving thanks, and separated Spain from the next clause at 15:24.",
       "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–15 audit passed."
+    },
+    "romans/16": {
+      "status": "corrected",
+      "commit": "2bdb0d99a592c0ae8db3b9c17dac2414c56c4a45",
+      "chapter_sha256": "1077140d9b9587108c97c7e47c4908770443d7e8c7d5c967dfb88438126faf45",
+      "scope": "Reviewed all 24 verses in both directions. Corrected the introductions, greetings and closing exhortation, including the distinct possessives, links to the names and households, and repeated greetings. Reviewed all 24 stored verses.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and Romans 1–16 audit passed."
     }
   },
-  "resume": "romans/16",
-  "verification_backlog": [],
+  "resume": "romans/01",
+  "verification_backlog": [
+    "romans/01",
+    "romans/02",
+    "romans/03",
+    "romans/04",
+    "romans/05",
+    "romans/06",
+    "romans/07",
+    "romans/08",
+    "romans/09",
+    "romans/10",
+    "romans/11",
+    "romans/12",
+    "romans/13",
+    "romans/14",
+    "romans/15",
+    "romans/16"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -1253,7 +1277,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
