@@ -2496,49 +2496,73 @@
       }
     },
     "1peter/01": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "a0eb52d084b897d3d57a6dd9e9544a27da0a262cf81a4e20d20051b35df41d10",
       "scope": "Reviewed all 25 verses in both directions. Corrected the salutations, resurrection and salvation clauses, and repeated pronouns and words in the quotation. Split three em-dash tokens for precise hovering.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed.",
+      "final_verification": {
+        "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the repeated revelation phrases and genitives, the shared pronouns in 1:8, and the verb for announcing good news.",
+        "chapter_sha256": "a0eb52d084b897d3d57a6dd9e9544a27da0a262cf81a4e20d20051b35df41d10"
+      }
     },
     "1peter/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "0a7d0432171e6aaacf11b826b39e84146db3aeb4c761bfde9476ca14ef4f2a8b",
       "scope": "Reviewed all 25 verses in both directions. Corrected the living stone and priesthood contrasts, repeated against and on phrases, and separate pronouns in the closing quotation.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed.",
+      "final_verification": {
+        "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified each reference to stone, the contrast between the two people terms, the two locatives in 2:12, and supplied objects in the final quotation.",
+        "chapter_sha256": "0a7d0432171e6aaacf11b826b39e84146db3aeb4c761bfde9476ca14ef4f2a8b"
+      }
     },
     "1peter/03": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "660cbdb4506316de2a5f520fb74a0336dfb582314a56098901e115254f9e87e2",
       "scope": "Reviewed all 22 verses in both directions. Corrected household pronouns, repeated references to fear, the baptism clauses, and four em-dash joins.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed.",
+      "final_verification": {
+        "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the repeated family terms, the two fears in 3:14, the Greek temporal clause about Noah, and the separate references in the baptism clause.",
+        "chapter_sha256": "660cbdb4506316de2a5f520fb74a0336dfb582314a56098901e115254f9e87e2"
+      }
     },
     "1peter/04": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "00004dff2b6026c84457d804cd8ddd513195150db7852f356d0e0ce1044fe00b",
       "scope": "Reviewed all 19 verses in both directions. Corrected the participles and prepositions in the suffering and exhortation clauses, and the distinct referents in the doxology.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed.",
+      "final_verification": {
+        "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified two flesh and spirit contrasts, the relative phrases, the two implied verbs in 4:11, and the subjects and objects through the ending.",
+        "chapter_sha256": "00004dff2b6026c84457d804cd8ddd513195150db7852f356d0e0ce1044fe00b"
+      }
     },
     "1peter/05": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
       "chapter_sha256": "7ab0616415cf62813ffbadf5f574ac9aeedd4081939268ab022f3154fc2f784c",
       "scope": "Reviewed all 14 verses in both directions. Corrected the elders and praise clauses, four separate future verbs, and the distinct occurrences of you in the final greetings.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 Peter alignment audit passed.",
+      "final_verification": {
+        "commit": "4d955cf72af057cf601057f6de74b0becc60c112",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the two greetings, the shared meaning of clothed humility, separate future verbs, and the verbless doxology.",
+        "chapter_sha256": "7ab0616415cf62813ffbadf5f574ac9aeedd4081939268ab022f3154fc2f784c"
+      }
     }
   },
-  "resume": "1peter/01",
-  "verification_backlog": [
-    "1peter/01",
-    "1peter/02",
-    "1peter/03",
-    "1peter/04",
-    "1peter/05"
-  ],
+  "resume": "1peter",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2554,7 +2578,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "deployment",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
