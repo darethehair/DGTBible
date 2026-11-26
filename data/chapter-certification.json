@@ -835,9 +835,16 @@
       "chapter_sha256": "9cd447a81d2c9f4944de7d03beeaabeca9858185d6238354418393e10bc891e6",
       "scope": "Acts 10:1–48. Bilingual comparison in both directions through the Cornelius and Peter accounts. Restored precise prepositions, repaired participles and their subjects, separated Christ and the following pronoun at the dash in 10:36, and preserved “three” as supplied in 10:19.",
       "regression": "The Acts 1–10 audit passed across 383 verses. All 48 Acts 10 verses preserve original wording and source IDs, and all links resolve."
+    },
+    "acts/11": {
+      "status": "corrected",
+      "commit": "13fb52a",
+      "chapter_sha256": "6ad8b58ba8e57c4f6f8067a50a5db20d23e1e9f9e390887343ac20c61440b2b2",
+      "scope": "Acts 11:1–30. Bilingual comparison in both directions. Corrected repeated prepositions and conjunctions, aligned the participles in Peter’s account, and preserved the supplied second “gave” at 11:17.",
+      "regression": "The Acts 1–11 audit passed across 413 verses. All 30 Acts 11 verses preserve Greek and DGT wording and all links resolve."
     }
   },
-  "resume": "acts/11",
+  "resume": "acts/12",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -848,7 +855,8 @@
     "acts/07",
     "acts/08",
     "acts/09",
-    "acts/10"
+    "acts/10",
+    "acts/11"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
