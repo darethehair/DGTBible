@@ -8509,7 +8509,8 @@
           {
             "text": "just",
             "ids": [
-              "w14"
+              "w14",
+              "w15"
             ],
             "after": " ",
             "confidence": "reviewed-precise"
@@ -15912,11 +15913,11 @@
           },
           {
             "text": "it",
-            "ids": [
-              "w8"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target",
+            "supplied": true
           },
           {
             "text": "happened",
