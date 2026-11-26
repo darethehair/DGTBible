@@ -936,11 +936,17 @@
       }
     },
     "acts/14": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "cb88ee8",
       "chapter_sha256": "6fa545d8286ef0132c50df01ccec592f6a9f928f4afb63b7f40831ce0514949a",
       "scope": "Acts 14:1–28. Bilingual comparison in both directions. Corrected repeated moves and prepositions, linked the relative reference rendered as the second “Paul” in 14:9, and preserved the supplied “temple” and “saying.”",
-      "regression": "The Acts 1–14 audit passed across 518 verses. All 28 Acts 14 verses preserve the original Greek and DGT wording, and every link resolves."
+      "regression": "The Acts 1–14 audit passed across 518 verses. All 28 Acts 14 verses preserve the original Greek and DGT wording, and every link resolves.",
+      "final_verification": {
+        "commit": "cb88ee87835ff65f7c54e569932a004aea7cb2f6",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 28 verses in both directions, including the Lystra narrative, shifts among participants, and the distinction between repeated objects and implicit English objects. The temple at 14:13 is supplied from context.",
+        "chapter_sha256": "6fa545d8286ef0132c50df01ccec592f6a9f928f4afb63b7f40831ce0514949a"
+      }
     },
     "acts/15": {
       "status": "corrected",
@@ -1041,9 +1047,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/14",
+  "resume": "acts/15",
   "verification_backlog": [
-    "acts/14",
     "acts/15",
     "acts/16",
     "acts/17",
