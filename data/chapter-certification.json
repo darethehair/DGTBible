@@ -962,11 +962,17 @@
       }
     },
     "acts/16": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "7c0d50f",
       "chapter_sha256": "68e2383fdba93ab3c4d96d61766aac01b361fb539b83da5c013e156bd9bb1d68",
       "scope": "Acts 16:1–40. Bilingual comparison in both directions. Repaired routes and repeated terms, separated the multiple prison and household references, and aligned the implications of Paul’s Roman citizenship statement without borrowing nearby pronouns.",
-      "regression": "The Acts 1–16 audit passed across 598 verses. All 40 Acts 16 verses preserve Greek and DGT wording, and all links resolve."
+      "regression": "The Acts 1–16 audit passed across 598 verses. All 40 Acts 16 verses preserve Greek and DGT wording, and all links resolve.",
+      "final_verification": {
+        "commit": "94a64be41dd77c891ff429f723b923b2970ca085",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 40 verses, including the travel narrative, the speeches and the prison account. In 16:40 “house” is supplied from the destination expressed by πρὸς τὴν Λυδίαν.",
+        "chapter_sha256": "7c6c87f5d240ba4fae4d10a0c08ecbf8d26ce385e83a80fd1ba310cda2f3cd0e"
+      }
     },
     "acts/17": {
       "status": "corrected",
@@ -1053,9 +1059,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/16",
+  "resume": "acts/17",
   "verification_backlog": [
-    "acts/16",
     "acts/17",
     "acts/18",
     "acts/19",
