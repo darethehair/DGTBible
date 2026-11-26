@@ -2663,10 +2663,19 @@
         "notes": "Verified each water and blood expression independently, both of the believe constructions, and the supplied giver in 5:16.",
         "chapter_sha256": "6402a8170c3c308f3111707eb942aa2efc484ba1d49934cc562d1810a92a8025"
       }
+    },
+    "2john/01": {
+      "status": "corrected",
+      "commit": "9cefb0a25cc424117ee0469b89c172e8408c2b7c",
+      "chapter_sha256": "a8476e017e04272c2ae87d5f6a7a5564cc05e58a4193fe3fb5b2aeca069c4043",
+      "scope": "Reviewed all 13 verses in both directions. Reviewed all 13 verses, preserving the Greek and DGT text. Distinguished repeated truth and commandment terms and split English tokens at the em dash.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 John alignment audit passed."
     }
   },
   "resume": "2john/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "2john/01"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2682,7 +2691,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
