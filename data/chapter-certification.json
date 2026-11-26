@@ -863,9 +863,16 @@
       "chapter_sha256": "6fa545d8286ef0132c50df01ccec592f6a9f928f4afb63b7f40831ce0514949a",
       "scope": "Acts 14:1–28. Bilingual comparison in both directions. Corrected repeated moves and prepositions, linked the relative reference rendered as the second “Paul” in 14:9, and preserved the supplied “temple” and “saying.”",
       "regression": "The Acts 1–14 audit passed across 518 verses. All 28 Acts 14 verses preserve the original Greek and DGT wording, and every link resolves."
+    },
+    "acts/15": {
+      "status": "corrected",
+      "commit": "23f357b",
+      "chapter_sha256": "b7809aac47189612e5c722f5ba005a039551cf4b706616235ea9a94a715f3334",
+      "scope": "Acts 15:1–41, 40 verses in this edition. Bilingual comparison in both directions. Narrowed the repeated list conjunctions and prepositions in the council and letter, linked the successive references to Paul and Barnabas in 15:2, and corrected the two independent negations in 15:38.",
+      "regression": "The Acts 1–15 audit passed across 558 verses. All Acts 15 wording and Greek source IDs are preserved, and every link resolves."
     }
   },
-  "resume": "acts/15",
+  "resume": "acts/16",
   "verification_backlog": [
     "acts/01",
     "acts/02",
@@ -880,7 +887,8 @@
     "acts/11",
     "acts/12",
     "acts/13",
-    "acts/14"
+    "acts/14",
+    "acts/15"
   ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
