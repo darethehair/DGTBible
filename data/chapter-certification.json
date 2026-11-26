@@ -2600,49 +2600,73 @@
       }
     },
     "1john/01": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
       "chapter_sha256": "6e845b7f9c142ae209a22c57617280f5df0591d8103918d46e508876d8d6f684",
       "scope": "Reviewed all 10 verses in both directions. Matched the sequence of relative clauses, both revelations, and each coordinating conjunction.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed.",
+      "final_verification": {
+        "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the four opening relative forms in order, each conjunction in 1:2–3, and the inferred object and possessive.",
+        "chapter_sha256": "6e845b7f9c142ae209a22c57617280f5df0591d8103918d46e508876d8d6f684"
+      }
     },
     "1john/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
       "chapter_sha256": "c3460d7fe3331ccba9972666ee7eb4731e83d09a0a928f752997411db631e773",
       "scope": "Reviewed all 29 verses in both directions. Distinguished repeated participles and pronouns. Split compound tokens at em dashes to isolate hover targets.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed.",
+      "final_verification": {
+        "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified that all three I have written and to you forms are linked to their separate source tokens in 2:14. Reviewed the elliptic main clause in 2:19 and the Greek negative in the denial formula in 2:22.",
+        "chapter_sha256": "c3460d7fe3331ccba9972666ee7eb4731e83d09a0a928f752997411db631e773"
+      }
     },
     "1john/03": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
       "chapter_sha256": "ba4c7bb318732cca977d809e7ac14a8ee99ea7514b805d80fcc1db786f6605a3",
       "scope": "Reviewed all 24 verses in both directions. Restored separately rendered practices, laid down, and possessives. Matched the two Greek occurrences of condemning.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed.",
+      "final_verification": {
+        "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the repeated revelations and practices, the two laid or lay down phrases, and that each occurrence of ἡμῶν in 3:20 has its own rendering.",
+        "chapter_sha256": "ba4c7bb318732cca977d809e7ac14a8ee99ea7514b805d80fcc1db786f6605a3"
+      }
     },
     "1john/04": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
       "chapter_sha256": "149478a8f2514efee6c89fe2d95a70f3f11c70e700c4b22c6203e25334c8ee93",
       "scope": "Reviewed all 21 verses in both directions. Corrected repeated fear, love, and remaining links and distinguished articles from complement prepositions.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed.",
+      "final_verification": {
+        "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the repeated fear terms in 4:18, both relative seen clauses in 4:20, and the inferred noun spirit in 4:3.",
+        "chapter_sha256": "149478a8f2514efee6c89fe2d95a70f3f11c70e700c4b22c6203e25334c8ee93"
+      }
     },
     "1john/05": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
       "chapter_sha256": "6402a8170c3c308f3111707eb942aa2efc484ba1d49934cc562d1810a92a8025",
       "scope": "Reviewed all 21 verses in both directions. Matched repeated water, testimony, and birth forms and retained supplied English subjects and articles.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed.",
+      "final_verification": {
+        "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified each water and blood expression independently, both of the believe constructions, and the supplied giver in 5:16.",
+        "chapter_sha256": "6402a8170c3c308f3111707eb942aa2efc484ba1d49934cc562d1810a92a8025"
+      }
     }
   },
-  "resume": "1john/01",
-  "verification_backlog": [
-    "1john/01",
-    "1john/02",
-    "1john/03",
-    "1john/04",
-    "1john/05"
-  ],
+  "resume": "1john",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2658,7 +2682,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "deployment",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
