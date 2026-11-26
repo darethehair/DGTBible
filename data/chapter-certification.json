@@ -2598,10 +2598,51 @@
         "notes": "Verified the Greek source order and left both occurrences of water, new, and will attached to their separate source words. Reviewed the dative constructions and the implied copula in the final doxology.",
         "chapter_sha256": "9ac98ef13f9ecfbe8c1b618cae2f11eb3d3e2e284463ce22ee1e29be0f3af337"
       }
+    },
+    "1john/01": {
+      "status": "corrected",
+      "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+      "chapter_sha256": "6e845b7f9c142ae209a22c57617280f5df0591d8103918d46e508876d8d6f684",
+      "scope": "Reviewed all 10 verses in both directions. Matched the sequence of relative clauses, both revelations, and each coordinating conjunction.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
+    },
+    "1john/02": {
+      "status": "corrected",
+      "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+      "chapter_sha256": "c3460d7fe3331ccba9972666ee7eb4731e83d09a0a928f752997411db631e773",
+      "scope": "Reviewed all 29 verses in both directions. Distinguished repeated participles and pronouns. Split compound tokens at em dashes to isolate hover targets.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
+    },
+    "1john/03": {
+      "status": "corrected",
+      "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+      "chapter_sha256": "ba4c7bb318732cca977d809e7ac14a8ee99ea7514b805d80fcc1db786f6605a3",
+      "scope": "Reviewed all 24 verses in both directions. Restored separately rendered practices, laid down, and possessives. Matched the two Greek occurrences of condemning.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
+    },
+    "1john/04": {
+      "status": "corrected",
+      "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+      "chapter_sha256": "149478a8f2514efee6c89fe2d95a70f3f11c70e700c4b22c6203e25334c8ee93",
+      "scope": "Reviewed all 21 verses in both directions. Corrected repeated fear, love, and remaining links and distinguished articles from complement prepositions.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
+    },
+    "1john/05": {
+      "status": "corrected",
+      "commit": "03c56123c37fc70f25d359255ee1df252b49f85b",
+      "chapter_sha256": "6402a8170c3c308f3111707eb942aa2efc484ba1d49934cc562d1810a92a8025",
+      "scope": "Reviewed all 21 verses in both directions. Matched repeated water, testimony, and birth forms and retained supplied English subjects and articles.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 1 John alignment audit passed."
     }
   },
   "resume": "1john/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "1john/01",
+    "1john/02",
+    "1john/03",
+    "1john/04",
+    "1john/05"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2617,7 +2658,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
