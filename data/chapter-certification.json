@@ -2689,10 +2689,19 @@
         "notes": "Verified both prosper forms in 1:2, the parallel clauses and inferred objects in 1:10, the independent occurrences of by in 1:12, and both words for face in 1:14.",
         "chapter_sha256": "d0a3bc4321d7c825c73252dd91998dfd33d37b4f68fc8b47a06077d7027d2334"
       }
+    },
+    "jude/01": {
+      "status": "corrected",
+      "commit": "f1b799ed5730f4413d643cae28a62941090f34a2",
+      "chapter_sha256": "80221827f8e52abff9c7a67ffa1fa62643264a61d1525534de6242fcea339ec2",
+      "scope": "Reviewed all 25 verses in both directions. Corrected 25 verses, including repeated words for keep, the Greek reading Jesus in 1:5, and the distinct clauses for mercy and rescue.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available Jude alignment audit passed."
     }
   },
   "resume": "jude/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "jude/01"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2708,7 +2717,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
