@@ -2041,33 +2041,47 @@
       }
     },
     "2thessalonians/01": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "8e249d01f0e5ca4942b059033a8a28138395c7e2",
       "chapter_sha256": "6a10921ddbb0c109a09539f27158d055e9c7a2b197cd58c626f7298d1dd210df",
       "scope": "Reviewed all 12 verses in both directions. Corrected the greeting, the paired dative phrases and the repeated relative and genitive expressions. Preserved the elliptical clause in 1:7.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Thessalonians 1–1 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Thessalonians 1–1 audit passed.",
+      "final_verification": {
+        "commit": "8e249d01f0e5ca4942b059033a8a28138395c7e2",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the opening dative, the ellipsis in 1:7, the two recipients in 1:8 and their separate negatives, and the difference between the two forms of believe in 1:10.",
+        "chapter_sha256": "6a10921ddbb0c109a09539f27158d055e9c7a2b197cd58c626f7298d1dd210df"
+      }
     },
     "2thessalonians/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "8e249d01f0e5ca4942b059033a8a28138395c7e2",
       "chapter_sha256": "ac17406f6e85aa2d544070c124871270f189be56149dcbaf20232c7dd509dec7",
       "scope": "Reviewed all 17 verses in both directions. Separated the three by phrases, the repeated lawlessness terms and the supplied consequence in 2:3.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Thessalonians 1–2 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Thessalonians 1–2 audit passed.",
+      "final_verification": {
+        "commit": "8e249d01f0e5ca4942b059033a8a28138395c7e2",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the three paired forms of by and the two as though clauses. Kept the main clause supplied in 2:3 and preserved one distinct rendering for each revelation verb.",
+        "chapter_sha256": "ac17406f6e85aa2d544070c124871270f189be56149dcbaf20232c7dd509dec7"
+      }
     },
     "2thessalonians/03": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "8e249d01f0e5ca4942b059033a8a28138395c7e2",
       "chapter_sha256": "94719ebbda2f9b178769cf4964c87b267423c26a5b49f77b5d52a5bc10e7fa8a",
       "scope": "Reviewed all 18 verses in both directions. Distinguished the paired commands, explicit and implicit objects and the closing greetings and blessing.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Thessalonians 1–3 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Thessalonians 1–3 audit passed.",
+      "final_verification": {
+        "commit": "9906e8f238bef9bdaefda8129da4bab13c185fc6",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the shared pronoun in 3:6, the forms of do in 3:4, the work and busybodies distinction, and the supplied copulas in the final greetings.",
+        "chapter_sha256": "634f8e31ea0d43c044602038da8eff09b04321fddd07fb96083993830f6ef0ea"
+      }
     }
   },
-  "resume": "2thessalonians/01",
-  "verification_backlog": [
-    "2thessalonians/01",
-    "2thessalonians/02",
-    "2thessalonians/03"
-  ],
+  "resume": "2thessalonians",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2083,7 +2097,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "deployment",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
