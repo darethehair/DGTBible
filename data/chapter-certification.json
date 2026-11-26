@@ -1560,11 +1560,17 @@
       }
     },
     "2corinthians/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "b38a0908bb94b82936c174d8f4b97b982c43ac6a",
       "chapter_sha256": "68c6220069fd631e03abcb6f6f70299a8ef2817deee961769042c286dbaa03f3",
       "scope": "Reviewed all 17 verses in both directions. Reviewed the repeated grief and forgiveness clauses, the Troas passage, and the paired fragrance expressions. Preserved the Greek ellipses where English supplies a second verb.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–2 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–2 audit passed.",
+      "final_verification": {
+        "commit": "242f8472f0902ad0c48fb27bd381c15ba71e654d",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified repeated sorrow and forgiveness, the object ellipses, and the paired aromas. Distinguished the first from in 2:3 from its supplied repetition inside the relative clause.",
+        "chapter_sha256": "1ff432a786eb3acbdcd10c12d90cc2586102a0c1b2bcdcabb09ca54dc2d99a7a"
+      }
     },
     "2corinthians/03": {
       "status": "corrected",
@@ -1644,9 +1650,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/02",
+  "resume": "2corinthians/03",
   "verification_backlog": [
-    "2corinthians/02",
     "2corinthians/03",
     "2corinthians/04",
     "2corinthians/05",
