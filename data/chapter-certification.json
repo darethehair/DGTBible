@@ -1794,7 +1794,7 @@
       }
     },
     "ephesians/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "2b27edfb889ed5bd6611b107748c45ac7e8015b0",
       "chapter_sha256": "a827fed113b4de1affd08c5c1bab0877c184678a0acce6c1e46ff9e4563585a9",
       "scope": "Reviewed all 23 verses in both directions. Separated the repeated relative and possessive pronouns and the two Greek source IDs sharing suffix 22 in 1:10.",
@@ -1807,7 +1807,7 @@
       }
     },
     "ephesians/02": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "2b27edfb889ed5bd6611b107748c45ac7e8015b0",
       "chapter_sha256": "fecc3b7a912065a5955f8a37e1d068eb42526eae99dd742aaef757268e35c709",
       "scope": "Reviewed all 22 verses in both directions. Restored the repeated circumstantial prepositions and distinguished the articles in the wall, barrier and hostility sequence.",
@@ -1820,7 +1820,7 @@
       }
     },
     "ephesians/03": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "fcc052b7a37165f86c1d016440104b4e71dc78b4",
       "chapter_sha256": "7db08840a5dd1d538251e09dd28b753dc68c8c0c33a1c76886ac9dfc6c11ff18",
       "scope": "Reviewed all 21 verses in both directions. Linked the relative pronouns and the three compounds expressing joint participation, and isolated the dative and genitive relations.",
@@ -1833,7 +1833,7 @@
       }
     },
     "ephesians/04": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "3a4e1bcae61465f9ba5c6a18d74385bb397afc93",
       "chapter_sha256": "2af4ce0610fd22917d95a87005aa742aefc3556727c749cf94b106ae22361dbb",
       "scope": "Reviewed all 32 verses in both directions. Distinguished the repeated directional, causal and negative constructions, and linked the full imperative and idiomatic expressions.",
@@ -1846,7 +1846,7 @@
       }
     },
     "ephesians/05": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "2a4c1ef79a5602cff4daa6e554da8b6ca31ce755",
       "chapter_sha256": "7be915f93a000b19f442b726d97d245ded8f5a858c5799a296e288542ae1b5d2",
       "scope": "Reviewed all 33 verses in both directions. Preserved the ellipsis in 5:24 and 5:29, and distinguished the repeated possessive and comparison constructions.",
@@ -1859,7 +1859,7 @@
       }
     },
     "ephesians/06": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f484067652d2427cf19b36ecbe525e5a6a5e1c94",
       "chapter_sha256": "6aabd8b3ef34e1d538818df0a749e94dba5c164d455e437bb8408eac3092dff0",
       "scope": "Reviewed all 24 verses in both directions. Separated the repeated every and speak clauses and matched the successive shield, armor and prayer expressions.",
@@ -1872,7 +1872,7 @@
       }
     }
   },
-  "resume": "ephesians",
+  "resume": "philippians/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -1889,7 +1889,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -2475,6 +2475,14 @@
       "ephesians/05": "7be915f93a000b19f442b726d97d245ded8f5a858c5799a296e288542ae1b5d2",
       "ephesians/06": "6aabd8b3ef34e1d538818df0a749e94dba5c164d455e437bb8408eac3092dff0"
     },
-    "local_pages_validation": "Every required validation in the Pages workflow passed. The preflight checked all 146 recorded hashes, and the full preparation rehearsal preserved all 174 reviewed and preserved chapter files byte-for-byte."
+    "local_pages_validation": "Every required validation in the Pages workflow passed. The preflight checked all 146 recorded hashes, and the full preparation rehearsal preserved all 174 reviewed and preserved chapter files byte-for-byte.",
+    "deployment": {
+      "commit": "aa70ba1382a5f48a17ac808dd81524d57a64bad9",
+      "app_version": "v0.76",
+      "cache": "dgtbible-v086",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45742527110",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all six chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
