@@ -2751,7 +2751,7 @@
       "final_verification": {
         "commit": "5f59d9626c8297e18fa0615a56242296ae248427",
         "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
-        "notes": "Verified the repeated appearance comparisons, holy acclamation, heirloom number forms and throne descriptions. Reviewed finite English copulas supplied by the translation.",
+        "notes": "Verified the repeated appearance comparisons, holy acclamation, the two groups of twenty-four and throne descriptions. Reviewed finite English copulas supplied by the translation.",
         "chapter_sha256": "aea7ca956d3e76718a58eb2a46a4dfd8df2e5bf2d6ede9c76e66c5fa4a82db83"
       }
     },
@@ -4307,7 +4307,7 @@
       "16:20 w8 εὑρέθησαν. 6:were 8:found.",
       "11:3 w9 ἡμέρας 13:for 19:days,"
     ],
-    "reviewed_advisories": "The supplied-word review retained eight inferred expressions, including authority at 6:4 and 11:3, possessive predicates at 7:10 and 19:1, and action verbs in the nominal or prepositional constructions at 11:8 and 14:18. Six unused Greek diagnostics reflect articles, a redundant possessive emphasis, or the documented variant at 18:3.",
+    "reviewed_advisories": "The supplied-word review retained eight inferred expressions, including authority at 6:4 and 11:3, possessive predicates at 7:10 and 19:1, and action verbs in the nominal or prepositional constructions at 11:8 and 14:18. The remaining unused Greek diagnostics reflect articles, a redundant possessive emphasis, or the documented variant at 18:3.",
     "chapter_sha256": {
       "revelation/01": "3e25de37386b269bbf6256d2e207473048856dc2a41119300d9d53b6e64d0fc5",
       "revelation/02": "f9780805b2ae32fdbeebfb926e7a377ad535e73e8c7b853126728f0924b2b8c3",
@@ -4331,6 +4331,8 @@
       "revelation/20": "1ed470b62e94b84fc63ea2fcec494cbdbed921a98cd203834772efd4b81bb51f",
       "revelation/21": "7f44831ddc6885ea70dca20cfebeae05d1a00cffb4bc913c4315f8f10687443e",
       "revelation/22": "6df3fd0678ae7e0b92d3985a86d247f11caddc25cc6f667bc3db557c24f35b51"
-    }
+    },
+    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 232 recorded chapter hashes and release preparation preserved all 260 reviewed and preserved chapter files byte-for-byte.",
+    "hover_regression": "Reviewed 10 structural hover diagnostics and passed 54 bidirectional Chromium checks."
   }
 }
