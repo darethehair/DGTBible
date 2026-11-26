@@ -2429,10 +2429,51 @@
         "notes": "Verified the two emphatic negatives in 13:5, the relative construction in 13:9, the repeated dative recipients, and the blessing spanning 13:20–21.",
         "chapter_sha256": "54e37e5d83998eb69f320559bb1013d1f799a2664d9c652f2a38e019614d1df6"
       }
+    },
+    "james/01": {
+      "status": "corrected",
+      "commit": "03509918c5a40c0a1323b14774f054e894043b33",
+      "chapter_sha256": "9f02c92e79d13df020e536d7109bc6d08ef84aa1cb7675d3f3ab943600711ac6",
+      "scope": "Reviewed all 27 verses in both directions. Corrected the pronouns and genitives in the opening, the parallel clauses in temptation and testing, and the mirror and law comparisons.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available James alignment audit passed."
+    },
+    "james/02": {
+      "status": "corrected",
+      "commit": "03509918c5a40c0a1323b14774f054e894043b33",
+      "chapter_sha256": "2efe42da1c98fcb6b930a8d44ad3f089efeab06ef426376203e5c9f1d4a00656",
+      "scope": "Reviewed all 26 verses in both directions. Corrected the contrasts in the assembly, the paired offenses and quotations, Abraham and Rahab, and repeated prepositions around faith and works.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available James alignment audit passed."
+    },
+    "james/03": {
+      "status": "corrected",
+      "commit": "03509918c5a40c0a1323b14774f054e894043b33",
+      "chapter_sha256": "b59be1aae7b20f9d518b8250a33b18594ff4b5e6bd0f8e5c352c24e86b6856df",
+      "scope": "Reviewed all 18 verses in both directions. Corrected separate verbs and prepositions in the bits, rudders and fire comparisons, the water imagery and the paired lists of wisdom.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available James alignment audit passed."
+    },
+    "james/04": {
+      "status": "corrected",
+      "commit": "03509918c5a40c0a1323b14774f054e894043b33",
+      "chapter_sha256": "57e2560edd4fa5601c3307d9f2832999aac5b9cdfe7638d0c7adbed57ab8efb8",
+      "scope": "Reviewed all 17 verses in both directions. Corrected repeated from phrases and desire verbs, the warning against judging, references to the neighbor, and the contrast between presumption and the will of the Lord.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available James alignment audit passed."
+    },
+    "james/05": {
+      "status": "corrected",
+      "commit": "03509918c5a40c0a1323b14774f054e894043b33",
+      "chapter_sha256": "bd14384dde41d68d383eb64220eae5a9008549ddeff1177e29a3605eb637cebc",
+      "scope": "Reviewed all 20 verses in both directions. Corrected the wealth and trial clauses, repeated references to the Lord, temporal expressions in prayer, and the closing references to the person who strays.",
+      "regression": "Greek and DGT reconstruction, alignment structure, and available James alignment audit passed."
     }
   },
   "resume": "james/01",
-  "verification_backlog": [],
+  "verification_backlog": [
+    "james/01",
+    "james/02",
+    "james/03",
+    "james/04",
+    "james/05"
+  ],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2448,7 +2489,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "correction",
+  "resume_phase": "final-verification",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
