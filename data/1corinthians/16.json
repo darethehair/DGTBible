@@ -1264,7 +1264,8 @@
             "text": "according",
             "ids": [
               "w10",
-              "w11"
+              "w11",
+              "w12"
             ],
             "after": " ",
             "confidence": "reviewed-precise"
@@ -1273,7 +1274,8 @@
             "text": "to",
             "ids": [
               "w10",
-              "w11"
+              "w11",
+              "w12"
             ],
             "after": " ",
             "confidence": "reviewed-precise"
@@ -1282,7 +1284,8 @@
             "text": "how",
             "ids": [
               "w10",
-              "w11"
+              "w11",
+              "w12"
             ],
             "after": " ",
             "confidence": "reviewed-precise"
@@ -3929,11 +3932,11 @@
           },
           {
             "text": "for",
-            "ids": [],
+            "ids": [
+              "w11"
+            ],
             "after": " ",
-            "confidence": "reviewed-unaligned",
-            "reason": "English wording without a distinct Greek hover target.",
-            "supplied": true
+            "confidence": "reviewed-precise"
           },
           {
             "text": "some",
@@ -7354,11 +7357,11 @@
           },
           {
             "text": "do",
-            "ids": [
-              "w5"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "reviewed-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "be",
@@ -10095,11 +10098,11 @@
           },
           {
             "text": "the",
-            "ids": [
-              "w10"
-            ],
+            "ids": [],
             "after": " ",
-            "confidence": "authored-auto-precise"
+            "confidence": "reviewed-unaligned",
+            "reason": "English wording without a distinct Greek hover target.",
+            "supplied": true
           },
           {
             "text": "Lord,",
