@@ -1378,11 +1378,17 @@
       }
     },
     "1corinthians/04": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "2044511d13a08680f8298fffb152223a1e538106",
       "chapter_sha256": "b01ec44e909fdd7d87169579c39c1ea4c62e475934ddfd7662339cd2f3a25a7a",
       "scope": "Reviewed all 21 verses in both directions. Reviewed the stewardship, judgment, apostolic hardships and fatherhood passages. Linked displaced verbs and possessives, distinguished repeated court and speech terms, and preserved supplied grammar in the contrasts.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–4 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–4 audit passed.",
+      "final_verification": {
+        "commit": "d1861995923ab0ce746b0bd67635c5eddd87ea10",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified repeated receive and examine, contrasting plurals in 4:10, and the distinct refuse and scum in 4:13. The preposition with in 4:12 expresses the instrumental dative of hands.",
+        "chapter_sha256": "2a379d9274997b2b176b5a98a89106d1bfa1f47ad6d2bbe751ae1835c7d10599"
+      }
     },
     "1corinthians/05": {
       "status": "corrected",
@@ -1469,9 +1475,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed."
     }
   },
-  "resume": "1corinthians/04",
+  "resume": "1corinthians/05",
   "verification_backlog": [
-    "1corinthians/04",
     "1corinthians/05",
     "1corinthians/06",
     "1corinthians/07",
