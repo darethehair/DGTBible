@@ -2158,7 +2158,7 @@
       }
     },
     "2timothy/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f022a25d204cd3a8f5ccef6525ca97ffba886a40",
       "chapter_sha256": "f6bbc620c9832498298008f4feb8c7cc9bbea62327dba590db42ef5c4701f066",
       "scope": "Reviewed all 18 verses in both directions. Corrected separate genitives and relative clauses, the repeated Christ Jesus occurrences, the chain and prison language, and the shared object of searched and found.",
@@ -2171,7 +2171,7 @@
       }
     },
     "2timothy/02": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f022a25d204cd3a8f5ccef6525ca97ffba886a40",
       "chapter_sha256": "9e9a590dd6d2f2443b47d95e71091d8e85fbfca9d10986553c15ad6c47288717",
       "scope": "Reviewed all 26 verses in both directions. Corrected the soldier and farmer comparisons, distinct repeated pronouns, the seal quotation, the contrasting vessels, and the response and purpose clauses.",
@@ -2184,7 +2184,7 @@
       }
     },
     "2timothy/03": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f022a25d204cd3a8f5ccef6525ca97ffba886a40",
       "chapter_sha256": "28c6bd5325c7e1fe08db5fc6027ca360cc95c0a0fed3f5aceb17198fb2c3bc7a",
       "scope": "Reviewed all 17 verses in both directions. Corrected the opening contrast and the people who creep in, separated the four idiomatic comparisons, and repaired persecution, sacred writings and purpose clauses.",
@@ -2197,7 +2197,7 @@
       }
     },
     "2timothy/04": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "f022a25d204cd3a8f5ccef6525ca97ffba886a40",
       "chapter_sha256": "04eb54ac3419dae5c6cc70a5032da067eb584a50eb9a78aa10ef453f6a786efe",
       "scope": "Reviewed all 22 verses in both directions. Corrected the opening charge, departure, crown and defense clauses, repeated markers in the greetings, and supplied words in the two blessings.",
@@ -2210,7 +2210,7 @@
       }
     }
   },
-  "resume": "2timothy",
+  "resume": "titus/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2227,7 +2227,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -3081,6 +3081,14 @@
       "2timothy/03": "6ac076c43bb9099050e0a4b6448319deb7f00286442f95432e52970a8a99099f",
       "2timothy/04": "04eb54ac3419dae5c6cc70a5032da067eb584a50eb9a78aa10ef453f6a786efe"
     },
-    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 172 recorded chapter hashes and release preparation preserved all 200 reviewed and preserved chapter files byte-for-byte."
+    "local_pages_validation": "Every required Pages validation passed. The preflight checked all 172 recorded chapter hashes and release preparation preserved all 200 reviewed and preserved chapter files byte-for-byte.",
+    "deployment": {
+      "commit": "fb2dce8ee997f60ce19072e18716404282419ea7",
+      "app_version": "v0.82",
+      "cache": "dgtbible-v092",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45816573586",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all four public 2 Timothy chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
