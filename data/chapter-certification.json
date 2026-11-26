@@ -1690,11 +1690,17 @@
       }
     },
     "2corinthians/12": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "6834865d04ad95d78480c3cbef8b8d3dd014c047",
       "chapter_sha256": "8b566ef8aa857eac3cee71e11d635064bc2218ae7f2636b5463cb6a4c3659bac",
       "scope": "Reviewed all 21 verses in both directions. Reviewed the revelations and two body clauses, repeated thorn and weakness statements, the visit and paired exhortations. Distinguished the first nothing in the comparison from the second nothing about the speaker.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–12 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–12 audit passed.",
+      "final_verification": {
+        "commit": "f8fce9e80fdff503be993fb4eefe829b2137d8e0",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified each body and knowing clause, the twice-stated thorn purpose, the two weakness and power statements, and nothing in both successive senses. Tested the matching super-apostles compound and past and future visit statements.",
+        "chapter_sha256": "98371ddd704e3b4e7abb7a9bc128f3cc784a832b42da2311f68e32e4eb2fd298"
+      }
     },
     "2corinthians/13": {
       "status": "corrected",
@@ -1704,9 +1710,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/12",
+  "resume": "2corinthians/13",
   "verification_backlog": [
-    "2corinthians/12",
     "2corinthians/13"
   ],
   "mark_verification": {
