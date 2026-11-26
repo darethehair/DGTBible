@@ -1664,11 +1664,17 @@
       }
     },
     "2corinthians/10": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "a979799fe62480eda8ec555543f9c55aa03d5071",
       "chapter_sha256": "1277cabe880bdab0e710497c0bb1981b9722a7dfa6d0a3456703d30e75109d3c",
       "scope": "Reviewed all 18 verses in both directions. Reviewed the appeal, paired flesh expressions and repeated comparison, exhortation, boasting and recommendation words. Checked genitives, ellipses, letters and presence, and the series of reflexive pronouns.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–10 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–10 audit passed.",
+      "final_verification": {
+        "commit": "2fc3c6a8ff47486f5a690a69760c859ffadfd600",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the repeated flesh, tearing down, reflexive and measure expressions, the comparison of letters with presence, and both predicates of belonging to Christ.",
+        "chapter_sha256": "66542b9cfb90cd68c864b804ce17dca78e2fd05c0725b84aeaa03a28020d1fc4"
+      }
     },
     "2corinthians/11": {
       "status": "corrected",
@@ -1692,9 +1698,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/10",
+  "resume": "2corinthians/11",
   "verification_backlog": [
-    "2corinthians/10",
     "2corinthians/11",
     "2corinthians/12",
     "2corinthians/13"
