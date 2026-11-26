@@ -1391,11 +1391,17 @@
       }
     },
     "1corinthians/05": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "6e033a2d0287e5472061335b0db8bbe67d05da37",
       "chapter_sha256": "cb924fc40249e637c06caf4e35aee481d7a8217424974c426f909cc8f97f49a2",
       "scope": "Reviewed all 13 verses in both directions. Reviewed the disciplinary, leaven and association passages. Restored verbs and phrase links, distinguished possessives and negations, and separated the dash between the swindler and subsequent prohibition at 5:11.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–5 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–5 audit passed.",
+      "final_verification": {
+        "commit": "c94c32c76e2ee8fb83c6c4802b635aa5ba553df5",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Rechecked the repeated immorality and leaven terms, the assembly clause in 5:4, and the paired judgment questions. Restricted with such a person to the Greek compound verb and considered supplied framing in the questions separately from the Greek dative.",
+        "chapter_sha256": "db35c9432ab5e9c7c7102ae80d87ded7e4a89207c7a6648ca7f3ebc2a6ff94e7"
+      }
     },
     "1corinthians/06": {
       "status": "corrected",
@@ -1475,9 +1481,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 1 Corinthians 1–16 audit passed."
     }
   },
-  "resume": "1corinthians/05",
+  "resume": "1corinthians/06",
   "verification_backlog": [
-    "1corinthians/05",
     "1corinthians/06",
     "1corinthians/07",
     "1corinthians/08",
