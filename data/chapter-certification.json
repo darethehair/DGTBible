@@ -949,11 +949,17 @@
       }
     },
     "acts/15": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "23f357b",
       "chapter_sha256": "b7809aac47189612e5c722f5ba005a039551cf4b706616235ea9a94a715f3334",
       "scope": "Acts 15:1–41, 40 verses in this edition. Bilingual comparison in both directions. Narrowed the repeated list conjunctions and prepositions in the council and letter, linked the successive references to Paul and Barnabas in 15:2, and corrected the two independent negations in 15:38.",
-      "regression": "The Acts 1–15 audit passed across 558 verses. All Acts 15 wording and Greek source IDs are preserved, and every link resolves."
+      "regression": "The Acts 1–15 audit passed across 558 verses. All Acts 15 wording and Greek source IDs are preserved, and every link resolves.",
+      "final_verification": {
+        "commit": "4fca32bb032be1c50132400e0bdabef3ec1dd2dc",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 40 stored verses, including the council speeches, Amos quotation, and letter. Distinguished the repeated conjunctions, article references, and distribution of the list of abstentions.",
+        "chapter_sha256": "44718f51d806a80001a5740ba6d00081a1e15aa67d93d8ac0f37a12d2488aa4b"
+      }
     },
     "acts/16": {
       "status": "corrected",
@@ -1047,9 +1053,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/15",
+  "resume": "acts/16",
   "verification_backlog": [
-    "acts/15",
     "acts/16",
     "acts/17",
     "acts/18",
