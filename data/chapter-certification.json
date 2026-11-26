@@ -1014,11 +1014,17 @@
       }
     },
     "acts/20": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "9dccc7d",
       "chapter_sha256": "83c784d015f6acd63c583ccdd4b0a83b85ed8d633bcfb4c05ceae8570e553cb0",
       "scope": "Reviewed all 38 verses in both directions, including the travel narrative and farewell speech, with precise links for repeated prepositions, participles, articles and English paraphrases.",
-      "regression": "Verse reconstruction, alignment structure, and Acts 1–20 audit passed."
+      "regression": "Verse reconstruction, alignment structure, and Acts 1–20 audit passed.",
+      "final_verification": {
+        "commit": "924e4295f15b507dce88deeaee19ef9757535dfc",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 38 verses, distinguishing the travel stages and repeated participants and preserving the implied objects and grammatical differences in Paul’s farewell speech.",
+        "chapter_sha256": "f994d7dfecf753dfe55e89fa91707efe293e0b604f2b8cdb51bf9108e3b5ca30"
+      }
     },
     "acts/21": {
       "status": "corrected",
@@ -1077,9 +1083,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/20",
+  "resume": "acts/21",
   "verification_backlog": [
-    "acts/20",
     "acts/21",
     "acts/22",
     "acts/23",
