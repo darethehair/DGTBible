@@ -780,11 +780,17 @@
       }
     },
     "acts/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "b492166",
       "chapter_sha256": "71b443ce8c89b7c0d044beaef22205115c9384e2f739b21edad3bae7c4241bc8",
       "scope": "Acts 2:1–47. Bilingual comparison in both directions. Restored narrower preposition, verb and repeated possessive links, corrected repeated conjunctions and pronouns, separated two different sources across English dashes, and classified supplied articles and clause support.",
-      "regression": "The Acts 1–2 audit passed across 73 verses. All 47 Acts 2 verses preserve the original wording and source IDs and reconstruct the DGT."
+      "regression": "The Acts 1–2 audit passed across 73 verses. All 47 Acts 2 verses preserve the original wording and source IDs and reconstruct the DGT.",
+      "final_verification": {
+        "commit": "02274c7d270244c36cb933b989fb6070ca3c7825",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified all 47 verses in both directions, including Peter’s quotations, shared renderings in the parallel clauses, and participial and supplied wording.",
+        "chapter_sha256": "53511e5bc087a5d1a22b11a59d93fc5748730e7ef40fad871af9e457cd36b375"
+      }
     },
     "acts/03": {
       "status": "corrected",
@@ -969,9 +975,8 @@
       "regression": "Verse reconstruction, alignment structure, and the full Acts audit passed."
     }
   },
-  "resume": "acts/02",
+  "resume": "acts/03",
   "verification_backlog": [
-    "acts/02",
     "acts/03",
     "acts/04",
     "acts/05",
