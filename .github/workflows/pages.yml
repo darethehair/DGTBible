@@ -68,6 +68,9 @@ jobs:
       - name: Validate Romans
         run: python scripts/audit-romans.py
       - name: Validate 1 Corinthians
+        env:
+          START_CHAPTER: '1'
+          END_CHAPTER: '16'
         run: python scripts/audit-1corinthians.py
       - name: Corpus semantic alignment audit
         continue-on-error: true
