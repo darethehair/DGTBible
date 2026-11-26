@@ -23,11 +23,13 @@ def pk(w):
  return None
 
 linked=unlinked=count=0
+allowlist=json.loads(Path('data/alignment-quality-allowlist.json').read_text(encoding='utf8'))
+reviewed=set()
 recoverable=[]
+orphan_content=[]
 collisions=[]
 synthetic_unlinked=[]
 out_of_span=[]
-orphan_content=[]
 recoverable_pronouns=[]
 recoverable_relative_pronouns=[]
 recoverable_context_relative=[]
@@ -35,6 +37,18 @@ recoverable_bundled_pronouns=[]
 recoverable_positional=[]
 CONTENT_GLUE=set('a an the and but or so for because since if then than as of to from in into on at with by through before after about against under over until when while where why how what whatever whenever whether though although having toward is am are was were be been being has have had do does did will would shall should may might can could he she it they we you i me him her them us my his their our your who whom whose which that this these those there here not no never none nothing one thing things its'.split())
 EVANGEL_WORDS={'proclaim','proclaimed','preach','preached','good','news','gospel','evangelize','evangelized','evangelised'}
+
+def unresolved_links(ch, verse, tokens, indexes, sources):
+ flags=[]
+ for i,source in zip(indexes,sources,strict=True):
+  token=tokens[i]
+  key=f"2thessalonians.{ch:02}.{verse}|{i}|{token['text']}||{source}"
+  if token.get('supplied') and key in allowlist:
+   reviewed.add(key)
+  else:
+   flags.append((ch,verse,i,token['text'],source))
+ return flags
+
 for ch in range(start,end+1):
  d=json.loads((Path('data')/'2thessalonians'/f'{ch:02}.json').read_text(encoding='utf8'))
  count+=len(d['verses'])
@@ -48,10 +62,10 @@ for ch in range(start,end+1):
    if x.get('phraseIds') and any(i not in set(x.get('phraseIds',[])) for i in x.get('ids',[])):
     out_of_span.append((ch,v['v'],x.get('text',''),x.get('ids',[]),x.get('phraseIds',[]),x.get('confidence','')))
    assert all(i in ids for i in (x.get('ids',[])+x.get('phraseIds',[]))),f'dangling alignment 2 Thessalonians {ch}:{v["v"]}'
-  for x in D:
+  for i,x in enumerate(D):
    cw=n(x.get('text',''))
    if cw and cw not in CONTENT_GLUE and not x.get('ids',[]):
-    orphan_content.append((ch,v['v'],x.get('text',''),x.get('phraseIds',[])))
+    orphan_content.extend(unresolved_links(ch,v['v'],D,[i],['']))
   used_precise={i for x in D for i in x.get('ids',[])}
   for g in v['alignment']['greek']:
    gid=(g.get('ids') or [None])[0]
@@ -86,7 +100,7 @@ for ch in range(start,end+1):
        if id not in usedp[k] and (not allowed or id in allowed):lids.append(id)
     lids=list(dict.fromkeys(lids))
     if len(lids)==1:
-     recoverable_pronouns.append((ch,v['v'],k,D[i].get('text',''),lids[0]))
+     recoverable_pronouns.extend(unresolved_links(ch,v['v'],D,[i],lids))
   # Contextual "in whom" -> "in him" style bridge: if a literal relative
   # pronoun follows a precisely aligned preposition and DGT has an unlinked
   # personal pronoun immediately after the same source-aligned preposition,
@@ -101,7 +115,7 @@ for ch in range(start,end+1):
    for i in range(1,len(D)):
     if D[i].get('ids') or pk(D[i].get('text','')) not in {'he','she','they','it'}:continue
     if prev & set(D[i-1].get('ids',[])):
-     recoverable_context_relative.append((ch,v['v'],D[i].get('text',''),relids[0]))
+     recoverable_context_relative.extend(unresolved_links(ch,v['v'],D,[i],relids))
      break
 
   lit_terms=collections.defaultdict(set)
@@ -121,7 +135,7 @@ for ch in range(start,end+1):
       candidates.append(id)
    unique=list(dict.fromkeys(candidates))
    if len(unique)==1:
-    recoverable_bundled_pronouns.append((ch,v['v'],x.get('text',''),unique[0]))
+    recoverable_bundled_pronouns.extend(unresolved_links(ch,v['v'],D,[i],unique))
 
   personal_idxs=[i for i,x in enumerate(D) if not x.get('ids') and pk(x.get('text','')) in {'he','she','they','it'}]
   usedids={id for x in D for id in x.get('ids',[])}
@@ -131,7 +145,7 @@ for ch in range(start,end+1):
     for id in y.get('ids',[]):
      if id not in usedids and id not in relids:relids.append(id)
   if personal_idxs and len(personal_idxs)==len(relids):
-   recoverable_relative_pronouns.append((ch,v['v'],[D[i].get('text','') for i in personal_idxs],relids))
+   recoverable_relative_pronouns.extend(unresolved_links(ch,v['v'],D,personal_idxs,relids))
   used_exact=collections.defaultdict(set)
   for x in D:
    w=n(x.get('text',''))
@@ -151,13 +165,13 @@ for ch in range(start,end+1):
       if id not in used_exact[w] and (not allowed or id in allowed):lids.append(id)
    lids=list(dict.fromkeys(lids))
    if lids and len(lids)==len(idxs):
-    recoverable.append((ch,v['v'],w,len(idxs),lids))
+    recoverable.extend(unresolved_links(ch,v['v'],D,idxs,lids))
    elif len(idxs)==1 and len(lids)>1:
     i=idxs[0]
     erel=i/max(1,len(D)-1)
     ranked=sorted((abs(erel-lpos[id]/max(1,len(L)-1)),id) for id in lids if id in lpos)
     if len(ranked)>=2 and ranked[1][0]-ranked[0][0]>=0.12:
-     recoverable_positional.append((ch,v['v'],w,ranked[0][1],ranked[:3]))
+     recoverable_positional.extend(unresolved_links(ch,v['v'],D,idxs,[ranked[0][1]]))
   # Catastrophic-collision guard: several explicitly authored precise English
   # content words must not collapse onto one Greek ID unless the literal layer
   # for that ID itself contains those lexical words. This catches resolver bugs
@@ -186,8 +200,8 @@ assert not recoverable_relative_pronouns, f'recoverable relative-to-personal pro
 assert not recoverable_context_relative, f'recoverable contextual relative-pronoun links left unlinked: {recoverable_context_relative[:20]}'
 assert not recoverable_bundled_pronouns, f'recoverable neighboring bundled-pronoun links left unlinked: {recoverable_bundled_pronouns[:20]}'
 assert not recoverable_positional, f'recoverable positional exact links left unlinked: {recoverable_positional[:20]}'
+assert not orphan_content, f'Unexplained unlinked DGT content words: {orphan_content[:40]}'
 assert not collisions, f'suspicious authored-precise Greek ID collisions: {collisions[:20]}'
-assert not orphan_content, f'unlinked DGT content words: {orphan_content[:40]}'
 assert not out_of_span, f'precise DGT links escaped authored phrase spans: {out_of_span[:20]}'
 assert not synthetic_unlinked, f'unreviewed synthetic Greek tokens left without precise DGT links: {synthetic_unlinked[:20]}'
-print(f'2 Thessalonians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; 0 recoverable exact links left unlinked; 0 recoverable pronoun-family links left unlinked; 0 recoverable relative-pronoun bridges left unlinked; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
+print(f'2 Thessalonians {start}-{end} audit clean: {count} verses; {pct:.1f}% authored DGT token coverage; {len(reviewed)} reviewed supplied-word exceptions; 0 unexplained exact, pronoun-family or relative-pronoun candidates; 0 unexplained unlinked content words; 0 suspicious authored-precise collisions; 0 unreviewed synthetic Greek tokens.')
