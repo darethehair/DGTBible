@@ -1729,11 +1729,17 @@
       }
     },
     "galatians/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "f60c73dd99e44964af1c7001b54de1c4a79a225a",
       "chapter_sha256": "d4e54e6d58adb4d8fba92be496cc83e7a1d2cbba925106a0b1b2bb6963f94e06",
       "scope": "Reviewed all 21 verses in both directions. Reviewed repeated gospel, circumcision, exhortation and justification language, distinguishing the three works-of-law phrases in 2:16. Preserved the Greek ellipses and separated something and whatever across the retained dash.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–2 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–2 audit passed.",
+      "final_verification": {
+        "commit": "b998d2c6293ec1e9c899a8a8dfa4a99ee20cef32",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the two mission groups, repeated articles and conjunctions, three justified and works-of-law expressions, and each occurrence of Christ lives and I live. Checked the two em-dash targets in 2:6 and the implied verb in 2:9.",
+        "chapter_sha256": "a670eca2ab2b8fcfe440906f2cc4b98809d42c1e0fe98f810e9d7f24955e40d9"
+      }
     },
     "galatians/03": {
       "status": "corrected",
@@ -1764,9 +1770,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and Galatians 1–6 audit passed."
     }
   },
-  "resume": "galatians/02",
+  "resume": "galatians/03",
   "verification_backlog": [
-    "galatians/02",
     "galatians/03",
     "galatians/04",
     "galatians/05",
