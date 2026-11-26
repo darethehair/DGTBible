@@ -2665,7 +2665,7 @@
       }
     },
     "2john/01": {
-      "status": "verified-awaiting-deployment",
+      "status": "certified",
       "commit": "9cefb0a25cc424117ee0469b89c172e8408c2b7c",
       "chapter_sha256": "a8476e017e04272c2ae87d5f6a7a5564cc05e58a4193fe3fb5b2aeca069c4043",
       "scope": "Reviewed all 13 verses in both directions. Reviewed all 13 verses, preserving the Greek and DGT text. Distinguished repeated truth and commandment terms and split English tokens at the em dash.",
@@ -2678,7 +2678,7 @@
       }
     }
   },
-  "resume": "2john",
+  "resume": "3john/01",
   "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
@@ -2695,7 +2695,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "deployment",
+  "resume_phase": "correction",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
@@ -3917,6 +3917,14 @@
       "2john/01": "a8476e017e04272c2ae87d5f6a7a5564cc05e58a4193fe3fb5b2aeca069c4043"
     },
     "local_pages_validation": "Every required Pages validation passed. The preflight checked all 208 recorded chapter hashes and release preparation preserved all 236 reviewed and preserved chapter files byte-for-byte.",
-    "hover_regression": "Reviewed 1 structural hover diagnostics and passed 12 bidirectional Chromium checks."
+    "hover_regression": "Reviewed 1 structural hover diagnostics and passed 12 bidirectional Chromium checks.",
+    "deployment": {
+      "commit": "5e948050e10c680817cfd4a0a5e2d2e7631699d3",
+      "app_version": "v0.90",
+      "cache": "dgtbible-v100",
+      "workflow_run": "https://github.com/darethehair/DGTBible/actions/runs/45825096773",
+      "workflow_status": "success",
+      "public_verification": "Verified the public app version, service-worker cache and all 1 public 2 John chapter SHA-256 values against the final bilingual review."
+    }
   }
 }
