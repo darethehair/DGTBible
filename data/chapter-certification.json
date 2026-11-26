@@ -1638,11 +1638,17 @@
       }
     },
     "2corinthians/08": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "554e253974609fd505319494b7dcc1286c7e7484",
       "chapter_sha256": "466461b664176f3a81da86b08494ccfc687017f65d3b3b56fbdf860ddf33536d",
       "scope": "Reviewed all 24 verses in both directions. Reviewed giving, the comparison of poverty and abundance, the Titus delegation and repeated relative clauses. Separated different Greek targets on either side of the two em dashes in 8:7.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–8 audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–8 audit passed.",
+      "final_verification": {
+        "commit": "554e253974609fd505319494b7dcc1286c7e7484",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the generosity and abundance contrasts, repeated do and desire, the implied gathering in the quotation, paired relative clauses and both em-dash boundaries in 8:7.",
+        "chapter_sha256": "466461b664176f3a81da86b08494ccfc687017f65d3b3b56fbdf860ddf33536d"
+      }
     },
     "2corinthians/09": {
       "status": "corrected",
@@ -1680,9 +1686,8 @@
       "regression": "Greek and DGT reconstruction, alignment structure, and 2 Corinthians 1–13 audit passed."
     }
   },
-  "resume": "2corinthians/08",
+  "resume": "2corinthians/09",
   "verification_backlog": [
-    "2corinthians/08",
     "2corinthians/09",
     "2corinthians/10",
     "2corinthians/11",
