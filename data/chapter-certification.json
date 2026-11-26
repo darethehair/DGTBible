@@ -2678,17 +2678,21 @@
       }
     },
     "3john/01": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "61e807eca628d5d348c24732a6e70e62454d1451",
       "chapter_sha256": "d0a3bc4321d7c825c73252dd91998dfd33d37b4f68fc8b47a06077d7027d2334",
       "scope": "Reviewed all 15 verses in both directions. Matched all repeated forms in 15 verses, corrected pronouns and dative prepositions, and preserved each instance of face to face and the closing greetings.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 3 John alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 3 John alignment audit passed.",
+      "final_verification": {
+        "commit": "61e807eca628d5d348c24732a6e70e62454d1451",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified both prosper forms in 1:2, the parallel clauses and inferred objects in 1:10, the independent occurrences of by in 1:12, and both words for face in 1:14.",
+        "chapter_sha256": "d0a3bc4321d7c825c73252dd91998dfd33d37b4f68fc8b47a06077d7027d2334"
+      }
     }
   },
-  "resume": "3john/01",
-  "verification_backlog": [
-    "3john/01"
-  ],
+  "resume": "3john",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2704,7 +2708,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "deployment",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
