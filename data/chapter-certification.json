@@ -2940,5 +2940,50 @@
       "workflow_status": "success",
       "public_verification": "Verified the public app version, service-worker cache and all three public 2 Thessalonians chapter SHA-256 values against the final bilingual review."
     }
+  },
+  "1timothy_verification": {
+    "commit": "a56787feddbf507b5af29a4fd910af27b3df6b50",
+    "verses": 113,
+    "app_version": "v0.81",
+    "cache": "dgtbible-v091",
+    "structural_regression": "All six chapters passed source text preservation, exact DGT reconstruction, unique source IDs and supplied-token consistency. Direct DGT link coverage was 93.7%.",
+    "semantic_regression": "The full 1 Timothy audit passed with 97 scoped exceptions, including the untranslated synthetic article in 6:21. The critical sanity audit found two additional lexical candidates whose exact keys are in the quality allowlist.",
+    "hover_regression": "Reviewed 20 hover diagnostics as valid verbal inflection, grammatical case and idioms. Sixteen bidirectional Chromium checks passed, including separate synthetic IDs in 4:10 and the word Grace in 6:21.",
+    "reviewed_hover_flags": [
+      "4:2 w4 κεκαυστηριασμένων → 5:whose 8:has 9:been 10:seared,",
+      "5:17 w7 ἀξιούσθωσαν, → 0:Let 5:be 6:considered 7:worthy",
+      "5:15 w4 ἐξετράπησαν → 2:have 4:turned 5:aside",
+      "2:1 w5 ποιεῖσθαι → 6:that 12:be 13:made",
+      "5:1 w3 ἐπιπλήξῃς, → 0:Do 2:rebuke 6:harshly,",
+      "3:10 w4 δοκιμαζέσθωσαν → 1:let 4:be 5:tested",
+      "1:6 w3 ἀστοχήσαντες → 3:having 4:missed 6:mark,",
+      "5:22 w3 μηδενὶ → 1:not 4:on 5:anyone",
+      "6:21 w7 ἠστόχησαν. → 4:have 5:missed 7:mark",
+      "2:11 w4 μανθανέτω → 0:Let 3:learn",
+      "4:9 w6 ἀποδοχῆς → 6:of 8:acceptance.",
+      "6:1 w12 ἡγείσθωσαν, → 0:Let 8:consider",
+      "3:9 w5 πίστεως → 3:of 5:faith",
+      "5:19 w13 μαρτύρων· → 12:of 16:witnesses.",
+      "2:6 w9 καιροῖς → 10:at 13:times.",
+      "4:3 w16 ἐπεγνωκόσι → 15:by 20:know",
+      "6:20 w14 γνώσεως, → 17:of 22:knowledge,",
+      "1:4 w5 γενεαλογίαις → 4:to 8:genealogies,",
+      "2:5 w9 ἀνθρώπων → 8:between 11:people,",
+      "4:13 w5 ἀναγνώσει, → 5:to 7:reading,"
+    ],
+    "reviewed_advisory_lexical_flags": [
+      "4:3 requiring makes the second infinitive explicit in English.",
+      "5:9 having been introduces a clause with wife, while the one Greek participle belongs with age.",
+      "6:10 kinds is supplied in the English rendering of all."
+    ],
+    "reviewed_advisory_unused_greek": "In 4:7 δέ is implicit across the sentence break. In 6:11 ὦ is unrendered in the direct address. The synthetic article in 6:21 has no separate English rendering.",
+    "chapter_sha256": {
+      "1timothy/01": "96db1701580a9191ee4b073a1af75834ff0461ab6a2b5ff3d6cb8c0c7e88aabc",
+      "1timothy/02": "9160163878f8e208c67d0c295d3bbff9af07b2655f33332e259ace2f8149f8b7",
+      "1timothy/03": "b2a306bb28a6d23969e013e8a63a15b24ccb8acf4c14b41f0c15a10c107ee0b9",
+      "1timothy/04": "d0b089e8eac2c34b9cfa3f9333a9287f74484d6d94c7312b804df92632fcb38a",
+      "1timothy/05": "7a03229333cab743aef96642c75fe3a2e04f31cd7d42299a8bf07fbf4bda6f1e",
+      "1timothy/06": "03c29242ec2ceed6f1e5bf4fa3ba2320a79510812878437738eb47452e443cf8"
+    }
   }
 }

@@ -109,6 +109,11 @@ jobs:
           START_CHAPTER: '1'
           END_CHAPTER: '3'
         run: python scripts/audit-2thessalonians.py
+      - name: Validate 1 Timothy
+        env:
+          START_CHAPTER: '1'
+          END_CHAPTER: '6'
+        run: python scripts/audit-1timothy.py
       - name: Corpus semantic alignment audit
         continue-on-error: true
         run: python scripts/audit-alignment-quality.py
