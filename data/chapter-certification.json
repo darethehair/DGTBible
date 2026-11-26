@@ -2561,33 +2561,47 @@
       }
     },
     "2peter/01": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
       "chapter_sha256": "c4765a4adef601073d6f1b471022febf655b0ce8c9edb6bfef9e095b1eedf179",
       "scope": "Reviewed all 21 verses in both directions. Matched compound and inflected renderings and scoped supplied articles and implicit objects.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 Peter alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 Peter alignment audit passed.",
+      "final_verification": {
+        "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Reviewed the particle ellipsis and article and genitive links. Checked both occurrences of μου and the idiom call to mind.",
+        "chapter_sha256": "c4765a4adef601073d6f1b471022febf655b0ce8c9edb6bfef9e095b1eedf179"
+      }
     },
     "2peter/02": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
       "chapter_sha256": "40c4884f91c3b12d3c0862d6c370469bdebe69c5b230c748d487937041af5d40",
       "scope": "Reviewed all 22 verses in both directions. Distinguished repeated words, split the em dash token without changing the translation, and retained source variant wording as supplied.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 Peter alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 Peter alignment audit passed.",
+      "final_verification": {
+        "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified day after day, the two objects of the Lord’s knowledge, and the isolated greed and children hover targets. In 2:11 the displayed Greek omits the words for before the Lord. In 2:20 our is absent from the displayed Greek and remains supplied. The second returns at 2:22 supplies the Greek ellipsis.",
+        "chapter_sha256": "40c4884f91c3b12d3c0862d6c370469bdebe69c5b230c748d487937041af5d40"
+      }
     },
     "2peter/03": {
-      "status": "corrected",
+      "status": "verified-awaiting-deployment",
       "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
       "chapter_sha256": "9ac98ef13f9ecfbe8c1b618cae2f11eb3d3e2e284463ce22ee1e29be0f3af337",
       "scope": "Reviewed all 18 verses in both directions. Distinguished repeated water, new, and auxiliaries and verified articles and participial constructions.",
-      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 Peter alignment audit passed."
+      "regression": "Greek and DGT reconstruction, alignment structure, and available 2 Peter alignment audit passed.",
+      "final_verification": {
+        "commit": "717df3ecbeb52e06ffe0b3edaa473185fb1291a3",
+        "method": "Separate bilingual verification in both directions, including hover scope, supplied wording, reconstruction and source ID checks.",
+        "notes": "Verified the Greek source order and left both occurrences of water, new, and will attached to their separate source words. Reviewed the dative constructions and the implied copula in the final doxology.",
+        "chapter_sha256": "9ac98ef13f9ecfbe8c1b618cae2f11eb3d3e2e284463ce22ee1e29be0f3af337"
+      }
     }
   },
-  "resume": "2peter/01",
-  "verification_backlog": [
-    "2peter/01",
-    "2peter/02",
-    "2peter/03"
-  ],
+  "resume": "2peter",
+  "verification_backlog": [],
   "mark_verification": {
     "commit": "8c8329c2ab3b1adbbe8c3fc577057b6bb8d31092",
     "verses": 673,
@@ -2603,7 +2617,7 @@
       "public_verification": "Verified the live app.js reports v0.68 and all 16 public chapter files match the recorded SHA-256 hashes."
     }
   },
-  "resume_phase": "final-verification",
+  "resume_phase": "deployment",
   "luke_verification": {
     "commit": "3790c2d",
     "verses": 1149,
