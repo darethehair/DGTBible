@@ -1,4 +1,5 @@
-const APP_VERSION='v0.94';
+const APP_VERSION='v0.95';
+const closeTextualVariantNote=initTextualVariantNotes();
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={},audioPlayer;
 const $=id=>document.getElementById(id);
@@ -91,9 +92,11 @@ function highlightWithin(container,ids,sourceIsPhrase=false){
   if(mine.some(id=>ids.includes(id)))el.classList.add('active');
  });
 }
+function variantMarker(v){return textualVariantMarker(state.slug,state.chapter,v)}
 function refText(v=state.verse){return `${state.book} ${state.chapter}:${v}`}
 function renderStudy(){
- const verse=state.data.verses.find(x=>x.v===state.verse);if(!verse)return;$('verseCard').hidden=false;$('reference').textContent=refText();
+ closeTextualVariantNote();
+ const verse=state.data.verses.find(x=>x.v===state.verse);if(!verse)return;$('verseCard').hidden=false;$('reference').innerHTML=esc(refText())+variantMarker(verse.v);
  renderAligned($('greek'),'greek',verse,verse.greek);renderAligned($('translit'),'translit',verse,transliterateGreek(verse.greek));renderAligned($('literal'),'literal',verse,verse.literal);renderAligned($('english'),'dgt',verse,verse.dgt);
  const notes=verse.notes||[];$('notesWrap').hidden=!notes.length;$('notes').innerHTML=notes.map(n=>`<p>${esc(n)}</p>`).join('');
  const ai=$('alignmentNotice');ai.hidden=!!verse.alignment;ai.textContent=verse.alignment?'':'Word alignment for this verse has not yet been manually curated.';
@@ -112,13 +115,15 @@ function updateChapterNav(){
 }
 async function moveChapter(delta){const i=availableChapters.indexOf(state.chapter),next=i+delta;if(next<0||next>=availableChapters.length)return;const ch=availableChapters[next],d=await loadChapter(ch);await show(ch,d.verses[0].v,true,false);window.scrollTo({top:0,behavior:'smooth'})}
 function renderCompact(){
+ closeTextualVariantNote();
  if(!state.data)return;$('compactHeading').textContent=`${state.book} ${state.chapter}`;updateChapterNav();const starts=new Set((paragraphStarts[String(state.chapter)]||[state.data.verses[0]?.v]).map(Number));let html='',open=false;
- for(const v of state.data.verses){if(starts.has(v.v)||!open){if(open)html+='</p>';html+='<p class="compact-paragraph">';open=true}else html+=' ';html+=`<span class="compact-verse" id="compact-v${v.v}"><button class="compact-number" data-compact-study="${v.v}" title="Study ${esc(refText(v.v))}">${v.v}</button><span class="compact-text">${esc(v.dgt)}</span></span>`}
+ for(const v of state.data.verses){if(starts.has(v.v)||!open){if(open)html+='</p>';html+='<p class="compact-paragraph">';open=true}else html+=' ';const marker=variantMarker(v.v);html+=`<span class="compact-verse" id="compact-v${v.v}">${marker?'<span class="variant-number">':''}<button class="compact-number" data-compact-study="${v.v}" title="Study ${esc(refText(v.v))}">${v.v}</button>${marker}${marker?'</span>':''}<span class="compact-text">${esc(v.dgt)}</span></span>`}
  if(open)html+='</p>';$('compactReading').innerHTML=html;document.querySelectorAll('[data-compact-study]').forEach(b=>b.onclick=()=>{state.verse=+b.dataset.compactStudy;setMode('study');show(state.chapter,state.verse)});
 }
 function renderChapter(){
+ closeTextualVariantNote();
  if(!state.data)return;$('chapterHeading').textContent=`${state.book} ${state.chapter}`;updateChapterNav();
- $('chapterReading').innerHTML=state.data.verses.map(v=>`<article class="chapter-verse" id="v${v.v}"><button class="verse-number" title="Study ${esc(refText(v.v))}" data-study="${v.v}">${v.v}</button>${layers.greek?`<div class="cv-greek">${alignedHtml('greek',v,v.greek)}</div>`:''}${layers.translit?`<div class="cv-translit">${alignedHtml('translit',v,transliterateGreek(v.greek))}</div>`:''}${layers.literal?`<div class="cv-literal">${alignedHtml('literal',v,v.literal)}</div>`:''}${layers.dgt?`<div class="cv-dgt">${alignedHtml('dgt',v,v.dgt)}</div>`:''}${layers.notes&&v.notes?.length?`<div class="cv-notes">${v.notes.map(n=>`<p>${esc(n)}</p>`).join('')}</div>`:''}</article>`).join('');
+ $('chapterReading').innerHTML=state.data.verses.map(v=>`<article class="chapter-verse" id="v${v.v}"><button class="verse-number" title="Study ${esc(refText(v.v))}" data-study="${v.v}">${v.v}</button>${variantMarker(v.v)}${layers.greek?`<div class="cv-greek">${alignedHtml('greek',v,v.greek)}</div>`:''}${layers.translit?`<div class="cv-translit">${alignedHtml('translit',v,transliterateGreek(v.greek))}</div>`:''}${layers.literal?`<div class="cv-literal">${alignedHtml('literal',v,v.literal)}</div>`:''}${layers.dgt?`<div class="cv-dgt">${alignedHtml('dgt',v,v.dgt)}</div>`:''}${layers.notes&&v.notes?.length?`<div class="cv-notes">${v.notes.map(n=>`<p>${esc(n)}</p>`).join('')}</div>`:''}</article>`).join('');
  document.querySelectorAll('[data-study]').forEach(b=>b.onclick=()=>{state.verse=+b.dataset.study;setMode('study');show(state.chapter,state.verse)});
  document.querySelectorAll('.chapter-verse').forEach(article=>{
   const activate=e=>{
@@ -128,7 +133,7 @@ function renderChapter(){
   };
   article.onmouseover=activate;
   article.onclick=e=>{
-   if(e.target.closest?.('[data-study]'))return;
+   if(e.target.closest?.('[data-study], .variant-marker'))return;
    const el=e.target.closest?.('.align-token');
    if(el)activate(e);else article.querySelectorAll('.align-token.active').forEach(x=>x.classList.remove('active'));
   };

@@ -84,3 +84,29 @@ body{padding-bottom:var(--audio-dock-height,0px)}
 .verse-card.audio-current,.chapter-verse.audio-current{outline:2px solid var(--accent);outline-offset:-2px;border-radius:10px}
 .compact-verse.audio-current{border-radius:.2em;box-shadow:0 2px 0 var(--accent);background:color-mix(in srgb,var(--accent) 13%,transparent);box-decoration-break:clone;-webkit-box-decoration-break:clone}
 @media(max-width:560px){.audio-launch{margin-left:0}.audio-panel :is(input:not([type=checkbox]),select){font-size:1rem}.audio-panel :is(button,select){min-height:42px}.audio-dock{padding-inline:.4rem}}
+
+:root{--variant-amber:#895005}
+html[data-theme="dark"]{--variant-amber:#ffcc79}
+.variant-marker{
+ display:inline-block;border:0;background:transparent;color:var(--variant-amber);
+ padding:0 .2em;font:800 .85rem/1 system-ui,sans-serif;cursor:pointer;
+}
+.variant-marker:hover,.variant-marker[aria-expanded="true"]{text-decoration:underline}
+.variant-marker:focus-visible{outline:2px solid var(--variant-amber);outline-offset:2px;border-radius:2px}
+#reference{white-space:nowrap}
+#reference .variant-marker{margin-left:.14em;vertical-align:.15em}
+.chapter-verse>.variant-marker{position:absolute;top:.8rem;left:1.35rem;padding:.2em .12em}
+.variant-number{white-space:nowrap}
+.variant-number .variant-marker{font-size:.7em;vertical-align:super}
+.variant-note{
+ position:fixed;z-index:30;width:min(24rem,calc(100vw - 16px));max-height:calc(100dvh - 16px);
+ overflow:auto;padding:.75rem .9rem;border:1px solid var(--variant-amber);
+ border-radius:10px;background:var(--paper);color:var(--ink);box-shadow:var(--shadow);
+ font:.875rem/1.45 system-ui,sans-serif;
+}
+.variant-note-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:.5rem}
+.variant-note-heading strong{color:var(--variant-amber)}
+#variant-close{border:0;background:transparent;color:var(--ink);font:1.2rem/1 system-ui,sans-serif;cursor:pointer}
+.variant-note p{margin:.4rem 0}
+#variant-sources{display:flex;flex-wrap:wrap;gap:.2rem .8rem}
+#variant-sources a{color:var(--accent);font-weight:650}
