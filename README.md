@@ -22,6 +22,8 @@ Install it as a PWA in a supported browser, or use it directly in the browser.
 
 ## Recorded audio
 
+The English female recordings for John 1 were generated with [Pocket TTS](https://github.com/kyutai-labs/pocket-tts), developed by Kyutai.
+
 Open **Recorded audio**, enter a passage, and choose a narrator. The player starts with English female (slot 02) and shows which narrators and verses have recordings. The other slots are English male (01), custom voice (03), and original Greek (04). Narrator, speed, and auto-scroll preferences are remembered.
 
 The player and **Go** recognize single verses (`John 1:1`), verse ranges (`John 1:1-10`), chapters (`John 1`), chapter ranges (`John 1-3`), cross-chapter ranges (`John 1:14-3:16`), books (`John`), comma-separated selections (`John 1:1-10, Romans 1:5`), and `NT` for the entire New Testament. **Go** opens the beginning of a selection. **Play** follows the selection in order. Use **‹** and **›** to move between recordings and **Hide** to collapse active controls.
