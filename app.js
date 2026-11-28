@@ -1,4 +1,4 @@
-const APP_VERSION='v0.95';
+const APP_VERSION='v0.96';
 const closeTextualVariantNote=initTextualVariantNotes();
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
 let books=[],availableChapters=[],paragraphStarts={},editorialNotes={},audioPlayer;
@@ -53,9 +53,10 @@ async function loadChapter(ch,slug=state.slug,notes=editorialNotes){
 }
 function scrollToVerse(id,toolbarClass,behavior='smooth'){const target=$(id);if(!target)return;const h=document.querySelector(toolbarClass)?.getBoundingClientRect().height||0;window.scrollTo({top:Math.max(0,window.scrollY+target.getBoundingClientRect().top-h-12),behavior})}
 function setMode(mode){
+ const changed=state.mode!==mode;
  state.mode=mode;localStorage.setItem('dgt-mode',mode);$('studyView').hidden=mode!=='study';$('chapterView').hidden=mode!=='chapter';$('compactView').hidden=mode!=='compact';
  document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));
- if(state.data){if(mode==='chapter'){renderChapter();requestAnimationFrame(()=>scrollToVerse('v'+state.verse,'.chapter-toolbar'))}else if(mode==='compact'){renderCompact();requestAnimationFrame(()=>scrollToVerse('compact-v'+state.verse,'.compact-toolbar'))}else renderStudy();audioPlayer?.mark()}
+ if(state.data){if(mode==='chapter'){renderChapter();requestAnimationFrame(()=>scrollToVerse('v'+state.verse,'.chapter-toolbar'))}else if(mode==='compact'){renderCompact();requestAnimationFrame(()=>scrollToVerse('compact-v'+state.verse,'.compact-toolbar'))}else renderStudy();audioPlayer?.mark();if(changed)audioPlayer?.syncPassage()}
 }
 function saveLayers(){localStorage.setItem('dgt-layers',JSON.stringify(layers));renderChapter();audioPlayer?.mark()}
 function renderLayerControls(){document.querySelectorAll('[data-layer]').forEach(cb=>{cb.checked=!!layers[cb.dataset.layer];cb.onchange=()=>{layers[cb.dataset.layer]=cb.checked;saveLayers()}})}
@@ -157,6 +158,7 @@ async function show(ch,v,push=true,scroll=true,{valid=()=>true,keepLookup=false,
    if(state.mode==='chapter')renderChapter();else renderCompact();
   }
   audioPlayer?.mark();
+  audioPlayer?.syncPassage(following);
   if(push&&location.hash!==hashRef())history.pushState(null,'',hashRef());
   else if(following)history.replaceState(null,'',hashRef());
   if(scroll){
@@ -234,4 +236,4 @@ for(const id of ['prevChapterTop','prevChapterBottom','prevCompactChapterTop','p
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));$('themeSelect').addEventListener('change',e=>setTheme(e.target.value));applyTheme();document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
 let touchX=null;$('studyView').addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});$('studyView').addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;touchX=null;if(Math.abs(dx)>70)moveVerse(dx>0?-1:1)},{passive:true});
 window.addEventListener('hashchange',async()=>{const h=parseHash();if(!h)return;if(h.slug!==state.slug)await selectBook(h.slug,h.chapter,h.verse,false);else show(h.chapter,h.verse,false,false)});
-(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await loadCatalog();audioPlayer=createRecordedAudio({books,reader:{follow:followRecording,mark:markRecording},reference:()=>({slug:state.slug,text:$('ref').value})});renderLayerControls();const h=parseHash();await loadBookResources(h?.slug||'john');setMode(state.mode);await show(h?.chapter||availableChapters[0],h?.verse||1,false,false)})();
+(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await loadCatalog();audioPlayer=createRecordedAudio({books,reader:{follow:followRecording,mark:markRecording},reference:()=>({slug:state.slug,text:state.mode==='study'?refText():`${state.book} ${state.chapter}`})});renderLayerControls();const h=parseHash();await loadBookResources(h?.slug||'john');setMode(state.mode);await show(h?.chapter||availableChapters[0],h?.verse||1,false,false)})();

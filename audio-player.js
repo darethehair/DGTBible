@@ -327,9 +327,20 @@ function createRecordedAudio({books,reader,reference,base=AUDIO_BASE}){
   clearTimeout(inputTimer);
   inputTimer=setTimeout(coverage,200);
  };
+ function syncPassage(following=false){
+  // Player-driven navigation keeps a manually entered range available for replay.
+  if(following&&edited)return;
+  edited=false;
+  const text=reference().text;
+  if(passage.value===text)return;
+  passage.value=text;
+  // The field is the next selection. The active queue is owned by start().
+  clearTimeout(inputTimer);
+  if(!dock.hidden&&panel.open)void coverage();
+ }
  launch.onclick=()=>{
   if(!dock.hidden&&panel.open){panel.open=false;if(!current&&mode==='idle')dock.hidden=true;return}
-  if(!edited&&!run)passage.value=reference().text;
+  if(!edited)syncPassage();
   dock.hidden=false;
   panel.open=true;
   void coverage();
@@ -343,5 +354,5 @@ function createRecordedAudio({books,reader,reference,base=AUDIO_BASE}){
  setInterval(()=>{if(!dock.hidden&&panel.open&&!document.hidden)void coverage()},60000);
  launch.disabled=false;
  render();
- return {mark};
+ return {mark,syncPassage};
 }
