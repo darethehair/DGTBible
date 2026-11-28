@@ -20,6 +20,20 @@ Install it as a PWA in a supported browser, or use it directly in the browser.
 - Offline cache through a service worker; core Scripture and alignment data are local and do not depend on STEPBible at runtime.
 - GitHub Pages workflow included.
 
+## Recorded audio
+
+Open **Recorded audio**, enter a passage, and choose a narrator. The player starts with English female (slot 02) and shows which narrators and verses have recordings. The other slots are English male (01), custom voice (03), and original Greek (04). Narrator, speed, and auto-scroll preferences are remembered.
+
+The player and **Go** recognize single verses (`John 1:1`), verse ranges (`John 1:1-10`), chapters (`John 1`), chapter ranges (`John 1-3`), cross-chapter ranges (`John 1:14-3:16`), books (`John`), comma-separated selections (`John 1:1-10, Romans 1:5`), and `NT` for the entire New Testament. **Go** opens the beginning of a selection. **Play** follows the selection in order. Use **‹** and **›** to move between recordings and **Hide** to collapse active controls.
+
+Playback marks the narrated verse in Study, Chapter, or Compact mode. It follows chapter and book changes and can scroll the current verse into view. Word-level alignment still works during playback. Speed ranges from 0.5× to 2.0× with pitch preservation.
+
+The [audio library](https://github.com/darethehair/DGTBible-Audio) serves Ogg Opus files and a small availability manifest. As of v0.94, all 51 verses of John 1 are recorded in slot 02. The app checks the library when the player opens or playback starts, and refreshes periodically while the panel is open. Audio uploads appear after the audio repository's own Pages deployment and cache refresh. This app's service worker does not precache narration. Playback requests the current verse and at most one upcoming recording.
+
+Unrecorded verses are skipped and counted. A missing file listed in the inventory is temporarily remembered to avoid repeated requests. Temporary network failures are reported separately and can be retried. Playback keeps the selected narrator. Audio requires an Ogg Opus-capable browser and a network connection for uncached recordings.
+
+For the browser regression test, install Playwright for Python and a Chromium browser, then run `python scripts/test-recorded-audio.py /path/to/001.opus` with a real Ogg Opus verse. Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` to use an existing Chromium binary.
+
 
 ## Roadmap
 

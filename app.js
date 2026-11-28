@@ -1,6 +1,6 @@
-const APP_VERSION='v0.93';
+const APP_VERSION='v0.94';
 const state={book:'John',slug:'john',chapter:1,verse:1,data:null,mode:localStorage.getItem('dgt-mode')||'study'};
-let books=[],availableChapters=[],paragraphStarts={},editorialNotes={};
+let books=[],availableChapters=[],paragraphStarts={},editorialNotes={},audioPlayer;
 const $=id=>document.getElementById(id);
 const layerDefaults={greek:true,translit:false,literal:false,dgt:true,notes:false};
 const layers={...layerDefaults,...JSON.parse(localStorage.getItem('dgt-layers')||'{}')};
@@ -26,43 +26,37 @@ function parseHash(){
  const m=location.hash.match(/^#([^.]+)\.(\d+)\.(\d+)$/i);if(!m)return null;
  const slug=m[1].toLowerCase();return books.some(b=>b.slug===slug)?{slug,chapter:+m[2],verse:+m[3]}:null;
 }
-function parseRef(s){
- const raw=s.trim().toLowerCase().replace(/\s+/g,' ');
- for(const b of books){
-  for(const name of [b.name,...(b.aliases||[])]){
-   const n=name.toLowerCase().replace(/\s+/g,' ');
-   if(raw.startsWith(n)){
-    const rest=raw.slice(n.length).trim(),m=rest.match(/^(\d+)\s*[:.]\s*(\d+)$/);
-    if(m)return{slug:b.slug,chapter:+m[1],verse:+m[2]};
-   }
-  }
- }
- const m=raw.match(/^(\d+)\s*[:.]\s*(\d+)$/);return m?{slug:state.slug,chapter:+m[1],verse:+m[2]}:null;
-}
 async function loadCatalog(){
  const r=await fetch('data/books.json');if(!r.ok)throw new Error('Book catalog unavailable');
  books=(await r.json()).books||[];$('book').innerHTML=books.map(b=>`<option value="${esc(b.slug)}">${esc(b.name)}</option>`).join('');
 }
-async function loadBookResources(slug){
+async function fetchBookResources(slug){
  const b=books.find(x=>x.slug===slug);if(!b)throw new Error('Unknown book');
- state.slug=b.slug;state.book=b.name;$('book').value=b.slug;const base=`data/${b.slug}`;
+ const base=`data/${b.slug}`;
  const [mr,pr,nr]=await Promise.all([fetch(base+'/manifest.json'),fetch(base+'/paragraphs.json'),fetch(base+'/editorial-notes.json')]);
  if(!mr.ok)throw new Error(b.name+' manifest unavailable');
- const manifest=await mr.json();availableChapters=(manifest.chapters||[]).map(x=>Number(x.chapter)).filter(Number.isInteger).sort((a,b)=>a-b);
- paragraphStarts=pr.ok?((await pr.json()).chapters||{}):{};editorialNotes=nr.ok?((await nr.json()).notes||{}):{};
+ const [manifest,paragraphs,notes]=await Promise.all([mr.json(),pr.ok?pr.json():{},nr.ok?nr.json():{}]);
+ return {book:b,manifest,paragraphs,notes};
+}
+function applyBookResources({book:b,manifest,paragraphs,notes}){
+ if(state.slug!==b.slug)state.data=null;
+ state.slug=b.slug;state.book=b.name;$('book').value=b.slug;
+ availableChapters=(manifest.chapters||[]).map(x=>Number(x.chapter)).filter(Number.isInteger).sort((a,b)=>a-b);
+ paragraphStarts=paragraphs.chapters||{};editorialNotes=notes.notes||{};
  $('chapter').innerHTML=availableChapters.map(ch=>`<option value="${ch}">${ch}</option>`).join('');
 }
-async function loadChapter(ch){
- const r=await fetch(`data/${state.slug}/${String(ch).padStart(2,'0')}.json`);if(!r.ok)throw new Error(`${state.book} ${ch} is not loaded yet.`);
- const data=await r.json();for(const v of data.verses||[]){const extra=editorialNotes[`${ch}:${v.v}`]||[];if(extra.length)v.notes=[...(v.notes||[]),...extra.filter(n=>!(v.notes||[]).includes(n))]}return data;
+async function loadBookResources(slug){applyBookResources(await fetchBookResources(slug))}
+async function loadChapter(ch,slug=state.slug,notes=editorialNotes){
+ const r=await fetch(`data/${slug}/${String(ch).padStart(2,'0')}.json`);if(!r.ok)throw new Error(`${books.find(book=>book.slug===slug)?.name||slug} ${ch} is not loaded yet.`);
+ const data=await r.json();for(const v of data.verses||[]){const extra=notes[`${ch}:${v.v}`]||[];if(extra.length)v.notes=[...(v.notes||[]),...extra.filter(n=>!(v.notes||[]).includes(n))]}return data;
 }
-function scrollTo(id,toolbarClass,behavior='smooth'){const target=$(id);if(!target)return;const h=document.querySelector(toolbarClass)?.getBoundingClientRect().height||0;window.scrollTo({top:Math.max(0,window.scrollY+target.getBoundingClientRect().top-h-12),behavior})}
+function scrollToVerse(id,toolbarClass,behavior='smooth'){const target=$(id);if(!target)return;const h=document.querySelector(toolbarClass)?.getBoundingClientRect().height||0;window.scrollTo({top:Math.max(0,window.scrollY+target.getBoundingClientRect().top-h-12),behavior})}
 function setMode(mode){
  state.mode=mode;localStorage.setItem('dgt-mode',mode);$('studyView').hidden=mode!=='study';$('chapterView').hidden=mode!=='chapter';$('compactView').hidden=mode!=='compact';
  document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));
- if(state.data){if(mode==='chapter'){renderChapter();requestAnimationFrame(()=>scrollTo('v'+state.verse,'.chapter-toolbar'))}else if(mode==='compact'){renderCompact();requestAnimationFrame(()=>scrollTo('compact-v'+state.verse,'.compact-toolbar'))}else renderStudy()}
+ if(state.data){if(mode==='chapter'){renderChapter();requestAnimationFrame(()=>scrollToVerse('v'+state.verse,'.chapter-toolbar'))}else if(mode==='compact'){renderCompact();requestAnimationFrame(()=>scrollToVerse('compact-v'+state.verse,'.compact-toolbar'))}else renderStudy();audioPlayer?.mark()}
 }
-function saveLayers(){localStorage.setItem('dgt-layers',JSON.stringify(layers));renderChapter()}
+function saveLayers(){localStorage.setItem('dgt-layers',JSON.stringify(layers));renderChapter();audioPlayer?.mark()}
 function renderLayerControls(){document.querySelectorAll('[data-layer]').forEach(cb=>{cb.checked=!!layers[cb.dataset.layer];cb.onchange=()=>{layers[cb.dataset.layer]=cb.checked;saveLayers()}})}
 function clearAlignment(){document.querySelectorAll('.align-token.active').forEach(el=>el.classList.remove('active'))}
 function highlightAlignment(ids,sourceIsPhrase=false){clearAlignment();if(!ids?.length)return;document.querySelectorAll('.align-token').forEach(el=>{if(!sourceIsPhrase&&el.classList.contains('phrase-token'))return;const mine=(el.dataset.ids||'').split(',');if(mine.some(id=>ids.includes(id)))el.classList.add('active')})}
@@ -142,17 +136,89 @@ function renderChapter(){
   article.onmouseleave=()=>article.querySelectorAll('.align-token.active').forEach(x=>x.classList.remove('active'));
  });
 }
-async function show(ch,v,push=true,scroll=true){
- try{state.data=await loadChapter(ch);const verse=state.data.verses.find(x=>x.v===v);if(!verse)throw new Error(`${state.book} ${ch}:${v} is not loaded.`);
- Object.assign(state,{chapter:ch,verse:v});$('status').textContent='';$('ref').value=refText();$('chapter').value=String(ch);$('chapterTitle').textContent=`${state.book} ${ch}`;renderGrid();if(state.mode==='study')renderStudy();else if(state.mode==='chapter')renderChapter();else renderCompact();if(push)location.hash=hashRef();
- if(scroll){if(state.mode==='study')$('verseCard').scrollIntoView({behavior:'smooth',block:'start'});else if(state.mode==='chapter')requestAnimationFrame(()=>scrollTo('v'+state.verse,'.chapter-toolbar'));else requestAnimationFrame(()=>scrollTo('compact-v'+state.verse,'.compact-toolbar'))}}catch(e){$('status').textContent=e.message}
+async function show(ch,v,push=true,scroll=true,{valid=()=>true,keepLookup=false,following=false,chapterData=null}={}){
+ try{
+  const sameChapter=state.data&&ch===state.chapter;
+  const data=chapterData||(sameChapter?state.data:await loadChapter(ch));
+  if(!valid())return;
+  if(!data.verses.some(x=>x.v===v))throw new Error(`${state.book} ${ch}:${v} is not loaded.`);
+  Object.assign(state,{data,chapter:ch,verse:v});
+  $('status').textContent='';
+  if(!keepLookup)$('ref').value=refText();
+  $('chapter').value=String(ch);$('chapterTitle').textContent=`${state.book} ${ch}`;
+  renderGrid();
+  if(state.mode==='study')renderStudy();
+  else if(!following||!sameChapter){
+   if(state.mode==='chapter')renderChapter();else renderCompact();
+  }
+  audioPlayer?.mark();
+  if(push&&location.hash!==hashRef())history.pushState(null,'',hashRef());
+  else if(following)history.replaceState(null,'',hashRef());
+  if(scroll){
+   if(state.mode==='study')$('verseCard').scrollIntoView({behavior:'smooth',block:'start'});
+   else if(state.mode==='chapter')requestAnimationFrame(()=>scrollToVerse('v'+state.verse,'.chapter-toolbar'));
+   else requestAnimationFrame(()=>scrollToVerse('compact-v'+state.verse,'.compact-toolbar'));
+  }
+ }catch(e){if(valid())$('status').textContent=e.message}
 }
-async function selectBook(slug,ch=1,v=1,push=true){await loadBookResources(slug);const targetCh=availableChapters.includes(ch)?ch:availableChapters[0],d=await loadChapter(targetCh);await show(targetCh,d.verses.some(x=>x.v===v)?v:d.verses[0].v,push,false)}
+async function followRecording(verse,valid){
+ try{
+  const options={valid,keepLookup:true,following:true};
+  if(verse.slug!==state.slug){
+   const resources=await fetchBookResources(verse.slug);
+   if(!valid())return;
+   options.chapterData=await loadChapter(verse.chapter,verse.slug,resources.notes.notes||{});
+   if(!valid())return;
+   applyBookResources(resources);
+  }
+  if(valid())await show(verse.chapter,verse.verse,false,false,options);
+ }catch(e){if(valid())$('status').textContent=e.message}
+}
+function markRecording(verse,scroll){
+ if(verse.slug!==state.slug||verse.chapter!==state.chapter)return;
+ const id=state.mode==='study'?(verse.verse===state.verse?'verseCard':null)
+  :state.mode==='chapter'?'v'+verse.verse:'compact-v'+verse.verse;
+ const node=id&&$(id);
+ if(!node)return;
+ node.classList.add('audio-current');
+ node.setAttribute('aria-current','true');
+ if(!scroll)return;
+ requestAnimationFrame(()=>{
+  if(!node.classList.contains('audio-current'))return;
+  const toolbar=state.mode==='chapter'?'.chapter-toolbar':state.mode==='compact'?'.compact-toolbar':null;
+  const top=toolbar?(document.querySelector(toolbar)?.offsetHeight||0)+12:12;
+  const bounds=node.getBoundingClientRect();
+  const bottom=window.innerHeight-$('audioDock').offsetHeight-12;
+  if(bounds.top<top||bounds.bottom>bottom){
+   const behavior=matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';
+   window.scrollTo({top:window.scrollY+bounds.top-top,behavior});
+  }
+ });
+}
+async function selectBook(slug,ch=1,v=1,push=true){await loadBookResources(slug);const targetCh=availableChapters.includes(ch)?ch:availableChapters[0],d=await loadChapter(targetCh);await show(targetCh,d.verses.some(x=>x.v===v)?v:d.verses[0].v,push,false,{chapterData:d})}
 async function moveVerse(delta){
  let ch=state.chapter;const ci=availableChapters.indexOf(ch),verses=state.data?.verses||[],vi=verses.findIndex(x=>x.v===state.verse);if(vi<0)return;const ni=vi+delta;
  if(ni>=0&&ni<verses.length){await show(ch,verses[ni].v);return}if(ni<0&&ci>0){ch=availableChapters[ci-1];const d=await loadChapter(ch);await show(ch,d.verses.at(-1).v);return}if(ni>=verses.length&&ci>=0&&ci<availableChapters.length-1){ch=availableChapters[ci+1];const d=await loadChapter(ch);await show(ch,d.verses[0].v)}
 }
-$('refForm').addEventListener('submit',async e=>{e.preventDefault();const r=parseRef($('ref').value);if(!r){$('status').textContent='Try a reference such as John 1:18 or 1 John 5:20.';return}setMode('study');if(r.slug!==state.slug)await selectBook(r.slug,r.chapter,r.verse);else show(r.chapter,r.verse)});
+$('refForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ try{
+  const lookup=$('ref').value;
+  const references=scriptureSelection(lookup,books,state.slug);
+  const {slug,start,finish}=references[0];
+  const single=references.length===1&&start&&start===finish&&start.verse!==null;
+  if(!single){
+   const [first]=expandScriptureSelection(references,await loadScriptureIndex(),books);
+   setMode('study');
+   if(first.slug!==state.slug)await loadBookResources(first.slug);
+   await show(first.chapter,first.verse,true,true,{keepLookup:true});
+  }else{
+   setMode('study');
+   if(slug!==state.slug)await selectBook(slug,start.chapter,start.verse);
+   else await show(start.chapter,start.verse);
+  }
+ }catch(error){$('status').textContent=error.message}
+});
 $('book').addEventListener('change',async e=>selectBook(e.target.value));$('chapter').addEventListener('change',async e=>{const ch=+e.target.value,d=await loadChapter(ch);show(ch,d.verses[0].v,true,false)});
 $('copyLink').onclick=async()=>{await navigator.clipboard.writeText(location.href);$('copyLink').textContent='Copied';setTimeout(()=>$('copyLink').textContent='Copy link',1200)};
 const verseCard=$('verseCard');
@@ -163,4 +229,4 @@ for(const id of ['prevChapterTop','prevChapterBottom','prevCompactChapterTop','p
 document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));$('themeSelect').addEventListener('change',e=>setTheme(e.target.value));applyTheme();document.addEventListener('keydown',e=>{if(state.mode!=='study'||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;if(e.key==='ArrowLeft')moveVerse(-1);if(e.key==='ArrowRight')moveVerse(1)});
 let touchX=null;$('studyView').addEventListener('touchstart',e=>touchX=e.changedTouches[0].clientX,{passive:true});$('studyView').addEventListener('touchend',e=>{if(touchX==null)return;const dx=e.changedTouches[0].clientX-touchX;touchX=null;if(Math.abs(dx)>70)moveVerse(dx>0?-1:1)},{passive:true});
 window.addEventListener('hashchange',async()=>{const h=parseHash();if(!h)return;if(h.slug!==state.slug)await selectBook(h.slug,h.chapter,h.verse,false);else show(h.chapter,h.verse,false,false)});
-(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await loadCatalog();renderLayerControls();const h=parseHash();await loadBookResources(h?.slug||'john');setMode(state.mode);await show(h?.chapter||availableChapters[0],h?.verse||1,false,false)})();
+(async()=>{$('appVersion').textContent=APP_VERSION;if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');await loadCatalog();audioPlayer=createRecordedAudio({books,reader:{follow:followRecording,mark:markRecording},reference:()=>({slug:state.slug,text:$('ref').value})});renderLayerControls();const h=parseHash();await loadBookResources(h?.slug||'john');setMode(state.mode);await show(h?.chapter||availableChapters[0],h?.verse||1,false,false)})();

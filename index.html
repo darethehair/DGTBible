@@ -17,6 +17,7 @@
   <div class="selectors"><label>Book<select id="book"><option value="john">John</option><option value="1john">1 John</option></select></label><label>Chapter<select id="chapter"><option>1</option><option>2</option></select></label></div>
   <div class="view-controls">
     <div class="mode-switch" aria-label="Reading mode"><button type="button" data-mode="study">Study</button><button type="button" data-mode="chapter">Chapter</button><button type="button" data-mode="compact">Compact</button></div>
+    <button id="openAudio" class="ghost audio-launch" type="button" aria-controls="audioDock" aria-expanded="false" disabled>Recorded audio</button>
     <label class="theme-control" for="themeSelect">Theme
       <select id="themeSelect" aria-label="Color theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select>
     </label>
@@ -75,5 +76,37 @@
 <section class="about"><h2>About this experiment</h2><p>DGTBible is an experimental original-language study Bible. The English DGT text is translated directly from Greek with AI assistance rather than revised from an existing English Bible. The embedded New Testament base text is the SBL Greek New Testament (SBLGNT), used under CC BY 4.0. Difficult readings are intended to be checked against modern critical editions and manuscript evidence.</p></section>
 </main>
 <footer>Experimental study edition · DGTBible · Created by <a href="https://github.com/darethehair" target="_blank" rel="noopener noreferrer">Darethehair</a> · <a href="https://github.com/darethehair/DGTBible" target="_blank" rel="noopener noreferrer">GitHub repository</a></footer>
+<aside id="audioDock" class="audio-dock" aria-label="Recorded Scripture audio" hidden>
+ <details id="audioPanel" class="audio-panel">
+  <summary>Recorded audio <span id="audioSummary"></span></summary>
+  <div class="audio-content">
+   <div class="audio-selection">
+    <label>Passage <input id="audioPassage" autocomplete="off" spellcheck="false" placeholder="John 1:1–10 or NT"></label>
+    <label>Narrator <select id="audioNarrator"></select></label>
+   </div>
+   <p id="audioAvailability" class="audio-message"></p>
+   <div class="audio-controls">
+    <button id="audioPrevious" type="button" aria-label="Previous audio verse" disabled>‹</button>
+    <button id="audioPlay" type="button">Play</button>
+    <button id="audioNext" type="button" aria-label="Next audio verse" disabled>›</button>
+    <button id="audioStop" type="button" disabled>Stop</button>
+    <label>Speed <select id="audioRate"></select></label>
+    <label class="audio-scroll"><input id="audioScroll" type="checkbox" checked> Auto-scroll</label>
+   </div>
+   <div class="audio-timeline" id="audioTimeline" hidden>
+    <progress id="audioProgress" max="1" value="0" aria-label="Progress through current recording"></progress>
+    <span id="audioTime"></span>
+   </div>
+   <p id="audioStatus" class="audio-message" role="status"></p>
+   <div class="audio-actions">
+    <button id="audioRetry" class="ghost" type="button" hidden>Retry</button>
+    <button id="audioHide" class="ghost" type="button">Hide</button>
+   </div>
+  </div>
+ </details>
+ <audio id="recordedAudio" preload="none"></audio>
+</aside>
+<script src="references.js" defer></script>
+<script src="audio-player.js" defer></script>
 <script src="app.js" defer></script>
 </body></html>
